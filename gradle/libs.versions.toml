@@ -9,6 +9,10 @@ devauth = "1.2.1"
 gson = "2.12.1"
 meowdding-resources = "1.0.15"
 
+ksp = "2.2.10-2.0.2"
+meowdding-ktmodules = "1.0.5"
+meowdding-ktcodecs = "1.0.32"
+
 [libraries]
 
 fabric-language-kotlin = { module = "net.fabricmc:fabric-language-kotlin", version.ref = "fabric-language-kotlin" }
@@ -19,3 +23,8 @@ devauth = { module = "me.djtheredstoner:DevAuth-fabric", version.ref = "devauth"
 
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 meowdding-resources = { module = "me.owdding.repo:compacting-resources", version.ref = "meowdding-resources" }
+meowdding-ktmodules = { module = "me.owdding.ktmodules:KtModules", version.ref = "meowdding-ktmodules" }
+meowdding-ktcodecs = { module = "me.owdding.ktcodecs:KtCodecs", version.ref = "meowdding-ktcodecs" }
+
+[plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}

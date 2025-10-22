@@ -1,10 +1,16 @@
 package me.owdding.catharsis
 
+import me.owdding.catharsis.generated.CatharsisModules
+import me.owdding.catharsis.utils.CatharsisLogger
+import me.owdding.ktmodules.Module
 import net.fabricmc.api.ClientModInitializer
+import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI
 
-object Catharsis : ClientModInitializer {
+@Module
+object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.autoResolve() {
     override fun onInitializeClient() {
-        println("Catharsis client initialized!")
+        info("Catharsis client initialized!")
+        CatharsisModules.init { SkyBlockAPI.eventBus.register(this) }
     }
 
 }

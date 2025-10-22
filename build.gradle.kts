@@ -8,17 +8,9 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("fabric-loom")
     kotlin("jvm") version "2.2.20"
+    alias(libs.plugins.ksp)
     `versioned-catalogues`
 }
-
-//if (stonecutter.active == stonecutter.current) sourceSets {
-//    main.configure{
-//        kotlin.srcDirs(rootProject.layout.projectDirectory.dir("src/main/kotlin"))
-//        java.srcDirs(rootProject.layout.projectDirectory.dir("src/main/java"))
-//        resources.srcDirs(rootProject.layout.projectDirectory.dir("src/main/resources"))
-//        println(kotlin.srcDirs)
-//    }
-//}
 
 repositories {
     fun scopedMaven(url: String, vararg paths: String) = maven(url) { content { paths.forEach(::includeGroupAndSubgroups) } }
@@ -51,6 +43,10 @@ dependencies {
     modImplementation(libs.fabric.loader)
     modImplementation(libs.fabric.language.kotlin)
     modImplementation(versionedCatalog["fabric.api"])
+    compileOnly(libs.meowdding.ktmodules)
+    compileOnly(libs.meowdding.ktcodecs)
+    ksp(libs.meowdding.ktmodules)
+    ksp(libs.meowdding.ktcodecs)
 
     modRuntimeOnly(libs.devauth)
 }
@@ -59,6 +55,11 @@ loom {
     runConfigs["client"].apply {
         ideConfigGenerated(true)
     }
+}
+
+ksp {
+    arg("meowdding.project_name", "catharsis")
+    arg("meowdding.package", "me.owdding.catharsis.generated")
 }
 
 java {

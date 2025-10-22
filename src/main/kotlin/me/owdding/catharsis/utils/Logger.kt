@@ -18,7 +18,6 @@ interface CatharsisLogger {
         }
     }
 
-
     fun featureLogger(name: String): CatharsisLogger
 
     fun trace(message: String) {

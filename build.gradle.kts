@@ -51,9 +51,12 @@ dependencies {
     modRuntimeOnly(libs.devauth)
 }
 
+val mcVersion = stonecutter.current.version.replace(".", "")
 loom {
     runConfigs["client"].apply {
         ideConfigGenerated(true)
+        runDir = "../../run"
+        vmArg("-Dfabric.modsFolder=" + '"' + rootProject.projectDir.resolve("run/${mcVersion}Mods").absolutePath + '"')
     }
 }
 

@@ -6,6 +6,8 @@
     "mixins": [
     ],
     "client": [
+        "ItemModelResolverMixin",
+        "ModelManagerMixin"
     ],
     "injectors": {
         "defaultRequire": 1

@@ -32,11 +32,13 @@ public class ItemModelResolverMixin {
     private Object catharsis$modifyDataComponentType(Object original, @Local(argsOnly = true) ItemStack stack) {
         if (manager == null) return original;
 
-        var id = DataTypeItemStackKt.getData(stack, DataTypes.INSTANCE.getID());
+        var id = DataTypeItemStackKt.getData(stack, DataTypes.INSTANCE.getAPI_ID());
         if (id == null) return original;
 
-        var model = ResourceLocation.fromNamespaceAndPath("skyblock", id.toLowerCase(Locale.ROOT));
-        if (!manager.catharsis$hasCustomModel(model)) return original;
+        id = id.replace(":", "-");
+
+        var model = ResourceLocation.tryBuild("skyblock", id.toLowerCase(Locale.ROOT));
+        if (model == null || !manager.catharsis$hasCustomModel(model)) return original;
 
         return model;
     }

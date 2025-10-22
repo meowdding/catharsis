@@ -1,5 +1,10 @@
 package me.owdding.catharsis
 
-object Catharsis {
+import net.fabricmc.api.ClientModInitializer
+
+object Catharsis : ClientModInitializer {
+    override fun onInitializeClient() {
+        println("Catharsis client initialized!")
+    }
 
 }

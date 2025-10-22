@@ -2,7 +2,10 @@
 
 minecraft = "1.21.8"
 parchment = "2025.09.14"
+fabric-api = "0.136.0+1.21.8"
 
 [libraries]
+
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 parchment = { module = "org.parchmentmc.data:parchment-1.21.8", version.ref = "parchment" }
+fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }

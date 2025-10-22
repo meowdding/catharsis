@@ -1,5 +1,9 @@
 @file:Suppress("UnstableApiUsage")
 
+import org.gradle.kotlin.dsl.withType
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 
 plugins {
     id("fabric-loom")
@@ -35,6 +39,7 @@ dependencies {
             }
         }
     }
+
     minecraft(versionedCatalog["minecraft"])
     mappings(loom.layered {
         officialMojangMappings()
@@ -43,7 +48,40 @@ dependencies {
         })
     })
     modImplementation(libs.skyblockapi)
-    //modImplementation("net.fabricmc:fabric-loader:${property("deps.fabric_loader")}")
+    modImplementation(libs.fabric.loader)
+    modImplementation(libs.fabric.language.kotlin)
+    modImplementation(versionedCatalog["fabric.api"])
 
-    //fapi("fabric-lifecycle-events-v1", "fabric-resource-loader-v0", "fabric-content-registries-v0")
+    modRuntimeOnly(libs.devauth)
+}
+
+loom {
+    runConfigs["client"].apply {
+        ideConfigGenerated(true)
+    }
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+    withSourcesJar()
+}
+
+tasks.withType<JavaCompile>().configureEach {
+    options.encoding = "UTF-8"
+    options.release.set(21)
+}
+
+tasks.withType<KotlinCompile>().configureEach {
+    compilerOptions.jvmTarget.set(JvmTarget.JVM_21)
+}
+
+tasks.processResources {
+    inputs.property("version", version)
+
+    filesMatching("fabric.mod.json") {
+        expand(mapOf(
+            "version" to version,
+            "minecraft" to versionedCatalog.versions["minecraft"]
+        ))
+    }
 }

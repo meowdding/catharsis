@@ -1,0 +1,26 @@
+{
+    "schemaVersion": 1,
+    "id": "catharsis",
+    "version": "${version}",
+    "name": "Catharsis",
+    "description": "",
+    "authors": [],
+    "contact": {},
+    "license": "ARR",
+    "environment": "*",
+    "entrypoints": {
+        "client": [
+            {
+                "adapter": "kotlin",
+                "value": "me.owdding.catharsis.Catharsis"
+            }
+        ]
+    },
+    "mixins": [
+        "catharsis.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.16",
+        "minecraft": ">=${minecraft}"
+    }
+}

@@ -6,8 +6,9 @@
     "mixins": [
     ],
     "client": [
-        "ItemModelResolverMixin",
-        "ModelManagerMixin"
+        "items.AbstractContainerScreenMixin",
+        "items.ItemModelResolverMixin",
+        "items.ModelManagerMixin"
     ],
     "injectors": {
         "defaultRequire": 1

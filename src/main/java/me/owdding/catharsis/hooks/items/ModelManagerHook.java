@@ -1,4 +1,4 @@
-package me.owdding.catharsis.hooks;
+package me.owdding.catharsis.hooks.items;
 
 import net.minecraft.resources.ResourceLocation;
 

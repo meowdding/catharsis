@@ -1,6 +1,6 @@
-package me.owdding.catharsis.mixins;
+package me.owdding.catharsis.mixins.items;
 
-import me.owdding.catharsis.hooks.ModelManagerHook;
+import me.owdding.catharsis.hooks.items.ModelManagerHook;
 import net.minecraft.client.renderer.item.ItemModel;
 import net.minecraft.client.resources.model.ModelManager;
 import net.minecraft.resources.ResourceLocation;

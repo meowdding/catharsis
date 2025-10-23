@@ -1,8 +1,10 @@
-package me.owdding.catharsis.mixins;
+package me.owdding.catharsis.mixins.items;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
-import me.owdding.catharsis.hooks.ModelManagerHook;
+import me.owdding.catharsis.features.gui.definitions.GuiDefinitions;
+import me.owdding.catharsis.hooks.items.AbstractContainerScreenHook;
+import me.owdding.catharsis.hooks.items.ModelManagerHook;
 import net.minecraft.client.renderer.item.ItemModelResolver;
 import net.minecraft.client.resources.model.ModelManager;
 import net.minecraft.resources.ResourceLocation;
@@ -32,14 +34,17 @@ public class ItemModelResolverMixin {
     private Object catharsis$modifyDataComponentType(Object original, @Local(argsOnly = true) ItemStack stack) {
         if (manager == null) return original;
 
+        var guiId = GuiDefinitions.getSlot(AbstractContainerScreenHook.SLOT.get());
+        var itemId = catharsisGetItemModel(stack);
+        var model = guiId != null ? guiId : itemId;
+
+        return model == null || !manager.catharsis$hasCustomModel(model) ? original : model;
+    }
+
+    @Unique
+    private static ResourceLocation catharsisGetItemModel(ItemStack stack) {
         var id = DataTypeItemStackKt.getData(stack, DataTypes.INSTANCE.getAPI_ID());
-        if (id == null) return original;
-
-        id = id.replace(":", "-");
-
-        var model = ResourceLocation.tryBuild("skyblock", id.toLowerCase(Locale.ROOT));
-        if (model == null || !manager.catharsis$hasCustomModel(model)) return original;
-
-        return model;
+        if (id == null) return null;
+        return ResourceLocation.tryBuild("skyblock", id.replace(":", "-").toLowerCase(Locale.ROOT));
     }
 }

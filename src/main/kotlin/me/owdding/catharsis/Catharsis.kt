@@ -10,7 +10,7 @@ import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI
 object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.autoResolve() {
     override fun onInitializeClient() {
         info("Catharsis client initialized!")
-        CatharsisModules.init { SkyBlockAPI.eventBus.register(this) }
+        CatharsisModules.init { SkyBlockAPI.eventBus.register(it) }
     }
 
 }

@@ -24,6 +24,8 @@ object GuiConditions {
     val CODEC: Codec<GuiCondition> = ID_MAPPER.codec(ResourceLocation.CODEC).dispatch(GuiCondition::codec) { it }
 
     init {
+        ID_MAPPER.put(Catharsis.id("any"), CatharsisCodecs.getMapCodec<GuiAnyCondition>())
+        ID_MAPPER.put(Catharsis.id("all"), CatharsisCodecs.getMapCodec<GuiAllCondition>())
         ID_MAPPER.put(Catharsis.id("slot"), CatharsisCodecs.getMapCodec<GuiSlotCondition>())
         ID_MAPPER.put(Catharsis.id("title"), CatharsisCodecs.getMapCodec<GuiTitleCondition>())
     }

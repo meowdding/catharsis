@@ -24,6 +24,8 @@ object SlotConditions {
     val CODEC: Codec<SlotCondition> = ID_MAPPER.codec(ResourceLocation.CODEC).dispatch(SlotCondition::codec) { it }
 
     init {
+        ID_MAPPER.put(Catharsis.id("any"), CatharsisCodecs.getMapCodec<SlotAnyCondition>())
+        ID_MAPPER.put(Catharsis.id("all"), CatharsisCodecs.getMapCodec<SlotAllCondition>())
         ID_MAPPER.put(Catharsis.id("slot"), CatharsisCodecs.getMapCodec<SlotIndexCondition>())
         ID_MAPPER.put(Catharsis.id("id"), CatharsisCodecs.getMapCodec<SlotSkyBlockIdCondition>())
         ID_MAPPER.put(Catharsis.id("item"), CatharsisCodecs.getMapCodec<SlotItemCondition>())

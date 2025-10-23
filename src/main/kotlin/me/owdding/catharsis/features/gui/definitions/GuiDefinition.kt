@@ -27,12 +27,12 @@ import kotlin.io.path.walk
 @GenerateCodec
 data class GuiDefinition(
     val id: ResourceLocation,
-    val conditions: List<GuiCondition>,
+    val condition: GuiCondition,
     val layout: List<GuiSlotDefinition>,
 ) {
 
     fun matches(screen: AbstractContainerScreen<*>): Boolean {
-        return conditions.all { it.matches(screen) }
+        return condition.matches(screen)
     }
 }
 

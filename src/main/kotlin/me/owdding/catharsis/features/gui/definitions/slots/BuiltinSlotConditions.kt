@@ -1,6 +1,7 @@
 package me.owdding.catharsis.features.gui.definitions.slots
 
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.utils.types.IntPredicate
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.world.inventory.Slot
 import net.minecraft.world.item.Item
@@ -21,7 +22,7 @@ data class SlotAnyCondition(val conditions: List<SlotCondition>): SlotCondition 
 }
 
 @GenerateCodec
-data class SlotIndexCondition(val slot: IntRange): SlotCondition {
+data class SlotIndexCondition(val slot: IntPredicate): SlotCondition {
     override val codec = CatharsisCodecs.getMapCodec<SlotIndexCondition>()
     override fun matches(slot: Slot): Boolean = slot.index in this.slot
 }

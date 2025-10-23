@@ -7,10 +7,10 @@ import net.minecraft.world.inventory.Slot
 @GenerateCodec
 data class GuiSlotDefinition(
     val id: ResourceLocation,
-    val condition: SlotCondition,
+    val target: SlotCondition,
 ) {
 
     fun matches(slot: Slot): Boolean {
-        return condition.matches(slot)
+        return target.matches(slot)
     }
 }

@@ -6,6 +6,7 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.utils.extensions.isEnum
 import me.owdding.catharsis.utils.extensions.isNumber
 import me.owdding.catharsis.utils.extensions.set
+import me.owdding.catharsis.utils.extensions.unsafeCast
 import me.owdding.ktmodules.Module
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperty
@@ -42,8 +43,7 @@ object DataTypeProperties {
             numericalTypes[location] = type
         }
         if (Type::class == Boolean::class) {
-            @Suppress("UNCHECKED_CAST")
-            conditionalTypes[location] = type as DataType<Boolean>
+            conditionalTypes[location] = type.unsafeCast()
         }
     }
 

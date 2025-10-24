@@ -4,7 +4,7 @@ import com.google.gson.JsonObject
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap
 import me.owdding.catharsis.Catharsis
-import me.owdding.catharsis.features.gui.definitions.conditions.GuiCondition
+import me.owdding.catharsis.features.gui.definitions.conditions.GuiDefCondition
 import me.owdding.catharsis.features.gui.definitions.slots.GuiSlotDefinition
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
@@ -27,7 +27,7 @@ import kotlin.io.path.walk
 @GenerateCodec
 data class GuiDefinition(
     val id: ResourceLocation,
-    val target: GuiCondition,
+    val target: GuiDefCondition,
     val layout: List<GuiSlotDefinition>,
 ) {
 

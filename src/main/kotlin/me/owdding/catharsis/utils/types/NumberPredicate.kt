@@ -2,42 +2,31 @@ package me.owdding.catharsis.utils.types
 
 import com.mojang.datafixers.util.Either
 import com.mojang.serialization.Codec
-import com.mojang.serialization.codecs.RecordCodecBuilder
 import it.unimi.dsi.fastutil.ints.IntArraySet
 import it.unimi.dsi.fastutil.ints.IntSet
 import it.unimi.dsi.fastutil.ints.IntSets
+import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.util.ExtraCodecs
-import java.util.*
-import kotlin.jvm.optionals.getOrNull
 
 sealed interface IntPredicate {
 
     operator fun contains(value: Int): Boolean
+    operator fun iterator(): IntIterator
 
-    class Range(val min: Optional<Int>, val max: Optional<Int>) : IntPredicate {
-
-        override fun contains(value: Int): Boolean {
-            val min = min.getOrNull()
-            val max = max.getOrNull()
-            if (min != null && value < min) return false
-            if (max != null && value > max) return false
-            return true
-        }
+    @GenerateCodec
+    data class Range(val min: Int, val max: Int) : IntPredicate {
+        override fun contains(value: Int): Boolean = value in min..max
+        override fun iterator(): IntIterator = (min..max).iterator()
     }
 
-    class Set(val set: IntSet) : IntPredicate {
+    data class Set(val set: IntSet) : IntPredicate {
         override fun contains(value: Int): Boolean = value in set
+        override fun iterator(): IntIterator = set.toIntArray().iterator()
     }
 
     companion object {
-
-        private val rangeCodec: Codec<Range> = RecordCodecBuilder.create {
-            it.group(
-                Codec.INT.optionalFieldOf("min").forGetter(Range::min),
-                Codec.INT.optionalFieldOf("max").forGetter(Range::max),
-            ).apply(it, ::Range)
-        }
 
         private val setCodec: Codec<Set> = ExtraCodecs.compactListCodec(Codec.INT).xmap(
             { list -> Set(IntSets.unmodifiable(IntArraySet(list))) },
@@ -45,7 +34,7 @@ sealed interface IntPredicate {
         )
 
         @IncludedCodec
-        val CODEC: Codec<IntPredicate> = Codec.either(rangeCodec, setCodec)
+        val CODEC: Codec<IntPredicate> = Codec.either(CatharsisCodecs.getCodec<Range>(), setCodec)
             .xmap(
                 { Either.unwrap(it) },
                 {

@@ -1,14 +1,30 @@
 package me.owdding.catharsis.utils.codecs
 
 import com.mojang.serialization.Codec
+import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.core.registries.BuiltInRegistries
+import net.minecraft.network.chat.ComponentSerialization
 import net.minecraft.resources.ResourceLocation
+import net.minecraft.util.ExtraCodecs
+import org.joml.Quaternionf
+import org.joml.Vector2i
+import org.joml.Vector2ic
 
 object IncludedCodecs {
 
-    @IncludedCodec val regexCodec = Codec.STRING.xmap({ str -> Regex(str) }, { regex -> regex.pattern })
-    @IncludedCodec val reosurceLocation = ResourceLocation.CODEC
+    @IncludedCodec val regexCodec: Codec<Regex> = Codec.STRING.xmap({ str -> Regex(str) }, { regex -> regex.pattern })
+    @IncludedCodec val reosurceLocationCodec: Codec<ResourceLocation> = ResourceLocation.CODEC
+    @IncludedCodec val vec2iCodec: Codec<Vector2i> = RecordCodecBuilder.create { it.group(
+        Codec.INT.fieldOf("x").forGetter(Vector2ic::x),
+        Codec.INT.fieldOf("y").forGetter(Vector2ic::y),
+    ).apply(it, ::Vector2i) }
+    @IncludedCodec(named = "size") val sizeCodec: Codec<Vector2i> = RecordCodecBuilder.create { it.group(
+        Codec.INT.fieldOf("width").forGetter(Vector2ic::x),
+        Codec.INT.fieldOf("height").forGetter(Vector2ic::y),
+    ).apply(it, ::Vector2i) }
+    @IncludedCodec val quaternionCodec: Codec<Quaternionf> = ExtraCodecs.QUATERNIONF
+    @IncludedCodec val componentCodec = ComponentSerialization.CODEC
 
     // Registries
     // TODO this is broken because of the generic

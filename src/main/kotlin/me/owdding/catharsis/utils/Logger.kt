@@ -90,6 +90,12 @@ interface CatharsisLogger {
 
     fun error(message: String, throwable: Throwable? = null, prefix: String? = null)
 
+    fun <Return> runCatching(message: String, block: () -> Return) : Return? = runCatching {
+        block()
+    }.getOrElse {
+        error(message, it)
+        null
+    }
 }
 
 annotation class FeatureName(val name: String)

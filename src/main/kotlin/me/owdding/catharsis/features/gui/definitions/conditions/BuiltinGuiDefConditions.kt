@@ -7,20 +7,20 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
 import tech.thatgravyboat.skyblockapi.utils.text.TextProperties.stripped
 
 @GenerateCodec
-data class GuiAllCondition(val conditions: List<GuiCondition>): GuiCondition {
-    override val codec = CatharsisCodecs.getMapCodec<GuiAllCondition>()
+data class GuiDefAllCondition(val conditions: List<GuiDefCondition>): GuiDefCondition {
+    override val codec = CatharsisCodecs.getMapCodec<GuiDefAllCondition>()
     override fun matches(screen: AbstractContainerScreen<*>): Boolean = this.conditions.all { it.matches(screen) }
 }
 
 @GenerateCodec
-data class GuiAnyCondition(val conditions: List<GuiCondition>): GuiCondition {
-    override val codec = CatharsisCodecs.getMapCodec<GuiAnyCondition>()
+data class GuiDefAnyCondition(val conditions: List<GuiDefCondition>): GuiDefCondition {
+    override val codec = CatharsisCodecs.getMapCodec<GuiDefAnyCondition>()
     override fun matches(screen: AbstractContainerScreen<*>): Boolean = this.conditions.any { it.matches(screen) }
 }
 
 @GenerateCodec
-data class GuiSlotCondition(val index: Int, val conditions: List<SlotCondition>): GuiCondition {
-    override val codec = CatharsisCodecs.getMapCodec<GuiSlotCondition>()
+data class GuiDefSlotCondition(val index: Int, val conditions: List<SlotCondition>): GuiDefCondition {
+    override val codec = CatharsisCodecs.getMapCodec<GuiDefSlotCondition>()
     override fun matches(screen: AbstractContainerScreen<*>): Boolean {
         val slot = screen.menu.getSlot(this.index) ?: return false
         return this.conditions.all { it.matches(slot) }
@@ -28,8 +28,8 @@ data class GuiSlotCondition(val index: Int, val conditions: List<SlotCondition>)
 }
 
 @GenerateCodec
-data class GuiTitleCondition(val title: Regex): GuiCondition {
-    override val codec = CatharsisCodecs.getMapCodec<GuiSlotCondition>()
+data class GuiDefTitleCondition(val title: Regex): GuiDefCondition {
+    override val codec = CatharsisCodecs.getMapCodec<GuiDefTitleCondition>()
     override fun matches(screen: AbstractContainerScreen<*>): Boolean {
         return this.title.matches(screen.title.stripped)
     }

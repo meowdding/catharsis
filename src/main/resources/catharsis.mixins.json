@@ -4,8 +4,11 @@
   "package": "me.owdding.catharsis.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "gui.SlotMixin"
   ],
   "client": [
+    "gui.AbstractContainerScreenElementsMixin",
+    "gui.AbstractContainerScreenSlotsMixin",
     "items.AbstractContainerScreenMixin",
     "items.ItemModelResolverMixin",
     "items.ModelManagerMixin"

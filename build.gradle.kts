@@ -6,6 +6,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 plugins {
+    idea
     id("fabric-loom")
     kotlin("jvm") version "2.2.20"
     alias(libs.plugins.ksp)
@@ -87,5 +88,14 @@ tasks.processResources {
             "version" to version,
             "minecraft" to versionedCatalog.versions["minecraft"]
         ))
+    }
+}
+
+idea {
+    module {
+        isDownloadJavadoc = true
+        isDownloadSources = true
+
+        excludeDirs.add(file("run"))
     }
 }

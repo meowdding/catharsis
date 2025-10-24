@@ -13,10 +13,16 @@ export default defineConfig({
 
         sidebar: [
             {
-                text: "meow",
-                link: "/",
+                text: "Getting started",
+                link: "/getting_started",
                 items: [
-                    {text: "Project settings", link: "/wiki/start/settings"},
+                ]
+            },
+            {
+                text: "Item Models",
+                items: [
+                    {text: "Select properties", link: "/item_models/select_properties"},
+                    {text: "Data Types", link: "/item_models/data_types"},
                 ]
             }
         ],

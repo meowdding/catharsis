@@ -18,6 +18,8 @@ object ItemProperties {
     @Subscription
     fun onSelectProperties(event: BootstrapSelectPropertiesEvent) {
         event.register(DataTypeProperties.ID, DataTypeProperties.SelectDataTypeItemProperty.TYPE)
+        event.register(SkyBlockIslandProperty.ID, SkyBlockIslandProperty.TYPE)
+        event.register(SkyBlockAreaProperty.ID, SkyBlockAreaProperty.TYPE)
     }
 
     @Subscription

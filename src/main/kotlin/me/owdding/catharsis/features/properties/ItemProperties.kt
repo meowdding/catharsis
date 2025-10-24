@@ -20,6 +20,7 @@ object ItemProperties {
         event.register(DataTypeProperties.ID, DataTypeProperties.SelectDataTypeItemProperty.TYPE)
         event.register(SkyBlockIslandProperty.ID, SkyBlockIslandProperty.TYPE)
         event.register(SkyBlockAreaProperty.ID, SkyBlockAreaProperty.TYPE)
+        event.register(ItemModelProperty.ID, ItemModelProperty.TYPE)
     }
 
     @Subscription

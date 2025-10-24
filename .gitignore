@@ -17,6 +17,10 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
+docs/node_modules
+docs/.vitepress/cache
+docs/.vitepress/dist
+
 ### Kotlin ###
 .kotlin
 

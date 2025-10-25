@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item
 import org.joml.Quaternionf
 import org.joml.Vector2i
 import org.joml.Vector2ic
+import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
 import java.net.URI
 
 object IncludedCodecs {
@@ -34,4 +35,6 @@ object IncludedCodecs {
     // TODO this is broken because of the generic
     //@IncludedCodec(keyable = true) val menuCodec = BuiltInRegistries.MENU.byNameCodec()
     @IncludedCodec val itemCodec: Codec<Item> = BuiltInRegistries.ITEM.byNameCodec()
+
+    @IncludedCodec val skyblockislandCodec: Codec<SkyBlockIsland> = Codec.STRING.xmap(SkyBlockIsland::getById, SkyBlockIsland::id)
 }

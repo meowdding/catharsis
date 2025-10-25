@@ -1,7 +1,7 @@
 package me.owdding.catharsis.utils.boundingboxes
 
+import com.sun.tools.javac.jvm.ByteCodes.ret
 import net.minecraft.core.BlockPos
-import net.minecraft.world.level.levelgen.structure.BoundingBox
 import kotlin.math.max
 
 class Octree(val boxes: List<BoundingBox>) {
@@ -11,10 +11,10 @@ class Octree(val boxes: List<BoundingBox>) {
     private val root: Branch
 
     init {
-        val encapsulatingBox = BoundingBox.encapsulatingBoxes(boxes).get()
+        val encapsulatingBox = BoundingBox.encapsulating(boxes)!!
         val center = encapsulatingBox.center
         val span = max(encapsulatingBox.xSpan, encapsulatingBox.zSpan) / 2 + 5
-        root = Branch(BoundingBox(center).inflatedBy(span, span, span), boxes)
+        root = Branch(BoundingBox(center).inflateBy(span), boxes)
     }
 
     override fun toString(): String {
@@ -26,7 +26,7 @@ class Octree(val boxes: List<BoundingBox>) {
     }
 
     fun findLeaf(pos: BlockPos): Leaf? {
-        if (!root.getBox().isInside(pos)) {
+        if (pos !in root.getBox()) {
             return null
         }
         return root.getNode(pos)
@@ -46,7 +46,7 @@ interface Node {
 }
 
 class CompoundLeaf(leafBox: BoundingBox, private val boxes: List<BoundingBox>) : Leaf(leafBox, leafBox) {
-    override fun isInside(pos: BlockPos) = boxes.any { it.isInside(pos) }
+    override fun isInside(pos: BlockPos) = boxes.any { pos in it }
 }
 
 open class Leaf(private val leafBox: BoundingBox, private val box: BoundingBox) : Node {
@@ -62,14 +62,14 @@ open class Leaf(private val leafBox: BoundingBox, private val box: BoundingBox) 
 
     override fun getNode(pos: BlockPos) = this
 
-    open fun isInside(pos: BlockPos) = box.isInside(pos)
+    open fun isInside(pos: BlockPos) = pos in box
 }
 
 class Branch(private val boundingBox: BoundingBox, boxes: List<BoundingBox>) : Node {
     private val nodes = Array<Node?>(8) { null }
-    private val centerX = (this.boundingBox.minX() + this.boundingBox.xSpan / 2)
-    private val centerY = (this.boundingBox.minY() + this.boundingBox.ySpan / 2)
-    private val centerZ = (this.boundingBox.minZ() + this.boundingBox.zSpan / 2)
+    private val centerX = (this.boundingBox.min.x() + this.boundingBox.xSpan / 2)
+    private val centerY = (this.boundingBox.min.y() + this.boundingBox.ySpan / 2)
+    private val centerZ = (this.boundingBox.min.z() + this.boundingBox.zSpan / 2)
 
     init {
         List(8) { it to getChildBox(it) }
@@ -118,23 +118,23 @@ class Branch(private val boundingBox: BoundingBox, boxes: List<BoundingBox>) : N
 
         if (positiveX) {
             minX = centerX
-            maxX = boundingBox.maxX()
+            maxX = boundingBox.max.x
         } else {
-            minX = boundingBox.minX()
+            minX = boundingBox.min.x
             maxX = centerX - 1
         }
         if (positiveY) {
             minY = centerY
-            maxY = boundingBox.maxY()
+            maxY = boundingBox.max.y
         } else {
-            minY = boundingBox.minY()
+            minY = boundingBox.min.y
             maxY = centerY - 1
         }
         if (positiveZ) {
             minZ = centerZ
-            maxZ = boundingBox.maxZ()
+            maxZ = boundingBox.max.z
         } else {
-            minZ = boundingBox.minZ()
+            minZ = boundingBox.min.z
             maxZ = centerZ - 1
         }
         return BoundingBox(minX, minY, minZ, maxX, maxY, maxZ)

@@ -22,7 +22,7 @@ data class OctreeDebugRenderer(val octree: Octree) {
             ShapeRenderer.renderLineBox(
                 event.poseStack.last(),
                 vertexConsumer,
-                AABB.of(it).move(-camX, -camY, -camZ),
+                it.toMinecraftAABB().move(-camX, -camY, -camZ),
                 1.0f,
                 1.0f,
                 1.0f,
@@ -38,8 +38,8 @@ data class OctreeDebugRenderer(val octree: Octree) {
     }
 
     fun visit(event: RenderWorldEvent, node: Node, nodesRendered: MutableInt, depth: Int, playerNode: Leaf?) {
-        val aABB: AABB = AABB.of(node.getBox())
-        val size = aABB.xsize
+        val AABB: AABB = node.getBox().toMinecraftAABB()
+        val size = AABB.xsize
         val color = (size / 16.0).roundToInt()
         val vertexConsumer: VertexConsumer = event.buffer.getBuffer(RenderType.lines())
         val colorValue = color + 5L
@@ -49,7 +49,7 @@ data class OctreeDebugRenderer(val octree: Octree) {
         ShapeRenderer.renderLineBox(
             event.poseStack.last(),
             vertexConsumer,
-            aABB.move(-camX, -camY, -camZ),
+            AABB.move(-camX, -camY, -camZ),
             getColorComponent(colorValue, 0.3f),
             getColorComponent(colorValue, 0.8f),
             getColorComponent(colorValue, 0.5f),

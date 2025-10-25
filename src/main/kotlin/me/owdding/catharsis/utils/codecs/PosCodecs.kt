@@ -66,7 +66,7 @@ object PosCodecs {
         second: VecType.() -> NumberType,
         third: VecType.() -> NumberType,
     ): Codec<VecType> {
-        Codec.either(
+        return Codec.either(
             Codec.either(
                 numberCodec.listOf().comapFlatMap({ list -> Util.fixedSize(list, 3).map { constructor(it[0], it[1], it[2]) } }, { listOf(it.first(), it.second(), it.third()) }),
                 RecordCodecBuilder.create<VecType> {
@@ -86,7 +86,6 @@ object PosCodecs {
                 { "${it.first()}:${it.second()}:${it.third()}" },
             ),
         ).xmap(Either<Vector3f, Vector3f>::unwrap) { Either.left(it) }
-        TODO()
     }
 
 }

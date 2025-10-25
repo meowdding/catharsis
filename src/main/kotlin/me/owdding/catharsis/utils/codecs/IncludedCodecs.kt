@@ -25,6 +25,7 @@ object IncludedCodecs {
     ).apply(it, ::Vector2i) }
     @IncludedCodec val quaternionCodec: Codec<Quaternionf> = ExtraCodecs.QUATERNIONF
     @IncludedCodec val componentCodec = ComponentSerialization.CODEC
+    @IncludedCodec val uriCodec = ExtraCodecs.UNTRUSTED_URI // This is actually "trusted", it requires https and http
 
     // Registries
     // TODO this is broken because of the generic

@@ -1,14 +1,19 @@
 package me.owdding.catharsis.features.gui.modifications
 
+import com.mojang.blaze3d.platform.cursor.CursorTypes
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap
 import me.owdding.catharsis.features.gui.modifications.conditions.GuiModCondition
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElement
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElementRenderLayer
+import me.owdding.catharsis.features.gui.modifications.elements.GuiWidgetElement
 import me.owdding.catharsis.features.gui.modifications.modifiers.SlotModifier
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
 import net.minecraft.Util
+import net.minecraft.client.gui.GuiGraphics
+import net.minecraft.client.gui.navigation.ScreenRectangle
+import net.minecraft.client.input.MouseButtonEvent
 import org.joml.Vector2i
 
 @GenerateCodec
@@ -22,6 +27,7 @@ data class GuiModifier(
 
     val slots: List<SlotModifier> = emptyList(),
     val elements: List<GuiElement> = emptyList(),
+    val widgets: List<GuiWidgetElement> = emptyList(),
 ) {
 
     private val slotsById: Int2ObjectMap<SlotModifier> = Util.make(Int2ObjectArrayMap()) { map ->
@@ -38,13 +44,31 @@ data class GuiModifier(
         }
     }
 
-    private val elementsByLayer: Map<GuiElementRenderLayer, List<GuiElement>> = elements.groupBy { it.layer }
+    private val elementsByLayer = (elements + widgets).groupBy { it.layer }
 
     fun getSlot(id: Int): SlotModifier? {
         return slotsById[id]
     }
 
-    fun getElementsForLayer(layer: GuiElementRenderLayer): List<GuiElement> {
-        return elementsByLayer[layer] ?: emptyList()
+    fun renderElements(layer: GuiElementRenderLayer, graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
+        val elements = elementsByLayer[layer] ?: return
+        for (element in elements) {
+            if (element is GuiWidgetElement && element.isHovered(mouseX, mouseY, bounds)) {
+                graphics.requestCursor(CursorTypes.POINTING_HAND)
+            }
+            element.render(graphics, mouseX, mouseY, partialTicks, bounds)
+        }
+    }
+
+    fun handleInteraction(event: MouseButtonEvent, mouseDown: Boolean, bounds: ScreenRectangle): Boolean {
+        for (element in widgets) {
+            if (element.isHovered(event.x().toInt(), event.y().toInt(), bounds)) {
+                if (mouseDown) {
+                    element.onClick(event)
+                }
+                return true
+            }
+        }
+        return false
     }
 }

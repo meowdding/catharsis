@@ -21,6 +21,7 @@ repositories {
     scopedMaven("https://maven.parchmentmc.org/", "org.parchmentmc")
     scopedMaven("https://api.modrinth.com/maven", "maven.modrinth")
     scopedMaven("https://maven.teamresourceful.com/repository/maven-public/", "tech.thatgravyboat", "me.owdding")
+    scopedMaven("https://maven.nucleoid.xyz/", "eu.pb4")
     mavenCentral()
 }
 
@@ -41,6 +42,9 @@ dependencies {
         })
     })
     modImplementation(libs.skyblockapi)
+    include(libs.skyblockapi)
+    modImplementation(versionedCatalog["placeholders"])
+    include(versionedCatalog["placeholders"])
     modImplementation(libs.fabric.loader)
     modImplementation(libs.fabric.language.kotlin)
     modImplementation(versionedCatalog["fabric.api"])

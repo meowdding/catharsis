@@ -59,6 +59,8 @@ loom {
         runDir = "../../run"
         vmArg("-Dfabric.modsFolder=" + '"' + rootProject.projectDir.resolve("run/${mcVersion}Mods").absolutePath + '"')
     }
+
+    accessWidenerPath.set(project.file("catharsis.accesswidener"))
 }
 
 ksp {
@@ -78,6 +80,7 @@ tasks.withType<JavaCompile>().configureEach {
 
 tasks.withType<KotlinCompile>().configureEach {
     compilerOptions.jvmTarget.set(JvmTarget.JVM_21)
+    compilerOptions.optIn.add("kotlin.time.ExperimentalTime")
 }
 
 tasks.processResources {

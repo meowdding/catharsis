@@ -38,7 +38,7 @@ export default defineConfig({
                 "text": "Dev Tools",
                 "link": "/dev_tools/index",
                 "items": [
-                    {"text": "Oct Tree", "link": "/dev_tools/oct_tree"},
+                    {"text": "Area selection", "link": "/dev_tools/area_selection"},
                 ]
             }
         ],

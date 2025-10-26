@@ -2,10 +2,11 @@ package me.owdding.catharsis.utils.boundingboxes
 
 import net.minecraft.core.BlockPos
 import kotlin.math.max
+import kotlin.math.min
 
-class Octree(val boxes: List<BoundingBox>) {
+data class Octree(val boxes: List<BoundingBox>, val minSize: Int) {
 
-    constructor(vararg boxes: BoundingBox) : this(listOf(*boxes))
+    constructor(vararg boxes: BoundingBox, minSize: Int) : this(listOf(*boxes), minSize)
 
     private val root: Branch
 
@@ -13,7 +14,7 @@ class Octree(val boxes: List<BoundingBox>) {
         val encapsulatingBox = BoundingBox.encapsulatingBoxes(boxes)!!
         val center = encapsulatingBox.center
         val span = max(encapsulatingBox.xSpan, encapsulatingBox.zSpan) / 2 + 5
-        root = Branch(BoundingBox(center).inflateBy(span), boxes)
+        root = Branch(BoundingBox(center).inflateBy(span), boxes, minSize)
     }
 
     override fun toString(): String {
@@ -64,7 +65,7 @@ open class Leaf(private val leafBox: BoundingBox, private val box: BoundingBox) 
     open fun isInside(pos: BlockPos) = pos in box
 }
 
-class Branch(private val boundingBox: BoundingBox, boxes: List<BoundingBox>) : Node {
+class Branch(private val boundingBox: BoundingBox, boxes: List<BoundingBox>, val minSize: Int) : Node {
     private val nodes = Array<Node?>(8) { null }
     private val centerX = (this.boundingBox.min.x() + this.boundingBox.xSpan / 2)
     private val centerY = (this.boundingBox.min.y() + this.boundingBox.ySpan / 2)
@@ -89,7 +90,7 @@ class Branch(private val boundingBox: BoundingBox, boxes: List<BoundingBox>) : N
                     nodes[index] = Leaf(getChildBox(index), boxes.first())
                     return@forEach
                 }
-                val branch = Branch(getChildBox(index), boxes)
+                val branch = Branch(getChildBox(index), boxes, minSize)
                 nodes[index] = branch
             }
     }
@@ -155,7 +156,7 @@ class Branch(private val boundingBox: BoundingBox, boxes: List<BoundingBox>) : N
     }
 
     private fun areChildrenLeaves(): Boolean {
-        return this.boundingBox.xSpan <= 8
+        return this.boundingBox.xSpan <= minSize
     }
 
     override fun getBox() = boundingBox

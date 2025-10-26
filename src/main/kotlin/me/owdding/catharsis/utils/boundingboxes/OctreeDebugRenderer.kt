@@ -11,9 +11,9 @@ import tech.thatgravyboat.skyblockapi.api.events.render.RenderWorldEvent
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import kotlin.math.roundToInt
 
-data class OctreeDebugRenderer(val octree: Octree) {
+object OctreeDebugRenderer {
 
-    fun render(event: RenderWorldEvent) {
+    fun render(octree: Octree, event: RenderWorldEvent) {
         val camX = event.cameraPosition.x
         val camY = event.cameraPosition.y
         val camZ = event.cameraPosition.z

@@ -13,6 +13,8 @@ object ItemProperties {
     fun onBooleanProperties(event: BootstrapConditionalPropertiesEvent) {
         event.register(HoveredItemProperty.ID, HoveredItemProperty.CODEC)
         event.register(DataTypeProperties.ID, DataTypeProperties.ConditionalDataTypeItemProperty.CODEC)
+        event.register(AnyConditionalItemProperty.ID, AnyConditionalItemProperty.CODEC)
+        event.register(AllConditionalItemProperty.ID, AllConditionalItemProperty.CODEC)
     }
 
     @Subscription

@@ -6,7 +6,6 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.gui.definitions.GuiDefinitions
 import me.owdding.catharsis.features.gui.modifications.conditions.GuiModDefinitionCondition
 import me.owdding.catharsis.generated.CatharsisCodecs
-import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.resource.v1.ResourceLoader
 import net.minecraft.resources.FileToIdConverter
@@ -20,7 +19,7 @@ import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 @Module
 object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
 
-    private val logger = CatharsisLogger.named("GuiModifiers")
+    private val logger = Catharsis.featureLogger("GuiModifiers")
     private val converter = FileToIdConverter.json("catharsis/gui_modifiers")
     private val gson = GsonBuilder().create()
     private val codec = CatharsisCodecs.getCodec<GuiModifier>()

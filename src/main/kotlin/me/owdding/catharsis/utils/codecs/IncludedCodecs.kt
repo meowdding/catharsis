@@ -4,12 +4,15 @@ import com.mojang.serialization.Codec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.core.registries.BuiltInRegistries
+import net.minecraft.network.chat.Component
 import net.minecraft.network.chat.ComponentSerialization
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.util.ExtraCodecs
+import net.minecraft.world.item.Item
 import org.joml.Quaternionf
 import org.joml.Vector2i
 import org.joml.Vector2ic
+import java.net.URI
 
 object IncludedCodecs {
 
@@ -24,11 +27,11 @@ object IncludedCodecs {
         Codec.INT.fieldOf("height").forGetter(Vector2ic::y),
     ).apply(it, ::Vector2i) }
     @IncludedCodec val quaternionCodec: Codec<Quaternionf> = ExtraCodecs.QUATERNIONF
-    @IncludedCodec val componentCodec = ComponentSerialization.CODEC
-    @IncludedCodec val uriCodec = ExtraCodecs.UNTRUSTED_URI // This is actually "trusted", it requires https and http
+    @IncludedCodec val componentCodec: Codec<Component> = ComponentSerialization.CODEC
+    @IncludedCodec val uriCodec: Codec<URI> = ExtraCodecs.UNTRUSTED_URI // This is actually "trusted", it requires https and http
 
     // Registries
     // TODO this is broken because of the generic
     //@IncludedCodec(keyable = true) val menuCodec = BuiltInRegistries.MENU.byNameCodec()
-    @IncludedCodec val itemCodec = BuiltInRegistries.ITEM.byNameCodec()
+    @IncludedCodec val itemCodec: Codec<Item> = BuiltInRegistries.ITEM.byNameCodec()
 }

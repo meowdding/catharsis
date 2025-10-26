@@ -38,6 +38,13 @@ export default defineConfig({
                 ]
             },
             {
+                text: "Block replacements",
+                link: "/block_replacements/",
+                items: [
+                    {text: "Area", link: "/block_replacements/areas"},
+                ]
+            },
+            {
                 text: "TODO NAME", // also move the file
                 items: [
                     {text: "Data Types", link: "/item_models/data_types"},

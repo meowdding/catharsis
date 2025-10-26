@@ -37,20 +37,6 @@ object AreaManager : SimplePreparableReloadListener<List<Pair<ResourceLocation, 
 
     private val areas: MutableMap<ResourceLocation, AreaDefinition> = mutableMapOf()
 
-    override fun prepare(
-        manager: ResourceManager,
-        profiler: ProfilerFiller,
-    ): List<Pair<ResourceLocation, AreaDefinition>> {
-        return converter.listMatchingResources(manager).mapNotNull { (id, resource) ->
-            val id = converter.fileToId(id)
-            logger.runCatching("Error loading area definition $id") {
-                resource.openAsReader().use { reader ->
-                    id to gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(codec)
-                }
-            }
-        }
-    }
-
     @Subscription
     private fun RegisterCommandsEvent.register() {
         register("catharsis areas") {
@@ -89,6 +75,20 @@ object AreaManager : SimplePreparableReloadListener<List<Pair<ResourceLocation, 
             thenCallback("render disable_all") {
                 enabledDebugRenderers.clear()
                 Text.of("Disabled all area debug renderers!").sendWithPrefix()
+            }
+        }
+    }
+
+    override fun prepare(
+        manager: ResourceManager,
+        profiler: ProfilerFiller,
+    ): List<Pair<ResourceLocation, AreaDefinition>> {
+        return converter.listMatchingResources(manager).mapNotNull { (id, resource) ->
+            val id = converter.fileToId(id)
+            logger.runCatching("Error loading area definition $id") {
+                resource.openAsReader().use { reader ->
+                    id to gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(codec)
+                }
             }
         }
     }

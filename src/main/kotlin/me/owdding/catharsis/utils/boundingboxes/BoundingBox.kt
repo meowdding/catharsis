@@ -17,8 +17,8 @@ data class BoundingBox(
 ) {
 
     companion object {
-        fun encapsulating(iterable: Iterable<BoundingBox>) = encapsulating(iterable.flatMap { listOf(it.max, it.min) })
-        fun encapsulating(iterable: Iterable<Vector3ic>): BoundingBox? {
+        fun encapsulatingBoxes(iterable: Iterable<BoundingBox>) = encapsulatingVectors(iterable.flatMap { listOf(it.max, it.min) })
+        fun encapsulatingVectors(iterable: Iterable<Vector3ic>): BoundingBox? {
             val iterator = iterable.iterator()
             if (iterator.hasNext()) {
                 val min = iterator.next().mutableCopy()

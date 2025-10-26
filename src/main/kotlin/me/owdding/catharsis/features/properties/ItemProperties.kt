@@ -10,23 +10,24 @@ import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 object ItemProperties {
 
     @Subscription
-    fun onBooleanProperties(event: BootstrapConditionalPropertiesEvent) {
-        event.register(HoveredItemProperty.ID, HoveredItemProperty.CODEC)
-        event.register(DataTypeProperties.ID, DataTypeProperties.ConditionalDataTypeItemProperty.CODEC)
-        event.register(AnyConditionalItemProperty.ID, AnyConditionalItemProperty.CODEC)
-        event.register(AllConditionalItemProperty.ID, AllConditionalItemProperty.CODEC)
+    private fun BootstrapConditionalPropertiesEvent.onBooleanProperties() {
+        register(HoveredItemProperty.ID, HoveredItemProperty.CODEC)
+        register(DataTypeProperties.ID, DataTypeProperties.ConditionalDataTypeItemProperty.CODEC)
+        register(AnyConditionalItemProperty.ID, AnyConditionalItemProperty.CODEC)
+        register(AllConditionalItemProperty.ID, AllConditionalItemProperty.CODEC)
+        register(InAreaProperty.ID, InAreaProperty.CODEC)
     }
 
     @Subscription
-    fun onSelectProperties(event: BootstrapSelectPropertiesEvent) {
-        event.register(DataTypeProperties.ID, DataTypeProperties.SelectDataTypeItemProperty.TYPE)
-        event.register(SkyBlockIslandProperty.ID, SkyBlockIslandProperty.TYPE)
-        event.register(SkyBlockAreaProperty.ID, SkyBlockAreaProperty.TYPE)
-        event.register(ItemModelProperty.ID, ItemModelProperty.TYPE)
+    private fun BootstrapSelectPropertiesEvent.onSelectProperties() {
+        register(DataTypeProperties.ID, DataTypeProperties.SelectDataTypeItemProperty.TYPE)
+        register(SkyBlockIslandProperty.ID, SkyBlockIslandProperty.TYPE)
+        register(SkyBlockAreaProperty.ID, SkyBlockAreaProperty.TYPE)
+        register(ItemModelProperty.ID, ItemModelProperty.TYPE)
     }
 
     @Subscription
-    fun onRangeProperties(event: BootstrapNumericPropertiesEvent) {
-        event.register(DataTypeProperties.ID, DataTypeProperties.RangeDataTypeItemProperty.CODEC)
+    private fun BootstrapNumericPropertiesEvent.onRangeProperties() {
+        register(DataTypeProperties.ID, DataTypeProperties.RangeDataTypeItemProperty.CODEC)
     }
 }

@@ -105,8 +105,8 @@ data class BoundingBox(
     val zSpan get() = max.z - min.z + 1
     val center: Vector3i get() = min.mutableCopy().add(max.mutableCopy().sub(min).div(2).add(1, 1, 1))
 
-    operator fun contains(pos: Vector3i) = (pos.x <= min.x && pos.x >= max.x) && (pos.y <= min.y && pos.y >= max.y) && (pos.z <= min.z && pos.z >= max.z)
-    operator fun contains(pos: Vec3i) = (pos.x <= min.x && pos.x >= max.x) && (pos.y <= min.y && pos.y >= max.y) && (pos.z <= min.z && pos.z >= max.z)
+    operator fun contains(pos: Vector3i) = (pos.x >= min.x && pos.x <= max.x) && (pos.y >= min.y && pos.y <= max.y) && (pos.z >= min.z && pos.z <= max.z)
+    operator fun contains(pos: Vec3i) = (pos.x >= min.x && pos.x <= max.x) && (pos.y >= min.y && pos.y <= max.y) && (pos.z >= min.z && pos.z <= max.z)
 
     fun intersects(other: BoundingBox) =
         max.x >= other.min.x && min.x <= other.max.x && max.z >= other.min.z && min.z <= other.max.z && max.y >= other.min.y && min.y <= other.max.y

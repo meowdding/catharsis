@@ -22,16 +22,18 @@ interface AreaDefinition {
 data class SimpleAreaDefinition(
     @Compact val islands: List<SkyBlockIsland>?,
     @Compact val boxes: List<BoundingBox>,
-    @IntRange(4) val minSize: Int = 8
+    @IntRange(4) val minSize: Int = 8,
 ) : AreaDefinition {
-    override val tree = Octree(boxes, minSize)
+    override val tree: Octree? = Octree(boxes, minSize)
+        get() = field.takeIf { islands?.contains(LocationAPI.island) != false }
+
     override fun codec(): MapCodec<SimpleAreaDefinition> = CatharsisCodecs.getMapCodec()
     override fun contains(blockPos: BlockPos) = tree.takeIf { islands?.contains(LocationAPI.island) != false }?.contains(blockPos) == true
 }
 
 @GenerateCodec
 data class PerIslandAreaDefinition(
-    val entries: List<IslandEntry>
+    val entries: List<IslandEntry>,
 ) : AreaDefinition {
     @Suppress("SENSELESS_COMPARISON")
     val islands = buildMap<SkyBlockIsland, AreaDefinition> {
@@ -50,7 +52,7 @@ data class PerIslandAreaDefinition(
 @GenerateCodec
 data class IslandEntry(
     @Compact val islands: List<SkyBlockIsland>,
-    @Unnamed val definition: AreaDefinition
+    @Unnamed val definition: AreaDefinition,
 )
 
 object AreaDefinitions {

@@ -10,6 +10,7 @@ import me.owdding.catharsis.utils.suggestion.ResourceLocationSuggestionProvider
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.resource.v1.ResourceLoader
 import net.minecraft.commands.arguments.ResourceLocationArgument
+import net.minecraft.core.BlockPos
 import net.minecraft.resources.FileToIdConverter
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.server.packs.PackType
@@ -20,6 +21,7 @@ import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
 import tech.thatgravyboat.skyblockapi.api.events.render.RenderWorldEvent
+import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
@@ -99,6 +101,9 @@ object AreaManager : SimplePreparableReloadListener<List<Pair<ResourceLocation, 
             OctreeDebugRenderer.render(it, this)
         }
     }
+
+    fun isPlayerInArea(id: ResourceLocation): Boolean = McPlayer.self?.blockPosition()?.let { isInArea(it, id) } == true
+    fun isInArea(blockPos: BlockPos, id: ResourceLocation): Boolean = areas[id]?.contains(blockPos) == true
 
     override fun apply(
         elements: List<Pair<ResourceLocation, AreaDefinition>>,

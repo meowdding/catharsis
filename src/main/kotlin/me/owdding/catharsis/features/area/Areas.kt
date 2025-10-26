@@ -29,7 +29,7 @@ import tech.thatgravyboat.skyblockapi.utils.text.TextColor
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 
 @Module
-object AreaManager : SimplePreparableReloadListener<List<Pair<ResourceLocation, AreaDefinition>>>() {
+object Areas : SimplePreparableReloadListener<List<Pair<ResourceLocation, AreaDefinition>>>() {
 
     private val enabledDebugRenderers: MutableSet<ResourceLocation> = mutableSetOf()
     private val logger = Catharsis.featureLogger("Areas")

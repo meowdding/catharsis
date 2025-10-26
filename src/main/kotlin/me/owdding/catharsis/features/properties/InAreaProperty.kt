@@ -2,7 +2,7 @@ package me.owdding.catharsis.features.properties
 
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
-import me.owdding.catharsis.features.area.AreaManager
+import me.owdding.catharsis.features.area.Areas
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.multiplayer.ClientLevel
@@ -30,5 +30,5 @@ data class InAreaProperty(
         entity: LivingEntity?,
         seed: Int,
         displayContext: ItemDisplayContext,
-    ): Boolean = AreaManager.isPlayerInArea(area)
+    ): Boolean = Areas.isPlayerInArea(area)
 }

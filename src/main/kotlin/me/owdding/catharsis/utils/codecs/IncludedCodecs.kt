@@ -35,6 +35,4 @@ object IncludedCodecs {
     // TODO this is broken because of the generic
     //@IncludedCodec(keyable = true) val menuCodec = BuiltInRegistries.MENU.byNameCodec()
     @IncludedCodec val itemCodec: Codec<Item> = BuiltInRegistries.ITEM.byNameCodec()
-
-    @IncludedCodec val skyblockislandCodec: Codec<SkyBlockIsland> = Codec.STRING.xmap(SkyBlockIsland::getById, SkyBlockIsland::id)
 }

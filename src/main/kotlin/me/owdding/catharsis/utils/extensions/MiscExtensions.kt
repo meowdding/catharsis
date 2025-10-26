@@ -1,5 +1,9 @@
 package me.owdding.catharsis.utils.extensions
 
+import com.mojang.serialization.MapCodec
+import net.minecraft.client.multiplayer.CacheSlot
+import net.minecraft.client.multiplayer.ClientLevel
+import net.minecraft.util.RegistryContextSwapper
 import kotlin.reflect.KClass
 import kotlin.time.Duration
 import kotlin.time.DurationUnit
@@ -46,4 +50,14 @@ fun Duration.toReadableTime(biggestUnit: DurationUnit = DurationUnit.DAYS, maxUn
     return filteredUnits.joinToString(", ") { (unit, value) ->
         "$value${unitNames[unit]}"
     }.ifEmpty { "0 seconds" }
+}
+
+fun <Input : Output, Output : Any> createCacheSlot(
+    swapper: RegistryContextSwapper,
+    input: Input,
+    codecGetter: (Input) -> MapCodec<out Input>,
+) : CacheSlot<ClientLevel, Output> {
+    return CacheSlot<ClientLevel, Output> {
+        swapper.swapTo(codecGetter(input).codec(), input.unsafeCast(), it.registryAccess()).result().orElse(input.unsafeCast())
+    }
 }

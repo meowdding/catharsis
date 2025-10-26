@@ -27,5 +27,6 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
     }
 
     fun id(@Pattern("[a-z_0-9\\/.-]+") path: String): ResourceLocation = ResourceLocation.fromNamespaceAndPath("catharsis", path)
+    fun mc(@Pattern("[a-z_0-9\\/.-]+") path: String): ResourceLocation = ResourceLocation.withDefaultNamespace(path)
     fun sbapi(@Pattern("[a-z_0-9\\/.-]+") path: String): ResourceLocation = ResourceLocation.fromNamespaceAndPath(SkyBlockAPI.MOD_ID, path)
 }

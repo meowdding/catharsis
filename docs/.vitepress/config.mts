@@ -29,6 +29,15 @@ export default defineConfig({
                 ]
             },
             {
+                text: "Armor Models",
+                link: "/armor_models/index",
+                items: [
+                    {text: "Texture Armor Model", link: "/armor_models/texture_model"},
+                    {text: "Conditional Armor Model", link: "/armor_models/conditional_model"},
+                    {text: "Range Dispatch Armor Model", link: "/armor_models/range_dispatch_model"},
+                ]
+            },
+            {
                 text: "TODO NAME", // also move the file
                 items: [
                     {text: "Data Types", link: "/item_models/data_types"},

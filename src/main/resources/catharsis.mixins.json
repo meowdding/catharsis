@@ -7,6 +7,8 @@
     "gui.SlotMixin"
   ],
   "client": [
+    "armor.EquipmentLayerRendererMixin",
+    "armor.LivingEntityRenderStateMixin",
     "gui.AbstractContainerScreenElementsMixin",
     "gui.AbstractContainerScreenSlotsMixin",
     "items.AbstractContainerScreenMixin",

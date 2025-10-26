@@ -1,6 +1,5 @@
 package me.owdding.catharsis.utils.boundingboxes
 
-import com.sun.tools.javac.jvm.ByteCodes.ret
 import net.minecraft.core.BlockPos
 import kotlin.math.max
 
@@ -11,7 +10,7 @@ class Octree(val boxes: List<BoundingBox>) {
     private val root: Branch
 
     init {
-        val encapsulatingBox = BoundingBox.encapsulating(boxes)!!
+        val encapsulatingBox = BoundingBox.encapsulatingBoxes(boxes)!!
         val center = encapsulatingBox.center
         val span = max(encapsulatingBox.xSpan, encapsulatingBox.zSpan) / 2 + 5
         root = Branch(BoundingBox(center).inflateBy(span), boxes)

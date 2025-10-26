@@ -1,12 +1,12 @@
 package me.owdding.catharsis.utils.tar
 
 import me.owdding.catharsis.Catharsis
-import me.owdding.catharsis.utils.tar.TarFileReader.readTar
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.server.packs.*
 import net.minecraft.server.packs.repository.Pack
 import net.minecraft.server.packs.resources.IoSupplier
-import java.io.ByteArrayInputStream
+import org.apache.commons.compress.archivers.tar.TarArchiveEntry
+import org.apache.commons.compress.archivers.tar.TarFile
 import java.io.FileInputStream
 import java.io.InputStream
 import java.nio.file.Path
@@ -14,10 +14,10 @@ import java.util.*
 import java.util.zip.GZIPInputStream
 
 class TarResourceSupplier(path: Path) : Pack.ResourcesSupplier {
-    private val fileMap = readTar(
+    private val fileMap = TarFile(
         GZIPInputStream(
             FileInputStream(path.toFile()),
-        ),
+        ).readAllBytes()
     )
 
     override fun openPrimary(location: PackLocationInfo): PackResources {
@@ -50,12 +50,19 @@ private fun getPathFromLocation(packType: PackType, location: ResourceLocation):
     return String.format(Locale.ROOT, "%s/%s/%s", packType.directory, location.namespace, location.path)
 }
 
-class TarPackResources(location: PackLocationInfo, val prefix: String, private val fileMap: Map<String, ByteArray>) : AbstractPackResources(location) {
+class TarPackResources(location: PackLocationInfo, val prefix: String, private val tarFile: TarFile) : AbstractPackResources(location) {
+    private fun getEntryFromName(name: String): TarArchiveEntry? {
+        for (tarEntry in tarFile.entries) {
+            if (tarEntry.name == name) return tarEntry
+        }
+        return null
+    }
 
     fun getResource(path: String): IoSupplier<InputStream>? {
-        val byteArray = fileMap[path] ?: return null
+        val entry = getEntryFromName("./$path")
+        val inputStream = tarFile.getInputStream(entry) ?: return null
         return IoSupplier {
-            ByteArrayInputStream(byteArray)
+            inputStream
         }
     }
 
@@ -90,13 +97,14 @@ class TarPackResources(location: PackLocationInfo, val prefix: String, private v
     ) {
         val namespaceRoot = addPrefix("${packType.directory}/$namespace/")
         val searchDirectory = "$namespaceRoot$path/"
-        for ((fileName, fileData) in fileMap) {
+        for (fileEntry in tarFile.entries) {
+            val fileName = fileEntry.name.removePrefix("./")
             if (fileName.startsWith(searchDirectory)) {
                 val resourcePath = fileName.substring(namespaceRoot.length)
                 val resourceLocation = ResourceLocation.tryBuild(namespace, resourcePath)
                 if (resourceLocation != null) {
                     resourceOutput.accept(resourceLocation) {
-                        ByteArrayInputStream(fileData)
+                        tarFile.getInputStream(fileEntry)
                     }
                 } else {
                     Catharsis.error("Invalid path in pack: $namespace:$resourcePath, ignoring")
@@ -108,7 +116,8 @@ class TarPackResources(location: PackLocationInfo, val prefix: String, private v
     override fun getNamespaces(type: PackType): Set<String> {
         val namespaces = mutableSetOf<String>()
         val prefixedResourceRoot = addPrefix("${type.directory}/")
-        for (fileName in fileMap.keys) {
+        for (fileEntry in tarFile.entries) {
+            val fileName = fileEntry.name.removePrefix("./")
             val namespace = extractNamespace(prefixedResourceRoot, fileName)
             if (namespace.isNotEmpty()) {
                 if (ResourceLocation.isValidNamespace(namespace)) {

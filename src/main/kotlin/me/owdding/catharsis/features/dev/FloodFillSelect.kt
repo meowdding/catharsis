@@ -1,8 +1,13 @@
 package me.owdding.catharsis.features.dev
 
 import com.mojang.brigadier.arguments.IntegerArgumentType
+import me.owdding.catharsis.utils.boundingboxes.BoundingBox
+import me.owdding.catharsis.utils.codecs.PosCodecs
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
+import me.owdding.catharsis.utils.extensions.toBlockPos
 import me.owdding.catharsis.utils.extensions.toReadableTime
+import me.owdding.catharsis.utils.extensions.toVector3i
+import me.owdding.catharsis.utils.extensions.toVector3ic
 import me.owdding.catharsis.utils.suggestion.IterableSuggestionProvider
 import me.owdding.ktmodules.Module
 import net.minecraft.client.renderer.RenderType
@@ -15,9 +20,9 @@ import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
 import net.minecraft.world.level.block.Block
-import net.minecraft.world.level.levelgen.structure.BoundingBox
 import net.minecraft.world.phys.AABB
 import net.minecraft.world.phys.BlockHitResult
+import org.joml.Vector3i
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
@@ -46,8 +51,8 @@ object FloodFillSelect {
         NONE,
     }
 
-    data class Region(val blocks: List<BlockPos>, val aabb: BoundingBox, var highlightType: HighlightType = HighlightType.NONE) {
-        constructor(blocks: List<BlockPos>) : this(blocks, BoundingBox.encapsulatingPositions(blocks).get())
+    data class Region(val blocks: List<Vector3i>, val aabb: BoundingBox, var highlightType: HighlightType = HighlightType.NONE) {
+        constructor(blocks: List<Vector3i>) : this(blocks, BoundingBox.encapsulatingVectors(blocks)!!)
     }
 
     private val finishedRegions = mutableMapOf<UUID, Region>()
@@ -110,7 +115,7 @@ object FloodFillSelect {
             thenCallback("copy blocks uuid", UuidArgument.uuid(), IterableSuggestionProvider(finishedRegions.keys)) {
                 val uuid = argument<UUID>("uuid")!!
                 val blocks = finishedRegions[uuid]!!.blocks
-                val blocksJson = blocks.toJsonOrThrow(BlockPos.CODEC.listOf())
+                val blocksJson = blocks.toJsonOrThrow(PosCodecs.vector3icCodec.listOf())
                 McClient.clipboard = blocksJson.toPrettyString()
                 Text.of("Copied final ${blocks.size} blocks to clipboard!").sendWithPrefix()
             }
@@ -161,7 +166,7 @@ object FloodFillSelect {
                     return@runNextTick
                 }
                 val key = UUID.randomUUID()
-                finishedRegions[key] = Region(blocks)
+                finishedRegions[key] = Region(blocks.map { it.toVector3i() })
                 Text.of("Finished selecting ${blocks.size} in $time!") {
                     append(" [area]") {
                         this.color = TextColor.GREEN
@@ -188,10 +193,10 @@ object FloodFillSelect {
     private fun RenderWorldEvent.AfterTranslucent.render() = atCamera {
         finishedRegions.values.filterNot { it.highlightType == HighlightType.NONE }.forEach {
             if (it.highlightType == HighlightType.INDIVIDUAL) {
-                ShapeRenderer.renderLineBox(poseStack.last(), buffer.getBuffer(RenderType.SECONDARY_BLOCK_OUTLINE), AABB.of(it.aabb), 1f, 1f, 1f, 1f)
+                ShapeRenderer.renderLineBox(poseStack.last(), buffer.getBuffer(RenderType.SECONDARY_BLOCK_OUTLINE), it.aabb.toMinecraftAABB(), 1f, 1f, 1f, 1f)
             } else {
                 it.blocks.forEach {
-                    ShapeRenderer.renderLineBox(poseStack.last(), buffer.getBuffer(RenderType.SECONDARY_BLOCK_OUTLINE), AABB(it), 1f, 1f, 1f, 1f)
+                    ShapeRenderer.renderLineBox(poseStack.last(), buffer.getBuffer(RenderType.SECONDARY_BLOCK_OUTLINE), AABB(it.toBlockPos()), 1f, 1f, 1f, 1f)
                 }
             }
         }

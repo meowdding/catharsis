@@ -3,6 +3,7 @@ package me.owdding.catharsis.utils.codecs
 import com.mojang.datafixers.util.Either
 import com.mojang.serialization.Codec
 import com.mojang.serialization.codecs.RecordCodecBuilder
+import me.owdding.catharsis.utils.extensions.mutableCopy
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.Util
 import net.minecraft.core.BlockPos
@@ -11,8 +12,11 @@ import net.minecraft.world.level.levelgen.structure.BoundingBox
 import net.minecraft.world.phys.AABB
 import net.minecraft.world.phys.Vec3
 import org.joml.Vector3d
+import org.joml.Vector3dc
 import org.joml.Vector3f
+import org.joml.Vector3fc
 import org.joml.Vector3i
+import org.joml.Vector3ic
 import java.util.function.Function
 
 object PosCodecs {
@@ -24,12 +28,15 @@ object PosCodecs {
         { x }, { y }, { z },
     )
 
+    @IncludedCodec val vector3fcCodec: Codec<Vector3fc> = vector3fCodec.xmap({ it }, { it.mutableCopy() })
+
     @IncludedCodec val vector3dCodec: Codec<Vector3d> = createCodec(
         ::Vector3d,
         Codec.DOUBLE,
         String::toDouble,
         { x }, { y }, { z },
     )
+    @IncludedCodec val vector3dcCodec: Codec<Vector3dc> = vector3dCodec.xmap({ it }, { it.mutableCopy() })
 
     @IncludedCodec val vector3iCodec: Codec<Vector3i> = createCodec(
         ::Vector3i,
@@ -37,6 +44,7 @@ object PosCodecs {
         String::toInt,
         { x }, { y }, { z },
     )
+    @IncludedCodec val vector3icCodec: Codec<Vector3ic> = vector3iCodec.xmap({ it }, { it.mutableCopy() })
 
     @IncludedCodec val vec3Codec: Codec<Vec3> = vector3dCodec.xmap({ Vec3(it.x, it.y, it.z) }, { Vector3d(it.x, it.y, it.z) })
     @IncludedCodec val vec3iCodec: Codec<Vec3i> = vector3iCodec.xmap({ Vec3i(it.x, it.y, it.z) }, { Vector3i(it.x, it.y, it.z) })

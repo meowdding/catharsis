@@ -1,7 +1,11 @@
 package me.owdding.catharsis.utils.boundingboxes
 
+import com.mojang.datafixers.util.Either
+import com.mojang.serialization.Codec
+import com.mojang.serialization.codecs.RecordCodecBuilder
+import me.owdding.catharsis.utils.codecs.PosCodecs
 import me.owdding.catharsis.utils.extensions.mutableCopy
-import me.owdding.ktcodecs.GenerateCodec
+import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.core.Vec3i
 import net.minecraft.world.phys.AABB
 import org.joml.Vector3i
@@ -10,13 +14,29 @@ import kotlin.math.max
 import kotlin.math.min
 import net.minecraft.world.level.levelgen.structure.BoundingBox as MinecraftBox
 
-@GenerateCodec
+
 data class BoundingBox(
     val min: Vector3i,
     val max: Vector3i,
 ) {
 
+    constructor(min: Vector3ic, max: Vector3ic) : this(min.mutableCopy(), max.mutableCopy())
+
     companion object {
+        @IncludedCodec
+        val CODEC: Codec<BoundingBox> = Codec.either(
+            RecordCodecBuilder.create {
+                it.group(
+                    PosCodecs.vector3icCodec.fieldOf("min").forGetter(BoundingBox::min),
+                    PosCodecs.vector3icCodec.fieldOf("max").forGetter(BoundingBox::max),
+                ).apply(it, ::BoundingBox)
+            },
+            Codec.either(
+                PosCodecs.vector3icCodec.listOf(2, 2).xmap({ BoundingBox(it[0], it[1]) }, { listOf(it.min, it.max) }),
+                Codec.INT.listOf(6, 6).xmap({ BoundingBox(it[0], it[1], it[2], it[3], it[4], it[5]) }, { listOf(it.min.x, it.min.y, it.min.z, it.max.x, it.max.y, it.max.x) }),
+            ).xmap(Either<BoundingBox, BoundingBox>::unwrap) { Either.left(it) },
+        ).xmap(Either<BoundingBox, BoundingBox>::unwrap) { Either.left(it) }
+
         fun encapsulatingBoxes(iterable: Iterable<BoundingBox>) = encapsulatingVectors(iterable.flatMap { listOf(it.max, it.min) })
         fun encapsulatingVectors(iterable: Iterable<Vector3ic>): BoundingBox? {
             val iterator = iterable.iterator()
@@ -95,5 +115,5 @@ data class BoundingBox(
     fun inflateBy(vec: Vector3ic) = BoundingBox(min.mutableCopy().sub(vec), max.mutableCopy().add(vec))
 
     fun toMinecraftBox() = MinecraftBox(min.x, min.y, min.z, max.x, max.y, max.z)
-    fun toMinecraftAABB() = AABB.of(toMinecraftBox())
+    fun toMinecraftAABB(): AABB = AABB.of(toMinecraftBox())
 }

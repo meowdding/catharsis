@@ -1,5 +1,7 @@
 package me.owdding.catharsis.utils.extensions
 
+import net.minecraft.core.BlockPos
+import net.minecraft.world.phys.Vec3
 import org.joml.*
 
 fun Vector2fc.copy(): Vector2fc = mutableCopy()
@@ -28,3 +30,12 @@ fun Vector4Lc.copy(): Vector4Lc = mutableCopy()
 fun Vector4Lc.mutableCopy(): Vector4L = Vector4L(this)
 fun Vector4dc.copy(): Vector4dc = mutableCopy()
 fun Vector4dc.mutableCopy(): Vector4d = Vector4d(this)
+
+fun BlockPos.toVector3ic(): Vector3ic = toVector3i()
+fun BlockPos.toVector3i(): Vector3i = Vector3i(x, y, z)
+fun Vector3ic.toBlockPos() = BlockPos(x(), y(), z())
+fun Vector3ic.toVec3() = Vec3(toBlockPos())
+
+fun Vec3.toVector3dc(): Vector3dc = toVector3d()
+fun Vec3.toVector3d(): Vector3d = Vector3d(x, y, z)
+fun Vector3dc.toVec3() = Vec3(x(), y(), z())

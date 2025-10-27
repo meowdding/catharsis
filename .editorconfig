@@ -23,7 +23,6 @@ max_line_length = 2000
 indent_size = 2
 
 [*.{json,jsonc,json5}]
-indent_size = 2
 max_line_length = 2000
 
 [*.kt]

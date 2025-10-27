@@ -3,6 +3,7 @@ package me.owdding.catharsis.features.dev
 import com.mojang.brigadier.arguments.IntegerArgumentType
 import me.owdding.catharsis.utils.boundingboxes.BoundingBox
 import me.owdding.catharsis.utils.codecs.PosCodecs
+import me.owdding.catharsis.utils.extensions.pose
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.extensions.toBlockPos
 import me.owdding.catharsis.utils.extensions.toReadableTime
@@ -193,10 +194,10 @@ object FloodFillSelect {
     private fun RenderWorldEvent.AfterTranslucent.render() = atCamera {
         finishedRegions.values.filterNot { it.highlightType == HighlightType.NONE }.forEach {
             if (it.highlightType == HighlightType.INDIVIDUAL) {
-                ShapeRenderer.renderLineBox(poseStack.last(), buffer.getBuffer(RenderType.SECONDARY_BLOCK_OUTLINE), it.aabb.toMinecraftAABB(), 1f, 1f, 1f, 1f)
+                ShapeRenderer.renderLineBox(poseStack.pose(), buffer.getBuffer(RenderType.SECONDARY_BLOCK_OUTLINE), it.aabb.toMinecraftAABB(), 1f, 1f, 1f, 1f)
             } else {
                 it.blocks.forEach {
-                    ShapeRenderer.renderLineBox(poseStack.last(), buffer.getBuffer(RenderType.SECONDARY_BLOCK_OUTLINE), AABB(it.toBlockPos()), 1f, 1f, 1f, 1f)
+                    ShapeRenderer.renderLineBox(poseStack.pose(), buffer.getBuffer(RenderType.SECONDARY_BLOCK_OUTLINE), AABB(it.toBlockPos()), 1f, 1f, 1f, 1f)
                 }
             }
         }

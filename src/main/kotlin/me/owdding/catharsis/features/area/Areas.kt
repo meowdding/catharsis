@@ -4,16 +4,15 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.utils.Utils
 import me.owdding.catharsis.utils.boundingboxes.OctreeDebugRenderer
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.suggestion.ResourceLocationSuggestionProvider
 import me.owdding.ktmodules.Module
-import net.fabricmc.fabric.api.resource.v1.ResourceLoader
 import net.minecraft.commands.arguments.ResourceLocationArgument
 import net.minecraft.core.BlockPos
 import net.minecraft.resources.FileToIdConverter
 import net.minecraft.resources.ResourceLocation
-import net.minecraft.server.packs.PackType
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.profiling.ProfilerFiller
@@ -118,9 +117,6 @@ object Areas : SimplePreparableReloadListener<List<Pair<ResourceLocation, AreaDe
     fun getLoadedAreas(): Map<ResourceLocation, AreaDefinition> = areas
 
     init {
-        ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloader(
-            Catharsis.id("areas"),
-            this,
-        )
+        Utils.registerClientReloadListener(Catharsis.id("areas"), this)
     }
 }

@@ -29,7 +29,9 @@ public class EquipmentLayerRendererMixin {
     }
 
     @ModifyVariable(
-        method = "renderLayers(Lnet/minecraft/client/resources/model/EquipmentClientInfo$LayerType;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/client/model/Model;Ljava/lang/Object;Lnet/minecraft/world/item/ItemStack;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;ILnet/minecraft/resources/ResourceLocation;II)V",
+        method = {
+            "renderLayers(Lnet/minecraft/client/resources/model/EquipmentClientInfo$LayerType;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/client/model/Model;Ljava/lang/Object;Lnet/minecraft/world/item/ItemStack;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;ILnet/minecraft/resources/ResourceLocation;II)V"
+        },
         at = @At("STORE"), ordinal = 1
     )
     private <S> ResourceLocation catharsis$modifyTextureLocation(ResourceLocation original, @Local(argsOnly = true) S renderState, @Local(argsOnly = true) ItemStack stack) {

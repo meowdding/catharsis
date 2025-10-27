@@ -20,17 +20,31 @@ The definition follows the following scheme
 
 ## Supported Types
 
-### `basic`
-> The most basic definition of an area
+### `simple`
+> The most simple type of area.
+> #### Additional fields
+> - `box` One single [bounding box](/misc/schemas#bounding-box)
+> - `islands` (Optional) Either a lost of [skyblock island](/misc/schemas#skyblock-island)
+
+### `multiple`
+> Groups multiple boxes into one area.
 > #### Additional fields
 > - `boxes` Either a list of [bounding boxes](/misc/schemas#bounding-box) or just one bounding box
 > - `islands` (Optional) Either a lost of [skyblock island](/misc/schemas#skyblock-island)
 > - `min_size` Int (optional, at least 4) the lowest size a branch can reach in the tree, before falling over to a leaf.
 
+### `always`
+> Always matches
+
+### `on_island`
+> Always matches while on any island provided.
+> ### Additional fields
+> - `islands` (Optional) Either a lost of [skyblock island](/misc/schemas#skyblock-island)
+
 ### `per_island`
 > Allows to change the definition based on the current island.
 > 
 > #### Addition fields
-> - `entries` A list of area entries, they must also include an `islands` field as described in the basic entry.
+> - `entries` A list of area entries, they must also include an `islands` field as described in the [simple entry](#simple).
 
 

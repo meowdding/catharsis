@@ -1,7 +1,6 @@
 package me.owdding.catharsis.utils.extensions
 
 import com.mojang.blaze3d.vertex.PoseStack
-import net.minecraft.world.entity.LivingEntity
 
 //? >= 1.21.9 {
     fun PoseStack.pose(): PoseStack.Pose = this.last()
@@ -10,5 +9,5 @@ import net.minecraft.world.entity.LivingEntity
 *///?}
 
 //? = 1.21.8
-/*fun LivingEntity.asLivingEntity() = this*/
+/*fun net.minecraft.world.entity.LivingEntity.LivingEntity.asLivingEntity() = this*/
 

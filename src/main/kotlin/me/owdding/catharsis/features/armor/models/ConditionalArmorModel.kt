@@ -3,7 +3,8 @@ package me.owdding.catharsis.features.armor.models
 
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
-import me.owdding.catharsis.utils.extensions.asLivingEntity
+//? = 1.21.8
+/*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
 import me.owdding.catharsis.utils.extensions.createCacheSlot
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperties

@@ -4,6 +4,7 @@ import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.boundingboxes.BoundingBox
+import me.owdding.catharsis.utils.boundingboxes.DebugRenderable
 import me.owdding.catharsis.utils.boundingboxes.Octree
 import me.owdding.ktcodecs.*
 import me.owdding.ktcodecs.IntRange
@@ -15,37 +16,64 @@ import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
 interface AreaDefinition {
     fun codec(): MapCodec<out AreaDefinition>
     fun contains(blockPos: BlockPos): Boolean
-    val tree: Octree?
+    val renderable: DebugRenderable?
+
+    fun <T : Any> T.checkIslands(islands: List<SkyBlockIsland>?) = this.takeIf { islands?.contains(LocationAPI.island) != false }
 }
 
 @GenerateCodec
 data class SimpleAreaDefinition(
     @Compact val islands: List<SkyBlockIsland>?,
+    val box: BoundingBox,
+) : AreaDefinition {
+    override fun codec(): MapCodec<SimpleAreaDefinition> = CatharsisCodecs.getMapCodec()
+    override fun contains(blockPos: BlockPos) = box.checkIslands(islands)?.contains(blockPos) == true
+    override val renderable: DebugRenderable? get() = box.checkIslands(islands)
+}
+
+@GenerateCodec
+data class OnIslandDefinition(
+    @Compact val islands: List<SkyBlockIsland>,
+) : AreaDefinition {
+    override fun codec(): MapCodec<OnIslandDefinition> = CatharsisCodecs.getMapCodec()
+    override fun contains(blockPos: BlockPos) = true.checkIslands(islands) == true
+    override val renderable: DebugRenderable? = null
+}
+
+object AlwaysTrueDefinition : AreaDefinition {
+    override fun codec(): MapCodec<AlwaysTrueDefinition> = MapCodec.unit(AlwaysTrueDefinition)
+    override fun contains(blockPos: BlockPos): Boolean = true
+    override val renderable: DebugRenderable? = null
+}
+
+@GenerateCodec
+data class MultipleAreaDefinition(
+    @Compact val islands: List<SkyBlockIsland>?,
     @Compact val boxes: List<BoundingBox>,
     @IntRange(4) val minSize: Int = 8,
 ) : AreaDefinition {
-    override val tree: Octree? = Octree(boxes, minSize)
-        get() = field.takeIf { islands?.contains(LocationAPI.island) != false }
+    val tree: Octree? = Octree(boxes, minSize)
+        get() = field?.checkIslands(islands)
+    override val renderable: DebugRenderable? get() = tree
 
-    override fun codec(): MapCodec<SimpleAreaDefinition> = CatharsisCodecs.getMapCodec()
-    override fun contains(blockPos: BlockPos) = tree.takeIf { islands?.contains(LocationAPI.island) != false }?.contains(blockPos) == true
+    override fun codec(): MapCodec<MultipleAreaDefinition> = CatharsisCodecs.getMapCodec()
+    override fun contains(blockPos: BlockPos) = tree?.contains(blockPos) == true
 }
 
 @GenerateCodec
 data class PerIslandAreaDefinition(
     val entries: List<IslandEntry>,
 ) : AreaDefinition {
-    @Suppress("SENSELESS_COMPARISON")
     val islands = buildMap<SkyBlockIsland, AreaDefinition> {
         this@PerIslandAreaDefinition.entries.forEach { (islands, definition) ->
             islands.forEach { island ->
-                if (this.containsKey(island) || island == null) throw UnsupportedOperationException("Duplicate island $island!")
+                if (this.containsKey(island)) throw UnsupportedOperationException("Duplicate island $island!")
                 put(island, definition)
             }
         }
     }
-    override val tree: Octree? get() = islands[LocationAPI.island]?.tree
-    override fun codec(): MapCodec<SimpleAreaDefinition> = CatharsisCodecs.getMapCodec()
+    override val renderable: DebugRenderable? get() = islands[LocationAPI.island]?.renderable
+    override fun codec(): MapCodec<MultipleAreaDefinition> = CatharsisCodecs.getMapCodec()
     override fun contains(blockPos: BlockPos): Boolean = islands[LocationAPI.island]?.contains(blockPos) == true
 }
 
@@ -62,8 +90,11 @@ object AreaDefinitions {
     val CODEC: MapCodec<AreaDefinition> = ID_MAPPER.codec(Codec.STRING).dispatchMap(AreaDefinition::codec) { it }
 
     init {
-        ID_MAPPER.put("basic", CatharsisCodecs.getMapCodec<SimpleAreaDefinition>())
+        ID_MAPPER.put("multiple", CatharsisCodecs.getMapCodec<MultipleAreaDefinition>())
         ID_MAPPER.put("per_island", CatharsisCodecs.getMapCodec<PerIslandAreaDefinition>())
+        ID_MAPPER.put("simple", CatharsisCodecs.getMapCodec<SimpleAreaDefinition>())
+        ID_MAPPER.put("on_island", CatharsisCodecs.getMapCodec<OnIslandDefinition>())
+        ID_MAPPER.put("always", AlwaysTrueDefinition.codec())
     }
 
 }

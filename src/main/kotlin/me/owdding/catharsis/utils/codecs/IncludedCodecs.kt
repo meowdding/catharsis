@@ -1,10 +1,12 @@
 package me.owdding.catharsis.utils.codecs
 
 import com.mojang.serialization.Codec
+import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.utils.Utils
 import me.owdding.ktcodecs.IncludedCodec
+import net.minecraft.client.renderer.block.model.BlockModelDefinition
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.network.chat.Component
 import net.minecraft.network.chat.ComponentSerialization
@@ -40,4 +42,5 @@ object IncludedCodecs {
     // TODO this is broken because of the generic
     //@IncludedCodec(keyable = true) val menuCodec = BuiltInRegistries.MENU.byNameCodec()
     @IncludedCodec val itemCodec: Codec<Item> = BuiltInRegistries.ITEM.byNameCodec()
+    @IncludedCodec val blockModelDefinitionCodec: MapCodec<BlockModelDefinition> = MapCodec.assumeMapUnsafe(BlockModelDefinition.CODEC)
 }

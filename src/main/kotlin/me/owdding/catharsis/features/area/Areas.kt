@@ -5,7 +5,6 @@ import com.google.gson.JsonElement
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.Utils
-import me.owdding.catharsis.utils.boundingboxes.OctreeDebugRenderer
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.suggestion.ResourceLocationSuggestionProvider
 import me.owdding.ktmodules.Module
@@ -96,9 +95,7 @@ object Areas : SimplePreparableReloadListener<List<Pair<ResourceLocation, AreaDe
 
     @Subscription
     private fun RenderWorldEvent.AfterTranslucent.renderDebugs() {
-        enabledDebugRenderers.mapNotNull { areas[it]?.tree }.forEach {
-            OctreeDebugRenderer.render(it, this)
-        }
+        enabledDebugRenderers.mapNotNull { areas[it]?.renderable }.forEach { it.render(this) }
     }
 
     fun isPlayerInArea(id: ResourceLocation): Boolean = McPlayer.self?.blockPosition()?.let { isInArea(it, id) } == true

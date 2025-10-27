@@ -1,15 +1,20 @@
 package me.owdding.catharsis.utils.boundingboxes
 
+import com.mojang.blaze3d.vertex.VertexConsumer
 import com.mojang.datafixers.util.Either
 import com.mojang.serialization.Codec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.utils.codecs.PosCodecs
 import me.owdding.catharsis.utils.extensions.mutableCopy
+import me.owdding.catharsis.utils.extensions.pose
 import me.owdding.ktcodecs.IncludedCodec
+import net.minecraft.client.renderer.RenderType
+import net.minecraft.client.renderer.ShapeRenderer
 import net.minecraft.core.Vec3i
 import net.minecraft.world.phys.AABB
 import org.joml.Vector3i
 import org.joml.Vector3ic
+import tech.thatgravyboat.skyblockapi.api.events.render.RenderWorldEvent
 import kotlin.math.max
 import kotlin.math.min
 import net.minecraft.world.level.levelgen.structure.BoundingBox as MinecraftBox
@@ -18,7 +23,7 @@ import net.minecraft.world.level.levelgen.structure.BoundingBox as MinecraftBox
 data class BoundingBox(
     val min: Vector3i,
     val max: Vector3i,
-) {
+) : DebugRenderable {
 
     constructor(min: Vector3ic, max: Vector3ic) : this(min.mutableCopy(), max.mutableCopy())
 
@@ -116,4 +121,16 @@ data class BoundingBox(
 
     fun toMinecraftBox() = MinecraftBox(min.x, min.y, min.z, max.x, max.y, max.z)
     fun toMinecraftAABB(): AABB = AABB.of(toMinecraftBox())
+    override fun render(event: RenderWorldEvent) = event.atCamera {
+        val vertexConsumer: VertexConsumer = event.buffer.getBuffer(RenderType.lines())
+        ShapeRenderer.renderLineBox(
+            event.poseStack.pose(),
+            vertexConsumer,
+            toMinecraftAABB(),
+            1f,
+            1f,
+            1f,
+            1f,
+        )
+    }
 }

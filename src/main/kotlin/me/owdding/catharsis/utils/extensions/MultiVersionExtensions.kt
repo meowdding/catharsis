@@ -9,5 +9,6 @@ import net.minecraft.world.entity.LivingEntity
     /*fun PoseStack.pose() = this
 *///?}
 
-fun LivingEntity.asLivingEntity() = this
+//? = 1.21.8
+/*fun LivingEntity.asLivingEntity() = this*/
 

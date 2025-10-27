@@ -9,5 +9,5 @@ import com.mojang.blaze3d.vertex.PoseStack
 *///?}
 
 //? = 1.21.8
-/*fun net.minecraft.world.entity.LivingEntity.LivingEntity.asLivingEntity() = this*/
+/*fun net.minecraft.world.entity.LivingEntity.asLivingEntity() = this*/
 

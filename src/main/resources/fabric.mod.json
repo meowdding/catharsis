@@ -1,27 +1,27 @@
 {
-    "schemaVersion": 1,
-    "id": "catharsis",
-    "version": "${version}",
-    "name": "Catharsis",
-    "description": "",
-    "authors": [],
-    "contact": {},
-    "license": "MIT",
-    "environment": "*",
-    "icon": "assets/catharsis/icon.png",
-    "entrypoints": {
-        "client": [
-            {
-                "adapter": "kotlin",
-                "value": "me.owdding.catharsis.Catharsis"
-            }
-        ]
-    },
-    "mixins": [
-        "catharsis.mixins.json"
-    ],
-    "depends": {
-        "fabricloader": ">=0.16",
-        "minecraft": ">=${minecraft}"
-    }
+  "schemaVersion": 1,
+  "id": "catharsis",
+  "version": "${version}",
+  "name": "Catharsis",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "icon": "assets/catharsis/icon.png",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "me.owdding.catharsis.Catharsis"
+      }
+    ]
+  },
+  "mixins": [
+    "catharsis.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16",
+    "minecraft": ">=${minecraft}"
+  }
 }

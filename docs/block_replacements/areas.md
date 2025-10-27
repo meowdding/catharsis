@@ -24,13 +24,13 @@ The definition follows the following scheme
 > The most simple type of area.
 > #### Additional fields
 > - `box` One single [bounding box](/misc/schemas#bounding-box)
-> - `islands` (Optional) Either a lost of [skyblock island](/misc/schemas#skyblock-island)
+> - `islands` (Optional) Either one [skyblock island](/misc/schemas#skyblock-island) or list of them
 
 ### `multiple`
 > Groups multiple boxes into one area.
 > #### Additional fields
 > - `boxes` Either a list of [bounding boxes](/misc/schemas#bounding-box) or just one bounding box
-> - `islands` (Optional) Either a lost of [skyblock island](/misc/schemas#skyblock-island)
+> - `islands` (Optional) Either one [skyblock island](/misc/schemas#skyblock-island) or list of them
 > - `min_size` Int (optional, at least 4) the lowest size a branch can reach in the tree, before falling over to a leaf.
 
 ### `always`
@@ -39,7 +39,7 @@ The definition follows the following scheme
 ### `on_island`
 > Always matches while on any island provided.
 > ### Additional fields
-> - `islands` (Optional) Either a lost of [skyblock island](/misc/schemas#skyblock-island)
+> - `islands` (Optional) Either one [skyblock island](/misc/schemas#skyblock-island) or list of them
 
 ### `per_island`
 > Allows to change the definition based on the current island.

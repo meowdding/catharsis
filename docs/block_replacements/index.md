@@ -52,7 +52,8 @@ The random is seeded based on the block position, meaning, while it's random it 
 - <TypeIcon type="float"/> **min**: The min value of the random
 - <TypeIcon type="float"/> **min**: The max value of the random
 - <TypeIcon type="float"/> **threshold**: The min amount to reach to pass the check
-- <TypeIcon type="object"/> **definition**: A [block replacement definition](#definition)
+- <TypeIcon type="object"/> **definition**: The [block replacement definition](#definition) to use if the check passes.
+- <TypeIcon type="object"/> **fallback**: (Optional) The [block replacement definition](#definition) to use if the check fails.
 </TreeView>
 
 ### Per Area (`catharsis:per_area`)

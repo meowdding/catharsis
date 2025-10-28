@@ -3,7 +3,6 @@ package me.owdding.catharsis.features.gui.modifications.elements.interactions
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.gui.screens.ConfirmLinkScreen
-import net.minecraft.client.input.MouseButtonEvent
 import net.minecraft.world.inventory.ClickType
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
@@ -15,7 +14,7 @@ data class GuiLinkWidgetInteraction(
     val url: URI
 ): GuiWidgetInteraction {
     override val codec = CatharsisCodecs.getMapCodec<GuiLinkWidgetInteraction>()
-    override fun click(event: MouseButtonEvent) {
+    override fun click(button: Int) {
         ConfirmLinkScreen.confirmLinkNow(McScreen.self, url)
     }
 }
@@ -25,7 +24,7 @@ data class GuiSlotClickWidgetInteraction(
     val slot: Int
 ): GuiWidgetInteraction {
     override val codec = CatharsisCodecs.getMapCodec<GuiSlotClickWidgetInteraction>()
-    override fun click(event: MouseButtonEvent) {
+    override fun click(button: Int) {
         val menu = McScreen.asMenu?.menu ?: return
         val slotId = menu.getSlot(slot).takeIf { it != null && it.index == slot }?.index ?: return
         val player = McPlayer.self ?: return
@@ -43,7 +42,7 @@ data class GuiCommandWidgetInteraction(
     val command: String
 ): GuiWidgetInteraction {
     override val codec = CatharsisCodecs.getMapCodec<GuiCommandWidgetInteraction>()
-    override fun click(event: MouseButtonEvent) {
+    override fun click(button: Int) {
         McClient.sendCommand(command)
     }
 }

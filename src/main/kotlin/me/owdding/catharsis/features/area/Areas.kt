@@ -4,15 +4,14 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
-import me.owdding.catharsis.utils.boundingboxes.OctreeDebugRenderer
+import me.owdding.catharsis.utils.Utils
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.suggestion.ResourceLocationSuggestionProvider
 import me.owdding.ktmodules.Module
-import net.fabricmc.fabric.api.resource.v1.ResourceLoader
 import net.minecraft.commands.arguments.ResourceLocationArgument
+import net.minecraft.core.BlockPos
 import net.minecraft.resources.FileToIdConverter
 import net.minecraft.resources.ResourceLocation
-import net.minecraft.server.packs.PackType
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.profiling.ProfilerFiller
@@ -20,6 +19,7 @@ import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
 import tech.thatgravyboat.skyblockapi.api.events.render.RenderWorldEvent
+import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
@@ -27,7 +27,7 @@ import tech.thatgravyboat.skyblockapi.utils.text.TextColor
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 
 @Module
-object AreaManager : SimplePreparableReloadListener<List<Pair<ResourceLocation, AreaDefinition>>>() {
+object Areas : SimplePreparableReloadListener<List<Pair<ResourceLocation, AreaDefinition>>>() {
 
     private val enabledDebugRenderers: MutableSet<ResourceLocation> = mutableSetOf()
     private val logger = Catharsis.featureLogger("Areas")
@@ -36,20 +36,6 @@ object AreaManager : SimplePreparableReloadListener<List<Pair<ResourceLocation, 
     private val codec = CatharsisCodecs.getCodec<AreaDefinition>()
 
     private val areas: MutableMap<ResourceLocation, AreaDefinition> = mutableMapOf()
-
-    override fun prepare(
-        manager: ResourceManager,
-        profiler: ProfilerFiller,
-    ): List<Pair<ResourceLocation, AreaDefinition>> {
-        return converter.listMatchingResources(manager).mapNotNull { (id, resource) ->
-            val id = converter.fileToId(id)
-            logger.runCatching("Error loading area definition $id") {
-                resource.openAsReader().use { reader ->
-                    id to gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(codec)
-                }
-            }
-        }
-    }
 
     @Subscription
     private fun RegisterCommandsEvent.register() {
@@ -93,12 +79,27 @@ object AreaManager : SimplePreparableReloadListener<List<Pair<ResourceLocation, 
         }
     }
 
-    @Subscription
-    private fun RenderWorldEvent.AfterTranslucent.renderDebugs() {
-        enabledDebugRenderers.mapNotNull { areas[it]?.tree }.forEach {
-            OctreeDebugRenderer.render(it, this)
+    override fun prepare(
+        manager: ResourceManager,
+        profiler: ProfilerFiller,
+    ): List<Pair<ResourceLocation, AreaDefinition>> {
+        return converter.listMatchingResources(manager).mapNotNull { (id, resource) ->
+            val id = converter.fileToId(id)
+            logger.runCatching("Error loading area definition $id") {
+                resource.openAsReader().use { reader ->
+                    id to gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(codec)
+                }
+            }
         }
     }
+
+    @Subscription
+    private fun RenderWorldEvent.AfterTranslucent.renderDebugs() {
+        enabledDebugRenderers.mapNotNull { areas[it]?.renderable }.forEach { it.render(this) }
+    }
+
+    fun isPlayerInArea(id: ResourceLocation): Boolean = McPlayer.self?.blockPosition()?.let { isInArea(it, id) } == true
+    fun isInArea(blockPos: BlockPos, id: ResourceLocation): Boolean = areas[id]?.contains(blockPos) == true
 
     override fun apply(
         elements: List<Pair<ResourceLocation, AreaDefinition>>,
@@ -113,9 +114,6 @@ object AreaManager : SimplePreparableReloadListener<List<Pair<ResourceLocation, 
     fun getLoadedAreas(): Map<ResourceLocation, AreaDefinition> = areas
 
     init {
-        ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloader(
-            Catharsis.id("areas"),
-            this,
-        )
+        Utils.registerClientReloadListener(Catharsis.id("areas"), this)
     }
 }

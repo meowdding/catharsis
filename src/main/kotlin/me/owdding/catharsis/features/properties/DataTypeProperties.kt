@@ -1,3 +1,4 @@
+//~ item_holder
 package me.owdding.catharsis.features.properties
 
 import com.mojang.serialization.Codec

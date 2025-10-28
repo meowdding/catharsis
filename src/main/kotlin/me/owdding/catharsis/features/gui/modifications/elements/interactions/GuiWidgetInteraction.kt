@@ -5,7 +5,6 @@ import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.IncludedCodec
-import net.minecraft.client.input.MouseButtonEvent
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.util.ExtraCodecs
 
@@ -13,7 +12,7 @@ interface GuiWidgetInteraction {
 
     val codec: MapCodec<out GuiWidgetInteraction>
 
-    fun click(event: MouseButtonEvent)
+    fun click(button: Int)
 }
 
 

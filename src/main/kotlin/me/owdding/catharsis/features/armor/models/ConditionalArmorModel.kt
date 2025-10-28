@@ -1,7 +1,10 @@
+//~ item_holder
 package me.owdding.catharsis.features.armor.models
 
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
+//? = 1.21.8
+/*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
 import me.owdding.catharsis.utils.extensions.createCacheSlot
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperties
@@ -12,6 +15,8 @@ import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemDisplayContext
 import net.minecraft.world.item.ItemStack
+//? = 1.21.8
+/*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
 
 class ConditionalArmorModel(
     private val property: ItemModelPropertyTest,
@@ -42,7 +47,7 @@ class ConditionalArmorModel(
             val slot = createCacheSlot(swapper, property, ConditionalItemModelProperty::type)
 
             return ConditionalArmorModel(
-                {  stack, level, owner, seed, context -> (level?.let(slot::compute) ?: property).get(stack, level, owner?.asLivingEntity(), seed, context) },
+                {  stack, level, owner, seed, context -> (level?.let(slot::compute) ?: property).get(stack, level, owner, seed, context) },
                 onTrue.bake(swapper),
                 onFalse.bake(swapper),
             )

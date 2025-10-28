@@ -5,12 +5,11 @@ import com.google.gson.JsonElement
 import com.mojang.serialization.JsonOps
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.utils.Utils
 import me.owdding.ktmodules.Module
-import net.fabricmc.fabric.api.resource.v1.ResourceLoader
 import net.minecraft.client.multiplayer.ClientRegistryLayer
 import net.minecraft.resources.FileToIdConverter
 import net.minecraft.resources.ResourceLocation
-import net.minecraft.server.packs.PackType
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.PlaceholderLookupProvider
@@ -54,9 +53,6 @@ object ArmorDefinitions : SimplePreparableReloadListener<Map<ResourceLocation, A
     }
 
     init {
-        ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloader(
-            Catharsis.id("armor_definitions"),
-            this
-        )
+        Utils.registerClientReloadListener(Catharsis.id("armor_definitions"), this)
     }
 }

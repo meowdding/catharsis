@@ -6,6 +6,7 @@ import me.owdding.catharsis.features.gui.modifications.elements.GuiElementRender
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.navigation.ScreenRectangle;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+//? >= 1.21.9
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import org.spongepowered.asm.mixin.Final;
@@ -59,17 +60,34 @@ public abstract class AbstractContainerScreenElementsMixin<T extends AbstractCon
         modifier.renderElements(GuiElementRenderLayer.FOREGROUND, guiGraphics, mouseX, mouseY, partialTick, this.catharsis$bounds);
     }
 
+
+    //? if >= 1.21.9 {
     @Inject(method = "mouseClicked", at = @At("HEAD"))
     private void catharsis$onMouseClicked(MouseButtonEvent event, boolean isDoubleClick, CallbackInfoReturnable<Boolean> cir) {
         var modifier = GuiModifiers.getActiveModifier();
         if (modifier == null || this.catharsis$bounds == null) return;
-        modifier.handleInteraction(event, true, this.catharsis$bounds);
+        modifier.handleInteraction(event.x(), event.y(), event.button(), true, this.catharsis$bounds);
     }
 
     @Inject(method = "mouseReleased", at = @At("HEAD"))
     private void catharsis$onMouseReleased(MouseButtonEvent event, CallbackInfoReturnable<Boolean> cir) {
         var modifier = GuiModifiers.getActiveModifier();
         if (modifier == null || this.catharsis$bounds == null) return;
-        modifier.handleInteraction(event, false, this.catharsis$bounds);
+        modifier.handleInteraction(event.x(), event.y(), event.button(), false, this.catharsis$bounds);
     }
+    //?} else {
+    /*@Inject(method = "mouseClicked", at = @At("HEAD"))
+    private void catharsis$onMouseClicked(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> cir) {
+        var modifier = GuiModifiers.getActiveModifier();
+        if (modifier == null || this.catharsis$bounds == null) return;
+        modifier.handleInteraction(mouseX, mouseY, button, true, this.catharsis$bounds);
+    }
+
+    @Inject(method = "mouseReleased", at = @At("HEAD"))
+    private void catharsis$onMouseReleased(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> cir) {
+        var modifier = GuiModifiers.getActiveModifier();
+        if (modifier == null || this.catharsis$bounds == null) return;
+        modifier.handleInteraction(mouseX, mouseY, button, false, this.catharsis$bounds);
+    }
+    *///?}
 }

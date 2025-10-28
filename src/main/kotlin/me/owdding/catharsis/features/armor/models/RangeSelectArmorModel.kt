@@ -1,3 +1,4 @@
+//~ item_holder
 package me.owdding.catharsis.features.armor.models
 
 import com.mojang.serialization.Codec
@@ -12,6 +13,8 @@ import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemStack
 import java.util.*
 import kotlin.jvm.optionals.getOrNull
+//? = 1.21.8
+/*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
 
 class RangeSelectArmorModel(
     private val property: RangeSelectItemModelProperty,

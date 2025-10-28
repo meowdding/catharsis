@@ -1,6 +1,7 @@
 package me.owdding.catharsis.utils.boundingboxes
 
 import com.mojang.blaze3d.vertex.VertexConsumer
+import me.owdding.catharsis.utils.extensions.pose
 import net.minecraft.client.renderer.RenderType
 import net.minecraft.client.renderer.ShapeRenderer
 import net.minecraft.core.BlockPos
@@ -20,7 +21,7 @@ object OctreeDebugRenderer {
         octree.boxes.forEach {
             val vertexConsumer: VertexConsumer = event.buffer.getBuffer(RenderType.lines())
             ShapeRenderer.renderLineBox(
-                event.poseStack.last(),
+                event.poseStack.pose(),
                 vertexConsumer,
                 it.toMinecraftAABB().move(-camX, -camY, -camZ),
                 1.0f,
@@ -47,7 +48,7 @@ object OctreeDebugRenderer {
         val camY = event.cameraPosition.y
         val camZ = event.cameraPosition.z
         ShapeRenderer.renderLineBox(
-            event.poseStack.last(),
+            event.poseStack.pose(),
             vertexConsumer,
             AABB.move(-camX, -camY, -camZ),
             getColorComponent(colorValue, 0.3f),

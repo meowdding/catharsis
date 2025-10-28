@@ -6,11 +6,10 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.gui.definitions.GuiDefinitions
 import me.owdding.catharsis.features.gui.modifications.conditions.GuiModDefinitionCondition
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.utils.Utils
 import me.owdding.ktmodules.Module
-import net.fabricmc.fabric.api.resource.v1.ResourceLoader
 import net.minecraft.resources.FileToIdConverter
 import net.minecraft.resources.ResourceLocation
-import net.minecraft.server.packs.PackType
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.profiling.ProfilerFiller
@@ -57,9 +56,6 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
     }
 
     init {
-        ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloader(
-            Catharsis.id("gui_modifiers"),
-            this,
-        )
+        Utils.registerClientReloadListener(Catharsis.id("gui_modifiers"), this)
     }
 }

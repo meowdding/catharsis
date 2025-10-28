@@ -1,10 +1,10 @@
 package me.owdding.catharsis.utils.boundingboxes
 
 import net.minecraft.core.BlockPos
+import tech.thatgravyboat.skyblockapi.api.events.render.RenderWorldEvent
 import kotlin.math.max
-import kotlin.math.min
 
-data class Octree(val boxes: List<BoundingBox>, val minSize: Int) {
+data class Octree(val boxes: List<BoundingBox>, val minSize: Int) : DebugRenderable {
 
     constructor(vararg boxes: BoundingBox, minSize: Int) : this(listOf(*boxes), minSize)
 
@@ -37,6 +37,7 @@ data class Octree(val boxes: List<BoundingBox>, val minSize: Int) {
     }
 
     operator fun contains(pos: BlockPos): Boolean = isInside(pos)
+    override fun render(event: RenderWorldEvent) = OctreeDebugRenderer.render(this, event)
 }
 
 interface Node {

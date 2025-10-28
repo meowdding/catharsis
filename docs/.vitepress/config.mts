@@ -31,10 +31,12 @@ export default defineConfig({
             {
                 text: "Armor Models",
                 link: "/armor_models/index",
+            },
+            {
+                text: "Block replacements",
+                link: "/block_replacements/",
                 items: [
-                    {text: "Texture Armor Model", link: "/armor_models/texture_model"},
-                    {text: "Conditional Armor Model", link: "/armor_models/conditional_model"},
-                    {text: "Range Dispatch Armor Model", link: "/armor_models/range_dispatch_model"},
+                    {text: "Area", link: "/block_replacements/areas"},
                 ]
             },
             {
@@ -54,6 +56,10 @@ export default defineConfig({
 
         socialLinks: [
             {icon: 'github', link: 'https://github.com/meowdding/catharsis'}
-        ]
+        ],
+
+        footer: {
+            message: 'Tree view icons from the <a href="https://minecraft.wiki" target="_blank">Minecraft.wiki</a>',
+        }
     }
 })

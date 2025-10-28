@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.gui.modifications
 
+//? >= 1.21.9
 import com.mojang.blaze3d.platform.cursor.CursorTypes
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap
@@ -13,7 +14,6 @@ import me.owdding.ktcodecs.NamedCodec
 import net.minecraft.Util
 import net.minecraft.client.gui.GuiGraphics
 import net.minecraft.client.gui.navigation.ScreenRectangle
-import net.minecraft.client.input.MouseButtonEvent
 import org.joml.Vector2i
 
 @GenerateCodec
@@ -54,17 +54,18 @@ data class GuiModifier(
         val elements = elementsByLayer[layer] ?: return
         for (element in elements) {
             if (element is GuiWidgetElement && element.isHovered(mouseX, mouseY, bounds)) {
+                //? >= 1.21.9
                 graphics.requestCursor(CursorTypes.POINTING_HAND)
             }
             element.render(graphics, mouseX, mouseY, partialTicks, bounds)
         }
     }
 
-    fun handleInteraction(event: MouseButtonEvent, mouseDown: Boolean, bounds: ScreenRectangle): Boolean {
+    fun handleInteraction(x: Double, y: Double, button: Int, mouseDown: Boolean, bounds: ScreenRectangle): Boolean {
         for (element in widgets) {
-            if (element.isHovered(event.x().toInt(), event.y().toInt(), bounds)) {
+            if (element.isHovered(x.toInt(), y.toInt(), bounds)) {
                 if (mouseDown) {
-                    element.onClick(event)
+                    element.onClick(button)
                 }
                 return true
             }

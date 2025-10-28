@@ -12,7 +12,10 @@
     "items.AbstractContainerScreenMixin",
     "items.ItemModelResolverMixin",
     "items.ModelManagerMixin",
-    "textures.TextureManagerMixin"
+    "textures.TextureManagerMixin",
+    "pack.FolderPackDetectorMixin",
+    "pack.PackDetectorMixin",
+    "pack.PackSelectionScreenDropMixin"
   ],
   "injectors": {
     "defaultRequire": 1

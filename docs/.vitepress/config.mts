@@ -36,6 +36,7 @@ export default defineConfig({
                 text: "Block replacements",
                 link: "/block_replacements/",
                 items: [
+                    {text: "Virtual Block States", link: "/block_replacements/virtual_block_states"},
                     {text: "Area", link: "/block_replacements/areas"},
                 ]
             },

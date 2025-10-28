@@ -11,12 +11,16 @@
     "gui.SlotMixin",
     "items.AbstractContainerScreenMixin",
     "items.ItemModelResolverMixin",
-    "items.ModelManagerMixin"
+    "items.ModelManagerMixin",
+    "textures.TextureManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "overwrites": {
     "requireAnnotations": true
+  },
+  "mixinextras": {
+    "minVersion": "0.5.0"
   }
 }

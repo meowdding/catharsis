@@ -1,7 +1,18 @@
-<script setup></script>
+<script setup>
+const props = defineProps({
+    collapsable: {
+        type: Boolean,
+        required: false
+    }
+})
+</script>
 
 <template>
-    <div class="tree-view">
+    <details v-if="props.collapsable" class="tree-view">
+        <summary><slot name="title"/><span class="collapsable-button"/></summary>
+        <slot/>
+    </details>
+    <div v-else class="tree-view">
         <slot/>
     </div>
 </template>
@@ -50,6 +61,32 @@
 
     li:last-child:before {
         border-left: 1px solid var(--vp-c-text-1);
+    }
+
+    details {
+        & > summary {
+            position: relative;
+            margin: 0;
+
+            &::marker {
+                content: "";
+            }
+
+            .collapsable-button:before {
+                content: " [Show]";
+                cursor: pointer;
+
+                font-weight: bold;
+            }
+
+            .collapsable-button:hover:before {
+                color: var(--vp-c-indigo-1);
+            }
+        }
+
+        &[open] > summary .collapsable-button:before {
+            content: " [Hide]";
+        }
     }
 }
 </style>

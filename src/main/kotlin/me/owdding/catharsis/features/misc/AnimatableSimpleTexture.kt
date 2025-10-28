@@ -82,6 +82,9 @@ class AnimatableSimpleTexture(location: ResourceLocation) : SimpleTexture(locati
         super.close()
         this.contents?.close()
         this.ticker?.close()
+
+        this.ticker = null
+        this.contents = null
     }
 
     companion object {

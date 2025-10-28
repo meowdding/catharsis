@@ -137,3 +137,8 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+
+/* For some reason vitepress disallows sidebar and footer at the same time */
+.VPFooter {
+    display: block !important;
+}

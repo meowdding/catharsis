@@ -3,8 +3,7 @@ import type {Theme} from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 
-import TreeView from "../../components/tree-view.vue";
-import TypeIcon from "../../components/type-icon.vue";
+import {CustomComponents} from "../../components/mod";
 
 export default {
   extends: DefaultTheme,
@@ -12,7 +11,8 @@ export default {
     return h(DefaultTheme.Layout, null, {})
   },
   enhanceApp({ app, router, siteData }) {
-    app.component("TreeView", TreeView)
-    app.component("TypeIcon", TypeIcon)
+      Object.entries(CustomComponents).forEach(([key, value]) => {
+          app.component(key, value)
+      })
   }
 } satisfies Theme

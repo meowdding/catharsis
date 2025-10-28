@@ -14,7 +14,8 @@
     "items.ModelManagerMixin",
     "textures.TextureManagerMixin",
     "pack.FolderPackDetectorMixin",
-    "pack.PackDetectorMixin"
+    "pack.PackDetectorMixin",
+    "pack.PackSelectionScreenDropMixin"
   ],
   "injectors": {
     "defaultRequire": 1

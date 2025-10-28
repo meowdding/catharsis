@@ -46,6 +46,7 @@ dependencies {
     modImplementation(versionedCatalog["placeholders"])
     include(versionedCatalog["placeholders"])
     modImplementation(libs.fabric.loader)
+    modImplementation(libs.repo.lib)
     modImplementation(libs.fabric.language.kotlin)
     modImplementation(versionedCatalog["fabric.api"])
     compileOnly(libs.meowdding.ktmodules)

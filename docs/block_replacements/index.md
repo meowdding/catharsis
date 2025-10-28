@@ -42,8 +42,8 @@ A simple redirect, replacing one block state with another one.
 
 ### Random (`catharsis:random`)
 
-Allows for adding randomness into block replacements. <br>
-The random is seeded based on the block position, meaning, while it's random it is consistent for one block. *Resourcepack ordering might affect the result*.
+Allows for random block replacements. <br>
+The random is seeded based on the blocks position, meaning, while it's random it is consistent for each block. *Resource pack ordering may affect the result!*
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>random</b> object</span>

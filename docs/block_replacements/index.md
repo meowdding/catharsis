@@ -3,7 +3,7 @@ title: Block replacements
 lang: en-US
 next: # we need to hardcode these bc the "next page" button is broken on index pages
     text: Virtual block states
-    link: /block_replacements/virtual_block_state
+    link: /block_replacements/virtual_block_states
 ---
 
 

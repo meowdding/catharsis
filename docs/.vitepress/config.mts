@@ -11,6 +11,7 @@ export default defineConfig({
             {text: 'Home', link: '/'},
         ],
 
+
         sidebar: [
             {
                 text: "Getting started",
@@ -61,6 +62,10 @@ export default defineConfig({
 
         footer: {
             message: 'Tree view icons from the <a href="https://minecraft.wiki" target="_blank">Minecraft.wiki</a>',
+        },
+
+        editLink: {
+            pattern: 'https://github.com/meowdding/catharsis/edit/main/docs/:path'
         }
     }
 })

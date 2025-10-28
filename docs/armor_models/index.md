@@ -1,9 +1,12 @@
 ---
 title: Armor Models
 lang: en-US
-next: # we need to hardcode these bc the "next page" button is broken on index pages
-    text: Texture Armor Model
-    link: /armor_models/texture_model
+next: # we need to hardcode these bc the "next/previous page" button is broken on index pages
+    text: Block Replacements
+    link: /block_replacements
+prev:
+    text: Item Models
+    link: /item_models
 ---
 
 # Armor Models

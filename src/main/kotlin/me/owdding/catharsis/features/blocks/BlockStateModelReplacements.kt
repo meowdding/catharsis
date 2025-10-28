@@ -10,6 +10,7 @@ import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.client.resources.model.ResolvableModel
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
+import net.minecraft.util.Mth
 import net.minecraft.util.RandomSource
 import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.Block
@@ -53,7 +54,7 @@ data class BlockStateModelReplacement(
     }
 
     override fun particleSprite(blockView: BlockAndTintGetter, pos: BlockPos, state: BlockState): TextureAtlasSprite? {
-        val random = RandomSource.create(pos.asLong())
+        val random = RandomSource.create(Mth.getSeed(pos))
         val replacement = replacementSelector.select(state, pos, random)
         val model = replacement?.models[state]
         if (model != null) {

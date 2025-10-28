@@ -6,7 +6,6 @@ import com.mojang.serialization.Codec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.extensions.mapBothNotNull
-import me.owdding.catharsis.utils.extensions.mapValuesNotNull
 import me.owdding.catharsis.utils.fabric.PreparingModelLoadingPlugin
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin
@@ -52,17 +51,18 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     }
 
     fun loadBlockReplacements(resourceManager: ResourceManager): Map<ResourceLocation, LayeredBlockReplacements.Completable> {
-        return blockReplacementConverter.listMatchingResourceStacks(resourceManager).mapValuesNotNull { (id, value) ->
-            LayeredBlockReplacements.Completable(
+        return blockReplacementConverter.listMatchingResourceStacks(resourceManager).mapBothNotNull { (id, value) ->
+            val replacements = LayeredBlockReplacements.Completable(
                 value.mapNotNull {
                     logger.runCatching("Error loading block replacement definition $id") {
                         it.openAsReader().use { reader ->
                             gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(blockDefinitionCodec)
                         }
                     }
-                }.toList(),
+                },
             ).takeUnless { it.definitions.isEmpty() }
-        }.mapKeys { blockReplacementConverter.fileToId(it.key) }
+            blockReplacementConverter.fileToId(id) to replacements
+        }
     }
 
     fun loadBlockStates(resourceManager: ResourceManager, map: Map<ResourceLocation, LayeredBlockReplacements.Completable>): Map<Block, LayeredBlockReplacements> {

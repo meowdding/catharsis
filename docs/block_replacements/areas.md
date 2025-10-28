@@ -16,7 +16,7 @@ The definition follows the following scheme
 <span><TypeIcon type="object"/> An <b>Area definition</b> object</span>
 
 - <TypeIcon type="string"/> **type**: One of the area definition types defined below
-- Additional fields depending on the value of type, see the respective model type documentation for more details.
+- Additional fields depending on the value of type, see the respective area type documentation for more details.
 
 </TreeView>
 
@@ -83,7 +83,7 @@ Allows to change the definition based on the current island.
     - <TypeIcon type="array"/> **islands**: A list of skyblock islands
         - <Island/>
     - <TypeIcon type="string"/> **type**: One of the [area definition types](#supported-types)
-    - Additional fields depending on the value of type, see the respective model type documentation for more details.
+    - Additional fields depending on the value of type, see the respective area type documentation for more details.
 
 </TreeView>
 

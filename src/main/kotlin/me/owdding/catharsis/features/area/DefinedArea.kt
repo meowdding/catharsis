@@ -2,13 +2,16 @@ package me.owdding.catharsis.features.area
 
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
+import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.boundingboxes.BoundingBox
 import me.owdding.catharsis.utils.boundingboxes.DebugRenderable
 import me.owdding.catharsis.utils.boundingboxes.Octree
+import me.owdding.catharsis.utils.codecs.IncludedCodecs
 import me.owdding.ktcodecs.*
 import me.owdding.ktcodecs.IntRange
 import net.minecraft.core.BlockPos
+import net.minecraft.resources.ResourceLocation
 import net.minecraft.util.ExtraCodecs
 import tech.thatgravyboat.skyblockapi.api.location.LocationAPI
 import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
@@ -84,17 +87,17 @@ data class IslandEntry(
 )
 
 object AreaDefinitions {
-    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<String, MapCodec<out AreaDefinition>>()
+    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<ResourceLocation, MapCodec<out AreaDefinition>>()
 
     @IncludedCodec
-    val CODEC: MapCodec<AreaDefinition> = ID_MAPPER.codec(Codec.STRING).dispatchMap(AreaDefinition::codec) { it }
+    val CODEC: MapCodec<AreaDefinition> = ID_MAPPER.codec(IncludedCodecs.catharsisResourceLocation).dispatchMap(AreaDefinition::codec) { it }
 
     init {
-        ID_MAPPER.put("multiple", CatharsisCodecs.getMapCodec<MultipleAreaDefinition>())
-        ID_MAPPER.put("per_island", CatharsisCodecs.getMapCodec<PerIslandAreaDefinition>())
-        ID_MAPPER.put("simple", CatharsisCodecs.getMapCodec<SimpleAreaDefinition>())
-        ID_MAPPER.put("on_island", CatharsisCodecs.getMapCodec<OnIslandDefinition>())
-        ID_MAPPER.put("always", AlwaysTrueDefinition.codec())
+        ID_MAPPER.put(Catharsis.id("multiple"), CatharsisCodecs.getMapCodec<MultipleAreaDefinition>())
+        ID_MAPPER.put(Catharsis.id("per_island"), CatharsisCodecs.getMapCodec<PerIslandAreaDefinition>())
+        ID_MAPPER.put(Catharsis.id("simple"), CatharsisCodecs.getMapCodec<SimpleAreaDefinition>())
+        ID_MAPPER.put(Catharsis.id("on_island"), CatharsisCodecs.getMapCodec<OnIslandDefinition>())
+        ID_MAPPER.put(Catharsis.id("always"), AlwaysTrueDefinition.codec())
     }
 
 }

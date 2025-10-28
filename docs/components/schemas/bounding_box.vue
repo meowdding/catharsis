@@ -4,22 +4,19 @@ import Position from "./position.vue";
 import TreeView from "../tree-view.vue";
 
 const props = defineProps({
-    positionType: {
-        type: String,
-        required: true
-    },
-    customText: {
-        type: String,
+    custom_title: {
+        type: Boolean,
         required: false
     }
 })
 </script>
 <template>
     <TreeView collapsable>
-        <template #title>
-            <TypeIcon/>
-            &nbsp;
-            <span>A bounding box marking a region in 3d space</span>
+        <template #title v-if="!custom_title">
+            <span><TypeIcon/>&nbsp;A bounding box marking a region in 3d space</span>
+        </template>
+        <template #title v-else>
+            <slot/>
         </template>
         <ul>
             <li><span><TypeIcon type="array"/> An array with two positions</span>

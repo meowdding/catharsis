@@ -12,39 +12,78 @@ You can define areas under `<namespace>/catharsis/areas/<id>.json`
 
 The definition follows the following scheme
 
-```json
-{
-    "type": <type>
-}
-```
+<TreeView>
+<span><TypeIcon type="object"/> An <b>Area definition</b> object</span>
+
+- <TypeIcon type="string"/> **type**: One of the area definition types defined below
+- Additional fields depending on the value of type, see the respective model type documentation for more details.
+
+</TreeView>
 
 ## Supported Types
 
-### `simple`
-> The most simple type of area.
-> #### Additional fields
-> - `box` One single [bounding box](/misc/schemas#bounding-box)
-> - `islands` (Optional) Either one [skyblock island](/misc/schemas#skyblock-island) or list of them
+### Simple (`catharsis:simple`)
+ The most simple type of area.
 
-### `multiple`
-> Groups multiple boxes into one area.
-> #### Additional fields
-> - `boxes` Either a list of [bounding boxes](/misc/schemas#bounding-box) or just one bounding box
-> - `islands` (Optional) Either one [skyblock island](/misc/schemas#skyblock-island) or list of them
-> - `min_size` Int (optional, at least 4) the lowest size a branch can reach in the tree, before falling over to a leaf.
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>simple</b> object</span>
 
-### `always`
-> Always matches
+- <TypeIcon type="string"/> **type**: `catharsis:simple`
+- <BoundingBox custom_title><TypeIcon/> <b>box</b>: One single bounding box</BoundingBox>
+- <TypeIcon type="array"/> <b>islands</b> (Optional) A list of skyblock islands
+    - <Island/>
 
-### `on_island`
-> Always matches while on any island provided.
-> ### Additional fields
-> - `islands` (Optional) Either one [skyblock island](/misc/schemas#skyblock-island) or list of them
+</TreeView>
 
-### `per_island`
-> Allows to change the definition based on the current island.
-> 
-> #### Addition fields
-> - `entries` A list of area entries, they must also include an `islands` field as described in the [simple entry](#simple).
+### Multiple (`catharsis:multiple`)
+Groups multiple boxes into one area.
 
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>multiple</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:multiple`
+- <TypeIcon type="array"/> <b>boxes</b>: A list of bounding boxes
+    - <BoundingBox/>
+- <TypeIcon type="array"/> <b>islands</b>: (Optional) A list of skyblock islands
+    - <Island/>
+- <TypeIcon type="int"/> **min_size**: (Optional, at least 4) The lowest size a branch can reach in the tree, before falling over to a leaf.
+
+</TreeView>
+
+### Always (`catharsis:always`)
+Always matches
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>always</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:always`
+
+</TreeView>
+
+### On Island (`catharsis:on_island`)
+Matches while on island
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>On Island</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:on_island`
+- <TypeIcon type="array"/> **islands**: (Optional) A list of skyblock islands
+    - <Island/>
+
+</TreeView>
+
+### Per Island (`catharsis:per_island`)
+Allows to change the definition based on the current island.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>On Island</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:per_island`
+- <TypeIcon type="object"/> **entries**: A list of area definitions
+    - <TypeIcon type="array"/> **islands**: A list of skyblock islands
+        - <Island/>
+    - <TypeIcon type="string"/> **type**: One of the [area definition types](#supported-types)
+    - Additional fields depending on the value of type, see the respective model type documentation for more details.
+
+</TreeView>
 

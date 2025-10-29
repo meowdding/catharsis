@@ -2,7 +2,7 @@ package me.owdding.catharsis.features.blocks
 
 
 import me.owdding.ktcodecs.GenerateCodec
-import me.owdding.ktcodecs.Unnamed
+import me.owdding.ktcodecs.Inline
 import net.minecraft.client.renderer.block.model.BlockModelDefinition
 import net.minecraft.client.renderer.block.model.BlockStateModel
 import net.minecraft.client.renderer.chunk.ChunkSectionLayer
@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.state.BlockState
 
 @GenerateCodec
 data class VirtualBlockStateDefinition(
-    @Unnamed val model: BlockModelDefinition,
+    @Inline val model: BlockModelDefinition,
     val blend: BlendMode?,
 ) {
 

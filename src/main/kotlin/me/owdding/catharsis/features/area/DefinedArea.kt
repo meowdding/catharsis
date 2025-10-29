@@ -1,6 +1,5 @@
 package me.owdding.catharsis.features.area
 
-import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
@@ -83,7 +82,7 @@ data class PerIslandAreaDefinition(
 @GenerateCodec
 data class IslandEntry(
     @Compact val islands: List<SkyBlockIsland>,
-    @Unnamed val definition: AreaDefinition,
+    @Inline val definition: AreaDefinition,
 )
 
 object AreaDefinitions {

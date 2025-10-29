@@ -12,7 +12,7 @@ meowdding-resources = "1.0.15"
 
 ksp = "2.2.10-2.0.2"
 meowdding-ktmodules = "1.0.5"
-meowdding-ktcodecs = "1.0.32"
+meowdding-ktcodecs = "1.1.0"
 
 [libraries]
 

@@ -35,7 +35,7 @@ as well as armor specific ones such as `catharsis:texture`.
 <span><TypeIcon type="object"/> An <b>Armor Model</b> object</span>
 
 - <TypeIcon type="string"/> **type**: One of `minecraft:condition`, `minecraft:range_dispatch`, or `catharsis:texture`.
-- Additional fields depending on the value of type, see the respective model type documentation for more details.
+- <TypeIcon/> Additional fields depending on the value of type, see the respective model type documentation for more details.
 
 </TreeView>
 

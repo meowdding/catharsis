@@ -2,43 +2,55 @@ package me.owdding.catharsis.utils.geometry
 
 import com.mojang.blaze3d.vertex.PoseStack
 import com.mojang.blaze3d.vertex.VertexConsumer
-import net.minecraft.client.renderer.LightTexture
-import net.minecraft.client.renderer.texture.OverlayTexture
+import net.minecraft.client.model.HumanoidModel
 import net.minecraft.core.Direction
 import net.minecraft.util.Mth
-import org.joml.Quaternionf
-import org.joml.component1
-import org.joml.component2
-import org.joml.component3
+import org.joml.*
 
 private const val DEBUG = false
 
 object BedrockGeometryRenderer {
 
-    fun render(geometry: BakedBedrockGeometry, pose: PoseStack.Pose, consumer: VertexConsumer) {
+    fun render(geometry: BakedBedrockGeometry, model: HumanoidModel<*>, pose: PoseStack.Pose, consumer: VertexConsumer, light: Int, overlay: Int) {
         pose.scale(1f, -1f, 1f)
         pose.translate(0f, -24f / 16f, 0f)
 
         for (bone in geometry.bones) {
-            renderBone(bone, pose, consumer)
+            val humanBone = when (bone.name) {
+                "head" -> model.head
+                "body" -> model.body
+                "right_arm" -> model.rightArm
+                "left_arm" -> model.leftArm
+                "right_leg" -> model.rightLeg
+                "left_leg" -> model.leftLeg
+                else -> null
+            }
+
+            humanBone?.let {
+                bone.rotation.x = it.xRot * Mth.RAD_TO_DEG
+                bone.rotation.y = it.yRot * Mth.RAD_TO_DEG
+                bone.rotation.z = it.zRot * Mth.RAD_TO_DEG
+            }
+
+            renderBone(bone, pose, consumer, light, overlay)
         }
     }
 
-    private fun renderBone(bone: BakedBedrockBone, pose: PoseStack.Pose, consumer: VertexConsumer) {
+    private fun renderBone(bone: BakedBedrockBone, pose: PoseStack.Pose, consumer: VertexConsumer, light: Int, overlay: Int) {
         val pose = pose.copy()
 
         val (rotX, rotY, rotZ) = bone.rotation
         val (pivotX, pivotY, pivotZ) = bone.pivot
 
-        val quaternion = Quaternionf().rotateXYZ(-rotX * Mth.DEG_TO_RAD, rotY * Mth.DEG_TO_RAD, rotZ * Mth.DEG_TO_RAD)
+        val quaternion = Quaternionf().rotateLocalX(-rotX * Mth.DEG_TO_RAD).rotateLocalY(rotY * Mth.DEG_TO_RAD).rotateLocalZ(rotZ * Mth.DEG_TO_RAD)
         pose.rotateAround(quaternion, pivotX / 16f, pivotY / 16f, pivotZ / 16f)
 
         for (cube in bone.cubes) {
-            renderCube(cube, pose, consumer)
+            renderCube(cube, pose, consumer, light, overlay)
         }
 
         for (child in bone.children) {
-            renderBone(child, pose, consumer)
+            renderBone(child, pose, consumer, light, overlay)
         }
     }
 
@@ -55,16 +67,18 @@ object BedrockGeometryRenderer {
         }
     }
 
-    private fun renderCube(cube: BakedBedrockCube, pose: PoseStack.Pose, consumer: VertexConsumer) {
+    private fun renderCube(cube: BakedBedrockCube, pose: PoseStack.Pose, consumer: VertexConsumer, light: Int, overlay: Int) {
         val pose = pose.copy()
 
         val (rotX, rotY, rotZ) = cube.rotation
         val (pivotX, pivotY, pivotZ) = cube.pivot
 
-        val quaternion = Quaternionf().rotateXYZ(-rotX * Mth.DEG_TO_RAD, rotY * Mth.DEG_TO_RAD, rotZ * Mth.DEG_TO_RAD)
-        pose.rotateAround(quaternion, pivotX / 16f, pivotY / 16f, pivotZ / 16f)
+        val quaternion = Quaternionf().rotateZYX(-rotZ * Mth.DEG_TO_RAD, rotY * Mth.DEG_TO_RAD, -rotX * Mth.DEG_TO_RAD)
+            pose.rotateAround(quaternion, pivotX / 16f, pivotY / 16f, pivotZ / 16f)
 
         for (quad in cube.quads) {
+            val normals = pose.transformNormal(quad.direction.opposite.step(), Vector3f())
+
             for (vertex in quad.vertices) {
 
                 if (DEBUG) {
@@ -72,16 +86,13 @@ object BedrockGeometryRenderer {
                         .addVertex(pose, vertex.position.x / 16f, vertex.position.y / 16f, vertex.position.z / 16f)
                         .setColor(quad.direction.color())
                 } else {
-                    val u = if (vertex.uv.x < 0f) 64f - vertex.uv.x else vertex.uv.x
-                    val v = if (vertex.uv.y < 0f) 64f - vertex.uv.y else vertex.uv.y
-
                     consumer
                         .addVertex(pose, vertex.position.x / 16f, vertex.position.y / 16f, vertex.position.z / 16f)
                         .setColor(-1)
-                        .setUv(u / 64f, v / 64f)
-                        .setOverlay(OverlayTexture.NO_OVERLAY)
-                        .setLight(LightTexture.FULL_BRIGHT)
-                        .setNormal(pose, quad.direction.step())
+                        .setUv(vertex.uv.x, vertex.uv.y)
+                        .setOverlay(overlay)
+                        .setLight(light)
+                        .setNormal(pose, normals.x(), normals.y(), normals.z())
                 }
             }
         }

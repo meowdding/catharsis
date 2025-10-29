@@ -25,7 +25,7 @@ data class BakedBedrockBone(
     val parent: String?,
 
     var pivot: Vector3f,
-    val rotation: Vector3f,
+    var rotation: Vector3f,
     val mirror: Boolean,
     val inflate: Float,
     val cubes: List<BakedBedrockCube>,

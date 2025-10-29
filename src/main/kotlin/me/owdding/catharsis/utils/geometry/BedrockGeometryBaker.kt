@@ -8,7 +8,7 @@ import kotlin.jvm.optionals.getOrNull
 object BedrockGeometryBaker {
 
     fun bake(geometry: BedrockGeometry): BakedBedrockGeometry {
-        val parts = geometry.bones.associate { it.name to bakeBone(it) }
+        val parts = geometry.bones.associate { it.name to bakeBone(it, geometry.description) }
         parts.values.forEach { part -> part.parent?.let { parts[it]!!.children.add(part) } }
 
         return BakedBedrockGeometry(
@@ -17,7 +17,7 @@ object BedrockGeometryBaker {
         )
     }
 
-    private fun bakeBone(bone: BedrockBone): BakedBedrockBone {
+    private fun bakeBone(bone: BedrockBone, description: BedrockGeometryDescription): BakedBedrockBone {
         return BakedBedrockBone(
             bone.name,
             bone.parent,
@@ -25,11 +25,11 @@ object BedrockGeometryBaker {
             Vector3f(bone.rotation[0], bone.rotation[1], bone.rotation[2]),
             bone.mirror,
             bone.inflate,
-            bone.cubes.map { bakeCube(bone, it) }
+            bone.cubes.map { bakeCube(bone, it, description) }
         )
     }
 
-    private fun bakeCube(bone: BedrockBone, cube: BedrockCube): BakedBedrockCube {
+    private fun bakeCube(bone: BedrockBone, cube: BedrockCube, description: BedrockGeometryDescription): BakedBedrockCube {
         val uvs = cube.uv?.right()?.getOrNull() ?: error("Boxed UVs are not supported yet.")
 
         val pivot = Vector3f(cube.pivot[0], cube.pivot[1], cube.pivot[2])
@@ -61,14 +61,14 @@ object BedrockGeometryBaker {
         val x1y1z1 = Vector3f(maxX, maxY, maxZ)
         val x0y1z1 = Vector3f(minX, maxY, maxZ)
 
-        val up = bakeQuad(x0y1z0, x1y1z0, x1y1z1, x0y1z1, uvs, mirrored, Direction.UP)
-        val down = bakeQuad(x0y0z0, x1y0z0, x1y0z1, x0y0z1, uvs, mirrored, Direction.DOWN)
+        val up = bakeQuad(x0y1z0, x1y1z0, x1y1z1, x0y1z1, uvs, mirrored, Direction.UP, description)
+        val down = bakeQuad(x0y0z0, x1y0z0, x1y0z1, x0y0z1, uvs, mirrored, Direction.DOWN, description)
 
-        val north = bakeQuad(x0y1z0, x1y1z0, x1y0z0, x0y0z0, uvs, mirrored, Direction.NORTH)
-        val south = bakeQuad(x0y1z1, x1y1z1, x1y0z1, x0y0z1, uvs, mirrored, Direction.SOUTH)
+        val north = bakeQuad(x0y1z0, x1y1z0, x1y0z0, x0y0z0, uvs, mirrored, Direction.NORTH, description)
+        val south = bakeQuad(x0y1z1, x1y1z1, x1y0z1, x0y0z1, uvs, mirrored, Direction.SOUTH, description)
 
-        val west = bakeQuad(x0y1z0, x0y1z1, x0y0z1, x0y0z0, uvs, mirrored, Direction.WEST)
-        val east = bakeQuad(x1y1z0, x1y1z1, x1y0z1, x1y0z0, uvs, mirrored, Direction.EAST)
+        val west = bakeQuad(x0y1z0, x0y1z1, x0y0z1, x0y0z0, uvs, mirrored, Direction.WEST, description)
+        val east = bakeQuad(x1y1z0, x1y1z1, x1y0z1, x1y0z0, uvs, mirrored, Direction.EAST, description)
 
         return BakedBedrockCube(
             pivot,
@@ -77,25 +77,28 @@ object BedrockGeometryBaker {
         )
     }
 
-    private fun bakeQuad(p1: Vector3f, p2: Vector3f, p3: Vector3f, p4: Vector3f, uvs: Map<Direction, UvFace>, mirror: Boolean, direction: Direction): BakedBedrockQuad {
+    private fun bakeQuad(
+        p1: Vector3f, p2: Vector3f, p3: Vector3f, p4: Vector3f,
+        uvs: Map<Direction, UvFace>, mirror: Boolean, direction: Direction, description: BedrockGeometryDescription
+    ): BakedBedrockQuad {
         val direction = if (!mirror && direction.axis == Direction.Axis.X) direction.opposite else direction
 
         val uvOffset = if (direction.axisDirection == Direction.AxisDirection.POSITIVE) 1 else 0
         val uvs = uvs[direction]!!
-        val v1 = BakedBedrockVertex(p1, bakeUv(uvs, 0 + uvOffset, direction.axisDirection))
-        val v2 = BakedBedrockVertex(p2, bakeUv(uvs, 1 - uvOffset, direction.axisDirection))
-        val v3 = BakedBedrockVertex(p3, bakeUv(uvs, 2 + uvOffset, direction.axisDirection))
-        val v4 = BakedBedrockVertex(p4, bakeUv(uvs, 3 - uvOffset, direction.axisDirection))
+        val v1 = BakedBedrockVertex(p1, bakeUv(uvs, 0 + uvOffset, description))
+        val v2 = BakedBedrockVertex(p2, bakeUv(uvs, 1 - uvOffset, description))
+        val v3 = BakedBedrockVertex(p3, bakeUv(uvs, 2 + uvOffset, description))
+        val v4 = BakedBedrockVertex(p4, bakeUv(uvs, 3 - uvOffset, description))
         return BakedBedrockQuad(listOf(v1, v2, v3, v4), direction)
     }
 
-    private fun bakeUv(face: UvFace, index: Int, dir: Direction.AxisDirection): Vector2f {
+    private fun bakeUv(face: UvFace, index: Int, description: BedrockGeometryDescription): Vector2f {
         return when (index % 4) {
             0 -> Vector2f(face.uv[0], face.uv[1])
             1 -> Vector2f(face.uv[0] + face.uvSize[0], face.uv[1])
             2 -> Vector2f(face.uv[0] + face.uvSize[0], face.uv[1] + face.uvSize[1])
             3 -> Vector2f(face.uv[0], face.uv[1] + face.uvSize[1])
             else -> error("Invalid UV index: $index")
-        }
+        }.div(description.textureWidth.toFloat(), description.textureHeight.toFloat())
     }
 }

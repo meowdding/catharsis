@@ -77,7 +77,7 @@ object BedrockGeometryRenderer {
             pose.rotateAround(quaternion, pivotX / 16f, pivotY / 16f, pivotZ / 16f)
 
         for (quad in cube.quads) {
-            val normals = pose.transformNormal(quad.direction.opposite.step(), Vector3f())
+            val normals = pose.transformNormal(quad.direction.step(), Vector3f())
 
             for (vertex in quad.vertices) {
 

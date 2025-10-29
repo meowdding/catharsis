@@ -41,7 +41,7 @@ public class HumanoidArmorModelMixin {
     ) {
         submitNodeCollector.order(1).submitCustomGeometry(
             poseStack,
-            RenderType.entityCutoutNoCull(ResourceLocation.fromNamespaceAndPath("test", "textures/entity/equipment/humanoid/iron.png")),
+            RenderType.entityCutoutNoCull(ResourceLocation.fromNamespaceAndPath("minecraft", "textures/entity/equipment/humanoid/iron_armor.png")),
             (pose, consumer) -> {
 
                 BedrockGeometryRenderer.INSTANCE.render(Catharsis.getModel(), pose, consumer);

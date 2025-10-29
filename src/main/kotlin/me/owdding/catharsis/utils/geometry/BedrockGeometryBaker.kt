@@ -4,7 +4,6 @@ import net.minecraft.core.Direction
 import org.joml.Vector2f
 import org.joml.Vector3f
 import kotlin.jvm.optionals.getOrNull
-import kotlin.math.min
 
 object BedrockGeometryBaker {
 
@@ -81,16 +80,17 @@ object BedrockGeometryBaker {
     private fun bakeQuad(p1: Vector3f, p2: Vector3f, p3: Vector3f, p4: Vector3f, uvs: Map<Direction, UvFace>, mirror: Boolean, direction: Direction): BakedBedrockQuad {
         val direction = if (!mirror && direction.axis == Direction.Axis.X) direction.opposite else direction
 
+        val uvOffset = if (direction.axisDirection == Direction.AxisDirection.POSITIVE) 1 else 0
         val uvs = uvs[direction]!!
-        val v1 = BakedBedrockVertex(p1, bakeUv(uvs, 0, direction.axisDirection))
-        val v2 = BakedBedrockVertex(p2, bakeUv(uvs, 1, direction.axisDirection))
-        val v3 = BakedBedrockVertex(p3, bakeUv(uvs, 2, direction.axisDirection))
-        val v4 = BakedBedrockVertex(p4, bakeUv(uvs, 3, direction.axisDirection))
+        val v1 = BakedBedrockVertex(p1, bakeUv(uvs, 0 + uvOffset, direction.axisDirection))
+        val v2 = BakedBedrockVertex(p2, bakeUv(uvs, 1 - uvOffset, direction.axisDirection))
+        val v3 = BakedBedrockVertex(p3, bakeUv(uvs, 2 + uvOffset, direction.axisDirection))
+        val v4 = BakedBedrockVertex(p4, bakeUv(uvs, 3 - uvOffset, direction.axisDirection))
         return BakedBedrockQuad(listOf(v1, v2, v3, v4), direction)
     }
 
     private fun bakeUv(face: UvFace, index: Int, dir: Direction.AxisDirection): Vector2f {
-        return when (index) {
+        return when (index % 4) {
             0 -> Vector2f(face.uv[0], face.uv[1])
             1 -> Vector2f(face.uv[0] + face.uvSize[0], face.uv[1])
             2 -> Vector2f(face.uv[0] + face.uvSize[0], face.uv[1] + face.uvSize[1])

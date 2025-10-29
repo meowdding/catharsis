@@ -19,7 +19,7 @@ object BedrockGeometryParser {
         val json = GsonHelper.parse(geometry)
         val version = GsonHelper.getAsString(json, "format_version")
         if (version != SUPPORTED_VERSION) {
-            error("Unsupported Bedrock geometry version: $version")
+            //error("Unsupported Bedrock geometry version: $version")
         }
         return json.toDataOrThrow(CODEC)
     }

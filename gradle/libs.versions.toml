@@ -3,7 +3,7 @@
 fabric-loader = "0.17.3"
 fabric-language-kotlin = "1.13.6+kotlin.2.2.20"
 
-skyblockapi = "3.0.10"
+skyblockapi = "3.0.16"
 repo-lib = "3.0.2"
 devauth = "1.2.1"
 

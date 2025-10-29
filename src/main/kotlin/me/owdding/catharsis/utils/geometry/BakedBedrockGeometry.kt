@@ -24,7 +24,7 @@ data class BakedBedrockBone(
     val name: String,
     val parent: String?,
 
-    val pivot: Vector3f,
+    var pivot: Vector3f,
     val rotation: Vector3f,
     val mirror: Boolean,
     val inflate: Float,
@@ -36,4 +36,6 @@ data class BakedBedrockBone(
 data class BakedBedrockGeometry(
     val description: BedrockGeometryDescription,
     val bones: List<BakedBedrockBone>,
-)
+) {
+    fun findByName(name: String) = bones.find { it.name == name }
+}

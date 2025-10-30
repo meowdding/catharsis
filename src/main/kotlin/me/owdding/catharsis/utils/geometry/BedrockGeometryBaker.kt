@@ -30,7 +30,7 @@ object BedrockGeometryBaker {
     }
 
     private fun bakeCube(bone: BedrockBone, cube: BedrockCube, description: BedrockGeometryDescription): BakedBedrockCube {
-        val uvs = cube.uv?.right()?.getOrNull() ?: error("Boxed UVs are not supported yet.")
+        val uvs = cube.uv?.right()?.getOrNull() ?: TODO("Boxed UVs are not supported yet.")
 
         val pivot = Vector3f(cube.pivot[0], cube.pivot[1], cube.pivot[2])
         val rotation = Vector3f(cube.rotation[0], cube.rotation[1], cube.rotation[2])

@@ -5,6 +5,7 @@ import com.google.gson.JsonElement
 import com.mojang.serialization.JsonOps
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.utils.TypedResourceManager
 import me.owdding.catharsis.utils.Utils
 import me.owdding.ktmodules.Module
 import net.minecraft.client.multiplayer.ClientRegistryLayer
@@ -27,6 +28,7 @@ object ArmorDefinitions : SimplePreparableReloadListener<Map<ResourceLocation, A
 
     override fun prepare(manager: ResourceManager, profiler: ProfilerFiller): Map<ResourceLocation, ArmorDefinition> {
         val registry = ClientRegistryLayer.createRegistryAccess().compositeAccess()
+        val resources = TypedResourceManager(manager)
 
         return converter.listMatchingResources(manager)
             .mapNotNull { (file, resource) ->
@@ -35,7 +37,11 @@ object ArmorDefinitions : SimplePreparableReloadListener<Map<ResourceLocation, A
                         val lookup = PlaceholderLookupProvider(registry)
                         val ops = lookup.createSerializationContext(JsonOps.INSTANCE)
                         val swapper = lookup.createSwapper()
-                        converter.fileToId(file) to codec.parse(ops, gson.fromJson(reader, JsonElement::class.java)).orThrow.bake(swapper)
+
+                        val id = converter.fileToId(file)
+                        val definition = codec.parse(ops, gson.fromJson(reader, JsonElement::class.java)).orThrow.bake(swapper, resources)
+
+                        id to definition
                     }
                 }
             }

@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_21",
   "client": [
     "armor.EquipmentLayerRendererMixin",
+    "armor.HumanoidArmorModelMixin",
     "armor.LivingEntityRendererMixin",
     "armor.LivingEntityRenderStateMixin",
     "gui.AbstractContainerScreenElementsMixin",

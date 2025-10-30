@@ -3,6 +3,8 @@ package me.owdding.catharsis.features.armor
 import com.mojang.serialization.Codec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.features.armor.models.ArmorModel
+import me.owdding.catharsis.features.armor.models.ArmorModelState
+import me.owdding.catharsis.utils.TypedResourceManager
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.IncludedCodec
@@ -19,7 +21,7 @@ data class ArmorDefinition(
     val hiddenBodyParts: EnumMap<BodyPart, HiddenState>,
 ) {
 
-    fun resolve(stack: ItemStack, entity: LivingEntity?, slot: EquipmentSlot): ResourceLocation {
+    fun resolve(stack: ItemStack, entity: LivingEntity?, slot: EquipmentSlot): ArmorModelState {
         return model.resolve(stack, McClient.self.level, entity, slot.ordinal + (entity?.id ?: 0))
     }
 
@@ -29,8 +31,8 @@ data class ArmorDefinition(
         @FieldName("hidden_body_parts") val hiddenBodyParts: EnumMap<BodyPart, HiddenState> = EnumMap(BodyPart::class.java),
     ) {
 
-        fun bake(swapper: RegistryContextSwapper?): ArmorDefinition {
-            return ArmorDefinition(model.bake(swapper), hiddenBodyParts)
+        fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): ArmorDefinition {
+            return ArmorDefinition(model.bake(swapper, resources), hiddenBodyParts)
         }
     }
 }

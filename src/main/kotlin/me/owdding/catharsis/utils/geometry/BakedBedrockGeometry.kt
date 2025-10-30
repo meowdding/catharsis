@@ -31,11 +31,12 @@ data class BakedBedrockBone(
     val cubes: List<BakedBedrockCube>,
 
     val children: MutableList<BakedBedrockBone> = mutableListOf(),
-)
+) {
+
+    var offset: Vector3f = Vector3f()
+}
 
 data class BakedBedrockGeometry(
     val description: BedrockGeometryDescription,
     val bones: List<BakedBedrockBone>,
-) {
-    fun findByName(name: String) = bones.find { it.name == name }
-}
+)

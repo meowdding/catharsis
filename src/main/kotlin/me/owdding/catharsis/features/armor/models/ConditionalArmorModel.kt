@@ -1,20 +1,21 @@
 //~ item_holder
 package me.owdding.catharsis.features.armor.models
 
-import com.mojang.serialization.MapCodec
-import com.mojang.serialization.codecs.RecordCodecBuilder
 //? = 1.21.8
 /*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
+import com.mojang.serialization.MapCodec
+import com.mojang.serialization.codecs.RecordCodecBuilder
+import me.owdding.catharsis.utils.TypedResourceManager
 import me.owdding.catharsis.utils.extensions.createCacheSlot
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperties
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperty
 import net.minecraft.client.renderer.item.properties.conditional.ItemModelPropertyTest
-import net.minecraft.resources.ResourceLocation
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemDisplayContext
 import net.minecraft.world.item.ItemStack
+
 //? = 1.21.8
 /*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
 
@@ -24,7 +25,7 @@ class ConditionalArmorModel(
     private val onFalse: ArmorModel,
 ) : ArmorModel {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): ResourceLocation {
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): ArmorModelState {
         return if (property.get(stack, level, owner?.asLivingEntity(), seed, ItemDisplayContext.NONE)) {
             onTrue.resolve(stack, level, owner, seed)
         } else {
@@ -40,16 +41,16 @@ class ConditionalArmorModel(
 
         override val codec: MapCodec<out ArmorModel.Unbaked> = CODEC
 
-        override fun bake(swapper: RegistryContextSwapper?): ArmorModel {
+        override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): ArmorModel {
             if (swapper == null) {
-                return ConditionalArmorModel(property, onTrue.bake(null), onFalse.bake(null))
+                return ConditionalArmorModel(property, onTrue.bake(null, resources), onFalse.bake(null, resources))
             }
             val slot = createCacheSlot(swapper, property, ConditionalItemModelProperty::type)
 
             return ConditionalArmorModel(
                 {  stack, level, owner, seed, context -> (level?.let(slot::compute) ?: property).get(stack, level, owner, seed, context) },
-                onTrue.bake(swapper),
-                onFalse.bake(swapper),
+                onTrue.bake(swapper, resources),
+                onFalse.bake(swapper, resources),
             )
         }
 

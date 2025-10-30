@@ -66,11 +66,11 @@ object ItemUtils {
             itemId.isAttribute -> resolveAttribute(itemId)
             itemId.isRune -> resolveRune(itemId)
             itemId.isEnchantment -> resolveEnchantment(itemId)
-            else -> ResourceLocation.tryBuild("unknown", itemId.cleanOrNull() ?: return null)
+            else -> null
         }
     }
 
-    private fun SkyBlockId.cleanOrNull() = this.cleanId.uppercase().takeUnless { it == UNKNOWN }
+    private fun SkyBlockId.cleanOrNull() = this.cleanId.lowercase().takeUnless { it == UNKNOWN }
 
     fun resolveEnchantment(itemId: SkyBlockId): ResourceLocation? {
         val cleanId = itemId.cleanOrNull() ?: return null

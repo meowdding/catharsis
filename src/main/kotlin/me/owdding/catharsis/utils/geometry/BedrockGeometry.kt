@@ -1,15 +1,41 @@
 package me.owdding.catharsis.utils.geometry
 
+import com.google.gson.JsonElement
 import com.mojang.datafixers.util.Either
+import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.utils.TypedResourceParser
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.core.Direction
+import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 
 @GenerateCodec
 data class BedrockGeometry(
     val description: BedrockGeometryDescription,
     val bones: List<BedrockBone>,
-)
+) {
+
+    fun bake(): BakedBedrockGeometry {
+        return BedrockGeometryBaker.bake(this)
+    }
+
+    companion object {
+
+        val RESOURCE_PARSER = TypedResourceParser.of<BedrockGeometry>(BedrockGeometry::parseSingle)
+        private val CODEC = CatharsisCodecs.getCodec<BedrockGeometry>()
+            .listOf()
+            .fieldOf("minecraft:geometry")
+            .codec()
+
+        fun parseMulti(json: JsonElement): List<BedrockGeometry> {
+            return json.toDataOrThrow(CODEC)
+        }
+
+        fun parseSingle(json: JsonElement): BedrockGeometry {
+            return parseMulti(json).takeIf { it.size == 1 }?.first() ?: error("Expect one geometry but multiple were contained.")
+        }
+    }
+}
 
 @GenerateCodec
 data class BedrockGeometryDescription(

@@ -3,10 +3,11 @@ package me.owdding.catharsis.features.armor
 import com.mojang.serialization.Codec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.features.armor.models.ArmorModel
+import me.owdding.catharsis.features.armor.models.ArmorModelState
+import me.owdding.catharsis.utils.TypedResourceManager
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.IncludedCodec
-import net.minecraft.resources.ResourceLocation
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.LivingEntity
@@ -16,41 +17,44 @@ import java.util.*
 
 data class ArmorDefinition(
     val model: ArmorModel,
-    val hiddenBodyParts: EnumMap<BodyPart, HiddenState>,
+    val bodyPartVisibility: EnumMap<BodyPart, PartVisibilityState>,
 ) {
 
-    fun resolve(stack: ItemStack, entity: LivingEntity?, slot: EquipmentSlot): ResourceLocation {
+    fun resolve(stack: ItemStack, entity: LivingEntity?, slot: EquipmentSlot): ArmorModelState {
         return model.resolve(stack, McClient.self.level, entity, slot.ordinal + (entity?.id ?: 0))
     }
 
     @GenerateCodec
     data class Unbaked(
         val model: ArmorModel.Unbaked,
-        @FieldName("hidden_body_parts") val hiddenBodyParts: EnumMap<BodyPart, HiddenState> = EnumMap(BodyPart::class.java),
+        @FieldName("body_part_visibility") val bodyPartVisibility: EnumMap<BodyPart, PartVisibilityState> = EnumMap(BodyPart::class.java),
     ) {
 
-        fun bake(swapper: RegistryContextSwapper?): ArmorDefinition {
-            return ArmorDefinition(model.bake(swapper), hiddenBodyParts)
+        fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): ArmorDefinition {
+            return ArmorDefinition(model.bake(swapper, resources), bodyPartVisibility)
         }
     }
 }
 
 
-data class HiddenState(
-    val overlay: Boolean,
-    val base: Boolean,
+data class PartVisibilityState(
+    val overlay: Boolean = true,
+    val base: Boolean = true,
 ) {
     companion object {
         @IncludedCodec
-        val CODEC: Codec<HiddenState> = Codec.withAlternative(
+        val CODEC: Codec<PartVisibilityState> = Codec.withAlternative(
             RecordCodecBuilder.create {
                 it.group(
-                    Codec.BOOL.fieldOf("base").forGetter(HiddenState::base),
-                    Codec.BOOL.fieldOf("overlay").forGetter(HiddenState::overlay),
-                ).apply(it, ::HiddenState)
+                    Codec.BOOL.optionalFieldOf("overlay", true).forGetter(PartVisibilityState::overlay),
+                    Codec.BOOL.optionalFieldOf("base", true).forGetter(PartVisibilityState::base),
+                ).apply(it, ::PartVisibilityState)
             },
-            Codec.BOOL.xmap({ HiddenState(it, it) }, { it.overlay && it.base }),
+            Codec.BOOL.xmap({ PartVisibilityState(it, it) }, { it.overlay && it.base }),
         )
+
+        @JvmField
+        val DEFAULT = PartVisibilityState(overlay = true, base = true)
     }
 }
 

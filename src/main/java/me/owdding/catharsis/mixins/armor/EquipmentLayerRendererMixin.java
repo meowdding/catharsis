@@ -2,6 +2,7 @@ package me.owdding.catharsis.mixins.armor;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
+import me.owdding.catharsis.features.armor.models.ArmorModelState;
 import me.owdding.catharsis.hooks.armor.LivingEntityRenderStateHook;
 import net.minecraft.Optionull;
 import net.minecraft.client.renderer.entity.layers.EquipmentLayerRenderer;
@@ -48,14 +49,8 @@ public class EquipmentLayerRendererMixin {
             var slot = Optionull.map(stack.get(DataComponents.EQUIPPABLE), Equippable::slot);
             if (slot == null) return null;
 
-            var definition = hook.catharsis$getArmorDefinitionRenderState();
-            return switch (slot) {
-                case HEAD -> definition.getHead();
-                case CHEST -> definition.getChest();
-                case LEGS -> definition.getLegs();
-                case FEET -> definition.getFeet();
-                default -> null;
-            };
+            var renderer = hook.catharsis$getArmorDefinitionRenderState().fromSlot(slot);
+            return renderer instanceof ArmorModelState.Texture texture ? texture.getTexture() : null;
         }
         return null;
     }

@@ -4,15 +4,16 @@ package me.owdding.catharsis.features.armor.models
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
+import me.owdding.catharsis.utils.TypedResourceManager
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperties
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperty
-import net.minecraft.resources.ResourceLocation
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemStack
 import java.util.*
 import kotlin.jvm.optionals.getOrNull
+
 //? = 1.21.8
 /*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
 
@@ -38,10 +39,10 @@ class RangeSelectArmorModel(
         }
     }
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): ResourceLocation {
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): ArmorModelState {
         val value = property.get(stack, level, owner?.asLivingEntity(), seed) * scale
         val model = if (value.isNaN()) fallback else models.getOrNull(lastIndexLessThanOrEqual(value)) ?: fallback
-        return model?.resolve(stack, level, owner, seed) ?: ArmorModels.MISSING_TEXTURE
+        return model?.resolve(stack, level, owner, seed) ?: ArmorModelState.Missing
     }
 
     class Unbaked(
@@ -53,11 +54,11 @@ class RangeSelectArmorModel(
 
         override val codec: MapCodec<out ArmorModel.Unbaked> = CODEC
 
-        override fun bake(swapper: RegistryContextSwapper?): ArmorModel {
+        override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): ArmorModel {
             val sortedEntries = entries.sortedWith(Comparator.comparingDouble { it.first.toDouble() })
             val thresholds = FloatArray(sortedEntries.size) { i -> sortedEntries[i].first }
-            val models = Array(sortedEntries.size) { i -> sortedEntries[i].second.bake(swapper) }
-            val fallback = fallback.map { it.bake(swapper) }.getOrNull()
+            val models = Array(sortedEntries.size) { i -> sortedEntries[i].second.bake(swapper, resources) }
+            val fallback = fallback.map { it.bake(swapper, resources) }.getOrNull()
 
             return RangeSelectArmorModel(property, scale, thresholds, models, fallback)
         }

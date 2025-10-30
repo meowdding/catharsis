@@ -28,7 +28,7 @@ The most simple type of area.
 
 A Simple area that only matches positions in the hub that are in the specified box.
 
-<<< @/example_pack/assets/furfsky/catharsis/areas/simple.json{json} 
+<<< @/example_pack/assets/furfsky/catharsis/areas/simple.json{json:line-numbers}
 </Example>
 
 <TreeView>
@@ -48,7 +48,7 @@ Groups multiple boxes into one area.
 An area that matches all blocks in the dwarven mines that are in either of the two regions.<br>
 In addition, it also specifies a min branch size of 16, meaning that everything under side length 16 automatically collapses into a leaf.
 
-<<< @/example_pack/assets/furfsky/catharsis/areas/multiple.json{json}
+<<< @/example_pack/assets/furfsky/catharsis/areas/multiple.json{json:line-numbers}
 </Example>
 
 <TreeView>
@@ -70,7 +70,7 @@ Always matches
 
 An area that always matches any block everywhere.
 
-<<< @/example_pack/assets/furfsky/catharsis/areas/always.json{json}
+<<< @/example_pack/assets/furfsky/catharsis/areas/always.json{json:line-numbers}
 </Example>
 
 <TreeView>
@@ -86,7 +86,7 @@ Similar to `catharsis:always`, the only difference is, that it also takes an isl
 <Example>
 Matches while any of the specified islands.
 
-<<< @/example_pack/assets/furfsky/catharsis/areas/on_island.json{json}
+<<< @/example_pack/assets/furfsky/catharsis/areas/on_island.json{json:line-numbers}
 </Example>
 
 <TreeView>
@@ -103,7 +103,7 @@ Allows to change the definition based on the current island.
 <Example>
 Changes the definition based on the island, `always` and `on_island` have the exact same function in this case.
 
-<<< @/example_pack/assets/furfsky/catharsis/areas/per_island.json{json}
+<<< @/example_pack/assets/furfsky/catharsis/areas/per_island.json{json:line-numbers}
 </Example>
 
 <TreeView>

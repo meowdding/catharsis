@@ -6,7 +6,7 @@
   "client": [
     "armor.EquipmentLayerRendererMixin",
     "armor.HumanoidArmorModelMixin",
-    "armor.LivingEntityRendererMixin",
+    "armor.HumanoidModelMixin",
     "armor.LivingEntityRenderStateMixin",
     "gui.AbstractContainerScreenElementsMixin",
     "gui.AbstractContainerScreenSlotsMixin",

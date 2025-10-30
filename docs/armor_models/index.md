@@ -62,7 +62,7 @@ Render an armor model based on a boolean property.
 
 - <TypeIcon type="string"/> **type**: `minecraft:condition`
 - <TypeIcon type="string"/> **property**: type of boolean property.
-  - You can find a list of all available item model boolean properties on the Minecraft wiki at [Item Model Properties](https://minecraft.wiki/w/Items_model_definition#Boolean_property_types). 
+  - <TypeIcon/> You can find a list of all available item model boolean properties on the Minecraft wiki at [Item Model Properties](https://minecraft.wiki/w/Items_model_definition#Boolean_property_types). 
   Additionally, you can find a list of all Catharsis custom item properties in the [Catharsis Conditional Properties](../item_models/conditional_properties) documentation.
 - <TypeIcon type="object"/> **on_true**: The **armor model** object when the property is true.
 - <TypeIcon type="object"/> **on_false**: The **armor model** object when the property is false.
@@ -79,9 +79,9 @@ Will select last entry with a threshold less than or equal to the property value
 
 - <TypeIcon type="string"/> **type**: `minecraft:range_dispatch`
 - <TypeIcon type="string"/> **property**: type of numeric property.
-  - You can find a list of all available item model numeric properties on the Minecraft wiki at [Item Model Properties](https://minecraft.wiki/w/Items_model_definition#Numeric_property_types). 
+  - <TypeIcon/> You can find a list of all available item model numeric properties on the Minecraft wiki at [Item Model Properties](https://minecraft.wiki/w/Items_model_definition#Numeric_property_types). 
   Additionally, you can find a list of all Catharsis custom item properties in the [Catharsis Range Properties](../item_models/range_properties) documentation.
-- Additional fields depending on the value of **numeric property type**.
+- <TypeIcon/> Additional fields depending on the value of **numeric property type**.
 - <TypeIcon type="float"/> **scale**: Optional. Will be used to scale the property value before comparing it to thresholds. Default is `1.0`.
 - <TypeIcon type="array"/> **entries**:
   - <TypeIcon type="object"/> Entry object

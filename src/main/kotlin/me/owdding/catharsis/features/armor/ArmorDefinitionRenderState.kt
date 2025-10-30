@@ -39,10 +39,10 @@ object ArmorDefinitionRenderStateHandler {
         val hook = event.state as? LivingEntityRenderStateHook ?: return
         val state = hook.`catharsis$getArmorDefinitionRenderState`()
 
-        state.head = merge(state, entity.resolveRenderer(EquipmentSlot.HEAD))
-        state.chest = merge(state, entity.resolveRenderer(EquipmentSlot.CHEST))
-        state.legs = merge(state, entity.resolveRenderer(EquipmentSlot.LEGS))
-        state.feet = merge(state, entity.resolveRenderer(EquipmentSlot.FEET))
+        state.head = merge(state, entity.resolveState(EquipmentSlot.HEAD))
+        state.chest = merge(state, entity.resolveState(EquipmentSlot.CHEST))
+        state.legs = merge(state, entity.resolveState(EquipmentSlot.LEGS))
+        state.feet = merge(state, entity.resolveState(EquipmentSlot.FEET))
     }
 
     fun merge(state: ArmorDefinitionRenderState, data: Pair<ResourceLocation, EnumMap<BodyPart, HiddenState>>?): ResourceLocation? {
@@ -60,7 +60,7 @@ object ArmorDefinitionRenderStateHandler {
     }
 
     private fun LivingEntity.resolveTexture(slot: EquipmentSlot): Pair<ResourceLocation, EnumMap<BodyPart, HiddenState>>? {
-    private fun LivingEntity.resolveRenderer(slot: EquipmentSlot): ArmorModelState? {
+    private fun LivingEntity.resolveState(slot: EquipmentSlot): ArmorModelState? {
         val item = this.getItemBySlot(slot)
         val definition = ArmorDefinitions.getDefinition(ItemUtils.getCustomLocation(item)) ?: ArmorDefinitions.getDefinition(item.get(DataComponents.ITEM_MODEL))
         definition ?: return null

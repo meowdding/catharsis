@@ -1,2 +1,3 @@
 accessWidener v2 named
 accessible method net/minecraft/client/renderer/GameRenderer pick (Lnet/minecraft/world/entity/Entity;DDF)Lnet/minecraft/world/phys/HitResult;
+accessible field net/minecraft/client/model/PlayerCapeModel cape Lnet/minecraft/client/model/geom/ModelPart;

@@ -11,6 +11,7 @@ import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.api.datatype.getData
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.render.LivingEntityRenderEvent
+import java.util.*
 
 class ArmorDefinitionRenderState {
 
@@ -18,6 +19,7 @@ class ArmorDefinitionRenderState {
     var chest: ResourceLocation? = null
     var legs: ResourceLocation? = null
     var feet: ResourceLocation? = null
+    var hiddenStates: EnumMap<BodyPart, HiddenState>? = null
 }
 
 @Module
@@ -29,16 +31,31 @@ object ArmorDefinitionRenderStateHandler {
         val hook = event.state as? LivingEntityRenderStateHook ?: return
         val state = hook.`catharsis$getArmorDefinitionRenderState`()
 
-        state.head = entity.resolveTexture(EquipmentSlot.HEAD)
-        state.chest = entity.resolveTexture(EquipmentSlot.CHEST)
-        state.legs = entity.resolveTexture(EquipmentSlot.LEGS)
-        state.feet = entity.resolveTexture(EquipmentSlot.FEET)
+        state.head = merge(state, entity.resolveTexture(EquipmentSlot.HEAD))
+        state.chest = merge(state, entity.resolveTexture(EquipmentSlot.CHEST))
+        state.legs = merge(state, entity.resolveTexture(EquipmentSlot.LEGS))
+        state.feet = merge(state, entity.resolveTexture(EquipmentSlot.FEET))
     }
 
-    private fun LivingEntity.resolveTexture(slot: EquipmentSlot): ResourceLocation? {
+    fun merge(state: ArmorDefinitionRenderState, data: Pair<ResourceLocation, EnumMap<BodyPart, HiddenState>>?): ResourceLocation? {
+        data ?: return null
+        if (state.hiddenStates == null) {
+            state.hiddenStates = EnumMap(BodyPart::class.java)
+        }
+        data.second.forEach { (key, value) ->
+            state.hiddenStates?.computeIfPresent(key) { _, present ->
+                if (present == value) value else HiddenState(present.overlay || value.overlay, present.base || value.overlay)
+            }
+            state.hiddenStates?.putIfAbsent(key, value)
+        }
+        return data.first
+    }
+
+    private fun LivingEntity.resolveTexture(slot: EquipmentSlot): Pair<ResourceLocation, EnumMap<BodyPart, HiddenState>>? {
         val item = this.getItemBySlot(slot)
         val definition = ArmorDefinitions.getDefinition(item.getCatharsisId()) ?: ArmorDefinitions.getDefinition(item.get(DataComponents.ITEM_MODEL))
-        return definition?.resolve(item, this, slot)
+        definition ?: return null
+        return definition.resolve(item, this, slot) to definition.hiddenBodyParts
     }
 
     private fun ItemStack.getCatharsisId(): ResourceLocation? {

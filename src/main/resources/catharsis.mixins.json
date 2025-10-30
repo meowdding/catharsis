@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_21",
   "client": [
     "armor.EquipmentLayerRendererMixin",
+    "armor.LivingEntityRendererMixin",
     "armor.LivingEntityRenderStateMixin",
     "gui.AbstractContainerScreenElementsMixin",
     "gui.AbstractContainerScreenSlotsMixin",
@@ -12,10 +13,10 @@
     "items.AbstractContainerScreenMixin",
     "items.ItemModelResolverMixin",
     "items.ModelManagerMixin",
-    "textures.TextureManagerMixin",
     "pack.FolderPackDetectorMixin",
     "pack.PackDetectorMixin",
-    "pack.PackSelectionScreenDropMixin"
+    "pack.PackSelectionScreenDropMixin",
+    "textures.TextureManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

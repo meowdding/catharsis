@@ -1,0 +1,19 @@
+{
+  "type": "per_area",
+  "values": {
+    "furfsky:test": {
+      "type": "random",
+      "min": 0,
+      "max": 20,
+      "threshold": 15,
+      "definition": {
+        "type": "redirect",
+        "virtual_state": "furfsky:gold_2"
+      },
+      "fallback": {
+        "type": "redirect",
+        "virtual_state": "furfsky:gold"
+      }
+    }
+  }
+}

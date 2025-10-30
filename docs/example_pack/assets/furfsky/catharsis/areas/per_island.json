@@ -1,0 +1,27 @@
+{
+  "type": "per_island",
+  "entries": [
+    {
+      "islands": "dwarven_mines",
+      "type": "multiple",
+      "boxes": [
+        {
+          "min": "-51:180:-134",
+          "max": "-13:210:-96"
+        },
+        {
+          "min": "42:180:-135",
+          "max": "80:210:-97"
+        }
+      ]
+    },
+    {
+      "islands": "mining_2",
+      "type": "always"
+    },
+    {
+      "islands": "mining_1",
+      "type": "on_island"
+    }
+  ]
+}

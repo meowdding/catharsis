@@ -23,7 +23,13 @@ The definition follows the following scheme
 ## Supported Types
 
 ### Simple (`catharsis:simple`)
- The most simple type of area.
+The most simple type of area.
+<Example> 
+
+A Simple area that only matches positions in the hub that are in the specified box.
+
+<<< @/example_pack/assets/furfsky/catharsis/areas/simple.json{json} 
+</Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>simple</b> object</span>
@@ -37,6 +43,13 @@ The definition follows the following scheme
 
 ### Multiple (`catharsis:multiple`)
 Groups multiple boxes into one area.
+<Example>
+
+An area that matches all blocks in the dwarven mines that are in either of the two regions.<br>
+In addition, it also specifies a min branch size of 16, meaning that everything under side length 16 automatically collapses into a leaf.
+
+<<< @/example_pack/assets/furfsky/catharsis/areas/multiple.json{json}
+</Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>multiple</b> object</span>
@@ -53,6 +66,13 @@ Groups multiple boxes into one area.
 ### Always (`catharsis:always`)
 Always matches
 
+<Example>
+
+An area that always matches any block everywhere.
+
+<<< @/example_pack/assets/furfsky/catharsis/areas/always.json{json}
+</Example>
+
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>always</b> object</span>
 
@@ -61,7 +81,13 @@ Always matches
 </TreeView>
 
 ### On Island (`catharsis:on_island`)
-Matches while on island
+Similar to `catharsis:always`, the only difference is, that it also takes an island predicate.
+
+<Example>
+Matches while any of the specified islands.
+
+<<< @/example_pack/assets/furfsky/catharsis/areas/on_island.json{json}
+</Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>On Island</b> object</span>
@@ -74,6 +100,11 @@ Matches while on island
 
 ### Per Island (`catharsis:per_island`)
 Allows to change the definition based on the current island.
+<Example>
+Changes the definition based on the island, `always` and `on_island` have the exact same function in this case.
+
+<<< @/example_pack/assets/furfsky/catharsis/areas/per_island.json{json}
+</Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>On Island</b> object</span>

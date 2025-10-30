@@ -3,10 +3,13 @@ package me.owdding.catharsis
 import me.owdding.catharsis.events.BootstrapConditionalPropertiesEvent
 import me.owdding.catharsis.events.BootstrapNumericPropertiesEvent
 import me.owdding.catharsis.events.BootstrapSelectPropertiesEvent
+import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.generated.CatharsisModules
 import me.owdding.catharsis.utils.CatharsisLogger
+import me.owdding.catharsis.utils.geometry.model.UnbakedBedrockBlockStateModel
 import me.owdding.ktmodules.Module
 import net.fabricmc.api.ClientModInitializer
+import net.fabricmc.fabric.api.client.model.loading.v1.CustomUnbakedBlockStateModel
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperties
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperties
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperties
@@ -24,6 +27,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
         BootstrapConditionalPropertiesEvent(ConditionalItemModelProperties.ID_MAPPER::put).post(SkyBlockAPI.eventBus)
         BootstrapNumericPropertiesEvent(RangeSelectItemModelProperties.ID_MAPPER::put).post(SkyBlockAPI.eventBus)
         BootstrapSelectPropertiesEvent(SelectItemModelProperties.ID_MAPPER::put).post(SkyBlockAPI.eventBus)
+        CustomUnbakedBlockStateModel.register(id("geo_model"),  CatharsisCodecs.getMapCodec<UnbakedBedrockBlockStateModel>())
     }
 
     fun id(@Pattern("[a-z_0-9\\/.-]+") path: String): ResourceLocation = ResourceLocation.fromNamespaceAndPath("catharsis", path)

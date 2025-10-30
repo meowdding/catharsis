@@ -2,12 +2,16 @@ package me.owdding.catharsis.utils.geometry
 
 import com.google.gson.JsonElement
 import com.mojang.datafixers.util.Either
+import com.mojang.serialization.Codec
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.TypedResourceParser
+import me.owdding.catharsis.utils.geometry.armor.BedrockGeometryBaker
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.core.Direction
+import org.joml.Vector3f
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
+import me.owdding.catharsis.utils.geometry.BakedBedrockGeometry as BakedBedrockArmorGeometry
 
 @GenerateCodec
 data class BedrockGeometry(
@@ -15,14 +19,14 @@ data class BedrockGeometry(
     val bones: List<BedrockBone>,
 ) {
 
-    fun bake(): BakedBedrockGeometry {
+    fun bakeToArmor(): BakedBedrockArmorGeometry {
         return BedrockGeometryBaker.bake(this)
     }
 
     companion object {
 
         val RESOURCE_PARSER = TypedResourceParser.of<BedrockGeometry>(BedrockGeometry::parseSingle)
-        private val CODEC = CatharsisCodecs.getCodec<BedrockGeometry>()
+        val CODEC: Codec<List<BedrockGeometry>> = CatharsisCodecs.getCodec<BedrockGeometry>()
             .listOf()
             .fieldOf("minecraft:geometry")
             .codec()
@@ -48,8 +52,8 @@ data class BedrockGeometryDescription(
 data class BedrockBone(
     val name: String,
     val parent: String?,
-    val pivot: List<Float> = listOf(0f, 0f, 0f),
-    val rotation: List<Float> = listOf(0f, 0f, 0f),
+    val pivot: Vector3f = Vector3f(),
+    val rotation: Vector3f = Vector3f(),
     val mirror: Boolean = false,
     val inflate: Float = 0f,
     // debug, the spec has no mention of what its purpose is
@@ -64,8 +68,8 @@ data class BedrockBone(
 data class BedrockCube(
     val origin: List<Float>,
     val size: List<Float>,
-    val rotation: List<Float> = listOf(0f, 0f, 0f),
-    val pivot: List<Float> = listOf(0f, 0f, 0f),
+    val pivot: Vector3f = Vector3f(),
+    val rotation: Vector3f = Vector3f(),
     val inflate: Float?,
     val mirror: Boolean?,
     val uv: Either<List<Float>, Map<Direction, UvFace>>?

@@ -5,7 +5,7 @@ import com.llamalad7.mixinextras.sugar.Local;
 import com.mojang.blaze3d.vertex.PoseStack;
 import me.owdding.catharsis.features.armor.models.ArmorModelState;
 import me.owdding.catharsis.hooks.armor.LivingEntityRenderStateHook;
-import me.owdding.catharsis.utils.geometry.BedrockGeometryRenderer;
+import me.owdding.catharsis.utils.geometry.armor.BedrockArmorGeometryRenderer;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.Model;
 import net.minecraft.client.renderer.RenderType;
@@ -48,7 +48,7 @@ public class HumanoidArmorModelMixin<S extends HumanoidRenderState, A extends Hu
 
         nodes.order(1).submitCustomGeometry(stack, RenderType.entityCutoutNoCull(renderer.getTexture()), (pose, consumer) -> {
             model.setupAnim(state);
-            BedrockGeometryRenderer.render(renderer.getGeometry(), slot, model, pose, consumer, light, overlay);
+            BedrockArmorGeometryRenderer.render(renderer.getGeometry(), slot, model, pose, consumer, light, overlay);
         });
         return false;
     }

@@ -1,17 +1,11 @@
 package me.owdding.catharsis.utils
 
-import net.fabricmc.fabric.api.resource.IdentifiableResourceReloadListener
-import net.fabricmc.fabric.api.resource.ResourceManagerHelper
-import net.minecraft.resources.ResourceLocation
-import net.minecraft.server.packs.PackType
-import net.minecraft.server.packs.resources.PreparableReloadListener
-import net.minecraft.server.packs.resources.ResourceManager
-import java.util.concurrent.CompletableFuture
-import java.util.concurrent.Executor
-
 
 //? >= 1.21.9
 import net.fabricmc.fabric.api.resource.v1.ResourceLoader
+import net.minecraft.resources.ResourceLocation
+import net.minecraft.server.packs.PackType
+import net.minecraft.server.packs.resources.PreparableReloadListener
 
 object Utils {
 
@@ -46,9 +40,12 @@ object Utils {
     }
     *///?}
 
-    fun registerClientReloadListener(id: ResourceLocation, listener: PreparableReloadListener) {
+    fun registerClientReloadListener(id: ResourceLocation, listener: PreparableReloadListener, second: ResourceLocation? = null) {
         //? >= 1.21.9 {
         ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloader(id, listener)
+        if (second != null) {
+            ResourceLoader.get(PackType.CLIENT_RESOURCES).addReloaderOrdering(id, second)
+        }
         //?} else {
         /*ResourceManagerHelper.get(PackType.CLIENT_RESOURCES).registerReloadListener(ReloadListenerWrapper(id, listener))
         *///?}

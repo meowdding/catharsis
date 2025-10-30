@@ -28,7 +28,7 @@ class SimpleArmorModel(private val state: ArmorModelState) : ArmorModel {
 
         override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): ArmorModel {
             val geometry = resources.getOrLoad(this.model, BedrockGeometry.RESOURCE_PARSER)?.getOrThrow() ?: error("Could not find referenced bedrock geometry $model")
-            return SimpleArmorModel(ArmorModelState.Bedrock(geometry.bake(), texture))
+            return SimpleArmorModel(ArmorModelState.Bedrock(geometry.bakeToArmor(), texture))
         }
     }
 

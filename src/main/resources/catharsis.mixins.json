@@ -4,6 +4,7 @@
   "package": "me.owdding.catharsis.mixins",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "ModelManagerMixin",
     "armor.EquipmentLayerRendererMixin",
     "armor.HumanoidArmorModelMixin",
     "armor.HumanoidModelMixin",

@@ -1,14 +1,18 @@
-package me.owdding.catharsis.utils.geometry
+package me.owdding.catharsis.utils.geometry.armor
 
 import com.mojang.blaze3d.vertex.PoseStack
 import com.mojang.blaze3d.vertex.VertexConsumer
+import me.owdding.catharsis.utils.debugToggle
+import me.owdding.catharsis.utils.geometry.BakedBedrockBone
+import me.owdding.catharsis.utils.geometry.BakedBedrockCube
+import me.owdding.catharsis.utils.geometry.BakedBedrockGeometry
 import net.minecraft.client.model.HumanoidModel
 import net.minecraft.core.Direction
 import net.minecraft.util.Mth
 import net.minecraft.world.entity.EquipmentSlot
 import org.joml.*
 
-private const val DEBUG = false
+
 private const val HEAD_BONE = "head"
 private const val BODY_BONE = "body"
 private const val RIGHT_ARM_BONE = "right_arm"
@@ -18,7 +22,8 @@ private const val LEFT_LEG_BONE = "left_leg"
 private const val RIGHT_FOOT_BONE = "right_foot"
 private const val LEFT_FOOT_BONE = "left_foot"
 
-object BedrockGeometryRenderer {
+object BedrockArmorGeometryRenderer {
+    private val debug by debugToggle("armor_debug", "Enables debug colors :3")
 
     @JvmStatic
     fun render(geometry: BakedBedrockGeometry, slot: EquipmentSlot, model: HumanoidModel<*>, pose: PoseStack.Pose, consumer: VertexConsumer, light: Int, overlay: Int) {
@@ -102,7 +107,7 @@ object BedrockGeometryRenderer {
 
             for (vertex in quad.vertices) {
 
-                if (DEBUG) {
+                if (debug) {
                     consumer
                         .addVertex(pose, vertex.position.x / 16f, vertex.position.y / 16f, vertex.position.z / 16f)
                         .setColor(quad.direction.color())

@@ -1,4 +1,4 @@
-package me.owdding.catharsis.utils.tar
+package me.owdding.catharsis.utils
 
 import me.owdding.catharsis.Catharsis
 import net.minecraft.resources.ResourceLocation

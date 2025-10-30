@@ -1,7 +1,7 @@
 package me.owdding.catharsis.mixins.pack;
 
 import me.owdding.catharsis.hooks.pack.PackDetectorHook;
-import me.owdding.catharsis.utils.tar.TarResourceSupplier;
+import me.owdding.catharsis.utils.TarResourceSupplier;
 import net.minecraft.server.packs.repository.Pack;
 import org.spongepowered.asm.mixin.Mixin;
 

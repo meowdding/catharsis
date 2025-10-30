@@ -1,4 +1,4 @@
-package me.owdding.catharsis.utils.fabric
+package me.owdding.catharsis.utils.types.fabric
 
 import net.fabricmc.fabric.api.client.model.loading.v1.PreparableModelLoadingPlugin
 import net.minecraft.server.packs.resources.PreparableReloadListener

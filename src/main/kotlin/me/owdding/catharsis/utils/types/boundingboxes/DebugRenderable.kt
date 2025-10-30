@@ -1,4 +1,4 @@
-package me.owdding.catharsis.utils.boundingboxes
+package me.owdding.catharsis.utils.types.boundingboxes
 
 import tech.thatgravyboat.skyblockapi.api.events.render.RenderWorldEvent
 

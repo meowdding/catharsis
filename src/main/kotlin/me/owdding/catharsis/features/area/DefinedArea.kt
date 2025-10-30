@@ -3,10 +3,10 @@ package me.owdding.catharsis.features.area
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
-import me.owdding.catharsis.utils.boundingboxes.BoundingBox
-import me.owdding.catharsis.utils.boundingboxes.DebugRenderable
-import me.owdding.catharsis.utils.boundingboxes.Octree
 import me.owdding.catharsis.utils.codecs.IncludedCodecs
+import me.owdding.catharsis.utils.types.boundingboxes.BoundingBox
+import me.owdding.catharsis.utils.types.boundingboxes.DebugRenderable
+import me.owdding.catharsis.utils.types.boundingboxes.Octree
 import me.owdding.ktcodecs.*
 import me.owdding.ktcodecs.IntRange
 import net.minecraft.core.BlockPos

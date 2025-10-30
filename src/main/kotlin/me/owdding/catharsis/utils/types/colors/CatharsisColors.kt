@@ -1,6 +1,6 @@
 @file:Suppress("unused", "ConstPropertyName")
 
-package me.owdding.catharsis.utils.colors
+package me.owdding.catharsis.utils.types.colors
 
 object CatharsisColors {
 

@@ -1,6 +1,6 @@
 @file:Suppress("ConstPropertyName", "unused")
 
-package me.owdding.catharsis.utils.colors
+package me.owdding.catharsis.utils.types.colors
 
 // Names and colors are from https://catppuccin.com/palette/
 object CatppuccinColors {

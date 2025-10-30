@@ -1,7 +1,7 @@
 package me.owdding.catharsis.utils
 
-import me.owdding.catharsis.utils.colors.CatppuccinColors
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
+import me.owdding.catharsis.utils.types.colors.CatppuccinColors
 import me.owdding.ktmodules.Module
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.ItemStack

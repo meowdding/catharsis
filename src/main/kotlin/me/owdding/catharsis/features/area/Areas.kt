@@ -6,7 +6,7 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.Utils
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
-import me.owdding.catharsis.utils.suggestion.ResourceLocationSuggestionProvider
+import me.owdding.catharsis.utils.types.suggestion.ResourceLocationSuggestionProvider
 import me.owdding.ktmodules.Module
 import net.minecraft.commands.arguments.ResourceLocationArgument
 import net.minecraft.core.BlockPos

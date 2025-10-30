@@ -6,7 +6,7 @@ import com.mojang.serialization.Codec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.extensions.mapBothNotNull
-import me.owdding.catharsis.utils.fabric.PreparingModelLoadingPlugin
+import me.owdding.catharsis.utils.types.fabric.PreparingModelLoadingPlugin
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin
 import net.minecraft.core.registries.BuiltInRegistries

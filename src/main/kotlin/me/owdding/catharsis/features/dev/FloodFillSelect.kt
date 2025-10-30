@@ -1,15 +1,10 @@
 package me.owdding.catharsis.features.dev
 
 import com.mojang.brigadier.arguments.IntegerArgumentType
-import me.owdding.catharsis.utils.boundingboxes.BoundingBox
 import me.owdding.catharsis.utils.codecs.PosCodecs
-import me.owdding.catharsis.utils.extensions.pose
-import me.owdding.catharsis.utils.extensions.sendWithPrefix
-import me.owdding.catharsis.utils.extensions.toBlockPos
-import me.owdding.catharsis.utils.extensions.toReadableTime
-import me.owdding.catharsis.utils.extensions.toVector3i
-import me.owdding.catharsis.utils.extensions.toVector3ic
-import me.owdding.catharsis.utils.suggestion.IterableSuggestionProvider
+import me.owdding.catharsis.utils.extensions.*
+import me.owdding.catharsis.utils.types.boundingboxes.BoundingBox
+import me.owdding.catharsis.utils.types.suggestion.IterableSuggestionProvider
 import me.owdding.ktmodules.Module
 import net.minecraft.client.renderer.RenderType
 import net.minecraft.client.renderer.ShapeRenderer

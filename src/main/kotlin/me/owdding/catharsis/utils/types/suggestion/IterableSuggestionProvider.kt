@@ -1,4 +1,4 @@
-package me.owdding.catharsis.utils.suggestion
+package me.owdding.catharsis.utils.types.suggestion
 
 import com.mojang.brigadier.context.CommandContext
 import com.mojang.brigadier.suggestion.Suggestions

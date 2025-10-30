@@ -1,4 +1,4 @@
-package me.owdding.catharsis.utils.boundingboxes
+package me.owdding.catharsis.utils.types.boundingboxes
 
 import com.mojang.blaze3d.vertex.VertexConsumer
 import com.mojang.datafixers.util.Either

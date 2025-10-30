@@ -57,7 +57,6 @@ data class BoundingBox(
                     max.y = max(max.y, it.y())
                     max.z = max(max.z, it.z())
                 }
-
                 return BoundingBox(min, max)
             } else {
                 return null

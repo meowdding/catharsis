@@ -1,5 +1,6 @@
 <script setup>
 import {useTemplateRef} from "vue";
+
 const dialog = useTemplateRef("dialog")
 const props = defineProps({
     title: {
@@ -27,10 +28,20 @@ const props = defineProps({
             </div>
         </div>
     </dialog>
-    <button @click="dialog.show()">Show Example</button>
+    <button @click="dialog.show()">Click to Show Example</button>
 </template>
 
 <style scoped>
+button {
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+button:hover {
+    color: var(--vp-c-indigo-1);
+}
+
 dialog {
     display: flex;
     justify-content: center;

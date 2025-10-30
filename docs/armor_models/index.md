@@ -18,7 +18,7 @@ You can define armor models in an armor definition file in `assets/<namespace>/c
 Similarly to item models you can also declare it for skyblock ids i.e. `assets/skyblock/catharsis/armors/<id>.json`.
 
 Armor models support some of the same model types as item models such as `minecraft:condition` and `minecraft:range_dispatch`
-as well as armor specific ones such as `catharsis:texture`.
+as well as armor specific ones such as `catharsis:texture` or `catharsis:model`.
 
 ## Json format
 
@@ -50,6 +50,19 @@ Render a specific texture for the armor.
 
 - <TypeIcon type="string"/> **type**: `catharsis:texture`
 - <TypeIcon type="string"/> **texture**: The texture to use for the armor. This should be a resource location pointing to a PNG file.
+
+</TreeView>
+
+#### **Model** (`catharsis:model`)
+
+Render a specific bedrock armor geometry for the armor.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>model</b> armor model object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:model`
+- <TypeIcon type="string"/> **texture**: The texture to use for the armor. This should be a resource location pointing to a PNG file.
+- <TypeIcon type="string"/> **model**: The geo model to use for the armor. This should be a resource location pointing to a GEO JSON file.
 
 </TreeView>
 

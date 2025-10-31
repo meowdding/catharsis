@@ -1,5 +1,6 @@
-package me.owdding.catharsis.utils.geometry
+package me.owdding.catharsis.utils.geometry.armor
 
+import me.owdding.catharsis.utils.geometry.*
 import net.minecraft.core.Direction
 import org.joml.Vector2f
 import org.joml.Vector3f
@@ -21,8 +22,8 @@ object BedrockGeometryBaker {
         return BakedBedrockBone(
             bone.name,
             bone.parent,
-            Vector3f(bone.pivot[0], bone.pivot[1], bone.pivot[2]),
-            Vector3f(bone.rotation[0], bone.rotation[1], bone.rotation[2]),
+            bone.pivot,
+            bone.rotation,
             bone.mirror,
             bone.inflate,
             bone.cubes.map { bakeCube(bone, it, description) }

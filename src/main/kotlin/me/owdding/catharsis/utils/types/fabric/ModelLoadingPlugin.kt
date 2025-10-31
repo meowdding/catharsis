@@ -16,7 +16,7 @@ interface PreparingModelLoadingPlugin<T> : PreparableModelLoadingPlugin<T> {
     private fun prepare(sharedState: PreparableReloadListener.SharedState, executor: Executor): CompletableFuture<T> {
         return prepare(sharedState.resourceManager(), executor)
     }
-    //? }
+    //?}
 
     fun prepare(resourceManager: ResourceManager, executor: Executor): CompletableFuture<T>
 }

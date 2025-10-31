@@ -36,7 +36,7 @@ data class BlockStateModelReplacement(
     val replacementSelector: BlockReplacementSelector,
 ): FabricBlockStateModel by original as FabricBlockStateModel, BlockStateModel {
     override fun emitQuads(emitter: QuadEmitter, blockView: BlockAndTintGetter, pos: BlockPos, state: BlockState, random: RandomSource, cullTest: Predicate<Direction?>) {
-        val random = RandomSource.create(pos.asLong())
+        val random = RandomSource.create(Mth.getSeed(pos))
         val replacement = replacementSelector.select(state, pos, random)
         val model = replacement?.models[state]
         if (model != null) {
@@ -63,7 +63,7 @@ data class BlockStateModelReplacement(
         return super<FabricBlockStateModel>.particleSprite(blockView, pos, state)
     }
 
-    override fun particleIcon(): TextureAtlasSprite? {
+    override fun particleIcon(): TextureAtlasSprite {
         return original.particleIcon()
     }
 }

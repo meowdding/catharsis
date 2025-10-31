@@ -5,8 +5,6 @@ import com.google.gson.JsonElement
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.utils.extensions.mapBothNotNull
 import me.owdding.catharsis.utils.geometry.BedrockGeometry
-import me.owdding.catharsis.utils.geometry.model.BedrockModelGeometryBaker
-import me.owdding.catharsis.utils.geometry.model.MediumBakedBedrockModelGeometry
 import me.owdding.ktmodules.Module
 import net.minecraft.resources.FileToIdConverter
 import net.minecraft.resources.ResourceLocation
@@ -21,7 +19,7 @@ object BedrockModels : SimplePreparableReloadListener<Map<ResourceLocation, Bedr
     private val logger = Catharsis.featureLogger("BlockReplacements")
     private val gson = GsonBuilder().create()
 
-    private val models: MutableMap<ResourceLocation, MediumBakedBedrockModelGeometry> = mutableMapOf()
+    private val models: MutableMap<ResourceLocation, BedrockGeometry> = mutableMapOf()
 
     override fun prepare(
         resourceManager: ResourceManager,
@@ -42,7 +40,7 @@ object BedrockModels : SimplePreparableReloadListener<Map<ResourceLocation, Bedr
         profiler: ProfilerFiller,
     ) {
         models.clear()
-        models.putAll(loadedModels.mapValues { BedrockModelGeometryBaker.bake(it.value) })
+        models.putAll(loadedModels)
     }
 
     fun getModel(location: ResourceLocation) = models[location]

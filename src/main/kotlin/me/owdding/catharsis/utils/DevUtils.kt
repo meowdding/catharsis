@@ -21,7 +21,7 @@ internal fun debugToggle(path: String, description: String = path): DebugToggle 
 }
 @Module
 internal object CatharsisDevUtils : DevUtils() {
-    override val commandName: String = "sbapi toggle"
+    override val commandName: String = "catharsis toggle"
     override fun send(component: MutableComponent) = component.sendWithPrefix()
     val properties: Map<String, String> = loadFromProperties()
 

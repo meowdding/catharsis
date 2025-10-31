@@ -50,7 +50,7 @@ object ArmorDefinitionRenderStateHandler {
         val definition = ArmorDefinitions.getDefinition(ItemUtils.getCustomLocation(item)) ?: ArmorDefinitions.getDefinition(item.get(DataComponents.ITEM_MODEL))
         updater.invoke(this, definition?.resolve(item, entity, slot))
 
-        definition?.bodyPartVisibility?.forEach { (part, state) ->
+        definition?.partVisibility?.forEach { (part, state) ->
             this.partVisibility.compute(part) { _, existing ->
                 when {
                     existing == null -> state

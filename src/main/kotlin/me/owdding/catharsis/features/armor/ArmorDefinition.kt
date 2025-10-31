@@ -17,7 +17,7 @@ import java.util.*
 
 data class ArmorDefinition(
     val model: ArmorModel,
-    val bodyPartVisibility: EnumMap<BodyPart, PartVisibilityState>,
+    val partVisibility: EnumMap<BodyPart, PartVisibilityState>,
 ) {
 
     fun resolve(stack: ItemStack, entity: LivingEntity?, slot: EquipmentSlot): ArmorModelState {
@@ -27,11 +27,11 @@ data class ArmorDefinition(
     @GenerateCodec
     data class Unbaked(
         val model: ArmorModel.Unbaked,
-        @FieldName("body_part_visibility") val bodyPartVisibility: EnumMap<BodyPart, PartVisibilityState> = EnumMap(BodyPart::class.java),
+        @FieldName("part_visibility") val partVisibility: EnumMap<BodyPart, PartVisibilityState> = EnumMap(BodyPart::class.java),
     ) {
 
         fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): ArmorDefinition {
-            return ArmorDefinition(model.bake(swapper, resources), bodyPartVisibility)
+            return ArmorDefinition(model.bake(swapper, resources), partVisibility)
         }
     }
 }

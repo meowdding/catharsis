@@ -6,6 +6,8 @@ import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.utils.Utils
 import me.owdding.ktcodecs.IncludedCodec
+import net.minecraft.client.color.item.ItemTintSource
+import net.minecraft.client.color.item.ItemTintSources
 import net.minecraft.client.renderer.block.model.BlockModelDefinition
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.network.chat.Component
@@ -37,6 +39,7 @@ object IncludedCodecs {
     @IncludedCodec val quaternionCodec: Codec<Quaternionf> = ExtraCodecs.QUATERNIONF
     @IncludedCodec val componentCodec: Codec<Component> = ComponentSerialization.CODEC
     @IncludedCodec val uriCodec: Codec<URI> = ExtraCodecs.UNTRUSTED_URI // This is actually "trusted", it requires https and http
+    @IncludedCodec val tintSources: Codec<ItemTintSource> = ItemTintSources.CODEC
 
     // Registries
     // TODO this is broken because of the generic

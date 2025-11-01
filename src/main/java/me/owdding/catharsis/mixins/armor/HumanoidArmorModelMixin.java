@@ -10,10 +10,10 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.Model;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.SubmitNodeCollector;
-import net.minecraft.client.renderer.entity.LivingEntityRenderer;
 import net.minecraft.client.renderer.entity.layers.EquipmentLayerRenderer;
 import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
 import net.minecraft.client.renderer.entity.state.HumanoidRenderState;
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.resources.model.EquipmentClientInfo;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -44,12 +44,18 @@ public class HumanoidArmorModelMixin<S extends HumanoidRenderState, A extends Hu
         if (!(state instanceof LivingEntityRenderStateHook hook)) return true;
         if (!(hook.catharsis$getArmorDefinitionRenderState().fromSlot(slot) instanceof ArmorModelState.Bedrock renderer)) return true;
 
-        var overlay = LivingEntityRenderer.getOverlayCoords(state, 0.0F);
+        var textures = renderer.getTextures();
+        var colors = renderer.getColors();
 
-        nodes.order(1).submitCustomGeometry(stack, RenderType.entityCutoutNoCull(renderer.getTexture()), (pose, consumer) -> {
-            model.setupAnim(state);
-            BedrockGeometryRenderer.render(renderer.getGeometry(), slot, model, pose, consumer, light, overlay);
-        });
+        for (int i = 0; i < renderer.getLayers(); i++) {
+            var texture = textures[i];
+            var color = colors[i];
+
+            nodes.order(i + 1).submitCustomGeometry(stack, RenderType.entityCutoutNoCull(texture), (pose, consumer) -> {
+                model.setupAnim(state);
+                BedrockGeometryRenderer.render(renderer.getGeometry(), slot, model, pose, consumer, color, light, OverlayTexture.NO_OVERLAY);
+            });
+        }
         return false;
     }
 }

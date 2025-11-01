@@ -21,7 +21,7 @@ private const val LEFT_FOOT_BONE = "left_foot"
 object BedrockGeometryRenderer {
 
     @JvmStatic
-    fun render(geometry: BakedBedrockGeometry, slot: EquipmentSlot, model: HumanoidModel<*>, pose: PoseStack.Pose, consumer: VertexConsumer, light: Int, overlay: Int) {
+    fun render(geometry: BakedBedrockGeometry, slot: EquipmentSlot, model: HumanoidModel<*>, pose: PoseStack.Pose, consumer: VertexConsumer, color: Int, light: Int, overlay: Int) {
         pose.scale(1f, -1f, 1f)
         pose.translate(0f, -24f / 16f, 0f)
 
@@ -51,11 +51,11 @@ object BedrockGeometryRenderer {
             bone.rotation.y = playerBone.yRot * Mth.RAD_TO_DEG
             bone.rotation.z = playerBone.zRot * Mth.RAD_TO_DEG
 
-            renderBone(bone, pose, consumer, light, overlay)
+            renderBone(bone, pose, consumer, color, light, overlay)
         }
     }
 
-    private fun renderBone(bone: BakedBedrockBone, pose: PoseStack.Pose, consumer: VertexConsumer, light: Int, overlay: Int) {
+    private fun renderBone(bone: BakedBedrockBone, pose: PoseStack.Pose, consumer: VertexConsumer, color: Int, light: Int, overlay: Int) {
         val pose = pose.copy()
 
         val (rotX, rotY, rotZ) = bone.rotation
@@ -67,11 +67,11 @@ object BedrockGeometryRenderer {
         pose.rotateAround(quaternion, pivotX / 16f, pivotY / 16f, pivotZ / 16f)
 
         for (cube in bone.cubes) {
-            renderCube(cube, pose, consumer, light, overlay)
+            renderCube(cube, pose, consumer, color, light, overlay)
         }
 
         for (child in bone.children) {
-            renderBone(child, pose, consumer, light, overlay)
+            renderBone(child, pose, consumer, color, light, overlay)
         }
     }
 
@@ -88,7 +88,7 @@ object BedrockGeometryRenderer {
         }
     }
 
-    private fun renderCube(cube: BakedBedrockCube, pose: PoseStack.Pose, consumer: VertexConsumer, light: Int, overlay: Int) {
+    private fun renderCube(cube: BakedBedrockCube, pose: PoseStack.Pose, consumer: VertexConsumer, color: Int, light: Int, overlay: Int) {
         val pose = pose.copy()
 
         val (rotX, rotY, rotZ) = cube.rotation
@@ -109,7 +109,7 @@ object BedrockGeometryRenderer {
                 } else {
                     consumer
                         .addVertex(pose, vertex.position.x / 16f, vertex.position.y / 16f, vertex.position.z / 16f)
-                        .setColor(-1)
+                        .setColor(color)
                         .setUv(vertex.uv.x, vertex.uv.y)
                         .setOverlay(overlay)
                         .setLight(light)

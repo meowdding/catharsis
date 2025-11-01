@@ -30,10 +30,25 @@ interface ArmorModel {
 
 sealed interface ArmorModelState {
 
-    object Missing : Texture(MissingTextureAtlasSprite.getLocation())
+    object Missing : Texture(arrayOf(MissingTextureAtlasSprite.getLocation()), intArrayOf(-1))
 
-    open class Texture(val texture: ResourceLocation): ArmorModelState
-    open class Bedrock(val geometry: BakedBedrockGeometry, val texture: ResourceLocation) : ArmorModelState
+    open class Texture(val textures: Array<ResourceLocation>, val colors: IntArray) : ArmorModelState {
+
+        val layers: Int = this.textures.size
+
+        init {
+            check(colors.size == layers) { "Colors array size (${colors.size}) must match textures array size ($layers)" }
+        }
+    }
+
+    open class Bedrock(val geometry: BakedBedrockGeometry, val textures: Array<ResourceLocation>, val colors: IntArray) : ArmorModelState {
+
+        val layers: Int = this.textures.size
+
+        init {
+            check(colors.size == layers) { "Colors array size (${colors.size}) must match textures array size ($layers)" }
+        }
+    }
 }
 
 object ArmorModels {
@@ -47,8 +62,8 @@ object ArmorModels {
         ID_MAPPER.put(Catharsis.mc("condition"), ConditionalArmorModel.Unbaked.CODEC)
         ID_MAPPER.put(Catharsis.mc("range_dispatch"), RangeSelectArmorModel.Unbaked.CODEC)
         // TODO add select, requires creating a whole custom case system as vanilla has this locked to ItemModels unlike conditions and ranges
-        ID_MAPPER.put(Catharsis.id("texture"), CatharsisCodecs.getMapCodec<SimpleArmorModel.UnbakedTexture>())
-        ID_MAPPER.put(Catharsis.id("model"), CatharsisCodecs.getMapCodec<SimpleArmorModel.UnbakedBedrock>())
+        ID_MAPPER.put(Catharsis.id("texture"), CatharsisCodecs.getMapCodec<TextureArmorModel.UnbakedTexture>())
+        ID_MAPPER.put(Catharsis.id("model"), CatharsisCodecs.getMapCodec<BedrockArmorModel.UnbakedBedrock>())
         ID_MAPPER.put(Catharsis.id("redirect"), CatharsisCodecs.getMapCodec<RedirectedArmorModel.UnbakedRedirect>())
     }
 }

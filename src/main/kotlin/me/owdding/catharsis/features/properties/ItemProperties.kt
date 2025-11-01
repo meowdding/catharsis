@@ -23,7 +23,6 @@ object ItemProperties {
         register(DataTypeProperties.ID, DataTypeProperties.SelectDataTypeItemProperty.TYPE)
         register(SkyBlockIslandProperty.ID, SkyBlockIslandProperty.TYPE)
         register(SkyBlockAreaProperty.ID, SkyBlockAreaProperty.TYPE)
-        register(ItemModelProperty.ID, ItemModelProperty.TYPE)
     }
 
     @Subscription

@@ -1,12 +1,14 @@
 package me.owdding.catharsis
 
 import me.owdding.catharsis.events.BootstrapConditionalPropertiesEvent
+import me.owdding.catharsis.events.BootstrapItemModelsEvent
 import me.owdding.catharsis.events.BootstrapNumericPropertiesEvent
 import me.owdding.catharsis.events.BootstrapSelectPropertiesEvent
 import me.owdding.catharsis.generated.CatharsisModules
 import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.ktmodules.Module
 import net.fabricmc.api.ClientModInitializer
+import net.minecraft.client.renderer.item.ItemModels
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperties
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperties
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperties
@@ -24,6 +26,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
         BootstrapConditionalPropertiesEvent(ConditionalItemModelProperties.ID_MAPPER::put).post(SkyBlockAPI.eventBus)
         BootstrapNumericPropertiesEvent(RangeSelectItemModelProperties.ID_MAPPER::put).post(SkyBlockAPI.eventBus)
         BootstrapSelectPropertiesEvent(SelectItemModelProperties.ID_MAPPER::put).post(SkyBlockAPI.eventBus)
+        BootstrapItemModelsEvent(ItemModels.ID_MAPPER::put).post(SkyBlockAPI.eventBus)
     }
 
     fun id(@Pattern("[a-z_0-9\\/.-]+") path: String): ResourceLocation = ResourceLocation.fromNamespaceAndPath("catharsis", path)

@@ -49,5 +49,6 @@ object ArmorModels {
         // TODO add select, requires creating a whole custom case system as vanilla has this locked to ItemModels unlike conditions and ranges
         ID_MAPPER.put(Catharsis.id("texture"), CatharsisCodecs.getMapCodec<SimpleArmorModel.UnbakedTexture>())
         ID_MAPPER.put(Catharsis.id("model"), CatharsisCodecs.getMapCodec<SimpleArmorModel.UnbakedBedrock>())
+        ID_MAPPER.put(Catharsis.id("redirect"), CatharsisCodecs.getMapCodec<RedirectedArmorModel.UnbakedRedirect>())
     }
 }

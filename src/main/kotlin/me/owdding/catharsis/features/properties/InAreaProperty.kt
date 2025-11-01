@@ -23,12 +23,7 @@ data class InAreaProperty(
     }
 
     override fun type(): MapCodec<out ConditionalItemModelProperty> = CODEC
-
-    override fun get(
-        stack: ItemStack,
-        level: ClientLevel?,
-        entity: LivingEntity?,
-        seed: Int,
-        displayContext: ItemDisplayContext,
-    ): Boolean = Areas.isPlayerInArea(area)
+    override fun get(stack: ItemStack, level: ClientLevel?, entity: LivingEntity?, seed: Int, displayContext: ItemDisplayContext): Boolean {
+        return Areas.isPlayerInArea(area)
+    }
 }

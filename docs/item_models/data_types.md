@@ -47,4 +47,4 @@ Data Types that return a Boolean are available by default.
 
 ## Unavailable Data Types
 
-Any Data Type that returns a complex object (so Lists, Maps, Pairs, or custom objects) are, unless custom handled above, unavailable to you.
+Any Data Type that returns a complex object (so Lists, Maps, Pairs, or custom objects) are unavailable, unless explicitly specified above.

@@ -7,11 +7,11 @@ lang: en-US
 
 TODO: which ones can be Conditional, Select and Range?????
 
-This page list all available data types.
+This page lists all available data types.
 
 All Data Types can be found [here](https://github.com/SkyblockAPI/SkyblockAPI/blob/2.0/src/common/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/DataTypes.kt).
 
-Ids of Data Types can be found at these locations:
+IDs of Data Types can be found at these locations:
 [GenericDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/2.0/src/common/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/GenericDataTypes.kt),
 [LoreDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/2.0/src/common/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/LoreDataTypes.kt),
 [MiningDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/2.0/src/common/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/MiningDataTypes.kt),
@@ -23,7 +23,7 @@ Any Data Types that return any form of number (so Integer, Double, Float, Long, 
 
 ### Custom Number Data Types
 
-| Data Type              | Descripton                                             |
+| Data Type              | Description                                            |
 |------------------------|--------------------------------------------------------|
 | Snowballs              | Returns the current snowballs in the snowball shooter. |
 | Dungeonbreaker Charges | Returns the current charges.                           |

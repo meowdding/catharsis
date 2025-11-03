@@ -25,9 +25,9 @@ Data Types that return any form of number (so Integer, Double, Float, Long, Shor
 
 | Data Type              | Description                                            |
 |------------------------|--------------------------------------------------------|
-| Snowballs              | Returns the current snowballs in the snowball shooter. |
-| Dungeonbreaker Charges | Returns the current charges.                           |
-| Drill Fuel             | Returns the current drill fuel.                        |
+| `snowballs`              | Returns the current snowballs in the snowball shooter. |
+| `dungeonbreaker_charges` | Returns the current charges.                           |
+| `drill_fuel`             | Returns the current drill fuel.                        |
 
 ## Available String Data Types
 

@@ -19,7 +19,7 @@ IDs of Data Types can be found at these locations:
 
 ## Available Number Data Types
 
-Any Data Types that return any form of number (so Integer, Double, Float, Long, Short, Byte) are available to you.
+Data Types that return any form of number (so Integer, Double, Float, Long, Short, Byte, or Enums) are available by default.
 
 ### Custom Number Data Types
 

@@ -37,9 +37,9 @@ Any Data Types that return a String are available to you.
 
 | Data Type | Description                                  |
 |-----------|----------------------------------------------|
-| Hook      | Returns the SkyBlockId of the applied hook   |
-| Line      | Returns the lore line at the applied line    |
-| Sinker    | Returns the SkyBlockId of the applied sinker |
+| `hook`      | Returns the SkyBlockId of the applied hook   |
+| `line`      | Returns the SkyBlockId of the applied line    |
+| `sinker`    | Returns the SkyBlockId of the applied sinker |
 
 ## Available Boolean Data Types
 

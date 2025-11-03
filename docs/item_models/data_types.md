@@ -31,7 +31,7 @@ Data Types that return any form of number (so Integer, Double, Float, Long, Shor
 
 ## Available String Data Types
 
-Any Data Types that return a String are available to you.
+Data Types that return a String are available by default.
 
 ### Custom String Data Types
 

@@ -43,7 +43,7 @@ Any Data Types that return a String are available to you.
 
 ## Available Boolean Data Types
 
-Any Data Types that return a Boolean are available to you.
+Data Types that return a Boolean are available by default.
 
 ## Unavailable Data Types
 

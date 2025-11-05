@@ -7,7 +7,6 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.generated.CodecUtils
 import me.owdding.catharsis.generated.EnumCodec
-import me.owdding.catharsis.mixins.DataTypesRegistryAccessor
 import me.owdding.catharsis.utils.extensions.isEnum
 import me.owdding.catharsis.utils.extensions.isNumber
 import me.owdding.catharsis.utils.extensions.set
@@ -28,6 +27,8 @@ import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.impl.DataTypesRegistry
 import tech.thatgravyboat.skyblockapi.utils.extentions.get
 import java.util.*
+import kotlin.reflect.javaType
+import kotlin.reflect.typeOf
 
 data class DataTypeEntry<Type>(val type: DataType<Type>, val codec: Codec<Type>)
 
@@ -42,14 +43,14 @@ object DataTypeProperties {
 
     init {
         @Suppress("CAST_NEVER_SUCCEEDS")
-        val dataTypes = (DataTypesRegistry as DataTypesRegistryAccessor).`catharsis$getDataTypes`()
-        dataTypes.filterIsInstance<DataType<Boolean>>().forEach(::register)
-        dataTypes.filterIsInstance<DataType<String>>().forEach(::register)
-        dataTypes.filterIsInstance<DataType<Int>>().forEach(::register)
-        dataTypes.filterIsInstance<DataType<Long>>().forEach(::register)
-        dataTypes.filterIsInstance<DataType<Short>>().forEach(::register)
-        dataTypes.filterIsInstance<DataType<Double>>().forEach(::register)
-        dataTypes.filterIsInstance<DataType<Float>>().forEach(::register)
+        val dataTypes = DataTypesRegistry.types
+        dataTypes.filterType<Boolean>().forEach(::register)
+        dataTypes.filterType<String>().forEach(::register)
+        dataTypes.filterType<Int>().forEach(::register)
+        dataTypes.filterType<Long>().forEach(::register)
+        dataTypes.filterType<Short>().forEach(::register)
+        dataTypes.filterType<Double>().forEach(::register)
+        dataTypes.filterType<Float>().forEach(::register)
 
         register(DataTypes.RARITY)
         register(DataTypes.HOOK, Codec.STRING.xmap({ UUID.randomUUID() to it }, { it.second }))
@@ -59,6 +60,15 @@ object DataTypeProperties {
         register(DataTypes.SNOWBALLS, Codec.INT.xmap({ it to it }, { it.first }))
         register(DataTypes.UUID, CodecUtils.UUID_CODEC)
         register(DataTypes.DUNGEONBREAKER_CHARGES, Codec.INT.xmap({ it to it }, { it.first }))
+    }
+
+    @OptIn(ExperimentalStdlibApi::class)
+    private inline fun <reified T : Any> List<DataType<*>>.filterType(): List<DataType<T>> {
+        val type = typeOf<T>().javaType
+        @Suppress("UNCHECKED_CAST")
+        return filter {
+            it.type?.javaType == type
+        }.unsafeCast<List<DataType<T>>>()
     }
 
     @JvmName("registerEnum")

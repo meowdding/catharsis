@@ -9,7 +9,7 @@ import kotlin.time.Duration
 import kotlin.time.DurationUnit
 
 @Suppress("UNCHECKED_CAST")
-fun <From, To> From.unsafeCast(): To = this as To
+fun <To> Any.unsafeCast(): To = this as To
 
 val KClass<*>.isNumber: Boolean get() = java.isNumber
 val Class<*>.isNumber: Boolean

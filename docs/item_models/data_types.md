@@ -19,9 +19,9 @@ IDs of Data Types can be found at these locations:
 
 | Category | Conditional | Select | Range |
 |----------|-------------|--------|-------|
-| Number   | ✔️          | ✔️     | ✔️    |
-| String   | ✔️          | ❌      | ❌     |
-| Boolean  | ✔️          | ❌      | ❌     |
+| Number   | ❌          | ✔️     | ✔️    |
+| String   | ❌          | ✔️      | ❌     |
+| Boolean  | ✔️          | ✔️      | ❌     |
 
 ## Available Number Data Types
 

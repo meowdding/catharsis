@@ -252,8 +252,8 @@ object GiveCommands {
         }.sendWithPrefix("catharsis-dev-give-added-${item.getSkyBlockId() ?: item.hoverName.stripped}")
 
         val freeSlot = McClient.self.player?.inventory?.freeSlot ?: -1
-        McClient.self.player?.inventory?.setItem(freeSlot, itemStack)
-        McClient.connection?.send(ServerboundSetCreativeModeSlotPacket(36 + freeSlot, itemStack))
+        McClient.self.player?.inventory?.setItem(freeSlot, item)
+        McClient.connection?.send(ServerboundSetCreativeModeSlotPacket(36 + freeSlot, item))
         McClient.self.player?.containerMenu?.broadcastChanges()
     }
 

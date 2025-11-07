@@ -50,7 +50,7 @@ object GiveCommands {
 
     @Subscription
     private fun RegisterCommandsEvent.onRegister() {
-        register("catharsis dev give") {
+        register("catharsis dev give item") {
             callback {
                 val item = McClient.clipboard.readJson<JsonElement>().toData(ItemStack.CODEC)
                 if (item == null) {

@@ -39,7 +39,7 @@ object Areas : SimplePreparableReloadListener<List<Pair<ResourceLocation, AreaDe
 
     @Subscription
     private fun RegisterCommandsEvent.register() {
-        register("catharsis areas") {
+        register("catharsis dev areas") {
             thenCallback("render toggle location", ResourceLocationArgument.id(), ResourceLocationSuggestionProvider.create(areas.keys)) {
                 val location = argument<ResourceLocation>("location")!!
                 if (!areas.containsKey(location)) {

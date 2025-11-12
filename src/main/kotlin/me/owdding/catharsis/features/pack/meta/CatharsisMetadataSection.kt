@@ -1,6 +1,8 @@
 package me.owdding.catharsis.features.pack.meta
 
 import me.owdding.catharsis.Catharsis
+import me.owdding.catharsis.features.pack.config.PackConfigHandler
+import me.owdding.catharsis.features.pack.config.PackConfigOption
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
@@ -20,6 +22,7 @@ data class CatharsisMetadataSection(
     val version: String,
     @FieldName("update_url") val updateUrl: String?,
     val dependencies: Map<String, String> = emptyMap(),
+    val config: List<PackConfigOption> = emptyList(),
 ) {
 
     val incompatibilities: List<Pair<String, ModContainer?>> = dependencies.mapNotNull { (mod, range) ->
@@ -74,6 +77,12 @@ data class CatharsisMetadataSection(
 
     init {
         this.updateUrl?.let(PackUpdateChecker::requestUpdateInfo)
+        val default = PackConfigHandler.getConfig(this.id).default
+        default.asMap().clear()
+        for (option in this.config) {
+            val id = option.id ?: continue
+            default.add(id, option.asJson)
+        }
     }
 
     companion object {

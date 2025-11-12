@@ -4,7 +4,9 @@ import com.llamalad7.mixinextras.expression.Definition;
 import com.llamalad7.mixinextras.expression.Expression;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.llamalad7.mixinextras.sugar.ref.LocalRef;
+import com.mojang.blaze3d.platform.InputConstants;
 import kotlin.Pair;
+import me.owdding.catharsis.features.pack.config.PackConfigScreen;
 import me.owdding.catharsis.features.pack.meta.CatharsisMetadataSection;
 import me.owdding.catharsis.hooks.pack.PackEntryHook;
 import net.fabricmc.loader.api.ModContainer;
@@ -23,42 +25,61 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.List;
 import java.util.Optional;
 
+
 @Mixin(TransferableSelectionList.PackEntry.class)
 public abstract class TransferableSelectionListPackEntryMixin extends ObjectSelectionList.Entry {
 
-    @Shadow
-    @Final
-    protected Minecraft minecraft;
-
-    @Shadow
-    @Final
-    private PackSelectionModel.Entry pack;
-
-    @Shadow
-    private static MultiLineLabel cacheDescription(Minecraft minecraft, Component text) {
+    @Shadow @Final protected Minecraft minecraft;
+    @Shadow @Final private PackSelectionModel.Entry pack;
+    @Shadow private static MultiLineLabel cacheDescription(Minecraft minecraft, Component text) {
         return null;
     }
-
-    @Shadow
-    private static FormattedCharSequence cacheName(Minecraft minecraft, Component name) {
+    @Shadow private static FormattedCharSequence cacheName(Minecraft minecraft, Component name) {
         return null;
     }
+    @Shadow @Final private TransferableSelectionList parent;
 
-    @Unique
-    private MultiLineLabel catharsis$incompatibleModDescriptionDisplayCache;
+    @Unique private MultiLineLabel catharsis$incompatibleModDescriptionDisplayCache;
+    @Unique private FormattedCharSequence catharsis$incompatibleModNameDisplayCache;
 
-    @Unique
-    private FormattedCharSequence catharsis$incompatibleModNameDisplayCache;
+    @Unique private int right = 0;
+    @Unique private int top = 0;
 
     @Inject(method = "<init>", at = @At("TAIL"))
     private void init(CallbackInfo ci, @Local(argsOnly = true) Minecraft minecraft) {
         this.catharsis$incompatibleModNameDisplayCache = cacheName(minecraft, Component.translatable("pack.catharsis.incompatible.title"));
         this.catharsis$incompatibleModDescriptionDisplayCache = cacheDescription(minecraft, Component.translatable("pack.catharsis.incompatible.desc"));
     }
+
+    /*? if >= 1.21.9 {*/
+    @Inject(
+        method = "renderContent",
+        at = @At("HEAD")
+    )
+    private void renderConfigButton(CallbackInfo ci) {
+        this.right = this.getContentRight();
+        this.top = this.getContentY();
+    }
+    /*?} else {*/
+    /*@Inject(
+        method = "render",
+        at = @At("HEAD")
+    )
+    private void renderConfigButton(
+        CallbackInfo ci,
+        @Local(argsOnly = true, ordinal = 1) int top,
+        @Local(argsOnly = true, ordinal = 2) int left,
+        @Local(argsOnly = true, ordinal = 3) int width
+    ) {
+        this.right = left + width - 3 - (this.parent.maxScrollAmount() > 0 ? 7 : 0);
+        this.top = top;
+    }
+    *//*?}*/
 
     @Definition(id = "incompatibleDescriptionDisplayCache", field = "Lnet/minecraft/client/gui/screens/packs/TransferableSelectionList$PackEntry;incompatibleDescriptionDisplayCache:Lnet/minecraft/client/gui/components/MultiLineLabel;")
     @Expression("? = ?.incompatibleDescriptionDisplayCache")
@@ -85,6 +106,56 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
             graphics.setTooltipForNextFrame(this.minecraft.font, meta.getIncompatibleTooltip(), Optional.empty(), mouseX, mouseY);
         }
     }
+
+    @Inject(
+        method = /*? if >= 1.21.9 {*/ "renderContent" /*?} else {*/ /*"render" *//*?}*/,
+        at = @At("TAIL")
+    )
+    private void renderConfigButton(
+        CallbackInfo ci,
+        @Local(ordinal = 0, argsOnly = true) GuiGraphics graphics,
+        @Local(ordinal = 0, argsOnly = true) int mouseX,
+        @Local(ordinal = 1, argsOnly = true) int mouseY,
+        @Local(ordinal = 0, argsOnly = true) boolean isHovering,
+        @Local(ordinal = 0) LocalRef<FormattedCharSequence> nameDisplayCache,
+        @Local(ordinal = 0) LocalRef<MultiLineLabel> descriptionDisplayCache
+    ) {
+        var self = (TransferableSelectionList.PackEntry)(Object)this;
+        var selected = this.parent.getSelected() == self;
+        if (selected || isHovering) {
+            var meta = catharsis$getMeta();
+            if (meta == null || meta.getConfig().isEmpty()) return;
+            int x = this.right - 11;
+            int y = this.top;
+            boolean buttonHovered = mouseX >= x && mouseX <= x + 11 && mouseY >= y && mouseY <= y + 11;
+            graphics.fill(x, y, x + 11, y + 11, selected ? 0xff000000 : 0x88555555);
+            graphics.drawString(this.minecraft.font, "⚙", x + 2, y + 1, buttonHovered ? 0xffB0B0B0 : 0xffffffff, false);
+            if (buttonHovered) {
+                //? >= 1.21.9
+                graphics.requestCursor(com.mojang.blaze3d.platform.cursor.CursorTypes.POINTING_HAND);
+            }
+        }
+    }
+
+    @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
+    /*? if >= 1.21.9 {*/
+    private void onMouseClicked(net.minecraft.client.input.MouseButtonEvent event, boolean isDoubleClick, CallbackInfoReturnable<Boolean> cir) {
+        var mouseX = event.x();
+        var mouseY = event.y();
+        var button = event.input();
+    /*?} else {*/
+    /*private void onMouseClicked(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> cir) {
+    *//*?}*/
+        var meta = catharsis$getMeta();
+        if (meta == null) return;
+        if (mouseX < this.right - 11 || mouseX > this.right) return;
+        if (mouseY < this.top || mouseY > this.top + 11) return;
+        if (button == InputConstants.MOUSE_BUTTON_LEFT && !meta.getConfig().isEmpty()) {
+            this.minecraft.setScreen(new PackConfigScreen(this.minecraft.screen, meta.getId(), meta.getConfig()));
+            cir.setReturnValue(true);
+        }
+    }
+
 
     @Unique
     private CatharsisMetadataSection catharsis$getMeta() {

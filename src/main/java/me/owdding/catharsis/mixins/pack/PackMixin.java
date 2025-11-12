@@ -35,7 +35,6 @@ public class PackMixin implements PackMetadataHook {
         )
     )
     private static Pack.Metadata readCatharsisMetadata(PackLocationInfo info, Pack.ResourcesSupplier resources, PackFormat format, PackType type, Operation<Pack.Metadata> original) {
-        var metadata = original.call(info, resources, format, type);
     //?} else {
     /*@WrapOperation(
         method = "readMetaAndCreate",
@@ -45,9 +44,21 @@ public class PackMixin implements PackMetadataHook {
         )
     )
     private static Pack.Metadata readCatharsisMetadata(PackLocationInfo info, Pack.ResourcesSupplier resources, int config, Operation<Pack.Metadata> original, @Local(argsOnly = true) PackType type) {
-        var metadata = original.call(info, resources, config);
     *///?}
-        if (type == PackType.CLIENT_RESOURCES) catharsis$parseMetadata(metadata, resources, info);
+
+        // This needs to be done before the original method is called so that its done before fabric's so it can be used within the overlays
+        var catharsisMetadata = type == PackType.CLIENT_RESOURCES ? catharsis$parseMetadata(resources, info) : null;
+
+        //? if >= 1.21.9 {
+        var metadata = original.call(info, resources, format, type);
+        //?} else {
+         /*var metadata = original.call(info, resources, config);
+         *///?}
+
+        //noinspection ConstantValue
+        if ((Object)metadata instanceof PackMetadataHook hook) {
+            hook.catharsis$setMetadata(catharsisMetadata);
+        }
         return metadata;
     }
 
@@ -62,15 +73,12 @@ public class PackMixin implements PackMetadataHook {
     }
 
     @Unique
-    private static void catharsis$parseMetadata(Pack.Metadata metadata, Pack.ResourcesSupplier resources, PackLocationInfo info) {
+    private static CatharsisMetadataSection catharsis$parseMetadata(Pack.ResourcesSupplier resources, PackLocationInfo info) {
         try (var sources = resources.openPrimary(info)) {
-            var catharsisMetadata = sources.getMetadataSection(CatharsisMetadataSection.TYPE);
-            //noinspection ConstantValue
-            if ((Object) metadata instanceof PackMetadataHook hook) {
-                hook.catharsis$setMetadata(catharsisMetadata);
-            }
+            return sources.getMetadataSection(CatharsisMetadataSection.TYPE);
         } catch (Exception ignored) {
         }
+        return null;
     }
 
     @Mixin(Pack.Metadata.class)

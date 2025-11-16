@@ -10,6 +10,7 @@ import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.network.chat.Component
 import net.minecraft.util.ExtraCodecs
+import tech.thatgravyboat.skyblockapi.utils.text.CommonText
 
 sealed interface PackConfigOption {
 
@@ -67,6 +68,17 @@ sealed interface PackConfigOption {
         data class Entry(val value: String, val text: Component, val default: Boolean = false)
     }
 
+    @GenerateCodec
+    data class Tab(
+        override val title: Component,
+        val options: List<PackConfigOption>,
+    ) : PackConfigOption {
+
+        override val type: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Tab>()
+        override val id: String? = null
+        override val description: Component = CommonText.EMPTY
+    }
+
     companion object {
         val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<String, MapCodec<out PackConfigOption>>()
 
@@ -77,6 +89,7 @@ sealed interface PackConfigOption {
             ID_MAPPER.put("separator", CatharsisCodecs.getMapCodec<Separator>())
             ID_MAPPER.put("boolean", CatharsisCodecs.getMapCodec<Bool>())
             ID_MAPPER.put("dropdown", CatharsisCodecs.getMapCodec<Dropdown>())
+            ID_MAPPER.put("tab", CatharsisCodecs.getMapCodec<Tab>())
         }
     }
 }

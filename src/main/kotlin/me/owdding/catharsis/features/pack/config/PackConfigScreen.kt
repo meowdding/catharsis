@@ -4,10 +4,14 @@ import com.google.gson.JsonPrimitive
 import net.minecraft.Util
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.components.*
+import net.minecraft.client.gui.components.tabs.Tab
+import net.minecraft.client.gui.components.tabs.TabManager
+import net.minecraft.client.gui.components.tabs.TabNavigationBar
 import net.minecraft.client.gui.layouts.EqualSpacingLayout
 import net.minecraft.client.gui.layouts.HeaderAndFooterLayout
 import net.minecraft.client.gui.layouts.LayoutElement
 import net.minecraft.client.gui.layouts.LinearLayout
+import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.client.gui.screens.Screen
 import net.minecraft.network.chat.ClickEvent
 import net.minecraft.network.chat.CommonComponents
@@ -17,7 +21,10 @@ import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McFont
 import tech.thatgravyboat.skyblockapi.utils.extentions.asBoolean
 import tech.thatgravyboat.skyblockapi.utils.extentions.asString
+import tech.thatgravyboat.skyblockapi.utils.text.Text
+import java.util.function.Consumer
 import kotlin.math.max
+
 
 class PackConfigScreen(private val parent: Screen?, pack: String, private val options: List<PackConfigOption>) : Screen(Component.empty()) {
 
@@ -26,7 +33,34 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
     private val config = PackConfigHandler.getConfig(pack)
     private val originalConfigData = config.current.deepCopy()
 
+
+    private val tabManager: TabManager = TabManager(
+        { guieventlistener -> this.addRenderableWidget(guieventlistener) },
+        { guieventlistener -> this.removeWidget(guieventlistener) },
+    )
+    private var tabNavigationBar: TabNavigationBar? = null
+
     override fun init() {
+        val tabs: Map<Component, List<PackConfigOption>> = options.associate {
+            when (it) {
+                is PackConfigOption.Tab -> {
+                    it.title to it.options
+                }
+
+                else -> Text.of("General") to options.filterNot { it is PackConfigOption.Tab }
+            }
+        }
+
+        if (tabs.size > 1) {
+            val tabTab = tabs.map { (title, options) ->
+                PackConfigScreenTab(title, options)
+            }
+            this.tabNavigationBar = TabNavigationBar.builder(this.tabManager, this.width)
+                .addTabs(*tabTab.toTypedArray())
+                .build()
+        }
+        this.addRenderableWidget(this.tabNavigationBar)
+
         this.layout.headerHeight = 0
 
         val contents = LinearLayout.vertical().spacing(8)
@@ -47,6 +81,16 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
     }
 
     override fun repositionElements() {
+        this.tabNavigationBar?.let {
+            it.setWidth(this.width)
+            it.arrangeElements()
+            val i = it.rectangle.bottom()
+            val screenrectangle = ScreenRectangle(0, i, this.width, this.height - this.layout.footerHeight - i)
+            this.tabManager.setTabArea(screenrectangle)
+            this.layout.headerHeight = i
+            this.layout.arrangeElements()
+        }
+
         this.scrollArea!!.setMaxHeight(130)
         this.layout.arrangeElements()
         val i = this.height - this.layout.footerHeight - this.scrollArea!!.rectangle.bottom()
@@ -106,6 +150,7 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
                 config.set(option.id, JsonPrimitive(newValue))
             }
         }
+
         is PackConfigOption.Dropdown -> {
             val value = config.get(option.id).asString()?.let { option.options.find { entry -> entry.value == it } } ?: option.default
             val width = max(option.options.maxOf { McFont.width(it.text) } + 8, 44)
@@ -118,6 +163,24 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
                     config.set(option.id, JsonPrimitive(entry.value))
                 }
         }
+
         else -> null
+    }
+}
+
+data class PackConfigScreenTab(
+    val title: Component,
+    val options: List<PackConfigOption>,
+) : Tab {
+    override fun getTabTitle(): Component = title
+
+    override fun getTabExtraNarration(): Component? = null
+
+    override fun visitChildren(consumer: Consumer<AbstractWidget>) {
+
+    }
+
+    override fun doLayout(rectangle: ScreenRectangle) {
+
     }
 }

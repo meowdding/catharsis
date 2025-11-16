@@ -8,7 +8,9 @@ import net.minecraft.client.gui.components.tabs.Tab
 import net.minecraft.client.gui.components.tabs.TabManager
 import net.minecraft.client.gui.components.tabs.TabNavigationBar
 import net.minecraft.client.gui.layouts.EqualSpacingLayout
+import net.minecraft.client.gui.layouts.FrameLayout
 import net.minecraft.client.gui.layouts.HeaderAndFooterLayout
+import net.minecraft.client.gui.layouts.Layout
 import net.minecraft.client.gui.layouts.LayoutElement
 import net.minecraft.client.gui.layouts.LinearLayout
 import net.minecraft.client.gui.navigation.ScreenRectangle
@@ -21,57 +23,45 @@ import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McFont
 import tech.thatgravyboat.skyblockapi.utils.extentions.asBoolean
 import tech.thatgravyboat.skyblockapi.utils.extentions.asString
-import tech.thatgravyboat.skyblockapi.utils.text.Text
 import java.util.function.Consumer
 import kotlin.math.max
 
 
 class PackConfigScreen(private val parent: Screen?, pack: String, private val options: List<PackConfigOption>) : Screen(Component.empty()) {
 
-    private val layout = HeaderAndFooterLayout(this)
-    private var scrollArea: ScrollableLayout? = null
     private val config = PackConfigHandler.getConfig(pack)
     private val originalConfigData = config.current.deepCopy()
 
-
-    private val tabManager: TabManager = TabManager(
-        { guieventlistener -> this.addRenderableWidget(guieventlistener) },
-        { guieventlistener -> this.removeWidget(guieventlistener) },
-    )
-    private var tabNavigationBar: TabNavigationBar? = null
+    private val layout = HeaderAndFooterLayout(this)
+    private val tabs: TabManager = TabManager({ widget -> this.addRenderableWidget(widget) }, { widget -> this.removeWidget(widget) })
+    private var navigation: TabNavigationBar? = null
 
     override fun init() {
-        val tabs: Map<Component, List<PackConfigOption>> = options.associate {
-            when (it) {
+        val contents = mutableMapOf<Component, LinearLayout>()
+        for (option in options) {
+            when (option) {
                 is PackConfigOption.Tab -> {
-                    it.title to it.options
+                    val layout = contents.getOrPut(option.title) { LinearLayout.vertical().spacing(8) }
+                    option.options.map(this::getOptionElement).forEach(layout::addChild)
                 }
-
-                else -> Text.of("General") to options.filterNot { it is PackConfigOption.Tab }
+                else -> {
+                    val layout = contents.getOrPut(GENERAL_TAB) { LinearLayout.vertical().spacing(8) }
+                    layout.addChild(this.getOptionElement(option))
+                }
             }
         }
 
-        if (tabs.size > 1) {
-            val tabTab = tabs.map { (title, options) ->
-                PackConfigScreenTab(title, options)
-            }
-            this.tabNavigationBar = TabNavigationBar.builder(this.tabManager, this.width)
-                .addTabs(*tabTab.toTypedArray())
-                .build()
-        }
-        this.addRenderableWidget(this.tabNavigationBar)
-
-        this.layout.headerHeight = 0
-
-        val contents = LinearLayout.vertical().spacing(8)
-
-        for (option in this.options) {
-            contents.addChild(getOptionElement(option))
-        }
-
-        this.scrollArea = ScrollableLayout(this.minecraft!!, contents, 130)
-        this.scrollArea!!.setMinWidth(310)
-        this.layout.addToContents(this.scrollArea!!)
+        this.navigation = this.addRenderableWidget(
+            TabNavigationBar.builder(this.tabs, this.width)
+                .addTabs(
+                    *contents
+                        .map { (title, layout) -> PackConfigScreenTab(title, layout) }
+                        .sortedBy { tab -> if (tab.title == GENERAL_TAB) 0 else 1 }
+                        .toTypedArray(),
+                )
+                .build(),
+        )
+        this.navigation!!.selectTab(0, false)
 
         val footer = this.layout.addToFooter<LinearLayout>(LinearLayout.horizontal())
         footer.addChild(Button.builder(CommonComponents.GUI_DONE) { this.onClose() }.build())
@@ -81,20 +71,15 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
     }
 
     override fun repositionElements() {
-        this.tabNavigationBar?.let {
-            it.setWidth(this.width)
-            it.arrangeElements()
-            val i = it.rectangle.bottom()
-            val screenrectangle = ScreenRectangle(0, i, this.width, this.height - this.layout.footerHeight - i)
-            this.tabManager.setTabArea(screenrectangle)
-            this.layout.headerHeight = i
-            this.layout.arrangeElements()
-        }
+        val nav = this.navigation ?: return
+        nav.setWidth(this.width)
+        nav.arrangeElements()
 
-        this.scrollArea!!.setMaxHeight(130)
+        val navBottom = nav.rectangle.bottom()
+
+        this.tabs.setTabArea(ScreenRectangle(0, navBottom, this.width, this.height - navBottom - this.layout.footerHeight))
+        this.layout.headerHeight = navBottom
         this.layout.arrangeElements()
-        val i = this.height - this.layout.footerHeight - this.scrollArea!!.rectangle.bottom()
-        this.scrollArea!!.setMaxHeight(this.scrollArea!!.height + i)
     }
 
     override fun onClose() {
@@ -166,21 +151,27 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
 
         else -> null
     }
+
+    companion object {
+
+        private val GENERAL_TAB = Component.literal("General")
+    }
 }
 
-data class PackConfigScreenTab(
-    val title: Component,
-    val options: List<PackConfigOption>,
-) : Tab {
-    override fun getTabTitle(): Component = title
+class PackConfigScreenTab(val title: Component, contents: Layout) : Tab {
 
-    override fun getTabExtraNarration(): Component? = null
-
-    override fun visitChildren(consumer: Consumer<AbstractWidget>) {
-
+    val layout: ScrollableLayout = ScrollableLayout(McClient.self, contents, 130).also {
+        it.setMinWidth(310)
+        it.setMaxHeight(130)
     }
 
+    override fun getTabTitle(): Component = title
+    override fun getTabExtraNarration(): Component? = null
+    override fun visitChildren(consumer: Consumer<AbstractWidget>) = layout.visitWidgets(consumer)
     override fun doLayout(rectangle: ScreenRectangle) {
-
+        this.layout.setMaxHeight(rectangle.height - 20)
+        this.layout.arrangeElements()
+        FrameLayout.centerInRectangle(this.layout, rectangle)
+        this.layout.y = rectangle.top() + 10
     }
 }

@@ -51,21 +51,26 @@ sealed interface PackConfigOption {
 
         val default: Entry by lazy { this.options.first(Entry::default) }
 
-        override val type: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Dropdown>().validate {
-            val values = it.options.map(Entry::value).toSet()
-            val defaults = it.options.filter(Entry::default)
-
-            when {
-                values.size != it.options.size -> DataResult.error { "Dropdown values have duplicate values." }
-                defaults.size > 1 -> DataResult.error { "Dropdown has more than 1 default value." }
-                defaults.isEmpty() -> DataResult.error { "Dropdown must have 1 default value" }
-                else -> DataResult.success(it)
-            }
-        }
+        override val type: MapCodec<out PackConfigOption> = CODEC
         override val asJson: JsonElement get() = JsonPrimitive(options.first { it.default }.value)
 
         @GenerateCodec
         data class Entry(val value: String, val text: Component, val default: Boolean = false)
+
+        companion object {
+
+            val CODEC: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Dropdown>().validate {
+                val values = it.options.map(Entry::value).toSet()
+                val defaults = it.options.filter(Entry::default)
+
+                when {
+                    values.size != it.options.size -> DataResult.error { "Dropdown values have duplicate values" }
+                    defaults.size > 1 -> DataResult.error { "Dropdown has more than 1 default value" }
+                    defaults.isEmpty() -> DataResult.error { "Dropdown must have 1 default value" }
+                    else -> DataResult.success(it)
+                }
+            }
+        }
     }
 
     @GenerateCodec
@@ -74,9 +79,19 @@ sealed interface PackConfigOption {
         val options: List<PackConfigOption>,
     ) : PackConfigOption {
 
-        override val type: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Tab>()
+        override val type: MapCodec<out PackConfigOption> = CODEC
         override val id: String? = null
         override val description: Component = CommonText.EMPTY
+
+        companion object {
+            val CODEC: MapCodec<Tab> = CatharsisCodecs.getMapCodec<Tab>().validate {
+                when {
+                    it.options.filterIsInstance<Tab>().isNotEmpty() -> DataResult.error { "Tabs cannot contain other tabs" }
+                    it.options.isEmpty() -> DataResult.error { "Tabs must contain at least one option inside" }
+                    else -> DataResult.success(it)
+                }
+            }
+        }
     }
 
     companion object {
@@ -88,8 +103,8 @@ sealed interface PackConfigOption {
         init {
             ID_MAPPER.put("separator", CatharsisCodecs.getMapCodec<Separator>())
             ID_MAPPER.put("boolean", CatharsisCodecs.getMapCodec<Bool>())
-            ID_MAPPER.put("dropdown", CatharsisCodecs.getMapCodec<Dropdown>())
-            ID_MAPPER.put("tab", CatharsisCodecs.getMapCodec<Tab>())
+            ID_MAPPER.put("dropdown", Dropdown.CODEC)
+            ID_MAPPER.put("tab", Tab.CODEC)
         }
     }
 }

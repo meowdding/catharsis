@@ -9,11 +9,15 @@ import me.owdding.catharsis.utils.extensions.mapBothNotNull
 import me.owdding.catharsis.utils.types.fabric.PreparingModelLoadingPlugin
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin
+import net.minecraft.core.BlockPos
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.resources.FileToIdConverter
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.server.packs.resources.ResourceManager
+import net.minecraft.util.Mth
+import net.minecraft.util.RandomSource
 import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.block.state.BlockState
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import java.util.concurrent.CompletableFuture
 import java.util.concurrent.Executor
@@ -32,6 +36,15 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
 
     private val blockDefinitionCodec: Codec<BlockReplacement.Completable> = BlockStateDefinitions.CODEC.codec()
     private val virtualBlockStateCodec: Codec<VirtualBlockStateDefinition> = CatharsisCodecs.VirtualBlockStateDefinitionCodec.codec()
+
+    private val map: MutableMap<Block, LayeredBlockReplacements> = mutableMapOf()
+
+    @JvmStatic
+    fun getBlock(block: Block): LayeredBlockReplacements? = map[block]
+
+    @JvmStatic
+    fun getSound(state: BlockState, pos: BlockPos): BlockSoundDefinition =
+        map[state.block]?.select(state, pos, RandomSource.create(Mth.getSeed(pos)))?.sounds ?: BlockSoundDefinition.DEFAULT
 
     override fun prepare(
         resourceManager: ResourceManager,
@@ -87,6 +100,8 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
         context.modifyBlockModelOnLoad().register { original, context ->
             val block = context.state().block
 
+            this.map.putAll(data)
+
             data[block]?.let {
                 return@register UnbakedBlockStateModelReplacement(block, original, it)
             }
@@ -97,5 +112,5 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
 }
 
 data class BlockReplacementBakery(
-    val virtualStates: Map<ResourceLocation, VirtualBlockStateDefinition>
+    val virtualStates: Map<ResourceLocation, VirtualBlockStateDefinition>,
 )

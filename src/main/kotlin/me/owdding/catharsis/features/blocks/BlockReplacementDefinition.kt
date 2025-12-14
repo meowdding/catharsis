@@ -30,12 +30,21 @@ interface BlockReplacement {
 
     fun listStates(): List<VirtualBlockStateDefinition>
     fun bake(baker: ModelBaker, block: Block): BlockReplacementSelector
+    fun select(
+        state: BlockState,
+        pos: BlockPos,
+        random: RandomSource,
+    ): VirtualBlockStateDefinition?
 }
 
 data class LayeredBlockReplacements(
     val definitions: List<BlockReplacement>,
 ) {
     fun listStates(): List<VirtualBlockStateDefinition> = definitions.flatMap { it.listStates() }
+    fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
+        return definitions.firstNotNullOfOrNull { it.select(state, pos, random) }
+    }
+
     data class Completable(
         val definitions: List<BlockReplacement.Completable>,
     ) {
@@ -67,6 +76,7 @@ data class RedirectBlockReplacement(
 ) : BlockReplacement {
     override fun listStates(): List<VirtualBlockStateDefinition> = listOf(virtualState)
     override fun bake(baker: ModelBaker, block: Block) = BlockReplacementSelector.always(Baked(virtualState.blend, virtualState.instantiate(block, baker)))
+    override fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition = virtualState
 
     data class Baked(
         override val blend: BlendMode?,
@@ -75,7 +85,7 @@ data class RedirectBlockReplacement(
         override val transform: QuadTransform by lazy {
             if (blend != null) {
                 QuadTransform { quad ->
-                    quad.renderLayer(blend.toSectionLayer())
+                    quad.renderLayer(blend.sectionLayer)
                     true
                 }
             } else {
@@ -87,7 +97,7 @@ data class RedirectBlockReplacement(
     @GenerateCodec
     @NamedCodec("CompletableRedirectBlockReplacement")
     data class Completable(
-            @FieldName("virtual_state") val virtualState: ResourceLocation,
+        @FieldName("virtual_state") val virtualState: ResourceLocation,
     ) : BlockReplacement.Completable {
         override val codec: MapCodec<Completable> = CatharsisCodecs.getMapCodec()
         override fun virtualStates() = listOf(virtualState)
@@ -100,6 +110,12 @@ data class PerAreaBlockReplacement(
     val values: Map<ResourceLocation, BlockReplacement>,
 ) : BlockReplacement {
     override fun listStates(): List<VirtualBlockStateDefinition> = values.values.flatMap { it.listStates() }
+    override fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
+        return values.firstNotNullOfOrNull { (area, value) ->
+            value.takeIf { Areas.getLoadedAreas()[area]?.contains(pos) == true }?.select(state, pos, random)
+        }
+    }
+
     data class PerAreaBlockReplacementSelector(
         val values: Map<ResourceLocation, BlockReplacementSelector>,
     ) : BlockReplacementSelector {
@@ -140,6 +156,14 @@ data class RandomBlockReplacement(
     val fallback: BlockReplacement?,
 ) : BlockReplacement {
     override fun listStates(): List<VirtualBlockStateDefinition> = listOfNotNull(definition.listStates(), fallback?.listStates()).flatten()
+    override fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
+        return if (min + random.nextFloat() * (max - min) >= threshold) {
+            definition
+        } else {
+            fallback
+        }?.select(state, pos, random)
+    }
+
     data class RandomBlockReplacementSelector(
         val min: Float, val max: Float, val threshold: Float,
         val definition: BlockReplacementSelector,

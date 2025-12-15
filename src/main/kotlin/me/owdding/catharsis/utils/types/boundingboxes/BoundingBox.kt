@@ -8,7 +8,7 @@ import me.owdding.catharsis.utils.codecs.PosCodecs
 import me.owdding.catharsis.utils.extensions.mutableCopy
 import me.owdding.catharsis.utils.extensions.pose
 import me.owdding.ktcodecs.IncludedCodec
-import net.minecraft.client.renderer.RenderType
+import net.minecraft.client.renderer.rendertype.RenderType
 import net.minecraft.client.renderer.ShapeRenderer
 import net.minecraft.core.Vec3i
 import net.minecraft.world.phys.AABB

@@ -6,7 +6,7 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.network.chat.Component
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 
 interface TextReplacer {
@@ -23,10 +23,10 @@ sealed class ReplacementResult(val text: Component, val replaced: Boolean = true
 
 object TextReplacers {
 
-    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<ResourceLocation, MapCodec<out TextReplacer>>()
+    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out TextReplacer>>()
 
     @IncludedCodec
-    val CODEC: Codec<TextReplacer> = ID_MAPPER.codec(ResourceLocation.CODEC).dispatch(TextReplacer::codec) { it }
+    val CODEC: Codec<TextReplacer> = ID_MAPPER.codec(Identifier.CODEC).dispatch(TextReplacer::codec) { it }
 
     init {
         ID_MAPPER.put(Catharsis.id("regex"), CatharsisCodecs.getMapCodec<RegexTextReplacer>())

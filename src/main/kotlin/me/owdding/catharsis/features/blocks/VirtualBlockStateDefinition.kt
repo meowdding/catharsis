@@ -9,6 +9,7 @@ import net.minecraft.client.renderer.chunk.ChunkSectionLayer
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
+import tech.thatgravyboat.skyblockapi.platform.identifier
 
 @GenerateCodec
 data class VirtualBlockStateDefinition(
@@ -20,7 +21,7 @@ data class VirtualBlockStateDefinition(
 
     fun getRoots(block: Block): Map<BlockState, BlockStateModel.UnbakedRoot> {
         if (roots == null) {
-            roots = model.instantiate(block.stateDefinition) { block.builtInRegistryHolder().key().location().toString() }
+            roots = model.instantiate(block.stateDefinition) { block.builtInRegistryHolder().key().identifier.toString() }
         }
         return roots!!
     }

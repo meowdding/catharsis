@@ -9,7 +9,7 @@ import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.Utils
 import me.owdding.ktmodules.Module
 import net.minecraft.resources.FileToIdConverter
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.profiling.ProfilerFiller
@@ -23,7 +23,7 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
     private val gson = GsonBuilder().create()
     private val codec = CatharsisCodecs.getCodec<GuiModifier>()
 
-    private val definitionModifiers: MutableMap<ResourceLocation, GuiModifier> = mutableMapOf()
+    private val definitionModifiers: MutableMap<Identifier, GuiModifier> = mutableMapOf()
 
     override fun prepare(manager: ResourceManager, profiler: ProfilerFiller): List<GuiModifier> {
         return converter.listMatchingResources(manager)

@@ -6,7 +6,7 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 
 interface GuiDefCondition {
@@ -18,10 +18,10 @@ interface GuiDefCondition {
 
 object GuiDefConditions {
 
-    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<ResourceLocation, MapCodec<out GuiDefCondition>>()
+    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out GuiDefCondition>>()
 
     @IncludedCodec
-    val CODEC: Codec<GuiDefCondition> = ID_MAPPER.codec(ResourceLocation.CODEC).dispatch(GuiDefCondition::codec) { it }
+    val CODEC: Codec<GuiDefCondition> = ID_MAPPER.codec(Identifier.CODEC).dispatch(GuiDefCondition::codec) { it }
 
     init {
         ID_MAPPER.put(Catharsis.id("any"), CatharsisCodecs.getMapCodec<GuiDefAnyCondition>())

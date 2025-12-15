@@ -8,14 +8,14 @@ import net.minecraft.client.renderer.texture.*
 import net.minecraft.client.resources.metadata.animation.AnimationMetadataSection
 import net.minecraft.client.resources.metadata.animation.FrameSize
 import net.minecraft.client.resources.metadata.texture.TextureMetadataSection
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.util.Mth
 import java.io.IOException
 import java.util.*
 import kotlin.jvm.optionals.getOrNull
 
-class AnimatableSimpleTexture(location: ResourceLocation) : SimpleTexture(location), Tickable {
+class AnimatableSimpleTexture(location: Identifier) : SimpleTexture(location), Tickable {
 
     private var contents: SpriteContents? = null
     private var ticker: SpriteTicker? = null

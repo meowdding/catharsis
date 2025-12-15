@@ -11,7 +11,7 @@ import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.resources.FileToIdConverter
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.world.level.block.Block
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
@@ -50,7 +50,7 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
         }
     }
 
-    fun loadBlockReplacements(resourceManager: ResourceManager): Map<ResourceLocation, LayeredBlockReplacements.Completable> {
+    fun loadBlockReplacements(resourceManager: ResourceManager): Map<Identifier, LayeredBlockReplacements.Completable> {
         return blockReplacementConverter.listMatchingResourceStacks(resourceManager).mapBothNotNull { (id, value) ->
             val replacements = LayeredBlockReplacements.Completable(
                 value.mapNotNull {
@@ -65,7 +65,7 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
         }
     }
 
-    fun loadBlockStates(resourceManager: ResourceManager, map: Map<ResourceLocation, LayeredBlockReplacements.Completable>): Map<Block, LayeredBlockReplacements> {
+    fun loadBlockStates(resourceManager: ResourceManager, map: Map<Identifier, LayeredBlockReplacements.Completable>): Map<Block, LayeredBlockReplacements> {
         val entries = blockStateConverter.listMatchingResources(resourceManager).mapNotNull { (id, resource) ->
             logger.runCatching("Error loading virtual block state $id") {
                 resource.openAsReader().use { reader ->
@@ -97,5 +97,5 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
 }
 
 data class BlockReplacementBakery(
-    val virtualStates: Map<ResourceLocation, VirtualBlockStateDefinition>
+    val virtualStates: Map<Identifier, VirtualBlockStateDefinition>
 )

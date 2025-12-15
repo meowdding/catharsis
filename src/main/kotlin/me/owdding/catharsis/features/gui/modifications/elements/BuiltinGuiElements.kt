@@ -8,7 +8,7 @@ import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.client.gui.screens.inventory.InventoryScreen
 import net.minecraft.client.renderer.RenderPipelines
 import net.minecraft.network.chat.Component
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.util.CommonColors
 import org.joml.Quaternionf
 import org.joml.Vector3f
@@ -56,7 +56,7 @@ data class GuiPlayerElement(
 
 @GenerateCodec
 data class GuiSpriteElement(
-    val sprite: ResourceLocation,
+    val sprite: Identifier,
     override val layer: GuiElementRenderLayer = GuiElementRenderLayer.BACKGROUND,
     val x: Int?,
     val y: Int?,

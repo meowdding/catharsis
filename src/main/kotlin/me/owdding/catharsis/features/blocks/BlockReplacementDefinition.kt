@@ -14,7 +14,7 @@ import net.fabricmc.fabric.api.renderer.v1.mesh.QuadTransform
 import net.minecraft.client.renderer.block.model.BlockStateModel
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.core.BlockPos
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.util.RandomSource
 import net.minecraft.world.level.block.Block
@@ -24,7 +24,7 @@ interface BlockReplacement {
     interface Completable {
         val codec: MapCodec<out Completable>
 
-        fun virtualStates(): List<ResourceLocation>
+        fun virtualStates(): List<Identifier>
         fun bake(bakery: BlockReplacementBakery): BlockReplacement
     }
 
@@ -87,7 +87,7 @@ data class RedirectBlockReplacement(
     @GenerateCodec
     @NamedCodec("CompletableRedirectBlockReplacement")
     data class Completable(
-            @FieldName("virtual_state") val virtualState: ResourceLocation,
+            @FieldName("virtual_state") val virtualState: Identifier,
     ) : BlockReplacement.Completable {
         override val codec: MapCodec<Completable> = CatharsisCodecs.getMapCodec()
         override fun virtualStates() = listOf(virtualState)
@@ -97,11 +97,11 @@ data class RedirectBlockReplacement(
 
 
 data class PerAreaBlockReplacement(
-    val values: Map<ResourceLocation, BlockReplacement>,
+    val values: Map<Identifier, BlockReplacement>,
 ) : BlockReplacement {
     override fun listStates(): List<VirtualBlockStateDefinition> = values.values.flatMap { it.listStates() }
     data class PerAreaBlockReplacementSelector(
-        val values: Map<ResourceLocation, BlockReplacementSelector>,
+        val values: Map<Identifier, BlockReplacementSelector>,
     ) : BlockReplacementSelector {
         override fun select(
             state: BlockState,
@@ -123,7 +123,7 @@ data class PerAreaBlockReplacement(
     @GenerateCodec
     @NamedCodec("CompletablePerAreaBlockReplacement")
     data class Completable(
-        @FieldName("entries") val values: Map<ResourceLocation, BlockReplacement.Completable>,
+        @FieldName("entries") val values: Map<Identifier, BlockReplacement.Completable>,
     ) : BlockReplacement.Completable {
         override val codec: MapCodec<Completable> = CatharsisCodecs.getMapCodec()
         override fun virtualStates() = values.values.flatMap { it.virtualStates() }
@@ -182,10 +182,10 @@ data class RandomBlockReplacement(
 }
 
 object BlockStateDefinitions {
-    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<ResourceLocation, MapCodec<out BlockReplacement.Completable>>()
+    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out BlockReplacement.Completable>>()
 
     @IncludedCodec
-    val CODEC: MapCodec<BlockReplacement.Completable> = ID_MAPPER.codec(IncludedCodecs.catharsisResourceLocation).dispatchMap(BlockReplacement.Completable::codec) { it }
+    val CODEC: MapCodec<BlockReplacement.Completable> = ID_MAPPER.codec(IncludedCodecs.catharsisIdentifier).dispatchMap(BlockReplacement.Completable::codec) { it }
 
     init {
         ID_MAPPER.put(Catharsis.id("redirect"), CatharsisCodecs.getMapCodec<RedirectBlockReplacement.Completable>())

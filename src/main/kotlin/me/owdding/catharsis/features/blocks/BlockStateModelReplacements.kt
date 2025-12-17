@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.blocks
 
+import me.owdding.catharsis.features.blocks.replacements.LayeredBlockReplacements
 import net.fabricmc.fabric.api.renderer.v1.mesh.QuadEmitter
 import net.fabricmc.fabric.api.renderer.v1.mesh.QuadTransform
 import net.fabricmc.fabric.api.renderer.v1.model.FabricBlockStateModel

@@ -1,0 +1,38 @@
+package me.owdding.catharsis.features.blocks.replacements.conditions
+
+import com.mojang.serialization.Codec
+import com.mojang.serialization.DataResult
+import com.mojang.serialization.MapCodec
+import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.utils.codecs.IncludedCodecs
+import me.owdding.ktcodecs.IncludedCodec
+import net.minecraft.core.BlockPos
+import net.minecraft.util.ExtraCodecs
+import net.minecraft.util.RandomSource
+import net.minecraft.world.level.Level
+import net.minecraft.world.level.block.state.BlockState
+
+interface BlockCondition {
+
+    val codec: MapCodec<out BlockCondition>
+
+    fun check(state: BlockState, pos: BlockPos, level: Level, random: RandomSource): Boolean
+}
+
+object BlockConditions {
+    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<String, MapCodec<out BlockCondition>>()
+    @IncludedCodec val CODEC: Codec<BlockCondition> = Codec.withAlternative(
+        ID_MAPPER.codec(Codec.STRING).dispatchMap(BlockCondition::codec) { it }.codec(),
+        IncludedCodecs.tagOrBlocksCodec.flatComapMap(::BlockIdCondition) { DataResult.error {
+            "BlockConditions.CODEC.IncludedCodecs.tagOrBlocksCodec Should never encode!"
+        }}
+    )
+
+    init {
+        ID_MAPPER.put("or", CatharsisCodecs.OrBlockConditionCodec)
+        ID_MAPPER.put("and", CatharsisCodecs.AndBlockConditionCodec)
+        ID_MAPPER.put("not", CatharsisCodecs.NotBlockConditionCodec)
+        ID_MAPPER.put("id", CatharsisCodecs.BlockIdConditionCodec)
+        ID_MAPPER.put("properties", CatharsisCodecs.PropertiesConditionCodec)
+    }
+}

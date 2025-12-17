@@ -4,6 +4,7 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.mojang.serialization.Codec
 import me.owdding.catharsis.Catharsis
+import me.owdding.catharsis.features.blocks.replacements.LayeredBlockReplacements
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.extensions.mapBothNotNull
 import me.owdding.catharsis.utils.types.fabric.PreparingModelLoadingPlugin

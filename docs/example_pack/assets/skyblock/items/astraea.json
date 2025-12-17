@@ -2,7 +2,7 @@
   "model": {
     "type": "minecraft:condition",
     "property": "catharsis:in_area",
-    "area": "furfsky:test",
+    "area": "your_name_space:simple",
     "on_true": {
       "type": "minecraft:model",
       "model": "minecraft:block/green_wool"

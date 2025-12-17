@@ -1,0 +1,14 @@
+{
+  "type": "random",
+  "min": 0,
+  "max": 20,
+  "threshold": 15,
+  "definition": {
+    "type": "redirect",
+    "virtual_state": "your_name_space:diamond"
+  },
+  "fallback": {
+    "type": "redirect",
+    "virtual_state": "your_name_space:gold"
+  }
+}

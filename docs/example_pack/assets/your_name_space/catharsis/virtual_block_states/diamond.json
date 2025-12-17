@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": {
+      "model": "minecraft:block/diamond_block"
+    }
+  },
+  "overrides": {
+    "minecraft:bedrock": {
+      "variants": {
+        "": {
+          "model": "minecraft:block/gold_block"
+        }
+      }
+    }
+  },
+  "blend": "translucent",
+  "sounds": {
+    "place_sound": "minecraft:block.chorus_flower.grow"
+  }
+}

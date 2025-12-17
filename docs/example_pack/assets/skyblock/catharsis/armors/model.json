@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "catharsis:model",
+    "model":"your_name_space:geo_models/iron_armor.geo.json",
+    "layers": [
+      "your_name_space:textures/iron_armor.png"
+    ]
+  },
+  "part_visibility": {
+    "head": false
+  }
+}

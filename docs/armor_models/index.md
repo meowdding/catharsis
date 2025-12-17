@@ -51,6 +51,13 @@ as well as armor specific ones such as `catharsis:texture` or `catharsis:model`.
 
 Render a specific texture for the armor.
 
+<Example>
+
+A simple armor replacement with a texture
+
+<<< @/example_pack/assets/skyblock/catharsis/armors/texture.json{json:line-numbers}
+</Example>
+
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>texture</b> armor model object</span>
 
@@ -66,6 +73,13 @@ Render a specific texture for the armor.
 #### **Model** (`catharsis:model`)
 
 Render a specific bedrock armor geometry for the armor.
+
+<Example>
+
+Replaces the armor with a custom model.
+
+<<< @/example_pack/assets/skyblock/catharsis/armors/model.json{json:line-numbers}
+</Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>model</b> armor model object</span>

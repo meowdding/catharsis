@@ -6,7 +6,10 @@ import me.owdding.catharsis.features.area.Areas
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.codecs.IncludedCodecs
+import me.owdding.catharsis.utils.extensions.add
+import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.FieldName
+import me.owdding.ktcodecs.FieldNames
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.IncludedCodec
 import me.owdding.ktcodecs.NamedCodec
@@ -14,11 +17,14 @@ import net.fabricmc.fabric.api.renderer.v1.mesh.QuadTransform
 import net.minecraft.client.renderer.block.model.BlockStateModel
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.core.BlockPos
+import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.util.RandomSource
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
+import org.joml.Vector3ic
+import tech.thatgravyboat.skyblockapi.helpers.McLevel
 
 interface BlockReplacement {
     interface Completable {
@@ -181,6 +187,65 @@ data class RandomBlockReplacement(
     }
 }
 
+data class RelativeBlockReplacement(
+    val blocks: List<Block>,
+    val offset: Vector3ic,
+    val definition: BlockReplacement,
+    val fallback: BlockReplacement?,
+) : BlockReplacement {
+    override fun listStates(): List<VirtualBlockStateDefinition> = listOfNotNull(definition.listStates(), fallback?.listStates()).flatten()
+
+    override fun bake(
+        baker: ModelBaker,
+        block: Block,
+    ): BlockReplacementSelector = RelativeBlockReplacementSelector(
+        blocks, offset,
+        definition.bake(baker, block), fallback?.bake(baker, block)
+    )
+
+    data class RelativeBlockReplacementSelector(
+        val blocks: List<Block>,
+        val offset: Vector3ic,
+        val definition: BlockReplacementSelector,
+        val fallback: BlockReplacementSelector?,
+    ) : BlockReplacementSelector {
+        override fun select(
+            state: BlockState,
+            pos: BlockPos,
+            random: RandomSource,
+        ): BlockReplacementEntry? {
+            return when {
+                !McLevel.hasLevel -> null
+
+                McLevel[pos.add(offset)].block in blocks -> definition
+
+                else -> fallback
+            }?.select(state, pos, random)
+        }
+    }
+
+    @GenerateCodec
+    @NamedCodec("CompletableRelativeBlockReplacement")
+    data class Completable(
+        @Compact@FieldNames("blocks", "block") val block: List<ResourceLocation>,
+        val offset: Vector3ic,
+        val definition: BlockReplacement.Completable,
+        val fallback: BlockReplacement.Completable?
+    ) : BlockReplacement.Completable {
+        override val codec: MapCodec<out BlockReplacement.Completable> = CatharsisCodecs.CompletableRelativeBlockReplacementCodec
+        override fun virtualStates() = listOfNotNull(definition.virtualStates(), fallback?.virtualStates()).flatten()
+
+        override fun bake(bakery: BlockReplacementBakery) = RelativeBlockReplacement(
+            block.mapNotNull {
+                Catharsis.runCatching("Failed to resolve block by id") {
+                    BuiltInRegistries.BLOCK.getValue(it)
+                }
+            }, offset,
+            definition.bake(bakery), fallback?.bake(bakery),
+        )
+    }
+}
+
 object BlockStateDefinitions {
     val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<ResourceLocation, MapCodec<out BlockReplacement.Completable>>()
 
@@ -191,5 +256,6 @@ object BlockStateDefinitions {
         ID_MAPPER.put(Catharsis.id("redirect"), CatharsisCodecs.getMapCodec<RedirectBlockReplacement.Completable>())
         ID_MAPPER.put(Catharsis.id("per_area"), CatharsisCodecs.getMapCodec<PerAreaBlockReplacement.Completable>())
         ID_MAPPER.put(Catharsis.id("random"), CatharsisCodecs.getMapCodec<RandomBlockReplacement.Completable>())
+        ID_MAPPER.put(Catharsis.id("relative"), CatharsisCodecs.getMapCodec<RelativeBlockReplacement.Completable>())
     }
 }

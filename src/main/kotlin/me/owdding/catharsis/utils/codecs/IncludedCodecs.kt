@@ -25,8 +25,8 @@ import java.net.URI
 object IncludedCodecs {
 
     @IncludedCodec val regexCodec: Codec<Regex> = Codec.STRING.xmap({ str -> Regex(str) }, { regex -> regex.pattern })
-    @IncludedCodec val resourceLocationCodec: Codec<ResourceLocation> = ResourceLocation.CODEC
-    @IncludedCodec(named = "catharsis_location") val catharsisResourceLocation: Codec<ResourceLocation> = Codec.STRING.xmap(
+    @IncludedCodec(keyable = true) val resourceLocationCodec: Codec<ResourceLocation> = ResourceLocation.CODEC
+    @IncludedCodec(named = "catharsis_location", keyable = true) val catharsisResourceLocation: Codec<ResourceLocation> = Codec.STRING.xmap(
         { Utils.resourceLocationWithDifferentFallbackNamespace(it, ResourceLocation.NAMESPACE_SEPARATOR, Catharsis.MOD_ID) },
         { it.toString()}
     )

@@ -14,6 +14,7 @@ import tech.thatgravyboat.skyblockapi.platform.identifier
 @GenerateCodec
 data class VirtualBlockStateDefinition(
     @Inline val model: BlockModelDefinition,
+    val sounds: BlockSoundDefinition?,
     val blend: BlendMode?,
 ) {
 
@@ -31,20 +32,11 @@ data class VirtualBlockStateDefinition(
     }
 }
 
-enum class BlendMode {
+enum class BlendMode(val sectionLayer: ChunkSectionLayer? = null) {
     DEFAULT,
-    SOLID,
-    CUTOUT_MIPPED,
-    CUTOUT,
-    TRANSLUCENT,
-    ;
-
-    fun toSectionLayer(): ChunkSectionLayer? = when (this) {
-        DEFAULT -> null
-        SOLID -> ChunkSectionLayer.SOLID
-        CUTOUT_MIPPED -> ChunkSectionLayer.CUTOUT
-        CUTOUT -> ChunkSectionLayer.CUTOUT
-        TRANSLUCENT -> ChunkSectionLayer.TRANSLUCENT
-    }
+    SOLID(ChunkSectionLayer.SOLID),
+    CUTOUT_MIPPED(ChunkSectionLayer.CUTOUT_MIPPED),
+    CUTOUT(ChunkSectionLayer.CUTOUT_MIPPED),
+    TRANSLUCENT(ChunkSectionLayer.TRANSLUCENT),
 }
 

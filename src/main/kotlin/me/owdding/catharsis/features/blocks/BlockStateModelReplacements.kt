@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.blocks
 
+import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import net.fabricmc.fabric.api.renderer.v1.mesh.QuadEmitter
 import net.fabricmc.fabric.api.renderer.v1.mesh.QuadTransform
@@ -11,7 +12,6 @@ import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.client.resources.model.ResolvableModel
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
-import net.minecraft.resources.ResourceLocation
 import net.minecraft.sounds.SoundEvent
 import net.minecraft.util.Mth
 import net.minecraft.util.RandomSource
@@ -101,16 +101,16 @@ data class UnbakedBlockStateModelReplacement(
 @GenerateCodec
 data class BlockSoundDefinition(
     // https://github.com/meowdding/minecwaft-sources/blob/618a50f16586c10c2607d126a8d559cef9a0b2c9/src/main/java/net/minecraft/client/multiplayer/MultiPlayerGameMode.java#L254
-    val hitSound: SoundEvent?,
+    @FieldName("hit") val hitSound: SoundEvent?,
     // https://github.com/meowdding/minecwaft-sources/blob/618a50f16586c10c2607d126a8d559cef9a0b2c9/src/main/java/net/minecraft/client/renderer/LevelEventHandler.java#L438
-    val breakSound: SoundEvent?,
+    @FieldName("break") val breakSound: SoundEvent?,
     // https://github.com/meowdding/minecwaft-sources/blob/618a50f16586c10c2607d126a8d559cef9a0b2c9/src/main/java/net/minecraft/world/entity/Entity.java#L1329
-    val stepSound: SoundEvent?,
+    @FieldName("step") val stepSound: SoundEvent?,
     // https://github.com/meowdding/minecwaft-sources/blob/618a50f16586c10c2607d126a8d559cef9a0b2c9/src/main/java/net/minecraft/world/item/BlockItem.java#L98
-    val placeSound: SoundEvent?,
+    @FieldName("place") val placeSound: SoundEvent?,
     // https://github.com/meowdding/minecwaft-sources/blob/618a50f16586c10c2607d126a8d559cef9a0b2c9/src/main/java/net/minecraft/world/entity/LivingEntity.java#L1800
     // needs custom impl in honey block bc fuck you minecraft but who cares
-    val fallSound: SoundEvent?,
+    @FieldName("fall") val fallSound: SoundEvent?,
 ) {
     val soundType = SoundType(1f, 1f, breakSound, stepSound, placeSound, hitSound, fallSound)
 

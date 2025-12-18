@@ -2,28 +2,31 @@ package me.owdding.catharsis.features.pack.config
 
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
-import kotlinx.coroutines.runBlocking
+import com.mojang.brigadier.arguments.StringArgumentType
+import me.owdding.catharsis.features.pack.meta.CatharsisMetadataSection
 import me.owdding.catharsis.utils.CatharsisLogger
+import me.owdding.catharsis.utils.extensions.sendWithPrefix
+import me.owdding.catharsis.utils.types.suggestion.IterableSuggestionProvider
 import me.owdding.ktmodules.Module
 import net.minecraft.util.GsonHelper
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.base.predicates.TimePassed
+import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
+import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
 import tech.thatgravyboat.skyblockapi.api.events.time.TickEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
+import tech.thatgravyboat.skyblockapi.helpers.McScreen
 import tech.thatgravyboat.skyblockapi.utils.Scheduling
+import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.time.currentInstant
 import tech.thatgravyboat.skyblockapi.utils.time.since
-import java.util.concurrent.CompletableFuture
-import kotlin.io.path.createDirectories
-import kotlin.io.path.createFile
-import kotlin.io.path.notExists
-import kotlin.io.path.readText
-import kotlin.io.path.writeText
+import kotlin.io.path.*
 import kotlin.time.Duration.Companion.seconds
 import kotlin.time.Instant
 import kotlin.time.isDistantPast
 
 data class PackConfig(
+    val packId: String,
     val default: JsonObject = JsonObject(),
     val current: JsonObject = JsonObject(),
 ) {
@@ -35,6 +38,10 @@ data class PackConfig(
     fun get(id: String): JsonElement? {
         return current.get(id) ?: default.get(id)
     }
+
+    fun options(): List<PackConfigOption>? = McClient.self.resourcePackRepository.openAllSelected().find {
+        it?.getMetadataSection(CatharsisMetadataSection.TYPE)?.id == packId
+    }?.getMetadataSection(CatharsisMetadataSection.TYPE)?.config?.takeUnless { it.isEmpty() }
 }
 
 @Module
@@ -57,13 +64,13 @@ object PackConfigHandler {
             }
             val json = GsonHelper.parse(path.readText())
             for ((key, value) in json.entrySet()) {
-                configs[key] = PackConfig(JsonObject(), value.asJsonObject)
+                configs[key] = PackConfig(key, JsonObject(), value.asJsonObject)
             }
         }
     }
 
     fun getConfig(packId: String): PackConfig {
-        return configs.getOrPut(packId) { PackConfig() }
+        return configs.getOrPut(packId) { PackConfig(packId) }
     }
 
     fun save() {
@@ -83,6 +90,20 @@ object PackConfigHandler {
                 logger.debug("Saving pack configurations to $SAVE_PATH")
                 path.writeText(output.toString())
                 saveRequestedAt = Instant.DISTANT_PAST
+            }
+        }
+    }
+
+    @Subscription
+    fun onCommand(event: RegisterCommandsEvent) {
+        event.register("catharsis config") {
+            thenCallback("id", StringArgumentType.string(), IterableSuggestionProvider(configs.entries, { it.key })) {
+                val id = argument<String>("id")
+                val options = getConfig(id).options() ?: run {
+                    Text.of("No config found for $id").sendWithPrefix()
+                    return@thenCallback
+                }
+                McClient.setScreenAsync { PackConfigScreen(McScreen.self, id, options) }
             }
         }
     }

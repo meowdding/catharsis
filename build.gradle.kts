@@ -47,6 +47,7 @@ dependencies {
     modImplementation(libs.repo.lib)
     modImplementation(libs.fabric.language.kotlin)
     modImplementation(versionedCatalog["fabric.api"])
+    modImplementation(libs.hypixelapi)
     compileOnly(libs.meowdding.ktmodules)
     compileOnly(libs.meowdding.ktcodecs)
     ksp(libs.meowdding.ktmodules)
@@ -105,9 +106,8 @@ tasks.withType<JavaCompile>().configureEach {
 tasks.withType<KotlinCompile>().configureEach {
     compilerOptions.jvmTarget.set(JvmTarget.JVM_21)
     compilerOptions.optIn.add("kotlin.time.ExperimentalTime")
-    compilerOptions.freeCompilerArgs.add(
-        "-Xnullability-annotations=@org.jspecify.annotations:warn"
-    )
+    compilerOptions.freeCompilerArgs.add("-Xnullability-annotations=@org.jspecify.annotations:warn")
+    compilerOptions.freeCompilerArgs.add("-Xwhen-guards")
 }
 
 tasks.processResources {

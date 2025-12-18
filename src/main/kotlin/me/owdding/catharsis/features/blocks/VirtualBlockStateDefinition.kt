@@ -42,7 +42,7 @@ enum class BlendMode {
     fun toSectionLayer(): ChunkSectionLayer? = when (this) {
         DEFAULT -> null
         SOLID -> ChunkSectionLayer.SOLID
-        CUTOUT_MIPPED -> ChunkSectionLayer.CUTOUT_MIPPED
+        CUTOUT_MIPPED -> ChunkSectionLayer.CUTOUT
         CUTOUT -> ChunkSectionLayer.CUTOUT
         TRANSLUCENT -> ChunkSectionLayer.TRANSLUCENT
     }

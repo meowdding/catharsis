@@ -17,11 +17,11 @@ import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.world.item.Item
 import org.joml.Quaternionf
-import org.joml.Quaternionfc
 import org.joml.Vector2i
 import org.joml.Vector2ic
 import tech.thatgravyboat.skyblockapi.utils.regex.component.ComponentRegex
 import java.net.URI
+import java.util.function.UnaryOperator
 
 object IncludedCodecs {
 
@@ -39,7 +39,7 @@ object IncludedCodecs {
         Codec.INT.fieldOf("width").forGetter(Vector2ic::x),
         Codec.INT.fieldOf("height").forGetter(Vector2ic::y),
     ).apply(it, ::Vector2i) }
-    @IncludedCodec val quaternionCodec: Codec<Quaternionfc> = ExtraCodecs.QUATERNIONF
+    @IncludedCodec val quaternionCodec: Codec<Quaternionf> = ExtraCodecs.QUATERNIONF.xmap(::Quaternionf, UnaryOperator.identity())
     @IncludedCodec val componentCodec: Codec<Component> = ComponentSerialization.CODEC
     @IncludedCodec val uriCodec: Codec<URI> = ExtraCodecs.UNTRUSTED_URI // This is actually "trusted", it requires https and http
     @IncludedCodec val tintSources: Codec<ItemTintSource> = ItemTintSources.CODEC

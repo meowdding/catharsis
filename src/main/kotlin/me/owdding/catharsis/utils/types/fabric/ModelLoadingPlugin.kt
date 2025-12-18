@@ -6,7 +6,7 @@ import net.minecraft.server.packs.resources.ResourceManager
 import java.util.concurrent.CompletableFuture
 import java.util.concurrent.Executor
 
-interface PreparingModelLoadingPlugin<T> : PreparableModelLoadingPlugin<T> {
+interface PreparingModelLoadingPlugin<T : Any> : PreparableModelLoadingPlugin<T> {
 
     fun register() {
         PreparableModelLoadingPlugin.register(::prepare, this)

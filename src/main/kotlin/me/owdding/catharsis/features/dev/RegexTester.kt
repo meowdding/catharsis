@@ -2,9 +2,7 @@ package me.owdding.catharsis.features.dev
 
 import com.google.gson.JsonParser
 import me.owdding.ktmodules.Module
-import net.minecraft.client.gui.Font
 import net.minecraft.client.gui.components.EditBox
-import net.minecraft.client.gui.components.FocusableTextWidget
 import net.minecraft.client.gui.components.MultiLineEditBox
 import net.minecraft.client.gui.components.MultiLineTextWidget
 import net.minecraft.client.gui.screens.Screen
@@ -24,8 +22,7 @@ import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.bold
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.underlined
 
-@Module
-object RegexTester : Screen(CommonComponents.EMPTY) {
+class RegexTester : Screen(CommonComponents.EMPTY) {
 
     private var input: MultiLineEditBox? = null
     private var output: MultiLineTextWidget? = null
@@ -36,24 +33,20 @@ object RegexTester : Screen(CommonComponents.EMPTY) {
         val boxWidth = this.width / 2 - 30
         val boxHeight = this.height - 100
 
-        val existingInput = this.input?.value
-        val existingOutput = this.output?.message
-        val existingRegex = this.regex?.value
-
         this.input = this.addRenderableWidget(MultiLineEditBox.builder()
             .setPlaceholder(Text.of("Text Component Input"))
             .build(this.font, boxWidth, boxHeight, CommonText.EMPTY)
         )
         this.input?.setSize(boxWidth, boxHeight)
-        existingInput?.let { this.input!!.value = it }
+        this.input?.value = inputText
 
-        this.output = this.addRenderableWidget(MultilineTextOutputWidget(
+        this.output = this.addRenderableWidget(MultiLineTextWidget(
             Text.of("Output will appear here") { this.color = 0xCCE0E0E0.toInt() },
             this.font
         ))
         this.output?.setSize(boxWidth, boxHeight)
         this.output?.setCentered(false)
-        existingOutput?.let { this.output!!.message = it }
+        this.output?.message = outputText
 
         this.input!!.setPosition(10, 10)
         this.output!!.setPosition(this.width - boxWidth - 10, 10)
@@ -65,7 +58,7 @@ object RegexTester : Screen(CommonComponents.EMPTY) {
             Text.of("Regex Pattern")
         ))
         this.regex?.setMaxLength(65536)
-        existingRegex?.let { this.regex!!.value = it }
+        this.regex?.value = regexText
 
         this.regex?.setResponder { this.updateOutput() }
         this.input?.setValueListener { this.updateOutput() }
@@ -95,21 +88,24 @@ object RegexTester : Screen(CommonComponents.EMPTY) {
         }.onFailure {
             setErrorMessage("Error processing input: ${it.message}")
         }
+
+        outputText = this.output?.message ?: Text.of("")
+        inputText = this.input?.value ?: ""
+        regexText = this.regex?.value ?: ""
     }
 
-    @Subscription
-    private fun RegisterCommandsEvent.register() {
-        registerWithCallback("catharsis dev regex") {
-            McClient.setScreenAsync { RegexTester }
+    @Module
+    companion object {
+
+        private var regexText: String = ""
+        private var inputText: String = ""
+        private var outputText: Component = Text.of("")
+
+        @Subscription
+        private fun RegisterCommandsEvent.register() {
+            registerWithCallback("catharsis dev regex") {
+                McClient.setScreenAsync { RegexTester() }
+            }
         }
-    }
-
-    private class MultilineTextOutputWidget(message: Component, font: Font) : FocusableTextWidget(65536, message, font) {
-
-        override fun setX(x: Int) = super.setX(x + 4)
-        override fun setY(y: Int) = super.setY(y + 4)
-        override fun getWidth(): Int = this.width - 8
-        override fun getHeight(): Int = this.height - 8
-        override fun setWidth(width: Int) {} // Ignore set width because it uses the length of the message :plead:
     }
 }

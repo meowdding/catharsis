@@ -6,7 +6,6 @@ import com.mojang.serialization.JsonOps
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.TypedResourceManager
-import me.owdding.catharsis.utils.Utils
 import me.owdding.ktmodules.Module
 import net.minecraft.client.multiplayer.ClientRegistryLayer
 import net.minecraft.resources.FileToIdConverter
@@ -15,6 +14,7 @@ import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.PlaceholderLookupProvider
 import net.minecraft.util.profiling.ProfilerFiller
+import tech.thatgravyboat.skyblockapi.helpers.McClient
 
 @Module
 object ArmorDefinitions : SimplePreparableReloadListener<Map<Identifier, ArmorDefinition>>() {
@@ -59,6 +59,6 @@ object ArmorDefinitions : SimplePreparableReloadListener<Map<Identifier, ArmorDe
     }
 
     init {
-        Utils.registerClientReloadListener(Catharsis.id("armor_definitions"), this)
+        McClient.registerClientReloadListener(Catharsis.id("armor_definitions"), this)
     }
 }

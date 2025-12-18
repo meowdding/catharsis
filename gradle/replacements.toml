@@ -21,6 +21,14 @@ to = "import net.minecraft.util.ResourceLocationPattern as IdentifierPattern"
 reverseRegex = "import net.minecraft.util.ResourceLocationPattern as IdentifierPattern"
 reverse = "import net.minecraft.util.IdentifierPattern"
 
+[identifier_argument]
+type = "regex"
+condition = "< 1.21.11"
+regex = "import net.minecraft.commands.arguments.IdentifierArgument(?!;)"
+to = "import net.minecraft.commands.arguments.ResourceLocationArgument as IdentifierArgument"
+reverseRegex = "import net.minecraft.commands.arguments.ResourceLocationArgument as IdentifierArgument"
+reverse = "import net.minecraft.commands.arguments.IdentifierArgument"
+
 [criterion]
 type = "string"
 condition = "< 1.21.11"
@@ -38,6 +46,12 @@ type = "string"
 condition = "< 1.21.11"
 from = "net.minecraft.util.Util"
 to = "net.minecraft.Util"
+
+[player_model]
+type = "string"
+condition = "< 1.21.11"
+from = "net.minecraft.client.model.player.PlayerModel"
+to = "net.minecraft.client.model.PlayerModel"
 
 [replacements]
 type = "regex"

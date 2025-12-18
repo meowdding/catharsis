@@ -7,12 +7,12 @@ import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.gui.GuiGraphics
 import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.client.renderer.RenderPipelines
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 
 @GenerateCodec
 data class GuiButtonElement(
-    val normal: ResourceLocation,
-    val hovered: ResourceLocation,
+    val normal: Identifier,
+    val hovered: Identifier,
 
     override val interaction: GuiWidgetInteraction,
 

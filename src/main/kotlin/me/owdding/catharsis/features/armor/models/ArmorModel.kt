@@ -10,7 +10,7 @@ import me.owdding.catharsis.utils.geometry.BakedBedrockGeometry
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.texture.MissingTextureAtlasSprite
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
@@ -32,7 +32,7 @@ sealed interface ArmorModelState {
 
     object Missing : Texture(arrayOf(MissingTextureAtlasSprite.getLocation()), intArrayOf(-1))
 
-    open class Texture(val textures: Array<ResourceLocation>, val colors: IntArray) : ArmorModelState {
+    open class Texture(val textures: Array<Identifier>, val colors: IntArray) : ArmorModelState {
 
         val layers: Int = this.textures.size
 
@@ -41,7 +41,7 @@ sealed interface ArmorModelState {
         }
     }
 
-    open class Bedrock(val geometry: BakedBedrockGeometry, val textures: Array<ResourceLocation>, val colors: IntArray) : ArmorModelState {
+    open class Bedrock(val geometry: BakedBedrockGeometry, val textures: Array<Identifier>, val colors: IntArray) : ArmorModelState {
 
         val layers: Int = this.textures.size
 
@@ -53,10 +53,10 @@ sealed interface ArmorModelState {
 
 object ArmorModels {
 
-    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<ResourceLocation, MapCodec<out ArmorModel.Unbaked>>()
+    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out ArmorModel.Unbaked>>()
 
     @IncludedCodec
-    val CODEC: Codec<ArmorModel.Unbaked> = ID_MAPPER.codec(ResourceLocation.CODEC).dispatch(ArmorModel.Unbaked::codec) { it }
+    val CODEC: Codec<ArmorModel.Unbaked> = ID_MAPPER.codec(Identifier.CODEC).dispatch(ArmorModel.Unbaked::codec) { it }
 
     init {
         ID_MAPPER.put(Catharsis.mc("condition"), ConditionalArmorModel.Unbaked.CODEC)

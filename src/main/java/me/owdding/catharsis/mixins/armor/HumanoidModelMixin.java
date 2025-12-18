@@ -1,10 +1,11 @@
+//~ named_identifier
 package me.owdding.catharsis.mixins.armor;
 
 import me.owdding.catharsis.features.armor.BodyPart;
 import me.owdding.catharsis.features.armor.PartVisibilityState;
 import me.owdding.catharsis.hooks.armor.LivingEntityRenderStateHook;
 import net.minecraft.client.model.HumanoidModel;
-import net.minecraft.client.model.PlayerModel;
+import net.minecraft.client.model.player.PlayerModel;
 import net.minecraft.client.renderer.entity.state.HumanoidRenderState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

@@ -7,7 +7,7 @@ import me.owdding.catharsis.utils.TypedResourceManager
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.color.item.ItemTintSource
 import net.minecraft.client.multiplayer.ClientLevel
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemStack
@@ -16,7 +16,7 @@ import net.minecraft.world.item.ItemStack
 /*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
 
 class TextureArmorModel(
-    private val textures: Array<ResourceLocation>,
+    private val textures: Array<Identifier>,
     private val tints: List<ItemTintSource>,
 ) : ArmorModel {
 
@@ -30,7 +30,7 @@ class TextureArmorModel(
 
     @GenerateCodec
     data class UnbakedTexture(
-        val layers: List<ResourceLocation>,
+        val layers: List<Identifier>,
         val tints: List<ItemTintSource> = listOf(),
     ) : ArmorModel.Unbaked {
 

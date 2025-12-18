@@ -3,7 +3,7 @@ package me.owdding.catharsis.utils
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.types.colors.CatppuccinColors
 import me.owdding.ktmodules.Module
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
@@ -54,12 +54,12 @@ object ItemUtils {
         }
     }
 
-    fun getCustomLocation(item: ItemStack): ResourceLocation? {
+    fun getCustomLocation(item: ItemStack): Identifier? {
         val itemId = item[DataTypes.SKYBLOCK_ID] ?: return null
 
         if (itemId.isItem) {
-            val path = itemId.cleanId.lowercase().takeIf { ResourceLocation.isValidPath(it) } ?: return null
-            return ResourceLocation.tryBuild("skyblock", path)
+            val path = itemId.cleanId.lowercase().takeIf { Identifier.isValidPath(it) } ?: return null
+            return Identifier.tryBuild("skyblock", path)
         }
 
         return when {
@@ -72,22 +72,22 @@ object ItemUtils {
 
     private fun SkyBlockId.cleanOrNull() = this.cleanId.lowercase().takeUnless { it == UNKNOWN }
 
-    fun resolveEnchantment(itemId: SkyBlockId): ResourceLocation? {
+    fun resolveEnchantment(itemId: SkyBlockId): Identifier? {
         val cleanId = itemId.cleanOrNull() ?: return null
 
-        return ResourceLocation.tryBuild("skyblock", "enchantments/${cleanId.substringBefore(":").lowercase()}")
+        return Identifier.tryBuild("skyblock", "enchantments/${cleanId.substringBefore(":").lowercase()}")
     }
 
-    fun resolveRune(itemId: SkyBlockId): ResourceLocation? {
+    fun resolveRune(itemId: SkyBlockId): Identifier? {
         val cleanId = itemId.cleanOrNull() ?: return null
 
-        return ResourceLocation.tryBuild("skyblock", "runes/${cleanId.substringBefore(":").lowercase()}")
+        return Identifier.tryBuild("skyblock", "runes/${cleanId.substringBefore(":").lowercase()}")
     }
 
-    fun resolveAttribute(itemId: SkyBlockId): ResourceLocation? {
+    fun resolveAttribute(itemId: SkyBlockId): Identifier? {
         val attributeId = itemId.cleanOrNull() ?: return null
         val data = RepoAttributeAPI.getAttributeDataById(attributeId) ?: return null
-        return ResourceLocation.tryBuild("skyblock", "attributes/${data.shardId.lowercase()}")
+        return Identifier.tryBuild("skyblock", "attributes/${data.shardId.lowercase()}")
     }
 
 }

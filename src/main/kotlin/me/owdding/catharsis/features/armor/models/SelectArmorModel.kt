@@ -5,12 +5,12 @@ import com.google.common.collect.HashMultiset
 import com.mojang.serialization.Codec
 import com.mojang.serialization.DataResult
 import com.mojang.serialization.MapCodec
-import com.mojang.serialization.codecs.KeyDispatchCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap
 import me.owdding.catharsis.hooks.armor.SelectItemModelPropertyTypeHook
 import me.owdding.catharsis.utils.TypedResourceManager
+import me.owdding.catharsis.utils.codecs.VersionedCodecs.dispatchLenientMap
 import net.minecraft.client.multiplayer.CacheSlot
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperties
@@ -29,10 +29,10 @@ import kotlin.jvm.optionals.getOrNull
 typealias UnbakedArmorSelectCase<Type> = Pair<List<Type>, ArmorModel.Unbaked>
 
 @Suppress("UNCHECKED_CAST", "KotlinConstantConditions")
-val <Property : SelectItemModelProperty<Type>, Type> SelectItemModelProperty.Type<Property, Type>.hook: SelectItemModelPropertyTypeHook<Property, Type>
+val <Property : SelectItemModelProperty<Type>, Type : Any> SelectItemModelProperty.Type<Property, Type>.hook: SelectItemModelPropertyTypeHook<Property, Type>
     get() = this as Any as SelectItemModelPropertyTypeHook<Property, Type>
 
-class SelectArmorModel<Type>(
+class SelectArmorModel<Type : Any>(
     private val property: SelectItemModelProperty<Type>,
     private val models: (Type?, ClientLevel?) -> ArmorModel?,
 ) : ArmorModel {
@@ -64,7 +64,7 @@ class SelectArmorModel<Type>(
         }
     }
 
-    class UnbakedSwitch<Property : SelectItemModelProperty<Type>, Type>(val property: Property, val cases: List<UnbakedArmorSelectCase<Type>>) {
+    class UnbakedSwitch<Property : SelectItemModelProperty<Type>, Type : Any>(val property: Property, val cases: List<UnbakedArmorSelectCase<Type>>) {
 
         fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager, fallback: ArmorModel?): ArmorModel {
             val lookup = Object2ObjectOpenHashMap<Type, ArmorModel>()
@@ -103,9 +103,8 @@ class SelectArmorModel<Type>(
 
         companion object {
 
-            val CODEC: MapCodec<UnbakedSwitch<*, *>> = KeyDispatchCodec(
+            val CODEC: MapCodec<UnbakedSwitch<*, *>> = SelectItemModelProperties.CODEC.dispatchLenientMap(
                 "property",
-                SelectItemModelProperties.CODEC,
                 { switch -> DataResult.success(switch.property.type()) },
                 { type ->
                     type.hook.`catharsis$getArmorSwitchCodec`()

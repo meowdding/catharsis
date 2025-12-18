@@ -9,7 +9,7 @@ import me.owdding.catharsis.utils.geometry.BedrockGeometry
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.color.item.ItemTintSource
 import net.minecraft.client.multiplayer.ClientLevel
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemStack
@@ -19,7 +19,7 @@ import net.minecraft.world.item.ItemStack
 
 class BedrockArmorModel(
     private val geoemtry: BakedBedrockGeometry,
-    private val textures: Array<ResourceLocation>,
+    private val textures: Array<Identifier>,
     private val tints: List<ItemTintSource>,
 ) : ArmorModel {
 
@@ -33,8 +33,8 @@ class BedrockArmorModel(
 
     @GenerateCodec
     data class UnbakedBedrock(
-        val model: ResourceLocation,
-        val layers: List<ResourceLocation>,
+        val model: Identifier,
+        val layers: List<Identifier>,
         val tints: List<ItemTintSource> = listOf(),
     ) : ArmorModel.Unbaked {
 

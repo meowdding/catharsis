@@ -1,12 +1,12 @@
 package me.owdding.catharsis.features.gui.definitions.slots
 
 import me.owdding.ktcodecs.GenerateCodec
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.world.inventory.Slot
 
 @GenerateCodec
 data class GuiSlotDefinition(
-    val id: ResourceLocation,
+    val id: Identifier,
     val target: SlotCondition,
 ) {
 

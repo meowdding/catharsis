@@ -3,9 +3,10 @@
 fabric-loader = "0.17.3"
 fabric-language-kotlin = "1.13.6+kotlin.2.2.20"
 
-skyblockapi = "3.0.23"
+skyblockapi = "4.0.0"
 repo-lib = "3.0.2"
 devauth = "1.2.1"
+hypixelapi = "1.0.1+build.1+mc1.21"
 
 gson = "2.12.1"
 meowdding-resources = "1.0.15"
@@ -20,6 +21,7 @@ fabric-language-kotlin = { module = "net.fabricmc:fabric-language-kotlin", versi
 fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
 
 skyblockapi = { module = "tech.thatgravyboat:skyblock-api", version.ref = "skyblockapi" }
+hypixelapi = { module = "maven.modrinth:hypixel-mod-api", version.ref = "hypixelapi" }
 repo-lib = { module = "tech.thatgravyboat.repo-lib:repo-lib", version.ref = "repo-lib" }
 devauth = { module = "me.djtheredstoner:DevAuth-fabric", version.ref = "devauth" }
 

@@ -12,7 +12,7 @@ import net.minecraft.client.renderer.item.ItemModels
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperties
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperties
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperties
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import org.intellij.lang.annotations.Pattern
 import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI
 
@@ -29,7 +29,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
         BootstrapItemModelsEvent(ItemModels.ID_MAPPER::put).post(SkyBlockAPI.eventBus)
     }
 
-    fun id(@Pattern("[a-z_0-9\\/.-]+") path: String): ResourceLocation = ResourceLocation.fromNamespaceAndPath("catharsis", path)
-    fun mc(@Pattern("[a-z_0-9\\/.-]+") path: String): ResourceLocation = ResourceLocation.withDefaultNamespace(path)
-    fun sbapi(@Pattern("[a-z_0-9\\/.-]+") path: String): ResourceLocation = ResourceLocation.fromNamespaceAndPath(SkyBlockAPI.MOD_ID, path)
+    fun id(@Pattern("[a-z_0-9\\/.-]+") path: String): Identifier = Identifier.fromNamespaceAndPath("catharsis", path)
+    fun mc(@Pattern("[a-z_0-9\\/.-]+") path: String): Identifier = Identifier.withDefaultNamespace(path)
+    fun sbapi(@Pattern("[a-z_0-9\\/.-]+") path: String): Identifier = Identifier.fromNamespaceAndPath(SkyBlockAPI.MOD_ID, path)
 }

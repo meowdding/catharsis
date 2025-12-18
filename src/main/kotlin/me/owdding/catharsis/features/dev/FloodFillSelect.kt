@@ -3,7 +3,7 @@ package me.owdding.catharsis.features.dev
 import com.mojang.brigadier.arguments.ArgumentType
 import com.mojang.brigadier.arguments.IntegerArgumentType
 import me.owdding.catharsis.utils.codecs.PosCodecs
-import me.owdding.catharsis.utils.extensions.pose
+import me.owdding.catharsis.utils.extensions.renderLineBox
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.extensions.toBlockPos
 import me.owdding.catharsis.utils.extensions.toReadableTime
@@ -13,8 +13,6 @@ import me.owdding.catharsis.utils.types.commands.CommandFlag
 import me.owdding.catharsis.utils.types.commands.FlagArgument
 import me.owdding.catharsis.utils.types.suggestion.IterableSuggestionProvider
 import me.owdding.ktmodules.Module
-import net.minecraft.client.renderer.RenderType
-import net.minecraft.client.renderer.ShapeRenderer
 import net.minecraft.commands.arguments.ResourceKeyArgument
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
@@ -36,6 +34,7 @@ import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Comp
 import tech.thatgravyboat.skyblockapi.api.events.render.RenderWorldEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McLevel
+import tech.thatgravyboat.skyblockapi.platform.identifier
 import tech.thatgravyboat.skyblockapi.utils.extentions.currentInstant
 import tech.thatgravyboat.skyblockapi.utils.extentions.since
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toJsonOrThrow
@@ -115,7 +114,7 @@ object FloodFillSelect {
                 validBlocks.add(BuiltInRegistries.BLOCK.getValueOrThrow(resourceKey))
                 Text.of {
                     append("Added ")
-                    append(resourceKey.location().toString()) {
+                    append(resourceKey.identifier.toString()) {
                         this.color = TextColor.GREEN
                     }
                     append(", new total is ${validBlocks.size}")
@@ -126,7 +125,7 @@ object FloodFillSelect {
                 validBlocks.remove(BuiltInRegistries.BLOCK.getValueOrThrow(resourceKey))
                 Text.of {
                     append("Removed ")
-                    append(resourceKey.location().toString()) {
+                    append(resourceKey.identifier.toString()) {
                         this.color = TextColor.GREEN
                     }
                     append(", new total is ${validBlocks.size}")
@@ -165,7 +164,7 @@ object FloodFillSelect {
     }
 
     private fun dispatch(range: Int = 100, map: Map<FloodFillFlags, Any> = emptyMap()) {
-        val hitResult = McClient.self.gameRenderer.pick(McClient.self.cameraEntity!!, 100.0, 100.0, 0f)
+        val hitResult = McClient.self.cameraEntity!!.pick(100.0, 1f, false)
         if (hitResult !is BlockHitResult) {
             Text.of("Not targeting any blocks!").sendWithPrefix()
             return
@@ -376,10 +375,10 @@ object FloodFillSelect {
     private fun RenderWorldEvent.AfterTranslucent.render() = atCamera {
         finishedRegions.values.filterNot { it.highlightType == HighlightType.NONE }.forEach {
             if (it.highlightType == HighlightType.REGION) {
-                ShapeRenderer.renderLineBox(poseStack.pose(), buffer.getBuffer(RenderType.SECONDARY_BLOCK_OUTLINE), it.aabb.toMinecraftAABB(), 1f, 1f, 1f, 1f)
+                this@render.renderLineBox(it.aabb.toMinecraftAABB(), secondary = true)
             } else {
                 it.blocks.forEach {
-                    ShapeRenderer.renderLineBox(poseStack.pose(), buffer.getBuffer(RenderType.SECONDARY_BLOCK_OUTLINE), AABB(it.toBlockPos()), 1f, 1f, 1f, 1f)
+                    this@render.renderLineBox(AABB(it.toBlockPos()), secondary = true)
                 }
             }
         }

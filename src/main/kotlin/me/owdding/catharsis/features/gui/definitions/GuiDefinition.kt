@@ -11,7 +11,7 @@ import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktmodules.Module
 import net.fabricmc.loader.api.FabricLoader
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.world.inventory.Slot
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerCloseEvent
@@ -26,7 +26,7 @@ import kotlin.io.path.walk
 
 @GenerateCodec
 data class GuiDefinition(
-    val id: ResourceLocation,
+    val id: Identifier,
     val target: GuiDefCondition,
     val layout: List<GuiSlotDefinition>,
 ) {
@@ -39,7 +39,7 @@ data class GuiDefinition(
 @Module
 object GuiDefinitions {
 
-    private val definitions = mutableMapOf<ResourceLocation, GuiDefinition>()
+    private val definitions = mutableMapOf<Identifier, GuiDefinition>()
 
     init {
         // TODO needs to be loaded remotely or something idk
@@ -84,6 +84,6 @@ object GuiDefinitions {
     @Subscription fun onSlotChange(event: InventoryChangeEvent) = update(event.screen)
     @Subscription fun onClose(event: ContainerCloseEvent) = update(null)
 
-    @JvmStatic fun getGui(): ResourceLocation? = currentGui?.id
-    @JvmStatic fun getSlot(slot: Slot?): ResourceLocation? = slot?.let { slots[slot.index]?.id }
+    @JvmStatic fun getGui(): Identifier? = currentGui?.id
+    @JvmStatic fun getSlot(slot: Slot?): Identifier? = slot?.let { slots[slot.index]?.id }
 }

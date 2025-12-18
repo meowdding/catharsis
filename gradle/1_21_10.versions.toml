@@ -3,7 +3,6 @@
 minecraft = "1.21.10"
 minecraft_start = "1.21.9"
 parchment = "2025.10.05"
-sbapi-mc-version = "1.21.9"
 fabric-api = "0.136.0+1.21.10"
 placeholders = "2.8.1+1.21.10"
 

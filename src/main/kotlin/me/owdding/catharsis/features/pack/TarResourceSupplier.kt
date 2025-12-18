@@ -1,7 +1,7 @@
 package me.owdding.catharsis.features.pack
 
 import me.owdding.catharsis.Catharsis
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.server.packs.*
 import net.minecraft.server.packs.repository.Pack
 import net.minecraft.server.packs.resources.IoSupplier
@@ -46,7 +46,7 @@ class TarResourceSupplier(path: Path) : Pack.ResourcesSupplier {
     }
 }
 
-private fun getPathFromLocation(packType: PackType, location: ResourceLocation): String {
+private fun getPathFromLocation(packType: PackType, location: Identifier): String {
     return String.format(Locale.ROOT, "%s/%s/%s", packType.directory, location.namespace, location.path)
 }
 
@@ -84,7 +84,7 @@ class TarPackResources(location: PackLocationInfo, val prefix: String, private v
 
     override fun getResource(
         packType: PackType,
-        location: ResourceLocation,
+        location: Identifier,
     ): IoSupplier<InputStream>? {
         return getResource(getPathFromLocation(packType, location))
     }
@@ -101,9 +101,9 @@ class TarPackResources(location: PackLocationInfo, val prefix: String, private v
             val fileName = fileEntry.name.removePrefix("./")
             if (fileName.startsWith(searchDirectory)) {
                 val resourcePath = fileName.substring(namespaceRoot.length)
-                val resourceLocation = ResourceLocation.tryBuild(namespace, resourcePath)
-                if (resourceLocation != null) {
-                    resourceOutput.accept(resourceLocation) {
+                val identifier = Identifier.tryBuild(namespace, resourcePath)
+                if (identifier != null) {
+                    resourceOutput.accept(identifier) {
                         tarFile.getInputStream(fileEntry)
                     }
                 } else {
@@ -120,7 +120,7 @@ class TarPackResources(location: PackLocationInfo, val prefix: String, private v
             val fileName = fileEntry.name.removePrefix("./")
             val namespace = extractNamespace(prefixedResourceRoot, fileName)
             if (namespace.isNotEmpty()) {
-                if (ResourceLocation.isValidNamespace(namespace)) {
+                if (Identifier.isValidNamespace(namespace)) {
                     namespaces.add(namespace)
                 } else {
                     Catharsis.warn("Invalid namespace character $namespace in tar")

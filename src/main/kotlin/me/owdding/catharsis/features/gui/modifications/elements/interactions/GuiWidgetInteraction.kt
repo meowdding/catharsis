@@ -5,7 +5,7 @@ import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.IncludedCodec
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 
 interface GuiWidgetInteraction {
@@ -18,10 +18,10 @@ interface GuiWidgetInteraction {
 
 object GuiWidgetInteractions {
 
-    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<ResourceLocation, MapCodec<out GuiWidgetInteraction>>()
+    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out GuiWidgetInteraction>>()
 
     @IncludedCodec
-    val CODEC: Codec<GuiWidgetInteraction> = ID_MAPPER.codec(ResourceLocation.CODEC).dispatch(GuiWidgetInteraction::codec) { it }
+    val CODEC: Codec<GuiWidgetInteraction> = ID_MAPPER.codec(Identifier.CODEC).dispatch(GuiWidgetInteraction::codec) { it }
 
     init {
         ID_MAPPER.put(Catharsis.id("link"), CatharsisCodecs.getMapCodec<GuiLinkWidgetInteraction>())

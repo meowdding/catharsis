@@ -1,12 +1,18 @@
 {
-  "type": "relative",
-  "offset": "0:-1:0",
+  "type": "conditional",
   "definition": {
     "type": "redirect",
-    "virtual_state": "your_name_space:gold"
+    "virtual_state": "furfsky:mithril_tier0"
   },
-  "blocks": [
-    "minecraft:grass_block",
-    "minecraft:dirt"
-  ]
+  "condition": {
+    "type": "relative",
+    "offset": "0:-1:0",
+    "condition": {
+      "type": "id",
+      "block": [
+        "minecraft:grass_block",
+        "minecraft:dirt"
+      ]
+    }
+  }
 }

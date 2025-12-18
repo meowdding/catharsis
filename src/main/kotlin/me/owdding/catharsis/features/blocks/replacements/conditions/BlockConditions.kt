@@ -29,6 +29,8 @@ object BlockConditions {
     )
 
     init {
+        ID_MAPPER.put("always", AlwaysBlockCondition.codec)
+        ID_MAPPER.put("never", NeverBlockCondition.codec)
         ID_MAPPER.put("or", CatharsisCodecs.OrBlockConditionCodec)
         ID_MAPPER.put("and", CatharsisCodecs.AndBlockConditionCodec)
         ID_MAPPER.put("not", CatharsisCodecs.NotBlockConditionCodec)
@@ -36,4 +38,15 @@ object BlockConditions {
         ID_MAPPER.put("properties", CatharsisCodecs.PropertiesConditionCodec)
         ID_MAPPER.put("relative", CatharsisCodecs.RelativeConditionCodec)
     }
+}
+
+data object AlwaysBlockCondition : BlockCondition {
+    override val codec: MapCodec<out BlockCondition> = MapCodec.unit(AlwaysBlockCondition)
+
+    override fun check(state: BlockState, pos: BlockPos, level: Level, random: RandomSource): Boolean = true
+}
+
+data object NeverBlockCondition : BlockCondition {
+    override val codec: MapCodec<out BlockCondition> = MapCodec.unit(NeverBlockCondition)
+    override fun check(state: BlockState, pos: BlockPos, level: Level, random: RandomSource, ): Boolean = false
 }

@@ -2,8 +2,8 @@
 title: Block replacements
 lang: en-US
 next: # we need to hardcode these bc the "next page" button is broken on index pages
-    text: Virtual block states
-    link: /block_replacements/virtual_block_states
+    text: Conditions
+    link: /block_replacements/conditions
 ---
 
 
@@ -91,9 +91,9 @@ Replaces the block with diamond if it is inside the area.
         - <TypeIcon type="object"/> A [block replacement definition](#definition)
 </TreeView>
 
-### Relative (`catharsis:relative`)
+### Conditional (`catharsis:conditional`)
 
-Allows you to change a block based on what's around it.
+Allows you to change a block based on some conditions, you can find a list of conditions [here](conditions).
 
 <Example>
 
@@ -103,13 +103,10 @@ Replaces the block with gold if the block under it is equal to grass or dirt.
 </Example>
 
 <TreeView>
-<span><TypeIcon type="object"/> Root <b>per area</b> object</span>
+<span><TypeIcon type="object"/> Root <b>conditional</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:relative`
-- <TypeIcon/> **block** or **blocks**
-    - <TypeIcon type="string"/> A block id.
-    - <TypeIcon type="array"/> A list of block ids.
-- <Position positionType="int" customText> <b>offset</b>: The block to check relative to the position.</Position>
+- <TypeIcon type="string"/> **type**: `catharsis:conditional`
+- <TypeIcon type="object"/> **condition**: The [condition](conditions) that should be checked.
 - <TypeIcon type="object"/> **definition**: The [block replacement definition](#definition) to use if the check passes.
 - <TypeIcon type="object"/> **fallback**: (Optional) The [block replacement definition](#definition) to use if the check fails.
 </TreeView>

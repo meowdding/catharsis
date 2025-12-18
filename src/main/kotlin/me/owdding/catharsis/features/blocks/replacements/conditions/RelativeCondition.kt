@@ -18,7 +18,6 @@ data class RelativeCondition(
     val offset: Vector3ic,
     val condition: BlockCondition,
 ): BlockCondition {
-
     override val codec: MapCodec<out BlockCondition> = CatharsisCodecs.getMapCodec<RelativeCondition>()
 
     override fun check(state: BlockState, pos: BlockPos, level: Level, random: RandomSource): Boolean {

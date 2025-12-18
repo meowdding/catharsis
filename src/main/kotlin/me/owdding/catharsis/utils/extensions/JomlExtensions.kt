@@ -45,3 +45,4 @@ fun Vec3i.toVector3i(): Vector3i = Vector3i(x, y, z)
 fun Vector3i.toVec3i(): Vec3i = Vec3i(x, y, z)
 
 fun BlockPos.add(vec3: Vector3ic): BlockPos = this.offset(vec3.x(), vec3.y(), vec3.z())
+operator fun BlockPos.plus(vec3: Vector3ic): BlockPos = add(vec3)

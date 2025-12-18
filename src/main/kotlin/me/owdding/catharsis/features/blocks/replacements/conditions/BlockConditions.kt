@@ -34,5 +34,6 @@ object BlockConditions {
         ID_MAPPER.put("not", CatharsisCodecs.NotBlockConditionCodec)
         ID_MAPPER.put("id", CatharsisCodecs.BlockIdConditionCodec)
         ID_MAPPER.put("properties", CatharsisCodecs.PropertiesConditionCodec)
+        ID_MAPPER.put("relative", CatharsisCodecs.RelativeConditionCodec)
     }
 }

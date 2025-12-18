@@ -33,6 +33,6 @@ object BlockStateDefinitions {
         ID_MAPPER.put(Catharsis.id("redirect"), CatharsisCodecs.getMapCodec<RedirectBlockReplacement.Completable>())
         ID_MAPPER.put(Catharsis.id("per_area"), CatharsisCodecs.getMapCodec<PerAreaBlockReplacement.Completable>())
         ID_MAPPER.put(Catharsis.id("random"), CatharsisCodecs.getMapCodec<RandomBlockReplacement.Completable>())
-        ID_MAPPER.put(Catharsis.id("relative"), CatharsisCodecs.getMapCodec<RelativeBlockReplacement.Completable>())
+        ID_MAPPER.put(Catharsis.id("conditional"), CatharsisCodecs.getMapCodec<ConditionalBlockReplacement.Completable>())
     }
 }

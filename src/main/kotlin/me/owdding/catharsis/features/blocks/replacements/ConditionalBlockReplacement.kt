@@ -27,6 +27,18 @@ data class ConditionalBlockReplacement(
         condition, definition.bake(baker, block), fallback?.bake(baker, block)
     )
 
+    override fun select(
+        state: BlockState,
+        pos: BlockPos,
+        random: RandomSource,
+    ): VirtualBlockStateDefinition? {
+        return when {
+            !McLevel.hasLevel -> null
+            condition.check(McLevel[pos], pos, McLevel.level, random) -> definition
+            else -> fallback
+        }?.select(state, pos, random)
+    }
+
     @GenerateCodec
     @NamedCodec("CompletableConditionalBlockReplacement")
     data class Completable(

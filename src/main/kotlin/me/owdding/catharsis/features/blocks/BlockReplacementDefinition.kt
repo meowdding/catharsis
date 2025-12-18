@@ -7,9 +7,12 @@ import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.codecs.IncludedCodecs
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.resources.model.ModelBaker
+import net.minecraft.core.BlockPos
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
+import net.minecraft.util.RandomSource
 import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.block.state.BlockState
 
 interface BlockReplacement {
     interface Completable {
@@ -26,174 +29,6 @@ interface BlockReplacement {
         pos: BlockPos,
         random: RandomSource,
     ): VirtualBlockStateDefinition?
-}
-
-data class LayeredBlockReplacements(
-    val definitions: List<BlockReplacement>,
-) {
-    fun listStates(): List<VirtualBlockStateDefinition> = definitions.flatMap { it.listStates() }
-    fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
-        return definitions.firstNotNullOfOrNull { it.select(state, pos, random) }
-    }
-
-    data class Completable(
-        val definitions: List<BlockReplacement.Completable>,
-    ) {
-        fun complete(bakery: BlockReplacementBakery, logger: CatharsisLogger): LayeredBlockReplacements = LayeredBlockReplacements(
-            definitions.mapNotNull {
-                logger.runCatching("Failed to bake block replacement $it") {
-                    it.bake(bakery)
-                }
-            },
-        )
-    }
-
-    data class LayeredBlockReplacementSelector(
-        val blockReplacementSelectors: List<BlockReplacementSelector>,
-    ) : BlockReplacementSelector {
-        override fun select(
-            state: BlockState,
-            pos: BlockPos,
-            random: RandomSource,
-        ): BlockReplacementEntry? = blockReplacementSelectors.firstNotNullOfOrNull { it.select(state, pos, random) }
-    }
-
-    fun bake(baker: ModelBaker, block: Block): BlockReplacementSelector = LayeredBlockReplacementSelector(definitions.map { it.bake(baker, block) })
-}
-
-
-data class RedirectBlockReplacement(
-    val virtualState: VirtualBlockStateDefinition,
-) : BlockReplacement {
-    override fun listStates(): List<VirtualBlockStateDefinition> = listOf(virtualState)
-    override fun bake(baker: ModelBaker, block: Block) = BlockReplacementSelector.always(Baked(virtualState.blend, virtualState.instantiate(block, baker)))
-    override fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition = virtualState
-
-    data class Baked(
-        override val blend: BlendMode?,
-        override val models: Map<BlockState, BlockStateModel>,
-    ) : BlockReplacementEntry {
-        override val transform: QuadTransform by lazy {
-            if (blend != null) {
-                QuadTransform { quad ->
-                    quad.renderLayer(blend.sectionLayer)
-                    true
-                }
-            } else {
-                QuadTransform { true }
-            }
-        }
-    }
-
-    @GenerateCodec
-    @NamedCodec("CompletableRedirectBlockReplacement")
-    data class Completable(
-        @FieldName("virtual_state") val virtualState: Identifier,
-    ) : BlockReplacement.Completable {
-        override val codec: MapCodec<Completable> = CatharsisCodecs.getMapCodec()
-        override fun virtualStates() = listOf(virtualState)
-        override fun bake(bakery: BlockReplacementBakery): BlockReplacement = RedirectBlockReplacement(bakery.virtualStates[virtualState]!!.copy())
-    }
-}
-
-
-data class PerAreaBlockReplacement(
-    val values: Map<Identifier, BlockReplacement>,
-) : BlockReplacement {
-    override fun listStates(): List<VirtualBlockStateDefinition> = values.values.flatMap { it.listStates() }
-    override fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
-        return values.firstNotNullOfOrNull { (area, value) ->
-            value.takeIf { Areas.getLoadedAreas()[area]?.contains(pos) == true }?.select(state, pos, random)
-        }
-    }
-
-    data class PerAreaBlockReplacementSelector(
-        val values: Map<Identifier, BlockReplacementSelector>,
-    ) : BlockReplacementSelector {
-        override fun select(
-            state: BlockState,
-            pos: BlockPos,
-            random: RandomSource,
-        ): BlockReplacementEntry? {
-            return values.firstNotNullOfOrNull { (area, value) ->
-                value.takeIf { Areas.getLoadedAreas()[area]?.contains(pos) == true }?.select(state, pos, random)
-            }
-        }
-
-    }
-
-    override fun bake(
-        baker: ModelBaker,
-        block: Block,
-    ): BlockReplacementSelector = PerAreaBlockReplacementSelector(values.mapValues { (_, value) -> value.bake(baker, block) })
-
-    @GenerateCodec
-    @NamedCodec("CompletablePerAreaBlockReplacement")
-    data class Completable(
-        @FieldName("entries") val values: Map<Identifier, BlockReplacement.Completable>,
-    ) : BlockReplacement.Completable {
-        override val codec: MapCodec<Completable> = CatharsisCodecs.getMapCodec()
-        override fun virtualStates() = values.values.flatMap { it.virtualStates() }
-        override fun bake(bakery: BlockReplacementBakery): BlockReplacement = PerAreaBlockReplacement(values.mapValues { it.value.bake(bakery) })
-    }
-}
-
-
-data class RandomBlockReplacement(
-    val min: Float,
-    val max: Float,
-    val threshold: Float,
-    val definition: BlockReplacement,
-    val fallback: BlockReplacement?,
-) : BlockReplacement {
-    override fun listStates(): List<VirtualBlockStateDefinition> = listOfNotNull(definition.listStates(), fallback?.listStates()).flatten()
-    override fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
-        return if (min + random.nextFloat() * (max - min) >= threshold) {
-            definition
-        } else {
-            fallback
-        }?.select(state, pos, random)
-    }
-
-    data class RandomBlockReplacementSelector(
-        val min: Float, val max: Float, val threshold: Float,
-        val definition: BlockReplacementSelector,
-        val fallback: BlockReplacementSelector?,
-    ) : BlockReplacementSelector {
-        override fun select(
-            state: BlockState,
-            pos: BlockPos,
-            random: RandomSource,
-        ): BlockReplacementEntry? {
-            return if (min + random.nextFloat() * (max - min) >= threshold) {
-                definition
-            } else {
-                fallback
-            }?.select(state, pos, random)
-        }
-    }
-
-    override fun bake(
-        baker: ModelBaker,
-        block: Block,
-    ): BlockReplacementSelector = RandomBlockReplacementSelector(min, max, threshold, definition.bake(baker, block), fallback?.bake(baker, block))
-
-    @GenerateCodec
-    @NamedCodec("CompletableRandomBlockReplacement")
-    data class Completable(
-        val min: Float,
-        val max: Float,
-        val threshold: Float,
-        val definition: BlockReplacement.Completable,
-        val fallback: BlockReplacement.Completable?,
-    ) : BlockReplacement.Completable {
-        override val codec: MapCodec<Completable> = CatharsisCodecs.getMapCodec()
-        override fun virtualStates() = listOfNotNull(definition.virtualStates(), fallback?.virtualStates()).flatten()
-        override fun bake(bakery: BlockReplacementBakery) = RandomBlockReplacement(
-            min, max, threshold,
-            definition.bake(bakery), fallback?.bake(bakery),
-        )
-    }
 }
 
 object BlockStateDefinitions {

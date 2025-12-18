@@ -1,8 +1,9 @@
+//~ named_identifier
 package me.owdding.catharsis.hooks.items;
 
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public interface ModelManagerHook {
 
-    boolean catharsis$hasCustomModel(ResourceLocation model);
+    boolean catharsis$hasCustomModel(Identifier model);
 }

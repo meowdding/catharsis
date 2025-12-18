@@ -33,6 +33,13 @@ The definition follows the following scheme
 
 A simple redirect, replacing one block state with another one.
 
+<Example>
+
+Always replaces the block with gold.
+
+<<< @/example_pack/assets/minecraft/catharsis/block_replacements/oak_leaves.json{json:line-numbers}
+</Example>
+
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>redirect</b> object</span>
 
@@ -44,6 +51,14 @@ A simple redirect, replacing one block state with another one.
 
 Allows for random block replacements. <br>
 The random is seeded based on the blocks position, meaning, while it's random it is consistent for each block. *Resource pack ordering may affect the result!*
+
+<Example>
+
+Replaces the block based on a random noice with either gold or diamond. <br>
+In this example it's roughly a 3/4 ratio.
+
+<<< @/example_pack/assets/minecraft/catharsis/block_replacements/oak_log.json{json:line-numbers}
+</Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>random</b> object</span>
@@ -60,6 +75,13 @@ The random is seeded based on the blocks position, meaning, while it's random it
 
 Allows for having a different block per [area](/block_replacements/areas).
 
+<Example>
+
+Replaces the block with diamond if it is inside the area.
+
+<<< @/example_pack/assets/minecraft/catharsis/block_replacements/dirt.json{json:line-numbers}
+</Example>
+
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>per area</b> object</span>
 
@@ -67,4 +89,27 @@ Allows for having a different block per [area](/block_replacements/areas).
 - <TypeIcon type="object"/> **entries**: An object of area to block replacement definition.
     - <TypeIcon type="array"/> **&lt;area id&gt;**: The area to test
         - <TypeIcon type="object"/> A [block replacement definition](#definition)
+</TreeView>
+
+### Relative (`catharsis:relative`)
+
+Allows you to change a block based on what's around it.
+
+<Example>
+
+Replaces the block with gold if the block under it is equal to grass or dirt.
+
+<<< @/example_pack/assets/minecraft/catharsis/block_replacements/cyan_terracotta.json{json:line-numbers}
+</Example>
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>per area</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:relative`
+- <TypeIcon/> **block** or **blocks**
+    - <TypeIcon type="string"/> A block id.
+    - <TypeIcon type="array"/> A list of block ids.
+- <Position positionType="int" customText> <b>offset</b>: The block to check relative to the position.</Position>
+- <TypeIcon type="object"/> **definition**: The [block replacement definition](#definition) to use if the check passes.
+- <TypeIcon type="object"/> **fallback**: (Optional) The [block replacement definition](#definition) to use if the check fails.
 </TreeView>

@@ -1,0 +1,14 @@
+[versions]
+
+minecraft = "1.21.11"
+minecraft_start = "1.21.11"
+parchment = "2025.10.05"
+fabric-api = "0.140.0+1.21.11"
+placeholders = "2.8.1+1.21.10"
+
+[libraries]
+
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+parchment = { module = "org.parchmentmc.data:parchment-1.21.9", version.ref = "parchment" }
+fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
+placeholders = { module = "eu.pb4:placeholder-api", version.ref = "placeholders" }

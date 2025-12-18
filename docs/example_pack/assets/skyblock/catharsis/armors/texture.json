@@ -1,0 +1,11 @@
+{
+  "model": {
+    "type": "catharsis:texture",
+    "layers": [
+      "minecraft:textures/entity/equipment/humanoid_leggings/diamond.png"
+    ]
+  },
+  "part_visibility": {
+    "head": false
+  }
+}

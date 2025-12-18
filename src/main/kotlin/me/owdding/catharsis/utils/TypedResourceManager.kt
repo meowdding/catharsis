@@ -2,7 +2,7 @@ package me.owdding.catharsis.utils
 
 import com.google.gson.JsonElement
 import me.owdding.catharsis.utils.extensions.readAsJson
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.server.packs.resources.ResourceManager
 import kotlin.jvm.optionals.getOrNull
 
@@ -10,7 +10,7 @@ class TypedResourceManager(private val resources: ResourceManager) {
 
     private val cache = mutableMapOf<Pair<*, *>, Result<*>?>()
 
-    private fun <T> load(id: ResourceLocation, parser: TypedResourceParser<T>): Result<T>? {
+    private fun <T> load(id: Identifier, parser: TypedResourceParser<T>): Result<T>? {
         return resources.getResource(id).getOrNull()?.runCatching {
             this.readAsJson<JsonElement>()
         }?.mapCatching {
@@ -18,7 +18,7 @@ class TypedResourceManager(private val resources: ResourceManager) {
         }
     }
 
-    fun <T> getOrLoad(id: ResourceLocation, parser: TypedResourceParser<T>): Result<T>? {
+    fun <T> getOrLoad(id: Identifier, parser: TypedResourceParser<T>): Result<T>? {
         @Suppress("UNCHECKED_CAST")
         return cache.getOrPut(id to parser) { load(id, parser) } as Result<T>?
     }

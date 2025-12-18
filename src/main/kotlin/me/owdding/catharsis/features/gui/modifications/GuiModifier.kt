@@ -11,7 +11,7 @@ import me.owdding.catharsis.features.gui.modifications.elements.GuiWidgetElement
 import me.owdding.catharsis.features.gui.modifications.modifiers.SlotModifier
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
-import net.minecraft.Util
+import net.minecraft.util.Util
 import net.minecraft.client.gui.GuiGraphics
 import net.minecraft.client.gui.navigation.ScreenRectangle
 import org.joml.Vector2i

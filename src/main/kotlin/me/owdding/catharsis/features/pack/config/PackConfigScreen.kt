@@ -1,7 +1,8 @@
 package me.owdding.catharsis.features.pack.config
 
 import com.google.gson.JsonPrimitive
-import net.minecraft.Util
+import me.owdding.catharsis.utils.extensions.CycleButtonBuilder
+import me.owdding.catharsis.utils.extensions.withClickHandler
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.components.*
 import net.minecraft.client.gui.components.tabs.Tab
@@ -14,6 +15,7 @@ import net.minecraft.network.chat.ClickEvent
 import net.minecraft.network.chat.CommonComponents
 import net.minecraft.network.chat.Component
 import net.minecraft.util.CommonColors
+import net.minecraft.util.Util
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McFont
 import tech.thatgravyboat.skyblockapi.utils.extentions.asBoolean
@@ -93,12 +95,11 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
             LinearLayout.vertical().spacing(4).apply {
                 this.addChild(StringWidget(option.title, font))
                 this.addChild(
-                    MultiLineTextWidget(option.description, font).apply {
+                    MultiLineTextWidget(Component.empty().append(option.description).withColor(CommonColors.LIGHT_GRAY), font).apply {
                         this.active = true
-                        this.setColor(CommonColors.LIGHT_GRAY)
                         this.setCentered(false)
                         this.setMaxWidth(225)
-                        this.configureStyleHandling(true) {
+                        this.withClickHandler {
                             it.clickEvent?.let { event ->
                                 when (event) {
                                     is ClickEvent.OpenUrl -> Util.getPlatform().openUri(event.uri)
@@ -132,14 +133,14 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
         }
 
         is PackConfigOption.Dropdown -> {
-            val value = config.get(option.id).asString()?.let { option.options.find { entry -> entry.value == it } } ?: option.default
+            var value = config.get(option.id).asString()?.let { option.options.find { entry -> entry.value == it } } ?: option.default
             val width = max(option.options.maxOf { McFont.width(it.text) } + 8, 44)
 
-            CycleButton.builder(PackConfigOption.Dropdown.Entry::text)
+            CycleButtonBuilder(PackConfigOption.Dropdown.Entry::text) { value }
                 .displayOnlyValue()
                 .withValues(option.options)
-                .withInitialValue(value)
                 .create(0, 0, width, 20, Component.empty()) { _, entry ->
+                    value = entry
                     config.set(option.id, JsonPrimitive(entry.value))
                 }
         }

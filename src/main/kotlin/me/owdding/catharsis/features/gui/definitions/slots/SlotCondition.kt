@@ -5,7 +5,7 @@ import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.IncludedCodec
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.world.inventory.Slot
 
@@ -18,10 +18,10 @@ interface SlotCondition {
 
 object SlotConditions {
 
-    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<ResourceLocation, MapCodec<out SlotCondition>>()
+    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out SlotCondition>>()
 
     @IncludedCodec
-    val CODEC: Codec<SlotCondition> = ID_MAPPER.codec(ResourceLocation.CODEC).dispatch(SlotCondition::codec) { it }
+    val CODEC: Codec<SlotCondition> = ID_MAPPER.codec(Identifier.CODEC).dispatch(SlotCondition::codec) { it }
 
     init {
         ID_MAPPER.put(Catharsis.id("any"), CatharsisCodecs.getMapCodec<SlotAnyCondition>())

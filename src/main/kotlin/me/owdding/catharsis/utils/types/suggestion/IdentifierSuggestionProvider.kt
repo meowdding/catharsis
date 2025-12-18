@@ -5,12 +5,12 @@ import com.mojang.brigadier.suggestion.Suggestions
 import com.mojang.brigadier.suggestion.SuggestionsBuilder
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource
 import net.minecraft.commands.SharedSuggestionProvider
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import java.util.concurrent.CompletableFuture
 
-data class ResourceLocationSuggestionProvider<T>(
+data class IdentifierSuggestionProvider<T>(
     val elements: Collection<T>,
-    val converter: (T) -> ResourceLocation,
+    val converter: (T) -> Identifier,
 ) : CatharsisSuggestionProvider {
     override fun getSuggestions(
         context: CommandContext<FabricClientCommandSource>,
@@ -21,6 +21,6 @@ data class ResourceLocationSuggestionProvider<T>(
     }
 
     companion object {
-        fun create(elements: Collection<ResourceLocation>) = ResourceLocationSuggestionProvider(elements) { it }
+        fun create(elements: Collection<Identifier>) = IdentifierSuggestionProvider(elements) { it }
     }
 }

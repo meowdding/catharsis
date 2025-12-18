@@ -4,14 +4,13 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
-import me.owdding.catharsis.utils.Utils
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
-import me.owdding.catharsis.utils.types.suggestion.ResourceLocationSuggestionProvider
+import me.owdding.catharsis.utils.types.suggestion.IdentifierSuggestionProvider
 import me.owdding.ktmodules.Module
-import net.minecraft.commands.arguments.ResourceLocationArgument
+import net.minecraft.commands.arguments.IdentifierArgument
 import net.minecraft.core.BlockPos
 import net.minecraft.resources.FileToIdConverter
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.profiling.ProfilerFiller
@@ -19,6 +18,7 @@ import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
 import tech.thatgravyboat.skyblockapi.api.events.render.RenderWorldEvent
+import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import tech.thatgravyboat.skyblockapi.utils.text.Text
@@ -27,21 +27,21 @@ import tech.thatgravyboat.skyblockapi.utils.text.TextColor
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 
 @Module
-object Areas : SimplePreparableReloadListener<List<Pair<ResourceLocation, AreaDefinition>>>() {
+object Areas : SimplePreparableReloadListener<List<Pair<Identifier, AreaDefinition>>>() {
 
-    private val enabledDebugRenderers: MutableSet<ResourceLocation> = mutableSetOf()
+    private val enabledDebugRenderers: MutableSet<Identifier> = mutableSetOf()
     private val logger = Catharsis.featureLogger("Areas")
     private val converter = FileToIdConverter.json("catharsis/areas")
     private val gson = GsonBuilder().create()
     private val codec = CatharsisCodecs.getCodec<AreaDefinition>()
 
-    private val areas: MutableMap<ResourceLocation, AreaDefinition> = mutableMapOf()
+    private val areas: MutableMap<Identifier, AreaDefinition> = mutableMapOf()
 
     @Subscription
     private fun RegisterCommandsEvent.register() {
         register("catharsis dev areas") {
-            thenCallback("render toggle location", ResourceLocationArgument.id(), ResourceLocationSuggestionProvider.create(areas.keys)) {
-                val location = argument<ResourceLocation>("location")!!
+            thenCallback("render toggle location", IdentifierArgument.id(), IdentifierSuggestionProvider.create(areas.keys)) {
+                val location = argument<Identifier>("location")
                 if (!areas.containsKey(location)) {
                     Text.of("Unable to find area with location ") {
                         append(location.toString()) {
@@ -82,7 +82,7 @@ object Areas : SimplePreparableReloadListener<List<Pair<ResourceLocation, AreaDe
     override fun prepare(
         manager: ResourceManager,
         profiler: ProfilerFiller,
-    ): List<Pair<ResourceLocation, AreaDefinition>> {
+    ): List<Pair<Identifier, AreaDefinition>> {
         return converter.listMatchingResources(manager).mapNotNull { (id, resource) ->
             val id = converter.fileToId(id)
             logger.runCatching("Error loading area definition $id") {
@@ -98,11 +98,11 @@ object Areas : SimplePreparableReloadListener<List<Pair<ResourceLocation, AreaDe
         enabledDebugRenderers.mapNotNull { areas[it]?.renderable }.forEach { it.render(this) }
     }
 
-    fun isPlayerInArea(id: ResourceLocation): Boolean = McPlayer.self?.blockPosition()?.let { isInArea(it, id) } == true
-    fun isInArea(blockPos: BlockPos, id: ResourceLocation): Boolean = areas[id]?.contains(blockPos) == true
+    fun isPlayerInArea(id: Identifier): Boolean = McPlayer.self?.blockPosition()?.let { isInArea(it, id) } == true
+    fun isInArea(blockPos: BlockPos, id: Identifier): Boolean = areas[id]?.contains(blockPos) == true
 
     override fun apply(
-        elements: List<Pair<ResourceLocation, AreaDefinition>>,
+        elements: List<Pair<Identifier, AreaDefinition>>,
         resourceManager: ResourceManager,
         profiler: ProfilerFiller,
     ) {
@@ -111,9 +111,9 @@ object Areas : SimplePreparableReloadListener<List<Pair<ResourceLocation, AreaDe
     }
 
     @JvmStatic
-    fun getLoadedAreas(): Map<ResourceLocation, AreaDefinition> = areas
+    fun getLoadedAreas(): Map<Identifier, AreaDefinition> = areas
 
     init {
-        Utils.registerClientReloadListener(Catharsis.id("areas"), this)
+        McClient.registerClientReloadListener(Catharsis.id("areas"), this)
     }
 }

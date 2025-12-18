@@ -4,6 +4,7 @@ import Position from "./schemas/position.vue";
 import BoundingBox from "./schemas/bounding_box.vue";
 import Island from "./schemas/island.vue";
 import Example from "./example.vue";
+import SoundEvent from "./schemas/sound_event.vue";
 
 export const CustomComponents: { [name: string]: any } = {
     "TreeView": TreeView,
@@ -12,4 +13,5 @@ export const CustomComponents: { [name: string]: any } = {
     "BoundingBox": BoundingBox,
     "Island": Island,
     "Example": Example,
+    "SoundEvent": SoundEvent,
 }

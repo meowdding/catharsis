@@ -6,12 +6,14 @@ import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.gui.GuiGraphics
 import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.client.gui.screens.inventory.InventoryScreen
+import net.minecraft.client.renderer.LightTexture
 import net.minecraft.client.renderer.RenderPipelines
 import net.minecraft.network.chat.Component
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.util.CommonColors
 import org.joml.Quaternionf
 import org.joml.Vector3f
+import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McFont
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 
@@ -43,20 +45,23 @@ data class GuiPlayerElement(
             )
         } else {
             val offset = Vector3f(0.0F, player.bbHeight / 2.0f + 0.0625f * player.scale, 0.0F)
-            InventoryScreen.renderEntityInInventory(
-                graphics,
-                newX, newY, newX + width, newY + height,
-                30 / player.scale,
-                offset, rotation, null,
-                player
-            )
+            val state = McClient.self.entityRenderDispatcher.getRenderer(player).createRenderState(player, 1f)
+            //? if > 1.21.8 {
+            state.lightCoords = LightTexture.FULL_BRIGHT
+            state.shadowPieces.clear()
+            state.outlineColor = 0
+            //?}
+
+            //? if < 1.21.11
+            /*state.hitboxesRenderState = null*/
+            graphics.submitEntityRenderState(state, 25.0F, offset, rotation, null, newX, newY, newX + width, newY + height)
         }
     }
 }
 
 @GenerateCodec
 data class GuiSpriteElement(
-    val sprite: ResourceLocation,
+    val sprite: Identifier,
     override val layer: GuiElementRenderLayer = GuiElementRenderLayer.BACKGROUND,
     val x: Int?,
     val y: Int?,

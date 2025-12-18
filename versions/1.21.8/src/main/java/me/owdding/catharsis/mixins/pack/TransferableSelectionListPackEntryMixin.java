@@ -56,17 +56,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
         this.catharsis$incompatibleModDescriptionDisplayCache = cacheDescription(minecraft, Component.translatable("pack.catharsis.incompatible.desc"));
     }
 
-    /*? if >= 1.21.9 {*/
     @Inject(
-        method = "renderContent",
-        at = @At("HEAD")
-    )
-    private void renderConfigButton(CallbackInfo ci) {
-        this.right = this.getContentRight();
-        this.top = this.getContentY();
-    }
-    /*?} else {*/
-    /*@Inject(
         method = "render",
         at = @At("HEAD")
     )
@@ -79,12 +69,11 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
         this.right = left + width - 3 - (this.parent.maxScrollAmount() > 0 ? 7 : 0);
         this.top = top;
     }
-    *//*?}*/
 
     @Definition(id = "incompatibleDescriptionDisplayCache", field = "Lnet/minecraft/client/gui/screens/packs/TransferableSelectionList$PackEntry;incompatibleDescriptionDisplayCache:Lnet/minecraft/client/gui/components/MultiLineLabel;")
     @Expression("? = ?.incompatibleDescriptionDisplayCache")
     @Inject(
-        method = /*? if >= 1.21.9 {*/ "renderContent" /*?} else {*/ /*"render" *//*?}*/,
+        method = "render",
         at = @At(
             value = "MIXINEXTRAS:EXPRESSION",
             shift = At.Shift.AFTER
@@ -108,7 +97,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     }
 
     @Inject(
-        method = /*? if >= 1.21.9 {*/ "renderContent" /*?} else {*/ /*"render" *//*?}*/,
+        method = "render",
         at = @At("TAIL")
     )
     private void renderConfigButton(
@@ -116,9 +105,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
         @Local(ordinal = 0, argsOnly = true) GuiGraphics graphics,
         @Local(ordinal = 0, argsOnly = true) int mouseX,
         @Local(ordinal = 1, argsOnly = true) int mouseY,
-        @Local(ordinal = 0, argsOnly = true) boolean isHovering,
-        @Local(ordinal = 0) LocalRef<FormattedCharSequence> nameDisplayCache,
-        @Local(ordinal = 0) LocalRef<MultiLineLabel> descriptionDisplayCache
+        @Local(ordinal = 0, argsOnly = true) boolean isHovering
     ) {
         var self = (TransferableSelectionList.PackEntry)(Object)this;
         var selected = this.parent.getSelected() == self;
@@ -130,22 +117,11 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
             boolean buttonHovered = mouseX >= x && mouseX <= x + 11 && mouseY >= y && mouseY <= y + 11;
             graphics.fill(x, y, x + 11, y + 11, selected ? 0xff000000 : 0x88555555);
             graphics.drawString(this.minecraft.font, "⚙", x + 2, y + 1, buttonHovered ? 0xffB0B0B0 : 0xffffffff, false);
-            if (buttonHovered) {
-                //? >= 1.21.9
-                graphics.requestCursor(com.mojang.blaze3d.platform.cursor.CursorTypes.POINTING_HAND);
-            }
         }
     }
 
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
-    /*? if >= 1.21.9 {*/
-    private void onMouseClicked(net.minecraft.client.input.MouseButtonEvent event, boolean isDoubleClick, CallbackInfoReturnable<Boolean> cir) {
-        var mouseX = event.x();
-        var mouseY = event.y();
-        var button = event.input();
-    /*?} else {*/
-    /*private void onMouseClicked(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> cir) {
-    *//*?}*/
+    private void onMouseClicked(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> cir) {
         var meta = catharsis$getMeta();
         if (meta == null) return;
         if (mouseX < this.right - 11 || mouseX > this.right) return;

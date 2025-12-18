@@ -107,7 +107,7 @@ object DataTypeProperties {
         }
     }
 
-    data class SelectDataTypeItemProperty<Type, CompareType>(val entry: DataTypeEntry<Type, CompareType>) : SelectItemModelProperty<CompareType> {
+    data class SelectDataTypeItemProperty<Type, CompareType : Any>(val entry: DataTypeEntry<Type, CompareType>) : SelectItemModelProperty<CompareType> {
         override fun get(stack: ItemStack, level: ClientLevel?, entity: LivingEntity?, seed: Int, displayContext: ItemDisplayContext): CompareType? =
             stack[entry.type]?.let { entry.converter.apply(it) }
 
@@ -116,33 +116,33 @@ object DataTypeProperties {
 
         companion object {
 
-            private fun <Type, CompareType> createItemCodec(entry: DataTypeEntry<Type, CompareType>): MapCodec<SelectItemModel.UnbakedSwitch<SelectDataTypeItemProperty<Type, CompareType>, CompareType>> {
+            private fun <Type, CompareType : Any> createItemCodec(entry: DataTypeEntry<Type, CompareType>): MapCodec<SelectItemModel.UnbakedSwitch<SelectDataTypeItemProperty<Type, CompareType>, CompareType>> {
                 return SelectItemModelProperty.Type.createCasesFieldCodec(entry.codec).xmap(
                     { cases -> SelectItemModel.UnbakedSwitch(SelectDataTypeItemProperty(entry), cases) },
                     { switch -> switch.cases },
                 )
             }
 
-            private fun <Type, CompareType> createArmorCodec(entry: DataTypeEntry<Type, CompareType>): MapCodec<SelectArmorModel.UnbakedSwitch<SelectDataTypeItemProperty<Type, CompareType>, CompareType>> {
+            private fun <Type, CompareType : Any> createArmorCodec(entry: DataTypeEntry<Type, CompareType>): MapCodec<SelectArmorModel.UnbakedSwitch<SelectDataTypeItemProperty<Type, CompareType>, CompareType>> {
                 return SelectArmorModel.UnbakedSwitch.createCasesFieldCodec(entry.codec).xmap(
                     { cases -> SelectArmorModel.UnbakedSwitch(SelectDataTypeItemProperty(entry), cases) },
                     { switch -> switch.cases },
                 )
             }
 
-            private fun <Type, CompareType> createType(): SelectItemModelProperty.Type<SelectDataTypeItemProperty<Type, CompareType>, CompareType> {
+            private fun <Type, CompareType : Any> createType(): SelectItemModelProperty.Type<SelectDataTypeItemProperty<Type, CompareType>, CompareType> {
                 val type = SelectItemModelProperty.Type<SelectDataTypeItemProperty<Type, CompareType>, CompareType>(
                     types.codec(Codec.STRING).dispatchMap(
                         "data_type",
                         { case -> (case.property as SelectDataTypeItemProperty).entry },
-                        { entry -> createItemCodec(entry).unsafeCast() },
+                        { entry -> createItemCodec(entry.unsafeCast()) },
                     ),
                 )
                 type.hook.`catharsis$setArmorSwitchCodec`(
                     types.codec(Codec.STRING).dispatchMap(
                         "data_type",
                         { case -> (case.property as SelectDataTypeItemProperty).entry },
-                        { entry -> createArmorCodec(entry).unsafeCast() },
+                        { entry -> createArmorCodec(entry.unsafeCast()) },
                     ),
                 )
                 return type

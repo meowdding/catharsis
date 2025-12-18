@@ -1,9 +1,6 @@
 package me.owdding.catharsis.utils.types.boundingboxes
 
-import com.mojang.blaze3d.vertex.VertexConsumer
-import me.owdding.catharsis.utils.extensions.pose
-import net.minecraft.client.renderer.RenderType
-import net.minecraft.client.renderer.ShapeRenderer
+import me.owdding.catharsis.utils.extensions.renderLineBox
 import net.minecraft.core.BlockPos
 import net.minecraft.util.Mth
 import net.minecraft.world.phys.AABB
@@ -19,16 +16,7 @@ object OctreeDebugRenderer {
         val camY = event.cameraPosition.y
         val camZ = event.cameraPosition.z
         octree.boxes.forEach {
-            val vertexConsumer: VertexConsumer = event.buffer.getBuffer(RenderType.lines())
-            ShapeRenderer.renderLineBox(
-                event.poseStack.pose(),
-                vertexConsumer,
-                it.toMinecraftAABB().move(-camX, -camY, -camZ),
-                1.0f,
-                1.0f,
-                1.0f,
-                1f,
-            )
+            event.renderLineBox(it.toMinecraftAABB().move(-camX, -camY, -camZ))
         }
 
         val nodesRendered = MutableInt()
@@ -39,18 +27,14 @@ object OctreeDebugRenderer {
     }
 
     fun visit(event: RenderWorldEvent, node: Node, nodesRendered: MutableInt, depth: Int, playerNode: Leaf?) {
-        val AABB: AABB = node.getBox().toMinecraftAABB()
-        val size = AABB.xsize
-        val color = (size / 16.0).roundToInt()
-        val vertexConsumer: VertexConsumer = event.buffer.getBuffer(RenderType.lines())
+        val aabb: AABB = node.getBox().toMinecraftAABB()
+        val color = (aabb.xsize / 16.0).roundToInt()
         val colorValue = color + 5L
         val camX = event.cameraPosition.x
         val camY = event.cameraPosition.y
         val camZ = event.cameraPosition.z
-        ShapeRenderer.renderLineBox(
-            event.poseStack.pose(),
-            vertexConsumer,
-            AABB.move(-camX, -camY, -camZ),
+        event.renderLineBox(
+            aabb.move(-camX, -camY, -camZ),
             getColorComponent(colorValue, 0.3f),
             getColorComponent(colorValue, 0.8f),
             getColorComponent(colorValue, 0.5f),

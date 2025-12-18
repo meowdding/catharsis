@@ -1,15 +1,12 @@
 package me.owdding.catharsis.utils.types.boundingboxes
 
-import com.mojang.blaze3d.vertex.VertexConsumer
 import com.mojang.datafixers.util.Either
 import com.mojang.serialization.Codec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.utils.codecs.PosCodecs
 import me.owdding.catharsis.utils.extensions.mutableCopy
-import me.owdding.catharsis.utils.extensions.pose
+import me.owdding.catharsis.utils.extensions.renderLineBox
 import me.owdding.ktcodecs.IncludedCodec
-import net.minecraft.client.renderer.RenderType
-import net.minecraft.client.renderer.ShapeRenderer
 import net.minecraft.core.Vec3i
 import net.minecraft.world.phys.AABB
 import org.joml.Vector3i
@@ -120,16 +117,5 @@ data class BoundingBox(
 
     fun toMinecraftBox() = MinecraftBox(min.x, min.y, min.z, max.x, max.y, max.z)
     fun toMinecraftAABB(): AABB = AABB.of(toMinecraftBox())
-    override fun render(event: RenderWorldEvent) = event.atCamera {
-        val vertexConsumer: VertexConsumer = event.buffer.getBuffer(RenderType.lines())
-        ShapeRenderer.renderLineBox(
-            event.poseStack.pose(),
-            vertexConsumer,
-            toMinecraftAABB(),
-            1f,
-            1f,
-            1f,
-            1f,
-        )
-    }
+    override fun render(event: RenderWorldEvent) = event.atCamera { event.renderLineBox(toMinecraftAABB()) }
 }

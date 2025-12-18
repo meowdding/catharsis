@@ -1,0 +1,12 @@
+{
+  "type": "relative",
+  "offset": "0:-1:0",
+  "definition": {
+    "type": "redirect",
+    "virtual_state": "your_name_space:gold"
+  },
+  "blocks": [
+    "minecraft:grass_block",
+    "minecraft:dirt"
+  ]
+}

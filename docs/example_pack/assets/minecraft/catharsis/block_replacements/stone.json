@@ -1,18 +1,18 @@
 {
   "type": "per_area",
   "values": {
-    "furfsky:test": {
+    "your_name_space:test": {
       "type": "random",
       "min": 0,
       "max": 20,
       "threshold": 15,
       "definition": {
         "type": "redirect",
-        "virtual_state": "furfsky:gold_2"
+        "virtual_state": "your_name_space:diamond"
       },
       "fallback": {
         "type": "redirect",
-        "virtual_state": "furfsky:gold"
+        "virtual_state": "your_name_space:gold"
       }
     }
   }

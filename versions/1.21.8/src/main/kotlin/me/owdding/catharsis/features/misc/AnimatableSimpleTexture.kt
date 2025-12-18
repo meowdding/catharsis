@@ -12,7 +12,6 @@ import net.minecraft.resources.ResourceLocation
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.util.Mth
 import java.io.IOException
-import java.util.*
 import kotlin.jvm.optionals.getOrNull
 
 class AnimatableSimpleTexture(location: ResourceLocation) : SimpleTexture(location), Tickable {
@@ -20,12 +19,7 @@ class AnimatableSimpleTexture(location: ResourceLocation) : SimpleTexture(locati
     private var contents: SpriteContents? = null
     private var ticker: SpriteTicker? = null
 
-    val canTick: Boolean get() =
-        //? if >= 1.21.9 {
-        contents?.isAnimated == true
-        //?} else {
-        /*contents?.metadata()?.getSection(AnimationMetadataSection.TYPE)?.isPresent == true
-        *///?}
+    val canTick: Boolean get() = contents?.metadata()?.getSection(AnimationMetadataSection.TYPE)?.isPresent == true
 
     @Throws(IOException::class)
     override fun loadContents(manager: ResourceManager): TextureContents {
@@ -38,19 +32,14 @@ class AnimatableSimpleTexture(location: ResourceLocation) : SimpleTexture(locati
         val resource = manager.getResourceOrThrow(id)
         val image: NativeImage = resource.open().use(NativeImage::read)
         val textureMetadata = resource.metadata().getSection(TextureMetadataSection.TYPE).getOrNull()
-        var animatedMetadata = resource.metadata().getSection(AnimationMetadataSection.TYPE).getOrNull()
+        val animatedMetadata = resource.metadata().getSection(AnimationMetadataSection.TYPE).getOrNull()
         var frameSize = animatedMetadata?.calculateFrameSize(image.width, image.height) ?: FrameSize(image.width, image.height)
 
         if (!Mth.isMultipleOf(image.width, frameSize.width) || !Mth.isMultipleOf(image.height, frameSize.height)) {
             logger.error("Image $id size ${image.width}x${image.height} is not a multiple of frame size ${frameSize.width}x${frameSize.height}")
             frameSize = FrameSize(image.width, image.height)
-            animatedMetadata = null
         }
-        //? if >= 1.21.9 {
-        this.contents = SpriteContents(id, frameSize, image, Optional.ofNullable(animatedMetadata), listOf())
-        //?} else {
-        /*this.contents = SpriteContents(id, frameSize, image, resource.metadata())
-        *///?}
+        this.contents = SpriteContents(id, frameSize, image, resource.metadata())
 
         return TextureContents(image, textureMetadata)
     }

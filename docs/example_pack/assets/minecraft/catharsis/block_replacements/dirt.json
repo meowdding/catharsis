@@ -1,0 +1,9 @@
+{
+  "type": "per_area",
+  "values": {
+    "your_name_space:simple": {
+      "type": "redirect",
+      "virtual_state": "your_name_space:diamond"
+    }
+  }
+}

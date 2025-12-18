@@ -9,10 +9,12 @@ import net.minecraft.client.renderer.chunk.ChunkSectionLayer
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
+import tech.thatgravyboat.skyblockapi.platform.identifier
 
 @GenerateCodec
 data class VirtualBlockStateDefinition(
     @Inline val model: BlockModelDefinition,
+    val sounds: BlockSoundDefinition?,
     val blend: BlendMode?,
 ) {
 
@@ -20,7 +22,7 @@ data class VirtualBlockStateDefinition(
 
     fun getRoots(block: Block): Map<BlockState, BlockStateModel.UnbakedRoot> {
         if (roots == null) {
-            roots = model.instantiate(block.stateDefinition) { block.builtInRegistryHolder().key().location().toString() }
+            roots = model.instantiate(block.stateDefinition) { block.builtInRegistryHolder().key().identifier.toString() }
         }
         return roots!!
     }
@@ -30,20 +32,11 @@ data class VirtualBlockStateDefinition(
     }
 }
 
-enum class BlendMode {
+enum class BlendMode(val sectionLayer: ChunkSectionLayer? = null) {
     DEFAULT,
-    SOLID,
-    CUTOUT_MIPPED,
-    CUTOUT,
-    TRANSLUCENT,
-    ;
-
-    fun toSectionLayer(): ChunkSectionLayer? = when (this) {
-        DEFAULT -> null
-        SOLID -> ChunkSectionLayer.SOLID
-        CUTOUT_MIPPED -> ChunkSectionLayer.CUTOUT_MIPPED
-        CUTOUT -> ChunkSectionLayer.CUTOUT
-        TRANSLUCENT -> ChunkSectionLayer.TRANSLUCENT
-    }
+    SOLID(ChunkSectionLayer.SOLID),
+    CUTOUT_MIPPED(ChunkSectionLayer.CUTOUT_MIPPED),
+    CUTOUT(ChunkSectionLayer.CUTOUT_MIPPED),
+    TRANSLUCENT(ChunkSectionLayer.TRANSLUCENT),
 }
 

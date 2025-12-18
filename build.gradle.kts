@@ -26,21 +26,7 @@ repositories {
     mavenCentral()
 }
 
-configurations {
-    modImplementation {
-        attributes.attribute(Attribute.of("earth.terrarium.cloche.modLoader", String::class.java), "fabric")
-    }
-}
-
 dependencies {
-    attributesSchema {
-        attribute(Attribute.of("earth.terrarium.cloche.minecraftVersion", String::class.java)) {
-            disambiguationRules.add(ClocheDisambiguationRule::class) {
-                params(versionedCatalog.versions.getOrFallback("sbapi-mc-version", "minecraft").toString())
-            }
-        }
-    }
-
     minecraft(versionedCatalog["minecraft"])
     mappings(loom.layered {
         officialMojangMappings()
@@ -48,12 +34,20 @@ dependencies {
             artifactType("zip")
         })
     })
-    includeImplementation(libs.skyblockapi)
+
+    api(libs.skyblockapi) {
+        capabilities { requireCapability("tech.thatgravyboat:skyblock-api-${stonecutter.current.version}") }
+    }
+    include(libs.skyblockapi) {
+        capabilities { requireCapability("tech.thatgravyboat:skyblock-api-${stonecutter.current.version}-remapped") }
+    }
+
     includeImplementation(versionedCatalog["placeholders"])
     modImplementation(libs.fabric.loader)
     modImplementation(libs.repo.lib)
     modImplementation(libs.fabric.language.kotlin)
     modImplementation(versionedCatalog["fabric.api"])
+    modImplementation(libs.hypixelapi)
     compileOnly(libs.meowdding.ktmodules)
     compileOnly(libs.meowdding.ktcodecs)
     ksp(libs.meowdding.ktmodules)
@@ -112,6 +106,8 @@ tasks.withType<JavaCompile>().configureEach {
 tasks.withType<KotlinCompile>().configureEach {
     compilerOptions.jvmTarget.set(JvmTarget.JVM_21)
     compilerOptions.optIn.add("kotlin.time.ExperimentalTime")
+    compilerOptions.freeCompilerArgs.add("-Xnullability-annotations=@org.jspecify.annotations:warn")
+    compilerOptions.freeCompilerArgs.add("-Xwhen-guards")
 }
 
 tasks.processResources {

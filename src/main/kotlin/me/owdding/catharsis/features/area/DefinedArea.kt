@@ -10,7 +10,7 @@ import me.owdding.catharsis.utils.types.boundingboxes.Octree
 import me.owdding.ktcodecs.*
 import me.owdding.ktcodecs.IntRange
 import net.minecraft.core.BlockPos
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import tech.thatgravyboat.skyblockapi.api.location.LocationAPI
 import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
@@ -86,10 +86,10 @@ data class IslandEntry(
 )
 
 object AreaDefinitions {
-    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<ResourceLocation, MapCodec<out AreaDefinition>>()
+    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out AreaDefinition>>()
 
     @IncludedCodec
-    val CODEC: MapCodec<AreaDefinition> = ID_MAPPER.codec(IncludedCodecs.catharsisResourceLocation).dispatchMap(AreaDefinition::codec) { it }
+    val CODEC: MapCodec<AreaDefinition> = ID_MAPPER.codec(IncludedCodecs.catharsisIdentifier).dispatchMap(AreaDefinition::codec) { it }
 
     init {
         ID_MAPPER.put(Catharsis.id("multiple"), CatharsisCodecs.getMapCodec<MultipleAreaDefinition>())

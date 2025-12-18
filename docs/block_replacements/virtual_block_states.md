@@ -26,11 +26,11 @@ Things that happen in this example
 - <TypeIcon type="string"/> **blend**: (Optional) Changes the blending mode used for the block. 
     - One of `DEFAULT`, `SOLID`, `CUTOUT_MIPPED`, `CUTOUT`, `TRANSLUCENT`
 - <TypeIcon type="object"/> **sounds**: (Optional) Changes the sound that is played for interactions.
-  - <SoundEvent customText> <b>hit_sound</b>: (Optional) The sound that is used when hitting the block.</SoundEvent>
-  - <SoundEvent customText> <b>break_sound</b>: (Optional) The sound that is used when the block is broken.</SoundEvent>
-  - <SoundEvent customText> <b>step_sound</b>: (Optional) The sound that is used when something steps on the block.</SoundEvent>
-  - <SoundEvent customText> <b>place_sound</b>: (Optional) The sound that is used when the block is placed.</SoundEvent>
-  - <SoundEvent customText> <b>fall_sound</b>: (Optional) The sound that is used when something falls on the block.</SoundEvent>
+  - <SoundEvent customText> <b>hit</b>: (Optional) The sound that is used when hitting the block.</SoundEvent>
+  - <SoundEvent customText> <b>break</b>: (Optional) The sound that is used when the block is broken.</SoundEvent>
+  - <SoundEvent customText> <b>step</b>: (Optional) The sound that is used when something steps on the block.</SoundEvent>
+  - <SoundEvent customText> <b>place</b>: (Optional) The sound that is used when the block is placed.</SoundEvent>
+  - <SoundEvent customText> <b>fall</b>: (Optional) The sound that is used when something falls on the block.</SoundEvent>
 - <TypeIcon type="object"/> **overrides**: (Optional) A map of block id to vanilla block state definitions.
   - <TypeIcon type="array"/> **&lt;block_id&gt;**: The block id that is replaced e.g. `minecraft:bedrock`.
     - <TypeIcon/> A vanilla block state as defined [here](https://minecraft.wiki/w/Tutorial:Models#Block_states)

@@ -38,6 +38,7 @@ object BlockStateDefinitions {
     val CODEC: MapCodec<BlockReplacement.Completable> = ID_MAPPER.codec(IncludedCodecs.catharsisIdentifier).dispatchMap(BlockReplacement.Completable::codec) { it }
 
     init {
+        ID_MAPPER.put(Catharsis.id("select"), CatharsisCodecs.getMapCodec<SelectBlockReplacement.Completable>())
         ID_MAPPER.put(Catharsis.id("redirect"), CatharsisCodecs.getMapCodec<RedirectBlockReplacement.Completable>())
         ID_MAPPER.put(Catharsis.id("per_area"), CatharsisCodecs.getMapCodec<PerAreaBlockReplacement.Completable>())
         ID_MAPPER.put(Catharsis.id("random"), CatharsisCodecs.getMapCodec<RandomBlockReplacement.Completable>())

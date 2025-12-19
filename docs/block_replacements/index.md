@@ -110,3 +110,23 @@ Replaces the block with gold if the block under it is equal to grass or dirt.
 - <TypeIcon type="object"/> **definition**: The [block replacement definition](#definition) to use if the check passes.
 - <TypeIcon type="object"/> **fallback**: (Optional) The [block replacement definition](#definition) to use if the check fails.
 </TreeView>
+
+### Select (`catharsis:select`)
+
+Allows you to have multiple block replacements for the same block, and uses the first one that replaces the block.
+
+<Example>
+
+Replaces the block with gold if the block under it is netherrack, or replaces it with emerald if its deepslate. 
+
+<<< @/example_pack/assets/minecraft/catharsis/block_replacements/redstone_block.json{json:line-numbers}
+</Example>
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>select</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:select`
+- <TypeIcon type="array"/> **definitions**: The definitions that will try to replace the block.
+    - <TypeIcon type="object"/> **definition**: The [block replacement definition](#definition).
+- <TypeIcon type="object"/> **fallback**: (Optional) The [block replacement definition](#definition) to use if all the checks fail.
+</TreeView>

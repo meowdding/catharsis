@@ -1,0 +1,35 @@
+{
+  "type": "select",
+  "definitions": [
+    {
+      "type": "conditional",
+      "definition": {
+        "type": "redirect",
+        "virtual_state": "furfsky:gold"
+      },
+      "condition": {
+        "type": "relative",
+        "offset": "0:-1:0",
+        "condition": {
+          "type": "id",
+          "block": "minecraft:netherrack"
+        }
+      }
+    },
+    {
+      "type": "conditional",
+      "definition": {
+        "type": "redirect",
+        "virtual_state": "furfsky:emerald"
+      },
+      "condition": {
+        "type": "relative",
+        "offset": "0:-1:0",
+        "condition": {
+          "type": "id",
+          "block": "minecraft:deepslate"
+        }
+      }
+    }
+  ]
+}

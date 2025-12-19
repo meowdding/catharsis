@@ -3,11 +3,15 @@ package me.owdding.catharsis.features.pack.config
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 import com.mojang.brigadier.arguments.StringArgumentType
+import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.pack.meta.CatharsisMetadataSection
 import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.types.suggestion.IterableSuggestionProvider
 import me.owdding.ktmodules.Module
+import net.minecraft.server.packs.PackResources
+import net.minecraft.server.packs.resources.ResourceManager
+import net.minecraft.server.packs.resources.ResourceManagerReloadListener
 import net.minecraft.util.GsonHelper
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.base.predicates.TimePassed
@@ -17,6 +21,7 @@ import tech.thatgravyboat.skyblockapi.api.events.time.TickEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McScreen
 import tech.thatgravyboat.skyblockapi.utils.Scheduling
+import tech.thatgravyboat.skyblockapi.utils.extentions.associateByNotNull
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.time.currentInstant
 import tech.thatgravyboat.skyblockapi.utils.time.since
@@ -39,13 +44,11 @@ data class PackConfig(
         return current.get(id) ?: default.get(id)
     }
 
-    fun options(): List<PackConfigOption>? = McClient.self.resourcePackRepository.openAllSelected().find {
-        it?.getMetadataSection(CatharsisMetadataSection.TYPE)?.id == packId
-    }?.getMetadataSection(CatharsisMetadataSection.TYPE)?.config?.takeUnless { it.isEmpty() }
+    fun options(): List<PackConfigOption>? = PackConfigHandler.catharsisPacks[packId]?.config?.takeUnless { it.isEmpty() }
 }
 
 @Module
-object PackConfigHandler {
+object PackConfigHandler : ResourceManagerReloadListener {
 
     private const val SAVE_PATH = "catharsis/pack_configs.json"
 
@@ -53,6 +56,9 @@ object PackConfigHandler {
     private val path = McClient.config.resolve(SAVE_PATH)
     private val configs = mutableMapOf<String, PackConfig>()
     private var saveRequestedAt = Instant.DISTANT_PAST
+
+    var catharsisPacks: Map<String, CatharsisMetadataSection> = emptyMap()
+        private set
 
     init {
         logger.runCatching("Loading pack configurations") {
@@ -67,6 +73,8 @@ object PackConfigHandler {
                 configs[key] = PackConfig(key, JsonObject(), value.asJsonObject)
             }
         }
+
+        McClient.registerClientReloadListener(Catharsis.id("packconfig_handler"), this)
     }
 
     fun getConfig(packId: String): PackConfig {
@@ -97,7 +105,7 @@ object PackConfigHandler {
     @Subscription
     fun onCommand(event: RegisterCommandsEvent) {
         event.register("catharsis config") {
-            thenCallback("id", StringArgumentType.string(), IterableSuggestionProvider(configs.entries, { it.key })) {
+            thenCallback("id", StringArgumentType.string(), IterableSuggestionProvider(catharsisPacks.keys)) {
                 val id = argument<String>("id")
                 val options = getConfig(id).options() ?: run {
                     Text.of("No config found for $id").sendWithPrefix()
@@ -106,5 +114,11 @@ object PackConfigHandler {
                 McClient.setScreenAsync { PackConfigScreen(McScreen.self, id, options) }
             }
         }
+    }
+
+    override fun onResourceManagerReload(resourceManager: ResourceManager) {
+        catharsisPacks = resourceManager.listPacks().toList().mapNotNull { pack ->
+            pack.getMetadataSection(CatharsisMetadataSection.TYPE)?.let { it.id to it }
+        }.toMap()
     }
 }

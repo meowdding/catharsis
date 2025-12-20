@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.block.model.BlockModelDefinition
 import net.minecraft.client.renderer.block.model.BlockStateModel
 import net.minecraft.client.renderer.chunk.ChunkSectionLayer
 import net.minecraft.client.resources.model.ModelBaker
+import net.minecraft.resources.Identifier
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 import tech.thatgravyboat.skyblockapi.platform.identifier
@@ -18,6 +19,7 @@ data class VirtualBlockStateDefinition(
     val sounds: BlockSoundDefinition?,
     val blend: BlendMode?,
     @FieldName("ignore_original_offset") val ignoreOriginalOffset: Boolean = false,
+    val overrides: Map<Identifier, VirtualBlockStateDefinition> = emptyMap(),
 ) {
 
     private var roots: Map<BlockState, BlockStateModel.UnbakedRoot>? = null

@@ -2,16 +2,17 @@ package me.owdding.catharsis.features.blocks.replacements
 
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.area.Areas
-import me.owdding.catharsis.features.blocks.*
+import me.owdding.catharsis.features.blocks.BlockReplacement
+import me.owdding.catharsis.features.blocks.BlockReplacementBakery
+import me.owdding.catharsis.features.blocks.BlockReplacementSelector
+import me.owdding.catharsis.features.blocks.VirtualBlockStateDefinition
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
-import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.core.BlockPos
 import net.minecraft.resources.Identifier
 import net.minecraft.util.RandomSource
-import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 
 data class PerAreaBlockReplacement(
@@ -24,14 +25,14 @@ data class PerAreaBlockReplacement(
         }
     }
 
-    data class PerAreaBlockReplacementSelector(
-        val values: Map<Identifier, BlockReplacementSelector>,
-    ) : BlockReplacementSelector {
+    data class PerAreaBlockReplacementSelector<T: Any>(
+        val values: Map<Identifier, BlockReplacementSelector<T>>,
+    ) : BlockReplacementSelector<T> {
         override fun select(
             state: BlockState,
             pos: BlockPos,
             random: RandomSource,
-        ): BlockReplacementEntry? {
+        ): T? {
             return values.firstNotNullOfOrNull { (area, value) ->
                 value.takeIf { Areas.getLoadedAreas()[area]?.contains(pos) == true }?.select(state, pos, random)
             }
@@ -39,10 +40,9 @@ data class PerAreaBlockReplacement(
 
     }
 
-    override fun bake(
-        baker: ModelBaker,
-        block: Block,
-    ): BlockReplacementSelector = PerAreaBlockReplacementSelector(values.mapValues { (_, value) -> value.bake(baker, block) })
+    override fun <T: Any> bake(
+        baker: BlockReplacement.() -> BlockReplacementSelector<T>
+    ): BlockReplacementSelector<T> = PerAreaBlockReplacementSelector(values.mapValues { (_, value) -> value.bake(baker) })
 
     @GenerateCodec
     @NamedCodec("CompletablePerAreaBlockReplacement")

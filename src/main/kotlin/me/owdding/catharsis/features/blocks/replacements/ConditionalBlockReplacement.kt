@@ -1,15 +1,16 @@
 package me.owdding.catharsis.features.blocks.replacements
 
 import com.mojang.serialization.MapCodec
-import me.owdding.catharsis.features.blocks.*
+import me.owdding.catharsis.features.blocks.BlockReplacement
+import me.owdding.catharsis.features.blocks.BlockReplacementBakery
+import me.owdding.catharsis.features.blocks.BlockReplacementSelector
+import me.owdding.catharsis.features.blocks.VirtualBlockStateDefinition
 import me.owdding.catharsis.features.blocks.replacements.conditions.BlockCondition
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
-import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.core.BlockPos
 import net.minecraft.util.RandomSource
-import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 import tech.thatgravyboat.skyblockapi.helpers.McLevel
 
@@ -20,11 +21,10 @@ data class ConditionalBlockReplacement(
 ) : BlockReplacement {
     override fun listStates(): List<VirtualBlockStateDefinition> = listOfNotNull(definition.listStates(), fallback?.listStates()).flatten()
 
-    override fun bake(
-        baker: ModelBaker,
-        block: Block,
-    ): BlockReplacementSelector = ConditionalBlockReplacementSelector(
-        condition, definition.bake(baker, block), fallback?.bake(baker, block)
+    override fun <T : Any> bake(
+        baker: BlockReplacement.() -> BlockReplacementSelector<T>
+    ): BlockReplacementSelector<T> = ConditionalBlockReplacementSelector(
+        condition, definition.baker(), fallback?.baker()
     )
 
     override fun select(
@@ -55,12 +55,12 @@ data class ConditionalBlockReplacement(
         )
     }
 
-    data class ConditionalBlockReplacementSelector(
+    data class ConditionalBlockReplacementSelector<T : Any>(
         val condition: BlockCondition,
-        val definition: BlockReplacementSelector,
-        val fallback: BlockReplacementSelector?,
-    ) : BlockReplacementSelector {
-        override fun select(state: BlockState, pos: BlockPos, random: RandomSource): BlockReplacementEntry? {
+        val definition: BlockReplacementSelector<T>,
+        val fallback: BlockReplacementSelector<T>?,
+    ) : BlockReplacementSelector<T> {
+        override fun select(state: BlockState, pos: BlockPos, random: RandomSource): T? {
             return when {
                 !McLevel.hasLevel -> null
                 condition.check(McLevel[pos], pos, McLevel.level, random) -> definition

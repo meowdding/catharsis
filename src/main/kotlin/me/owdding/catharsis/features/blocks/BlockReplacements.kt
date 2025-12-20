@@ -1,5 +1,7 @@
 package me.owdding.catharsis.features.blocks
 
+import com.google.common.cache.Cache
+import com.google.common.cache.CacheBuilder
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.mojang.serialization.Codec
@@ -7,6 +9,7 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.blocks.replacements.LayeredBlockReplacements
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.extensions.mapBothNotNull
+import me.owdding.catharsis.utils.extensions.mapKeysNotNull
 import me.owdding.catharsis.utils.types.fabric.PreparingModelLoadingPlugin
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin
@@ -15,14 +18,18 @@ import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.resources.FileToIdConverter
 import net.minecraft.resources.Identifier
 import net.minecraft.server.packs.resources.ResourceManager
-import net.minecraft.util.Mth
-import net.minecraft.util.RandomSource
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
+import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
+import tech.thatgravyboat.skyblockapi.api.events.level.BlockChangeEvent
+import tech.thatgravyboat.skyblockapi.helpers.McLevel
+import tech.thatgravyboat.skyblockapi.utils.extentions.filterValuesNotNull
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import java.util.concurrent.CompletableFuture
 import java.util.concurrent.Executor
 import kotlin.jvm.optionals.getOrNull
+import kotlin.time.Duration.Companion.minutes
+import kotlin.time.toJavaDuration
 
 @Module
 object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockReplacements>> {
@@ -38,14 +45,25 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     private val blockDefinitionCodec: Codec<BlockReplacement.Completable> = BlockStateDefinitions.CODEC.codec()
     private val virtualBlockStateCodec: Codec<VirtualBlockStateDefinition> = CatharsisCodecs.VirtualBlockStateDefinitionCodec.codec()
 
-    private val map: MutableMap<Block, LayeredBlockReplacements> = mutableMapOf()
+    private val map: MutableMap<Block, BakedSoundDefinition> = mutableMapOf()
 
     @JvmStatic
-    fun getBlock(block: Block): LayeredBlockReplacements? = map[block]
+    fun getSound(state: BlockState, pos: BlockPos): BlockSoundDefinition = map[state.block]?.select(state, pos) ?: BlockSoundDefinition.DEFAULT
 
-    @JvmStatic
-    fun getSound(state: BlockState, pos: BlockPos): BlockSoundDefinition =
-        map[state.block]?.select(state, pos, RandomSource.create(Mth.getSeed(pos)))?.sounds ?: BlockSoundDefinition.DEFAULT
+    val blocksCache: Cache<BlockPos, BlockState> = CacheBuilder.newBuilder().maximumSize(1000).expireAfterWrite(5.minutes.toJavaDuration()).build<BlockPos, BlockState>()
+    private val blockToListen: MutableSet<Block> = mutableSetOf()
+
+    @Subscription
+    fun onBlockChange(event: BlockChangeEvent) {
+        if (!McLevel.hasLevel) return
+
+        if (event.state.block in blockToListen) {
+            val oldState = McLevel[event.pos]
+            if (event.state != oldState) {
+                blocksCache.put(event.pos, oldState)
+            }
+        }
+    }
 
     override fun prepare(
         resourceManager: ResourceManager,
@@ -98,13 +116,28 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
         data: Map<Block, LayeredBlockReplacements>,
         context: ModelLoadingPlugin.Context,
     ) {
+        val overrides = data.entries.flatMap { (block, replacement) ->
+            replacement.listStates().flatMap { state -> state.overrides.keys.map { it to block } }
+        }.groupBy({ (block, _) -> block }) {
+            it.second
+        }.mapKeysNotNull { (k, _) ->
+            BuiltInRegistries.BLOCK.getOptional(k).getOrNull()
+        }
+        blockToListen.addAll(overrides.keys)
+
+
+        val emptyReplacement = LayeredBlockReplacements(emptyList())
         context.modifyBlockModelOnLoad().register { original, context ->
             val block = context.state().block
 
-            this.map.putAll(data)
-
-            data[block]?.let {
-                return@register UnbakedBlockStateModelReplacement(block, original, it)
+            val replacement = data[block]
+            val tot = overrides.getOrElse(block) { emptyList() }.associateWith { data[it] }.filterValuesNotNull()
+            if (replacement != null || tot.isNotEmpty()) {
+                this.map[block] = BakedSoundDefinition(
+                    (replacement ?: emptyReplacement).bakeForSounds(block),
+                    tot.mapValues { (_, value) -> value.bakeForSounds(block) }
+                )
+                return@register UnbakedBlockStateModelReplacement(block, original, replacement ?: emptyReplacement, tot)
             }
 
             original

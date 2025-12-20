@@ -2,7 +2,6 @@ package me.owdding.catharsis.features.blocks.replacements
 
 import me.owdding.catharsis.features.blocks.BlockReplacement
 import me.owdding.catharsis.features.blocks.BlockReplacementBakery
-import me.owdding.catharsis.features.blocks.BlockReplacementEntry
 import me.owdding.catharsis.features.blocks.BlockReplacementSelector
 import me.owdding.catharsis.features.blocks.VirtualBlockStateDefinition
 import me.owdding.catharsis.utils.CatharsisLogger
@@ -11,7 +10,6 @@ import net.minecraft.core.BlockPos
 import net.minecraft.util.RandomSource
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
-import kotlin.runCatching
 
 data class LayeredBlockReplacements(
     val definitions: List<BlockReplacement>,
@@ -33,15 +31,18 @@ data class LayeredBlockReplacements(
         )
     }
 
-    data class LayeredBlockReplacementSelector(
-        val blockReplacementSelectors: List<BlockReplacementSelector>,
-    ) : BlockReplacementSelector {
+    data class LayeredBlockReplacementSelector<T : Any>(
+        val blockReplacementSelectors: List<BlockReplacementSelector<T>>,
+    ) : BlockReplacementSelector<T> {
         override fun select(
             state: BlockState,
             pos: BlockPos,
             random: RandomSource,
-        ): BlockReplacementEntry? = blockReplacementSelectors.firstNotNullOfOrNull { it.select(state, pos, random) }
+        ): T? = blockReplacementSelectors.firstNotNullOfOrNull { it.select(state, pos, random) }
     }
 
-    fun bake(baker: ModelBaker, block: Block): BlockReplacementSelector = LayeredBlockReplacementSelector(definitions.map { it.bake(baker, block) })
+    fun <T : Any> bake(baker: BlockReplacement.() -> BlockReplacementSelector<T>): BlockReplacementSelector<T> = LayeredBlockReplacementSelector(definitions.map { it.bake(baker) })
+    fun bakeForRenderer(baker: ModelBaker, block: Block) = bake { bakeForRenderer(baker, block) }
+    fun bakeForSounds(block: Block) = bake { bakeForSounds(block) }
+
 }

@@ -23,7 +23,14 @@ interface BlockReplacement {
     }
 
     fun listStates(): List<VirtualBlockStateDefinition>
-    fun bake(baker: ModelBaker, block: Block): BlockReplacementSelector
+    fun <T : Any> bake(baker: BlockReplacement.() -> BlockReplacementSelector<T>): BlockReplacementSelector<T>
+    fun bakeForRenderer(baker: ModelBaker, block: Block): BlockReplacementSelector<BlockReplacementEntry> = bake(
+        { bakeForRenderer(baker, block) }
+    )
+    fun bakeForSounds(block: Block): BlockReplacementSelector<BlockSoundDefinition> = bake(
+        { bakeForSounds(block) }
+    )
+
     fun select(
         state: BlockState,
         pos: BlockPos,

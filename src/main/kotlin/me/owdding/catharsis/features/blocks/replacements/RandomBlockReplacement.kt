@@ -1,17 +1,16 @@
 package me.owdding.catharsis.features.blocks.replacements
 
 import com.mojang.serialization.MapCodec
-import me.owdding.catharsis.features.blocks.*
+import me.owdding.catharsis.features.blocks.BlockReplacement
+import me.owdding.catharsis.features.blocks.BlockReplacementBakery
+import me.owdding.catharsis.features.blocks.BlockReplacementSelector
+import me.owdding.catharsis.features.blocks.VirtualBlockStateDefinition
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
-import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.core.BlockPos
 import net.minecraft.util.RandomSource
-import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
-import kotlin.compareTo
-import kotlin.times
 
 data class RandomBlockReplacement(
     val min: Float,
@@ -29,16 +28,16 @@ data class RandomBlockReplacement(
         }?.select(state, pos, random)
     }
 
-    data class RandomBlockReplacementSelector(
+    data class RandomBlockReplacementSelector<T: Any>(
         val min: Float, val max: Float, val threshold: Float,
-        val definition: BlockReplacementSelector,
-        val fallback: BlockReplacementSelector?,
-    ) : BlockReplacementSelector {
+        val definition: BlockReplacementSelector<T>,
+        val fallback: BlockReplacementSelector<T>?,
+    ) : BlockReplacementSelector<T> {
         override fun select(
             state: BlockState,
             pos: BlockPos,
             random: RandomSource,
-        ): BlockReplacementEntry? {
+        ): T? {
             return if (min + random.nextFloat() * (max - min) >= threshold) {
                 definition
             } else {
@@ -47,10 +46,9 @@ data class RandomBlockReplacement(
         }
     }
 
-    override fun bake(
-        baker: ModelBaker,
-        block: Block,
-    ): BlockReplacementSelector = RandomBlockReplacementSelector(min, max, threshold, definition.bake(baker, block), fallback?.bake(baker, block))
+    override fun <T: Any> bake(
+        baker: BlockReplacement.() -> BlockReplacementSelector<T>
+    ): BlockReplacementSelector<T> = RandomBlockReplacementSelector(min, max, threshold, definition.bake(baker), fallback?.bake(baker))
 
 
     @GenerateCodec

@@ -9,7 +9,6 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.blocks.replacements.LayeredBlockReplacements
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.extensions.mapBothNotNull
-import me.owdding.catharsis.utils.extensions.mapKeysNotNull
 import me.owdding.catharsis.utils.types.fabric.PreparingModelLoadingPlugin
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin
@@ -47,11 +46,11 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
 
     private val map: MutableMap<Block, BakedSoundDefinition> = mutableMapOf()
 
-    @JvmStatic
-    fun getSound(state: BlockState, pos: BlockPos): BlockSoundDefinition = map[state.block]?.select(state, pos) ?: BlockSoundDefinition.DEFAULT
-
     val blocksCache: Cache<BlockPos, BlockState> = CacheBuilder.newBuilder().maximumSize(1000).expireAfterWrite(5.minutes.toJavaDuration()).build<BlockPos, BlockState>()
     private val blockToListen: MutableSet<Block> = mutableSetOf()
+
+    @JvmStatic
+    fun getSound(state: BlockState, pos: BlockPos): BlockSoundDefinition = map[state.block]?.select(state, pos) ?: BlockSoundDefinition.DEFAULT
 
     @Subscription
     fun onBlockChange(event: BlockChangeEvent) {
@@ -116,13 +115,11 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
         data: Map<Block, LayeredBlockReplacements>,
         context: ModelLoadingPlugin.Context,
     ) {
+        this.map.clear()
+        blockToListen.clear()
         val overrides = data.entries.flatMap { (block, replacement) ->
             replacement.listStates().flatMap { state -> state.overrides.keys.map { it to block } }
-        }.groupBy({ (block, _) -> block }) {
-            it.second
-        }.mapKeysNotNull { (k, _) ->
-            BuiltInRegistries.BLOCK.getOptional(k).getOrNull()
-        }
+        }.groupBy({ (block) -> block }, { (_, block) -> block })
         blockToListen.addAll(overrides.keys)
 
 
@@ -134,8 +131,8 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
             val tot = overrides.getOrElse(block) { emptyList() }.associateWith { data[it] }.filterValuesNotNull()
             if (replacement != null || tot.isNotEmpty()) {
                 this.map[block] = BakedSoundDefinition(
-                    (replacement ?: emptyReplacement).bakeForSounds(block),
-                    tot.mapValues { (_, value) -> value.bakeForSounds(block) }
+                    (replacement ?: emptyReplacement).bakeSounds(block),
+                    tot.mapValues { (_, value) -> value.bakeSounds(block) },
                 )
                 return@register UnbakedBlockStateModelReplacement(block, original, replacement ?: emptyReplacement, tot)
             }

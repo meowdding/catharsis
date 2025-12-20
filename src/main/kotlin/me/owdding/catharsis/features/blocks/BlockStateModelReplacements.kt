@@ -108,8 +108,8 @@ data class UnbakedBlockStateModelReplacement(
         baker: ModelBaker,
     ): BlockStateModel = BlockStateModelReplacement(
         original.bake(state, baker),
-        entries.bake { bakeForRenderer(baker, state.block) },
-        overrides.mapValuesNotNull { it.value.bake { bakeForRenderer(baker, state.block) } }
+        entries.bake { bakeModel(baker, state.block) },
+        overrides.mapValuesNotNull { it.value.bake { bakeModel(baker, state.block) } }
     )
 
     override fun visualEqualityGroup(state: BlockState): Any? = original.visualEqualityGroup(state)
@@ -121,10 +121,9 @@ data class UnbakedBlockStateModelReplacement(
                 root.resolveDependencies(resolver)
             }
         }
-        val location = block.identifier
         overrides.flatMap { it.value.listStates() }.forEach {
-            it.overrides[location]?.model?.instantiate(block.stateDefinition) {
-                location.toString()
+            it.overrides[block]?.model?.instantiate(block.stateDefinition) {
+                block.identifier.toString()
             }?.values?.forEach { root ->
                 root.resolveDependencies(resolver)
             }

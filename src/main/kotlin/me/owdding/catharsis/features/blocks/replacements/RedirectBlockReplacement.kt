@@ -29,26 +29,25 @@ data class RedirectBlockReplacement(
     override fun <T : Any> bake(
         baker: BlockReplacement.() -> BlockReplacementSelector<T>
     ): BlockReplacementSelector<T> {
-        return this.baker()
+        return baker.invoke(this)
     }
 
-    override fun bakeForRenderer(baker: ModelBaker, block: Block): BlockReplacementSelector<BlockReplacementEntry> {
-        return if (isOverride(block)) {
-            val state = virtualState.overrides[block.identifier]!!
-            BlockReplacementSelector.always(Baked(virtualState.blend, state.instantiate(block, baker), state.ignoreOriginalOffset))
+    override fun bakeModel(baker: ModelBaker, block: Block): BlockReplacementSelector<BlockReplacementEntry> {
+        val override = virtualState.overrides[block]
+        return if (override != null) {
+            BlockReplacementSelector.always(Baked(virtualState.blend, override.instantiate(block, baker), override.ignoreOriginalOffset))
         } else {
             BlockReplacementSelector.always(Baked(virtualState.blend, virtualState.instantiate(block, baker), virtualState.ignoreOriginalOffset))
         }
     }
 
-    fun isOverride(block: Block) = block.identifier in virtualState.overrides
-
-    override fun bakeForSounds(block: Block): BlockReplacementSelector<BlockSoundDefinition> {
-        return BlockReplacementSelector.always(if (isOverride(block)) virtualState.overrides[block.identifier]!!.sounds else virtualState.sounds)
+    override fun bakeSounds(block: Block): BlockReplacementSelector<BlockSoundDefinition> {
+        val override = virtualState.overrides[block]
+        return BlockReplacementSelector.always(if (override != null) override.sounds else virtualState.sounds)
     }
 
     override fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition {
-        return virtualState.overrides[state.block.identifier] ?: virtualState
+        return virtualState.overrides[state.block] ?: virtualState
     }
 
     data class Baked(

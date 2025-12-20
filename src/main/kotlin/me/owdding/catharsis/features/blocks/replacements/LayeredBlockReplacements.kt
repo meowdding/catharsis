@@ -42,7 +42,7 @@ data class LayeredBlockReplacements(
     }
 
     fun <T : Any> bake(baker: BlockReplacement.() -> BlockReplacementSelector<T>): BlockReplacementSelector<T> = LayeredBlockReplacementSelector(definitions.map { it.bake(baker) })
-    fun bakeForRenderer(baker: ModelBaker, block: Block) = bake { bakeForRenderer(baker, block) }
-    fun bakeForSounds(block: Block) = bake { bakeForSounds(block) }
+    fun bakeModel(baker: ModelBaker, block: Block) = bake { bakeModel(baker, block) }
+    fun bakeSounds(block: Block) = bake { bakeSounds(block) }
 
 }

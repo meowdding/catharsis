@@ -8,6 +8,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CodecUtils
 import me.owdding.catharsis.utils.Utils
+import me.owdding.catharsis.utils.extensions.identifier
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.color.item.ItemTintSource
 import net.minecraft.client.color.item.ItemTintSources
@@ -16,8 +17,8 @@ import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries
 import net.minecraft.network.chat.Component
 import net.minecraft.network.chat.ComponentSerialization
-import net.minecraft.sounds.SoundEvent
 import net.minecraft.resources.Identifier
+import net.minecraft.sounds.SoundEvent
 import net.minecraft.tags.TagKey
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.world.item.Item
@@ -33,13 +34,17 @@ object IncludedCodecs {
 
     @IncludedCodec
     val regexCodec: Codec<Regex> = Codec.STRING.xmap({ str -> Regex(str) }, { regex -> regex.pattern })
+
     @IncludedCodec
-   (keyable = true) val resourceLocationCodec: Codec<Identifier> = Identifier.CODEC
+        (keyable = true)
+    val resourceLocationCodec: Codec<Identifier> = Identifier.CODEC
+
     @IncludedCodec(named = "catharsis_location", keyable = true)
     val catharsisIdentifier: Codec<Identifier> = Codec.STRING.xmap(
         { Utils.resourceLocationWithDifferentFallbackNamespace(it, Identifier.NAMESPACE_SEPARATOR, Catharsis.MOD_ID) },
         { it.toString() },
     )
+
     @IncludedCodec
     val vec2iCodec: Codec<Vector2i> = RecordCodecBuilder.create {
         it.group(
@@ -47,6 +52,7 @@ object IncludedCodecs {
             Codec.INT.fieldOf("y").forGetter(Vector2ic::y),
         ).apply(it, ::Vector2i)
     }
+
     @IncludedCodec(named = "size")
     val sizeCodec: Codec<Vector2i> = RecordCodecBuilder.create {
         it.group(
@@ -54,14 +60,19 @@ object IncludedCodecs {
             Codec.INT.fieldOf("height").forGetter(Vector2ic::y),
         ).apply(it, ::Vector2i)
     }
+
     @IncludedCodec
     val quaternionCodec: Codec<Quaternionf> = ExtraCodecs.QUATERNIONF.xmap(::Quaternionf, UnaryOperator.identity())
+
     @IncludedCodec
     val componentCodec: Codec<Component> = ComponentSerialization.CODEC
+
     @IncludedCodec
     val uriCodec: Codec<URI> = ExtraCodecs.UNTRUSTED_URI // This is actually "trusted", it requires https and http
+
     @IncludedCodec
     val tintSources: Codec<ItemTintSource> = ItemTintSources.CODEC
+
     @IncludedCodec
     val componentRegex: Codec<ComponentRegex> = Codec.STRING.comapFlatMap(
         { str -> runCatching { DataResult.success(ComponentRegex(str)) }.getOrElse { DataResult.error { it.message } } },
@@ -71,22 +82,26 @@ object IncludedCodecs {
     // Registries
     // TODO this is broken because of the generic
     //@IncludedCodec(keyable = true) val menuCodec = BuiltInRegistries.MENU.byNameCodec()
-    @IncludedCodec val itemCodec: Codec<Item> = BuiltInRegistries.ITEM.byNameCodec()
-    @IncludedCodec val blockModelDefinitionCodec: MapCodec<BlockModelDefinition> = MapCodec.assumeMapUnsafe(BlockModelDefinition.CODEC)
+    @IncludedCodec
+    val itemCodec: Codec<Item> = BuiltInRegistries.ITEM.byNameCodec()
+    @IncludedCodec
+    val blockModelDefinitionCodec: MapCodec<BlockModelDefinition> = MapCodec.assumeMapUnsafe(BlockModelDefinition.CODEC)
 
-    @IncludedCodec(named = "block_tag_or_list") val tagOrBlocksCodec: Codec<Either<TagKey<Block>, Set<Block>>> = Codec.either(
+    @IncludedCodec(named = "block_tag_or_list")
+    val tagOrBlocksCodec: Codec<Either<TagKey<Block>, Set<Block>>> = Codec.either(
         TagKey.hashedCodec(Registries.BLOCK),
-        CodecUtils.compactSet(BuiltInRegistries.BLOCK.byNameCodec())
+        CodecUtils.compactSet(BuiltInRegistries.BLOCK.byNameCodec()),
     )
-    @IncludedCodec(named = "blockstate_properties") val blockStatePropertiesCodec: Codec<Map<String, String>> = Codec.unboundedMap(
+    @IncludedCodec(named = "blockstate_properties")
+    val blockStatePropertiesCodec: Codec<Map<String, String>> = Codec.unboundedMap(
         Codec.STRING,
         Codec.withAlternative(
             Codec.STRING,
             Codec.withAlternative(
                 Codec.BOOL.xmap(Boolean::toString) { it.equals("true", ignoreCase = true) },
-                Codec.INT.xmap(Int::toString, String::toInt)
-            )
-        )
+                Codec.INT.xmap(Int::toString, String::toInt),
+            ),
+        ),
     )
 
     @IncludedCodec
@@ -98,5 +113,15 @@ object IncludedCodecs {
             ).apply(it) { name, range -> SoundEvent(name, range) }
         },
         Identifier.CODEC.xmap(SoundEvent::createVariableRangeEvent, SoundEvent::location),
+    )
+
+    @IncludedCodec(keyable = true)
+    val block: Codec<Block> = Identifier.CODEC.flatXmap(
+        {
+            BuiltInRegistries.BLOCK.getOptional(it).map(DataResult<Block>::success).orElseGet {
+                DataResult.error { "Failed to get block by id $it" }
+            }
+        },
+        { DataResult.success(it.identifier) },
     )
 }

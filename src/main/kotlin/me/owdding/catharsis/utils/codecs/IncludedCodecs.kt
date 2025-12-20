@@ -116,12 +116,5 @@ object IncludedCodecs {
     )
 
     @IncludedCodec(keyable = true)
-    val block: Codec<Block> = Identifier.CODEC.flatXmap(
-        {
-            BuiltInRegistries.BLOCK.getOptional(it).map(DataResult<Block>::success).orElseGet {
-                DataResult.error { "Failed to get block by id $it" }
-            }
-        },
-        { DataResult.success(it.identifier) },
-    )
+    val block: Codec<Block> = BuiltInRegistries.BLOCK.byNameCodec()
 }

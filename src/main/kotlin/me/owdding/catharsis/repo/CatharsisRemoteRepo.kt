@@ -7,6 +7,7 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 import me.owdding.catharsis.Catharsis
+import tech.thatgravyboat.skyblockapi.helpers.McClient
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
@@ -20,15 +21,14 @@ private const val REMOTE_URL = "repo.owdding.me"
 object CatharsisRemoteRepo {
 
     private val gson: Gson = GsonBuilder().create()
-    private lateinit var cacheDirectory: Path
+    val cacheDirectory: Path= McClient.config.resolveSibling("catharsis-repo-cache")
     private var version: String? = null
     private var isInitialized = false
     var forceBackupRepo: Boolean = false
     const val REPO_BRANCH_PROPERTY = "repo_branch"
 
-    fun initialize(cacheDirectory: Path, version: String, callback: () -> Unit) {
+    fun initialize(version: String, callback: () -> Unit) {
         if (isInitialized) return
-        CatharsisRemoteRepo.cacheDirectory = cacheDirectory
         CatharsisRemoteRepo.version = version.takeUnless { it == "stable" }
         val httpClient = HttpClient.newBuilder().followRedirects(HttpClient.Redirect.ALWAYS).build()
 
@@ -60,6 +60,18 @@ object CatharsisRemoteRepo {
         null
     }
     fun getFileContentAsJson(file: String) = getFileContent("${file.removeSuffix(".json")}.json")?.let { gson.fromJson(it, JsonElement::class.java) }
+
+    fun listFilesInDirectory(directory: String): List<Pair<String, Path>> {
+        val list = mutableListOf<Pair<String, Path>>()
+
+        val directory = cacheDirectory.resolve(directory)
+        directory.walk().forEach {
+            val relative = directory.relativize(it)
+            list.add(relative.toString() to it)
+        }
+
+        return list
+    }
 
     private fun HttpClient.downloadOrUpdate(remoteHash: String) {
         cacheDirectory.createDirectories()

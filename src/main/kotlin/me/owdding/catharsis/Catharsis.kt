@@ -68,7 +68,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
         }
         CompletableFuture.runAsync {
             StartRepoLoadEvent.post(SkyBlockAPI.eventBus)
-            CatharsisRemoteRepo.initialize(McClient.config.resolveSibling("catharsis-repo-cache"), branch) {
+            CatharsisRemoteRepo.initialize(branch) {
                 McClient.runOrNextTick {
                     FinishRepoLoadEvent.post(SkyBlockAPI.eventBus)
                     info("Finished loading repo!")
@@ -99,7 +99,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
         }
     }
 
-    fun id(@Pattern("[a-z_0-9\\/.-]+") path: String): Identifier = Identifiers.of("catharsis", path)
+    fun id(@Pattern("[a-z_0-9\\/.-]+") path: String): Identifier = Identifiers.of(MOD_ID, path)
     fun mc(@Pattern("[a-z_0-9\\/.-]+") path: String): Identifier = Identifiers.of(path)
     fun sbapi(@Pattern("[a-z_0-9\\/.-]+") path: String): Identifier = Identifiers.of(SkyBlockAPI.MOD_ID, path)
 

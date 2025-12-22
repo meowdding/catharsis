@@ -3,7 +3,10 @@ package me.owdding.catharsis.features.area
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import me.owdding.catharsis.Catharsis
+import me.owdding.catharsis.events.FinishRepoLoadEvent
+import me.owdding.catharsis.events.StartRepoLoadEvent
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.repo.CatharsisRemoteRepo
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.types.suggestion.IdentifierSuggestionProvider
 import me.owdding.ktmodules.Module
@@ -25,6 +28,8 @@ import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
 import tech.thatgravyboat.skyblockapi.utils.text.TextColor
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
+import java.io.Reader
+import kotlin.io.path.reader
 
 @Module
 object Areas : SimplePreparableReloadListener<List<Pair<Identifier, AreaDefinition>>>() {
@@ -36,6 +41,7 @@ object Areas : SimplePreparableReloadListener<List<Pair<Identifier, AreaDefiniti
     private val codec = CatharsisCodecs.getCodec<AreaDefinition>()
 
     private val areas: MutableMap<Identifier, AreaDefinition> = mutableMapOf()
+    private val repoAreas: MutableMap<Identifier, AreaDefinition> = mutableMapOf()
 
     @Subscription
     private fun RegisterCommandsEvent.register() {
@@ -85,12 +91,33 @@ object Areas : SimplePreparableReloadListener<List<Pair<Identifier, AreaDefiniti
     ): List<Pair<Identifier, AreaDefinition>> {
         return converter.listMatchingResources(manager).mapNotNull { (id, resource) ->
             val id = converter.fileToId(id)
+            if (id.namespace == Catharsis.MOD_ID) {
+                Catharsis.warn("Skipping area definition in private namespace! ($id)")
+                return@mapNotNull null
+            }
+
             logger.runCatching("Error loading area definition $id") {
                 resource.openAsReader().use { reader ->
-                    id to gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(codec)
+                    id to reader.parse()
                 }
             }
         }
+    }
+
+    private fun Reader.parse() = gson.fromJson(this, JsonElement::class.java).toDataOrThrow(codec)
+
+    @Subscription
+    private fun StartRepoLoadEvent.start() {
+        repoAreas.keys.forEach(areas::remove)
+        repoAreas.clear()
+    }
+
+    @Subscription
+    private fun FinishRepoLoadEvent.start() {
+        CatharsisRemoteRepo.listFilesInDirectory("areas").forEach { (name, path) ->
+            repoAreas[Catharsis.id(name.removeSuffix(".json"))] = path.reader().parse()
+        }
+        areas.putAll(repoAreas)
     }
 
     @Subscription
@@ -107,6 +134,7 @@ object Areas : SimplePreparableReloadListener<List<Pair<Identifier, AreaDefiniti
         profiler: ProfilerFiller,
     ) {
         areas.clear()
+        areas.putAll(repoAreas)
         areas.putAll(elements.toMap())
     }
 

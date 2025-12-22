@@ -6,6 +6,7 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
+import me.owdding.catharsis.Catharsis
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
@@ -54,14 +55,17 @@ object CatharsisRemoteRepo {
     }
 
     fun isInitialized() = isInitialized
-    fun getFileContent(file: String) = cacheDirectory.resolve(file).takeIf { it.exists() }?.readText(Charsets.UTF_8)
+    fun getFileContent(file: String) = cacheDirectory.resolve(file).takeIf { it.exists() }?.readText(Charsets.UTF_8) ?: run {
+        Catharsis.warn("Requested unknown file $file from remote repo!")
+        null
+    }
     fun getFileContentAsJson(file: String) = getFileContent("${file.removeSuffix(".json")}.json")?.let { gson.fromJson(it, JsonElement::class.java) }
 
     private fun HttpClient.downloadOrUpdate(remoteHash: String) {
         cacheDirectory.createDirectories()
         val currentIndex = getFileContentAsJson("index.json")?.asJsonObject ?: JsonObject()
         val remoteIndex = getJsonObject("index.json") ?: run {
-            println("Failed to load repo data, falling back to backup repo!")
+            Catharsis.warn("Failed to load repo data, falling back to backup repo!")
             loadBackupRepo()
             return
         }
@@ -80,7 +84,7 @@ object CatharsisRemoteRepo {
             }
             cacheDirectory.resolve(key)
             cache[key] = get(key) ?: run {
-                println("Failed to load repo data, falling back to backup repo!")
+                Catharsis.warn("Failed to load repo data, falling back to backup repo!")
                 loadBackupRepo()
                 return
             }
@@ -92,7 +96,7 @@ object CatharsisRemoteRepo {
         cache.forEach { (key, value) ->
             val key = cacheDirectory.resolve(key).normalize()
             if (!key.startsWith(cacheDirectory)) {
-                println("Bad key found! Skipping $key!")
+                Catharsis.warn("Bad key found! Skipping $key!")
                 return@forEach
             }
             key.createParentDirectories()

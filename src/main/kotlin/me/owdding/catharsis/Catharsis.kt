@@ -27,6 +27,7 @@ import net.minecraft.client.renderer.item.properties.select.SelectItemModelPrope
 import net.minecraft.resources.Identifier
 import org.intellij.lang.annotations.Pattern
 import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI
+import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
 import tech.thatgravyboat.skyblockapi.helpers.McClient
@@ -60,7 +61,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
     }
 
     fun loadRepo(notify: Boolean = CatharsisDevUtils.getBoolean("repo_notify")) {
-        val branch = CatharsisDevUtils.properties[REPO_BRANCH_PROPERTY] ?: buildInfo.branch
+        val branch = CatharsisDevUtils.properties[REPO_BRANCH_PROPERTY] ?: buildInfo.branch.replace("/", "-")
         if (notify) {
             info("Loading repo on branch $branch")
             Text.of("Loading repo on branch $branch").sendWithPrefixIf { McLevel.hasLevel }
@@ -77,6 +78,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
         }
     }
 
+    @Subscription
     fun registerCommand(context: RegisterCommandsEvent) {
         context.register("catharsis repo") {
             thenCallback("reload") {

@@ -9,6 +9,8 @@ devauth = "1.2.1"
 hypixelapi = "1.0.1+build.1+mc1.21"
 
 gson = "2.12.1"
+guava = "33.5.0-jre"
+
 meowdding-resources = "1.0.15"
 
 ksp = "2.2.10-2.0.2"
@@ -26,6 +28,8 @@ repo-lib = { module = "tech.thatgravyboat.repo-lib:repo-lib", version.ref = "rep
 devauth = { module = "me.djtheredstoner:DevAuth-fabric", version.ref = "devauth" }
 
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+
 meowdding-resources = { module = "me.owdding.repo:compacting-resources", version.ref = "meowdding-resources" }
 meowdding-ktmodules = { module = "me.owdding.ktmodules:KtModules", version.ref = "meowdding-ktmodules" }
 meowdding-ktcodecs = { module = "me.owdding.ktcodecs:KtCodecs", version.ref = "meowdding-ktcodecs" }

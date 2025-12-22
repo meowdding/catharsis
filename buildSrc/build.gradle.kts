@@ -14,4 +14,5 @@ dependencies {
     implementation("net.peanuuutz.tomlkt:tomlkt:0.5.0")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1")
+    implementation(libs.guava)
 }

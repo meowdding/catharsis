@@ -36,3 +36,6 @@ dependencyResolutionManagement {
         }
     }
 }
+
+include("repo")
+project(":repo").buildFileName = "../repo.gradle.kts"

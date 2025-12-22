@@ -1,9 +1,11 @@
 @file:Suppress("UnstableApiUsage")
 
 import net.fabricmc.loom.task.ValidateAccessWidenerTask
+import org.gradle.kotlin.dsl.processResources
 import org.gradle.kotlin.dsl.withType
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.io.ByteArrayOutputStream
 
 
 plugins {
@@ -110,7 +112,23 @@ tasks.withType<KotlinCompile>().configureEach {
     compilerOptions.freeCompilerArgs.add("-Xwhen-guards")
 }
 
+val gitRef = tasks.register<Exec>("gitRef") {
+    outputs.upToDateWhen { false }
+    standardOutput = ByteArrayOutputStream()
+    commandLine("git", "rev-parse", "HEAD")
+}
+
+val gitBranch = tasks.register<Exec>("getBranch") {
+    outputs.upToDateWhen { false }
+    standardOutput = ByteArrayOutputStream()
+    commandLine("git", "rev-parse", "--abbrev-ref", "HEAD")
+}
+
 tasks.processResources {
+    val buildRepo = tasks.getByPath(":repo:buildRepo")
+    dependsOn(gitRef, gitBranch, buildRepo)
+    mustRunAfter(gitRef, gitBranch, buildRepo)
+
     val replacements = mapOf(
         "version" to version,
         "minecraft_start" to versionedCatalog.versions.getOrFallback("minecraft.start", "minecraft"),
@@ -118,11 +136,26 @@ tasks.processResources {
         "fabric_lang_kotlin" to libs.versions.fabric.language.kotlin.get(),
         "sbapi" to libs.versions.skyblockapi.get(),
     )
+
+    outputs.upToDateWhen { false }
     inputs.properties(replacements)
 
     filesMatching("fabric.mod.json") {
         expand(replacements)
     }
+
+    filesMatching("catharsis.json") {
+        expand(
+            "branch" to gitBranch.map { it.standardOutput.toString().substringBefore("\n") }.get(),
+            "ref" to gitRef.map { it.standardOutput.toString().substringBefore("\n") }.get(),
+            "build_time" to provider { System.currentTimeMillis() }.get(),
+        )
+    }
+
+    with(copySpec {
+        from(buildRepo.outputs)
+        into("repo")
+    })
 }
 
 idea {

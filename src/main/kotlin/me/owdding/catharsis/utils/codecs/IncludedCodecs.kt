@@ -8,7 +8,6 @@ import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CodecUtils
 import me.owdding.catharsis.utils.Utils
-import me.owdding.catharsis.utils.extensions.identifier
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.color.item.ItemTintSource
 import net.minecraft.client.color.item.ItemTintSources
@@ -29,6 +28,7 @@ import org.joml.Vector2ic
 import tech.thatgravyboat.skyblockapi.utils.regex.component.ComponentRegex
 import java.net.URI
 import java.util.function.UnaryOperator
+import kotlin.time.Instant
 
 object IncludedCodecs {
 
@@ -117,4 +117,7 @@ object IncludedCodecs {
 
     @IncludedCodec(keyable = true)
     val block: Codec<Block> = BuiltInRegistries.BLOCK.byNameCodec()
+
+    @IncludedCodec
+    val instant: Codec<Instant> = Codec.LONG.xmap(Instant::fromEpochMilliseconds, Instant::toEpochMilliseconds)
 }

@@ -17,6 +17,12 @@ val PREFIX = Text.of {
 }
 
 fun Component.sendWithPrefix() = Text.join(PREFIX, " ", this).send()
+fun Component.sendWithPrefixIf(condition: () -> Boolean): Unit {
+    if (condition()) {
+        Text.join(PREFIX, " ", this).send()
+    }
+}
+
 fun Component.sendWithPrefix(id: String) = Text.join(PREFIX, " ", this).send(id)
 
 fun MutableComponent.gradient(vararg colors: Int): Component = GradientNode.apply(this, GradientNode.GradientProvider.colors(colors.map { MCTextColor.fromRgb(it) }))

@@ -33,7 +33,7 @@ object OctreeDebugRenderer {
     fun visit(event: RenderWorldEvent, node: Node, nodesRendered: MutableInt, depth: Int, playerNode: Leaf?, playerPosition: BlockPos, renderDistance: Int = 25) {
         val aabb: AABB = node.getBox().toMinecraftAABB()
         if (
-            min(
+            (min(
                 abs(aabb.maxX - playerPosition.x),
                 abs(aabb.minX - playerPosition.x),
             ) > renderDistance || min(
@@ -42,7 +42,7 @@ object OctreeDebugRenderer {
             ) > renderDistance || min(
                 abs(aabb.maxZ - playerPosition.z),
                 abs(aabb.minZ - playerPosition.z),
-            ) > renderDistance || aabb.contains(McPlayer)
+            ) > renderDistance) && !aabb.contains(McPlayer)
         ) return
         val color = (aabb.xsize / 16.0).roundToInt()
         val colorValue = color + 5L

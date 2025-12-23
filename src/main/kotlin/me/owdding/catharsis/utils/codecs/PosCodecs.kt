@@ -75,6 +75,14 @@ object PosCodecs {
         third: VecType.() -> NumberType,
     ): Codec<VecType> {
         return Codec.either(
+            Codec.STRING.xmap(
+                {
+                    it.split(":").let { elements ->
+                        constructor(elements[0].toNumber(), elements[1].toNumber(), elements[2].toNumber())
+                    }
+                },
+                { "${it.first()}:${it.second()}:${it.third()}" },
+            ),
             Codec.either(
                 numberCodec.listOf().comapFlatMap({ list -> Util.fixedSize(list, 3).map { constructor(it[0], it[1], it[2]) } }, { listOf(it.first(), it.second(), it.third()) }),
                 RecordCodecBuilder.create<VecType> {
@@ -85,14 +93,6 @@ object PosCodecs {
                     ).apply(it, constructor)
                 },
             ).xmap(Either<VecType, VecType>::unwrap) { Either.left(it) },
-            Codec.STRING.xmap(
-                {
-                    it.split(":").let { elements ->
-                        constructor(elements[0].toNumber(), elements[1].toNumber(), elements[2].toNumber())
-                    }
-                },
-                { "${it.first()}:${it.second()}:${it.third()}" },
-            ),
         ).xmap(Either<Vector3f, Vector3f>::unwrap) { Either.left(it) }
     }
 

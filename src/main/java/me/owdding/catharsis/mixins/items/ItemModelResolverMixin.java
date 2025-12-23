@@ -7,6 +7,7 @@ import me.owdding.catharsis.hooks.items.AbstractContainerScreenHook;
 import me.owdding.catharsis.hooks.items.ItemStackRenderStateHook;
 import me.owdding.catharsis.hooks.items.ModelManagerHook;
 import me.owdding.catharsis.utils.ItemUtils;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.item.ItemModelResolver;
 import net.minecraft.client.renderer.item.ItemStackRenderState;
 import net.minecraft.client.resources.model.ModelManager;
@@ -16,6 +17,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import tech.thatgravyboat.skyblockapi.helpers.McPlayer;
 
 @Mixin(ItemModelResolver.class)
 public class ItemModelResolverMixin {
@@ -29,11 +31,17 @@ public class ItemModelResolverMixin {
     }
 
     @ModifyExpressionValue(method = "appendItemLayers", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;get(Lnet/minecraft/core/component/DataComponentType;)Ljava/lang/Object;"))
-    private Object catharsis$modifyDataComponentType(Object original, @Local(argsOnly = true) ItemStack stack, @Local(argsOnly = true) ItemStackRenderState state) {
+    private Object catharsis$modifyDataComponentType(
+        Object original,
+        @Local(argsOnly = true) ItemStack stack,
+        @Local(argsOnly = true) ItemStackRenderState state
+    ) {
         if (manager == null) return original;
         if (state instanceof ItemStackRenderStateHook hook && !hook.catharsis$canFallthrough()) return original;
 
-        var guiId = GuiDefinitions.getSlot(AbstractContainerScreenHook.SLOT.get());
+        var isCarried = McPlayer.INSTANCE.getSelf() instanceof LocalPlayer player && player.containerMenu.getCarried() == stack;
+        var slot = AbstractContainerScreenHook.SLOT.get();
+        var guiId = isCarried || slot != null ? GuiDefinitions.getSlot(isCarried ? -1 : slot.index, stack) : null;
         var itemId = ItemUtils.INSTANCE.getCustomLocation(stack);
         var model = guiId != null ? guiId : itemId;
 

@@ -7,13 +7,13 @@ import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
-import net.minecraft.world.inventory.Slot
+import net.minecraft.world.item.ItemStack
 
 interface SlotCondition {
 
     val codec: MapCodec<out SlotCondition>
 
-    fun matches(slot: Slot): Boolean
+    fun matches(slot: Int, stack: ItemStack): Boolean
 }
 
 object SlotConditions {

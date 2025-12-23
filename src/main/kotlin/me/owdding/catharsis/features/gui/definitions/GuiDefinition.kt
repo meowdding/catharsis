@@ -12,7 +12,7 @@ import me.owdding.ktmodules.Module
 import net.fabricmc.loader.api.FabricLoader
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
 import net.minecraft.resources.Identifier
-import net.minecraft.world.inventory.Slot
+import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerCloseEvent
 import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerInitializedEvent
@@ -72,7 +72,7 @@ object GuiDefinitions {
 
         for (definition in layout) {
             for (slot in menuSlots) {
-                if (definition.matches(slot)) {
+                if (definition.matches(slot.index, slot.item)) {
                     slots[slot.index] = definition
                 }
             }
@@ -85,5 +85,9 @@ object GuiDefinitions {
     @Subscription fun onClose(event: ContainerCloseEvent) = update(null)
 
     @JvmStatic fun getGui(): Identifier? = currentGui?.id
-    @JvmStatic fun getSlot(slot: Slot?): Identifier? = slot?.let { slots[slot.index]?.id }
+    @JvmStatic fun getSlot(slot: Int, stack: ItemStack): Identifier? = if (slot == -1) {
+        currentGui?.layout?.find { it.matches(-1, stack) }?.id
+    } else {
+        slots[slot]?.id
+    }
 }

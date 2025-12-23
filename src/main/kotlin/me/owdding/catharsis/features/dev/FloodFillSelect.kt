@@ -125,7 +125,10 @@ object FloodFillSelect {
         JSON('j', group = EXPORT_FORMAT_GROUP),
         RAW('r', group = EXPORT_FORMAT_GROUP),
         OUTLINE('o', group = null),
-        AUTO_DISPATCH('a', group = null);
+        AUTO_DISPATCH('a', group = null),
+        MAX_Y('t', argumentType = IntegerArgumentType.integer(), group = null),
+        MIN_Y('b', argumentType = IntegerArgumentType.integer(), group = null),
+        ;
 
         override val longName = (longName ?: name).lowercase()
 
@@ -225,19 +228,21 @@ object FloodFillSelect {
             Text.of("Dispatched select range higher then 100 blocks, expect potential performance problems!").sendWithPrefix()
         }
 
+        val top = map[FloodFillFlags.MAX_Y] as? Int? ?: 256
+        val bottom = map[FloodFillFlags.MIN_Y] as? Int? ?: 0
 
         this.job = CurrentJob(
             CoroutineScope(Dispatchers.Default).launch {
                 if (!map.containsKey(FloodFillFlags.AUTO_DISPATCH)) {
-                    dispatchSingle(blocks, startBlock, range, includeDiagonals, mustBeCovered, mustBeExposed, map)
+                    dispatchSingle(blocks, startBlock, range, includeDiagonals, mustBeCovered, mustBeExposed, top, bottom, map)
                 } else {
-                    dispatchMultiple(blocks, startBlock, range, includeDiagonals, mustBeCovered, mustBeExposed, map)
+                    dispatchMultiple(blocks, startBlock, range, includeDiagonals, mustBeCovered, mustBeExposed, top, bottom, map)
                 }
             },
             if (!map.containsKey(FloodFillFlags.AUTO_DISPATCH)) {
                 -1
             } else {
-                (range.toLong() * 2 + 1) * (range.toLong() * 2 + 1) * 320
+                (range.toLong() * 2 + 1) * (range.toLong() * 2 + 1) * (top - bottom)
             },
         )
     }
@@ -249,17 +254,19 @@ object FloodFillSelect {
         includeDiagonals: Boolean,
         mustBeCovered: Boolean,
         mustBeExposed: Boolean,
+        top: Int,
+        bottom: Int,
         map: Map<FloodFillFlags, Any>,
     ) {
         val vec = Vec3i(range, range, range)
-        val start = startBlock.offset(vec).atY(256)
-        val end = startBlock.offset(vec.multiply(-1)).atY(-64)
+        val start = startBlock.offset(vec).atY(top)
+        val end = startBlock.offset(vec.multiply(-1)).atY(bottom)
         val checkedBlocks = mutableSetOf<BlockPos>()
         val startedAt = currentInstant()
         val rawRegions = BlockPos.betweenClosed(start, end).mapNotNull {
             if (checkedBlocks.contains(it)) return@mapNotNull null
             this.job?.lastBlock?.set(it)
-            dispatchSingle(block, it, range, includeDiagonals, mustBeCovered, mustBeExposed, checkedBlocks).takeUnless(List<*>::isEmpty)
+            dispatchSingle(block, it, range, includeDiagonals, mustBeCovered, mustBeExposed, top, bottom, checkedBlocks).takeUnless(List<*>::isEmpty)
         }
         val time = startedAt.since().toReadableTime(maxUnits = 10, allowMs = true)
         McClient.runNextTick {
@@ -347,9 +354,13 @@ object FloodFillSelect {
         includeDiagonals: Boolean,
         mustBeCovered: Boolean,
         mustBeExposed: Boolean,
+        maxY: Int,
+        minY: Int,
         checkedBlocks: MutableSet<BlockPos> = mutableSetOf(),
     ): List<BlockPos> {
         return floodFill(startBlock, range, includeDiagonals, checkedBlocks) { pos, block ->
+            if (pos.y > maxY || pos.y < minY) return@floodFill false
+
             if (block.block !in blocks) return@floodFill false
 
             if (mustBeCovered && directions.any { McLevel[pos.offset(it)].isAir }) return@floodFill false
@@ -367,10 +378,12 @@ object FloodFillSelect {
         includeDiagonals: Boolean,
         mustBeCovered: Boolean,
         mustBeExposed: Boolean,
+        top: Int,
+        bottom: Int,
         map: Map<FloodFillFlags, Any>,
     ) {
         val startedAt = currentInstant()
-        val blocks = dispatchSingle(blocks, startBlock, range, includeDiagonals, mustBeCovered, mustBeExposed)
+        val blocks = dispatchSingle(blocks, startBlock, range, includeDiagonals, mustBeCovered, mustBeExposed, top, bottom)
         val time = startedAt.since().toReadableTime(maxUnits = 10, allowMs = true)
         McClient.runNextTick {
             job = null

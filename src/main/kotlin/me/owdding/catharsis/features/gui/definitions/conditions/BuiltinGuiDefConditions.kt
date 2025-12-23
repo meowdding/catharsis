@@ -23,7 +23,7 @@ data class GuiDefSlotCondition(val index: Int, val conditions: List<SlotConditio
     override val codec = CatharsisCodecs.getMapCodec<GuiDefSlotCondition>()
     override fun matches(screen: AbstractContainerScreen<*>): Boolean {
         val slot = screen.menu.getSlot(this.index) ?: return false
-        return this.conditions.all { it.matches(slot) }
+        return this.conditions.all { it.matches(slot.index, slot.item) }
     }
 }
 

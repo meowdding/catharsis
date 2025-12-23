@@ -25,7 +25,7 @@ interface AreaDefinition {
 
 @GenerateCodec
 data class SimpleAreaDefinition(
-    @Compact val islands: List<SkyBlockIsland>?,
+    @Compact @FieldNames("island", "islands") val islands: List<SkyBlockIsland>?,
     val box: BoundingBox,
 ) : AreaDefinition {
     override fun codec(): MapCodec<SimpleAreaDefinition> = CatharsisCodecs.getMapCodec()
@@ -35,7 +35,7 @@ data class SimpleAreaDefinition(
 
 @GenerateCodec
 data class OnIslandDefinition(
-    @Compact val islands: List<SkyBlockIsland>,
+    @Compact @FieldNames("island", "islands") val islands: List<SkyBlockIsland>,
 ) : AreaDefinition {
     override fun codec(): MapCodec<OnIslandDefinition> = CatharsisCodecs.getMapCodec()
     override fun contains(blockPos: BlockPos) = true.checkIslands(islands) == true
@@ -50,7 +50,7 @@ object AlwaysTrueDefinition : AreaDefinition {
 
 @GenerateCodec
 data class MultipleAreaDefinition(
-    @Compact val islands: List<SkyBlockIsland>?,
+    @Compact @FieldNames("island", "islands") val islands: List<SkyBlockIsland>?,
     @Compact val boxes: List<BoundingBox>,
     @IntRange(4) val minSize: Int = 8,
 ) : AreaDefinition {
@@ -81,7 +81,7 @@ data class PerIslandAreaDefinition(
 
 @GenerateCodec
 data class IslandEntry(
-    @Compact val islands: List<SkyBlockIsland>,
+    @Compact @FieldNames("island", "islands") val islands: List<SkyBlockIsland>,
     @Inline val definition: AreaDefinition,
 )
 

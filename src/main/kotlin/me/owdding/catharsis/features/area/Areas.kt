@@ -92,7 +92,7 @@ object Areas : SimplePreparableReloadListener<List<Pair<Identifier, AreaDefiniti
         return converter.listMatchingResources(manager).mapNotNull { (id, resource) ->
             val id = converter.fileToId(id)
             if (id.namespace == Catharsis.MOD_ID) {
-                Catharsis.warn("Skipping area definition in private namespace! ($id)")
+                Catharsis.warn("Skipping area definition in restricted namespace! ($id)")
                 return@mapNotNull null
             }
 

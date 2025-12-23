@@ -8,6 +8,7 @@ import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 import me.owdding.catharsis.Catharsis
 import tech.thatgravyboat.skyblockapi.helpers.McClient
+import tech.thatgravyboat.skyblockapi.platform.Identifiers
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
@@ -67,7 +68,7 @@ object CatharsisRemoteRepo {
         val directory = cacheDirectory.resolve(directory)
         directory.walk().forEach {
             val relative = directory.relativize(it)
-            list.add(relative.toString() to it)
+            list.add(relative.toString().lowercase().replace("\\", "/").filter(Identifiers::isAllowedInIdentifier) to it)
         }
 
         return list

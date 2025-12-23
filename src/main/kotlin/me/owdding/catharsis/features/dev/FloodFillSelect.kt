@@ -12,6 +12,7 @@ import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import me.owdding.catharsis.utils.codecs.PosCodecs
 import me.owdding.catharsis.utils.extensions.PREFIX
+import me.owdding.catharsis.utils.extensions.identifier
 import me.owdding.catharsis.utils.extensions.renderLineBox
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.extensions.toBlockPos
@@ -149,7 +150,9 @@ object FloodFillSelect {
                     append(", new total is ${validBlocks.size}")
                 }.sendWithPrefix()
             }
-            thenCallback("remove block", ResourceKeyArgument.key(Registries.BLOCK), IterableSuggestionProvider(validBlocks)) {
+            thenCallback("remove block", ResourceKeyArgument.key(Registries.BLOCK), IterableSuggestionProvider(validBlocks) {
+                it.identifier.toString()
+            }) {
                 val resourceKey = argument<ResourceKey<Block>>("block")
                 validBlocks.remove(BuiltInRegistries.BLOCK.getValueOrThrow(resourceKey))
                 Text.of {

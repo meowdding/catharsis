@@ -70,7 +70,11 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
             StartRepoLoadEvent.post(SkyBlockAPI.eventBus)
             CatharsisRemoteRepo.initialize(branch) {
                 McClient.runOrNextTick {
-                    FinishRepoLoadEvent.post(SkyBlockAPI.eventBus)
+                    try {
+                        FinishRepoLoadEvent.post(SkyBlockAPI.eventBus)
+                    } catch (throwable: Throwable) {
+                        error("Failed to finish repo loading!", throwable)
+                    }
                     info("Finished loading repo!")
                     Text.of("Finished loading repo!").sendWithPrefixIf { McLevel.hasLevel }
                 }

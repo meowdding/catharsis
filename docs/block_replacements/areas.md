@@ -118,3 +118,7 @@ Changes the definition based on the island, `always` and `on_island` have the ex
 
 </TreeView>
 
+
+## Included Areas
+
+<RepoAreas />

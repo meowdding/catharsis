@@ -1,8 +1,16 @@
+import fs from 'node:fs'
+
 export default {
     watch: ["../../repo/areas/**/*.json"],
     load(watchedFiles) {
         return watchedFiles.map((file) => {
-            return "catharsis:" + file.slice(file.indexOf("repo/areas") + 11, -5)
+            const description = JSON.parse(fs.readFileSync(file, "utf-8"))["_comment"]
+            console.log(description)
+
+            return {
+                name: "catharsis:" +file.slice(file.indexOf("repo/areas") + 11, -5),
+                description: description
+            }
         })
     }
 }

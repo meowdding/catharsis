@@ -4,7 +4,8 @@ import { data } from "../data/repo-areas.data.ts";
 <template>
     <ul>
         <li v-for="a in data">
-            <code>{{ a }}</code>
+            <code>{{ a.name }}</code>
+            <span v-if="a.description !== undefined"> - {{ a.description}}</span>
         </li>
     </ul>
 </template>

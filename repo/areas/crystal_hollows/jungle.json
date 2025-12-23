@@ -1,0 +1,10 @@
+{
+  "type": "multiple",
+  "boxes": [
+    {
+      "min": "201:64:201",
+      "max": "511:189:513"
+    }
+  ],
+  "islands": "crystal_hollows"
+}

@@ -5,7 +5,6 @@ export default {
     load(watchedFiles) {
         return watchedFiles.map((file) => {
             const description = JSON.parse(fs.readFileSync(file, "utf-8"))["_comment"]
-            console.log(description)
 
             return {
                 name: "catharsis:" +file.slice(file.indexOf("repo/areas") + 11, -5),

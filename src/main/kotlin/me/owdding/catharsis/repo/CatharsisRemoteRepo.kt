@@ -7,6 +7,8 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 import me.owdding.catharsis.Catharsis
+import me.owdding.catharsis.utils.CatharsisLogger
+import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.platform.Identifiers
 import java.net.URI
@@ -17,9 +19,9 @@ import java.nio.file.Path
 import java.nio.file.StandardOpenOption
 import kotlin.io.path.*
 
-private const val REMOTE_URL = "repo.owdding.me"
+private const val REMOTE_URL = "catharsis-repo.pages.dev"
 
-object CatharsisRemoteRepo {
+object CatharsisRemoteRepo : CatharsisLogger by Catharsis.featureLogger() {
 
     private val gson: Gson = GsonBuilder().create()
     val cacheDirectory: Path= McClient.config.resolveSibling("catharsis-repo-cache")
@@ -39,7 +41,14 @@ object CatharsisRemoteRepo {
         if (remoteRepoHash == null || forceBackupRepo) {
             loadBackupRepo()
         } else if (currentRepoHash != remoteRepoHash) {
-            httpClient.downloadOrUpdate(remoteRepoHash)
+            val oldFiles = listFilesInDirectory().toMap().toMutableMap()
+            httpClient.downloadOrUpdate(remoteRepoHash, oldFiles)
+            if (oldFiles.isNotEmpty()) {
+                warn("Deleting ${oldFiles.size} outdated files!")
+                oldFiles.forEach { (_, value) ->
+                    debug("Deleting ${value.absolutePathString()}")
+                }
+            }
         }
 
         isInitialized = true
@@ -74,7 +83,19 @@ object CatharsisRemoteRepo {
         return list
     }
 
-    private fun HttpClient.downloadOrUpdate(remoteHash: String) {
+    fun listFilesInDirectory(): List<Pair<String, Path>> {
+        val list = mutableListOf<Pair<String, Path>>()
+
+        val directory = cacheDirectory
+        directory.walk().forEach {
+            val relative = directory.relativize(it)
+            list.add(relative.toString().lowercase().replace("\\", "/") to it)
+        }
+
+        return list
+    }
+
+    private fun HttpClient.downloadOrUpdate(remoteHash: String, oldFiles: MutableMap<String, Path>) {
         cacheDirectory.createDirectories()
         val currentIndex = getFileContentAsJson("index.json")?.asJsonObject ?: JsonObject()
         val remoteIndex = getJsonObject("index.json") ?: run {
@@ -84,10 +105,13 @@ object CatharsisRemoteRepo {
         }
 
         val cache = mutableMapOf<String, String>()
+        oldFiles.remove("index.json")
+        oldFiles.remove("index.json.sha")
         remoteIndex.entrySet().forEach { (key, hash) ->
 
             val expectedHash = hash.asString
 
+            oldFiles.remove(key)
             if (currentIndex.has(key)) {
                 val storedHash = currentIndex[key].asString
 
@@ -134,7 +158,7 @@ object CatharsisRemoteRepo {
     private fun loadBackupRepo() {
         cacheDirectory.deleteRecursively()
         cacheDirectory.createDirectories()
-        fun error(): Nothing = error("Failed to restore backup repo!")
+        fun error(): Nothing = kotlin.error("Failed to restore backup repo!")
         val indexData = getFromBackup("index.json") ?: error()
         val index = indexData.toString(Charsets.UTF_8).toJsonObject()
 

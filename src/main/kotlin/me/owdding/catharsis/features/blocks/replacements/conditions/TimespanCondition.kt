@@ -6,6 +6,7 @@ import me.owdding.catharsis.features.timespan.Timespans
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
+import me.owdding.ktcodecs.NamedCodec
 import net.minecraft.core.BlockPos
 import net.minecraft.resources.Identifier
 import net.minecraft.util.RandomSource
@@ -14,7 +15,7 @@ import net.minecraft.world.level.block.state.BlockState
 
 @GenerateCodec
 data class TimespanCondition(
-    @FieldName("timespan") val identifier: Identifier,
+    @FieldName("timespan") @NamedCodec("catharsis_identifier") val identifier: Identifier,
 ) : BlockCondition {
 
     override val codec: MapCodec<out BlockCondition> = CatharsisCodecs.TimespanConditionCodec

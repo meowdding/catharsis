@@ -20,7 +20,7 @@ import kotlin.io.path.reader
 internal object CatharsisDevUtils : DevUtils() {
 
     private val path = System.getProperty("catharsis.property_path")?.let { Path(it) } ?: McClient.config.resolve("catharsis.properties")
-    override val commandName: String = "catharsis dev"
+    override val commandName: String = "catharsis dev toggle"
     override fun send(component: MutableComponent) = component.sendWithPrefix()
     val properties: MutableMap<String, String> = loadFromProperties().toMutableMap()
 

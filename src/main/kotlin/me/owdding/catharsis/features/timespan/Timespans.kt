@@ -11,6 +11,7 @@ import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.types.colors.CatppuccinColors
+import me.owdding.ktmodules.Module
 import net.minecraft.resources.FileToIdConverter
 import net.minecraft.resources.Identifier
 import net.minecraft.server.packs.resources.ResourceManager
@@ -30,6 +31,7 @@ import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 import java.io.Reader
 import kotlin.io.path.reader
 
+@Module
 object Timespans : SimplePreparableReloadListener<List<Pair<Identifier, TimespanDefinition>>>(), CatharsisLogger by Catharsis.featureLogger() {
 
 
@@ -49,6 +51,9 @@ object Timespans : SimplePreparableReloadListener<List<Pair<Identifier, Timespan
                     append(id.toString()) {
                         this.color = CatppuccinColors.Mocha.yellow
                     }
+
+                    append(" -> ")
+
                     append(timespan.test()) {
                         this.color = if (timespan.test()) CatppuccinColors.Frappe.green else CatppuccinColors.Frappe.red
                     }
@@ -92,9 +97,9 @@ object Timespans : SimplePreparableReloadListener<List<Pair<Identifier, Timespan
         timespans.putAll(repoTimespans)
     }
 
-    @TimePassed("1s")
+    @TimePassed("5t")
     @Subscription(TickEvent::class)
-    private fun tick() {
+    fun tick() {
         val needsRebuild = timespans.values.map {
             it.tick()
             it.consumeRebuild()
@@ -118,6 +123,6 @@ object Timespans : SimplePreparableReloadListener<List<Pair<Identifier, Timespan
     fun getLoadedTimespans(): Map<Identifier, TimespanDefinition> = timespans
 
     init {
-        McClient.registerClientReloadListener(Catharsis.id("areas"), this)
+        McClient.registerClientReloadListener(Catharsis.id("timespans"), this)
     }
 }

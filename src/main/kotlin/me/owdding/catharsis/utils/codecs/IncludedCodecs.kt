@@ -39,7 +39,7 @@ object IncludedCodecs {
         (keyable = true)
     val resourceLocationCodec: Codec<Identifier> = Identifier.CODEC
 
-    @IncludedCodec(named = "catharsis_location", keyable = true)
+    @IncludedCodec(named = "catharsis_identifier", keyable = true)
     val catharsisIdentifier: Codec<Identifier> = Codec.STRING.xmap(
         { Utils.resourceLocationWithDifferentFallbackNamespace(it, Identifier.NAMESPACE_SEPARATOR, Catharsis.MOD_ID) },
         { it.toString() },

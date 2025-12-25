@@ -44,9 +44,10 @@ data class SimpleTimespan(
     override fun test(): Boolean = lastState
 
     override fun tick() {
+        if (!McLevel.hasLevel) return
         val time = McLevel.self.dayTime % 24_000
 
-        lastState = begin <= time && time >= end
+        lastState = time in begin..end
     }
 
     override fun consumeRebuild(): Boolean = if (needsRebuild) {

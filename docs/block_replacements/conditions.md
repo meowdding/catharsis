@@ -115,3 +115,14 @@ Changes the block context for the sub condition.
 - <Position positionType="int" customText> <b>offset</b>: The block to check relative to the current position.</Position>
 - <TypeIcon type="object"/> **condition**: The condition to check with the offset applied.
 </TreeView>
+
+### Timespan (`timespan`)
+
+Checks if a certain [timespan](../miscellaneous/timespans) is true.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>timespan</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `timespan`
+- <TypeIcon type="string"/> **timespan**: The identifier of the timespan to check.
+</TreeView>

@@ -13,7 +13,7 @@ Returns item specific data like, rarity, reforge, fuel...
 
 #### Additional fields
 
-- `data_type`, defines the data type to use. [all supported types](data_types)
+- `data_type`, defines the data type to use. [all supported types](../miscellaneous/data_types.md)
 
 
 ### `catharsis:skyblock_island`

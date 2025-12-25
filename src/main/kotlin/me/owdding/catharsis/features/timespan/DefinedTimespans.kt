@@ -59,11 +59,6 @@ data class SimpleTimespan(
         needsRebuild = false
         true
     } else false
-
-    override fun markUsed() {
-        TODO("Not yet implemented")
-    }
-
 }
 
 object TimespanDefinitions {

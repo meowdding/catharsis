@@ -8,6 +8,8 @@ import com.mojang.serialization.Codec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.blocks.replacements.LayeredBlockReplacements
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.utils.CatharsisLogger
+import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
 import me.owdding.catharsis.utils.extensions.mapBothNotNull
 import me.owdding.catharsis.utils.types.fabric.PreparingModelLoadingPlugin
 import me.owdding.ktmodules.Module
@@ -31,12 +33,12 @@ import kotlin.time.Duration.Companion.minutes
 import kotlin.time.toJavaDuration
 
 @Module
-object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockReplacements>> {
+object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockReplacements>>, CatharsisLogger by Catharsis.featureLogger() {
     init {
         register()
     }
 
-    private val logger = Catharsis.featureLogger("BlockReplacements")
+    private val logger: CatharsisLogger = this
     private val blockReplacementConverter = FileToIdConverter.json("catharsis/block_replacements")
     private val blockStateConverter = FileToIdConverter.json("catharsis/virtual_block_states")
     private val gson = GsonBuilder().create()

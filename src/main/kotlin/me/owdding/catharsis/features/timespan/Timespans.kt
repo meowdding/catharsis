@@ -97,12 +97,12 @@ object Timespans : SimplePreparableReloadListener<List<Pair<Identifier, Timespan
         timespans.putAll(repoTimespans)
     }
 
-    @TimePassed("5t")
+    @TimePassed("2t")
     @Subscription(TickEvent::class)
     fun tick() {
         val needsRebuild = timespans.values.map {
             it.tick()
-            it.consumeRebuild()
+            it.consumeRebuild() && it.isInUse
         }.any()
         if (needsRebuild) {
             McClient.self.levelRenderer.visibleSections.forEach { it.isDirty = true }

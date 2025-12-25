@@ -21,7 +21,9 @@ data class TimespanCondition(
     override val codec: MapCodec<out BlockCondition> = CatharsisCodecs.TimespanConditionCodec
 
     val timespan by lazy {
-        Timespans.getLoadedTimespans()[identifier] ?: run {
+        Timespans.getLoadedTimespans()[identifier]?.apply {
+            markUsed()
+        } ?: run {
             BlockReplacements.warn("Requested unknown timespan $identifier!")
             null
         }

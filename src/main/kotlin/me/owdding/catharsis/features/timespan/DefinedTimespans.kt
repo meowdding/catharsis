@@ -18,11 +18,15 @@ import tech.thatgravyboat.skyblockapi.helpers.McLevel
 
 interface TimespanDefinition {
 
+    var isInUse: Boolean
     val codec: MapCodec<out TimespanDefinition>
 
     fun test(): Boolean
     fun tick()
     fun consumeRebuild(): Boolean
+    fun markUsed() {
+        isInUse = true
+    }
 
 }
 
@@ -39,6 +43,7 @@ data class SimpleTimespan(
             }
         }
     private var needsRebuild = false
+    override var isInUse: Boolean = false
     override val codec: MapCodec<SimpleTimespan> = CatharsisCodecs.SimpleTimespanCodec
 
     override fun test(): Boolean = lastState
@@ -54,6 +59,10 @@ data class SimpleTimespan(
         needsRebuild = false
         true
     } else false
+
+    override fun markUsed() {
+        TODO("Not yet implemented")
+    }
 
 }
 

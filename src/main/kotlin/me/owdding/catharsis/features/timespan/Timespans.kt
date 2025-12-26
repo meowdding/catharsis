@@ -22,6 +22,7 @@ import tech.thatgravyboat.skyblockapi.api.events.base.predicates.TimePassed
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.time.TickEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
+import tech.thatgravyboat.skyblockapi.helpers.McLevel
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.Text.send
@@ -96,15 +97,32 @@ object Timespans : SimplePreparableReloadListener<List<Pair<Identifier, Timespan
         timespans.putAll(repoTimespans)
     }
 
-    @TimePassed("2t")
+    @TimePassed("5t")
     @Subscription(TickEvent::class)
     fun tick() {
-        val needsRebuild = timespans.values.map {
+        var needsRebuild = false
+        timespans.values.map {
             it.tick()
-            it.consumeRebuild() && it.isInUse
-        }.any()
+            needsRebuild = needsRebuild || it.consumeRebuild() && it.isInUse
+        }
+
         if (needsRebuild) {
-            McClient.self.levelRenderer.visibleSections.forEach { it.isDirty = true }
+            val chunks = McLevel.level.chunkSource.storage.chunks
+            val renderer = McClient.self.levelRenderer
+            for (i in 0 until chunks.length()) {
+                val chunk = McLevel.level.chunkSource.storage.chunks.get(i)
+                val isEmpty = chunk == null || chunk.isEmpty
+                if (isEmpty) continue
+
+                for ((index, section) in chunk.sections.withIndex()) {
+                    if (section == null || section.hasOnlyAir()) continue
+                    renderer.setSectionDirty(
+                        chunk.pos.x,
+                        chunk.level.getSectionYFromSectionIndex(index),
+                        chunk.pos.z,
+                    )
+                }
+            }
         }
     }
 

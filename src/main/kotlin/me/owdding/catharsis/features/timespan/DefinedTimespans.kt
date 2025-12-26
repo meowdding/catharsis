@@ -2,16 +2,9 @@ package me.owdding.catharsis.features.timespan
 
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
-import me.owdding.catharsis.features.area.AlwaysTrueDefinition
-import me.owdding.catharsis.features.area.AreaDefinition
-import me.owdding.catharsis.features.area.MultipleAreaDefinition
-import me.owdding.catharsis.features.area.OnIslandDefinition
-import me.owdding.catharsis.features.area.PerIslandAreaDefinition
-import me.owdding.catharsis.features.area.SimpleAreaDefinition
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.codecs.IncludedCodecs
 import me.owdding.ktcodecs.GenerateCodec
-import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import tech.thatgravyboat.skyblockapi.helpers.McLevel
@@ -58,7 +51,9 @@ data class SimpleTimespan(
     override fun consumeRebuild(): Boolean = if (needsRebuild) {
         needsRebuild = false
         true
-    } else false
+    } else {
+        false
+    }
 }
 
 object TimespanDefinitions {

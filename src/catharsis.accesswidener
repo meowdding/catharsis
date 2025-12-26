@@ -1,6 +1,9 @@
 classTweaker v1 named
+accessible class net/minecraft/client/multiplayer/ClientChunkCache$Storage
 accessible method net/minecraft/client/renderer/GameRenderer pick (Lnet/minecraft/world/entity/Entity;DDF)Lnet/minecraft/world/phys/HitResult;
 accessible field net/minecraft/client/model/PlayerCapeModel cape Lnet/minecraft/client/model/geom/ModelPart;
+accessible field net/minecraft/client/multiplayer/ClientChunkCache storage Lnet/minecraft/client/multiplayer/ClientChunkCache$Storage;
+accessible field net/minecraft/client/multiplayer/ClientChunkCache$Storage chunks Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
 inject-interface net/minecraft/client/gui/screens/packs/PackSelectionModel$EntryBase me/owdding/catharsis/hooks/pack/PackEntryHook
 inject-interface net/minecraft/client/renderer/item/properties/select/SelectItemModelProperty$Type me/owdding/catharsis/hooks/armor/SelectItemModelPropertyTypeHook

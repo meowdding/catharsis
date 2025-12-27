@@ -51,9 +51,7 @@ data class SimpleTimespan(
     override fun consumeRebuild(): Boolean = if (needsRebuild) {
         needsRebuild = false
         true
-    } else {
-        false
-    }
+    } else false
 }
 
 object TimespanDefinitions {

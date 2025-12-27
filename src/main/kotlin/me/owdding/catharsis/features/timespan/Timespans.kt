@@ -97,22 +97,20 @@ object Timespans : SimplePreparableReloadListener<List<Pair<Identifier, Timespan
         timespans.putAll(repoTimespans)
     }
 
-    @TimePassed("5t")
+    @TimePassed("2t")
     @Subscription(TickEvent::class)
     fun tick() {
-        var needsRebuild = false
-        timespans.values.map {
+        val needsRebuild = timespans.values.map {
             it.tick()
-            needsRebuild = needsRebuild || it.consumeRebuild() && it.isInUse
-        }
+            it.consumeRebuild() && it.isInUse
+        }.any { it }
 
         if (needsRebuild) {
             val chunks = McLevel.level.chunkSource.storage.chunks
             val renderer = McClient.self.levelRenderer
             for (i in 0 until chunks.length()) {
                 val chunk = McLevel.level.chunkSource.storage.chunks.get(i)
-                val isEmpty = chunk == null || chunk.isEmpty
-                if (isEmpty) continue
+                if (chunk == null || chunk.isEmpty) continue
 
                 for ((index, section) in chunk.sections.withIndex()) {
                     if (section == null || section.hasOnlyAir()) continue

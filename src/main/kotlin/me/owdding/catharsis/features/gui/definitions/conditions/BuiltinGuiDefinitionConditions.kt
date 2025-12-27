@@ -7,29 +7,38 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
 import tech.thatgravyboat.skyblockapi.utils.text.TextProperties.stripped
 
 @GenerateCodec
-data class GuiDefAllCondition(val conditions: List<GuiDefCondition>): GuiDefCondition {
-    override val codec = CatharsisCodecs.getMapCodec<GuiDefAllCondition>()
+data class GuiDefinitionAllCondition(
+    val conditions: List<GuiDefinitionCondition>
+) : GuiDefinitionCondition {
+    override val codec = CatharsisCodecs.getMapCodec<GuiDefinitionAllCondition>()
     override fun matches(screen: AbstractContainerScreen<*>): Boolean = this.conditions.all { it.matches(screen) }
 }
 
 @GenerateCodec
-data class GuiDefAnyCondition(val conditions: List<GuiDefCondition>): GuiDefCondition {
-    override val codec = CatharsisCodecs.getMapCodec<GuiDefAnyCondition>()
+data class GuiDefinitionAnyCondition(
+    val conditions: List<GuiDefinitionCondition>
+) : GuiDefinitionCondition {
+    override val codec = CatharsisCodecs.getMapCodec<GuiDefinitionAnyCondition>()
     override fun matches(screen: AbstractContainerScreen<*>): Boolean = this.conditions.any { it.matches(screen) }
 }
 
 @GenerateCodec
-data class GuiDefSlotCondition(val index: Int, val conditions: List<SlotCondition>): GuiDefCondition {
-    override val codec = CatharsisCodecs.getMapCodec<GuiDefSlotCondition>()
+data class GuiDefinitionSlotCondition(
+    val index: Int,
+    val condition: SlotCondition
+) : GuiDefinitionCondition {
+    override val codec = CatharsisCodecs.getMapCodec<GuiDefinitionSlotCondition>()
     override fun matches(screen: AbstractContainerScreen<*>): Boolean {
         val slot = screen.menu.getSlot(this.index) ?: return false
-        return this.conditions.all { it.matches(slot.index, slot.item) }
+        return this.condition.matches(slot.index, slot.item)
     }
 }
 
 @GenerateCodec
-data class GuiDefTitleCondition(val title: Regex): GuiDefCondition {
-    override val codec = CatharsisCodecs.getMapCodec<GuiDefTitleCondition>()
+data class GuiDefinitionTitleCondition(
+    val title: Regex
+) : GuiDefinitionCondition {
+    override val codec = CatharsisCodecs.getMapCodec<GuiDefinitionTitleCondition>()
     override fun matches(screen: AbstractContainerScreen<*>): Boolean {
         return this.title.matches(screen.title.stripped)
     }

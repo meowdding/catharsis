@@ -1,0 +1,19 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "title",
+        "title": "SkyBlock Menu"
+      },
+      {
+        "type": "slot",
+        "index": 22,
+        "condition": {
+          "type": "name",
+          "name": "SkyBlock Leveling"
+        }
+      }
+    ]
+  }
+}

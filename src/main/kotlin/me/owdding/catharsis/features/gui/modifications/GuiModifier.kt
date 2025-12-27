@@ -4,7 +4,7 @@ package me.owdding.catharsis.features.gui.modifications
 import com.mojang.blaze3d.platform.cursor.CursorTypes
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap
-import me.owdding.catharsis.features.gui.modifications.conditions.GuiModCondition
+import me.owdding.catharsis.features.gui.modifications.conditions.GuiModifierCondition
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElement
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElementRenderLayer
 import me.owdding.catharsis.features.gui.modifications.elements.GuiWidgetElement
@@ -18,7 +18,7 @@ import org.joml.Vector2i
 
 @GenerateCodec
 data class GuiModifier(
-    val target: GuiModCondition,
+    val target: GuiModifierCondition,
 
     val overrideLabels: Boolean = false,
     val overrideBackground: Boolean = false,

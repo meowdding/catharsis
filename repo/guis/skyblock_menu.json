@@ -15,5 +15,24 @@
         }
       }
     ]
-  }
+  },
+  "layout": [
+    {
+      "id": "skyblock:filler",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "is_tooltip_hidden"
+          },
+          {
+            "type": "item",
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }

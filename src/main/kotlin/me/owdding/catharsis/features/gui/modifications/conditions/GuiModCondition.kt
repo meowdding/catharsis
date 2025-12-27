@@ -8,20 +8,20 @@ import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 
-interface GuiModCondition {
+interface GuiModifierCondition {
 
-    val codec: MapCodec<out GuiModCondition>
+    val codec: MapCodec<out GuiModifierCondition>
 }
 
 object GuiModConditions {
 
-    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out GuiModCondition>>()
+    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out GuiModifierCondition>>()
 
     @IncludedCodec
-    val CODEC: Codec<GuiModCondition> = ID_MAPPER.codec(Identifier.CODEC).dispatch(GuiModCondition::codec) { it }
+    val CODEC: Codec<GuiModifierCondition> = ID_MAPPER.codec(Identifier.CODEC).dispatch(GuiModifierCondition::codec) { it }
 
     init {
-        ID_MAPPER.put(Catharsis.id("definition"), CatharsisCodecs.getMapCodec<GuiModDefinitionCondition>())
+        ID_MAPPER.put(Catharsis.id("definition"), CatharsisCodecs.getMapCodec<GuiModifierDefinitionCondition>())
     }
 
 }

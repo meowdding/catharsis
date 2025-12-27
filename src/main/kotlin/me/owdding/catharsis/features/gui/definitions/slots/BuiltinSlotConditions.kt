@@ -1,8 +1,11 @@
 package me.owdding.catharsis.features.gui.definitions.slots
 
+import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.types.IntPredicate
 import me.owdding.ktcodecs.GenerateCodec
+import net.minecraft.core.component.DataComponentType
+import net.minecraft.core.component.DataComponents
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
@@ -55,4 +58,17 @@ data class SlotNameCondition(
 ): SlotCondition {
     override val codec = CatharsisCodecs.getMapCodec<SlotNameCondition>()
     override fun matches(slot: Int, stack: ItemStack): Boolean = this.name.matches(stack.hoverName.stripped)
+}
+
+@GenerateCodec
+data class HasComponentCondition(
+    val componentType: DataComponentType<*>
+): SlotCondition {
+    override val codec = CatharsisCodecs.getMapCodec<HasComponentCondition>()
+    override fun matches(slot: Int, stack: ItemStack): Boolean = stack.has(componentType)
+}
+
+data object IsTooltipHiddenCondition: SlotCondition {
+    override val codec: MapCodec<IsTooltipHiddenCondition> = MapCodec.unit { this }
+    override fun matches(slot: Int, stack: ItemStack): Boolean = stack.get(DataComponents.TOOLTIP_DISPLAY)?.hideTooltip == true
 }

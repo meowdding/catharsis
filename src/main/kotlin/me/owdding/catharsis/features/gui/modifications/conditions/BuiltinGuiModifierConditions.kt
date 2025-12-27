@@ -5,6 +5,6 @@ import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.resources.Identifier
 
 @GenerateCodec
-data class GuiModDefinitionCondition(val definition: Identifier): GuiModCondition {
-    override val codec = CatharsisCodecs.getMapCodec<GuiModDefinitionCondition>()
+data class GuiModifierDefinitionCondition(val definition: Identifier): GuiModifierCondition {
+    override val codec = CatharsisCodecs.getMapCodec<GuiModifierDefinitionCondition>()
 }

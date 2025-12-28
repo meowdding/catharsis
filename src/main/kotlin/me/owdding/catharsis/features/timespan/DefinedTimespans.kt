@@ -48,10 +48,13 @@ data class SimpleTimespan(
         lastState = time in begin..end
     }
 
-    override fun consumeRebuild(): Boolean = if (needsRebuild) {
-        needsRebuild = false
-        true
-    } else false
+    override fun consumeRebuild(): Boolean {
+		if (needsRebuild) {
+	        needsRebuild = false
+	        return true
+	    }
+	    return false
+    }
 }
 
 object TimespanDefinitions {

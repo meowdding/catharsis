@@ -4,7 +4,7 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.gui.definitions.GuiDefinitions
-import me.owdding.catharsis.features.gui.modifications.conditions.GuiModDefinitionCondition
+import me.owdding.catharsis.features.gui.modifications.conditions.GuiModifierDefinitionCondition
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktmodules.Module
 import net.minecraft.resources.FileToIdConverter
@@ -40,7 +40,7 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
         definitionModifiers.clear()
         for (modifier in modifiers) {
             when (modifier.target) {
-                is GuiModDefinitionCondition -> {
+                is GuiModifierDefinitionCondition -> {
                     val definition = modifier.target.definition
                     if (definitionModifiers.putIfAbsent(definition, modifier) != null) {
                         logger.error("Multiple gui modifiers found for definition $definition only one will be applied")

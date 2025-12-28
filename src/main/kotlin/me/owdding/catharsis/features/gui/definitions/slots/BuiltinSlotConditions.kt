@@ -62,10 +62,10 @@ data class SlotNameCondition(
 
 @GenerateCodec
 data class HasComponentCondition(
-    val componentType: DataComponentType<*>
+    val component: DataComponentType<*>
 ): SlotCondition {
     override val codec = CatharsisCodecs.getMapCodec<HasComponentCondition>()
-    override fun matches(slot: Int, stack: ItemStack): Boolean = stack.has(componentType)
+    override fun matches(slot: Int, stack: ItemStack): Boolean = stack.has(component)
 }
 
 data object IsTooltipHiddenCondition: SlotCondition {

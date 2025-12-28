@@ -13,7 +13,7 @@ interface GuiModifierCondition {
     val codec: MapCodec<out GuiModifierCondition>
 }
 
-object GuiModConditions {
+object GuiModifierConditions {
 
     val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out GuiModifierCondition>>()
 

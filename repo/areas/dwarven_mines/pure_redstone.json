@@ -1,0 +1,20 @@
+{
+  "_comment": "All Pure Redstone Ore Veins in Dwarven Mines.",
+  "type": "multiple",
+  "boxes": [
+    {
+      "min": "138:154:14",
+      "max": "156:183:33"
+    },
+    {
+      "min": "126:117:133",
+      "max": "140:136:143"
+    },
+    {
+      "min": "46:153:154",
+      "max": "49:160:165"
+    }
+  ],
+  "islands": "dwarven_mines",
+  "min_size": 4
+}

@@ -1,0 +1,16 @@
+{
+  "_comment": "All Pure Lapis Ore Veins in Dwarven Mines.",
+  "type": "multiple",
+  "boxes": [
+    {
+      "min": "171:158:19",
+      "max": "182:175:36"
+    },
+    {
+      "min": "124:110:100",
+      "max": "142:142:115"
+    }
+  ],
+  "islands": "dwarven_mines",
+  "min_size": 4
+}

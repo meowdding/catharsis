@@ -1,0 +1,28 @@
+{
+  "_comment": "All Pure Coal Ore Veins in Dwarven Mines.",
+  "type": "multiple",
+  "boxes": [
+    {
+      "min": "154:155:81",
+      "max": "167:169:106"
+    },
+    {
+      "min": "98:153:84",
+      "max": "118:168:109"
+    },
+    {
+      "min": "160:130:30",
+      "max": "172:136:47"
+    },
+    {
+      "min": "84:92:90",
+      "max": "105:108:114"
+    },
+    {
+      "min": "47:136:134",
+      "max": "72:152:143"
+    }
+  ],
+  "islands": "dwarven_mines",
+  "min_size": 4
+}

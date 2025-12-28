@@ -1,0 +1,20 @@
+{
+  "_comment": "All Pure Emerald Ore Veins in Dwarven Mines.",
+  "type": "multiple",
+  "boxes": [
+    {
+      "min": "158:142:55",
+      "max": "166:173:77"
+    },
+    {
+      "min": "93:111:99",
+      "max": "113:122:110"
+    },
+    {
+      "min": "50:140:166",
+      "max": "76:158:180"
+    }
+  ],
+  "islands": "dwarven_mines",
+  "min_size": 4
+}

@@ -1,0 +1,16 @@
+{
+  "_comment": "All Pure Iron Ore Veins in Dwarven Mines.",
+  "type": "multiple",
+  "boxes": [
+    {
+      "min": "141:123:48",
+      "max": "167:140:105"
+    },
+    {
+      "min": "116:98:137",
+      "max": "137:112:153"
+    }
+  ],
+  "islands": "dwarven_mines",
+  "min_size": 4
+}

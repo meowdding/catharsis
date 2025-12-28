@@ -2,6 +2,7 @@ package me.owdding.catharsis.features.blocks
 
 import com.google.common.cache.Cache
 import com.google.common.cache.CacheBuilder
+import com.google.common.collect.MultimapBuilder
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.mojang.serialization.Codec
@@ -24,6 +25,7 @@ import net.minecraft.world.level.block.state.BlockState
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.level.BlockChangeEvent
 import tech.thatgravyboat.skyblockapi.helpers.McLevel
+import tech.thatgravyboat.skyblockapi.platform.Identifiers
 import tech.thatgravyboat.skyblockapi.utils.extentions.filterValuesNotNull
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import java.util.concurrent.CompletableFuture
@@ -84,18 +86,29 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     }
 
     fun loadBlockReplacements(resourceManager: ResourceManager): Map<Identifier, LayeredBlockReplacements.Completable> {
-        return blockReplacementConverter.listMatchingResourceStacks(resourceManager).mapBothNotNull { (id, value) ->
-            val replacements = LayeredBlockReplacements.Completable(
-                value.mapNotNull {
-                    logger.runCatching("Error loading block replacement definition $id") {
-                        it.openAsReader().use { reader ->
-                            gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(blockDefinitionCodec)
-                        }
+        val multiMap = MultimapBuilder.hashKeys().arrayListValues().build<Identifier, BlockReplacement.Completable>()
+        blockReplacementConverter.listMatchingResourceStacks(resourceManager).forEach { (id, value) ->
+            val replacements = value.mapNotNull {
+                logger.runCatching("Error loading block replacement definition $id") {
+                    it.openAsReader().use { reader ->
+                        gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(blockDefinitionCodec)
                     }
+                }
+            }
+            multiMap.putAll(
+                blockReplacementConverter.fileToId(id).let {
+                    if (it.path.contains('/')) {
+                        return@let Identifiers.of(it.path.substringBefore("/"), it.path.substringAfter("/"))
+                    }
+
+                    logger.warn("Found old block replacement ($id), consider migrating to new format")
+                    it
                 },
-            ).takeUnless { it.definitions.isEmpty() }
-            blockReplacementConverter.fileToId(id) to replacements
+                replacements,
+            )
         }
+
+        return multiMap.asMap().mapValues { (_, value) -> LayeredBlockReplacements.Completable(value.toList()) }
     }
 
     fun loadBlockStates(resourceManager: ResourceManager, map: Map<Identifier, LayeredBlockReplacements.Completable>): Map<Block, LayeredBlockReplacements> {

@@ -1,0 +1,20 @@
+{
+  "_comment": "All Pure Diamond Ore Veins in Dwarven Mines.",
+  "type": "multiple",
+  "boxes": [
+    {
+      "min": "116:126:32",
+      "max": "169:146:50"
+    },
+    {
+      "min": "89:96:116",
+      "max": "109:140:135"
+    },
+    {
+      "min": "73:159:157",
+      "max": "86:164:167"
+    }
+  ],
+  "islands": "dwarven_mines",
+  "min_size": 4
+}

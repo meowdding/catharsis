@@ -1,7 +1,7 @@
 package me.owdding.catharsis.mixins.pack;
 
+import me.owdding.catharsis.features.pack.CatsResourceSupplier;
 import me.owdding.catharsis.hooks.pack.PackDetectorHook;
-import me.owdding.catharsis.features.pack.TarResourceSupplier;
 import net.minecraft.server.packs.repository.Pack;
 import org.spongepowered.asm.mixin.Mixin;
 
@@ -11,7 +11,7 @@ import java.nio.file.Path;
 public class FolderPackDetectorMixin implements PackDetectorHook<Pack.ResourcesSupplier> {
 
     @Override
-    public Pack.ResourcesSupplier catharsis$createTarPack(Path path) {
-        return new TarResourceSupplier(path);
+    public Pack.ResourcesSupplier catharsis$createCatsPack(Path path) {
+        return new CatsResourceSupplier(path);
     }
 }

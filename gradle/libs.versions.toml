@@ -10,6 +10,7 @@ hypixelapi = "1.0.1+build.1+mc1.21"
 
 gson = "2.12.1"
 guava = "33.5.0-jre"
+cats = "1.0.0-beta.1"
 
 meowdding-resources = "1.0.15"
 
@@ -29,6 +30,7 @@ devauth = { module = "me.djtheredstoner:DevAuth-fabric", version.ref = "devauth"
 
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
+cats = { module = "me.owdding:cats", version.ref = "cats" }
 
 meowdding-resources = { module = "me.owdding.repo:compacting-resources", version.ref = "meowdding-resources" }
 meowdding-ktmodules = { module = "me.owdding.ktmodules:KtModules", version.ref = "meowdding-ktmodules" }

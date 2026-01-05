@@ -4,5 +4,5 @@ import java.nio.file.Path;
 
 public interface PackDetectorHook<T> {
 
-    T catharsis$createTarPack(Path path);
+    T catharsis$createCatsPack(Path path);
 }

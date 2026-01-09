@@ -46,7 +46,8 @@ export default defineConfig({
                 text: "Miscellaneous", // also move the file
                 items: [
                     {text: "Data Types", link: "/miscellaneous/data_types"},
-                    {text: "Timespan", link: "/miscellaneous/timespans"}
+                    {text: "Timespan", link: "/miscellaneous/timespans"},
+                    {text: ".cats file format", link: "/miscellaneous/cats_file_format"},
                 ]
             },
             {

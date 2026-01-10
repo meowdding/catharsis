@@ -21,7 +21,8 @@ public class PackDetectorMixin implements PackDetectorHook<Object> {
         cancellable = true
     )
     public void addTar(Path path, List<ForbiddenSymlinkInfo> forbiddenSymlinkInfos, CallbackInfoReturnable<Object> cir, @Local(index = 3) Path path2) {
-        if (path2.getFileName().toString().endsWith(".cats")) {
+        var fileName = path2.getFileName().toString();
+        if (fileName.endsWith(".cats") || fileName.endsWith(".cats.zip")) {
             cir.setReturnValue(this.catharsis$createCatsPack(path2));
         }
     }

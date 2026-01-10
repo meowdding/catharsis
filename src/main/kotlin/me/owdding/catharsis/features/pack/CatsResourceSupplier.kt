@@ -10,9 +10,21 @@ import net.minecraft.server.packs.resources.IoSupplier
 import java.io.InputStream
 import java.nio.file.Path
 import java.util.*
+import java.util.zip.ZipFile
 
 class CatsResourceSupplier(path: Path) : Pack.ResourcesSupplier {
-    private val file = Catharsis.runCatching("Failed to open cats pack at $path") { CatsFile(path) }
+    private val file = Catharsis.runCatching("Failed to open cats pack at $path") {
+        // We have a special casing for if zip files are given here, this means they contain a cats file inside as to work around some limitations
+        // with hosting platforms not allowing .cats files to be uploaded.
+        if (path.fileName.toString().endsWith(".zip")) {
+            val zip = ZipFile(path.toFile())
+            val pack = zip.getEntry("pack.cats") ?: error(".cats.zip file at $path does not contain pack.cats")
+            val data = zip.getInputStream(pack).use(InputStream::readAllBytes)
+            CatsFile(data)
+        } else {
+            CatsFile(path)
+        }
+    }
 
     override fun openPrimary(location: PackLocationInfo): PackResources {
         return CatsPackResources(location, "/", file)
@@ -63,7 +75,7 @@ class CatsPackResources(
                     if (id != null) {
                         output.accept(id) { file.getInputStream(entry) }
                     } else {
-                        Catharsis.warn("Invalid path in MTP pack $namespace:${name.removePrefix(prefix)}")
+                        Catharsis.warn("Invalid path in .cats pack $namespace:${name.removePrefix(prefix)}")
                     }
                 }
             }
@@ -80,7 +92,7 @@ class CatsPackResources(
                 if (Identifier.isValidNamespace(namespace)) {
                     namespaces.add(namespace)
                 } else {
-                    Catharsis.warn("Non [a-z0-9_.-] character in namespace $namespace in mtp pack")
+                    Catharsis.warn("Non [a-z0-9_.-] character in namespace $namespace in .cats pack")
                 }
             }
         }

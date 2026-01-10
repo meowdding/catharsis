@@ -1,8 +1,8 @@
 package me.owdding.catharsis.features.gui.definitions
 
+import com.google.common.collect.Iterables
 import com.google.gson.JsonElement
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap
-import it.unimi.dsi.fastutil.ints.Int2ObjectMap
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.events.FinishRepoLoadEvent
 import me.owdding.catharsis.events.StartRepoLoadEvent
@@ -29,40 +29,33 @@ import tech.thatgravyboat.skyblockapi.api.events.screen.ScreenInitializedEvent
 import tech.thatgravyboat.skyblockapi.utils.json.Json.gson
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import java.io.Reader
-import kotlin.collections.component1
-import kotlin.collections.component2
-import kotlin.collections.set
 import kotlin.io.path.reader
 
 
 @Module
 object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefinition>>(), CatharsisLogger by Catharsis.featureLogger() {
 
-    private val uiDefinitionConverter = FileToIdConverter.json("catharsis/guis")
-    private val definitions = mutableMapOf<Identifier, GuiDefinition>()
-    private val repoDefinitions = mutableMapOf<Identifier, GuiDefinition>()
     private val codec = CatharsisCodecs.GuiDefinitionCodec.codec()
+    private val uiDefinitionConverter = FileToIdConverter.json("catharsis/guis")
 
-    private var currentGui: Pair<Identifier, GuiDefinition>? = null
-    private var slots: Int2ObjectMap<GuiSlotDefinition> = Int2ObjectArrayMap()
+    private val packDefinitions = mutableListOf<DefinitionEntry>()
+    private val repoDefinitions = mutableListOf<DefinitionEntry>()
+    private val definitions = Iterables.concat(repoDefinitions, packDefinitions)
+
+    private var selected = listOf<DefinitionEntry>()
+    private var slots = Int2ObjectArrayMap<GuiSlotDefinition>()
 
     private fun update(screen: AbstractContainerScreen<*>?) {
-        currentGui = if (screen == null) {
-            null
-        } else if (currentGui?.second?.matches(screen) == true) {
-            currentGui
-        } else {
-            definitions.entries.find { it.value.matches(screen) }?.toPair()
-        }
+        selected = screen?.let { definitions.filter { it.matches(screen) } } ?: emptyList()
         slots.clear()
-        val layout = currentGui?.second?.layout ?: return
-        val menuSlots = screen?.menu?.slots ?: return
 
-        for (definition in layout) {
-            for (slot in menuSlots) {
-                if (definition.matches(slot.index, slot.item)) {
-                    slots[slot.index] = definition
-                }
+        if (selected.isEmpty()) return
+        if (screen == null) return
+
+        for (slot in screen.menu.slots) {
+            val definition = this.selected.findSlotDefinition(slot.index, slot.item)
+            if (definition != null) {
+                slots[slot.index] = definition
             }
         }
     }
@@ -85,28 +78,25 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
 
     private fun Reader.parse() = gson.fromJson(this, JsonElement::class.java).toDataOrThrow(codec)
 
-    override fun apply(
-        data: Map<Identifier, GuiDefinition>,
-        resourceManager: ResourceManager,
-        profiler: ProfilerFiller,
-    ) {
-        this.definitions.clear()
-        this.definitions.putAll(data)
-        this.definitions.putAll(repoDefinitions)
+    override fun apply(data: Map<Identifier, GuiDefinition>, resourceManager: ResourceManager, profiler: ProfilerFiller) {
+        this.packDefinitions.clear()
+        data.entries.forEach { (id, definition) ->
+            this.packDefinitions.add(DefinitionEntry(id, definition))
+        }
+        this.packDefinitions.sortBy(DefinitionEntry::priority)
     }
 
     @Subscription
     private fun StartRepoLoadEvent.start() {
-        repoDefinitions.keys.forEach(definitions::remove)
         repoDefinitions.clear()
     }
 
     @Subscription
     private fun FinishRepoLoadEvent.finish() {
         CatharsisRemoteRepo.listFilesInDirectory("guis").forEach { (name, path) ->
-            repoDefinitions[Catharsis.id(name.removeSuffix(".json"))] = path.reader().parse()
+            repoDefinitions.add(DefinitionEntry(Catharsis.id(name.removeSuffix(".json")), path.reader().parse()))
         }
-        definitions.putAll(repoDefinitions)
+        repoDefinitions.sortBy(DefinitionEntry::priority)
     }
 
     @Subscription
@@ -122,12 +112,28 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
     fun onClose(event: ContainerCloseEvent) = update(null)
 
     @JvmStatic
-    fun getGui(): Identifier? = currentGui?.first
+    fun getGui(): Identifier? = selected.firstOrNull()?.id
 
     @JvmStatic
     fun getSlot(slot: Int, stack: ItemStack): Identifier? = if (slot == -1) {
-        currentGui?.second?.layout?.find { it.matches(-1, stack) }?.id
+        this.selected.findSlotDefinition(-1, stack)?.id
     } else {
         slots[slot]?.id
+    }
+
+    private fun Iterable<DefinitionEntry>.findSlotDefinition(slot: Int, stack: ItemStack): GuiSlotDefinition? {
+        return this.firstNotNullOfOrNull {
+            it.layout.find { def -> def.matches(slot, stack) }
+        }
+    }
+
+    private data class DefinitionEntry(val id: Identifier, val definition: GuiDefinition) {
+
+        val priority: Int = definition.priority
+        val layout: List<GuiSlotDefinition> = definition.layout
+
+        fun matches(screen: AbstractContainerScreen<*>): Boolean {
+            return definition.matches(screen)
+        }
     }
 }

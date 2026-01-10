@@ -7,6 +7,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
 
 @GenerateCodec
 data class GuiDefinition(
+    val priority: Int = 0,
     val target: GuiDefinitionCondition,
     val layout: List<GuiSlotDefinition>,
 ) {

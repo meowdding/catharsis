@@ -5,7 +5,7 @@ lang: en-US
 
 # .cats File Format
 
-.cats (short for catharsis) is our custom file format to store resourcepacks a bit more efficiently than a simple zip file and loading it faster.
+.cats (`(c)atharsis (a)rchive (t)ool (s)tructure`) is our custom file format to store resourcepacks a bit more efficiently than a simple zip file and loading it faster.
 
 [File Format Repo](https://github.com/meowdding/cats-file-format) -
 [Pack Squash Tool](https://github.com/meowdding/catsquash) - 

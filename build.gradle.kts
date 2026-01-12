@@ -46,7 +46,8 @@ dependencies {
     }
 
     includeImplementation(versionedCatalog["placeholders"])
-    includeImplementation(libs.cats)
+    include(libs.cats)
+    implementation(libs.cats)
     modImplementation(libs.fabric.loader)
     modImplementation(libs.repo.lib)
     modImplementation(libs.fabric.language.kotlin)

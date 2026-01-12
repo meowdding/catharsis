@@ -43,9 +43,8 @@ export default defineConfig({
                 ]
             },
             {
-                text: "Miscellaneous",
+                text: "Miscellaneous", // also move the file
                 items: [
-                    {text: "Pack Metadata", link: "/miscellaneous/pack_metadata"},
                     {text: "Data Types", link: "/miscellaneous/data_types"},
                     {text: "Timespan", link: "/miscellaneous/timespans"}
                 ]

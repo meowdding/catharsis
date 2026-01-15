@@ -26,6 +26,7 @@ import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerCloseEvent
 import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerInitializedEvent
 import tech.thatgravyboat.skyblockapi.api.events.screen.InventoryChangeEvent
 import tech.thatgravyboat.skyblockapi.api.events.screen.ScreenInitializedEvent
+import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.utils.json.Json.gson
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import java.io.Reader
@@ -125,6 +126,10 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
         return this.firstNotNullOfOrNull {
             it.layout.find { def -> def.matches(slot, stack) }
         }
+    }
+
+    init {
+        McClient.registerClientReloadListener(Catharsis.id("gui_definitions"), this)
     }
 
     private data class DefinitionEntry(val id: Identifier, val definition: GuiDefinition) {

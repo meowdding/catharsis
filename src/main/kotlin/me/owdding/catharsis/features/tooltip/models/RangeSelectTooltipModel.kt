@@ -1,0 +1,88 @@
+package me.owdding.catharsis.features.tooltip.models
+
+import com.mojang.serialization.Codec
+import com.mojang.serialization.MapCodec
+import com.mojang.serialization.codecs.RecordCodecBuilder
+import me.owdding.catharsis.features.tooltip.TooltipModel
+import me.owdding.catharsis.features.tooltip.TooltipModelState
+import me.owdding.catharsis.features.tooltip.TooltipModels
+import me.owdding.catharsis.utils.TypedResourceManager
+import net.minecraft.client.multiplayer.ClientLevel
+import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperties
+import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperty
+import net.minecraft.util.RegistryContextSwapper
+import net.minecraft.world.entity.ItemOwner
+import net.minecraft.world.item.ItemStack
+import java.util.*
+import kotlin.jvm.optionals.getOrNull
+
+//? = 1.21.8
+/*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
+
+class RangeSelectTooltipModel(
+    private val property: RangeSelectItemModelProperty,
+    private val scale: Float,
+    private val thresholds: FloatArray,
+    private val models: Array<TooltipModel>,
+    private val fallback: TooltipModel?,
+) : TooltipModel {
+
+    private fun lastIndexLessThanOrEqual(value: Float): Int {
+        if (thresholds.size < 16) {
+            for (i in thresholds.indices) {
+                if (thresholds[i] > value) {
+                    return i - 1
+                }
+            }
+            return thresholds.size - 1
+        } else {
+            val i = thresholds.binarySearch(value)
+            return if (i < 0) i.inv() - 1 else i
+        }
+    }
+
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipModelState? {
+        val value = property.get(stack, level, owner?.asLivingEntity(), seed) * scale
+        val model = if (value.isNaN()) fallback else models.getOrNull(lastIndexLessThanOrEqual(value)) ?: fallback
+        return model?.resolve(stack, level, owner, seed)
+    }
+
+    override fun collectAll(): List<TooltipModelState> = buildList {
+        models.forEach { model -> addAll(model.collectAll()) }
+        fallback?.let { addAll(it.collectAll()) }
+    }
+
+    class Unbaked(
+        val property: RangeSelectItemModelProperty,
+        val scale: Float,
+        val entries: List<Pair<Float, TooltipModel.Unbaked>>,
+        val fallback: Optional<TooltipModel.Unbaked>,
+    ) : TooltipModel.Unbaked {
+
+        override val codec: MapCodec<out TooltipModel.Unbaked> = CODEC
+
+        override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipModel {
+            val sortedEntries = entries.sortedWith(Comparator.comparingDouble { it.first.toDouble() })
+            val thresholds = FloatArray(sortedEntries.size) { i -> sortedEntries[i].first }
+            val models = Array(sortedEntries.size) { i -> sortedEntries[i].second.bake(swapper, resources) }
+            val fallback = fallback.map { it.bake(swapper, resources) }.getOrNull()
+
+            return RangeSelectTooltipModel(property, scale, thresholds, models, fallback)
+        }
+
+        companion object {
+
+            val ENTRY_CODEC: Codec<Pair<Float, TooltipModel.Unbaked>> = RecordCodecBuilder.create { it.group(
+                Codec.FLOAT.fieldOf("threshold").forGetter { p -> p.first },
+                TooltipModels.CODEC.fieldOf("model").forGetter { p -> p.second },
+            ).apply(it, ::Pair) }
+
+            val CODEC: MapCodec<Unbaked> = RecordCodecBuilder.mapCodec { it.group(
+                RangeSelectItemModelProperties.MAP_CODEC.forGetter(Unbaked::property),
+                Codec.FLOAT.optionalFieldOf("scale", 1f).forGetter(Unbaked::scale),
+                ENTRY_CODEC.listOf().fieldOf("entries").forGetter(Unbaked::entries),
+                TooltipModels.CODEC.optionalFieldOf("fallback").forGetter(Unbaked::fallback),
+            ).apply(it, ::Unbaked) }
+        }
+    }
+}

@@ -5,6 +5,7 @@ import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.armor.models.SelectArmorModel
 import me.owdding.catharsis.features.armor.models.hook
+import me.owdding.catharsis.features.tooltip.models.SelectTooltipModel
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.generated.CodecUtils
 import me.owdding.catharsis.generated.EnumCodec
@@ -146,6 +147,13 @@ object DataTypeProperties {
                 )
             }
 
+            private fun <Type, CompareType : Any> createTooltipCodec(entry: DataTypeEntry<Type, CompareType>): MapCodec<SelectTooltipModel.UnbakedSwitch<SelectDataTypeItemProperty<Type, CompareType>, CompareType>> {
+                return SelectTooltipModel.UnbakedSwitch.createCasesFieldCodec(entry.codec).xmap(
+                    { cases -> SelectTooltipModel.UnbakedSwitch(SelectDataTypeItemProperty(entry), cases) },
+                    { switch -> switch.cases },
+                )
+            }
+
             private fun <Type, CompareType : Any> createType(): SelectItemModelProperty.Type<SelectDataTypeItemProperty<Type, CompareType>, CompareType> {
                 val type = SelectItemModelProperty.Type<SelectDataTypeItemProperty<Type, CompareType>, CompareType>(
                     types.codec(Codec.STRING).dispatchMap(
@@ -159,6 +167,13 @@ object DataTypeProperties {
                         "data_type",
                         { case -> (case.property as SelectDataTypeItemProperty).entry },
                         { entry -> createArmorCodec(entry.unsafeCast()) },
+                    ),
+                )
+                type.hook.`catharsis$setTooltipSwitchCodec`(
+                    types.codec(Codec.STRING).dispatchMap(
+                        "data_type",
+                        { case -> (case.property as SelectDataTypeItemProperty).entry },
+                        { entry -> createTooltipCodec(entry.unsafeCast()) },
                     ),
                 )
                 return type

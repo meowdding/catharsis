@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:select",
+  "property": "catharsis:data_type",
+  "data_type": "rarity",
+  "cases": [
+    {
+      "when": "uncommon",
+      "model": {
+        "type": "catharsis:texture",
+        "background": "your_name_space:tooltip/uncommon_background",
+        "frame": "your_name_space:tooltip/uncommon_frame"
+      }
+    }
+  ],
+  "fallback": {
+    "type": "catharsis:texture",
+    "background": "your_name_space:tooltip/background",
+    "frame": "your_name_space:tooltip/frame"
+  }
+}

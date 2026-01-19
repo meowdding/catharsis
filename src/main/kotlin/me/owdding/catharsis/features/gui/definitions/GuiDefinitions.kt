@@ -5,6 +5,7 @@ import com.google.gson.JsonElement
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.events.FinishRepoLoadEvent
+import me.owdding.catharsis.events.SlotChangedEvent
 import me.owdding.catharsis.events.StartRepoLoadEvent
 import me.owdding.catharsis.features.gui.definitions.slots.GuiSlotDefinition
 import me.owdding.catharsis.generated.CatharsisCodecs
@@ -24,7 +25,6 @@ import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerCloseEvent
 import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerInitializedEvent
-import tech.thatgravyboat.skyblockapi.api.events.screen.InventoryChangeEvent
 import tech.thatgravyboat.skyblockapi.api.events.screen.ScreenInitializedEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.utils.json.Json.gson
@@ -107,7 +107,7 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
     fun onInitialized(event: ContainerInitializedEvent) = update(event.screen)
 
     @Subscription
-    fun onSlotChange(event: InventoryChangeEvent) = update(event.screen)
+    fun onSlotChange(event: SlotChangedEvent) = update(event.screen)
 
     @Subscription
     fun onClose(event: ContainerCloseEvent) = update(null)

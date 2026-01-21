@@ -10,6 +10,7 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.api.datatype.getData
+import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
 import tech.thatgravyboat.skyblockapi.utils.text.TextProperties.stripped
 
 @GenerateCodec
@@ -66,6 +67,14 @@ data class HasComponentCondition(
 ): SlotCondition {
     override val codec = CatharsisCodecs.getMapCodec<HasComponentCondition>()
     override fun matches(slot: Int, stack: ItemStack): Boolean = stack.has(component)
+}
+
+@GenerateCodec
+data class SlotIslandCondition(
+    val islands: Set<SkyBlockIsland>,
+) : SlotCondition {
+    override val codec = CatharsisCodecs.getMapCodec<SlotIslandCondition>()
+    override fun matches(slot: Int, stack: ItemStack): Boolean = SkyBlockIsland.inAnyIsland(islands)
 }
 
 data object IsTooltipHiddenCondition: SlotCondition {

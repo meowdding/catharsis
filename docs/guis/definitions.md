@@ -48,6 +48,16 @@ Match against a specific gui title.
 
 </TreeView>
 
+### **Islands** (`catharsis:islands`)
+
+Match against the Player's current island.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>islands</b> gui definition target object</span>
+- <TypeIcon type="string"/> **type**: `catharsis:islands`
+- <TypeIcon type="array"/> **islands**: A list of island ids to match against, names are equal to the value of `mode` in `/locraw` or the enum name in [SkyBlockIsland](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/location/SkyBlockIsland.kt).
+</TreeView>
+
 #### **Slot** (`catharsis:slot`)
 
 Match against a gui with a specific slot condition.

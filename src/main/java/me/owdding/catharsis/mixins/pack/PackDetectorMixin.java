@@ -21,13 +21,14 @@ public class PackDetectorMixin implements PackDetectorHook<Object> {
         cancellable = true
     )
     public void addTar(Path path, List<ForbiddenSymlinkInfo> forbiddenSymlinkInfos, CallbackInfoReturnable<Object> cir, @Local(index = 3) Path path2) {
-        if (path2.getFileName().toString().endsWith(".tar.gz")) {
-            cir.setReturnValue(this.catharsis$createTarPack(path2));
+        var fileName = path2.getFileName().toString();
+        if (fileName.endsWith(".cats") || fileName.endsWith(".cats.zip")) {
+            cir.setReturnValue(this.catharsis$createCatsPack(path2));
         }
     }
 
     @Override
-    public Object catharsis$createTarPack(Path path) {
+    public Object catharsis$createCatsPack(Path path) {
         return null;
     }
 }

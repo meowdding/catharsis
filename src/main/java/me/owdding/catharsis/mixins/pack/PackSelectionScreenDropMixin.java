@@ -9,7 +9,7 @@ import java.nio.file.Path;
 public class PackSelectionScreenDropMixin implements PackDetectorHook<Path> {
 
     @Override
-    public Path catharsis$createTarPack(Path path) {
+    public Path catharsis$createCatsPack(Path path) {
         return path;
     }
 }

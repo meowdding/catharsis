@@ -30,6 +30,8 @@ object ItemProperties {
         register(DungeonClassProperty.ID, DungeonClassProperty.TYPE)
         register(OwnerUuidProperty.ID, OwnerUuidProperty.TYPE)
         register(SkyBlockSeasonProperty.ID, SkyBlockSeasonProperty.TYPE)
+        register(PetItemProperty.ID, PetItemProperty.TYPE)
+        register(PetSkinProperty.ID, PetSkinProperty.TYPE)
     }
 
     @Subscription
@@ -38,5 +40,8 @@ object ItemProperties {
         register(SkyBlockDayProperty.ID, SkyBlockDayProperty.CODEC)
         register(SkyBlockHourProperty.ID, SkyBlockHourProperty.CODEC)
         register(EnchantedBookLevelProperty.ID, EnchantedBookLevelProperty.CODEC)
+        register(RuneLevelProperty.ID, RuneLevelProperty.CODEC)
+        register(PetCandyUsedProperty.ID, PetCandyUsedProperty.CODEC)
+        register(PetExpProperty.ID, PetExpProperty.CODEC)
     }
 }

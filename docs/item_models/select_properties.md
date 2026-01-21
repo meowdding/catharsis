@@ -35,8 +35,15 @@ Returns the uuid of the entity associated with the item.
 Returns the dungeon class of the player who owns the item. <br>
 Values can be `archer`, `berserker`, `healer`, `mage` or `tank`, in case there is no class associate with the player it returns null.
 
-
 ### `catharsis:skyblock_season`
 
 Returns the current season.
 Possible values are can be found [here](https://github.com/SkyblockAPI/SkyblockAPI/blob/a1be281b5f98f2feb667c5ba33d3e4860ab6b4a4/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/datetime/SkyBlockSeason.kt#L5)
+
+### `catharsis:pet_held_item`
+
+Returns the item held by a pet, only works on pets in GUIs (probably).
+
+### `catharsis:pet_skin`
+
+Returns the skin of a pet, only works on pets in GUIs (probably).

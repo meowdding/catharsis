@@ -26,6 +26,7 @@ repositories {
     scopedMaven("https://maven.teamresourceful.com/repository/maven-public/", "tech.thatgravyboat", "me.owdding")
     scopedMaven("https://maven.nucleoid.xyz/", "eu.pb4")
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
@@ -45,6 +46,8 @@ dependencies {
     }
 
     includeImplementation(versionedCatalog["placeholders"])
+    include(libs.cats)
+    implementation(libs.cats)
     modImplementation(libs.fabric.loader)
     modImplementation(libs.repo.lib)
     modImplementation(libs.fabric.language.kotlin)

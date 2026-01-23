@@ -97,7 +97,7 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
         CatharsisRemoteRepo.listFilesInDirectory("guis").forEach { (name, path) ->
             repoDefinitions.add(DefinitionEntry(Catharsis.id(name.removeSuffix(".json")), path.reader().parse()))
         }
-        repoDefinitions.sortBy(DefinitionEntry::priority)
+        repoDefinitions.sortByDescending(DefinitionEntry::priority)
     }
 
     @Subscription
@@ -116,11 +116,13 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
     fun getGui(): Identifier? = selected.firstOrNull()?.id
 
     @JvmStatic
-    fun getSlot(slot: Int, stack: ItemStack): Identifier? = if (slot == -1) {
-        this.selected.findSlotDefinition(-1, stack)?.id
-    } else {
-        slots[slot]?.id
-    }
+    fun getGuis(): List<Identifier> = selected.map { it.id }
+
+    @JvmStatic
+    fun getSlot(stack: ItemStack): Identifier? = this.selected.findSlotDefinition(-1, stack)?.id
+
+    @JvmStatic
+    fun getSlot(slot: Int): Identifier? = this.slots[slot]?.id
 
     private fun Iterable<DefinitionEntry>.findSlotDefinition(slot: Int, stack: ItemStack): GuiSlotDefinition? {
         return this.firstNotNullOfOrNull {

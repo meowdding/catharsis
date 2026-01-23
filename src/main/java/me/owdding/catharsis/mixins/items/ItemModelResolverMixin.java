@@ -39,7 +39,7 @@ public class ItemModelResolverMixin {
 
         var isCarried = McPlayer.INSTANCE.getSelf() instanceof LocalPlayer player && player.containerMenu.getCarried() == stack;
         var slot = AbstractContainerScreenHook.SLOT.get();
-        var guiId = isCarried || slot != null ? GuiDefinitions.getSlot(isCarried ? -1 : slot.index, stack) : null;
+        var guiId = isCarried ? GuiDefinitions.getSlot(stack) : (slot != null ? GuiDefinitions.getSlot(slot.index) : null);
         var itemId = ItemUtils.INSTANCE.getCustomLocation(stack);
         var model = guiId != null ? guiId : itemId;
 

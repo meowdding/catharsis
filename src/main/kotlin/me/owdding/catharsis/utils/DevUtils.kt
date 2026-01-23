@@ -1,5 +1,6 @@
 package me.owdding.catharsis.utils
 
+import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.ktmodules.Module
 import net.minecraft.network.chat.MutableComponent
@@ -7,6 +8,7 @@ import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.platform.Identifiers
+import tech.thatgravyboat.skyblockapi.utils.DebugToggle
 import tech.thatgravyboat.skyblockapi.utils.DevUtils
 import tech.thatgravyboat.skyblockapi.utils.extentions.parseFormattedInt
 import java.nio.file.StandardOpenOption
@@ -15,6 +17,10 @@ import kotlin.io.path.Path
 import kotlin.io.path.exists
 import kotlin.io.path.outputStream
 import kotlin.io.path.reader
+
+internal fun debugToggle(path: String, description: String = path): DebugToggle {
+    return DebugToggle(Catharsis.id(path), description, CatharsisDevUtils)
+}
 
 @Module
 internal object CatharsisDevUtils : DevUtils() {

@@ -33,6 +33,18 @@ Match against a slot by its name using a regex.
 
 </TreeView>
 
+#### **Name Equals** (`catharsis:name_equals`)
+
+Match against a slot by its name.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>name</b> slot condition object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:name`
+- <TypeIcon type="string"/><TypeIcon type="array"/> **name**: A String or an Array of Strings to match against. 
+
+</TreeView>
+
 #### **Item** (`catharsis:item`)
 
 Match against a slot by the item it contains.

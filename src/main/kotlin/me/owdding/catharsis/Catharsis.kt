@@ -35,6 +35,7 @@ import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Comp
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McLevel
 import tech.thatgravyboat.skyblockapi.platform.Identifiers
+import tech.thatgravyboat.skyblockapi.utils.extentions.parseRomanNumeral
 import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import tech.thatgravyboat.skyblockapi.utils.text.Text
@@ -69,6 +70,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
     fun loadRepo(notify: Boolean = CatharsisDevUtils.getBoolean("repo_notify")) {
         val branch = CatharsisDevUtils.properties[REPO_BRANCH_PROPERTY] ?: buildInfo.branch.replace("/", "-")
         if (notify) {
+            "".parseRomanNumeral()
             info("Loading repo on branch $branch")
             Text.of("Loading repo on branch $branch").sendWithPrefixIf { McLevel.hasLevel }
         }

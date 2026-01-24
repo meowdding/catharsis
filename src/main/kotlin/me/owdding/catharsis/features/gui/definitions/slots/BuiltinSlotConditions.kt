@@ -2,7 +2,9 @@ package me.owdding.catharsis.features.gui.definitions.slots
 
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.utils.Utils.fastStripped
 import me.owdding.catharsis.utils.types.IntPredicate
+import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.component.DataComponents
@@ -47,7 +49,7 @@ data class SlotSkyBlockIdCondition(
 
 @GenerateCodec
 data class SlotItemCondition(
-    val items: Set<Item>
+    @Compact val items: Set<Item>
 ): SlotCondition {
     override val codec = CatharsisCodecs.getMapCodec<SlotItemCondition>()
     override fun matches(slot: Int, stack: ItemStack): Boolean = stack.item in this.items
@@ -58,7 +60,15 @@ data class SlotNameCondition(
     val name: Regex
 ): SlotCondition {
     override val codec = CatharsisCodecs.getMapCodec<SlotNameCondition>()
-    override fun matches(slot: Int, stack: ItemStack): Boolean = this.name.matches(stack.hoverName.stripped)
+    override fun matches(slot: Int, stack: ItemStack): Boolean = this.name.matches(stack.hoverName.fastStripped)
+}
+
+@GenerateCodec
+data class SlotNameEqualsCondition(
+    @Compact val name: Set<String>
+): SlotCondition {
+    override val codec = CatharsisCodecs.getMapCodec<SlotNameCondition>()
+    override fun matches(slot: Int, stack: ItemStack): Boolean = this.name.any { it == stack.hoverName.fastStripped }
 }
 
 @GenerateCodec

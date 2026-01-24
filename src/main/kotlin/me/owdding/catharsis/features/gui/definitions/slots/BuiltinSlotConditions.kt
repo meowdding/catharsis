@@ -1,11 +1,13 @@
 package me.owdding.catharsis.features.gui.definitions.slots
 
 import com.mojang.serialization.MapCodec
+import me.owdding.catharsis.features.gui.matchers.TextMatcher
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.Utils.fastStripped
 import me.owdding.catharsis.utils.types.IntPredicate
 import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.GenerateCodec
+import me.owdding.ktcodecs.Inline
 import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.component.DataComponents
 import net.minecraft.world.item.Item
@@ -13,7 +15,6 @@ import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.api.datatype.getData
 import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
-import tech.thatgravyboat.skyblockapi.utils.text.TextProperties.stripped
 
 @GenerateCodec
 data class SlotAllCondition(
@@ -57,18 +58,10 @@ data class SlotItemCondition(
 
 @GenerateCodec
 data class SlotNameCondition(
-    val name: Regex
+    @Inline val matcher: TextMatcher
 ): SlotCondition {
     override val codec = CatharsisCodecs.getMapCodec<SlotNameCondition>()
-    override fun matches(slot: Int, stack: ItemStack): Boolean = this.name.matches(stack.hoverName.fastStripped)
-}
-
-@GenerateCodec
-data class SlotNameEqualsCondition(
-    @Compact val name: Set<String>
-): SlotCondition {
-    override val codec = CatharsisCodecs.getMapCodec<SlotNameCondition>()
-    override fun matches(slot: Int, stack: ItemStack): Boolean = this.name.any { it == stack.hoverName.fastStripped }
+    override fun matches(slot: Int, stack: ItemStack): Boolean = this.matcher.matches(stack.hoverName.fastStripped)
 }
 
 @GenerateCodec

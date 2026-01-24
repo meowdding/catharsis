@@ -32,7 +32,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level I",
               "Social Level 1"
@@ -51,7 +52,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level I",
               "Social Level 1"
@@ -70,7 +72,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level I",
               "Social Level 1"
@@ -91,7 +94,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level II",
               "Social Level 2"
@@ -110,7 +114,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level II",
               "Social Level 2"
@@ -129,7 +134,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level II",
               "Social Level 2"
@@ -150,7 +156,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level III",
               "Social Level 3"
@@ -169,7 +176,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level III",
               "Social Level 3"
@@ -188,7 +196,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level III",
               "Social Level 3"
@@ -209,7 +218,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level IV",
               "Social Level 4"
@@ -228,7 +238,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level IV",
               "Social Level 4"
@@ -247,7 +258,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level IV",
               "Social Level 4"
@@ -269,7 +281,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level V",
               "Social Level 5"
@@ -288,7 +301,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level V",
               "Social Level 5"
@@ -307,7 +321,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level V",
               "Social Level 5"
@@ -328,7 +343,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level VI",
               "Social Level 6"
@@ -347,7 +363,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level VI",
               "Social Level 6"
@@ -366,7 +383,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level VI",
               "Social Level 6"
@@ -387,7 +405,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level VII",
               "Social Level 7"
@@ -406,7 +425,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level VII",
               "Social Level 7"
@@ -425,7 +445,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level VII",
               "Social Level 7"
@@ -446,7 +467,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level VIII",
               "Social Level 8"
@@ -465,7 +487,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level VIII",
               "Social Level 8"
@@ -484,7 +507,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level VIII",
               "Social Level 8"
@@ -505,7 +529,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level IX",
               "Social Level 9"
@@ -524,7 +549,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level IX",
               "Social Level 9"
@@ -543,7 +569,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level IX",
               "Social Level 9"
@@ -565,7 +592,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level X",
               "Social Level 10"
@@ -584,7 +612,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level X",
               "Social Level 10"
@@ -603,7 +632,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level X",
               "Social Level 10"
@@ -624,7 +654,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XI",
               "Social Level 11"
@@ -643,7 +674,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XI",
               "Social Level 11"
@@ -662,7 +694,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XI",
               "Social Level 11"
@@ -683,7 +716,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XII",
               "Social Level 12"
@@ -702,7 +736,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XII",
               "Social Level 12"
@@ -721,7 +756,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XII",
               "Social Level 12"
@@ -742,7 +778,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XIII",
               "Social Level 13"
@@ -761,7 +798,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XIII",
               "Social Level 13"
@@ -780,7 +818,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XIII",
               "Social Level 13"
@@ -801,7 +840,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XIV",
               "Social Level 14"
@@ -820,7 +860,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XIV",
               "Social Level 14"
@@ -839,7 +880,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XIV",
               "Social Level 14"
@@ -861,7 +903,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XV",
               "Social Level 15"
@@ -880,7 +923,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XV",
               "Social Level 15"
@@ -899,7 +943,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XV",
               "Social Level 15"
@@ -920,7 +965,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XVI",
               "Social Level 16"
@@ -939,7 +985,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XVI",
               "Social Level 16"
@@ -958,7 +1005,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XVI",
               "Social Level 16"
@@ -979,7 +1027,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XVII",
               "Social Level 17"
@@ -998,7 +1047,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XVII",
               "Social Level 17"
@@ -1017,7 +1067,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XVII",
               "Social Level 17"
@@ -1038,7 +1089,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XVIII",
               "Social Level 18"
@@ -1057,7 +1109,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XVIII",
               "Social Level 18"
@@ -1076,7 +1129,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XVIII",
               "Social Level 18"
@@ -1097,7 +1151,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XIX",
               "Social Level 19"
@@ -1116,7 +1171,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XIX",
               "Social Level 19"
@@ -1135,7 +1191,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XIX",
               "Social Level 19"
@@ -1157,7 +1214,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XX",
               "Social Level 20"
@@ -1176,7 +1234,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XX",
               "Social Level 20"
@@ -1195,7 +1254,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XX",
               "Social Level 20"
@@ -1216,7 +1276,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXI",
               "Social Level 21"
@@ -1235,7 +1296,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXI",
               "Social Level 21"
@@ -1254,7 +1316,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXI",
               "Social Level 21"
@@ -1275,7 +1338,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXII",
               "Social Level 22"
@@ -1294,7 +1358,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXII",
               "Social Level 22"
@@ -1313,7 +1378,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXII",
               "Social Level 22"
@@ -1334,7 +1400,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXIII",
               "Social Level 23"
@@ -1353,7 +1420,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXIII",
               "Social Level 23"
@@ -1372,7 +1440,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXIII",
               "Social Level 23"
@@ -1393,7 +1462,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXIV",
               "Social Level 24"
@@ -1412,7 +1482,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXIV",
               "Social Level 24"
@@ -1431,7 +1502,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXIV",
               "Social Level 24"
@@ -1453,7 +1525,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXV",
               "Social Level 25"
@@ -1472,7 +1545,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXV",
               "Social Level 25"
@@ -1491,7 +1565,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Social Level XXV",
               "Social Level 25"

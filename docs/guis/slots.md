@@ -29,19 +29,8 @@ Match against a slot by its name using a regex.
 <span><TypeIcon type="object"/> Root <b>name</b> slot condition object</span>
 
 - <TypeIcon type="string"/> **type**: `catharsis:name`
-- <TypeIcon type="string"/> **name**: A regex to match against the slot name.
-
-</TreeView>
-
-#### **Name Equals** (`catharsis:name_equals`)
-
-Match against a slot by its name.
-
-<TreeView>
-<span><TypeIcon type="object"/> Root <b>name</b> slot condition object</span>
-
-- <TypeIcon type="string"/> **type**: `catharsis:name`
-- <TypeIcon type="string"/><TypeIcon type="array"/> **name**: A String or an Array of Strings to match against. 
+- <TypeIcon type="string"/> **mode**: Optional. Either `equals` or `regex`. Default: `regex`.
+- <TypeIcon type="string"/> **name**: A string or regex to match against the slot's name depending on the mode.
 
 </TreeView>
 
@@ -87,6 +76,7 @@ Match against the Player's current island.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>islands</b> slot condition object</span>
+
 - <TypeIcon type="string"/> **type**: `catharsis:islands`
 - <TypeIcon type="array"/> **islands**: A list of island ids to match against, names are equal to the value of `mode` in `/locraw` or the enum name in [SkyBlockIsland](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/location/SkyBlockIsland.kt).
 </TreeView>

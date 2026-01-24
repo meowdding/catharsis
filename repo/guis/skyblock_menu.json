@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock:filler",
+      "id": "skyblock_gui:filler",
       "target": {
         "type": "all",
         "conditions": [

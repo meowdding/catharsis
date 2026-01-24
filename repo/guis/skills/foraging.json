@@ -32,7 +32,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level I",
               "Foraging Level 1"
@@ -51,7 +52,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level I",
               "Foraging Level 1"
@@ -70,7 +72,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level I",
               "Foraging Level 1"
@@ -91,7 +94,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level II",
               "Foraging Level 2"
@@ -110,7 +114,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level II",
               "Foraging Level 2"
@@ -129,7 +134,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level II",
               "Foraging Level 2"
@@ -150,7 +156,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level III",
               "Foraging Level 3"
@@ -169,7 +176,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level III",
               "Foraging Level 3"
@@ -188,7 +196,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level III",
               "Foraging Level 3"
@@ -209,7 +218,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level IV",
               "Foraging Level 4"
@@ -228,7 +238,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level IV",
               "Foraging Level 4"
@@ -247,7 +258,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level IV",
               "Foraging Level 4"
@@ -269,7 +281,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level V",
               "Foraging Level 5"
@@ -288,7 +301,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level V",
               "Foraging Level 5"
@@ -307,7 +321,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level V",
               "Foraging Level 5"
@@ -328,7 +343,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level VI",
               "Foraging Level 6"
@@ -347,7 +363,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level VI",
               "Foraging Level 6"
@@ -366,7 +383,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level VI",
               "Foraging Level 6"
@@ -387,7 +405,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level VII",
               "Foraging Level 7"
@@ -406,7 +425,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level VII",
               "Foraging Level 7"
@@ -425,7 +445,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level VII",
               "Foraging Level 7"
@@ -446,7 +467,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level VIII",
               "Foraging Level 8"
@@ -465,7 +487,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level VIII",
               "Foraging Level 8"
@@ -484,7 +507,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level VIII",
               "Foraging Level 8"
@@ -505,7 +529,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level IX",
               "Foraging Level 9"
@@ -524,7 +549,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level IX",
               "Foraging Level 9"
@@ -543,7 +569,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level IX",
               "Foraging Level 9"
@@ -565,7 +592,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level X",
               "Foraging Level 10"
@@ -584,7 +612,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level X",
               "Foraging Level 10"
@@ -603,7 +632,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level X",
               "Foraging Level 10"
@@ -624,7 +654,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XI",
               "Foraging Level 11"
@@ -643,7 +674,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XI",
               "Foraging Level 11"
@@ -662,7 +694,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XI",
               "Foraging Level 11"
@@ -683,7 +716,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XII",
               "Foraging Level 12"
@@ -702,7 +736,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XII",
               "Foraging Level 12"
@@ -721,7 +756,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XII",
               "Foraging Level 12"
@@ -742,7 +778,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XIII",
               "Foraging Level 13"
@@ -761,7 +798,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XIII",
               "Foraging Level 13"
@@ -780,7 +818,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XIII",
               "Foraging Level 13"
@@ -801,7 +840,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XIV",
               "Foraging Level 14"
@@ -820,7 +860,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XIV",
               "Foraging Level 14"
@@ -839,7 +880,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XIV",
               "Foraging Level 14"
@@ -861,7 +903,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XV",
               "Foraging Level 15"
@@ -880,7 +923,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XV",
               "Foraging Level 15"
@@ -899,7 +943,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XV",
               "Foraging Level 15"
@@ -920,7 +965,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XVI",
               "Foraging Level 16"
@@ -939,7 +985,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XVI",
               "Foraging Level 16"
@@ -958,7 +1005,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XVI",
               "Foraging Level 16"
@@ -979,7 +1027,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XVII",
               "Foraging Level 17"
@@ -998,7 +1047,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XVII",
               "Foraging Level 17"
@@ -1017,7 +1067,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XVII",
               "Foraging Level 17"
@@ -1038,7 +1089,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XVIII",
               "Foraging Level 18"
@@ -1057,7 +1109,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XVIII",
               "Foraging Level 18"
@@ -1076,7 +1129,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XVIII",
               "Foraging Level 18"
@@ -1097,7 +1151,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XIX",
               "Foraging Level 19"
@@ -1116,7 +1171,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XIX",
               "Foraging Level 19"
@@ -1135,7 +1191,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XIX",
               "Foraging Level 19"
@@ -1157,7 +1214,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XX",
               "Foraging Level 20"
@@ -1176,7 +1234,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XX",
               "Foraging Level 20"
@@ -1195,7 +1254,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XX",
               "Foraging Level 20"
@@ -1216,7 +1276,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXI",
               "Foraging Level 21"
@@ -1235,7 +1296,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXI",
               "Foraging Level 21"
@@ -1254,7 +1316,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXI",
               "Foraging Level 21"
@@ -1275,7 +1338,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXII",
               "Foraging Level 22"
@@ -1294,7 +1358,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXII",
               "Foraging Level 22"
@@ -1313,7 +1378,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXII",
               "Foraging Level 22"
@@ -1334,7 +1400,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXIII",
               "Foraging Level 23"
@@ -1353,7 +1420,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXIII",
               "Foraging Level 23"
@@ -1372,7 +1440,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXIII",
               "Foraging Level 23"
@@ -1393,7 +1462,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXIV",
               "Foraging Level 24"
@@ -1412,7 +1482,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXIV",
               "Foraging Level 24"
@@ -1431,7 +1502,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXIV",
               "Foraging Level 24"
@@ -1453,7 +1525,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXV",
               "Foraging Level 25"
@@ -1472,7 +1545,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXV",
               "Foraging Level 25"
@@ -1491,7 +1565,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXV",
               "Foraging Level 25"
@@ -1512,7 +1587,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXVI",
               "Foraging Level 26"
@@ -1531,7 +1607,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXVI",
               "Foraging Level 26"
@@ -1550,7 +1627,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXVI",
               "Foraging Level 26"
@@ -1571,7 +1649,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXVII",
               "Foraging Level 27"
@@ -1590,7 +1669,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXVII",
               "Foraging Level 27"
@@ -1609,7 +1689,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXVII",
               "Foraging Level 27"
@@ -1630,7 +1711,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXVIII",
               "Foraging Level 28"
@@ -1649,7 +1731,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXVIII",
               "Foraging Level 28"
@@ -1668,7 +1751,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXVIII",
               "Foraging Level 28"
@@ -1689,7 +1773,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXIX",
               "Foraging Level 29"
@@ -1708,7 +1793,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXIX",
               "Foraging Level 29"
@@ -1727,7 +1813,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXIX",
               "Foraging Level 29"
@@ -1749,7 +1836,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXX",
               "Foraging Level 30"
@@ -1768,7 +1856,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXX",
               "Foraging Level 30"
@@ -1787,7 +1876,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXX",
               "Foraging Level 30"
@@ -1808,7 +1898,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXI",
               "Foraging Level 31"
@@ -1827,7 +1918,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXI",
               "Foraging Level 31"
@@ -1846,7 +1938,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXI",
               "Foraging Level 31"
@@ -1867,7 +1960,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXII",
               "Foraging Level 32"
@@ -1886,7 +1980,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXII",
               "Foraging Level 32"
@@ -1905,7 +2000,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXII",
               "Foraging Level 32"
@@ -1926,7 +2022,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXIII",
               "Foraging Level 33"
@@ -1945,7 +2042,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXIII",
               "Foraging Level 33"
@@ -1964,7 +2062,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXIII",
               "Foraging Level 33"
@@ -1985,7 +2084,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXIV",
               "Foraging Level 34"
@@ -2004,7 +2104,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXIV",
               "Foraging Level 34"
@@ -2023,7 +2124,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXIV",
               "Foraging Level 34"
@@ -2045,7 +2147,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXV",
               "Foraging Level 35"
@@ -2064,7 +2167,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXV",
               "Foraging Level 35"
@@ -2083,7 +2187,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXV",
               "Foraging Level 35"
@@ -2104,7 +2209,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXVI",
               "Foraging Level 36"
@@ -2123,7 +2229,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXVI",
               "Foraging Level 36"
@@ -2142,7 +2249,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXVI",
               "Foraging Level 36"
@@ -2163,7 +2271,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXVII",
               "Foraging Level 37"
@@ -2182,7 +2291,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXVII",
               "Foraging Level 37"
@@ -2201,7 +2311,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXVII",
               "Foraging Level 37"
@@ -2222,7 +2333,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXVIII",
               "Foraging Level 38"
@@ -2241,7 +2353,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXVIII",
               "Foraging Level 38"
@@ -2260,7 +2373,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXVIII",
               "Foraging Level 38"
@@ -2281,7 +2395,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXIX",
               "Foraging Level 39"
@@ -2300,7 +2415,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXIX",
               "Foraging Level 39"
@@ -2319,7 +2435,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XXXIX",
               "Foraging Level 39"
@@ -2341,7 +2458,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XL",
               "Foraging Level 40"
@@ -2360,7 +2478,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XL",
               "Foraging Level 40"
@@ -2379,7 +2498,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XL",
               "Foraging Level 40"
@@ -2400,7 +2520,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLI",
               "Foraging Level 41"
@@ -2419,7 +2540,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLI",
               "Foraging Level 41"
@@ -2438,7 +2560,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLI",
               "Foraging Level 41"
@@ -2459,7 +2582,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLII",
               "Foraging Level 42"
@@ -2478,7 +2602,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLII",
               "Foraging Level 42"
@@ -2497,7 +2622,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLII",
               "Foraging Level 42"
@@ -2518,7 +2644,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLIII",
               "Foraging Level 43"
@@ -2537,7 +2664,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLIII",
               "Foraging Level 43"
@@ -2556,7 +2684,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLIII",
               "Foraging Level 43"
@@ -2577,7 +2706,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLIV",
               "Foraging Level 44"
@@ -2596,7 +2726,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLIV",
               "Foraging Level 44"
@@ -2615,7 +2746,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLIV",
               "Foraging Level 44"
@@ -2637,7 +2769,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLV",
               "Foraging Level 45"
@@ -2656,7 +2789,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLV",
               "Foraging Level 45"
@@ -2675,7 +2809,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLV",
               "Foraging Level 45"
@@ -2696,7 +2831,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLVI",
               "Foraging Level 46"
@@ -2715,7 +2851,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLVI",
               "Foraging Level 46"
@@ -2734,7 +2871,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLVI",
               "Foraging Level 46"
@@ -2755,7 +2893,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLVII",
               "Foraging Level 47"
@@ -2774,7 +2913,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLVII",
               "Foraging Level 47"
@@ -2793,7 +2933,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLVII",
               "Foraging Level 47"
@@ -2814,7 +2955,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLVIII",
               "Foraging Level 48"
@@ -2833,7 +2975,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLVIII",
               "Foraging Level 48"
@@ -2852,7 +2995,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLVIII",
               "Foraging Level 48"
@@ -2873,7 +3017,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLIX",
               "Foraging Level 49"
@@ -2892,7 +3037,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLIX",
               "Foraging Level 49"
@@ -2911,7 +3057,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level XLIX",
               "Foraging Level 49"
@@ -2933,7 +3080,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level L",
               "Foraging Level 50"
@@ -2952,7 +3100,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level L",
               "Foraging Level 50"
@@ -2971,7 +3120,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level L",
               "Foraging Level 50"
@@ -2992,7 +3142,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LI",
               "Foraging Level 51"
@@ -3011,7 +3162,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LI",
               "Foraging Level 51"
@@ -3030,7 +3182,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LI",
               "Foraging Level 51"
@@ -3051,7 +3204,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LII",
               "Foraging Level 52"
@@ -3070,7 +3224,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LII",
               "Foraging Level 52"
@@ -3089,7 +3244,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LII",
               "Foraging Level 52"
@@ -3110,7 +3266,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LIII",
               "Foraging Level 53"
@@ -3129,7 +3286,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LIII",
               "Foraging Level 53"
@@ -3148,7 +3306,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LIII",
               "Foraging Level 53"
@@ -3169,7 +3328,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LIV",
               "Foraging Level 54"
@@ -3188,7 +3348,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LIV",
               "Foraging Level 54"
@@ -3207,7 +3368,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Foraging Level LIV",
               "Foraging Level 54"

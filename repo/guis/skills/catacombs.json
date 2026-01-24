@@ -32,7 +32,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery I",
               "Catacombs Mastery 1"
@@ -51,7 +52,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery I",
               "Catacombs Mastery 1"
@@ -70,7 +72,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery I",
               "Catacombs Mastery 1"
@@ -91,7 +94,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery II",
               "Catacombs Mastery 2"
@@ -110,7 +114,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery II",
               "Catacombs Mastery 2"
@@ -129,7 +134,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery II",
               "Catacombs Mastery 2"
@@ -150,7 +156,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery III",
               "Catacombs Mastery 3"
@@ -169,7 +176,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery III",
               "Catacombs Mastery 3"
@@ -188,7 +196,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery III",
               "Catacombs Mastery 3"
@@ -209,7 +218,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery IV",
               "Catacombs Mastery 4"
@@ -228,7 +238,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery IV",
               "Catacombs Mastery 4"
@@ -247,7 +258,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery IV",
               "Catacombs Mastery 4"
@@ -269,7 +281,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery V",
               "Catacombs Mastery 5"
@@ -288,7 +301,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery V",
               "Catacombs Mastery 5"
@@ -307,7 +321,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery V",
               "Catacombs Mastery 5"
@@ -328,7 +343,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery VI",
               "Catacombs Mastery 6"
@@ -347,7 +363,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery VI",
               "Catacombs Mastery 6"
@@ -366,7 +383,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery VI",
               "Catacombs Mastery 6"
@@ -387,7 +405,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery VII",
               "Catacombs Mastery 7"
@@ -406,7 +425,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery VII",
               "Catacombs Mastery 7"
@@ -425,7 +445,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery VII",
               "Catacombs Mastery 7"
@@ -446,7 +467,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery VIII",
               "Catacombs Mastery 8"
@@ -465,7 +487,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery VIII",
               "Catacombs Mastery 8"
@@ -484,7 +507,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery VIII",
               "Catacombs Mastery 8"
@@ -505,7 +529,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery IX",
               "Catacombs Mastery 9"
@@ -524,7 +549,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery IX",
               "Catacombs Mastery 9"
@@ -543,7 +569,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery IX",
               "Catacombs Mastery 9"
@@ -565,7 +592,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery X",
               "Catacombs Mastery 10"
@@ -584,7 +612,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery X",
               "Catacombs Mastery 10"
@@ -603,7 +632,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery X",
               "Catacombs Mastery 10"
@@ -624,7 +654,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XI",
               "Catacombs Mastery 11"
@@ -643,7 +674,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XI",
               "Catacombs Mastery 11"
@@ -662,7 +694,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XI",
               "Catacombs Mastery 11"
@@ -683,7 +716,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XII",
               "Catacombs Mastery 12"
@@ -702,7 +736,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XII",
               "Catacombs Mastery 12"
@@ -721,7 +756,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XII",
               "Catacombs Mastery 12"
@@ -742,7 +778,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XIII",
               "Catacombs Mastery 13"
@@ -761,7 +798,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XIII",
               "Catacombs Mastery 13"
@@ -780,7 +818,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XIII",
               "Catacombs Mastery 13"
@@ -801,7 +840,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XIV",
               "Catacombs Mastery 14"
@@ -820,7 +860,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XIV",
               "Catacombs Mastery 14"
@@ -839,7 +880,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XIV",
               "Catacombs Mastery 14"
@@ -861,7 +903,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XV",
               "Catacombs Mastery 15"
@@ -880,7 +923,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XV",
               "Catacombs Mastery 15"
@@ -899,7 +943,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XV",
               "Catacombs Mastery 15"
@@ -920,7 +965,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XVI",
               "Catacombs Mastery 16"
@@ -939,7 +985,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XVI",
               "Catacombs Mastery 16"
@@ -958,7 +1005,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XVI",
               "Catacombs Mastery 16"
@@ -979,7 +1027,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XVII",
               "Catacombs Mastery 17"
@@ -998,7 +1047,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XVII",
               "Catacombs Mastery 17"
@@ -1017,7 +1067,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XVII",
               "Catacombs Mastery 17"
@@ -1038,7 +1089,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XVIII",
               "Catacombs Mastery 18"
@@ -1057,7 +1109,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XVIII",
               "Catacombs Mastery 18"
@@ -1076,7 +1129,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XVIII",
               "Catacombs Mastery 18"
@@ -1097,7 +1151,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XIX",
               "Catacombs Mastery 19"
@@ -1116,7 +1171,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XIX",
               "Catacombs Mastery 19"
@@ -1135,7 +1191,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XIX",
               "Catacombs Mastery 19"
@@ -1157,7 +1214,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XX",
               "Catacombs Mastery 20"
@@ -1176,7 +1234,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XX",
               "Catacombs Mastery 20"
@@ -1195,7 +1254,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XX",
               "Catacombs Mastery 20"
@@ -1216,7 +1276,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXI",
               "Catacombs Mastery 21"
@@ -1235,7 +1296,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXI",
               "Catacombs Mastery 21"
@@ -1254,7 +1316,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXI",
               "Catacombs Mastery 21"
@@ -1275,7 +1338,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXII",
               "Catacombs Mastery 22"
@@ -1294,7 +1358,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXII",
               "Catacombs Mastery 22"
@@ -1313,7 +1378,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXII",
               "Catacombs Mastery 22"
@@ -1334,7 +1400,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXIII",
               "Catacombs Mastery 23"
@@ -1353,7 +1420,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXIII",
               "Catacombs Mastery 23"
@@ -1372,7 +1440,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXIII",
               "Catacombs Mastery 23"
@@ -1393,7 +1462,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXIV",
               "Catacombs Mastery 24"
@@ -1412,7 +1482,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXIV",
               "Catacombs Mastery 24"
@@ -1431,7 +1502,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXIV",
               "Catacombs Mastery 24"
@@ -1453,7 +1525,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXV",
               "Catacombs Mastery 25"
@@ -1472,7 +1545,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXV",
               "Catacombs Mastery 25"
@@ -1491,7 +1565,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXV",
               "Catacombs Mastery 25"
@@ -1512,7 +1587,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXVI",
               "Catacombs Mastery 26"
@@ -1531,7 +1607,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXVI",
               "Catacombs Mastery 26"
@@ -1550,7 +1627,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXVI",
               "Catacombs Mastery 26"
@@ -1571,7 +1649,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXVII",
               "Catacombs Mastery 27"
@@ -1590,7 +1669,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXVII",
               "Catacombs Mastery 27"
@@ -1609,7 +1689,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXVII",
               "Catacombs Mastery 27"
@@ -1630,7 +1711,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXVIII",
               "Catacombs Mastery 28"
@@ -1649,7 +1731,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXVIII",
               "Catacombs Mastery 28"
@@ -1668,7 +1751,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXVIII",
               "Catacombs Mastery 28"
@@ -1689,7 +1773,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXIX",
               "Catacombs Mastery 29"
@@ -1708,7 +1793,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXIX",
               "Catacombs Mastery 29"
@@ -1727,7 +1813,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXIX",
               "Catacombs Mastery 29"
@@ -1749,7 +1836,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXX",
               "Catacombs Mastery 30"
@@ -1768,7 +1856,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXX",
               "Catacombs Mastery 30"
@@ -1787,7 +1876,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXX",
               "Catacombs Mastery 30"
@@ -1808,7 +1898,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXI",
               "Catacombs Mastery 31"
@@ -1827,7 +1918,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXI",
               "Catacombs Mastery 31"
@@ -1846,7 +1938,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXI",
               "Catacombs Mastery 31"
@@ -1867,7 +1960,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXII",
               "Catacombs Mastery 32"
@@ -1886,7 +1980,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXII",
               "Catacombs Mastery 32"
@@ -1905,7 +2000,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXII",
               "Catacombs Mastery 32"
@@ -1926,7 +2022,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXIII",
               "Catacombs Mastery 33"
@@ -1945,7 +2042,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXIII",
               "Catacombs Mastery 33"
@@ -1964,7 +2062,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXIII",
               "Catacombs Mastery 33"
@@ -1985,7 +2084,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXIV",
               "Catacombs Mastery 34"
@@ -2004,7 +2104,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXIV",
               "Catacombs Mastery 34"
@@ -2023,7 +2124,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXIV",
               "Catacombs Mastery 34"
@@ -2045,7 +2147,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXV",
               "Catacombs Mastery 35"
@@ -2064,7 +2167,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXV",
               "Catacombs Mastery 35"
@@ -2083,7 +2187,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXV",
               "Catacombs Mastery 35"
@@ -2104,7 +2209,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXVI",
               "Catacombs Mastery 36"
@@ -2123,7 +2229,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXVI",
               "Catacombs Mastery 36"
@@ -2142,7 +2249,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXVI",
               "Catacombs Mastery 36"
@@ -2163,7 +2271,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXVII",
               "Catacombs Mastery 37"
@@ -2182,7 +2291,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXVII",
               "Catacombs Mastery 37"
@@ -2201,7 +2311,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXVII",
               "Catacombs Mastery 37"
@@ -2222,7 +2333,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXVIII",
               "Catacombs Mastery 38"
@@ -2241,7 +2353,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXVIII",
               "Catacombs Mastery 38"
@@ -2260,7 +2373,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXVIII",
               "Catacombs Mastery 38"
@@ -2281,7 +2395,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXIX",
               "Catacombs Mastery 39"
@@ -2300,7 +2415,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXIX",
               "Catacombs Mastery 39"
@@ -2319,7 +2435,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XXXIX",
               "Catacombs Mastery 39"
@@ -2341,7 +2458,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XL",
               "Catacombs Mastery 40"
@@ -2360,7 +2478,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XL",
               "Catacombs Mastery 40"
@@ -2379,7 +2498,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XL",
               "Catacombs Mastery 40"
@@ -2400,7 +2520,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLI",
               "Catacombs Mastery 41"
@@ -2419,7 +2540,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLI",
               "Catacombs Mastery 41"
@@ -2438,7 +2560,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLI",
               "Catacombs Mastery 41"
@@ -2459,7 +2582,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLII",
               "Catacombs Mastery 42"
@@ -2478,7 +2602,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLII",
               "Catacombs Mastery 42"
@@ -2497,7 +2622,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLII",
               "Catacombs Mastery 42"
@@ -2518,7 +2644,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLIII",
               "Catacombs Mastery 43"
@@ -2537,7 +2664,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLIII",
               "Catacombs Mastery 43"
@@ -2556,7 +2684,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLIII",
               "Catacombs Mastery 43"
@@ -2577,7 +2706,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLIV",
               "Catacombs Mastery 44"
@@ -2596,7 +2726,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLIV",
               "Catacombs Mastery 44"
@@ -2615,7 +2746,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLIV",
               "Catacombs Mastery 44"
@@ -2637,7 +2769,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLV",
               "Catacombs Mastery 45"
@@ -2656,7 +2789,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLV",
               "Catacombs Mastery 45"
@@ -2675,7 +2809,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLV",
               "Catacombs Mastery 45"
@@ -2696,7 +2831,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLVI",
               "Catacombs Mastery 46"
@@ -2715,7 +2851,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLVI",
               "Catacombs Mastery 46"
@@ -2734,7 +2871,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLVI",
               "Catacombs Mastery 46"
@@ -2755,7 +2893,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLVII",
               "Catacombs Mastery 47"
@@ -2774,7 +2913,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLVII",
               "Catacombs Mastery 47"
@@ -2793,7 +2933,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLVII",
               "Catacombs Mastery 47"
@@ -2814,7 +2955,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLVIII",
               "Catacombs Mastery 48"
@@ -2833,7 +2975,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLVIII",
               "Catacombs Mastery 48"
@@ -2852,7 +2995,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLVIII",
               "Catacombs Mastery 48"
@@ -2873,7 +3017,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLIX",
               "Catacombs Mastery 49"
@@ -2892,7 +3037,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLIX",
               "Catacombs Mastery 49"
@@ -2911,7 +3057,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery XLIX",
               "Catacombs Mastery 49"
@@ -2933,7 +3080,8 @@
             ]
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery L",
               "Catacombs Mastery 50"
@@ -2952,7 +3100,8 @@
             "items": "yellow_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery L",
               "Catacombs Mastery 50"
@@ -2971,7 +3120,8 @@
             "items": "red_stained_glass_pane"
           },
           {
-            "type": "name_equals",
+            "type": "name",
+            "mode": "equals",
             "name": [
               "Catacombs Mastery L",
               "Catacombs Mastery 50"

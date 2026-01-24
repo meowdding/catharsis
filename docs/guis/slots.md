@@ -14,9 +14,9 @@ Match against a slot where the tooltip is hidden.
 Match against a slot that has a specific component.
 
 <TreeView>
-<span><TypeIcon type="object"/> Root <b>component</b> slot condition object</span>
+<span><TypeIcon type="object"/> Root <b>component</b> has_component condition object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:slot`
+- <TypeIcon type="string"/> **type**: `catharsis:has_component`
 - <TypeIcon type="string"/> **component**: The component ID to check for.
 
 </TreeView>
@@ -42,7 +42,7 @@ Match against a slot by the item it contains.
 <span><TypeIcon type="object"/> Root <b>item</b> slot condition object</span>
 
 - <TypeIcon type="string"/> **type**: `catharsis:item`
-- <TypeIcon type="array"/> **items**: An array of item IDs to match against the slot's item.
+- <TypeIcon type="array"/> **items**: An array or a singular entry of item IDs to match against the slot's item.
 
 </TreeView>
 
@@ -54,7 +54,7 @@ Match against a slot by its SkyBlock ID.
 <span><TypeIcon type="object"/> Root <b>id</b> slot condition object</span>
 
 - <TypeIcon type="string"/> **type**: `catharsis:id`
-- <TypeIcon type="array"/> **ids**: An array of SkyBlock IDs to match against the slot's ID.
+- <TypeIcon type="array"/> **ids**: An array or a singular entry of SkyBlock IDs to match against the slot's ID.
 
 </TreeView>
 
@@ -66,7 +66,7 @@ Match against a slot by its index in the GUI.
 <span><TypeIcon type="object"/> Root <b>slot</b> slot condition object</span>
 
 - <TypeIcon type="string"/> **type**: `catharsis:slot`
-- <TypeIcon/> **slot**: A range defining the slot index to match against. Either a single number or an object with `min` and `max` properties or an array of such indices.
+- <TypeIcon/> **slot**: A range defining the slot index to match against. This can be a single number, an object with `min` and `max` properties or an array of such indices.
 
 </TreeView>
 
@@ -78,7 +78,7 @@ Match against the Player's current island.
 <span><TypeIcon type="object"/> Root <b>islands</b> slot condition object</span>
 
 - <TypeIcon type="string"/> **type**: `catharsis:islands`
-- <TypeIcon type="array"/> **islands**: A list of island ids to match against, names are equal to the value of `mode` in `/locraw` or the enum name in [SkyBlockIsland](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/location/SkyBlockIsland.kt).
+- <TypeIcon type="array"/> **islands**: A list or a singular entry of island ids to match against, names are equal to the value of `mode` in `/locraw` or the enum name in [SkyBlockIsland](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/location/SkyBlockIsland.kt).
 </TreeView>
 
 #### **All/And** (`catharsis:all`)

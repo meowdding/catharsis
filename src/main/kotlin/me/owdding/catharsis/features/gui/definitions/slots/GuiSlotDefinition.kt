@@ -11,6 +11,10 @@ data class GuiSlotDefinition(
 ) {
 
     fun matches(slot: Int, stack: ItemStack): Boolean {
+        // If cursor and only checking for slot index, fail the match
+        if (slot == -1 && target is SlotIndexCondition) {
+            return false
+        }
         return target.matches(slot, stack)
     }
 }

@@ -35,7 +35,6 @@ export default defineConfig({
             },
             {
                 text: "Gui Modifications",
-                link: "/guis/",
                 items: [
                     {text: "Gui Definitions", link: "/guis/definitions"},
                     {text: "Slot Definitions", link: "/guis/slots"},

@@ -1,4 +1,6 @@
 import java.nio.file.Path
+import kotlin.io.path.createParentDirectories
+import kotlin.io.path.writeText
 
 private val thousandsPlace = listOf("", "M", "MM", "MMM")
 private val hundredsPlace = listOf("", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM")
@@ -9,7 +11,7 @@ fun Int.toRomanNumeral(): String {
     return thousandsPlace[this / 1000] + hundredsPlace[this % 1000 / 100] + tensPlace[this % 100 / 10] + onesPlace[this % 10]
 }
 
-fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, type: String = "Level", title: String = "$skillName Skill", icon: String = title) {
+fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: String = skillName, type: String = "Level", title: String = "$skillName Skill", icon: String = title) {
 
     val nodes = (1..maxLevel).joinToString(",\n") { level ->
         var direction = when {
@@ -124,7 +126,9 @@ $nodes
 }
     """.trimIndent()
 
-    Path.of("guis/skills/${skillName.lowercase()}.json").toFile().writeText(base)
+    Path.of("guis/skills/${pathName.lowercase()}.json").apply {
+        createParentDirectories()
+    }.writeText(base)
 }
 
 createSkill("Combat", 60, "diamond_helmet")
@@ -137,8 +141,13 @@ createSkill("Alchemy", 50, "blaze_rod")
 createSkill("Carpentry", 50, "armor_stand")
 createSkill("Taming", 60, "golden_carrot")
 createSkill("Hunting", 60, null)
-createSkill("Catacombs", 50, "player_head", type = "Mastery", title = "Catacombs Rewards", icon = "Catacombs")
+createSkill("Catacombs", 50, "player_head", type = "Mastery", title = "Catacombs Rewards", icon = "Catacombs", pathName = "dungeons/catacombs")
 
 createSkill("Runecrafting", 25, "end_portal_frame")
 createSkill("Social", 25, "blaze_powder")
 
+createSkill("Healer", 50, "splash_potion", title = "Class Perks", icon = "Healer Class", pathName = "dungeons/healer")
+createSkill("Mage", 50, "blaze_rod", title = "Class Perks", icon = "Mage Class", pathName = "dungeons/mage")
+createSkill("Berserker", 50, "iron_sword", title = "Class Perks", icon = "Berserker Class", pathName = "dungeons/berserker")
+createSkill("Archer", 50, "bow", title = "Class Perks", icon = "Archer Class", pathName = "dungeons/archer")
+createSkill("Tank", 50, "leather_chestplate", title = "Class Perks", icon = "Tank Class", pathName = "dungeons/tank")

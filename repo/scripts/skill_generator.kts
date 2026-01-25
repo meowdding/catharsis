@@ -146,8 +146,8 @@ createSkill("Catacombs", 50, "player_head", type = "Mastery", title = "Catacombs
 createSkill("Runecrafting", 25, "end_portal_frame")
 createSkill("Social", 25, "blaze_powder")
 
-createSkill("Healer", 50, "splash_potion", title = "Class Perks", icon = "Healer Class", pathName = "dungeons/healer")
-createSkill("Mage", 50, "blaze_rod", title = "Class Perks", icon = "Mage Class", pathName = "dungeons/mage")
-createSkill("Berserker", 50, "iron_sword", title = "Class Perks", icon = "Berserker Class", pathName = "dungeons/berserker")
-createSkill("Archer", 50, "bow", title = "Class Perks", icon = "Archer Class", pathName = "dungeons/archer")
-createSkill("Tank", 50, "leather_chestplate", title = "Class Perks", icon = "Tank Class", pathName = "dungeons/tank")
+createSkill("Healer", 50, "splash_potion", title = "Healer Class Perks", icon = "Healer Class", pathName = "dungeons/healer")
+createSkill("Mage", 50, "blaze_rod", title = "Mage Class Perks", icon = "Mage Class", pathName = "dungeons/mage")
+createSkill("Berserk", 50, "iron_sword", title = "Berserk Class Perks", icon = "Berserk Class", pathName = "dungeons/berserk")
+createSkill("Archer", 50, "bow", title = "Archer Class Perks", icon = "Archer Class", pathName = "dungeons/archer")
+createSkill("Tank", 50, "leather_chestplate", title = "Tank Class Perks", icon = "Tank Class", pathName = "dungeons/tank")

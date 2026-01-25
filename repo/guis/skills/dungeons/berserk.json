@@ -1,17 +1,17 @@
 {
   "target": {
     "type": "title",
-    "title": "Class Perks"
+    "title": "Berserk Class Perks"
   },
   "layout": [
     {
-      "id": "skyblock_gui:skill/berserker/icon",
+      "id": "skyblock_gui:skill/berserk/icon",
       "target": {
         "type": "all",
         "conditions": [
           {
             "type": "name",
-            "name": "Berserker Class"
+            "name": "Berserk Class"
           },
           {
             "type": "slot",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -35,15 +35,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level I",
-              "Berserker Level 1"
+              "Berserk Level I",
+              "Berserk Level 1"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -55,15 +55,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level I",
-              "Berserker Level 1"
+              "Berserk Level I",
+              "Berserk Level 1"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -75,15 +75,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level I",
-              "Berserker Level 1"
+              "Berserk Level I",
+              "Berserk Level 1"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -97,15 +97,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level II",
-              "Berserker Level 2"
+              "Berserk Level II",
+              "Berserk Level 2"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -117,15 +117,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level II",
-              "Berserker Level 2"
+              "Berserk Level II",
+              "Berserk Level 2"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -137,15 +137,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level II",
-              "Berserker Level 2"
+              "Berserk Level II",
+              "Berserk Level 2"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -159,15 +159,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level III",
-              "Berserker Level 3"
+              "Berserk Level III",
+              "Berserk Level 3"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -179,15 +179,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level III",
-              "Berserker Level 3"
+              "Berserk Level III",
+              "Berserk Level 3"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_locked",
+      "id": "skyblock_gui:skill/berserk/up_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -199,15 +199,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level III",
-              "Berserker Level 3"
+              "Berserk Level III",
+              "Berserk Level 3"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -221,15 +221,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level IV",
-              "Berserker Level 4"
+              "Berserk Level IV",
+              "Berserk Level 4"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -241,15 +241,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level IV",
-              "Berserker Level 4"
+              "Berserk Level IV",
+              "Berserk Level 4"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_locked",
+      "id": "skyblock_gui:skill/berserk/left_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -261,15 +261,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level IV",
-              "Berserker Level 4"
+              "Berserk Level IV",
+              "Berserk Level 4"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -284,15 +284,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level V",
-              "Berserker Level 5"
+              "Berserk Level V",
+              "Berserk Level 5"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -304,15 +304,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level V",
-              "Berserker Level 5"
+              "Berserk Level V",
+              "Berserk Level 5"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_locked",
+      "id": "skyblock_gui:skill/berserk/left_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -324,15 +324,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level V",
-              "Berserker Level 5"
+              "Berserk Level V",
+              "Berserk Level 5"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -346,15 +346,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level VI",
-              "Berserker Level 6"
+              "Berserk Level VI",
+              "Berserk Level 6"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -366,15 +366,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level VI",
-              "Berserker Level 6"
+              "Berserk Level VI",
+              "Berserk Level 6"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_locked",
+      "id": "skyblock_gui:skill/berserk/down_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -386,15 +386,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level VI",
-              "Berserker Level 6"
+              "Berserk Level VI",
+              "Berserk Level 6"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -408,15 +408,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level VII",
-              "Berserker Level 7"
+              "Berserk Level VII",
+              "Berserk Level 7"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -428,15 +428,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level VII",
-              "Berserker Level 7"
+              "Berserk Level VII",
+              "Berserk Level 7"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_locked",
+      "id": "skyblock_gui:skill/berserk/down_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -448,15 +448,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level VII",
-              "Berserker Level 7"
+              "Berserk Level VII",
+              "Berserk Level 7"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -470,15 +470,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level VIII",
-              "Berserker Level 8"
+              "Berserk Level VIII",
+              "Berserk Level 8"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -490,15 +490,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level VIII",
-              "Berserker Level 8"
+              "Berserk Level VIII",
+              "Berserk Level 8"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_locked",
+      "id": "skyblock_gui:skill/berserk/down_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -510,15 +510,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level VIII",
-              "Berserker Level 8"
+              "Berserk Level VIII",
+              "Berserk Level 8"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -532,15 +532,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level IX",
-              "Berserker Level 9"
+              "Berserk Level IX",
+              "Berserk Level 9"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -552,15 +552,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level IX",
-              "Berserker Level 9"
+              "Berserk Level IX",
+              "Berserk Level 9"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_locked",
+      "id": "skyblock_gui:skill/berserk/left_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -572,15 +572,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level IX",
-              "Berserker Level 9"
+              "Berserk Level IX",
+              "Berserk Level 9"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -595,15 +595,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level X",
-              "Berserker Level 10"
+              "Berserk Level X",
+              "Berserk Level 10"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -615,15 +615,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level X",
-              "Berserker Level 10"
+              "Berserk Level X",
+              "Berserk Level 10"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_locked",
+      "id": "skyblock_gui:skill/berserk/left_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -635,15 +635,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level X",
-              "Berserker Level 10"
+              "Berserk Level X",
+              "Berserk Level 10"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -657,15 +657,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XI",
-              "Berserker Level 11"
+              "Berserk Level XI",
+              "Berserk Level 11"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -677,15 +677,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XI",
-              "Berserker Level 11"
+              "Berserk Level XI",
+              "Berserk Level 11"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -697,15 +697,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XI",
-              "Berserker Level 11"
+              "Berserk Level XI",
+              "Berserk Level 11"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -719,15 +719,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XII",
-              "Berserker Level 12"
+              "Berserk Level XII",
+              "Berserk Level 12"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -739,15 +739,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XII",
-              "Berserker Level 12"
+              "Berserk Level XII",
+              "Berserk Level 12"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -759,15 +759,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XII",
-              "Berserker Level 12"
+              "Berserk Level XII",
+              "Berserk Level 12"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -781,15 +781,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XIII",
-              "Berserker Level 13"
+              "Berserk Level XIII",
+              "Berserk Level 13"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -801,15 +801,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XIII",
-              "Berserker Level 13"
+              "Berserk Level XIII",
+              "Berserk Level 13"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_locked",
+      "id": "skyblock_gui:skill/berserk/up_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -821,15 +821,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XIII",
-              "Berserker Level 13"
+              "Berserk Level XIII",
+              "Berserk Level 13"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -843,15 +843,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XIV",
-              "Berserker Level 14"
+              "Berserk Level XIV",
+              "Berserk Level 14"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -863,15 +863,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XIV",
-              "Berserker Level 14"
+              "Berserk Level XIV",
+              "Berserk Level 14"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_locked",
+      "id": "skyblock_gui:skill/berserk/left_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -883,15 +883,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XIV",
-              "Berserker Level 14"
+              "Berserk Level XIV",
+              "Berserk Level 14"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -906,15 +906,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XV",
-              "Berserker Level 15"
+              "Berserk Level XV",
+              "Berserk Level 15"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -926,15 +926,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XV",
-              "Berserker Level 15"
+              "Berserk Level XV",
+              "Berserk Level 15"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_locked",
+      "id": "skyblock_gui:skill/berserk/left_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -946,15 +946,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XV",
-              "Berserker Level 15"
+              "Berserk Level XV",
+              "Berserk Level 15"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -968,15 +968,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XVI",
-              "Berserker Level 16"
+              "Berserk Level XVI",
+              "Berserk Level 16"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -988,15 +988,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XVI",
-              "Berserker Level 16"
+              "Berserk Level XVI",
+              "Berserk Level 16"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_locked",
+      "id": "skyblock_gui:skill/berserk/down_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1008,15 +1008,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XVI",
-              "Berserker Level 16"
+              "Berserk Level XVI",
+              "Berserk Level 16"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1030,15 +1030,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XVII",
-              "Berserker Level 17"
+              "Berserk Level XVII",
+              "Berserk Level 17"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1050,15 +1050,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XVII",
-              "Berserker Level 17"
+              "Berserk Level XVII",
+              "Berserk Level 17"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_locked",
+      "id": "skyblock_gui:skill/berserk/down_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1070,15 +1070,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XVII",
-              "Berserker Level 17"
+              "Berserk Level XVII",
+              "Berserk Level 17"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1092,15 +1092,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XVIII",
-              "Berserker Level 18"
+              "Berserk Level XVIII",
+              "Berserk Level 18"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1112,15 +1112,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XVIII",
-              "Berserker Level 18"
+              "Berserk Level XVIII",
+              "Berserk Level 18"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_locked",
+      "id": "skyblock_gui:skill/berserk/down_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1132,15 +1132,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XVIII",
-              "Berserker Level 18"
+              "Berserk Level XVIII",
+              "Berserk Level 18"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1154,15 +1154,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XIX",
-              "Berserker Level 19"
+              "Berserk Level XIX",
+              "Berserk Level 19"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1174,15 +1174,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XIX",
-              "Berserker Level 19"
+              "Berserk Level XIX",
+              "Berserk Level 19"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_locked",
+      "id": "skyblock_gui:skill/berserk/left_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1194,15 +1194,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XIX",
-              "Berserker Level 19"
+              "Berserk Level XIX",
+              "Berserk Level 19"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1217,15 +1217,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XX",
-              "Berserker Level 20"
+              "Berserk Level XX",
+              "Berserk Level 20"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1237,15 +1237,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XX",
-              "Berserker Level 20"
+              "Berserk Level XX",
+              "Berserk Level 20"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_locked",
+      "id": "skyblock_gui:skill/berserk/left_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1257,15 +1257,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XX",
-              "Berserker Level 20"
+              "Berserk Level XX",
+              "Berserk Level 20"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1279,15 +1279,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXI",
-              "Berserker Level 21"
+              "Berserk Level XXI",
+              "Berserk Level 21"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1299,15 +1299,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXI",
-              "Berserker Level 21"
+              "Berserk Level XXI",
+              "Berserk Level 21"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1319,15 +1319,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXI",
-              "Berserker Level 21"
+              "Berserk Level XXI",
+              "Berserk Level 21"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1341,15 +1341,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXII",
-              "Berserker Level 22"
+              "Berserk Level XXII",
+              "Berserk Level 22"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1361,15 +1361,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXII",
-              "Berserker Level 22"
+              "Berserk Level XXII",
+              "Berserk Level 22"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1381,15 +1381,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXII",
-              "Berserker Level 22"
+              "Berserk Level XXII",
+              "Berserk Level 22"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1403,15 +1403,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXIII",
-              "Berserker Level 23"
+              "Berserk Level XXIII",
+              "Berserk Level 23"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1423,15 +1423,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXIII",
-              "Berserker Level 23"
+              "Berserk Level XXIII",
+              "Berserk Level 23"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1443,15 +1443,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXIII",
-              "Berserker Level 23"
+              "Berserk Level XXIII",
+              "Berserk Level 23"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1465,15 +1465,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXIV",
-              "Berserker Level 24"
+              "Berserk Level XXIV",
+              "Berserk Level 24"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1485,15 +1485,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXIV",
-              "Berserker Level 24"
+              "Berserk Level XXIV",
+              "Berserk Level 24"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1505,15 +1505,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXIV",
-              "Berserker Level 24"
+              "Berserk Level XXIV",
+              "Berserk Level 24"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_end_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_end_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1528,15 +1528,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXV",
-              "Berserker Level 25"
+              "Berserk Level XXV",
+              "Berserk Level 25"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_end_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_end_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1548,15 +1548,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXV",
-              "Berserker Level 25"
+              "Berserk Level XXV",
+              "Berserk Level 25"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_end_locked",
+      "id": "skyblock_gui:skill/berserk/up_end_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1568,15 +1568,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXV",
-              "Berserker Level 25"
+              "Berserk Level XXV",
+              "Berserk Level 25"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1590,15 +1590,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXVI",
-              "Berserker Level 26"
+              "Berserk Level XXVI",
+              "Berserk Level 26"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1610,15 +1610,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXVI",
-              "Berserker Level 26"
+              "Berserk Level XXVI",
+              "Berserk Level 26"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_locked",
+      "id": "skyblock_gui:skill/berserk/down_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1630,15 +1630,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXVI",
-              "Berserker Level 26"
+              "Berserk Level XXVI",
+              "Berserk Level 26"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1652,15 +1652,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXVII",
-              "Berserker Level 27"
+              "Berserk Level XXVII",
+              "Berserk Level 27"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1672,15 +1672,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXVII",
-              "Berserker Level 27"
+              "Berserk Level XXVII",
+              "Berserk Level 27"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_locked",
+      "id": "skyblock_gui:skill/berserk/down_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1692,15 +1692,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXVII",
-              "Berserker Level 27"
+              "Berserk Level XXVII",
+              "Berserk Level 27"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1714,15 +1714,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXVIII",
-              "Berserker Level 28"
+              "Berserk Level XXVIII",
+              "Berserk Level 28"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1734,15 +1734,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXVIII",
-              "Berserker Level 28"
+              "Berserk Level XXVIII",
+              "Berserk Level 28"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_locked",
+      "id": "skyblock_gui:skill/berserk/down_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1754,15 +1754,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXVIII",
-              "Berserker Level 28"
+              "Berserk Level XXVIII",
+              "Berserk Level 28"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1776,15 +1776,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXIX",
-              "Berserker Level 29"
+              "Berserk Level XXIX",
+              "Berserk Level 29"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1796,15 +1796,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXIX",
-              "Berserker Level 29"
+              "Berserk Level XXIX",
+              "Berserk Level 29"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_locked",
+      "id": "skyblock_gui:skill/berserk/left_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1816,15 +1816,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXIX",
-              "Berserker Level 29"
+              "Berserk Level XXIX",
+              "Berserk Level 29"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1839,15 +1839,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXX",
-              "Berserker Level 30"
+              "Berserk Level XXX",
+              "Berserk Level 30"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1859,15 +1859,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXX",
-              "Berserker Level 30"
+              "Berserk Level XXX",
+              "Berserk Level 30"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_locked",
+      "id": "skyblock_gui:skill/berserk/left_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1879,15 +1879,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXX",
-              "Berserker Level 30"
+              "Berserk Level XXX",
+              "Berserk Level 30"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1901,15 +1901,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXI",
-              "Berserker Level 31"
+              "Berserk Level XXXI",
+              "Berserk Level 31"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1921,15 +1921,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXI",
-              "Berserker Level 31"
+              "Berserk Level XXXI",
+              "Berserk Level 31"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1941,15 +1941,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXI",
-              "Berserker Level 31"
+              "Berserk Level XXXI",
+              "Berserk Level 31"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1963,15 +1963,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXII",
-              "Berserker Level 32"
+              "Berserk Level XXXII",
+              "Berserk Level 32"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1983,15 +1983,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXII",
-              "Berserker Level 32"
+              "Berserk Level XXXII",
+              "Berserk Level 32"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2003,15 +2003,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXII",
-              "Berserker Level 32"
+              "Berserk Level XXXII",
+              "Berserk Level 32"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2025,15 +2025,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXIII",
-              "Berserker Level 33"
+              "Berserk Level XXXIII",
+              "Berserk Level 33"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2045,15 +2045,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXIII",
-              "Berserker Level 33"
+              "Berserk Level XXXIII",
+              "Berserk Level 33"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_locked",
+      "id": "skyblock_gui:skill/berserk/up_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2065,15 +2065,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXIII",
-              "Berserker Level 33"
+              "Berserk Level XXXIII",
+              "Berserk Level 33"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2087,15 +2087,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXIV",
-              "Berserker Level 34"
+              "Berserk Level XXXIV",
+              "Berserk Level 34"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2107,15 +2107,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXIV",
-              "Berserker Level 34"
+              "Berserk Level XXXIV",
+              "Berserk Level 34"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_locked",
+      "id": "skyblock_gui:skill/berserk/left_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2127,15 +2127,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXIV",
-              "Berserker Level 34"
+              "Berserk Level XXXIV",
+              "Berserk Level 34"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2150,15 +2150,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXV",
-              "Berserker Level 35"
+              "Berserk Level XXXV",
+              "Berserk Level 35"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2170,15 +2170,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXV",
-              "Berserker Level 35"
+              "Berserk Level XXXV",
+              "Berserk Level 35"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_locked",
+      "id": "skyblock_gui:skill/berserk/left_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2190,15 +2190,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXV",
-              "Berserker Level 35"
+              "Berserk Level XXXV",
+              "Berserk Level 35"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2212,15 +2212,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXVI",
-              "Berserker Level 36"
+              "Berserk Level XXXVI",
+              "Berserk Level 36"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2232,15 +2232,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXVI",
-              "Berserker Level 36"
+              "Berserk Level XXXVI",
+              "Berserk Level 36"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_locked",
+      "id": "skyblock_gui:skill/berserk/down_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2252,15 +2252,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXVI",
-              "Berserker Level 36"
+              "Berserk Level XXXVI",
+              "Berserk Level 36"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2274,15 +2274,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXVII",
-              "Berserker Level 37"
+              "Berserk Level XXXVII",
+              "Berserk Level 37"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2294,15 +2294,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXVII",
-              "Berserker Level 37"
+              "Berserk Level XXXVII",
+              "Berserk Level 37"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_locked",
+      "id": "skyblock_gui:skill/berserk/down_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2314,15 +2314,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXVII",
-              "Berserker Level 37"
+              "Berserk Level XXXVII",
+              "Berserk Level 37"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2336,15 +2336,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXVIII",
-              "Berserker Level 38"
+              "Berserk Level XXXVIII",
+              "Berserk Level 38"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2356,15 +2356,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXVIII",
-              "Berserker Level 38"
+              "Berserk Level XXXVIII",
+              "Berserk Level 38"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_right_locked",
+      "id": "skyblock_gui:skill/berserk/down_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2376,15 +2376,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXVIII",
-              "Berserker Level 38"
+              "Berserk Level XXXVIII",
+              "Berserk Level 38"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2398,15 +2398,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXIX",
-              "Berserker Level 39"
+              "Berserk Level XXXIX",
+              "Berserk Level 39"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2418,15 +2418,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXIX",
-              "Berserker Level 39"
+              "Berserk Level XXXIX",
+              "Berserk Level 39"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_locked",
+      "id": "skyblock_gui:skill/berserk/left_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2438,15 +2438,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XXXIX",
-              "Berserker Level 39"
+              "Berserk Level XXXIX",
+              "Berserk Level 39"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2461,15 +2461,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XL",
-              "Berserker Level 40"
+              "Berserk Level XL",
+              "Berserk Level 40"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2481,15 +2481,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XL",
-              "Berserker Level 40"
+              "Berserk Level XL",
+              "Berserk Level 40"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_down_locked",
+      "id": "skyblock_gui:skill/berserk/left_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2501,15 +2501,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XL",
-              "Berserker Level 40"
+              "Berserk Level XL",
+              "Berserk Level 40"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2523,15 +2523,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLI",
-              "Berserker Level 41"
+              "Berserk Level XLI",
+              "Berserk Level 41"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2543,15 +2543,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLI",
-              "Berserker Level 41"
+              "Berserk Level XLI",
+              "Berserk Level 41"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2563,15 +2563,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLI",
-              "Berserker Level 41"
+              "Berserk Level XLI",
+              "Berserk Level 41"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2585,15 +2585,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLII",
-              "Berserker Level 42"
+              "Berserk Level XLII",
+              "Berserk Level 42"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2605,15 +2605,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLII",
-              "Berserker Level 42"
+              "Berserk Level XLII",
+              "Berserk Level 42"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2625,15 +2625,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLII",
-              "Berserker Level 42"
+              "Berserk Level XLII",
+              "Berserk Level 42"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2647,15 +2647,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLIII",
-              "Berserker Level 43"
+              "Berserk Level XLIII",
+              "Berserk Level 43"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2667,15 +2667,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLIII",
-              "Berserker Level 43"
+              "Berserk Level XLIII",
+              "Berserk Level 43"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_right_locked",
+      "id": "skyblock_gui:skill/berserk/up_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2687,15 +2687,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLIII",
-              "Berserker Level 43"
+              "Berserk Level XLIII",
+              "Berserk Level 43"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2709,15 +2709,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLIV",
-              "Berserker Level 44"
+              "Berserk Level XLIV",
+              "Berserk Level 44"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2729,15 +2729,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLIV",
-              "Berserker Level 44"
+              "Berserk Level XLIV",
+              "Berserk Level 44"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_right_locked",
+      "id": "skyblock_gui:skill/berserk/left_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2749,15 +2749,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLIV",
-              "Berserker Level 44"
+              "Berserk Level XLIV",
+              "Berserk Level 44"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/left_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2772,15 +2772,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLV",
-              "Berserker Level 45"
+              "Berserk Level XLV",
+              "Berserk Level 45"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/left_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2792,15 +2792,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLV",
-              "Berserker Level 45"
+              "Berserk Level XLV",
+              "Berserk Level 45"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/left_up_locked",
+      "id": "skyblock_gui:skill/berserk/left_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2812,15 +2812,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLV",
-              "Berserker Level 45"
+              "Berserk Level XLV",
+              "Berserk Level 45"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2834,15 +2834,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLVI",
-              "Berserker Level 46"
+              "Berserk Level XLVI",
+              "Berserk Level 46"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2854,15 +2854,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLVI",
-              "Berserker Level 46"
+              "Berserk Level XLVI",
+              "Berserk Level 46"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_locked",
+      "id": "skyblock_gui:skill/berserk/down_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2874,15 +2874,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLVI",
-              "Berserker Level 46"
+              "Berserk Level XLVI",
+              "Berserk Level 46"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocked",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2896,15 +2896,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLVII",
-              "Berserker Level 47"
+              "Berserk Level XLVII",
+              "Berserk Level 47"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_unlocking",
+      "id": "skyblock_gui:skill/berserk/down_up_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2916,15 +2916,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLVII",
-              "Berserker Level 47"
+              "Berserk Level XLVII",
+              "Berserk Level 47"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/down_up_locked",
+      "id": "skyblock_gui:skill/berserk/down_up_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2936,15 +2936,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLVII",
-              "Berserker Level 47"
+              "Berserk Level XLVII",
+              "Berserk Level 47"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2958,15 +2958,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLVIII",
-              "Berserker Level 48"
+              "Berserk Level XLVIII",
+              "Berserk Level 48"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2978,15 +2978,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLVIII",
-              "Berserker Level 48"
+              "Berserk Level XLVIII",
+              "Berserk Level 48"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2998,15 +2998,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLVIII",
-              "Berserker Level 48"
+              "Berserk Level XLVIII",
+              "Berserk Level 48"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3020,15 +3020,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLIX",
-              "Berserker Level 49"
+              "Berserk Level XLIX",
+              "Berserk Level 49"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3040,15 +3040,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLIX",
-              "Berserker Level 49"
+              "Berserk Level XLIX",
+              "Berserk Level 49"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_down_locked",
+      "id": "skyblock_gui:skill/berserk/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3060,15 +3060,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level XLIX",
-              "Berserker Level 49"
+              "Berserk Level XLIX",
+              "Berserk Level 49"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_end_unlocked",
+      "id": "skyblock_gui:skill/berserk/up_end_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3083,15 +3083,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level L",
-              "Berserker Level 50"
+              "Berserk Level L",
+              "Berserk Level 50"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_end_unlocking",
+      "id": "skyblock_gui:skill/berserk/up_end_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3103,15 +3103,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level L",
-              "Berserker Level 50"
+              "Berserk Level L",
+              "Berserk Level 50"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/berserker/up_end_locked",
+      "id": "skyblock_gui:skill/berserk/up_end_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3123,8 +3123,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Berserker Level L",
-              "Berserker Level 50"
+              "Berserk Level L",
+              "Berserk Level 50"
             ]
           }
         ]

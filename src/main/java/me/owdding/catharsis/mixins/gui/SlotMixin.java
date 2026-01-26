@@ -48,6 +48,8 @@ public class SlotMixin implements SlotHook {
 
     @Inject(method = "setChanged", at = @At("TAIL"))
     private void catharsis$onSetChanged(CallbackInfo ci) {
+        if (SlotHook.INITIALIZING.get() == Boolean.TRUE) return;
+
         var self = (Slot) (Object) this;
         var menuScreen = McScreen.INSTANCE.getAsMenu();
         if (menuScreen == null) return;

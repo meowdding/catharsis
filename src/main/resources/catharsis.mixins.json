@@ -1,48 +1,49 @@
 {
-  "required": true,
-  "minVersion": "0.8",
-  "package": "me.owdding.catharsis.mixins",
-  "compatibilityLevel": "JAVA_21",
-  "client": [
-    "armor.ComponentContentsMixin",
-    "armor.EquipmentLayerRendererMixin",
-    "armor.HumanoidArmorModelMixin",
-    "armor.HumanoidModelMixin",
-    "armor.LivingEntityRenderStateMixin",
-    "armor.SelectItemModelPropertyTypeMixin",
-    "gui.AbstractContainerScreenElementsMixin",
-    "gui.AbstractContainerScreenSlotsMixin",
-    "gui.SlotMixin",
-    "items.AbstractContainerScreenMixin",
-    "items.ItemModelResolverMixin",
-    "items.ItemStackRenderStateMixin",
-    "items.ModelManagerMixin",
-    "pack.FolderPackDetectorMixin",
-    "pack.PackDetectorMixin",
-    "pack.PackMixin",
-    "pack.PackMixin$MetadataMixin",
-    "pack.PackSelectionModelEntryBaseMixin",
-    "pack.PackSelectionScreenDropMixin",
-    "pack.TransferableSelectionListPackEntryMixin",
-    "sounds.LevelEventHandlerMixin",
-    "sounds.MultiPlayerGameModeMixin",
-    "text.ItemLoreMixin",
-    "text.ItemStackMixin",
-    "textures.TextureManagerMixin"
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  },
-  "overwrites": {
-    "requireAnnotations": true
-  },
-  "mixinextras": {
-    "minVersion": "0.5.0"
-  },
-  "mixins": [
-    "pack.PathPackResourcesMixin",
-    "sounds.BlockItemMixin",
-    "sounds.EntityMixin",
-    "sounds.LivingEntityMixin"
-  ]
+    "required": true,
+    "minVersion": "0.8",
+    "package": "me.owdding.catharsis.mixins",
+    "compatibilityLevel": "JAVA_21",
+    "client": [
+        "armor.ComponentContentsMixin",
+        "armor.EquipmentLayerRendererMixin",
+        "armor.HumanoidArmorModelMixin",
+        "armor.HumanoidModelMixin",
+        "armor.LivingEntityRenderStateMixin",
+        "armor.SelectItemModelPropertyTypeMixin",
+        "gui.AbstractContainerScreenElementsMixin",
+        "gui.AbstractContainerScreenSlotsMixin",
+        "gui.SlotMixin",
+        "items.AbstractContainerScreenMixin",
+        "items.ItemModelResolverMixin",
+        "items.ItemStackRenderStateMixin",
+        "items.ModelManagerMixin",
+        "pack.FolderPackDetectorMixin",
+        "pack.PackDetectorMixin",
+        "pack.PackMixin",
+        "pack.PackMixin$MetadataMixin",
+        "pack.PackSelectionModelEntryBaseMixin",
+        "pack.PackSelectionScreenDropMixin",
+        "pack.TransferableSelectionListPackEntryMixin",
+        "sounds.LevelEventHandlerMixin",
+        "sounds.MultiPlayerGameModeMixin",
+        "text.ItemLoreMixin",
+        "text.ItemStackMixin",
+        "textures.TextureManagerMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "overwrites": {
+        "requireAnnotations": true
+    },
+    "mixinextras": {
+        "minVersion": "0.5.0"
+    },
+    "mixins": [
+        "gui.AbstractContainerMenuMixin",
+        "pack.PathPackResourcesMixin",
+        "sounds.BlockItemMixin",
+        "sounds.EntityMixin",
+        "sounds.LivingEntityMixin"
+    ]
 }

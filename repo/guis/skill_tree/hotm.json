@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -22,7 +22,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -39,7 +39,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -56,7 +56,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost_locked",
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -73,7 +73,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/pickobulus_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/pickobulus/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -90,7 +90,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/pickobulus_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/pickobulus/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -107,7 +107,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/pickobulus_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/pickobulus/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -124,7 +124,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/pickobulus_locked",
+      "id": "skyblock_gui:skill_tree/hotm/pickobulus/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -141,7 +141,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -158,7 +158,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -175,7 +175,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -192,7 +192,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision_locked",
+      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -209,7 +209,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/maniac_miner_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/maniac_miner/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -226,7 +226,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/maniac_miner_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/maniac_miner/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -243,7 +243,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/maniac_miner_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/maniac_miner/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -260,7 +260,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/maniac_miner_locked",
+      "id": "skyblock_gui:skill_tree/hotm/maniac_miner/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -277,7 +277,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -294,7 +294,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -311,7 +311,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -328,7 +328,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion_locked",
+      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -345,7 +345,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/sheer_force_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/sheer_force/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -362,7 +362,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/sheer_force_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/sheer_force/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -379,7 +379,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/sheer_force_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/sheer_force/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -396,7 +396,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/sheer_force_locked",
+      "id": "skyblock_gui:skill_tree/hotm/sheer_force/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -413,7 +413,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -430,7 +430,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -447,7 +447,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -464,7 +464,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_locked",
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -481,7 +481,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/precision_mining_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/precision_mining/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -498,7 +498,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/precision_mining_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/precision_mining/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -515,7 +515,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/precision_mining_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/precision_mining/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -532,7 +532,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/precision_mining_locked",
+      "id": "skyblock_gui:skill_tree/hotm/precision_mining/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -549,7 +549,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_fortune_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -566,7 +566,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/mining_fortune_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -583,7 +583,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_fortune_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -600,7 +600,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_fortune_locked",
+      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -617,7 +617,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -634,7 +634,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -651,7 +651,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -668,7 +668,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium_locked",
+      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -685,7 +685,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -702,7 +702,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -719,7 +719,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -736,7 +736,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave_locked",
+      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -753,7 +753,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/efficient_miner_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -770,7 +770,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/efficient_miner_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -787,7 +787,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/efficient_miner_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -804,7 +804,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/efficient_miner_locked",
+      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -821,7 +821,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/quick_forge_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/quick_forge/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -838,7 +838,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/quick_forge_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/quick_forge/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -855,7 +855,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/quick_forge_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/quick_forge/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -872,7 +872,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/quick_forge_locked",
+      "id": "skyblock_gui:skill_tree/hotm/quick_forge/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -889,7 +889,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/sky_mall_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/sky_mall/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -906,7 +906,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/sky_mall_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/sky_mall/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -923,7 +923,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/sky_mall_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/sky_mall/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -940,7 +940,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/sky_mall_locked",
+      "id": "skyblock_gui:skill_tree/hotm/sky_mall/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -957,7 +957,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/old_school_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/old_school/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -974,7 +974,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/old_school_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/old_school/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -991,7 +991,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/old_school_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/old_school/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1008,7 +1008,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/old_school_locked",
+      "id": "skyblock_gui:skill_tree/hotm/old_school/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1025,7 +1025,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/professional_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/professional/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1042,7 +1042,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/professional_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/professional/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1059,7 +1059,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/professional_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/professional/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1076,7 +1076,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/professional_locked",
+      "id": "skyblock_gui:skill_tree/hotm/professional/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1093,7 +1093,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mole_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/mole/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1110,7 +1110,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/mole_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/mole/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1127,7 +1127,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mole_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/mole/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1144,7 +1144,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/mole_locked",
+      "id": "skyblock_gui:skill_tree/hotm/mole/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1161,7 +1161,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/gem_lover_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/gem_lover/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1178,7 +1178,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/gem_lover_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/gem_lover/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1195,7 +1195,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/gem_lover_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/gem_lover/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1212,7 +1212,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/gem_lover_locked",
+      "id": "skyblock_gui:skill_tree/hotm/gem_lover/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1229,7 +1229,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1246,7 +1246,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1263,7 +1263,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1280,7 +1280,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman_locked",
+      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1297,7 +1297,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/front_loaded_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/front_loaded/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1314,7 +1314,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/front_loaded_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/front_loaded/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1331,7 +1331,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/front_loaded_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/front_loaded/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1348,7 +1348,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/front_loaded_locked",
+      "id": "skyblock_gui:skill_tree/hotm/front_loaded/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1365,7 +1365,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/daily_grind_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/daily_grind/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1382,7 +1382,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/daily_grind_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/daily_grind/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1399,7 +1399,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/daily_grind_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/daily_grind/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1416,7 +1416,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/daily_grind_locked",
+      "id": "skyblock_gui:skill_tree/hotm/daily_grind/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1433,7 +1433,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain_locked",
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1450,7 +1450,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1467,7 +1467,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/daily_powder_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/daily_powder/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1484,7 +1484,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/daily_powder_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/daily_powder/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1501,7 +1501,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/daily_powder_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/daily_powder/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1518,7 +1518,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/daily_powder_locked",
+      "id": "skyblock_gui:skill_tree/hotm/daily_powder/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1535,7 +1535,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/blockhead_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/blockhead/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1552,7 +1552,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/blockhead_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/blockhead/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1569,7 +1569,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/blockhead_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/blockhead/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1586,7 +1586,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/blockhead_locked",
+      "id": "skyblock_gui:skill_tree/hotm/blockhead/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1603,7 +1603,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1620,7 +1620,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1637,7 +1637,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1654,7 +1654,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher_locked",
+      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1671,7 +1671,7 @@
       }
     },
       {
-      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1688,7 +1688,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1705,7 +1705,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1722,7 +1722,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool_locked",
+      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1739,7 +1739,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1756,7 +1756,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1773,7 +1773,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1790,7 +1790,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner_locked",
+      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1807,7 +1807,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/great_explorer_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/great_explorer/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1824,7 +1824,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/great_explorer_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/great_explorer/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1841,7 +1841,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/great_explorer_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/great_explorer/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1858,7 +1858,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/great_explorer_locked",
+      "id": "skyblock_gui:skill_tree/hotm/great_explorer/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1875,7 +1875,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1892,7 +1892,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1909,7 +1909,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1926,7 +1926,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman_locked",
+      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1943,7 +1943,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/powder_buff_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/powder_buff/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1960,7 +1960,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/powder_buff_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/powder_buff/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -1977,7 +1977,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/powder_buff_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/powder_buff/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -1994,7 +1994,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/powder_buff_locked",
+      "id": "skyblock_gui:skill_tree/hotm/powder_buff/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2011,7 +2011,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2028,7 +2028,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2045,7 +2045,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2062,7 +2062,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman_locked",
+      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2079,7 +2079,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/miners_blessing_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/miners_blessing/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2096,7 +2096,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/miners_blessing_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/miners_blessing/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2113,7 +2113,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/miners_blessing_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/miners_blessing/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2130,7 +2130,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/miners_blessing_locked",
+      "id": "skyblock_gui:skill_tree/hotm/miners_blessing/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2147,7 +2147,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2164,7 +2164,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2181,7 +2181,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2198,7 +2198,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned_locked",
+      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2215,7 +2215,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/strong_arm_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/strong_arm/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2232,7 +2232,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/strong_arm_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/strong_arm/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2249,7 +2249,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/strong_arm_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/strong_arm/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2266,7 +2266,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/strong_arm_locked",
+      "id": "skyblock_gui:skill_tree/hotm/strong_arm/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2283,7 +2283,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/steady_hand_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/steady_hand/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2300,7 +2300,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/steady_hand_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/steady_hand/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2317,7 +2317,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/steady_hand_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/steady_hand/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2334,7 +2334,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/steady_hand_locked",
+      "id": "skyblock_gui:skill_tree/hotm/steady_hand/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2351,7 +2351,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/warm_heart_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/warm_heart/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2368,7 +2368,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/warm_heart_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/warm_heart/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2385,7 +2385,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/warm_heart_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/warm_heart/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2402,7 +2402,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/warm_heart_locked",
+      "id": "skyblock_gui:skill_tree/hotm/warm_heart/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2419,7 +2419,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/surveyor_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/surveyor/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2436,7 +2436,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/surveyor_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/surveyor/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2453,7 +2453,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/surveyor_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/surveyor/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2470,7 +2470,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/surveyor_locked",
+      "id": "skyblock_gui:skill_tree/hotm/surveyor/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2487,7 +2487,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2504,7 +2504,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2521,7 +2521,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2538,7 +2538,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem_locked",
+      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2555,7 +2555,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/metal_head_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/metal_head/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2572,7 +2572,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/metal_head_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/metal_head/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2589,7 +2589,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/metal_head_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/metal_head/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2606,7 +2606,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/metal_head_locked",
+      "id": "skyblock_gui:skill_tree/hotm/metal_head/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2623,7 +2623,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2640,7 +2640,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2657,7 +2657,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2674,7 +2674,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches_locked",
+      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2691,7 +2691,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2708,7 +2708,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2725,7 +2725,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2742,7 +2742,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer_locked",
+      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2759,7 +2759,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/crystalline_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/crystalline/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2776,7 +2776,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/crystalline_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/crystalline/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2793,7 +2793,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/crystalline_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/crystalline/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2810,7 +2810,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/crystalline_locked",
+      "id": "skyblock_gui:skill_tree/hotm/crystalline/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2827,7 +2827,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2844,7 +2844,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2861,7 +2861,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2878,7 +2878,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed_locked",
+      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2895,7 +2895,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_master_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/mining_master/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2912,7 +2912,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/mining_master_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/mining_master/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2929,7 +2929,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_master_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/mining_master/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -2946,7 +2946,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_master_locked",
+      "id": "skyblock_gui:skill_tree/hotm/mining_master/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2963,7 +2963,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2980,7 +2980,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -2997,7 +2997,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -3014,7 +3014,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest_locked",
+      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3031,7 +3031,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3048,7 +3048,7 @@
       }
     },
      {
-      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker_maxed",
+      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/maxed",
       "target": {
         "type": "all",
         "conditions": [
@@ -3065,7 +3065,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker_disabled",
+      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -3082,7 +3082,7 @@
       }
     },       
     {
-      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker_locked",
+      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3099,7 +3099,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_1_locked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_1/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3116,7 +3116,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_1_next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_1/next",
       "target": {
         "type": "all",
         "conditions": [
@@ -3133,7 +3133,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_1_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_1/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3150,7 +3150,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_2_locked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_2/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3167,7 +3167,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_2_next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_2/next",
       "target": {
         "type": "all",
         "conditions": [
@@ -3184,7 +3184,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_2_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_2/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3201,7 +3201,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_3_locked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_3/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3218,7 +3218,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_3_next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_3/next",
       "target": {
         "type": "all",
         "conditions": [
@@ -3235,7 +3235,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_3_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_3/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3252,7 +3252,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_4_locked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_4/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3269,7 +3269,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_4_next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_4/next",
       "target": {
         "type": "all",
         "conditions": [
@@ -3286,7 +3286,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_4_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_4/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3303,7 +3303,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_5_locked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_5/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3320,7 +3320,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_5_next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_5/next",
       "target": {
         "type": "all",
         "conditions": [
@@ -3337,7 +3337,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_5_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_5/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3354,7 +3354,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_6_locked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_6/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3371,7 +3371,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_6_next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_6/next",
       "target": {
         "type": "all",
         "conditions": [
@@ -3388,7 +3388,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_6_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_6/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3405,7 +3405,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_7_locked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_7/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3422,7 +3422,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_7_next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_7/next",
       "target": {
         "type": "all",
         "conditions": [
@@ -3439,7 +3439,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_7_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_7/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3456,7 +3456,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_8_locked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_8/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3473,7 +3473,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_8_next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_8/next",
       "target": {
         "type": "all",
         "conditions": [
@@ -3490,7 +3490,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_8_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_8/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3507,7 +3507,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_9_locked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_9/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3524,7 +3524,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_9_next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_9/next",
       "target": {
         "type": "all",
         "conditions": [
@@ -3541,7 +3541,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_9_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_9/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3558,7 +3558,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_10_locked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_10/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -3575,7 +3575,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_10_next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_10/next",
       "target": {
         "type": "all",
         "conditions": [
@@ -3592,7 +3592,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_10_unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/tier_10/unlocked",
       "target": {
         "type": "all",
         "conditions": [

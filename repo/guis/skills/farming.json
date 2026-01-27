@@ -1576,7 +1576,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/down_up_unlocked",
+      "id": "skyblock_gui:skill/farming/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1598,7 +1598,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/down_up_unlocking",
+      "id": "skyblock_gui:skill/farming/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1618,7 +1618,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/down_up_locked",
+      "id": "skyblock_gui:skill/farming/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1632,255 +1632,6 @@
             "name": [
               "Farming Level XXVI",
               "Farming Level 26"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/down_up_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXVII",
-              "Farming Level 27"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/down_up_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXVII",
-              "Farming Level 27"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/down_up_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXVII",
-              "Farming Level 27"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/down_right_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXVIII",
-              "Farming Level 28"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/down_right_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXVIII",
-              "Farming Level 28"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/down_right_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXVIII",
-              "Farming Level 28"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/left_right_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXIX",
-              "Farming Level 29"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/left_right_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXIX",
-              "Farming Level 29"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/left_right_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXIX",
-              "Farming Level 29"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/left_down_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXX",
-              "Farming Level 30"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/left_down_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXX",
-              "Farming Level 30"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/left_down_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXX",
-              "Farming Level 30"
             ]
           }
         ]
@@ -1901,8 +1652,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXI",
-              "Farming Level 31"
+              "Farming Level XXVII",
+              "Farming Level 27"
             ]
           }
         ]
@@ -1921,8 +1672,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXI",
-              "Farming Level 31"
+              "Farming Level XXVII",
+              "Farming Level 27"
             ]
           }
         ]
@@ -1941,70 +1692,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXI",
-              "Farming Level 31"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/up_down_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXXII",
-              "Farming Level 32"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/up_down_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXXII",
-              "Farming Level 32"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/farming/up_down_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Farming Level XXXII",
-              "Farming Level 32"
+              "Farming Level XXVII",
+              "Farming Level 27"
             ]
           }
         ]
@@ -2025,8 +1714,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXIII",
-              "Farming Level 33"
+              "Farming Level XXVIII",
+              "Farming Level 28"
             ]
           }
         ]
@@ -2045,8 +1734,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXIII",
-              "Farming Level 33"
+              "Farming Level XXVIII",
+              "Farming Level 28"
             ]
           }
         ]
@@ -2065,8 +1754,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXIII",
-              "Farming Level 33"
+              "Farming Level XXVIII",
+              "Farming Level 28"
             ]
           }
         ]
@@ -2087,8 +1776,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXIV",
-              "Farming Level 34"
+              "Farming Level XXIX",
+              "Farming Level 29"
             ]
           }
         ]
@@ -2107,8 +1796,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXIV",
-              "Farming Level 34"
+              "Farming Level XXIX",
+              "Farming Level 29"
             ]
           }
         ]
@@ -2127,8 +1816,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXIV",
-              "Farming Level 34"
+              "Farming Level XXIX",
+              "Farming Level 29"
             ]
           }
         ]
@@ -2150,8 +1839,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXV",
-              "Farming Level 35"
+              "Farming Level XXX",
+              "Farming Level 30"
             ]
           }
         ]
@@ -2170,8 +1859,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXV",
-              "Farming Level 35"
+              "Farming Level XXX",
+              "Farming Level 30"
             ]
           }
         ]
@@ -2190,8 +1879,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXV",
-              "Farming Level 35"
+              "Farming Level XXX",
+              "Farming Level 30"
             ]
           }
         ]
@@ -2212,8 +1901,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXVI",
-              "Farming Level 36"
+              "Farming Level XXXI",
+              "Farming Level 31"
             ]
           }
         ]
@@ -2232,8 +1921,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXVI",
-              "Farming Level 36"
+              "Farming Level XXXI",
+              "Farming Level 31"
             ]
           }
         ]
@@ -2252,8 +1941,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXVI",
-              "Farming Level 36"
+              "Farming Level XXXI",
+              "Farming Level 31"
             ]
           }
         ]
@@ -2274,8 +1963,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXVII",
-              "Farming Level 37"
+              "Farming Level XXXII",
+              "Farming Level 32"
             ]
           }
         ]
@@ -2294,8 +1983,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXVII",
-              "Farming Level 37"
+              "Farming Level XXXII",
+              "Farming Level 32"
             ]
           }
         ]
@@ -2314,8 +2003,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXVII",
-              "Farming Level 37"
+              "Farming Level XXXII",
+              "Farming Level 32"
             ]
           }
         ]
@@ -2336,8 +2025,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXVIII",
-              "Farming Level 38"
+              "Farming Level XXXIII",
+              "Farming Level 33"
             ]
           }
         ]
@@ -2356,8 +2045,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXVIII",
-              "Farming Level 38"
+              "Farming Level XXXIII",
+              "Farming Level 33"
             ]
           }
         ]
@@ -2376,8 +2065,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXVIII",
-              "Farming Level 38"
+              "Farming Level XXXIII",
+              "Farming Level 33"
             ]
           }
         ]
@@ -2398,8 +2087,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXIX",
-              "Farming Level 39"
+              "Farming Level XXXIV",
+              "Farming Level 34"
             ]
           }
         ]
@@ -2418,8 +2107,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXIX",
-              "Farming Level 39"
+              "Farming Level XXXIV",
+              "Farming Level 34"
             ]
           }
         ]
@@ -2438,8 +2127,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XXXIX",
-              "Farming Level 39"
+              "Farming Level XXXIV",
+              "Farming Level 34"
             ]
           }
         ]
@@ -2461,8 +2150,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XL",
-              "Farming Level 40"
+              "Farming Level XXXV",
+              "Farming Level 35"
             ]
           }
         ]
@@ -2481,8 +2170,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XL",
-              "Farming Level 40"
+              "Farming Level XXXV",
+              "Farming Level 35"
             ]
           }
         ]
@@ -2501,8 +2190,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XL",
-              "Farming Level 40"
+              "Farming Level XXXV",
+              "Farming Level 35"
             ]
           }
         ]
@@ -2523,8 +2212,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XLI",
-              "Farming Level 41"
+              "Farming Level XXXVI",
+              "Farming Level 36"
             ]
           }
         ]
@@ -2543,8 +2232,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XLI",
-              "Farming Level 41"
+              "Farming Level XXXVI",
+              "Farming Level 36"
             ]
           }
         ]
@@ -2563,8 +2252,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XLI",
-              "Farming Level 41"
+              "Farming Level XXXVI",
+              "Farming Level 36"
             ]
           }
         ]
@@ -2585,8 +2274,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XLII",
-              "Farming Level 42"
+              "Farming Level XXXVII",
+              "Farming Level 37"
             ]
           }
         ]
@@ -2605,8 +2294,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XLII",
-              "Farming Level 42"
+              "Farming Level XXXVII",
+              "Farming Level 37"
             ]
           }
         ]
@@ -2625,8 +2314,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Farming Level XLII",
-              "Farming Level 42"
+              "Farming Level XXXVII",
+              "Farming Level 37"
             ]
           }
         ]
@@ -2647,6 +2336,317 @@
             "type": "name",
             "mode": "equals",
             "name": [
+              "Farming Level XXXVIII",
+              "Farming Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/up_right_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XXXVIII",
+              "Farming Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/up_right_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XXXVIII",
+              "Farming Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/left_right_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XXXIX",
+              "Farming Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/left_right_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XXXIX",
+              "Farming Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/left_right_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XXXIX",
+              "Farming Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/left_up_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "hay_block"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XL",
+              "Farming Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/left_up_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XL",
+              "Farming Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/left_up_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XL",
+              "Farming Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/down_up_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XLI",
+              "Farming Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/down_up_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XLI",
+              "Farming Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/down_up_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XLI",
+              "Farming Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/down_up_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XLII",
+              "Farming Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/down_up_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XLII",
+              "Farming Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/down_up_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Farming Level XLII",
+              "Farming Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/down_right_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
               "Farming Level XLIII",
               "Farming Level 43"
             ]
@@ -2655,7 +2655,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/up_right_unlocking",
+      "id": "skyblock_gui:skill/farming/down_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2675,7 +2675,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/up_right_locked",
+      "id": "skyblock_gui:skill/farming/down_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2757,7 +2757,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/left_up_unlocked",
+      "id": "skyblock_gui:skill/farming/left_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2780,7 +2780,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/left_up_unlocking",
+      "id": "skyblock_gui:skill/farming/left_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2800,7 +2800,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/left_up_locked",
+      "id": "skyblock_gui:skill/farming/left_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2820,7 +2820,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/down_up_unlocked",
+      "id": "skyblock_gui:skill/farming/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2842,7 +2842,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/down_up_unlocking",
+      "id": "skyblock_gui:skill/farming/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2862,7 +2862,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/down_up_locked",
+      "id": "skyblock_gui:skill/farming/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2882,7 +2882,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/down_up_unlocked",
+      "id": "skyblock_gui:skill/farming/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2904,7 +2904,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/down_up_unlocking",
+      "id": "skyblock_gui:skill/farming/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2924,7 +2924,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/down_up_locked",
+      "id": "skyblock_gui:skill/farming/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [

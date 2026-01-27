@@ -1576,7 +1576,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/down_up_unlocked",
+      "id": "skyblock_gui:skill/enchanting/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1598,7 +1598,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/down_up_unlocking",
+      "id": "skyblock_gui:skill/enchanting/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1618,7 +1618,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/down_up_locked",
+      "id": "skyblock_gui:skill/enchanting/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1632,255 +1632,6 @@
             "name": [
               "Enchanting Level XXVI",
               "Enchanting Level 26"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/down_up_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXVII",
-              "Enchanting Level 27"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/down_up_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXVII",
-              "Enchanting Level 27"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/down_up_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXVII",
-              "Enchanting Level 27"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/down_right_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXVIII",
-              "Enchanting Level 28"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/down_right_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXVIII",
-              "Enchanting Level 28"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/down_right_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXVIII",
-              "Enchanting Level 28"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/left_right_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXIX",
-              "Enchanting Level 29"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/left_right_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXIX",
-              "Enchanting Level 29"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/left_right_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXIX",
-              "Enchanting Level 29"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/left_down_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane",
-              "enchanted_book"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXX",
-              "Enchanting Level 30"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/left_down_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXX",
-              "Enchanting Level 30"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/left_down_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXX",
-              "Enchanting Level 30"
             ]
           }
         ]
@@ -1901,8 +1652,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXI",
-              "Enchanting Level 31"
+              "Enchanting Level XXVII",
+              "Enchanting Level 27"
             ]
           }
         ]
@@ -1921,8 +1672,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXI",
-              "Enchanting Level 31"
+              "Enchanting Level XXVII",
+              "Enchanting Level 27"
             ]
           }
         ]
@@ -1941,70 +1692,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXI",
-              "Enchanting Level 31"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/up_down_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXXII",
-              "Enchanting Level 32"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/up_down_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXXII",
-              "Enchanting Level 32"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/enchanting/up_down_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Enchanting Level XXXII",
-              "Enchanting Level 32"
+              "Enchanting Level XXVII",
+              "Enchanting Level 27"
             ]
           }
         ]
@@ -2025,8 +1714,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXIII",
-              "Enchanting Level 33"
+              "Enchanting Level XXVIII",
+              "Enchanting Level 28"
             ]
           }
         ]
@@ -2045,8 +1734,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXIII",
-              "Enchanting Level 33"
+              "Enchanting Level XXVIII",
+              "Enchanting Level 28"
             ]
           }
         ]
@@ -2065,8 +1754,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXIII",
-              "Enchanting Level 33"
+              "Enchanting Level XXVIII",
+              "Enchanting Level 28"
             ]
           }
         ]
@@ -2087,8 +1776,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXIV",
-              "Enchanting Level 34"
+              "Enchanting Level XXIX",
+              "Enchanting Level 29"
             ]
           }
         ]
@@ -2107,8 +1796,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXIV",
-              "Enchanting Level 34"
+              "Enchanting Level XXIX",
+              "Enchanting Level 29"
             ]
           }
         ]
@@ -2127,8 +1816,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXIV",
-              "Enchanting Level 34"
+              "Enchanting Level XXIX",
+              "Enchanting Level 29"
             ]
           }
         ]
@@ -2150,8 +1839,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXV",
-              "Enchanting Level 35"
+              "Enchanting Level XXX",
+              "Enchanting Level 30"
             ]
           }
         ]
@@ -2170,8 +1859,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXV",
-              "Enchanting Level 35"
+              "Enchanting Level XXX",
+              "Enchanting Level 30"
             ]
           }
         ]
@@ -2190,8 +1879,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXV",
-              "Enchanting Level 35"
+              "Enchanting Level XXX",
+              "Enchanting Level 30"
             ]
           }
         ]
@@ -2212,8 +1901,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXVI",
-              "Enchanting Level 36"
+              "Enchanting Level XXXI",
+              "Enchanting Level 31"
             ]
           }
         ]
@@ -2232,8 +1921,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXVI",
-              "Enchanting Level 36"
+              "Enchanting Level XXXI",
+              "Enchanting Level 31"
             ]
           }
         ]
@@ -2252,8 +1941,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXVI",
-              "Enchanting Level 36"
+              "Enchanting Level XXXI",
+              "Enchanting Level 31"
             ]
           }
         ]
@@ -2274,8 +1963,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXVII",
-              "Enchanting Level 37"
+              "Enchanting Level XXXII",
+              "Enchanting Level 32"
             ]
           }
         ]
@@ -2294,8 +1983,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXVII",
-              "Enchanting Level 37"
+              "Enchanting Level XXXII",
+              "Enchanting Level 32"
             ]
           }
         ]
@@ -2314,8 +2003,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXVII",
-              "Enchanting Level 37"
+              "Enchanting Level XXXII",
+              "Enchanting Level 32"
             ]
           }
         ]
@@ -2336,8 +2025,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXVIII",
-              "Enchanting Level 38"
+              "Enchanting Level XXXIII",
+              "Enchanting Level 33"
             ]
           }
         ]
@@ -2356,8 +2045,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXVIII",
-              "Enchanting Level 38"
+              "Enchanting Level XXXIII",
+              "Enchanting Level 33"
             ]
           }
         ]
@@ -2376,8 +2065,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXVIII",
-              "Enchanting Level 38"
+              "Enchanting Level XXXIII",
+              "Enchanting Level 33"
             ]
           }
         ]
@@ -2398,8 +2087,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXIX",
-              "Enchanting Level 39"
+              "Enchanting Level XXXIV",
+              "Enchanting Level 34"
             ]
           }
         ]
@@ -2418,8 +2107,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXIX",
-              "Enchanting Level 39"
+              "Enchanting Level XXXIV",
+              "Enchanting Level 34"
             ]
           }
         ]
@@ -2438,8 +2127,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XXXIX",
-              "Enchanting Level 39"
+              "Enchanting Level XXXIV",
+              "Enchanting Level 34"
             ]
           }
         ]
@@ -2461,8 +2150,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XL",
-              "Enchanting Level 40"
+              "Enchanting Level XXXV",
+              "Enchanting Level 35"
             ]
           }
         ]
@@ -2481,8 +2170,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XL",
-              "Enchanting Level 40"
+              "Enchanting Level XXXV",
+              "Enchanting Level 35"
             ]
           }
         ]
@@ -2501,8 +2190,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XL",
-              "Enchanting Level 40"
+              "Enchanting Level XXXV",
+              "Enchanting Level 35"
             ]
           }
         ]
@@ -2523,8 +2212,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XLI",
-              "Enchanting Level 41"
+              "Enchanting Level XXXVI",
+              "Enchanting Level 36"
             ]
           }
         ]
@@ -2543,8 +2232,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XLI",
-              "Enchanting Level 41"
+              "Enchanting Level XXXVI",
+              "Enchanting Level 36"
             ]
           }
         ]
@@ -2563,8 +2252,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XLI",
-              "Enchanting Level 41"
+              "Enchanting Level XXXVI",
+              "Enchanting Level 36"
             ]
           }
         ]
@@ -2585,8 +2274,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XLII",
-              "Enchanting Level 42"
+              "Enchanting Level XXXVII",
+              "Enchanting Level 37"
             ]
           }
         ]
@@ -2605,8 +2294,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XLII",
-              "Enchanting Level 42"
+              "Enchanting Level XXXVII",
+              "Enchanting Level 37"
             ]
           }
         ]
@@ -2625,8 +2314,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Enchanting Level XLII",
-              "Enchanting Level 42"
+              "Enchanting Level XXXVII",
+              "Enchanting Level 37"
             ]
           }
         ]
@@ -2647,6 +2336,317 @@
             "type": "name",
             "mode": "equals",
             "name": [
+              "Enchanting Level XXXVIII",
+              "Enchanting Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/up_right_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXVIII",
+              "Enchanting Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/up_right_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXVIII",
+              "Enchanting Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/left_right_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIX",
+              "Enchanting Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/left_right_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIX",
+              "Enchanting Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/left_right_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIX",
+              "Enchanting Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/left_up_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XL",
+              "Enchanting Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/left_up_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XL",
+              "Enchanting Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/left_up_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XL",
+              "Enchanting Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/down_up_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLI",
+              "Enchanting Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/down_up_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLI",
+              "Enchanting Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/down_up_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLI",
+              "Enchanting Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/down_up_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLII",
+              "Enchanting Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/down_up_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLII",
+              "Enchanting Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/down_up_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLII",
+              "Enchanting Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/down_right_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
               "Enchanting Level XLIII",
               "Enchanting Level 43"
             ]
@@ -2655,7 +2655,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/up_right_unlocking",
+      "id": "skyblock_gui:skill/enchanting/down_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2675,7 +2675,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/up_right_locked",
+      "id": "skyblock_gui:skill/enchanting/down_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2757,7 +2757,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/left_up_unlocked",
+      "id": "skyblock_gui:skill/enchanting/left_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2780,7 +2780,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/left_up_unlocking",
+      "id": "skyblock_gui:skill/enchanting/left_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2800,7 +2800,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/left_up_locked",
+      "id": "skyblock_gui:skill/enchanting/left_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2820,7 +2820,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/down_up_unlocked",
+      "id": "skyblock_gui:skill/enchanting/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2842,7 +2842,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/down_up_unlocking",
+      "id": "skyblock_gui:skill/enchanting/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2862,7 +2862,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/down_up_locked",
+      "id": "skyblock_gui:skill/enchanting/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2882,7 +2882,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/down_up_unlocked",
+      "id": "skyblock_gui:skill/enchanting/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2904,7 +2904,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/down_up_unlocking",
+      "id": "skyblock_gui:skill/enchanting/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2924,7 +2924,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/enchanting/down_up_locked",
+      "id": "skyblock_gui:skill/enchanting/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [

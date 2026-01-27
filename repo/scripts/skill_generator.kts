@@ -14,16 +14,18 @@ fun Int.toRomanNumeral(): String {
 fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: String = skillName, type: String = "Level", title: String = "$skillName Skill", icon: String = title) {
 
     val nodes = (1..maxLevel).joinToString(",\n") { level ->
+        val evalLevel = level % 25
+
         var direction = when {
             level % 25 >= 23 -> "up_down"
             level % 25 == 0 -> "up_end"
 
-            level % 10 == 0 -> "left_down"
-            level % 10 <= 2 -> "up_down"
-            level % 10 == 3 -> "up_right"
-            level % 10 == 4 || level % 10 == 9 -> "left_right"
-            level % 10 == 5 -> "left_up"
-            level % 10 <= 7 -> "down_up"
+            evalLevel % 10 == 0 -> "left_down"
+            evalLevel % 10 <= 2 -> "up_down"
+            evalLevel % 10 == 3 -> "up_right"
+            evalLevel % 10 == 4 || evalLevel % 10 == 9 -> "left_right"
+            evalLevel % 10 == 5 -> "left_up"
+            evalLevel % 10 <= 7 -> "down_up"
             else -> "down_right"
         }
 
@@ -126,7 +128,7 @@ $nodes
 }
     """.trimIndent()
 
-    Path.of("guis/skills/${pathName.lowercase()}.json").apply {
+    Path.of("../guis/skills/${pathName.lowercase()}.json").apply {
         createParentDirectories()
     }.writeText(base)
 }

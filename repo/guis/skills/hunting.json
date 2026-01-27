@@ -1571,7 +1571,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1593,7 +1593,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -1613,7 +1613,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skill/hunting/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -1627,254 +1627,6 @@
             "name": [
               "Hunting Level XXVI",
               "Hunting Level 26"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXVII",
-              "Hunting Level 27"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXVII",
-              "Hunting Level 27"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXVII",
-              "Hunting Level 27"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXVIII",
-              "Hunting Level 28"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXVIII",
-              "Hunting Level 28"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/down_right_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXVIII",
-              "Hunting Level 28"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXIX",
-              "Hunting Level 29"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXIX",
-              "Hunting Level 29"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/left_right_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXIX",
-              "Hunting Level 29"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/left_down_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXX",
-              "Hunting Level 30"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/left_down_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXX",
-              "Hunting Level 30"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/left_down_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXX",
-              "Hunting Level 30"
             ]
           }
         ]
@@ -1895,8 +1647,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXI",
-              "Hunting Level 31"
+              "Hunting Level XXVII",
+              "Hunting Level 27"
             ]
           }
         ]
@@ -1915,8 +1667,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXI",
-              "Hunting Level 31"
+              "Hunting Level XXVII",
+              "Hunting Level 27"
             ]
           }
         ]
@@ -1935,70 +1687,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXI",
-              "Hunting Level 31"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXXII",
-              "Hunting Level 32"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXXII",
-              "Hunting Level 32"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "item",
-            "items": "red_stained_glass_pane"
-          },
-          {
-            "type": "name",
-            "mode": "equals",
-            "name": [
-              "Hunting Level XXXII",
-              "Hunting Level 32"
+              "Hunting Level XXVII",
+              "Hunting Level 27"
             ]
           }
         ]
@@ -2019,8 +1709,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXIII",
-              "Hunting Level 33"
+              "Hunting Level XXVIII",
+              "Hunting Level 28"
             ]
           }
         ]
@@ -2039,8 +1729,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXIII",
-              "Hunting Level 33"
+              "Hunting Level XXVIII",
+              "Hunting Level 28"
             ]
           }
         ]
@@ -2059,8 +1749,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXIII",
-              "Hunting Level 33"
+              "Hunting Level XXVIII",
+              "Hunting Level 28"
             ]
           }
         ]
@@ -2081,8 +1771,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXIV",
-              "Hunting Level 34"
+              "Hunting Level XXIX",
+              "Hunting Level 29"
             ]
           }
         ]
@@ -2101,8 +1791,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXIV",
-              "Hunting Level 34"
+              "Hunting Level XXIX",
+              "Hunting Level 29"
             ]
           }
         ]
@@ -2121,8 +1811,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXIV",
-              "Hunting Level 34"
+              "Hunting Level XXIX",
+              "Hunting Level 29"
             ]
           }
         ]
@@ -2143,8 +1833,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXV",
-              "Hunting Level 35"
+              "Hunting Level XXX",
+              "Hunting Level 30"
             ]
           }
         ]
@@ -2163,8 +1853,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXV",
-              "Hunting Level 35"
+              "Hunting Level XXX",
+              "Hunting Level 30"
             ]
           }
         ]
@@ -2183,8 +1873,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXV",
-              "Hunting Level 35"
+              "Hunting Level XXX",
+              "Hunting Level 30"
             ]
           }
         ]
@@ -2205,8 +1895,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXVI",
-              "Hunting Level 36"
+              "Hunting Level XXXI",
+              "Hunting Level 31"
             ]
           }
         ]
@@ -2225,8 +1915,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXVI",
-              "Hunting Level 36"
+              "Hunting Level XXXI",
+              "Hunting Level 31"
             ]
           }
         ]
@@ -2245,8 +1935,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXVI",
-              "Hunting Level 36"
+              "Hunting Level XXXI",
+              "Hunting Level 31"
             ]
           }
         ]
@@ -2267,8 +1957,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXVII",
-              "Hunting Level 37"
+              "Hunting Level XXXII",
+              "Hunting Level 32"
             ]
           }
         ]
@@ -2287,8 +1977,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXVII",
-              "Hunting Level 37"
+              "Hunting Level XXXII",
+              "Hunting Level 32"
             ]
           }
         ]
@@ -2307,8 +1997,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXVII",
-              "Hunting Level 37"
+              "Hunting Level XXXII",
+              "Hunting Level 32"
             ]
           }
         ]
@@ -2329,8 +2019,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXVIII",
-              "Hunting Level 38"
+              "Hunting Level XXXIII",
+              "Hunting Level 33"
             ]
           }
         ]
@@ -2349,8 +2039,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXVIII",
-              "Hunting Level 38"
+              "Hunting Level XXXIII",
+              "Hunting Level 33"
             ]
           }
         ]
@@ -2369,8 +2059,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXVIII",
-              "Hunting Level 38"
+              "Hunting Level XXXIII",
+              "Hunting Level 33"
             ]
           }
         ]
@@ -2391,8 +2081,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXIX",
-              "Hunting Level 39"
+              "Hunting Level XXXIV",
+              "Hunting Level 34"
             ]
           }
         ]
@@ -2411,8 +2101,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXIX",
-              "Hunting Level 39"
+              "Hunting Level XXXIV",
+              "Hunting Level 34"
             ]
           }
         ]
@@ -2431,8 +2121,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XXXIX",
-              "Hunting Level 39"
+              "Hunting Level XXXIV",
+              "Hunting Level 34"
             ]
           }
         ]
@@ -2453,8 +2143,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XL",
-              "Hunting Level 40"
+              "Hunting Level XXXV",
+              "Hunting Level 35"
             ]
           }
         ]
@@ -2473,8 +2163,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XL",
-              "Hunting Level 40"
+              "Hunting Level XXXV",
+              "Hunting Level 35"
             ]
           }
         ]
@@ -2493,8 +2183,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XL",
-              "Hunting Level 40"
+              "Hunting Level XXXV",
+              "Hunting Level 35"
             ]
           }
         ]
@@ -2515,8 +2205,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XLI",
-              "Hunting Level 41"
+              "Hunting Level XXXVI",
+              "Hunting Level 36"
             ]
           }
         ]
@@ -2535,8 +2225,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XLI",
-              "Hunting Level 41"
+              "Hunting Level XXXVI",
+              "Hunting Level 36"
             ]
           }
         ]
@@ -2555,8 +2245,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XLI",
-              "Hunting Level 41"
+              "Hunting Level XXXVI",
+              "Hunting Level 36"
             ]
           }
         ]
@@ -2577,8 +2267,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XLII",
-              "Hunting Level 42"
+              "Hunting Level XXXVII",
+              "Hunting Level 37"
             ]
           }
         ]
@@ -2597,8 +2287,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XLII",
-              "Hunting Level 42"
+              "Hunting Level XXXVII",
+              "Hunting Level 37"
             ]
           }
         ]
@@ -2617,8 +2307,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Hunting Level XLII",
-              "Hunting Level 42"
+              "Hunting Level XXXVII",
+              "Hunting Level 37"
             ]
           }
         ]
@@ -2639,6 +2329,316 @@
             "type": "name",
             "mode": "equals",
             "name": [
+              "Hunting Level XXXVIII",
+              "Hunting Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/up_right_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XXXVIII",
+              "Hunting Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/up_right_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XXXVIII",
+              "Hunting Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XXXIX",
+              "Hunting Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XXXIX",
+              "Hunting Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/left_right_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XXXIX",
+              "Hunting Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/left_up_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XL",
+              "Hunting Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/left_up_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XL",
+              "Hunting Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/left_up_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XL",
+              "Hunting Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XLI",
+              "Hunting Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XLI",
+              "Hunting Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XLI",
+              "Hunting Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XLII",
+              "Hunting Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XLII",
+              "Hunting Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Hunting Level XLII",
+              "Hunting Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/down_right_unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
               "Hunting Level XLIII",
               "Hunting Level 43"
             ]
@@ -2647,7 +2647,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_unlocking",
+      "id": "skyblock_gui:skill/hunting/down_right_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2667,7 +2667,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_locked",
+      "id": "skyblock_gui:skill/hunting/down_right_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2749,7 +2749,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocked",
+      "id": "skyblock_gui:skill/hunting/left_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2771,7 +2771,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocking",
+      "id": "skyblock_gui:skill/hunting/left_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2791,7 +2791,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_locked",
+      "id": "skyblock_gui:skill/hunting/left_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2811,7 +2811,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2833,7 +2833,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2853,7 +2853,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skill/hunting/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2873,7 +2873,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -2895,7 +2895,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -2915,7 +2915,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skill/hunting/up_down_locked",
       "target": {
         "type": "all",
         "conditions": [

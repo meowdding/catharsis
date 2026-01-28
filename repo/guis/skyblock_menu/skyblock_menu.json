@@ -45,7 +45,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/icon",
+      "id": "skyblock_gui:skills/icon",
       "target": {
         "type": "name",
         "mode": "equals",

@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:skill/foraging/icon",
+      "id": "skyblock_gui:skills/foraging/icon",
       "target": {
         "type": "all",
         "conditions": [
@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -63,7 +63,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -83,7 +83,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -105,7 +105,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -125,7 +125,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -145,7 +145,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -167,7 +167,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -187,7 +187,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -207,7 +207,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -229,7 +229,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -249,7 +249,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -269,7 +269,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -292,7 +292,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -312,7 +312,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -332,7 +332,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -354,7 +354,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -374,7 +374,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -394,7 +394,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -416,7 +416,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -436,7 +436,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -456,7 +456,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -478,7 +478,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -498,7 +498,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -518,7 +518,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -540,7 +540,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -560,7 +560,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -580,7 +580,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -603,7 +603,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -623,7 +623,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -643,7 +643,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -665,7 +665,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -685,7 +685,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -705,7 +705,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -727,7 +727,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -747,7 +747,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -767,7 +767,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -789,7 +789,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -809,7 +809,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -829,7 +829,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -851,7 +851,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -871,7 +871,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -891,7 +891,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -914,7 +914,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -934,7 +934,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -954,7 +954,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -976,7 +976,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -996,7 +996,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1016,7 +1016,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1038,7 +1038,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1058,7 +1058,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1078,7 +1078,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1100,7 +1100,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1120,7 +1120,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1140,7 +1140,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1162,7 +1162,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1182,7 +1182,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1202,7 +1202,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1225,7 +1225,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1245,7 +1245,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1265,7 +1265,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1287,7 +1287,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1307,7 +1307,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1327,7 +1327,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1349,7 +1349,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1369,7 +1369,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1389,7 +1389,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1411,7 +1411,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1431,7 +1431,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1451,7 +1451,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1473,7 +1473,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1493,7 +1493,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1513,7 +1513,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_end_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -1536,7 +1536,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_end_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -1556,7 +1556,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_end_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -1576,7 +1576,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1598,7 +1598,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1618,7 +1618,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1638,7 +1638,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1660,7 +1660,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1680,7 +1680,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1700,7 +1700,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1722,7 +1722,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1742,7 +1742,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1762,7 +1762,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1784,7 +1784,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1804,7 +1804,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1824,7 +1824,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1847,7 +1847,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1867,7 +1867,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1887,7 +1887,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1909,7 +1909,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1929,7 +1929,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1949,7 +1949,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1971,7 +1971,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1991,7 +1991,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2011,7 +2011,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2033,7 +2033,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2053,7 +2053,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2073,7 +2073,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2095,7 +2095,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2115,7 +2115,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2135,7 +2135,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2158,7 +2158,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2178,7 +2178,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2198,7 +2198,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2220,7 +2220,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2240,7 +2240,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2260,7 +2260,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2282,7 +2282,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2302,7 +2302,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2322,7 +2322,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2344,7 +2344,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2364,7 +2364,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2384,7 +2384,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2406,7 +2406,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2426,7 +2426,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2446,7 +2446,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2469,7 +2469,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2489,7 +2489,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2509,7 +2509,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2531,7 +2531,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2551,7 +2551,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2571,7 +2571,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2593,7 +2593,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2613,7 +2613,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_up_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2633,7 +2633,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2655,7 +2655,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2675,7 +2675,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/down_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2695,7 +2695,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2717,7 +2717,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2737,7 +2737,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2757,7 +2757,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2780,7 +2780,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2800,7 +2800,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2820,7 +2820,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2842,7 +2842,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2862,7 +2862,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2882,7 +2882,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2904,7 +2904,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2924,7 +2924,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2944,7 +2944,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2966,7 +2966,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2986,7 +2986,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3006,7 +3006,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3028,7 +3028,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3048,7 +3048,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3068,7 +3068,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_end_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3091,7 +3091,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_end_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3111,7 +3111,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_end_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3131,7 +3131,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3153,7 +3153,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3173,7 +3173,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3193,7 +3193,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3215,7 +3215,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3235,7 +3235,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_down_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3255,7 +3255,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3277,7 +3277,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3297,7 +3297,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/up_right_locked",
+      "id": "skyblock_gui:skills/foraging/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3317,7 +3317,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_end_unlocked",
+      "id": "skyblock_gui:skills/foraging/unlocked/left_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3339,7 +3339,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_end_unlocking",
+      "id": "skyblock_gui:skills/foraging/unlocking/left_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3359,7 +3359,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/left_end_locked",
+      "id": "skyblock_gui:skills/foraging/locked/left_end",
       "target": {
         "type": "all",
         "conditions": [

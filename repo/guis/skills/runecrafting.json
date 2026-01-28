@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:skill/runecrafting/icon",
+      "id": "skyblock_gui:skills/runecrafting/icon",
       "target": {
         "type": "all",
         "conditions": [
@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -63,7 +63,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -83,7 +83,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -105,7 +105,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -125,7 +125,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -145,7 +145,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_right_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -167,7 +167,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_right_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -187,7 +187,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_right_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -207,7 +207,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -229,7 +229,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -249,7 +249,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -269,7 +269,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_up_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -292,7 +292,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_up_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -312,7 +312,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_up_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -332,7 +332,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -354,7 +354,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -374,7 +374,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -394,7 +394,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -416,7 +416,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -436,7 +436,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -456,7 +456,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_right_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -478,7 +478,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_right_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -498,7 +498,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_right_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -518,7 +518,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -540,7 +540,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -560,7 +560,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -580,7 +580,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_down_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -603,7 +603,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_down_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -623,7 +623,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_down_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -643,7 +643,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -665,7 +665,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -685,7 +685,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -705,7 +705,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -727,7 +727,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -747,7 +747,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -767,7 +767,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_right_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -789,7 +789,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_right_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -809,7 +809,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_right_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -829,7 +829,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -851,7 +851,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -871,7 +871,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -891,7 +891,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_up_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -914,7 +914,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_up_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -934,7 +934,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_up_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -954,7 +954,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -976,7 +976,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -996,7 +996,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1016,7 +1016,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1038,7 +1038,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1058,7 +1058,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_up_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1078,7 +1078,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_right_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1100,7 +1100,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_right_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1120,7 +1120,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/down_right_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1140,7 +1140,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1162,7 +1162,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1182,7 +1182,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_right_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1202,7 +1202,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_down_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1225,7 +1225,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_down_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1245,7 +1245,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/left_down_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1265,7 +1265,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1287,7 +1287,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1307,7 +1307,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1327,7 +1327,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1349,7 +1349,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1369,7 +1369,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1389,7 +1389,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1411,7 +1411,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1431,7 +1431,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1451,7 +1451,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1473,7 +1473,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1493,7 +1493,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_down_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1513,7 +1513,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_end_unlocked",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -1536,7 +1536,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_end_unlocking",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -1556,7 +1556,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/runecrafting/up_end_locked",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_end",
       "target": {
         "type": "all",
         "conditions": [

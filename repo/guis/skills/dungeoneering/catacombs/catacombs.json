@@ -1,17 +1,17 @@
 {
   "target": {
     "type": "title",
-    "title": "Archer Class Perks"
+    "title": "Catacombs Rewards"
   },
   "layout": [
     {
-      "id": "skyblock_gui:skill/archer/icon",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon",
       "target": {
         "type": "all",
         "conditions": [
           {
             "type": "name",
-            "name": "Archer Class"
+            "name": "Catacombs"
           },
           {
             "type": "slot",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -35,15 +35,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level I",
-              "Archer Level 1"
+              "Catacombs Mastery I",
+              "Catacombs Mastery 1"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -55,15 +55,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level I",
-              "Archer Level 1"
+              "Catacombs Mastery I",
+              "Catacombs Mastery 1"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -75,15 +75,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level I",
-              "Archer Level 1"
+              "Catacombs Mastery I",
+              "Catacombs Mastery 1"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -97,15 +97,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level II",
-              "Archer Level 2"
+              "Catacombs Mastery II",
+              "Catacombs Mastery 2"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -117,15 +117,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level II",
-              "Archer Level 2"
+              "Catacombs Mastery II",
+              "Catacombs Mastery 2"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -137,15 +137,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level II",
-              "Archer Level 2"
+              "Catacombs Mastery II",
+              "Catacombs Mastery 2"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -159,15 +159,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level III",
-              "Archer Level 3"
+              "Catacombs Mastery III",
+              "Catacombs Mastery 3"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -179,15 +179,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level III",
-              "Archer Level 3"
+              "Catacombs Mastery III",
+              "Catacombs Mastery 3"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -199,15 +199,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level III",
-              "Archer Level 3"
+              "Catacombs Mastery III",
+              "Catacombs Mastery 3"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -221,15 +221,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level IV",
-              "Archer Level 4"
+              "Catacombs Mastery IV",
+              "Catacombs Mastery 4"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -241,15 +241,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level IV",
-              "Archer Level 4"
+              "Catacombs Mastery IV",
+              "Catacombs Mastery 4"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -261,15 +261,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level IV",
-              "Archer Level 4"
+              "Catacombs Mastery IV",
+              "Catacombs Mastery 4"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -277,22 +277,22 @@
             "type": "item",
             "items": [
               "lime_stained_glass_pane",
-              "bow"
+              "player_head"
             ]
           },
           {
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level V",
-              "Archer Level 5"
+              "Catacombs Mastery V",
+              "Catacombs Mastery 5"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -304,15 +304,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level V",
-              "Archer Level 5"
+              "Catacombs Mastery V",
+              "Catacombs Mastery 5"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -324,15 +324,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level V",
-              "Archer Level 5"
+              "Catacombs Mastery V",
+              "Catacombs Mastery 5"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -346,15 +346,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level VI",
-              "Archer Level 6"
+              "Catacombs Mastery VI",
+              "Catacombs Mastery 6"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -366,15 +366,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level VI",
-              "Archer Level 6"
+              "Catacombs Mastery VI",
+              "Catacombs Mastery 6"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -386,15 +386,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level VI",
-              "Archer Level 6"
+              "Catacombs Mastery VI",
+              "Catacombs Mastery 6"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -408,15 +408,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level VII",
-              "Archer Level 7"
+              "Catacombs Mastery VII",
+              "Catacombs Mastery 7"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -428,15 +428,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level VII",
-              "Archer Level 7"
+              "Catacombs Mastery VII",
+              "Catacombs Mastery 7"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -448,15 +448,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level VII",
-              "Archer Level 7"
+              "Catacombs Mastery VII",
+              "Catacombs Mastery 7"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -470,15 +470,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level VIII",
-              "Archer Level 8"
+              "Catacombs Mastery VIII",
+              "Catacombs Mastery 8"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -490,15 +490,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level VIII",
-              "Archer Level 8"
+              "Catacombs Mastery VIII",
+              "Catacombs Mastery 8"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -510,15 +510,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level VIII",
-              "Archer Level 8"
+              "Catacombs Mastery VIII",
+              "Catacombs Mastery 8"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -532,15 +532,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level IX",
-              "Archer Level 9"
+              "Catacombs Mastery IX",
+              "Catacombs Mastery 9"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -552,15 +552,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level IX",
-              "Archer Level 9"
+              "Catacombs Mastery IX",
+              "Catacombs Mastery 9"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -572,15 +572,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level IX",
-              "Archer Level 9"
+              "Catacombs Mastery IX",
+              "Catacombs Mastery 9"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -588,22 +588,22 @@
             "type": "item",
             "items": [
               "lime_stained_glass_pane",
-              "bow"
+              "player_head"
             ]
           },
           {
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level X",
-              "Archer Level 10"
+              "Catacombs Mastery X",
+              "Catacombs Mastery 10"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -615,15 +615,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level X",
-              "Archer Level 10"
+              "Catacombs Mastery X",
+              "Catacombs Mastery 10"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -635,15 +635,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level X",
-              "Archer Level 10"
+              "Catacombs Mastery X",
+              "Catacombs Mastery 10"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -657,15 +657,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XI",
-              "Archer Level 11"
+              "Catacombs Mastery XI",
+              "Catacombs Mastery 11"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -677,15 +677,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XI",
-              "Archer Level 11"
+              "Catacombs Mastery XI",
+              "Catacombs Mastery 11"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -697,15 +697,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XI",
-              "Archer Level 11"
+              "Catacombs Mastery XI",
+              "Catacombs Mastery 11"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -719,15 +719,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XII",
-              "Archer Level 12"
+              "Catacombs Mastery XII",
+              "Catacombs Mastery 12"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -739,15 +739,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XII",
-              "Archer Level 12"
+              "Catacombs Mastery XII",
+              "Catacombs Mastery 12"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -759,15 +759,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XII",
-              "Archer Level 12"
+              "Catacombs Mastery XII",
+              "Catacombs Mastery 12"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -781,15 +781,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XIII",
-              "Archer Level 13"
+              "Catacombs Mastery XIII",
+              "Catacombs Mastery 13"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -801,15 +801,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XIII",
-              "Archer Level 13"
+              "Catacombs Mastery XIII",
+              "Catacombs Mastery 13"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -821,15 +821,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XIII",
-              "Archer Level 13"
+              "Catacombs Mastery XIII",
+              "Catacombs Mastery 13"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -843,15 +843,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XIV",
-              "Archer Level 14"
+              "Catacombs Mastery XIV",
+              "Catacombs Mastery 14"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -863,15 +863,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XIV",
-              "Archer Level 14"
+              "Catacombs Mastery XIV",
+              "Catacombs Mastery 14"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -883,15 +883,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XIV",
-              "Archer Level 14"
+              "Catacombs Mastery XIV",
+              "Catacombs Mastery 14"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -899,22 +899,22 @@
             "type": "item",
             "items": [
               "lime_stained_glass_pane",
-              "bow"
+              "player_head"
             ]
           },
           {
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XV",
-              "Archer Level 15"
+              "Catacombs Mastery XV",
+              "Catacombs Mastery 15"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -926,15 +926,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XV",
-              "Archer Level 15"
+              "Catacombs Mastery XV",
+              "Catacombs Mastery 15"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -946,15 +946,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XV",
-              "Archer Level 15"
+              "Catacombs Mastery XV",
+              "Catacombs Mastery 15"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -968,15 +968,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XVI",
-              "Archer Level 16"
+              "Catacombs Mastery XVI",
+              "Catacombs Mastery 16"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -988,15 +988,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XVI",
-              "Archer Level 16"
+              "Catacombs Mastery XVI",
+              "Catacombs Mastery 16"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1008,15 +1008,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XVI",
-              "Archer Level 16"
+              "Catacombs Mastery XVI",
+              "Catacombs Mastery 16"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1030,15 +1030,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XVII",
-              "Archer Level 17"
+              "Catacombs Mastery XVII",
+              "Catacombs Mastery 17"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1050,15 +1050,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XVII",
-              "Archer Level 17"
+              "Catacombs Mastery XVII",
+              "Catacombs Mastery 17"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1070,15 +1070,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XVII",
-              "Archer Level 17"
+              "Catacombs Mastery XVII",
+              "Catacombs Mastery 17"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1092,15 +1092,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XVIII",
-              "Archer Level 18"
+              "Catacombs Mastery XVIII",
+              "Catacombs Mastery 18"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1112,15 +1112,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XVIII",
-              "Archer Level 18"
+              "Catacombs Mastery XVIII",
+              "Catacombs Mastery 18"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1132,15 +1132,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XVIII",
-              "Archer Level 18"
+              "Catacombs Mastery XVIII",
+              "Catacombs Mastery 18"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1154,15 +1154,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XIX",
-              "Archer Level 19"
+              "Catacombs Mastery XIX",
+              "Catacombs Mastery 19"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1174,15 +1174,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XIX",
-              "Archer Level 19"
+              "Catacombs Mastery XIX",
+              "Catacombs Mastery 19"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1194,15 +1194,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XIX",
-              "Archer Level 19"
+              "Catacombs Mastery XIX",
+              "Catacombs Mastery 19"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1210,22 +1210,22 @@
             "type": "item",
             "items": [
               "lime_stained_glass_pane",
-              "bow"
+              "player_head"
             ]
           },
           {
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XX",
-              "Archer Level 20"
+              "Catacombs Mastery XX",
+              "Catacombs Mastery 20"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1237,15 +1237,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XX",
-              "Archer Level 20"
+              "Catacombs Mastery XX",
+              "Catacombs Mastery 20"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1257,15 +1257,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XX",
-              "Archer Level 20"
+              "Catacombs Mastery XX",
+              "Catacombs Mastery 20"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1279,15 +1279,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXI",
-              "Archer Level 21"
+              "Catacombs Mastery XXI",
+              "Catacombs Mastery 21"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1299,15 +1299,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXI",
-              "Archer Level 21"
+              "Catacombs Mastery XXI",
+              "Catacombs Mastery 21"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1319,15 +1319,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXI",
-              "Archer Level 21"
+              "Catacombs Mastery XXI",
+              "Catacombs Mastery 21"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1341,15 +1341,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXII",
-              "Archer Level 22"
+              "Catacombs Mastery XXII",
+              "Catacombs Mastery 22"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1361,15 +1361,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXII",
-              "Archer Level 22"
+              "Catacombs Mastery XXII",
+              "Catacombs Mastery 22"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1381,15 +1381,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXII",
-              "Archer Level 22"
+              "Catacombs Mastery XXII",
+              "Catacombs Mastery 22"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1403,15 +1403,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXIII",
-              "Archer Level 23"
+              "Catacombs Mastery XXIII",
+              "Catacombs Mastery 23"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1423,15 +1423,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXIII",
-              "Archer Level 23"
+              "Catacombs Mastery XXIII",
+              "Catacombs Mastery 23"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1443,15 +1443,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXIII",
-              "Archer Level 23"
+              "Catacombs Mastery XXIII",
+              "Catacombs Mastery 23"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1465,15 +1465,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXIV",
-              "Archer Level 24"
+              "Catacombs Mastery XXIV",
+              "Catacombs Mastery 24"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1485,15 +1485,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXIV",
-              "Archer Level 24"
+              "Catacombs Mastery XXIV",
+              "Catacombs Mastery 24"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1505,15 +1505,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXIV",
-              "Archer Level 24"
+              "Catacombs Mastery XXIV",
+              "Catacombs Mastery 24"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_end_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -1521,22 +1521,22 @@
             "type": "item",
             "items": [
               "lime_stained_glass_pane",
-              "bow"
+              "player_head"
             ]
           },
           {
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXV",
-              "Archer Level 25"
+              "Catacombs Mastery XXV",
+              "Catacombs Mastery 25"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_end_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -1548,15 +1548,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXV",
-              "Archer Level 25"
+              "Catacombs Mastery XXV",
+              "Catacombs Mastery 25"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_end_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -1568,15 +1568,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXV",
-              "Archer Level 25"
+              "Catacombs Mastery XXV",
+              "Catacombs Mastery 25"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1590,15 +1590,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXVI",
-              "Archer Level 26"
+              "Catacombs Mastery XXVI",
+              "Catacombs Mastery 26"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1610,15 +1610,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXVI",
-              "Archer Level 26"
+              "Catacombs Mastery XXVI",
+              "Catacombs Mastery 26"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1630,15 +1630,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXVI",
-              "Archer Level 26"
+              "Catacombs Mastery XXVI",
+              "Catacombs Mastery 26"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1652,15 +1652,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXVII",
-              "Archer Level 27"
+              "Catacombs Mastery XXVII",
+              "Catacombs Mastery 27"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1672,15 +1672,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXVII",
-              "Archer Level 27"
+              "Catacombs Mastery XXVII",
+              "Catacombs Mastery 27"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1692,15 +1692,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXVII",
-              "Archer Level 27"
+              "Catacombs Mastery XXVII",
+              "Catacombs Mastery 27"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1714,15 +1714,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXVIII",
-              "Archer Level 28"
+              "Catacombs Mastery XXVIII",
+              "Catacombs Mastery 28"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1734,15 +1734,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXVIII",
-              "Archer Level 28"
+              "Catacombs Mastery XXVIII",
+              "Catacombs Mastery 28"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1754,15 +1754,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXVIII",
-              "Archer Level 28"
+              "Catacombs Mastery XXVIII",
+              "Catacombs Mastery 28"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1776,15 +1776,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXIX",
-              "Archer Level 29"
+              "Catacombs Mastery XXIX",
+              "Catacombs Mastery 29"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1796,15 +1796,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXIX",
-              "Archer Level 29"
+              "Catacombs Mastery XXIX",
+              "Catacombs Mastery 29"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1816,15 +1816,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXIX",
-              "Archer Level 29"
+              "Catacombs Mastery XXIX",
+              "Catacombs Mastery 29"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1832,22 +1832,22 @@
             "type": "item",
             "items": [
               "lime_stained_glass_pane",
-              "bow"
+              "player_head"
             ]
           },
           {
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXX",
-              "Archer Level 30"
+              "Catacombs Mastery XXX",
+              "Catacombs Mastery 30"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1859,15 +1859,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXX",
-              "Archer Level 30"
+              "Catacombs Mastery XXX",
+              "Catacombs Mastery 30"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1879,15 +1879,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXX",
-              "Archer Level 30"
+              "Catacombs Mastery XXX",
+              "Catacombs Mastery 30"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1901,15 +1901,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXI",
-              "Archer Level 31"
+              "Catacombs Mastery XXXI",
+              "Catacombs Mastery 31"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1921,15 +1921,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXI",
-              "Archer Level 31"
+              "Catacombs Mastery XXXI",
+              "Catacombs Mastery 31"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1941,15 +1941,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXI",
-              "Archer Level 31"
+              "Catacombs Mastery XXXI",
+              "Catacombs Mastery 31"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1963,15 +1963,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXII",
-              "Archer Level 32"
+              "Catacombs Mastery XXXII",
+              "Catacombs Mastery 32"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1983,15 +1983,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXII",
-              "Archer Level 32"
+              "Catacombs Mastery XXXII",
+              "Catacombs Mastery 32"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2003,15 +2003,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXII",
-              "Archer Level 32"
+              "Catacombs Mastery XXXII",
+              "Catacombs Mastery 32"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2025,15 +2025,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXIII",
-              "Archer Level 33"
+              "Catacombs Mastery XXXIII",
+              "Catacombs Mastery 33"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2045,15 +2045,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXIII",
-              "Archer Level 33"
+              "Catacombs Mastery XXXIII",
+              "Catacombs Mastery 33"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2065,15 +2065,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXIII",
-              "Archer Level 33"
+              "Catacombs Mastery XXXIII",
+              "Catacombs Mastery 33"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2087,15 +2087,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXIV",
-              "Archer Level 34"
+              "Catacombs Mastery XXXIV",
+              "Catacombs Mastery 34"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2107,15 +2107,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXIV",
-              "Archer Level 34"
+              "Catacombs Mastery XXXIV",
+              "Catacombs Mastery 34"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2127,15 +2127,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXIV",
-              "Archer Level 34"
+              "Catacombs Mastery XXXIV",
+              "Catacombs Mastery 34"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2143,22 +2143,22 @@
             "type": "item",
             "items": [
               "lime_stained_glass_pane",
-              "bow"
+              "player_head"
             ]
           },
           {
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXV",
-              "Archer Level 35"
+              "Catacombs Mastery XXXV",
+              "Catacombs Mastery 35"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2170,15 +2170,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXV",
-              "Archer Level 35"
+              "Catacombs Mastery XXXV",
+              "Catacombs Mastery 35"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2190,15 +2190,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXV",
-              "Archer Level 35"
+              "Catacombs Mastery XXXV",
+              "Catacombs Mastery 35"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2212,15 +2212,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXVI",
-              "Archer Level 36"
+              "Catacombs Mastery XXXVI",
+              "Catacombs Mastery 36"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2232,15 +2232,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXVI",
-              "Archer Level 36"
+              "Catacombs Mastery XXXVI",
+              "Catacombs Mastery 36"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2252,15 +2252,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXVI",
-              "Archer Level 36"
+              "Catacombs Mastery XXXVI",
+              "Catacombs Mastery 36"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2274,15 +2274,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXVII",
-              "Archer Level 37"
+              "Catacombs Mastery XXXVII",
+              "Catacombs Mastery 37"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2294,15 +2294,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXVII",
-              "Archer Level 37"
+              "Catacombs Mastery XXXVII",
+              "Catacombs Mastery 37"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2314,15 +2314,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXVII",
-              "Archer Level 37"
+              "Catacombs Mastery XXXVII",
+              "Catacombs Mastery 37"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2336,15 +2336,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXVIII",
-              "Archer Level 38"
+              "Catacombs Mastery XXXVIII",
+              "Catacombs Mastery 38"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2356,15 +2356,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXVIII",
-              "Archer Level 38"
+              "Catacombs Mastery XXXVIII",
+              "Catacombs Mastery 38"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2376,15 +2376,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXVIII",
-              "Archer Level 38"
+              "Catacombs Mastery XXXVIII",
+              "Catacombs Mastery 38"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2398,15 +2398,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXIX",
-              "Archer Level 39"
+              "Catacombs Mastery XXXIX",
+              "Catacombs Mastery 39"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2418,15 +2418,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXIX",
-              "Archer Level 39"
+              "Catacombs Mastery XXXIX",
+              "Catacombs Mastery 39"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2438,15 +2438,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XXXIX",
-              "Archer Level 39"
+              "Catacombs Mastery XXXIX",
+              "Catacombs Mastery 39"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2454,22 +2454,22 @@
             "type": "item",
             "items": [
               "lime_stained_glass_pane",
-              "bow"
+              "player_head"
             ]
           },
           {
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XL",
-              "Archer Level 40"
+              "Catacombs Mastery XL",
+              "Catacombs Mastery 40"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2481,15 +2481,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XL",
-              "Archer Level 40"
+              "Catacombs Mastery XL",
+              "Catacombs Mastery 40"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2501,15 +2501,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XL",
-              "Archer Level 40"
+              "Catacombs Mastery XL",
+              "Catacombs Mastery 40"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2523,15 +2523,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLI",
-              "Archer Level 41"
+              "Catacombs Mastery XLI",
+              "Catacombs Mastery 41"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2543,15 +2543,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLI",
-              "Archer Level 41"
+              "Catacombs Mastery XLI",
+              "Catacombs Mastery 41"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2563,15 +2563,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLI",
-              "Archer Level 41"
+              "Catacombs Mastery XLI",
+              "Catacombs Mastery 41"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2585,15 +2585,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLII",
-              "Archer Level 42"
+              "Catacombs Mastery XLII",
+              "Catacombs Mastery 42"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2605,15 +2605,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLII",
-              "Archer Level 42"
+              "Catacombs Mastery XLII",
+              "Catacombs Mastery 42"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_up_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2625,15 +2625,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLII",
-              "Archer Level 42"
+              "Catacombs Mastery XLII",
+              "Catacombs Mastery 42"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2647,15 +2647,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLIII",
-              "Archer Level 43"
+              "Catacombs Mastery XLIII",
+              "Catacombs Mastery 43"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2667,15 +2667,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLIII",
-              "Archer Level 43"
+              "Catacombs Mastery XLIII",
+              "Catacombs Mastery 43"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/down_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2687,15 +2687,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLIII",
-              "Archer Level 43"
+              "Catacombs Mastery XLIII",
+              "Catacombs Mastery 43"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2709,15 +2709,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLIV",
-              "Archer Level 44"
+              "Catacombs Mastery XLIV",
+              "Catacombs Mastery 44"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2729,15 +2729,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLIV",
-              "Archer Level 44"
+              "Catacombs Mastery XLIV",
+              "Catacombs Mastery 44"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_right_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2749,15 +2749,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLIV",
-              "Archer Level 44"
+              "Catacombs Mastery XLIV",
+              "Catacombs Mastery 44"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2765,22 +2765,22 @@
             "type": "item",
             "items": [
               "lime_stained_glass_pane",
-              "bow"
+              "player_head"
             ]
           },
           {
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLV",
-              "Archer Level 45"
+              "Catacombs Mastery XLV",
+              "Catacombs Mastery 45"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2792,15 +2792,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLV",
-              "Archer Level 45"
+              "Catacombs Mastery XLV",
+              "Catacombs Mastery 45"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/left_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2812,15 +2812,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLV",
-              "Archer Level 45"
+              "Catacombs Mastery XLV",
+              "Catacombs Mastery 45"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2834,15 +2834,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLVI",
-              "Archer Level 46"
+              "Catacombs Mastery XLVI",
+              "Catacombs Mastery 46"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2854,15 +2854,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLVI",
-              "Archer Level 46"
+              "Catacombs Mastery XLVI",
+              "Catacombs Mastery 46"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2874,15 +2874,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLVI",
-              "Archer Level 46"
+              "Catacombs Mastery XLVI",
+              "Catacombs Mastery 46"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2896,15 +2896,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLVII",
-              "Archer Level 47"
+              "Catacombs Mastery XLVII",
+              "Catacombs Mastery 47"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2916,15 +2916,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLVII",
-              "Archer Level 47"
+              "Catacombs Mastery XLVII",
+              "Catacombs Mastery 47"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2936,15 +2936,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLVII",
-              "Archer Level 47"
+              "Catacombs Mastery XLVII",
+              "Catacombs Mastery 47"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2958,15 +2958,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLVIII",
-              "Archer Level 48"
+              "Catacombs Mastery XLVIII",
+              "Catacombs Mastery 48"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2978,15 +2978,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLVIII",
-              "Archer Level 48"
+              "Catacombs Mastery XLVIII",
+              "Catacombs Mastery 48"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2998,15 +2998,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLVIII",
-              "Archer Level 48"
+              "Catacombs Mastery XLVIII",
+              "Catacombs Mastery 48"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3020,15 +3020,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLIX",
-              "Archer Level 49"
+              "Catacombs Mastery XLIX",
+              "Catacombs Mastery 49"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3040,15 +3040,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLIX",
-              "Archer Level 49"
+              "Catacombs Mastery XLIX",
+              "Catacombs Mastery 49"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_down_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3060,15 +3060,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level XLIX",
-              "Archer Level 49"
+              "Catacombs Mastery XLIX",
+              "Catacombs Mastery 49"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_end_unlocked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3076,22 +3076,22 @@
             "type": "item",
             "items": [
               "lime_stained_glass_pane",
-              "bow"
+              "player_head"
             ]
           },
           {
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level L",
-              "Archer Level 50"
+              "Catacombs Mastery L",
+              "Catacombs Mastery 50"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_end_unlocking",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3103,15 +3103,15 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level L",
-              "Archer Level 50"
+              "Catacombs Mastery L",
+              "Catacombs Mastery 50"
             ]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:skill/archer/up_end_locked",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3123,8 +3123,8 @@
             "type": "name",
             "mode": "equals",
             "name": [
-              "Archer Level L",
-              "Archer Level 50"
+              "Catacombs Mastery L",
+              "Catacombs Mastery 50"
             ]
           }
         ]

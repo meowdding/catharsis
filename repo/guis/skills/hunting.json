@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:skill/hunting/icon",
+      "id": "skyblock_gui:skills/hunting/icon",
       "target": {
         "type": "all",
         "conditions": [
@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -63,7 +63,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -83,7 +83,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -105,7 +105,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -125,7 +125,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -145,7 +145,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -167,7 +167,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -187,7 +187,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -207,7 +207,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -229,7 +229,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -249,7 +249,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -269,7 +269,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -291,7 +291,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -311,7 +311,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -331,7 +331,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -353,7 +353,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -373,7 +373,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -393,7 +393,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -415,7 +415,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -435,7 +435,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -455,7 +455,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -477,7 +477,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -497,7 +497,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -517,7 +517,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -539,7 +539,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -559,7 +559,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -579,7 +579,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -601,7 +601,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -621,7 +621,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -641,7 +641,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -663,7 +663,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -683,7 +683,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -703,7 +703,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -725,7 +725,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -745,7 +745,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -765,7 +765,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -787,7 +787,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -807,7 +807,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -827,7 +827,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -849,7 +849,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -869,7 +869,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -889,7 +889,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -911,7 +911,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -931,7 +931,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -951,7 +951,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -973,7 +973,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -993,7 +993,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1013,7 +1013,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1035,7 +1035,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1055,7 +1055,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1075,7 +1075,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1097,7 +1097,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1117,7 +1117,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1137,7 +1137,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1159,7 +1159,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1179,7 +1179,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1199,7 +1199,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1221,7 +1221,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1241,7 +1241,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1261,7 +1261,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1283,7 +1283,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1303,7 +1303,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1323,7 +1323,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1345,7 +1345,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1365,7 +1365,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1385,7 +1385,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1407,7 +1407,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1427,7 +1427,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1447,7 +1447,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1469,7 +1469,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1489,7 +1489,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1509,7 +1509,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_end_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -1531,7 +1531,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_end_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -1551,7 +1551,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_end_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -1571,7 +1571,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1593,7 +1593,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1613,7 +1613,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1633,7 +1633,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1655,7 +1655,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1675,7 +1675,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1695,7 +1695,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1717,7 +1717,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1737,7 +1737,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1757,7 +1757,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1779,7 +1779,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1799,7 +1799,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -1819,7 +1819,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1841,7 +1841,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1861,7 +1861,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1881,7 +1881,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1903,7 +1903,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1923,7 +1923,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1943,7 +1943,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1965,7 +1965,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -1985,7 +1985,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2005,7 +2005,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2027,7 +2027,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2047,7 +2047,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2067,7 +2067,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2089,7 +2089,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2109,7 +2109,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2129,7 +2129,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2151,7 +2151,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2171,7 +2171,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2191,7 +2191,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2213,7 +2213,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2233,7 +2233,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2253,7 +2253,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2275,7 +2275,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2295,7 +2295,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2315,7 +2315,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2337,7 +2337,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2357,7 +2357,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2377,7 +2377,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2399,7 +2399,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2419,7 +2419,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2439,7 +2439,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2461,7 +2461,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2481,7 +2481,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2501,7 +2501,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2523,7 +2523,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2543,7 +2543,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2563,7 +2563,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2585,7 +2585,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2605,7 +2605,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -2625,7 +2625,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2647,7 +2647,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2667,7 +2667,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2687,7 +2687,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2709,7 +2709,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2729,7 +2729,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -2749,7 +2749,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2771,7 +2771,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2791,7 +2791,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2811,7 +2811,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2833,7 +2833,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2853,7 +2853,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2873,7 +2873,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2895,7 +2895,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2915,7 +2915,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2935,7 +2935,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2957,7 +2957,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2977,7 +2977,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -2997,7 +2997,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3019,7 +3019,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3039,7 +3039,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3059,7 +3059,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_end_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3081,7 +3081,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_end_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3101,7 +3101,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_end_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3121,7 +3121,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3143,7 +3143,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3163,7 +3163,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3183,7 +3183,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3205,7 +3205,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3225,7 +3225,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_down_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3245,7 +3245,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3267,7 +3267,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3287,7 +3287,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/up_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/up_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3307,7 +3307,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3329,7 +3329,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3349,7 +3349,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3369,7 +3369,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -3391,7 +3391,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -3411,7 +3411,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -3431,7 +3431,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -3453,7 +3453,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -3473,7 +3473,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -3493,7 +3493,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -3515,7 +3515,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -3535,7 +3535,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_up_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "type": "all",
         "conditions": [
@@ -3555,7 +3555,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3577,7 +3577,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3597,7 +3597,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/down_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/down_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3617,7 +3617,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3639,7 +3639,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3659,7 +3659,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_right_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "type": "all",
         "conditions": [
@@ -3679,7 +3679,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_end_unlocked",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3701,7 +3701,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_end_unlocking",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -3721,7 +3721,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/hunting/left_end_locked",
+      "id": "skyblock_gui:skills/hunting/locked/left_end",
       "target": {
         "type": "all",
         "conditions": [

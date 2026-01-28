@@ -3116,7 +3116,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_1/next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_1/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3167,7 +3167,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_2/next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_2/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3218,7 +3218,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_3/next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_3/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3269,7 +3269,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_4/next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_4/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3320,7 +3320,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_5/next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_5/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3371,7 +3371,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_6/next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_6/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3422,7 +3422,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_7/next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_7/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3473,7 +3473,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_8/next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_8/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3524,7 +3524,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_9/next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_9/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3575,7 +3575,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tier_10/next",
+      "id": "skyblock_gui:skill_tree/hotm/tier_10/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -3609,7 +3609,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/heart_of_the_mountain",
+      "id": "skyblock_gui:skill_tree/hotm/icon",
       "target": {
         "type": "all",
         "conditions": [

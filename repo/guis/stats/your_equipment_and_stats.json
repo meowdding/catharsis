@@ -1,0 +1,252 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Your Equipment and Stats"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:empty_slot_hand",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": 2
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:light_gray_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:empty_slot_necklace",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": 10
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:light_gray_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:empty_slot_helmet",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": 11
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:light_gray_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Combat Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mining Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Farming Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:empty_slot_cloak",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:light_gray_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:empty_slot_chestplate",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": 20
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:light_gray_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/foraging/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Foraging Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Fishing Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Miscellaneous Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Rift Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:empty_slot_belt",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": 28
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:light_gray_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:empty_slot_leggings",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": 29
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:light_gray_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/hunting/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 32
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 34
+      }
+    },
+    {
+      "id": "skyblock_gui:empty_slot_gloves",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": 37
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:light_gray_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:empty_slot_boots",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": 38
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:light_gray_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:empty_slot_pet",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": 47
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:light_gray_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:active_effects",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 50
+      }
+    },
+    {
+      "id": "skyblock_gui:skyblock_achievements",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 51
+      }
+    }
+  ]
+}

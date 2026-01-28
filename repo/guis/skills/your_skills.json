@@ -1,0 +1,106 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Your Skills"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:skill/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 4
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/combat/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 19
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/farming/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 20
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/fishing/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 21
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/mining/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 22
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/foraging/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 23
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/enchanting/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 24
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/alchemy/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 25
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/carpentry/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 28
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/runecrafting/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 29
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/taming/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 30
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/social/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 32
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/hunting/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 33
+      }
+    },
+    {
+      "id": "skyblock_gui:skill/dungeoneering/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 34
+      }
+    }
+  ]
+}

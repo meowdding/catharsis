@@ -1,0 +1,179 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Wardrobe.+"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_helmet",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 0,
+              "max": 8
+            }
+          },
+          {
+            "type": "catharsis:name",
+            "name": "Slot.+Helmet"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_chestplate",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 9,
+              "max": 17
+            }
+          },
+          {
+            "type": "catharsis:name",
+            "name": "Slot.+Chestplate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_leggings",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 18,
+              "max": 26
+            }
+          },
+          {
+            "type": "catharsis:name",
+            "name": "Slot.+Leggings"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_boots",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 27,
+              "max": 35
+            }
+          },
+          {
+            "type": "catharsis:name",
+            "name": "Slot.+Boots"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 0,
+              "max": 35
+            }
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:black_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/equipped",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 36,
+              "max": 44
+            }
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:lime_dye"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/ready",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 36,
+              "max": 44
+            }
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:pink_dye"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 36,
+              "max": 44
+            }
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:gray_dye"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 36,
+              "max": 44
+            }
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:red_dye"]
+          }
+        ]
+      }
+    }
+  ]
+}

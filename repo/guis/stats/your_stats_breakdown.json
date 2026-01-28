@@ -1,0 +1,1280 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Your Stats Breakdown"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/combat/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Combat Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mining Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Farming Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/foraging/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Foraging Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Fishing Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Miscellaneous Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/hunting/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Hunting Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Wisdom Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Rift Stats"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/health/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❤ Health.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:golden_apple"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/defense/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❈ Defense.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:iron_chestplate"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/true_defense/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❂ True Defense.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:bone_meal"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/strength/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❁ Strength.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:blaze_powder"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/crit_chance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☣ Crit Chance.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/crit_damage/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☠ Crit Damage.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/bonus_attack_speed/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⚔ Bonus Attack Speed.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:golden_axe"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ferocity/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⫽ Ferocity.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:red_dye"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/swing_range/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "Ⓢ Swing Range.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:stone_sword"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/intelligence/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "✎ Intelligence.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:enchanted_book"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ability_damage/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "๑ Ability Damage.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:beacon"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/health_regen/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❣ Health Regen.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:potion"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/vitality/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "♨ Vitality.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:glistering_melon_slice"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/mending/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☄ Mending.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:ghast_tear"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/breaking_power/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "Ⓟ Breaking Power.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:emerald"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_speed/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⸕ Mining Speed.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:diamond_pickaxe"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_spread/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "▚ Mining Spread.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:golden_pickaxe"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/gemstone_spread/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "▚ Gemstone Spread.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:golden_pickaxe"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/pristine/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "✧ Pristine.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Mining Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/ore_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Ore Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/block_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Block Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/dwarven_metal_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Dwarven Metal Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/gemstone_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Gemstone Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/bonus_pest_chance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "ൠ Bonus Pest Chance.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:dirt"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/farming_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Farming Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/wheat_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Wheat Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:wheat"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/carrot_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Carrot Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:carrot"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/potato_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Potato Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:potato"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/pumpkin_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Pumpkin Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:carved_pumpkin"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/sugar_cane_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Sugar Cane Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:sugar_cane"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/melon_slice_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Melon Slice Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:melon_slice"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/cactus_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Cactus Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:cactus"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/cocoa_beans_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Cocoa Beans Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:cocoa_beans"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/mushroom_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Mushroom Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:red_mushroom"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/nether_wart_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Nether Wart Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:nether_wart"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/sunflower_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Sunflower Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:sunflower"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/moonflower_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Moonflower Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:blue_orchid"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/wild_rose_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Wild Rose Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:rose_bush"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/foraging/sweep/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "∮ Sweep.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:diamond_axe"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/foraging/foraging_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Foraging Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/foraging/fig_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Fig Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/foraging/mangrove_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Mangrove Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/fishing_speed/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☂ Fishing Speed.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:fishing_rod"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/sea_creature_chance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "α Sea Creature Chance.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:prismarine_crystals"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/double_hook_chance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⚓ Double Hook Chance.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:cooked_cod"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "♔ Trophy Fish Chance.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/treasure_chance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⛃ Treasure Chance.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:chest"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/speed/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "✦ Speed.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:sugar"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/magic_find/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "✯ Magic Find.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:stick"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pet_luck/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "♣ Pet Luck.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:player_head"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/heat_resistance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "♨ Heat Resistance.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:lava_bucket"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/cold_resistance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❄ Cold Resistance.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:ice"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/respiration/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⚶ Respiration.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:glass_bottle"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pressure_resistance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❍ Pressure Resistance.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:glass_bottle"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/fear/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☠ Fear.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:cauldron"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/tracking/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❃ Tracking.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:compass"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/hunting/pull/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "ᛷ Pull.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:cobweb"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/hunting/hunter_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Hunter Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:prismarine_shard"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/combat/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Combat Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:stone_sword"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/farming/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Farming Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:golden_hoe"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/fishing/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Fishing Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:fishing_rod"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/mining/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Mining Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:stone_pickaxe"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/foraging/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Foraging Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:jungle_sapling"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/enchanting/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Enchanting Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:enchanting_table"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/alchemy/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Alchemy Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:brewing_stand"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/carpentry/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Carpentry Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:crafting_table"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/runecrafting/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Runecrafting Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:magma_cream"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/taming/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Taming Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:polar_bear_spawn_egg"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/social/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Social Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:emerald"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/hunting/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Hunting Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:lead"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_time/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "ф Rift Time.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:clock"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_damage/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❁ Rift Damage.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:diamond_sword"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/mana_regen/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⚡ Mana Regen.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:diamond"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/hearts/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❤ Hearts.+"
+          },
+          {
+            "type": "item",
+            "items": ["minecraft:apple"]
+          }
+        ]
+      }
+    }
+  ]
+}

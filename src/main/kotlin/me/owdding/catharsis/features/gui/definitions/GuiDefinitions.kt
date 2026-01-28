@@ -5,6 +5,7 @@ import com.google.gson.JsonElement
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.events.FinishRepoLoadEvent
+import me.owdding.catharsis.events.GuiDefinitionsApplied
 import me.owdding.catharsis.events.SlotChangedEvent
 import me.owdding.catharsis.events.StartRepoLoadEvent
 import me.owdding.catharsis.features.gui.definitions.slots.GuiSlotDefinition
@@ -22,6 +23,7 @@ import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.profiling.ProfilerFiller
 import net.minecraft.world.item.ItemStack
+import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerCloseEvent
 import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerInitializedEvent
@@ -49,6 +51,8 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
     private fun update(screen: AbstractContainerScreen<*>?) {
         selected = screen?.let { definitions.filter { it.matches(screen) } } ?: emptyList()
         slots.clear()
+
+        GuiDefinitionsApplied(selected.map { it.id }).post(SkyBlockAPI.eventBus)
 
         if (selected.isEmpty()) return
         if (screen == null) return
@@ -111,9 +115,6 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
 
     @Subscription
     fun onClose(event: ContainerCloseEvent) = update(null)
-
-    @JvmStatic
-    fun getGui(): Identifier? = selected.firstOrNull()?.id
 
     @JvmStatic
     fun getGuis(): List<Identifier> = selected.map { it.id }

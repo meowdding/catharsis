@@ -2,9 +2,11 @@ package me.owdding.catharsis.features.gui.modifications
 
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
+import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap
 import me.owdding.catharsis.Catharsis
-import me.owdding.catharsis.features.gui.definitions.GuiDefinitions
+import me.owdding.catharsis.events.GuiDefinitionsApplied
 import me.owdding.catharsis.features.gui.modifications.conditions.GuiModifierDefinitionCondition
+import me.owdding.catharsis.features.gui.modifications.modifiers.SlotModifier
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktmodules.Module
 import net.minecraft.resources.FileToIdConverter
@@ -12,6 +14,8 @@ import net.minecraft.resources.Identifier
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.profiling.ProfilerFiller
+import org.joml.Vector2i
+import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 
@@ -23,7 +27,9 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
     private val gson = GsonBuilder().create()
     private val codec = CatharsisCodecs.getCodec<GuiModifier>()
 
-    private val definitionModifiers: MutableMap<Identifier, GuiModifier> = mutableMapOf()
+    private val definitionModifiers: MutableMap<Identifier, MutableList<GuiModifier>> = mutableMapOf()
+
+    private var selected: GuiModifier? = null
 
     override fun prepare(manager: ResourceManager, profiler: ProfilerFiller): List<GuiModifier> {
         return converter.listMatchingResources(manager)
@@ -42,9 +48,8 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
             when (modifier.target) {
                 is GuiModifierDefinitionCondition -> {
                     val definition = modifier.target.definition
-                    if (definitionModifiers.putIfAbsent(definition, modifier) != null) {
-                        logger.error("Multiple gui modifiers found for definition $definition only one will be applied")
-                    }
+                    val modifiers = definitionModifiers.getOrPut(definition) { mutableListOf() }
+                    modifiers.add(modifier)
                 }
             }
         }
@@ -52,7 +57,37 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
 
     @JvmStatic
     fun getActiveModifier(): GuiModifier? {
-        return GuiDefinitions.getGui()?.let(definitionModifiers::get)
+        return this.selected
+    }
+
+    @Subscription
+    fun onGuiDefinitionsApplied(event: GuiDefinitionsApplied) {
+        val modifiers = event.definitions
+            .mapNotNull(definitionModifiers::get)
+            .flatten()
+
+        if (modifiers.isEmpty()) {
+            this.selected = null
+        } else {
+            val lookup = Int2ObjectArrayMap<SlotModifier>()
+            for (modifier in modifiers.flatMap { it.slots }) {
+                for (slot in modifier.slot) {
+                    lookup.putIfAbsent(slot, modifier)
+                }
+            }
+
+            this.selected = GuiModifier(
+                target = modifiers.first().target, // Target is not relevant for combined modifier
+                overrideLabels = modifiers.any { it.overrideLabels },
+                overrideBackground =  modifiers.any { it.overrideBackground },
+                bounds = modifiers.mapNotNull { it.bounds }.let { sizes ->
+                    if (sizes.isEmpty()) null else { Vector2i(sizes.maxOf { it.x }, sizes.maxOf { it.y }) }
+                },
+                slots = lookup.values.toSet().toList(),
+                elements = modifiers.flatMap { it.elements },
+                widgets = modifiers.flatMap { it.widgets }
+            )
+        }
     }
 
     init {

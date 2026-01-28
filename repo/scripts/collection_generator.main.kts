@@ -101,7 +101,7 @@ ${slots.lines().joinToString("\n") { "    $it" }}
 }
         """.trimIndent()
 
-        val path = Path("collections/$key/${name.lowercase().replace(" ", "_")}.json")
+        val path = Path("../guis/collections/$key/${name.lowercase().replace(" ", "_")}.json")
         path.createParentDirectories()
         path.writeText(definition)
     }
@@ -111,7 +111,7 @@ ${slots.lines().joinToString("\n") { "    $it" }}
 fun createEntries(level: Int, index: Int, key: String, direction: String, name: String): String {
     return """
 {
-  "id": "skyblock_gui:collection/${key}/unlocked/${direction}",
+  "id": "skyblock_gui:collections/${key}/unlocked/${direction}",
   "target": {
     "type": "all",
     "conditions": [
@@ -135,7 +135,7 @@ fun createEntries(level: Int, index: Int, key: String, direction: String, name: 
   }
 },
 {
-  "id": "skyblock_gui:skill/${key}/progress/${direction}",
+  "id": "skyblock_gui:collections/${key}/unlocking/${direction}",
   "target": {
     "type": "all",
     "conditions": [
@@ -159,7 +159,7 @@ fun createEntries(level: Int, index: Int, key: String, direction: String, name: 
   }
 },
 {
-  "id": "skyblock_gui:skill/${key}/locked/${direction}",
+  "id": "skyblock_gui:collections/${key}/locked/${direction}",
   "target": {
     "type": "all",
     "conditions": [

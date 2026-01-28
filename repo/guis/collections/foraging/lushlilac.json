@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:collection/foraging/unlocked/start",
+      "id": "skyblock_gui:collections/foraging/unlocked/start",
       "target": {
         "type": "all",
         "conditions": [
@@ -29,7 +29,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/progress/start",
+      "id": "skyblock_gui:collections/foraging/unlocking/start",
       "target": {
         "type": "all",
         "conditions": [
@@ -53,7 +53,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/locked/start",
+      "id": "skyblock_gui:collections/foraging/locked/start",
       "target": {
         "type": "all",
         "conditions": [
@@ -77,7 +77,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/foraging/unlocked/connector",
+      "id": "skyblock_gui:collections/foraging/unlocked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -101,7 +101,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/progress/connector",
+      "id": "skyblock_gui:collections/foraging/unlocking/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -125,7 +125,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/locked/connector",
+      "id": "skyblock_gui:collections/foraging/locked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -149,7 +149,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/foraging/unlocked/connector",
+      "id": "skyblock_gui:collections/foraging/unlocked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -173,7 +173,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/progress/connector",
+      "id": "skyblock_gui:collections/foraging/unlocking/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -197,7 +197,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/locked/connector",
+      "id": "skyblock_gui:collections/foraging/locked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -221,7 +221,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/foraging/unlocked/connector",
+      "id": "skyblock_gui:collections/foraging/unlocked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -245,7 +245,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/progress/connector",
+      "id": "skyblock_gui:collections/foraging/unlocking/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -269,7 +269,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/locked/connector",
+      "id": "skyblock_gui:collections/foraging/locked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -293,7 +293,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/foraging/unlocked/end",
+      "id": "skyblock_gui:collections/foraging/unlocked/end",
       "target": {
         "type": "all",
         "conditions": [
@@ -317,7 +317,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/progress/end",
+      "id": "skyblock_gui:collections/foraging/unlocking/end",
       "target": {
         "type": "all",
         "conditions": [
@@ -341,7 +341,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/foraging/locked/end",
+      "id": "skyblock_gui:collections/foraging/locked/end",
       "target": {
         "type": "all",
         "conditions": [

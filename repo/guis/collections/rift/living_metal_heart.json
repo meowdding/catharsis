@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:collection/rift/unlocked/start_end",
+      "id": "skyblock_gui:collections/rift/unlocked/start_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -29,7 +29,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/rift/progress/start_end",
+      "id": "skyblock_gui:collections/rift/unlocking/start_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -53,7 +53,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/rift/locked/start_end",
+      "id": "skyblock_gui:collections/rift/locked/start_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -77,7 +77,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/rift/unlocked/start_end",
+      "id": "skyblock_gui:collections/rift/unlocked/start_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -101,7 +101,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/rift/progress/start_end",
+      "id": "skyblock_gui:collections/rift/unlocking/start_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -125,7 +125,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/rift/locked/start_end",
+      "id": "skyblock_gui:collections/rift/locked/start_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -149,7 +149,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/rift/unlocked/start_end",
+      "id": "skyblock_gui:collections/rift/unlocked/start_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -173,7 +173,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/rift/progress/start_end",
+      "id": "skyblock_gui:collections/rift/unlocking/start_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -197,7 +197,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/rift/locked/start_end",
+      "id": "skyblock_gui:collections/rift/locked/start_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -221,7 +221,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/rift/unlocked/start_end",
+      "id": "skyblock_gui:collections/rift/unlocked/start_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -245,7 +245,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/rift/progress/start_end",
+      "id": "skyblock_gui:collections/rift/unlocking/start_end",
       "target": {
         "type": "all",
         "conditions": [
@@ -269,7 +269,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/rift/locked/start_end",
+      "id": "skyblock_gui:collections/rift/locked/start_end",
       "target": {
         "type": "all",
         "conditions": [

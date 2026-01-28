@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:collection/farming/unlocked/start",
+      "id": "skyblock_gui:collections/farming/unlocked/start",
       "target": {
         "type": "all",
         "conditions": [
@@ -29,7 +29,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/progress/start",
+      "id": "skyblock_gui:collections/farming/unlocking/start",
       "target": {
         "type": "all",
         "conditions": [
@@ -53,7 +53,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/locked/start",
+      "id": "skyblock_gui:collections/farming/locked/start",
       "target": {
         "type": "all",
         "conditions": [
@@ -77,7 +77,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/farming/unlocked/connector",
+      "id": "skyblock_gui:collections/farming/unlocked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -101,7 +101,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/progress/connector",
+      "id": "skyblock_gui:collections/farming/unlocking/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -125,7 +125,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/locked/connector",
+      "id": "skyblock_gui:collections/farming/locked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -149,7 +149,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/farming/unlocked/connector",
+      "id": "skyblock_gui:collections/farming/unlocked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -173,7 +173,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/progress/connector",
+      "id": "skyblock_gui:collections/farming/unlocking/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -197,7 +197,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/locked/connector",
+      "id": "skyblock_gui:collections/farming/locked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -221,7 +221,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/farming/unlocked/connector_skip",
+      "id": "skyblock_gui:collections/farming/unlocked/connector_skip",
       "target": {
         "type": "all",
         "conditions": [
@@ -245,7 +245,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/progress/connector_skip",
+      "id": "skyblock_gui:collections/farming/unlocking/connector_skip",
       "target": {
         "type": "all",
         "conditions": [
@@ -269,7 +269,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/locked/connector_skip",
+      "id": "skyblock_gui:collections/farming/locked/connector_skip",
       "target": {
         "type": "all",
         "conditions": [
@@ -293,7 +293,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/farming/unlocked/skip_connector",
+      "id": "skyblock_gui:collections/farming/unlocked/skip_connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -317,7 +317,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/progress/skip_connector",
+      "id": "skyblock_gui:collections/farming/unlocking/skip_connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -341,7 +341,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/locked/skip_connector",
+      "id": "skyblock_gui:collections/farming/locked/skip_connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -365,7 +365,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/farming/unlocked/connector",
+      "id": "skyblock_gui:collections/farming/unlocked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -389,7 +389,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/progress/connector",
+      "id": "skyblock_gui:collections/farming/unlocking/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -413,7 +413,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/locked/connector",
+      "id": "skyblock_gui:collections/farming/locked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -437,7 +437,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/farming/unlocked/connector",
+      "id": "skyblock_gui:collections/farming/unlocked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -461,7 +461,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/progress/connector",
+      "id": "skyblock_gui:collections/farming/unlocking/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -485,7 +485,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/locked/connector",
+      "id": "skyblock_gui:collections/farming/locked/connector",
       "target": {
         "type": "all",
         "conditions": [
@@ -509,7 +509,7 @@
       }
     },
     {
-      "id": "skyblock_gui:collection/farming/unlocked/end",
+      "id": "skyblock_gui:collections/farming/unlocked/end",
       "target": {
         "type": "all",
         "conditions": [
@@ -533,7 +533,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/progress/end",
+      "id": "skyblock_gui:collections/farming/unlocking/end",
       "target": {
         "type": "all",
         "conditions": [
@@ -557,7 +557,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill/farming/locked/end",
+      "id": "skyblock_gui:collections/farming/locked/end",
       "target": {
         "type": "all",
         "conditions": [

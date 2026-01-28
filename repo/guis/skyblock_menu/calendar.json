@@ -1,0 +1,78 @@
+{
+  "target": {
+    "type": "title",
+    "title": "(?:(?:Late|Early) )?(?:Spring|Summer|Autumn|Winter), Year \\d+"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:calendar/current_day",
+      "target": {
+        "type": "item",
+        "items": "minecraft:lime_dye"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/other_day",
+      "target": {
+        "type": "item",
+        "items": "minecraft:paper"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/farming_contest",
+      "target": {
+        "type": "item",
+        "items": "minecraft:wheat"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/dark_auction",
+      "target": {
+        "type": "item",
+        "items": "minecraft:nether_brick"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/hoppity",
+      "target": {
+        "type": "item",
+        "items": "minecraft:player_head"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/traveling_zoo",
+      "target": {
+        "type": "item",
+        "items": "minecraft:player_head"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/spooky",
+      "target": {
+        "type": "item",
+        "items": "minecraft:jack_o_lantern"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/workshop_opens",
+      "target": {
+        "type": "item",
+        "items": "minecraft:snow_block"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/season_of_jerry",
+      "target": {
+        "type": "item",
+        "items": "minecraft:snowball"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/new_year",
+      "target": {
+        "type": "item",
+        "items": "minecraft:cake"
+      }
+    }
+  ]
+}

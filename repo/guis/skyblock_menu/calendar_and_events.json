@@ -1,0 +1,89 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Calendar and Events"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:calendar_and_events/event_rewards",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Event Rewards"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor",
+      "target": {
+        "type": "name",
+        "name": "Mayor \\w+"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Calendar"
+      }
+    },
+    {
+      "id": "skyblock_gui:chocolate_factory/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Chocolate Factory"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/hoppity",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) Hoppity's Hunt"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/election_over",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) Election Over!"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/traveling_zoo",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Traveling Zoo"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/election_booth_opens",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) Election Booth Opens"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/spooky",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) Spooky Festival"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/season_of_jerry",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) Season of Jerry"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/new_year",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) New Year Celebration"
+      }
+    }
+  ]
+}

@@ -14,7 +14,9 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:black_stained_glass_pane"]
+            "items": [
+              "minecraft:black_stained_glass_pane"
+            ]
           }
         ]
       }
@@ -47,8 +49,23 @@
       "id": "skyblock_gui:generic/next_page",
       "target": {
         "type": "name",
+        "name": "Next Page|Levels \\d+ - \\d+"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/scroll_up",
+      "target": {
+        "type": "name",
         "mode": "equals",
-        "name": "Next Page"
+        "name": "Scroll Up"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/scroll_down",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Scroll Down"
       }
     },
     {

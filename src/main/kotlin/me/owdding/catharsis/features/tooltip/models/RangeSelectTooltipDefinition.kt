@@ -3,9 +3,9 @@ package me.owdding.catharsis.features.tooltip.models
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
-import me.owdding.catharsis.features.tooltip.TooltipModel
-import me.owdding.catharsis.features.tooltip.TooltipModelState
-import me.owdding.catharsis.features.tooltip.TooltipModels
+import me.owdding.catharsis.features.tooltip.TooltipDefinition
+import me.owdding.catharsis.features.tooltip.TooltipDefinitionState
+import me.owdding.catharsis.features.tooltip.TooltipDefinitions
 import me.owdding.catharsis.utils.TypedResourceManager
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperties
@@ -19,13 +19,13 @@ import kotlin.jvm.optionals.getOrNull
 //? = 1.21.8
 /*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
 
-class RangeSelectTooltipModel(
+class RangeSelectTooltipDefinition(
     private val property: RangeSelectItemModelProperty,
     private val scale: Float,
     private val thresholds: FloatArray,
-    private val models: Array<TooltipModel>,
-    private val fallback: TooltipModel?,
-) : TooltipModel {
+    private val models: Array<TooltipDefinition>,
+    private val fallback: TooltipDefinition?,
+) : TooltipDefinition {
 
     private fun lastIndexLessThanOrEqual(value: Float): Int {
         if (thresholds.size < 16) {
@@ -41,13 +41,13 @@ class RangeSelectTooltipModel(
         }
     }
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipModelState? {
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipDefinitionState? {
         val value = property.get(stack, level, owner?.asLivingEntity(), seed) * scale
         val model = if (value.isNaN()) fallback else models.getOrNull(lastIndexLessThanOrEqual(value)) ?: fallback
         return model?.resolve(stack, level, owner, seed)
     }
 
-    override fun collectAll(): List<TooltipModelState> = buildList {
+    override fun collectAll(): List<TooltipDefinitionState> = buildList {
         models.forEach { model -> addAll(model.collectAll()) }
         fallback?.let { addAll(it.collectAll()) }
     }
@@ -55,33 +55,33 @@ class RangeSelectTooltipModel(
     class Unbaked(
         val property: RangeSelectItemModelProperty,
         val scale: Float,
-        val entries: List<Pair<Float, TooltipModel.Unbaked>>,
-        val fallback: Optional<TooltipModel.Unbaked>,
-    ) : TooltipModel.Unbaked {
+        val entries: List<Pair<Float, TooltipDefinition.Unbaked>>,
+        val fallback: Optional<TooltipDefinition.Unbaked>,
+    ) : TooltipDefinition.Unbaked {
 
-        override val codec: MapCodec<out TooltipModel.Unbaked> = CODEC
+        override val codec: MapCodec<out TooltipDefinition.Unbaked> = CODEC
 
-        override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipModel {
+        override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipDefinition {
             val sortedEntries = entries.sortedWith(Comparator.comparingDouble { it.first.toDouble() })
             val thresholds = FloatArray(sortedEntries.size) { i -> sortedEntries[i].first }
             val models = Array(sortedEntries.size) { i -> sortedEntries[i].second.bake(swapper, resources) }
             val fallback = fallback.map { it.bake(swapper, resources) }.getOrNull()
 
-            return RangeSelectTooltipModel(property, scale, thresholds, models, fallback)
+            return RangeSelectTooltipDefinition(property, scale, thresholds, models, fallback)
         }
 
         companion object {
 
-            val ENTRY_CODEC: Codec<Pair<Float, TooltipModel.Unbaked>> = RecordCodecBuilder.create { it.group(
+            val ENTRY_CODEC: Codec<Pair<Float, TooltipDefinition.Unbaked>> = RecordCodecBuilder.create { it.group(
                 Codec.FLOAT.fieldOf("threshold").forGetter { p -> p.first },
-                TooltipModels.CODEC.fieldOf("model").forGetter { p -> p.second },
+                TooltipDefinitions.CODEC.fieldOf("model").forGetter { p -> p.second },
             ).apply(it, ::Pair) }
 
             val CODEC: MapCodec<Unbaked> = RecordCodecBuilder.mapCodec { it.group(
                 RangeSelectItemModelProperties.MAP_CODEC.forGetter(Unbaked::property),
                 Codec.FLOAT.optionalFieldOf("scale", 1f).forGetter(Unbaked::scale),
                 ENTRY_CODEC.listOf().fieldOf("entries").forGetter(Unbaked::entries),
-                TooltipModels.CODEC.optionalFieldOf("fallback").forGetter(Unbaked::fallback),
+                TooltipDefinitions.CODEC.optionalFieldOf("fallback").forGetter(Unbaked::fallback),
             ).apply(it, ::Unbaked) }
         }
     }

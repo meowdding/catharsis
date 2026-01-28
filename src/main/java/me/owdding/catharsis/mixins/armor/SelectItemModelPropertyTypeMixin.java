@@ -6,7 +6,7 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import me.owdding.catharsis.features.armor.models.SelectArmorModel;
-import me.owdding.catharsis.features.tooltip.models.SelectTooltipModel;
+import me.owdding.catharsis.features.tooltip.models.SelectTooltipDefinition;
 import me.owdding.catharsis.hooks.armor.SelectItemModelPropertyTypeHook;
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperty;
 import org.spongepowered.asm.mixin.Mixin;
@@ -19,7 +19,7 @@ public class SelectItemModelPropertyTypeMixin<P extends SelectItemModelProperty<
     @Unique
     private MapCodec<SelectArmorModel.UnbakedSwitch<P, T>> catharsis$armorSwitchCodec;
     @Unique
-    private MapCodec<SelectTooltipModel.UnbakedSwitch<P, T>> catharsis$tooltipSwitchCodec;
+    private MapCodec<SelectTooltipDefinition.UnbakedSwitch<P, T>> catharsis$tooltipSwitchCodec;
 
     @Override
     public MapCodec<SelectArmorModel.UnbakedSwitch<P, T>> catharsis$getArmorSwitchCodec() {
@@ -32,12 +32,12 @@ public class SelectItemModelPropertyTypeMixin<P extends SelectItemModelProperty<
     }
 
     @Override
-    public MapCodec<SelectTooltipModel.UnbakedSwitch<P, T>> catharsis$getTooltipSwitchCodec() {
+    public MapCodec<SelectTooltipDefinition.UnbakedSwitch<P, T>> catharsis$getTooltipSwitchCodec() {
         return this.catharsis$tooltipSwitchCodec;
     }
 
     @Override
-    public void catharsis$setTooltipSwitchCodec(MapCodec<SelectTooltipModel.UnbakedSwitch<P, T>> codec) {
+    public void catharsis$setTooltipSwitchCodec(MapCodec<SelectTooltipDefinition.UnbakedSwitch<P, T>> codec) {
         this.catharsis$tooltipSwitchCodec = codec;
     }
 
@@ -59,13 +59,13 @@ public class SelectItemModelPropertyTypeMixin<P extends SelectItemModelProperty<
         //noinspection unchecked
         original.catharsis$setArmorSwitchCodec(armorCodec);
 
-        var tooltipCasesCodec = SelectTooltipModel.UnbakedSwitch.createCasesFieldCodec(valueCodec);
-        MapCodec<SelectTooltipModel.UnbakedSwitch<P, T>> tooltipCodec = RecordCodecBuilder.mapCodec(
+        var tooltipCasesCodec = SelectTooltipDefinition.UnbakedSwitch.createCasesFieldCodec(valueCodec);
+        MapCodec<SelectTooltipDefinition.UnbakedSwitch<P, T>> tooltipCodec = RecordCodecBuilder.mapCodec(
             instance -> instance.group(
-                    propertyCodec.forGetter(SelectTooltipModel.UnbakedSwitch::getProperty),
-                    tooltipCasesCodec.forGetter(SelectTooltipModel.UnbakedSwitch::getCases)
+                    propertyCodec.forGetter(SelectTooltipDefinition.UnbakedSwitch::getProperty),
+                    tooltipCasesCodec.forGetter(SelectTooltipDefinition.UnbakedSwitch::getCases)
                 )
-                .apply(instance, SelectTooltipModel.UnbakedSwitch::new)
+                .apply(instance, SelectTooltipDefinition.UnbakedSwitch::new)
         );
 
         //noinspection unchecked

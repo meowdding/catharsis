@@ -7,9 +7,9 @@ import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap
-import me.owdding.catharsis.features.tooltip.TooltipModel
-import me.owdding.catharsis.features.tooltip.TooltipModelState
-import me.owdding.catharsis.features.tooltip.TooltipModels
+import me.owdding.catharsis.features.tooltip.TooltipDefinition
+import me.owdding.catharsis.features.tooltip.TooltipDefinitionState
+import me.owdding.catharsis.features.tooltip.TooltipDefinitions
 import me.owdding.catharsis.hooks.armor.SelectItemModelPropertyTypeHook
 import me.owdding.catharsis.utils.TypedResourceManager
 import me.owdding.catharsis.utils.codecs.VersionedCodecs.dispatchLenientMap
@@ -29,33 +29,33 @@ import kotlin.jvm.optionals.getOrNull
 //? = 1.21.8
 /*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
 
-typealias UnbakedTooltipSelectCase<Type> = Pair<List<Type>, TooltipModel.Unbaked>
+typealias UnbakedTooltipSelectCase<Type> = Pair<List<Type>, TooltipDefinition.Unbaked>
 
 @Suppress("UNCHECKED_CAST", "KotlinConstantConditions")
 val <Property : SelectItemModelProperty<Type>, Type : Any> SelectItemModelProperty.Type<Property, Type>.hook: SelectItemModelPropertyTypeHook<Property, Type>
     get() = this as Any as SelectItemModelPropertyTypeHook<Property, Type>
 
-data class SelectTooltipModel<Type : Any>(
+data class SelectTooltipDefinition<Type : Any>(
     private val property: SelectItemModelProperty<Type>,
-    private val children: List<TooltipModelState>,
-    private val models: (Type?, ClientLevel?) -> TooltipModel?,
-) : TooltipModel {
+    private val children: List<TooltipDefinitionState>,
+    private val models: (Type?, ClientLevel?) -> TooltipDefinition?,
+) : TooltipDefinition {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipModelState? {
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipDefinitionState? {
         val value = this.property.get(stack, level, owner?.asLivingEntity(), seed, ItemDisplayContext.NONE)
         return this.models.invoke(value, level)?.resolve(stack, level, owner, seed)
     }
 
-    override fun collectAll(): List<TooltipModelState> = children
+    override fun collectAll(): List<TooltipDefinitionState> = children
 
     class Unbaked(
         val switch: UnbakedSwitch<*, *>,
-        val fallback: Optional<TooltipModel.Unbaked>,
-    ) : TooltipModel.Unbaked {
+        val fallback: Optional<TooltipDefinition.Unbaked>,
+    ) : TooltipDefinition.Unbaked {
 
-        override val codec: MapCodec<out TooltipModel.Unbaked> = CODEC
+        override val codec: MapCodec<out TooltipDefinition.Unbaked> = CODEC
 
-        override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipModel {
+        override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipDefinition {
             return switch.bake(swapper, resources, fallback.map { it.bake(swapper, resources) }.getOrNull())
         }
 
@@ -64,7 +64,7 @@ data class SelectTooltipModel<Type : Any>(
             val CODEC: MapCodec<Unbaked> = RecordCodecBuilder.mapCodec {
                 it.group(
                     UnbakedSwitch.CODEC.forGetter(Unbaked::switch),
-                    TooltipModels.CODEC.optionalFieldOf("fallback").forGetter(Unbaked::fallback),
+                    TooltipDefinitions.CODEC.optionalFieldOf("fallback").forGetter(Unbaked::fallback),
                 ).apply(it, ::Unbaked)
             }
         }
@@ -72,9 +72,9 @@ data class SelectTooltipModel<Type : Any>(
 
     class UnbakedSwitch<Property : SelectItemModelProperty<Type>, Type : Any>(val property: Property, val cases: List<UnbakedTooltipSelectCase<Type>>) {
 
-        fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager, fallback: TooltipModel?): TooltipModel {
-            val lookup = Object2ObjectOpenHashMap<Type, TooltipModel>()
-            val children = mutableListOf<TooltipModelState>()
+        fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager, fallback: TooltipDefinition?): TooltipDefinition {
+            val lookup = Object2ObjectOpenHashMap<Type, TooltipDefinition>()
+            val children = mutableListOf<TooltipDefinitionState>()
             children.addAll(fallback?.collectAll() ?: emptyList())
             for ((types, model) in cases) {
                 val bakedModel = model.bake(swapper, resources)
@@ -86,10 +86,10 @@ data class SelectTooltipModel<Type : Any>(
             lookup.defaultReturnValue(fallback)
 
             return if (swapper == null) {
-                SelectTooltipModel(property, children) { type, _ -> lookup[type] }
+                SelectTooltipDefinition(property, children) { type, _ -> lookup[type] }
             } else {
-                val cache = CacheSlot<ClientLevel, Object2ObjectMap<Type, TooltipModel>> { level ->
-                    val cachedLookup = Object2ObjectOpenHashMap<Type, TooltipModel>(lookup.size)
+                val cache = CacheSlot<ClientLevel, Object2ObjectMap<Type, TooltipDefinition>> { level ->
+                    val cachedLookup = Object2ObjectOpenHashMap<Type, TooltipDefinition>(lookup.size)
                     cachedLookup.defaultReturnValue(fallback)
                     lookup.forEach { (type, model) ->
                         if (type == null) return@forEach
@@ -100,7 +100,7 @@ data class SelectTooltipModel<Type : Any>(
                     cachedLookup
                 }
 
-                SelectTooltipModel(property, children) { type, level ->
+                SelectTooltipDefinition(property, children) { type, level ->
                     when {
                         level == null -> lookup[type]
                         type == null -> fallback
@@ -127,7 +127,7 @@ data class SelectTooltipModel<Type : Any>(
                 val casesCodec: Codec<List<UnbakedTooltipSelectCase<Type>>> = RecordCodecBuilder.create {
                     it.group(
                         ExtraCodecs.nonEmptyList(ExtraCodecs.compactListCodec(codec)).fieldOf("when").forGetter(UnbakedTooltipSelectCase<Type>::first),
-                        TooltipModels.CODEC.fieldOf("model").forGetter(UnbakedTooltipSelectCase<Type>::second),
+                        TooltipDefinitions.CODEC.fieldOf("model").forGetter(UnbakedTooltipSelectCase<Type>::second),
                     ).apply(it, ::Pair)
                 }.listOf()
 

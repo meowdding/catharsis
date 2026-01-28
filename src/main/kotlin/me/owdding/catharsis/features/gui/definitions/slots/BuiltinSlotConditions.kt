@@ -8,6 +8,7 @@ import me.owdding.catharsis.utils.types.IntPredicate
 import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.Inline
+import net.minecraft.client.gui.components.ImageWidget.texture
 import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.component.DataComponents
 import net.minecraft.world.item.Item
@@ -15,6 +16,8 @@ import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.api.datatype.getData
 import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
+import tech.thatgravyboat.skyblockapi.utils.extentions.get
+import tech.thatgravyboat.skyblockapi.utils.extentions.getTexture
 
 @GenerateCodec
 data class SlotAllCondition(
@@ -65,19 +68,30 @@ data class SlotNameCondition(
 }
 
 @GenerateCodec
-data class HasComponentCondition(
-    val component: DataComponentType<*>
-): SlotCondition {
-    override val codec = CatharsisCodecs.getMapCodec<HasComponentCondition>()
-    override fun matches(slot: Int, stack: ItemStack): Boolean = stack.has(component)
-}
-
-@GenerateCodec
 data class SlotIslandCondition(
     val islands: Set<SkyBlockIsland>,
 ) : SlotCondition {
     override val codec = CatharsisCodecs.getMapCodec<SlotIslandCondition>()
     override fun matches(slot: Int, stack: ItemStack): Boolean = SkyBlockIsland.inAnyIsland(islands)
+}
+
+@GenerateCodec
+data class SlotTextureCondition(
+    @Compact val textures: Set<String>
+) : SlotCondition {
+    override val codec = CatharsisCodecs.getMapCodec<SlotTextureCondition>()
+    override fun matches(slot: Int, stack: ItemStack): Boolean {
+        val texture = stack.getTexture() ?: return false
+        return texture in this.textures
+    }
+}
+
+@GenerateCodec
+data class HasComponentCondition(
+    val component: DataComponentType<*>
+): SlotCondition {
+    override val codec = CatharsisCodecs.getMapCodec<HasComponentCondition>()
+    override fun matches(slot: Int, stack: ItemStack): Boolean = stack.has(component)
 }
 
 data object IsTooltipHiddenCondition: SlotCondition {

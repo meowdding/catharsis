@@ -81,6 +81,18 @@ Match against the Player's current island.
 - <TypeIcon type="array"/> **islands**: A list or a singular entry of island ids to match against, names are equal to the value of `mode` in `/locraw` or the enum name in [SkyBlockIsland](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/location/SkyBlockIsland.kt).
 </TreeView>
 
+### **Skull Texture** (`catharsis:texture`)
+
+Match against a skull by its texture, fails if no texture exists.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>texture</b> slot condition object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:texture`
+- <TypeIcon type="array"/> **texture**: A list or a singular entry of textures as strings to match against.
+</TreeView>
+
+
 #### **All/And** (`catharsis:all`)
 
 Check if a list of conditions are true, useful for chaining conditions.

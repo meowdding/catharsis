@@ -35,15 +35,33 @@
     {
       "id": "skyblock_gui:calendar/hoppity",
       "target": {
-        "type": "item",
-        "items": "minecraft:player_head"
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "minecraft:player_head"
+          },
+          {
+            "type": "texture",
+            "textures": "ewogICJ0aW1lc3RhbXAiIDogMTcxMTYzNDM5MTg3OCwKICAicHJvZmlsZUlkIiA6ICIxNmQ4NjI4NzYzMWY0NDY2OGQ0NDM2ZTJlY2IwNTllNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJSZXphVG91cm5leSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iNzllN2YzMzQxYjY3MmQ5ZGU2NTY0Y2JhY2EwNTJhNmE3MjNlYTQ2NmEyZTY2YWYzNWJhMWJhODU1ZjBkNjkyIgogICAgfQogIH0KfQ=="
+          }
+        ]
       }
     },
     {
       "id": "skyblock_gui:calendar/traveling_zoo",
       "target": {
-        "type": "item",
-        "items": "minecraft:player_head"
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "minecraft:player_head"
+          },
+          {
+            "type": "texture",
+            "textures": "ewogICJ0aW1lc3RhbXAiIDogMTU4ODU4NDM4MTU0OSwKICAicHJvZmlsZUlkIiA6ICI3NTE0NDQ4MTkxZTY0NTQ2OGM5NzM5YTZlMzk1N2JlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGFua3NNb2phbmciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQ5ZmU1OTVjNmEwOGFkZWM4YjlkYWIwOTg2ODUzMjcxYzZiODdkODk3ZDczMThiMWJhZGFkMmMzNGJkNWEwZSIKICAgIH0KICB9Cn0="
+          }
+        ]
       }
     },
     {

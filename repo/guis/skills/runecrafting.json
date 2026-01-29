@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -63,7 +63,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "id": "skyblock_gui:skills/runecrafting/locked/start_down",
       "target": {
         "type": "all",
         "conditions": [

@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -63,7 +63,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1576,7 +1576,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1598,7 +1598,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1618,7 +1618,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/start_down",
       "target": {
         "type": "all",
         "conditions": [

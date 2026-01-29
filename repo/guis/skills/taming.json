@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/taming/unlocked/up_down",
+      "id": "skyblock_gui:skills/taming/unlocked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/taming/unlocking/up_down",
+      "id": "skyblock_gui:skills/taming/unlocking/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -63,7 +63,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/taming/locked/up_down",
+      "id": "skyblock_gui:skills/taming/locked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1576,7 +1576,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/taming/unlocked/up_down",
+      "id": "skyblock_gui:skills/taming/unlocked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1598,7 +1598,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/taming/unlocking/up_down",
+      "id": "skyblock_gui:skills/taming/unlocking/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1618,7 +1618,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/taming/locked/up_down",
+      "id": "skyblock_gui:skills/taming/locked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3131,7 +3131,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/taming/unlocked/up_down",
+      "id": "skyblock_gui:skills/taming/unlocked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3153,7 +3153,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/taming/unlocking/up_down",
+      "id": "skyblock_gui:skills/taming/unlocking/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3173,7 +3173,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/taming/locked/up_down",
+      "id": "skyblock_gui:skills/taming/locked/start_down",
       "target": {
         "type": "all",
         "conditions": [

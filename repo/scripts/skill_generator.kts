@@ -11,7 +11,7 @@ fun Int.toRomanNumeral(): String {
     return thousandsPlace[this / 1000] + hundredsPlace[this % 1000 / 100] + tensPlace[this % 100 / 10] + onesPlace[this % 10]
 }
 
-fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: String = skillName, type: String = "Level", title: String = "$skillName Skill", icon: String = title) {
+fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: String = skillName, type: String = "Level", title: String = "$skillName Skill", icon: String = title, extra: String = "") {
 
     val nodes = (1..maxLevel).joinToString(",\n") { level ->
         val evalLevel = level % 25
@@ -19,6 +19,7 @@ fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: S
         var direction = when {
             level % 25 >= 23 -> "up_down"
             level % 25 == 0 -> "up_end"
+            level % 25 == 1 -> "start_down"
 
             evalLevel % 10 == 0 -> "left_down"
             evalLevel % 10 <= 2 -> "up_down"
@@ -35,7 +36,7 @@ fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: S
 
         """
 {
-  "id": "skyblock_gui:skill/${skillName.lowercase()}/${direction}_unlocked",
+  "id": "skyblock_gui:skills/${extra}${skillName.lowercase()}/unlocked/${direction}",
   "target": {
     "type": "all",
     "conditions": [
@@ -57,7 +58,7 @@ fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: S
   }
 },
 {
-  "id": "skyblock_gui:skill/${skillName.lowercase()}/${direction}_unlocking",
+  "id": "skyblock_gui:skills/${extra}${skillName.lowercase()}/unlocking/${direction}",
   "target": {
     "type": "all",
     "conditions": [
@@ -77,7 +78,7 @@ fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: S
   }
 },
 {
-  "id": "skyblock_gui:skill/${skillName.lowercase()}/${direction}_locked",
+  "id": "skyblock_gui:skills/${extra}${skillName.lowercase()}/locked/${direction}",
   "target": {
     "type": "all",
     "conditions": [
@@ -108,7 +109,7 @@ fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: S
   },
   "layout": [
     {
-      "id": "skyblock_gui:skill/${skillName.lowercase()}/icon",
+      "id": "skyblock_gui:skills/${extra}${skillName.lowercase()}/icon",
       "target": {
         "type": "all",
         "conditions": [
@@ -143,13 +144,13 @@ createSkill("Alchemy", 50, "blaze_rod")
 createSkill("Carpentry", 50, "armor_stand")
 createSkill("Taming", 60, "golden_carrot")
 createSkill("Hunting", 60, null)
-createSkill("Catacombs", 50, "player_head", type = "Mastery", title = "Catacombs Rewards", icon = "Catacombs", pathName = "dungeons/catacombs")
+createSkill("Catacombs", 50, "player_head", type = "Mastery", title = "Catacombs Rewards", icon = "Catacombs", pathName = "dungeoneering/catacombs/catacombs", extra = "dungeoneering/")
 
 createSkill("Runecrafting", 25, "end_portal_frame")
 createSkill("Social", 25, "blaze_powder")
 
-createSkill("Healer", 50, "splash_potion", title = "Healer Class Perks", icon = "Healer Class", pathName = "dungeons/healer")
-createSkill("Mage", 50, "blaze_rod", title = "Mage Class Perks", icon = "Mage Class", pathName = "dungeons/mage")
-createSkill("Berserk", 50, "iron_sword", title = "Berserk Class Perks", icon = "Berserk Class", pathName = "dungeons/berserk")
-createSkill("Archer", 50, "bow", title = "Archer Class Perks", icon = "Archer Class", pathName = "dungeons/archer")
-createSkill("Tank", 50, "leather_chestplate", title = "Tank Class Perks", icon = "Tank Class", pathName = "dungeons/tank")
+createSkill("Healer", 50, "splash_potion", title = "Healer Class Perks", icon = "Healer Class", pathName = "dungeoneering/class/healer", extra = "dungeoneering/")
+createSkill("Mage", 50, "blaze_rod", title = "Mage Class Perks", icon = "Mage Class", pathName = "dungeoneering/class/mage", extra = "dungeoneering/")
+createSkill("Berserk", 50, "iron_sword", title = "Berserk Class Perks", icon = "Berserk Class", pathName = "dungeoneering/class/berserk", extra = "dungeoneering/")
+createSkill("Archer", 50, "bow", title = "Archer Class Perks", icon = "Archer Class", pathName = "dungeoneering/class/archer", extra = "dungeoneering/")
+createSkill("Tank", 50, "leather_chestplate", title = "Tank Class Perks", icon = "Tank Class", pathName = "dungeoneering/class/tank", extra = "dungeoneering/")

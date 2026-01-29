@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -63,7 +63,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
+      "id": "skyblock_gui:skills/hunting/locked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1571,7 +1571,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1593,7 +1593,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1613,7 +1613,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
+      "id": "skyblock_gui:skills/hunting/locked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3121,7 +3121,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3143,7 +3143,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -3163,7 +3163,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
+      "id": "skyblock_gui:skills/hunting/locked/start_down",
       "target": {
         "type": "all",
         "conditions": [

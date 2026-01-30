@@ -2,6 +2,7 @@ package me.owdding.catharsis.mixins.gui;
 
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.llamalad7.mixinextras.sugar.Local;
+import me.owdding.catharsis.features.gui.definitions.GuiDefinitions;
 import me.owdding.catharsis.features.gui.modifications.GuiModifiers;
 import me.owdding.catharsis.features.gui.modifications.modifiers.SlotModifier;
 import net.minecraft.Optionull;
@@ -30,7 +31,8 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
     private void catharsis$onRender(GuiGraphics graphics, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
         var modifier = GuiModifiers.getActiveModifier();
         for (var slot : this.menu.slots) {
-            var slotModifier = modifier != null ? modifier.getSlot(slot.index) : null;
+            var id = GuiDefinitions.getSlot(slot.index);
+            var slotModifier = modifier != null && id != null ? modifier.getSlots().get(id) : null;
 
             slot.catharsis$setPosition(Optionull.map(slotModifier, SlotModifier::getPosition));
             slot.catharsis$setHidden(slotModifier != null && slotModifier.getHidden());

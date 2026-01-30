@@ -2,7 +2,6 @@ package me.owdding.catharsis.features.gui.modifications
 
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
-import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.events.GuiDefinitionsApplied
 import me.owdding.catharsis.features.gui.modifications.conditions.GuiModifierDefinitionCondition
@@ -69,10 +68,10 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
         if (modifiers.isEmpty()) {
             this.selected = null
         } else {
-            val lookup = Int2ObjectArrayMap<SlotModifier>()
-            for (modifier in modifiers.flatMap { it.slots }) {
-                for (slot in modifier.slot) {
-                    lookup.putIfAbsent(slot, modifier)
+            val slots = mutableMapOf<Identifier, SlotModifier>()
+            for (modifier in modifiers) {
+                modifier.slots.forEach { (identifier, modifier) ->
+                    slots.putIfAbsent(identifier, modifier)
                 }
             }
 
@@ -83,7 +82,7 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
                 bounds = modifiers.mapNotNull { it.bounds }.let { sizes ->
                     if (sizes.isEmpty()) null else { Vector2i(sizes.maxOf { it.x }, sizes.maxOf { it.y }) }
                 },
-                slots = lookup.values.toSet().toList(),
+                slots = slots,
                 elements = modifiers.flatMap { it.elements },
                 widgets = modifiers.flatMap { it.widgets }
             )

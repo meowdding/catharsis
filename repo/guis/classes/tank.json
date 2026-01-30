@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/tank/unlocked/up_down",
+      "id": "skyblock_gui:classes/tank/unlocked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/tank/unlocking/up_down",
+      "id": "skyblock_gui:classes/tank/unlocking/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -63,7 +63,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/tank/locked/up_down",
+      "id": "skyblock_gui:classes/tank/locked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1576,7 +1576,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/tank/unlocked/up_down",
+      "id": "skyblock_gui:classes/tank/unlocked/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1598,7 +1598,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/tank/unlocking/up_down",
+      "id": "skyblock_gui:classes/tank/unlocking/start_down",
       "target": {
         "type": "all",
         "conditions": [
@@ -1618,7 +1618,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/tank/locked/up_down",
+      "id": "skyblock_gui:classes/tank/locked/start_down",
       "target": {
         "type": "all",
         "conditions": [

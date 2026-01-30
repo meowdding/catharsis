@@ -11,7 +11,7 @@ fun Int.toRomanNumeral(): String {
     return thousandsPlace[this / 1000] + hundredsPlace[this % 1000 / 100] + tensPlace[this % 100 / 10] + onesPlace[this % 10]
 }
 
-fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: String = skillName, type: String = "Level", title: String = "$skillName Skill", icon: String = title, extra: String = "") {
+fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: String = skillName, type: String = "Level", title: String = "$skillName Skill", icon: String = title, extra: String = "", dataType: String = "skill", pluraleDataType: String = "${dataType}s") {
 
     val nodes = (1..maxLevel).joinToString(",\n") { level ->
         val evalLevel = level % 25
@@ -36,7 +36,7 @@ fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: S
 
         """
 {
-  "id": "skyblock_gui:skills/${extra}${skillName.lowercase()}/unlocked/${direction}",
+  "id": "skyblock_gui:${pluraleDataType}/${extra}${skillName.lowercase()}/unlocked/${direction}",
   "target": {
     "type": "all",
     "conditions": [
@@ -58,7 +58,7 @@ fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: S
   }
 },
 {
-  "id": "skyblock_gui:skills/${extra}${skillName.lowercase()}/unlocking/${direction}",
+  "id": "skyblock_gui:${pluraleDataType}/${extra}${skillName.lowercase()}/unlocking/${direction}",
   "target": {
     "type": "all",
     "conditions": [
@@ -78,7 +78,7 @@ fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: S
   }
 },
 {
-  "id": "skyblock_gui:skills/${extra}${skillName.lowercase()}/locked/${direction}",
+  "id": "skyblock_gui:${pluraleDataType}/${extra}${skillName.lowercase()}/locked/${direction}",
   "target": {
     "type": "all",
     "conditions": [
@@ -109,7 +109,7 @@ fun createSkill(skillName: String, maxLevel: Int, nodeItem: String?, pathName: S
   },
   "layout": [
     {
-      "id": "skyblock_gui:skills/${extra}${skillName.lowercase()}/icon",
+      "id": "skyblock_gui:${pluraleDataType}/${extra}${skillName.lowercase()}/icon",
       "target": {
         "type": "all",
         "conditions": [
@@ -129,7 +129,7 @@ $nodes
 }
     """.trimIndent()
 
-    Path.of("../guis/skills/${pathName.lowercase()}.json").apply {
+    Path.of("../guis/${pluraleDataType}/${pathName.lowercase()}.json").apply {
         createParentDirectories()
     }.writeText(base)
 }
@@ -149,8 +149,8 @@ createSkill("Catacombs", 50, "player_head", type = "Mastery", title = "Catacombs
 createSkill("Runecrafting", 25, "end_portal_frame")
 createSkill("Social", 25, "blaze_powder")
 
-createSkill("Healer", 50, "splash_potion", title = "Healer Class Perks", icon = "Healer Class", pathName = "dungeoneering/class/healer", extra = "dungeoneering/")
-createSkill("Mage", 50, "blaze_rod", title = "Mage Class Perks", icon = "Mage Class", pathName = "dungeoneering/class/mage", extra = "dungeoneering/")
-createSkill("Berserk", 50, "iron_sword", title = "Berserk Class Perks", icon = "Berserk Class", pathName = "dungeoneering/class/berserk", extra = "dungeoneering/")
-createSkill("Archer", 50, "bow", title = "Archer Class Perks", icon = "Archer Class", pathName = "dungeoneering/class/archer", extra = "dungeoneering/")
-createSkill("Tank", 50, "leather_chestplate", title = "Tank Class Perks", icon = "Tank Class", pathName = "dungeoneering/class/tank", extra = "dungeoneering/")
+createSkill("Healer", 50, "splash_potion", title = "Healer Class Perks", icon = "Healer Class", dataType = "class", pluraleDataType = "classes")
+createSkill("Mage", 50, "blaze_rod", title = "Mage Class Perks", icon = "Mage Class", dataType = "class", pluraleDataType = "classes")
+createSkill("Berserk", 50, "iron_sword", title = "Berserk Class Perks", icon = "Berserk Class", dataType = "class", pluraleDataType = "classes")
+createSkill("Archer", 50, "bow", title = "Archer Class Perks", icon = "Archer Class", dataType = "class", pluraleDataType = "classes")
+createSkill("Tank", 50, "leather_chestplate", title = "Tank Class Perks", icon = "Tank Class", dataType = "class", pluraleDataType = "classes")

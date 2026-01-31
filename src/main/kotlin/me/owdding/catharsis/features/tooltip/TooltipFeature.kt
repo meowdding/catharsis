@@ -38,7 +38,6 @@ object TooltipFeature : SimplePreparableReloadListener<TooltipDefinition?>() {
         definition?.let {
             modelMap.putAll(it.collectAll().associateBy { model -> model.identifier })
         }
-        println(definition)
     }
 
     @JvmStatic

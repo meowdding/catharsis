@@ -49,7 +49,6 @@ import net.minecraft.world.item.component.CustomData
 import tech.thatgravyboat.skyblockapi.utils.builders.ItemBuilder
 import tech.thatgravyboat.skyblockapi.utils.extentions.cleanName
 
-
 @Module
 // TODO: move into package
 object GiveCommands {

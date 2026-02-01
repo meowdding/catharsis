@@ -16,6 +16,7 @@ import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.api.datatype.getData
 import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
+import tech.thatgravyboat.skyblockapi.utils.extentions.cleanName
 import tech.thatgravyboat.skyblockapi.utils.extentions.get
 import tech.thatgravyboat.skyblockapi.utils.extentions.getTexture
 
@@ -64,7 +65,7 @@ data class SlotNameCondition(
     @Inline val matcher: TextMatcher
 ): SlotCondition {
     override val codec = CatharsisCodecs.getMapCodec<SlotNameCondition>()
-    override fun matches(slot: Int, stack: ItemStack): Boolean = this.matcher.matches(stack.hoverName.fastStripped)
+    override fun matches(slot: Int, stack: ItemStack): Boolean = this.matcher.matches(stack.cleanName)
 }
 
 @GenerateCodec

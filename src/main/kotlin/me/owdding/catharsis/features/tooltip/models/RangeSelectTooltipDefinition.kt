@@ -41,10 +41,10 @@ class RangeSelectTooltipDefinition(
         }
     }
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipDefinitionState? {
-        val value = property.get(stack, level, owner?.asLivingEntity(), seed) * scale
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState? {
+        val value = property.get(stack, level, owner?.asLivingEntity(), 0) * scale
         val model = if (value.isNaN()) fallback else models.getOrNull(lastIndexLessThanOrEqual(value)) ?: fallback
-        return model?.resolve(stack, level, owner, seed)
+        return model?.resolve(stack, level, owner)
     }
 
     override fun collectAll(): List<TooltipDefinitionState> = buildList {

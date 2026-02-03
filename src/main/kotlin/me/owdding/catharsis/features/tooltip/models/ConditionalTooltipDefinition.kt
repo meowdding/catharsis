@@ -25,11 +25,11 @@ class ConditionalTooltipDefinition(
     private val onFalse: TooltipDefinition,
 ) : TooltipDefinition {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipDefinitionState? {
-        return if (property.get(stack, level, owner?.asLivingEntity(), seed, ItemDisplayContext.NONE)) {
-            onTrue.resolve(stack, level, owner, seed)
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState? {
+        return if (property.get(stack, level, owner?.asLivingEntity(), 0, ItemDisplayContext.NONE)) {
+            onTrue.resolve(stack, level, owner)
         } else {
-            onFalse.resolve(stack, level, owner, seed)
+            onFalse.resolve(stack, level, owner)
         }
     }
 

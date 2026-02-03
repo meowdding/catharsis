@@ -41,9 +41,9 @@ data class SelectTooltipDefinition<Type : Any>(
     private val models: (Type?, ClientLevel?) -> TooltipDefinition?,
 ) : TooltipDefinition {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipDefinitionState? {
-        val value = this.property.get(stack, level, owner?.asLivingEntity(), seed, ItemDisplayContext.NONE)
-        return this.models.invoke(value, level)?.resolve(stack, level, owner, seed)
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState? {
+        val value = this.property.get(stack, level, owner?.asLivingEntity(), 0, ItemDisplayContext.NONE)
+        return this.models.invoke(value, level)?.resolve(stack, level, owner)
     }
 
     override fun collectAll(): List<TooltipDefinitionState> = children

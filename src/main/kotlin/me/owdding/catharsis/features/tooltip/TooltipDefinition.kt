@@ -20,7 +20,7 @@ import java.util.UUID
 
 interface TooltipDefinition {
 
-    fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipDefinitionState?
+    fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState?
     fun collectAll(): List<TooltipDefinitionState>
 
     interface Unbaked {

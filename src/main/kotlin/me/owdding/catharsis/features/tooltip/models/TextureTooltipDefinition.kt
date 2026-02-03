@@ -18,7 +18,7 @@ import net.minecraft.world.item.ItemStack
 
 class TextureTooltipDefinition(private val state: TooltipDefinitionState) : TooltipDefinition {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipDefinitionState = state
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState = state
     override fun collectAll(): List<TooltipDefinitionState> = listOf(state)
 
     @GenerateCodec

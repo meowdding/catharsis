@@ -24,7 +24,7 @@ public class GuiGraphicsMixin {
     private <T> T catharsis$wrapGetTooltipStyle(ItemStack instance, DataComponentType<T> dataComponentType, Operation<T> original) {
         var definition = TooltipFeature.getDefinition();
         if (definition != null) {
-            var state = definition.resolve(instance, McLevel.INSTANCE.getSelfOrNull(), McPlayer.INSTANCE.getSelf(), 0);
+            var state = definition.resolve(instance, McLevel.INSTANCE.getSelfOrNull(), McPlayer.INSTANCE.getSelf());
             if (state != null) {
                 //noinspection unchecked
                 return (T) state.getIdentifier();

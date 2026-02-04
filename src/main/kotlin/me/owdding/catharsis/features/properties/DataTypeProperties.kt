@@ -5,7 +5,7 @@ import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.armor.models.SelectArmorModel
 import me.owdding.catharsis.features.armor.models.hook
-import me.owdding.catharsis.features.tooltip.models.SelectTooltipModel
+import me.owdding.catharsis.features.tooltip.models.SelectTooltipDefinition
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.generated.CodecUtils
 import me.owdding.catharsis.generated.EnumCodec
@@ -20,7 +20,6 @@ import net.minecraft.client.renderer.item.properties.conditional.ConditionalItem
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperty
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperty
 import net.minecraft.util.ExtraCodecs
-import net.minecraft.util.ExtraCodecs.converter
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.item.ItemDisplayContext
@@ -147,9 +146,9 @@ object DataTypeProperties {
                 )
             }
 
-            private fun <Type, CompareType : Any> createTooltipCodec(entry: DataTypeEntry<Type, CompareType>): MapCodec<SelectTooltipModel.UnbakedSwitch<SelectDataTypeItemProperty<Type, CompareType>, CompareType>> {
-                return SelectTooltipModel.UnbakedSwitch.createCasesFieldCodec(entry.codec).xmap(
-                    { cases -> SelectTooltipModel.UnbakedSwitch(SelectDataTypeItemProperty(entry), cases) },
+            private fun <Type, CompareType : Any> createTooltipCodec(entry: DataTypeEntry<Type, CompareType>): MapCodec<SelectTooltipDefinition.UnbakedSwitch<SelectDataTypeItemProperty<Type, CompareType>, CompareType>> {
+                return SelectTooltipDefinition.UnbakedSwitch.createCasesFieldCodec(entry.codec).xmap(
+                    { cases -> SelectTooltipDefinition.UnbakedSwitch(SelectDataTypeItemProperty(entry), cases) },
                     { switch -> switch.cases },
                 )
             }

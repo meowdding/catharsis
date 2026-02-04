@@ -2,9 +2,9 @@ package me.owdding.catharsis.features.tooltip.models
 
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
-import me.owdding.catharsis.features.tooltip.TooltipModel
-import me.owdding.catharsis.features.tooltip.TooltipModelState
-import me.owdding.catharsis.features.tooltip.TooltipModels
+import me.owdding.catharsis.features.tooltip.TooltipDefinition
+import me.owdding.catharsis.features.tooltip.TooltipDefinitionState
+import me.owdding.catharsis.features.tooltip.TooltipDefinitions
 import me.owdding.catharsis.utils.TypedResourceManager
 import me.owdding.catharsis.utils.extensions.createCacheSlot
 import net.minecraft.client.multiplayer.ClientLevel
@@ -19,40 +19,40 @@ import net.minecraft.world.item.ItemStack
 //? = 1.21.8
 /*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
 
-class ConditionalTooltipModel(
+class ConditionalTooltipDefinition(
     private val property: ItemModelPropertyTest,
-    private val onTrue: TooltipModel,
-    private val onFalse: TooltipModel,
-) : TooltipModel {
+    private val onTrue: TooltipDefinition,
+    private val onFalse: TooltipDefinition,
+) : TooltipDefinition {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipModelState? {
-        return if (property.get(stack, level, owner?.asLivingEntity(), seed, ItemDisplayContext.NONE)) {
-            onTrue.resolve(stack, level, owner, seed)
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState? {
+        return if (property.get(stack, level, owner?.asLivingEntity(), 0, ItemDisplayContext.NONE)) {
+            onTrue.resolve(stack, level, owner)
         } else {
-            onFalse.resolve(stack, level, owner, seed)
+            onFalse.resolve(stack, level, owner)
         }
     }
 
-    override fun collectAll(): List<TooltipModelState> = buildList {
+    override fun collectAll(): List<TooltipDefinitionState> = buildList {
         addAll(onTrue.collectAll())
         addAll(onFalse.collectAll())
     }
 
     class Unbaked(
         val property: ConditionalItemModelProperty,
-        val onTrue: TooltipModel.Unbaked,
-        val onFalse: TooltipModel.Unbaked,
-    ) : TooltipModel.Unbaked {
+        val onTrue: TooltipDefinition.Unbaked,
+        val onFalse: TooltipDefinition.Unbaked,
+    ) : TooltipDefinition.Unbaked {
 
-        override val codec: MapCodec<out TooltipModel.Unbaked> = CODEC
+        override val codec: MapCodec<out TooltipDefinition.Unbaked> = CODEC
 
-        override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipModel {
+        override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipDefinition {
             if (swapper == null) {
-                return ConditionalTooltipModel(property, onTrue.bake(null, resources), onFalse.bake(null, resources))
+                return ConditionalTooltipDefinition(property, onTrue.bake(null, resources), onFalse.bake(null, resources))
             }
             val slot = createCacheSlot(swapper, property, ConditionalItemModelProperty::type)
 
-            return ConditionalTooltipModel(
+            return ConditionalTooltipDefinition(
                 { stack, level, owner, seed, context -> (level?.let(slot::compute) ?: property).get(stack, level, owner, seed, context) },
                 onTrue.bake(swapper, resources),
                 onFalse.bake(swapper, resources),
@@ -64,8 +64,8 @@ class ConditionalTooltipModel(
             val CODEC: MapCodec<Unbaked> = RecordCodecBuilder.mapCodec {
                 it.group(
                     ConditionalItemModelProperties.MAP_CODEC.forGetter(Unbaked::property),
-                    TooltipModels.CODEC.fieldOf("on_true").forGetter(Unbaked::onTrue),
-                    TooltipModels.CODEC.fieldOf("on_false").forGetter(Unbaked::onFalse),
+                    TooltipDefinitions.CODEC.fieldOf("on_true").forGetter(Unbaked::onTrue),
+                    TooltipDefinitions.CODEC.fieldOf("on_false").forGetter(Unbaked::onFalse),
                 ).apply(it, ::Unbaked)
             }
         }

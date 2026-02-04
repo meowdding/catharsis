@@ -2,7 +2,7 @@ package me.owdding.catharsis.hooks.armor;
 
 import com.mojang.serialization.MapCodec;
 import me.owdding.catharsis.features.armor.models.SelectArmorModel;
-import me.owdding.catharsis.features.tooltip.models.SelectTooltipModel;
+import me.owdding.catharsis.features.tooltip.models.SelectTooltipDefinition;
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperty;
 
 public interface SelectItemModelPropertyTypeHook<P extends SelectItemModelProperty<T>, T> {
@@ -16,11 +16,11 @@ public interface SelectItemModelPropertyTypeHook<P extends SelectItemModelProper
     }
 
 
-    default MapCodec<SelectTooltipModel.UnbakedSwitch<P, T>> catharsis$getTooltipSwitchCodec() {
+    default MapCodec<SelectTooltipDefinition.UnbakedSwitch<P, T>> catharsis$getTooltipSwitchCodec() {
         throw new UnsupportedOperationException();
     }
 
-    default void catharsis$setTooltipSwitchCodec(MapCodec<SelectTooltipModel.UnbakedSwitch<P, T>> codec) {
+    default void catharsis$setTooltipSwitchCodec(MapCodec<SelectTooltipDefinition.UnbakedSwitch<P, T>> codec) {
         throw new UnsupportedOperationException();
     }
 }

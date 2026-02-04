@@ -1,57 +1,54 @@
 package me.owdding.catharsis.features.tooltip
 
-import com.google.gson.JsonElement
-import com.mojang.serialization.JsonOps
+import com.mojang.serialization.Codec
+import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
+import me.owdding.catharsis.features.tooltip.models.ConditionalTooltipDefinition
+import me.owdding.catharsis.features.tooltip.models.RangeSelectTooltipDefinition
+import me.owdding.catharsis.features.tooltip.models.SelectTooltipDefinition
+import me.owdding.catharsis.features.tooltip.models.TextureTooltipDefinition
+import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.TypedResourceManager
-import me.owdding.ktmodules.Module
-import net.minecraft.client.multiplayer.ClientRegistryLayer
+import me.owdding.ktcodecs.IncludedCodec
+import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.resources.Identifier
-import net.minecraft.server.packs.resources.ResourceManager
-import net.minecraft.server.packs.resources.SimplePreparableReloadListener
-import net.minecraft.util.PlaceholderLookupProvider
-import net.minecraft.util.profiling.ProfilerFiller
-import tech.thatgravyboat.skyblockapi.helpers.McClient
-import tech.thatgravyboat.skyblockapi.utils.json.Json.gson
-import kotlin.jvm.optionals.getOrNull
+import net.minecraft.util.ExtraCodecs
+import net.minecraft.util.RegistryContextSwapper
+import net.minecraft.world.entity.ItemOwner
+import net.minecraft.world.item.ItemStack
+import java.util.UUID
 
-@Module
-object TooltipDefinition : SimplePreparableReloadListener<TooltipModel?>() {
+interface TooltipDefinition {
 
-    private var definition: TooltipModel? = null
-    private val modelMap = mutableMapOf<Identifier, TooltipModelState>()
+    fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState?
+    fun collectAll(): List<TooltipDefinitionState>
 
-    override fun prepare(manager: ResourceManager, profiler: ProfilerFiller): TooltipModel? {
-        val registry = ClientRegistryLayer.createRegistryAccess().compositeAccess()
-        val resources = TypedResourceManager(manager)
-        val lookup = PlaceholderLookupProvider(registry)
-        val ops = lookup.createSerializationContext(JsonOps.INSTANCE)
-        val swapper = lookup.createSwapper()
+    interface Unbaked {
 
-        val reader = manager.getResource(Catharsis.id("tooltip.json")).getOrNull()?.openAsReader() ?: return null
-        return TooltipModels.CODEC.parse(ops, gson.fromJson(reader, JsonElement::class.java)).orThrow.bake(swapper, resources)
-    }
+        val codec: MapCodec<out Unbaked>
 
-    override fun apply(definition: TooltipModel?, manager: ResourceManager, profiler: ProfilerFiller) {
-        this.definition = definition
-        modelMap.clear()
-        definition?.let {
-            modelMap.putAll(it.collectAll().associateBy { model -> model.identifier })
-        }
-        println(definition)
-    }
-
-    @JvmStatic
-    fun getDefinition(): TooltipModel? = definition
-
-    @JvmStatic
-    fun getBackground(id: Identifier?): Identifier? = modelMap[id]?.background
-
-    @JvmStatic
-    fun getFrame(id: Identifier?): Identifier? = modelMap[id]?.frame
-
-    init {
-        McClient.registerClientReloadListener(Catharsis.id("tooltip_definition"), this)
+        fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipDefinition
     }
 }
 
+
+data class TooltipDefinitionState(
+    val background: Identifier,
+    val frame: Identifier,
+) {
+    val identifier = Catharsis.id(UUID.randomUUID().toString())
+}
+
+object TooltipDefinitions {
+    val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out TooltipDefinition.Unbaked>>()
+
+    @IncludedCodec
+    val CODEC: Codec<TooltipDefinition.Unbaked> = ID_MAPPER.codec(Identifier.CODEC).dispatch(TooltipDefinition.Unbaked::codec) { it }
+
+    init {
+        ID_MAPPER.put(Catharsis.mc("condition"), ConditionalTooltipDefinition.Unbaked.CODEC)
+        ID_MAPPER.put(Catharsis.mc("range_dispatch"), RangeSelectTooltipDefinition.Unbaked.CODEC)
+        ID_MAPPER.put(Catharsis.mc("select"), SelectTooltipDefinition.Unbaked.CODEC)
+        ID_MAPPER.put(Catharsis.id("texture"), CatharsisCodecs.getMapCodec<TextureTooltipDefinition.UnbakedTexture>())
+    }
+}

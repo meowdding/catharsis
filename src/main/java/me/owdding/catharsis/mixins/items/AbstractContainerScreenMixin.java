@@ -3,7 +3,7 @@ package me.owdding.catharsis.mixins.items;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import com.llamalad7.mixinextras.sugar.Local;
-import me.owdding.catharsis.features.tooltip.TooltipDefinition;
+import me.owdding.catharsis.features.tooltip.TooltipFeature;
 import me.owdding.catharsis.hooks.items.AbstractContainerScreenHook;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
@@ -43,9 +43,9 @@ public class AbstractContainerScreenMixin {
         )
     )
     private <T> T catharsis$wrapGetTooltipStyle(ItemStack instance, DataComponentType<T> dataComponentType, Operation<T> original) {
-        var definition = TooltipDefinition.getDefinition();
+        var definition = TooltipFeature.getDefinition();
         if (definition != null) {
-            var state = definition.resolve(instance, McLevel.INSTANCE.getSelfOrNull(), McPlayer.INSTANCE.getSelf(), 0);
+            var state = definition.resolve(instance, McLevel.INSTANCE.getSelfOrNull(), McPlayer.INSTANCE.getSelf());
             if (state != null) {
                 //noinspection unchecked
                 return (T) state.getIdentifier();

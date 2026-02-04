@@ -1,8 +1,8 @@
 package me.owdding.catharsis.features.tooltip.models
 
 import com.mojang.serialization.MapCodec
-import me.owdding.catharsis.features.tooltip.TooltipModel
-import me.owdding.catharsis.features.tooltip.TooltipModelState
+import me.owdding.catharsis.features.tooltip.TooltipDefinition
+import me.owdding.catharsis.features.tooltip.TooltipDefinitionState
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.TypedResourceManager
 import me.owdding.ktcodecs.GenerateCodec
@@ -16,24 +16,22 @@ import net.minecraft.world.item.ItemStack
 //? = 1.21.8
 /*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
 
-class TextureTooltipModel(
-    private val state: TooltipModelState,
-) : TooltipModel {
+class TextureTooltipDefinition(private val state: TooltipDefinitionState) : TooltipDefinition {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): TooltipModelState = state
-    override fun collectAll(): List<TooltipModelState> = listOf(state)
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState = state
+    override fun collectAll(): List<TooltipDefinitionState> = listOf(state)
 
     @GenerateCodec
     @NamedCodec("unbakedTextureTooltip")
     data class UnbakedTexture(
         val background: Identifier,
         val frame: Identifier,
-    ) : TooltipModel.Unbaked {
+    ) : TooltipDefinition.Unbaked {
 
-        override val codec: MapCodec<out TooltipModel.Unbaked> = CatharsisCodecs.getMapCodec<UnbakedTexture>()
+        override val codec: MapCodec<out TooltipDefinition.Unbaked> = CatharsisCodecs.getMapCodec<UnbakedTexture>()
 
-        override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipModel {
-            return TextureTooltipModel(TooltipModelState(background, frame))
+        override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipDefinition {
+            return TextureTooltipDefinition(TooltipDefinitionState(background, frame))
         }
     }
 }

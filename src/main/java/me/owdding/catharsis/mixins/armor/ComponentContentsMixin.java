@@ -5,7 +5,7 @@ import com.llamalad7.mixinextras.sugar.Local;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import me.owdding.catharsis.features.armor.models.SelectArmorModel;
-import me.owdding.catharsis.features.tooltip.models.SelectTooltipModel;
+import me.owdding.catharsis.features.tooltip.models.SelectTooltipDefinition;
 import net.minecraft.client.renderer.item.properties.select.ComponentContents;
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperty;
 import net.minecraft.core.component.DataComponentType;
@@ -32,9 +32,9 @@ public class ComponentContentsMixin {
         original.catharsis$setArmorSwitchCodec(armorCodec);
 
         // noinspection RedundantCast
-        MapCodec<SelectTooltipModel.UnbakedSwitch<ComponentContents<T>, T>> tooltipCodec = typeCodec.dispatchMap(
+        MapCodec<SelectTooltipDefinition.UnbakedSwitch<ComponentContents<T>, T>> tooltipCodec = typeCodec.dispatchMap(
             "component",
-            unbakedSwitch -> ((SelectTooltipModel.UnbakedSwitch<ComponentContents<T>, T>) unbakedSwitch).getProperty().componentType(),
+            unbakedSwitch -> ((SelectTooltipDefinition.UnbakedSwitch<ComponentContents<T>, T>) unbakedSwitch).getProperty().componentType(),
             type -> catharsis$createCodec(type)
         );
         original.catharsis$setTooltipSwitchCodec(tooltipCodec);

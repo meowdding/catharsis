@@ -1,7 +1,7 @@
 package me.owdding.catharsis.features.gui.definitions
 
 import com.google.common.collect.Iterables
-import com.google.gson.JsonElement
+import com.mojang.serialization.JsonOps
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.events.FinishRepoLoadEvent
@@ -9,7 +9,6 @@ import me.owdding.catharsis.events.GuiDefinitionsApplied
 import me.owdding.catharsis.events.SlotChangedEvent
 import me.owdding.catharsis.events.StartRepoLoadEvent
 import me.owdding.catharsis.features.gui.definitions.slots.GuiSlotDefinition
-import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.repo.CatharsisRemoteRepo
 import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
@@ -29,16 +28,13 @@ import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerCloseEvent
 import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerInitializedEvent
 import tech.thatgravyboat.skyblockapi.api.events.screen.ScreenInitializedEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
-import tech.thatgravyboat.skyblockapi.utils.json.Json.gson
-import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
-import java.io.Reader
-import kotlin.io.path.reader
+import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
+import kotlin.io.path.readText
 
 
 @Module
 object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefinition>>(), CatharsisLogger by Catharsis.featureLogger() {
 
-    private val codec = CatharsisCodecs.GuiDefinitionCodec.codec()
     private val uiDefinitionConverter = FileToIdConverter.json("catharsis/guis")
 
     private val packDefinitions = mutableListOf<DefinitionEntry>()
@@ -76,12 +72,10 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
             }
 
             runCatching("Loading gui definition $key") {
-                uiDefinitionConverter.fileToId(key) to value.readWithCodec(codec)
+                uiDefinitionConverter.fileToId(key) to value.readWithCodec(GuiDefinition.CODEC)
             }
         }
     }
-
-    private fun Reader.parse() = gson.fromJson(this, JsonElement::class.java).toDataOrThrow(codec)
 
     override fun apply(data: Map<Identifier, GuiDefinition>, resourceManager: ResourceManager, profiler: ProfilerFiller) {
         this.packDefinitions.clear()
@@ -99,7 +93,14 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
     @Subscription
     private fun FinishRepoLoadEvent.finish() {
         CatharsisRemoteRepo.listFilesInDirectory("guis").forEach { (name, path) ->
-            repoDefinitions.add(DefinitionEntry(Catharsis.id(name.removeSuffix(".json")), path.reader().parse()))
+            val parsed = GuiDefinition.STRICT_CODEC.parse(JsonOps.INSTANCE, path.readText().readJson())
+            val definition = parsed.resultOrPartial()
+
+            if (McClient.isDev && parsed.isError) {
+                GuiDefinitions.error("Failed to load gui definition from repo: $name", parsed.error().get().message())
+            } else if (definition.isPresent) {
+                repoDefinitions.add(DefinitionEntry(Catharsis.id(name.removeSuffix(".json")), definition.get()))
+            }
         }
         repoDefinitions.sortByDescending(DefinitionEntry::priority)
     }

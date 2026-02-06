@@ -13,10 +13,91 @@
       }
     },
     {
-      "id": "skyblock_gui:calendar_and_events/mayor",
+      "id": "skyblock_gui:calendar_and_events/mayor_aatrox",
       "target": {
         "type": "name",
-        "name": "Mayor \\w+"
+        "mode": "equals",
+        "name": "Mayor Aatrox"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_cole",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Cole"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_diana",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Diana"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_finnegan",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Finnegan"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_foxy",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Foxy"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_marina",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Paul"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_marina",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Paul"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_jerry",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Jerry"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_derpy",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Derpy"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_scorpius",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Scorpius"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_aura",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Aura"
       }
     },
     {

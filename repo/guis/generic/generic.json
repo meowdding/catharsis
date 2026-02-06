@@ -49,7 +49,7 @@
       "id": "skyblock_gui:generic/next_page",
       "target": {
         "type": "name",
-        "name": "Next Page|Levels \\d+ - \\d+"
+        "name": "Next Page|(?:Levels|Mastery) \\d+ - \\d+"
       }
     },
     {

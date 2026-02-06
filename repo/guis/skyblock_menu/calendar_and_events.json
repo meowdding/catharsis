@@ -1,0 +1,170 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Calendar and Events"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:calendar_and_events/event_rewards",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Event Rewards"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_aatrox",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Aatrox"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_cole",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Cole"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_diana",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Diana"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_finnegan",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Finnegan"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_foxy",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Foxy"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_marina",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Paul"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_marina",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Paul"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_jerry",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Jerry"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_derpy",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Derpy"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_scorpius",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Scorpius"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/mayor_aura",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mayor Aura"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Calendar"
+      }
+    },
+    {
+      "id": "skyblock_gui:chocolate_factory/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Chocolate Factory"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/hoppity",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) Hoppity's Hunt"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/election_over",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) Election Over!"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/traveling_zoo",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Traveling Zoo"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/election_booth_opens",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) Election Booth Opens"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/spooky",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) Spooky Festival"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/season_of_jerry",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) Season of Jerry"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events/event/new_year",
+      "target": {
+        "type": "name",
+        "name": "\\d+(?:st|nd|rd|th) New Year Celebration"
+      }
+    }
+  ]
+}

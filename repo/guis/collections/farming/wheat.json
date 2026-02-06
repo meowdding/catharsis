@@ -1,0 +1,800 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Wheat Collection"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:collections/farming/unlocked/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 18
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 1",
+              "Wheat I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocking/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 18
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 1",
+              "Wheat I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/locked/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 18
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 1",
+              "Wheat I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 2",
+              "Wheat II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 2",
+              "Wheat II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 2",
+              "Wheat II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 20
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 3",
+              "Wheat III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 20
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 3",
+              "Wheat III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 20
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 3",
+              "Wheat III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 4",
+              "Wheat IV"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 4",
+              "Wheat IV"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 4",
+              "Wheat IV"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 22
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 5",
+              "Wheat V"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 22
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 5",
+              "Wheat V"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 22
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 5",
+              "Wheat V"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 6",
+              "Wheat VI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 6",
+              "Wheat VI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 6",
+              "Wheat VI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 24
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 7",
+              "Wheat VII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 24
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 7",
+              "Wheat VII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 24
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 7",
+              "Wheat VII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 8",
+              "Wheat VIII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 8",
+              "Wheat VIII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 8",
+              "Wheat VIII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocked/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 26
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 9",
+              "Wheat IX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocking/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 26
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 9",
+              "Wheat IX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/locked/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 26
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 9",
+              "Wheat IX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocked/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 27
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 10",
+              "Wheat X"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocking/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 27
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 10",
+              "Wheat X"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/locked/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 27
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 10",
+              "Wheat X"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocked/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 28
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 11",
+              "Wheat XI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/unlocking/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 28
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 11",
+              "Wheat XI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/locked/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 28
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Wheat 11",
+              "Wheat XI"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

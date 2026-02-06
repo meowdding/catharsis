@@ -5,6 +5,7 @@ import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
 import net.minecraft.world.inventory.MenuType
+import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
 import tech.thatgravyboat.skyblockapi.utils.text.TextProperties.stripped
 
 @GenerateCodec
@@ -36,9 +37,7 @@ data class GuiDefinitionSlotCondition(
 }
 
 @GenerateCodec
-data class GuiDefinitionTitleCondition(
-    val title: Regex
-) : GuiDefinitionCondition {
+data class GuiDefinitionTitleCondition(val title: Regex) : GuiDefinitionCondition {
     override val codec = CatharsisCodecs.getMapCodec<GuiDefinitionTitleCondition>()
     override fun matches(screen: AbstractContainerScreen<*>): Boolean {
         return this.title.matches(screen.title.stripped)
@@ -51,4 +50,10 @@ data class GuiDefinitionTypeCondition(val type: MenuType<*>): GuiDefinitionCondi
     override fun matches(screen: AbstractContainerScreen<*>): Boolean {
         return this.type == screen.menu.type
     }
+}
+
+@GenerateCodec
+data class GuiDefinitionIslandCondition(val islands: Set<SkyBlockIsland>) : GuiDefinitionCondition {
+    override val codec = CatharsisCodecs.getMapCodec<GuiDefinitionIslandCondition>()
+    override fun matches(screen: AbstractContainerScreen<*>): Boolean = SkyBlockIsland.inAnyIsland(islands)
 }

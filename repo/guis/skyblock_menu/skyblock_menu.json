@@ -1,0 +1,176 @@
+{
+  "target": {
+    "type": "title",
+    "title": "SkyBlock Menu"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:garden_desk",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Garden Desk"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Heart of the Forest"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Heart of the Mountain"
+      }
+    },
+    {
+      "id": "skyblock_gui:manage_chips",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Manage Chips"
+      }
+    },
+    {
+      "id": "skyblock_gui:your_skyblock_profile",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Your SkyBlock Profile"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Your Skills"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Collections"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Recipe Book"
+      }
+    },
+    {
+      "id": "skyblock_gui:skyblock_leveling",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "SkyBlock Leveling"
+      }
+    },
+    {
+      "id": "skyblock_gui:quests_and_chapters",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quests & Chapters"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/rift/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Rift Storage"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar_and_events",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Calendar and Events"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Storage"
+      }
+    },
+    {
+      "id": "skyblock_gui:your_bags",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Your Bags"
+      }
+    },
+    {
+      "id": "skyblock_gui:pets",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Pets"
+      }
+    },
+    {
+      "id": "skyblock_gui:crafting_table",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Crafting Table"
+      }
+    },
+    {
+      "id": "skyblock_gui:rift_guide",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Rift Guide"
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Wardrobe"
+      }
+    },
+    {
+      "id": "skyblock_gui:personal_bank",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Personal Bank"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Fast Travel"
+      }
+    },
+    {
+      "id": "skyblock_gui:profile_management",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Profile Management"
+      }
+    }
+  ]
+}

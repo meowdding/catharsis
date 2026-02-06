@@ -1,6 +1,7 @@
 package me.owdding.catharsis.mixins.gui;
 
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
+import me.owdding.catharsis.events.SlotChangedEvent;
 import me.owdding.catharsis.hooks.gui.SlotHook;
 import net.minecraft.world.inventory.Slot;
 import org.jetbrains.annotations.Nullable;
@@ -8,6 +9,10 @@ import org.joml.Vector2i;
 import org.joml.Vector2ic;
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI;
+import tech.thatgravyboat.skyblockapi.helpers.McScreen;
 
 @Mixin(Slot.class)
 public class SlotMixin implements SlotHook {
@@ -39,6 +44,17 @@ public class SlotMixin implements SlotHook {
     @ModifyReturnValue(method = "isHighlightable", at = @At("RETURN"))
     private boolean catharsis$modifyIsHighlightable(boolean original) {
         return this.catharsis$highlightable && original;
+    }
+
+    @Inject(method = "setChanged", at = @At("TAIL"))
+    private void catharsis$onSetChanged(CallbackInfo ci) {
+        if (SlotHook.INITIALIZING.get() == Boolean.TRUE) return;
+
+        var self = (Slot) (Object) this;
+        var menuScreen = McScreen.INSTANCE.getAsMenu();
+        if (menuScreen == null) return;
+
+        new SlotChangedEvent(self, menuScreen).post(SkyBlockAPI.getEventBus());
     }
 
     // Hook Overrides

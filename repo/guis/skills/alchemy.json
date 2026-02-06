@@ -1,0 +1,3134 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Alchemy Skill"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:skills/alchemy/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "name": "Alchemy Skill"
+          },
+          {
+            "type": "slot",
+            "slot": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level I",
+              "Alchemy Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level I",
+              "Alchemy Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level I",
+              "Alchemy Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level II",
+              "Alchemy Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level II",
+              "Alchemy Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level II",
+              "Alchemy Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level III",
+              "Alchemy Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level III",
+              "Alchemy Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level III",
+              "Alchemy Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level IV",
+              "Alchemy Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level IV",
+              "Alchemy Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level IV",
+              "Alchemy Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "blaze_rod"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level V",
+              "Alchemy Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level V",
+              "Alchemy Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level V",
+              "Alchemy Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level VI",
+              "Alchemy Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level VI",
+              "Alchemy Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level VI",
+              "Alchemy Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level VII",
+              "Alchemy Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level VII",
+              "Alchemy Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level VII",
+              "Alchemy Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level VIII",
+              "Alchemy Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level VIII",
+              "Alchemy Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level VIII",
+              "Alchemy Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level IX",
+              "Alchemy Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level IX",
+              "Alchemy Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level IX",
+              "Alchemy Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "blaze_rod"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level X",
+              "Alchemy Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level X",
+              "Alchemy Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level X",
+              "Alchemy Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XI",
+              "Alchemy Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XI",
+              "Alchemy Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XI",
+              "Alchemy Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XII",
+              "Alchemy Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XII",
+              "Alchemy Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XII",
+              "Alchemy Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XIII",
+              "Alchemy Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XIII",
+              "Alchemy Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XIII",
+              "Alchemy Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XIV",
+              "Alchemy Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XIV",
+              "Alchemy Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XIV",
+              "Alchemy Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "blaze_rod"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XV",
+              "Alchemy Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XV",
+              "Alchemy Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XV",
+              "Alchemy Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XVI",
+              "Alchemy Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XVI",
+              "Alchemy Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XVI",
+              "Alchemy Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XVII",
+              "Alchemy Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XVII",
+              "Alchemy Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XVII",
+              "Alchemy Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XVIII",
+              "Alchemy Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XVIII",
+              "Alchemy Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XVIII",
+              "Alchemy Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XIX",
+              "Alchemy Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XIX",
+              "Alchemy Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XIX",
+              "Alchemy Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "blaze_rod"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XX",
+              "Alchemy Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XX",
+              "Alchemy Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XX",
+              "Alchemy Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXI",
+              "Alchemy Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXI",
+              "Alchemy Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXI",
+              "Alchemy Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXII",
+              "Alchemy Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXII",
+              "Alchemy Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXII",
+              "Alchemy Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXIII",
+              "Alchemy Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXIII",
+              "Alchemy Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXIII",
+              "Alchemy Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXIV",
+              "Alchemy Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXIV",
+              "Alchemy Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXIV",
+              "Alchemy Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "blaze_rod"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXV",
+              "Alchemy Level 25"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXV",
+              "Alchemy Level 25"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXV",
+              "Alchemy Level 25"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXVI",
+              "Alchemy Level 26"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXVI",
+              "Alchemy Level 26"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXVI",
+              "Alchemy Level 26"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXVII",
+              "Alchemy Level 27"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXVII",
+              "Alchemy Level 27"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXVII",
+              "Alchemy Level 27"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXVIII",
+              "Alchemy Level 28"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXVIII",
+              "Alchemy Level 28"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXVIII",
+              "Alchemy Level 28"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXIX",
+              "Alchemy Level 29"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXIX",
+              "Alchemy Level 29"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXIX",
+              "Alchemy Level 29"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "blaze_rod"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXX",
+              "Alchemy Level 30"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXX",
+              "Alchemy Level 30"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXX",
+              "Alchemy Level 30"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXI",
+              "Alchemy Level 31"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXI",
+              "Alchemy Level 31"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXI",
+              "Alchemy Level 31"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXII",
+              "Alchemy Level 32"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXII",
+              "Alchemy Level 32"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXII",
+              "Alchemy Level 32"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXIII",
+              "Alchemy Level 33"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXIII",
+              "Alchemy Level 33"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXIII",
+              "Alchemy Level 33"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXIV",
+              "Alchemy Level 34"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXIV",
+              "Alchemy Level 34"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXIV",
+              "Alchemy Level 34"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "blaze_rod"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXV",
+              "Alchemy Level 35"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXV",
+              "Alchemy Level 35"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXV",
+              "Alchemy Level 35"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXVI",
+              "Alchemy Level 36"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXVI",
+              "Alchemy Level 36"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXVI",
+              "Alchemy Level 36"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXVII",
+              "Alchemy Level 37"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXVII",
+              "Alchemy Level 37"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXVII",
+              "Alchemy Level 37"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXVIII",
+              "Alchemy Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXVIII",
+              "Alchemy Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXVIII",
+              "Alchemy Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXIX",
+              "Alchemy Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXIX",
+              "Alchemy Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XXXIX",
+              "Alchemy Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "blaze_rod"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XL",
+              "Alchemy Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XL",
+              "Alchemy Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XL",
+              "Alchemy Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLI",
+              "Alchemy Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLI",
+              "Alchemy Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLI",
+              "Alchemy Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLII",
+              "Alchemy Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLII",
+              "Alchemy Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLII",
+              "Alchemy Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLIII",
+              "Alchemy Level 43"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLIII",
+              "Alchemy Level 43"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLIII",
+              "Alchemy Level 43"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLIV",
+              "Alchemy Level 44"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLIV",
+              "Alchemy Level 44"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLIV",
+              "Alchemy Level 44"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "blaze_rod"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLV",
+              "Alchemy Level 45"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLV",
+              "Alchemy Level 45"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLV",
+              "Alchemy Level 45"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLVI",
+              "Alchemy Level 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLVI",
+              "Alchemy Level 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLVI",
+              "Alchemy Level 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLVII",
+              "Alchemy Level 47"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLVII",
+              "Alchemy Level 47"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLVII",
+              "Alchemy Level 47"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLVIII",
+              "Alchemy Level 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLVIII",
+              "Alchemy Level 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLVIII",
+              "Alchemy Level 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLIX",
+              "Alchemy Level 49"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLIX",
+              "Alchemy Level 49"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level XLIX",
+              "Alchemy Level 49"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "blaze_rod"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level L",
+              "Alchemy Level 50"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/unlocking/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level L",
+              "Alchemy Level 50"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/alchemy/locked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Alchemy Level L",
+              "Alchemy Level 50"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

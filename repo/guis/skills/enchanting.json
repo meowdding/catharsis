@@ -1,0 +1,3756 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Enchanting Skill"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:skills/enchanting/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "name": "Enchanting Skill"
+          },
+          {
+            "type": "slot",
+            "slot": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level I",
+              "Enchanting Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level I",
+              "Enchanting Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level I",
+              "Enchanting Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level II",
+              "Enchanting Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level II",
+              "Enchanting Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level II",
+              "Enchanting Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level III",
+              "Enchanting Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level III",
+              "Enchanting Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level III",
+              "Enchanting Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level IV",
+              "Enchanting Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level IV",
+              "Enchanting Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level IV",
+              "Enchanting Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level V",
+              "Enchanting Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level V",
+              "Enchanting Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level V",
+              "Enchanting Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level VI",
+              "Enchanting Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level VI",
+              "Enchanting Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level VI",
+              "Enchanting Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level VII",
+              "Enchanting Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level VII",
+              "Enchanting Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level VII",
+              "Enchanting Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level VIII",
+              "Enchanting Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level VIII",
+              "Enchanting Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level VIII",
+              "Enchanting Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level IX",
+              "Enchanting Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level IX",
+              "Enchanting Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level IX",
+              "Enchanting Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level X",
+              "Enchanting Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level X",
+              "Enchanting Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level X",
+              "Enchanting Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XI",
+              "Enchanting Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XI",
+              "Enchanting Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XI",
+              "Enchanting Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XII",
+              "Enchanting Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XII",
+              "Enchanting Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XII",
+              "Enchanting Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XIII",
+              "Enchanting Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XIII",
+              "Enchanting Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XIII",
+              "Enchanting Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XIV",
+              "Enchanting Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XIV",
+              "Enchanting Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XIV",
+              "Enchanting Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XV",
+              "Enchanting Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XV",
+              "Enchanting Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XV",
+              "Enchanting Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XVI",
+              "Enchanting Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XVI",
+              "Enchanting Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XVI",
+              "Enchanting Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XVII",
+              "Enchanting Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XVII",
+              "Enchanting Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XVII",
+              "Enchanting Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XVIII",
+              "Enchanting Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XVIII",
+              "Enchanting Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XVIII",
+              "Enchanting Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XIX",
+              "Enchanting Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XIX",
+              "Enchanting Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XIX",
+              "Enchanting Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XX",
+              "Enchanting Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XX",
+              "Enchanting Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XX",
+              "Enchanting Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXI",
+              "Enchanting Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXI",
+              "Enchanting Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXI",
+              "Enchanting Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXII",
+              "Enchanting Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXII",
+              "Enchanting Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXII",
+              "Enchanting Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXIII",
+              "Enchanting Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXIII",
+              "Enchanting Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXIII",
+              "Enchanting Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXIV",
+              "Enchanting Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXIV",
+              "Enchanting Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXIV",
+              "Enchanting Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXV",
+              "Enchanting Level 25"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXV",
+              "Enchanting Level 25"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXV",
+              "Enchanting Level 25"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXVI",
+              "Enchanting Level 26"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXVI",
+              "Enchanting Level 26"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXVI",
+              "Enchanting Level 26"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXVII",
+              "Enchanting Level 27"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXVII",
+              "Enchanting Level 27"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXVII",
+              "Enchanting Level 27"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXVIII",
+              "Enchanting Level 28"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXVIII",
+              "Enchanting Level 28"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXVIII",
+              "Enchanting Level 28"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXIX",
+              "Enchanting Level 29"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXIX",
+              "Enchanting Level 29"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXIX",
+              "Enchanting Level 29"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXX",
+              "Enchanting Level 30"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXX",
+              "Enchanting Level 30"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXX",
+              "Enchanting Level 30"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXI",
+              "Enchanting Level 31"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXI",
+              "Enchanting Level 31"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXI",
+              "Enchanting Level 31"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXII",
+              "Enchanting Level 32"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXII",
+              "Enchanting Level 32"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXII",
+              "Enchanting Level 32"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIII",
+              "Enchanting Level 33"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIII",
+              "Enchanting Level 33"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIII",
+              "Enchanting Level 33"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIV",
+              "Enchanting Level 34"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIV",
+              "Enchanting Level 34"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIV",
+              "Enchanting Level 34"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXV",
+              "Enchanting Level 35"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXV",
+              "Enchanting Level 35"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXV",
+              "Enchanting Level 35"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXVI",
+              "Enchanting Level 36"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXVI",
+              "Enchanting Level 36"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXVI",
+              "Enchanting Level 36"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXVII",
+              "Enchanting Level 37"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXVII",
+              "Enchanting Level 37"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXVII",
+              "Enchanting Level 37"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXVIII",
+              "Enchanting Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXVIII",
+              "Enchanting Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXVIII",
+              "Enchanting Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIX",
+              "Enchanting Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIX",
+              "Enchanting Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XXXIX",
+              "Enchanting Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XL",
+              "Enchanting Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XL",
+              "Enchanting Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XL",
+              "Enchanting Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLI",
+              "Enchanting Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLI",
+              "Enchanting Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLI",
+              "Enchanting Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLII",
+              "Enchanting Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLII",
+              "Enchanting Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLII",
+              "Enchanting Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLIII",
+              "Enchanting Level 43"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLIII",
+              "Enchanting Level 43"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLIII",
+              "Enchanting Level 43"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLIV",
+              "Enchanting Level 44"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLIV",
+              "Enchanting Level 44"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLIV",
+              "Enchanting Level 44"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLV",
+              "Enchanting Level 45"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLV",
+              "Enchanting Level 45"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLV",
+              "Enchanting Level 45"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLVI",
+              "Enchanting Level 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLVI",
+              "Enchanting Level 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLVI",
+              "Enchanting Level 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLVII",
+              "Enchanting Level 47"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLVII",
+              "Enchanting Level 47"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLVII",
+              "Enchanting Level 47"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLVIII",
+              "Enchanting Level 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLVIII",
+              "Enchanting Level 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLVIII",
+              "Enchanting Level 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLIX",
+              "Enchanting Level 49"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLIX",
+              "Enchanting Level 49"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level XLIX",
+              "Enchanting Level 49"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level L",
+              "Enchanting Level 50"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level L",
+              "Enchanting Level 50"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level L",
+              "Enchanting Level 50"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LI",
+              "Enchanting Level 51"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LI",
+              "Enchanting Level 51"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LI",
+              "Enchanting Level 51"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LII",
+              "Enchanting Level 52"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LII",
+              "Enchanting Level 52"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LII",
+              "Enchanting Level 52"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LIII",
+              "Enchanting Level 53"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LIII",
+              "Enchanting Level 53"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LIII",
+              "Enchanting Level 53"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LIV",
+              "Enchanting Level 54"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LIV",
+              "Enchanting Level 54"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LIV",
+              "Enchanting Level 54"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LV",
+              "Enchanting Level 55"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LV",
+              "Enchanting Level 55"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LV",
+              "Enchanting Level 55"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LVI",
+              "Enchanting Level 56"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LVI",
+              "Enchanting Level 56"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LVI",
+              "Enchanting Level 56"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LVII",
+              "Enchanting Level 57"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LVII",
+              "Enchanting Level 57"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LVII",
+              "Enchanting Level 57"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LVIII",
+              "Enchanting Level 58"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LVIII",
+              "Enchanting Level 58"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LVIII",
+              "Enchanting Level 58"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LIX",
+              "Enchanting Level 59"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LIX",
+              "Enchanting Level 59"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LIX",
+              "Enchanting Level 59"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocked/left_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "enchanted_book"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LX",
+              "Enchanting Level 60"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/unlocking/left_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LX",
+              "Enchanting Level 60"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/enchanting/locked/left_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Enchanting Level LX",
+              "Enchanting Level 60"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

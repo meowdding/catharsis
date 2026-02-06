@@ -9,11 +9,13 @@ import tech.thatgravyboat.skyblockapi.utils.text.TextProperties.stripped
 object CatharsisDataTypes {
 
     val HAS_SKIN_FALLBACK = DataType.of("has_skin_fallback") {
-        GenericDataTypes.HELMET_SKIN.factory(it) != null || it.hoverName.stripped.endsWith("✦")
+        if (GenericDataTypes.HELMET_SKIN.factory(it) != null) true
+        else it.hoverName.stripped.endsWith("✦").takeIf { name -> name }
     }
 
     val HAS_DYE_FALLBACK = DataType.of("has_dye_fallback") {
-        GenericDataTypes.APPLIED_DYE.factory(it) != null || it.hoverName.stripped.startsWith("✿")
+        if (GenericDataTypes.APPLIED_DYE.factory(it) != null) true
+        else it.hoverName.stripped.startsWith("✿").takeIf { name -> name }
     }
-    
+
 }

@@ -9,6 +9,7 @@ import net.minecraft.util.RandomSource
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.SoundType
 import net.minecraft.world.level.block.state.BlockState
+import tech.thatgravyboat.skyblockapi.helpers.McLevel
 
 
 @GenerateCodec
@@ -43,6 +44,6 @@ data class BakedSoundDefinition(
 
         val cacheState = BlockReplacements.blocksCache.getIfPresent(pos)
         val override = overrides[cacheState?.block]
-        return entries.select(state, pos, random) ?: cacheState?.let { override?.select(cacheState, pos, random) }
+        return entries.select(McLevel.selfOrNull, state, pos, random) ?: cacheState?.let { override?.select(McLevel.selfOrNull, cacheState, pos, random) }
     }
 }

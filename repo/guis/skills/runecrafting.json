@@ -1,0 +1,1579 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Runecrafting Skill"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:skills/runecrafting/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "name": "Runecrafting Skill"
+          },
+          {
+            "type": "slot",
+            "slot": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level I",
+              "Runecrafting Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level I",
+              "Runecrafting Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level I",
+              "Runecrafting Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level II",
+              "Runecrafting Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level II",
+              "Runecrafting Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level II",
+              "Runecrafting Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level III",
+              "Runecrafting Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level III",
+              "Runecrafting Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level III",
+              "Runecrafting Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level IV",
+              "Runecrafting Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level IV",
+              "Runecrafting Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level IV",
+              "Runecrafting Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "end_portal_frame"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level V",
+              "Runecrafting Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level V",
+              "Runecrafting Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level V",
+              "Runecrafting Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level VI",
+              "Runecrafting Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level VI",
+              "Runecrafting Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level VI",
+              "Runecrafting Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level VII",
+              "Runecrafting Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level VII",
+              "Runecrafting Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level VII",
+              "Runecrafting Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level VIII",
+              "Runecrafting Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level VIII",
+              "Runecrafting Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level VIII",
+              "Runecrafting Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level IX",
+              "Runecrafting Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level IX",
+              "Runecrafting Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level IX",
+              "Runecrafting Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "end_portal_frame"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level X",
+              "Runecrafting Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level X",
+              "Runecrafting Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level X",
+              "Runecrafting Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XI",
+              "Runecrafting Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XI",
+              "Runecrafting Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XI",
+              "Runecrafting Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XII",
+              "Runecrafting Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XII",
+              "Runecrafting Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XII",
+              "Runecrafting Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XIII",
+              "Runecrafting Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XIII",
+              "Runecrafting Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XIII",
+              "Runecrafting Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XIV",
+              "Runecrafting Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XIV",
+              "Runecrafting Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XIV",
+              "Runecrafting Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "end_portal_frame"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XV",
+              "Runecrafting Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XV",
+              "Runecrafting Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XV",
+              "Runecrafting Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XVI",
+              "Runecrafting Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XVI",
+              "Runecrafting Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XVI",
+              "Runecrafting Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XVII",
+              "Runecrafting Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XVII",
+              "Runecrafting Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XVII",
+              "Runecrafting Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XVIII",
+              "Runecrafting Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XVIII",
+              "Runecrafting Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XVIII",
+              "Runecrafting Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XIX",
+              "Runecrafting Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XIX",
+              "Runecrafting Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XIX",
+              "Runecrafting Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "end_portal_frame"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XX",
+              "Runecrafting Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XX",
+              "Runecrafting Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XX",
+              "Runecrafting Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXI",
+              "Runecrafting Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXI",
+              "Runecrafting Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXI",
+              "Runecrafting Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXII",
+              "Runecrafting Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXII",
+              "Runecrafting Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXII",
+              "Runecrafting Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXIII",
+              "Runecrafting Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXIII",
+              "Runecrafting Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXIII",
+              "Runecrafting Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXIV",
+              "Runecrafting Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXIV",
+              "Runecrafting Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXIV",
+              "Runecrafting Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "end_portal_frame"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXV",
+              "Runecrafting Level 25"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXV",
+              "Runecrafting Level 25"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Runecrafting Level XXV",
+              "Runecrafting Level 25"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

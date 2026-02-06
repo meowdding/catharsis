@@ -4,9 +4,12 @@ import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.hooks.items.AbstractContainerScreenHook
 import net.minecraft.client.multiplayer.ClientLevel
+import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperty
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperty
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperty
+import net.minecraft.resources.Identifier
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.item.ItemDisplayContext
@@ -40,6 +43,19 @@ object PetSkinProperty : SelectItemModelProperty<String> {
     override fun valueCodec(): Codec<String> = Codec.STRING
     override fun type(): SelectItemModelProperty.Type<out SelectItemModelProperty<String>, String> = TYPE
 }
+
+object HasPetSkinProperty : ConditionalItemModelProperty {
+
+    val ID: Identifier = Catharsis.id("has_pet_skin")
+    val CODEC: MapCodec<HasPetSkinProperty> = MapCodec.unit(HasPetSkinProperty)
+
+    override fun type(): MapCodec<HasPetSkinProperty> = CODEC
+
+    override fun get(stack: ItemStack, level: ClientLevel?, entity: LivingEntity?, seed: Int, context: ItemDisplayContext): Boolean {
+        return stack[DataTypes.PET_DATA]?.skin != null
+    }
+}
+
 
 object PetCandyUsedProperty : RangeSelectItemModelProperty {
 

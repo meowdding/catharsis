@@ -73,3 +73,7 @@ Returns `true` if the player is in the specified area.
 #### **Is Hovered** (`catharsis:hovered`)
 
 Returns `true` if the item is hovered.
+
+#### **Has Pet Skin** (`catharsis:has_pet_skin`)
+
+Returns `true` if the pet has a skin applied.

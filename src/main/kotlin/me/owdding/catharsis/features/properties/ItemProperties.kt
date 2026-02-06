@@ -20,6 +20,7 @@ object ItemProperties {
         register(DataTypeProperties.ID.withPrefix("is_").withSuffix("_present"), DataTypeProperties.DataTypePresentItemProperty.CODEC)
         register(DataTypeProperties.ID.withPrefix("has"), DataTypeProperties.DataTypePresentItemProperty.CODEC.let { MapCodec.of(it, it) { "HasDataType" } })
         register(GemstoneProperty.ID, GemstoneProperty.CODEC)
+        register(HasPetSkinProperty.ID, HasPetSkinProperty.CODEC)
     }
 
     @Subscription
@@ -32,6 +33,7 @@ object ItemProperties {
         register(SkyBlockSeasonProperty.ID, SkyBlockSeasonProperty.TYPE)
         register(PetItemProperty.ID, PetItemProperty.TYPE)
         register(PetSkinProperty.ID, PetSkinProperty.TYPE)
+        register(TextureProperty.ID, TextureProperty.TYPE)
     }
 
     @Subscription

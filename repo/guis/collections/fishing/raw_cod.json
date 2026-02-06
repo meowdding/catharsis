@@ -1,0 +1,800 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Raw Cod Collection"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 18
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 1",
+              "Raw Cod I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 18
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 1",
+              "Raw Cod I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 18
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 1",
+              "Raw Cod I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 2",
+              "Raw Cod II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 2",
+              "Raw Cod II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 2",
+              "Raw Cod II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 20
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 3",
+              "Raw Cod III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 20
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 3",
+              "Raw Cod III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 20
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 3",
+              "Raw Cod III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 4",
+              "Raw Cod IV"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 4",
+              "Raw Cod IV"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 4",
+              "Raw Cod IV"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 22
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 5",
+              "Raw Cod V"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 22
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 5",
+              "Raw Cod V"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 22
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 5",
+              "Raw Cod V"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 6",
+              "Raw Cod VI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 6",
+              "Raw Cod VI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 6",
+              "Raw Cod VI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 24
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 7",
+              "Raw Cod VII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 24
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 7",
+              "Raw Cod VII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 24
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 7",
+              "Raw Cod VII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 8",
+              "Raw Cod VIII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 8",
+              "Raw Cod VIII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 8",
+              "Raw Cod VIII"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 26
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 9",
+              "Raw Cod IX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 26
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 9",
+              "Raw Cod IX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 26
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 9",
+              "Raw Cod IX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 27
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 10",
+              "Raw Cod X"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 27
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 10",
+              "Raw Cod X"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 27
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 10",
+              "Raw Cod X"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 28
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 11",
+              "Raw Cod XI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 28
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 11",
+              "Raw Cod XI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 28
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Raw Cod 11",
+              "Raw Cod XI"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

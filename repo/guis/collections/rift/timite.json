@@ -1,0 +1,440 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Timite Collection"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:collections/rift/unlocked/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 1",
+              "Timite I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocking/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 1",
+              "Timite I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/locked/start",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 1",
+              "Timite I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 20
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 2",
+              "Timite II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 20
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 2",
+              "Timite II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 20
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 2",
+              "Timite II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocked/connector_skip",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 3",
+              "Timite III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocking/connector_skip",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 3",
+              "Timite III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/locked/connector_skip",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 3",
+              "Timite III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocked/skip_connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 4",
+              "Timite IV"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocking/skip_connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 4",
+              "Timite IV"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/locked/skip_connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 4",
+              "Timite IV"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 24
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 5",
+              "Timite V"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocking/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 24
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 5",
+              "Timite V"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/locked/connector",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 24
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 5",
+              "Timite V"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocked/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 6",
+              "Timite VI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocking/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 6",
+              "Timite VI"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/locked/end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Timite 6",
+              "Timite VI"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

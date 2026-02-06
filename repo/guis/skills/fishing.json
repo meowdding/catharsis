@@ -1,0 +1,3134 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Fishing Skill"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:skills/fishing/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "name": "Fishing Skill"
+          },
+          {
+            "type": "slot",
+            "slot": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level I",
+              "Fishing Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level I",
+              "Fishing Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level I",
+              "Fishing Level 1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level II",
+              "Fishing Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level II",
+              "Fishing Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level II",
+              "Fishing Level 2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level III",
+              "Fishing Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level III",
+              "Fishing Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level III",
+              "Fishing Level 3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level IV",
+              "Fishing Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level IV",
+              "Fishing Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level IV",
+              "Fishing Level 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "prismarine"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level V",
+              "Fishing Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level V",
+              "Fishing Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level V",
+              "Fishing Level 5"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level VI",
+              "Fishing Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level VI",
+              "Fishing Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level VI",
+              "Fishing Level 6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level VII",
+              "Fishing Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level VII",
+              "Fishing Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level VII",
+              "Fishing Level 7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level VIII",
+              "Fishing Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level VIII",
+              "Fishing Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level VIII",
+              "Fishing Level 8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level IX",
+              "Fishing Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level IX",
+              "Fishing Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level IX",
+              "Fishing Level 9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "prismarine"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level X",
+              "Fishing Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level X",
+              "Fishing Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level X",
+              "Fishing Level 10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XI",
+              "Fishing Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XI",
+              "Fishing Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XI",
+              "Fishing Level 11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XII",
+              "Fishing Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XII",
+              "Fishing Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XII",
+              "Fishing Level 12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XIII",
+              "Fishing Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XIII",
+              "Fishing Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XIII",
+              "Fishing Level 13"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XIV",
+              "Fishing Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XIV",
+              "Fishing Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XIV",
+              "Fishing Level 14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "prismarine"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XV",
+              "Fishing Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XV",
+              "Fishing Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XV",
+              "Fishing Level 15"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XVI",
+              "Fishing Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XVI",
+              "Fishing Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XVI",
+              "Fishing Level 16"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XVII",
+              "Fishing Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XVII",
+              "Fishing Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XVII",
+              "Fishing Level 17"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XVIII",
+              "Fishing Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XVIII",
+              "Fishing Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XVIII",
+              "Fishing Level 18"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XIX",
+              "Fishing Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XIX",
+              "Fishing Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XIX",
+              "Fishing Level 19"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "prismarine"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XX",
+              "Fishing Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XX",
+              "Fishing Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XX",
+              "Fishing Level 20"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXI",
+              "Fishing Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXI",
+              "Fishing Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXI",
+              "Fishing Level 21"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXII",
+              "Fishing Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXII",
+              "Fishing Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXII",
+              "Fishing Level 22"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXIII",
+              "Fishing Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXIII",
+              "Fishing Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXIII",
+              "Fishing Level 23"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXIV",
+              "Fishing Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXIV",
+              "Fishing Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXIV",
+              "Fishing Level 24"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "prismarine"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXV",
+              "Fishing Level 25"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXV",
+              "Fishing Level 25"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXV",
+              "Fishing Level 25"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXVI",
+              "Fishing Level 26"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXVI",
+              "Fishing Level 26"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/start_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXVI",
+              "Fishing Level 26"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXVII",
+              "Fishing Level 27"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXVII",
+              "Fishing Level 27"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXVII",
+              "Fishing Level 27"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXVIII",
+              "Fishing Level 28"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXVIII",
+              "Fishing Level 28"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXVIII",
+              "Fishing Level 28"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXIX",
+              "Fishing Level 29"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXIX",
+              "Fishing Level 29"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXIX",
+              "Fishing Level 29"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "prismarine"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXX",
+              "Fishing Level 30"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXX",
+              "Fishing Level 30"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXX",
+              "Fishing Level 30"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXI",
+              "Fishing Level 31"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXI",
+              "Fishing Level 31"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXI",
+              "Fishing Level 31"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXII",
+              "Fishing Level 32"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXII",
+              "Fishing Level 32"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXII",
+              "Fishing Level 32"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXIII",
+              "Fishing Level 33"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXIII",
+              "Fishing Level 33"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXIII",
+              "Fishing Level 33"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXIV",
+              "Fishing Level 34"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXIV",
+              "Fishing Level 34"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXIV",
+              "Fishing Level 34"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "prismarine"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXV",
+              "Fishing Level 35"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXV",
+              "Fishing Level 35"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXV",
+              "Fishing Level 35"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXVI",
+              "Fishing Level 36"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXVI",
+              "Fishing Level 36"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXVI",
+              "Fishing Level 36"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXVII",
+              "Fishing Level 37"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXVII",
+              "Fishing Level 37"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXVII",
+              "Fishing Level 37"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXVIII",
+              "Fishing Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXVIII",
+              "Fishing Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXVIII",
+              "Fishing Level 38"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXIX",
+              "Fishing Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXIX",
+              "Fishing Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XXXIX",
+              "Fishing Level 39"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "prismarine"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XL",
+              "Fishing Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XL",
+              "Fishing Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XL",
+              "Fishing Level 40"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLI",
+              "Fishing Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLI",
+              "Fishing Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLI",
+              "Fishing Level 41"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLII",
+              "Fishing Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLII",
+              "Fishing Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_up",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLII",
+              "Fishing Level 42"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLIII",
+              "Fishing Level 43"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLIII",
+              "Fishing Level 43"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/down_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLIII",
+              "Fishing Level 43"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLIV",
+              "Fishing Level 44"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLIV",
+              "Fishing Level 44"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_right",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLIV",
+              "Fishing Level 44"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "prismarine"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLV",
+              "Fishing Level 45"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLV",
+              "Fishing Level 45"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/left_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLV",
+              "Fishing Level 45"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLVI",
+              "Fishing Level 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLVI",
+              "Fishing Level 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLVI",
+              "Fishing Level 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLVII",
+              "Fishing Level 47"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLVII",
+              "Fishing Level 47"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLVII",
+              "Fishing Level 47"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLVIII",
+              "Fishing Level 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLVIII",
+              "Fishing Level 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLVIII",
+              "Fishing Level 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLIX",
+              "Fishing Level 49"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLIX",
+              "Fishing Level 49"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_down",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level XLIX",
+              "Fishing Level 49"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": [
+              "lime_stained_glass_pane",
+              "prismarine"
+            ]
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level L",
+              "Fishing Level 50"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/unlocking/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level L",
+              "Fishing Level 50"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/fishing/locked/up_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Fishing Level L",
+              "Fishing Level 50"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3511 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Heart of the Mountain"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Speed Boost"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Speed Boost"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Speed Boost"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/pickobulus/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Pickobulus"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/pickobulus/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Pickobulus"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/pickobulus/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Pickobulus"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tunnel Vision"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tunnel Vision"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tunnel Vision"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/maniac_miner/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Maniac Miner"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/maniac_miner/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Maniac Miner"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/maniac_miner/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Maniac Miner"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Gemstone Infusion"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Gemstone Infusion"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Gemstone Infusion"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/sheer_force/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sheer Force"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/sheer_force/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sheer Force"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/sheer_force/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sheer Force"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Speed"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Speed"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Speed"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_speed/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Speed"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/precision_mining/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Precision Mining"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/precision_mining/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Precision Mining"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/precision_mining/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Precision Mining"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Fortune"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Fortune"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Fortune"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Fortune"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Titanium Insanium"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Titanium Insanium"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Titanium Insanium"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Titanium Insanium"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Luck of the Cave"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Luck of the Cave"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Luck of the Cave"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Luck of the Cave"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Efficient Miner"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Efficient Miner"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Efficient Miner"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Efficient Miner"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/quick_forge/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Quick Forge"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/quick_forge/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Quick Forge"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/quick_forge/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Quick Forge"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/quick_forge/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Quick Forge"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/sky_mall/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sky Mall"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/sky_mall/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sky Mall"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/sky_mall/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sky Mall"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/old_school/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Old-School"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/old_school/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Old-School"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/old_school/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Old-School"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/old_school/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Old-School"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/professional/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Professional"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/professional/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Professional"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/professional/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Professional"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/professional/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Professional"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mole/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mole"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mole/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mole"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mole/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mole"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mole/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mole"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/gem_lover/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Gem Lover"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/gem_lover/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Gem Lover"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/gem_lover/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Gem Lover"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/gem_lover/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Gem Lover"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Seasoned Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Seasoned Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Seasoned Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Seasoned Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/front_loaded/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Front Loaded"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/front_loaded/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Front Loaded"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/front_loaded/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Front Loaded"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/front_loaded/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Front Loaded"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/daily_grind/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Daily Grind"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/daily_grind/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Daily Grind"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/daily_grind/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Daily Grind"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/daily_grind/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Daily Grind"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Core of the Mountain"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:bedrock"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Core of the Mountain"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/daily_powder/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Daily Powder"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/daily_powder/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Daily Powder"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/daily_powder/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Daily Powder"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/daily_powder/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Daily Powder"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/blockhead/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Blockhead"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/blockhead/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Blockhead"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/blockhead/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Blockhead"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/blockhead/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Blockhead"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Subterranean Fisher"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Subterranean Fisher"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Subterranean Fisher"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Subterranean Fisher"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Keep It Cool"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Keep It Cool"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Keep It Cool"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Keep It Cool"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Lonesome Miner"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Lonesome Miner"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Lonesome Miner"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Lonesome Miner"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/great_explorer/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Great Explorer"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/great_explorer/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Great Explorer"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/great_explorer/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Great Explorer"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/great_explorer/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Great Explorer"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Speedy Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Speedy Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Speedy Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Speedy Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/powder_buff/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Powder Buff"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/powder_buff/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Powder Buff"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/powder_buff/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Powder Buff"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/powder_buff/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Powder Buff"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Fortunate Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Fortunate Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Fortunate Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Fortunate Mineman"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/miners_blessing/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Miner's Blessing"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/miners_blessing/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Miner's Blessing"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/miners_blessing/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Miner's Blessing"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "No Stone Unturned"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "No Stone Unturned"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "No Stone Unturned"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "No Stone Unturned"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/strong_arm/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Strong Arm"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/strong_arm/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Strong Arm"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/strong_arm/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Strong Arm"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/strong_arm/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Strong Arm"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/steady_hand/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Steady Hand"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/steady_hand/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Steady Hand"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/steady_hand/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Steady Hand"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/steady_hand/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Steady Hand"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/warm_heart/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Warm Heart"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/warm_heart/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Warm Heart"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/warm_heart/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Warm Heart"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/warm_heart/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Warm Heart"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/surveyor/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Surveyor"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/surveyor/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Surveyor"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/surveyor/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Surveyor"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/surveyor/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Surveyor"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mineshaft Mayhem"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mineshaft Mayhem"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mineshaft Mayhem"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mineshaft Mayhem"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/metal_head/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Metal Head"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/metal_head/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Metal Head"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/metal_head/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Metal Head"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/metal_head/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Metal Head"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Rags to Riches"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Rags to Riches"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Rags to Riches"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Rags to Riches"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Eager Adventurer"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Eager Adventurer"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Eager Adventurer"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Eager Adventurer"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/crystalline/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Crystalline"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/crystalline/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Crystalline"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/crystalline/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Crystalline"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/crystalline/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Crystalline"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Gifts from the Departed"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Gifts from the Departed"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Gifts from the Departed"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Gifts from the Departed"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_master/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Master"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_master/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Master"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_master/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Master"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/mining_master/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Mining Master"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Dead Man's Chest"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Dead Man's Chest"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Dead Man's Chest"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Dead Man's Chest"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vanguard Seeker"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/maxed",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vanguard Seeker"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vanguard Seeker"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:redstone_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vanguard Seeker"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_1/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 1"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_1/unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 1"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:yellow_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_1/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 1"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:lime_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_2/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 2"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_2/unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 2"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:yellow_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_2/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 2"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:lime_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_3/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 3"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_3/unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 3"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:yellow_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_3/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 3"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:lime_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_4/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 4"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_4/unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 4"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:yellow_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_4/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 4"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:lime_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_5/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 5"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_5/unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 5"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:yellow_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_5/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 5"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:lime_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_6/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 6"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_6/unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 6"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:yellow_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_6/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 6"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:lime_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_7/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 7"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_7/unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 7"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:yellow_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_7/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 7"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:lime_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_8/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 8"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_8/unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 8"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:yellow_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_8/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 8"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:lime_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_9/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 9"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_9/unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 9"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:yellow_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_9/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 9"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:lime_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_10/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 10"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_10/unlocking",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 10"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:yellow_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/tier_10/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Tier 10"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:lime_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Heart of the Mountain"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/crystal_hollows_crystals",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Crystal Hollows Crystals"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/rng_meter",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "RNG Meter"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/reset_heart_of_the_mountain",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Reset Heart of the Mountain"
+          }
+        ]
+      }
+    }
+  ]
+}

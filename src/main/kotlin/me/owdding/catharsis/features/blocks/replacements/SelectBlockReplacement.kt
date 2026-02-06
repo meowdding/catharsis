@@ -10,6 +10,7 @@ import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
 import net.minecraft.core.BlockPos
 import net.minecraft.util.RandomSource
+import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.state.BlockState
 
 data class SelectBlockReplacement(
@@ -25,11 +26,12 @@ data class SelectBlockReplacement(
     )
 
     override fun select(
+        level: BlockAndTintGetter?,
         state: BlockState,
         pos: BlockPos,
         random: RandomSource,
     ): VirtualBlockStateDefinition? {
-        return definitions.firstNotNullOfOrNull { it.select(state, pos, random) }
+        return definitions.firstNotNullOfOrNull { it.select(level, state, pos, random) }
     }
 
     @GenerateCodec
@@ -50,8 +52,8 @@ data class SelectBlockReplacement(
         val definitions: List<BlockReplacementSelector<T>>,
         val fallback: BlockReplacementSelector<T>?,
     ) : BlockReplacementSelector<T> {
-        override fun select(state: BlockState, pos: BlockPos, random: RandomSource): T? {
-            return definitions.firstNotNullOfOrNull { it.select(state, pos, random) }
+        override fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos, random: RandomSource): T? {
+            return definitions.firstNotNullOfOrNull { it.select(level, state, pos, random) }
         }
     }
 }

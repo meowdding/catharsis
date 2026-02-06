@@ -10,6 +10,7 @@ import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
 import net.minecraft.core.BlockPos
 import net.minecraft.util.RandomSource
+import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.state.BlockState
 
 data class RandomBlockReplacement(
@@ -20,12 +21,12 @@ data class RandomBlockReplacement(
     val fallback: BlockReplacement?,
 ) : BlockReplacement {
     override fun listStates(): List<VirtualBlockStateDefinition> = listOfNotNull(definition.listStates(), fallback?.listStates()).flatten()
-    override fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
+    override fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
         return if (min + random.nextFloat() * (max - min) >= threshold) {
             definition
         } else {
             fallback
-        }?.select(state, pos, random)
+        }?.select(level, state, pos, random)
     }
 
     data class RandomBlockReplacementSelector<T: Any>(
@@ -34,6 +35,7 @@ data class RandomBlockReplacement(
         val fallback: BlockReplacementSelector<T>?,
     ) : BlockReplacementSelector<T> {
         override fun select(
+            level: BlockAndTintGetter?,
             state: BlockState,
             pos: BlockPos,
             random: RandomSource,
@@ -42,7 +44,7 @@ data class RandomBlockReplacement(
                 definition
             } else {
                 fallback
-            }?.select(state, pos, random)
+            }?.select(level, state, pos, random)
         }
     }
 

@@ -8,8 +8,8 @@ import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import net.fabricmc.loader.api.FabricLoader
 import net.fabricmc.loader.api.ModContainer
-import net.fabricmc.loader.impl.util.version.VersionParser
-import net.fabricmc.loader.impl.util.version.VersionPredicateParser
+import net.fabricmc.loader.api.Version
+import net.fabricmc.loader.api.metadata.version.VersionPredicate
 import net.minecraft.network.chat.Component
 import net.minecraft.server.packs.metadata.MetadataSectionType
 import tech.thatgravyboat.skyblockapi.helpers.McClient
@@ -27,7 +27,7 @@ data class CatharsisMetadataSection(
 
     val incompatibilities: List<Pair<String, ModContainer?>> = dependencies.mapNotNull { (mod, range) ->
         runCatching {
-            val predicate = VersionPredicateParser.parse(range)
+            val predicate = VersionPredicate.parse(range)
             val modContainer = FabricLoader.getInstance().getModContainer(mod).getOrNull()
 
             when {
@@ -68,8 +68,8 @@ data class CatharsisMetadataSection(
             if (updateUrl == null) return false
             if (_isUpdateAvailable == null) {
                 val info = PackUpdateChecker.getUpdateInfo(updateUrl) ?: return false
-                val latestVersion = runCatching { VersionParser.parse(info.versions[McClient.version], false) }.getOrNull()
-                val currentVersion = runCatching { VersionParser.parse(version, false) }.getOrNull()
+                val latestVersion = runCatching { Version.parse(info.versions[McClient.version]) }.getOrNull()
+                val currentVersion = runCatching { Version.parse(version) }.getOrNull()
                 _isUpdateAvailable = latestVersion != null && currentVersion != null && latestVersion > currentVersion
             }
             return _isUpdateAvailable!!

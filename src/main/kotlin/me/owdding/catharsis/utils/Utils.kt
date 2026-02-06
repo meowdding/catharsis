@@ -18,4 +18,5 @@ object Utils {
             Identifier.fromNamespaceAndPath(namespace, location)
         }
     }
+
 }

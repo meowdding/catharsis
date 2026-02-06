@@ -1,0 +1,296 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Half-Eaten Carrot Collection"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:collections/rift/unlocked/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 1",
+              "Half-Eaten Carrot I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocking/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 1",
+              "Half-Eaten Carrot I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/locked/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 19
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 1",
+              "Half-Eaten Carrot I"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocked/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 2",
+              "Half-Eaten Carrot II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocking/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 2",
+              "Half-Eaten Carrot II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/locked/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 21
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 2",
+              "Half-Eaten Carrot II"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocked/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 3",
+              "Half-Eaten Carrot III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocking/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 3",
+              "Half-Eaten Carrot III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/locked/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 23
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 3",
+              "Half-Eaten Carrot III"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocked/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 4",
+              "Half-Eaten Carrot IV"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/unlocking/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "yellow_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 4",
+              "Half-Eaten Carrot IV"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/locked/start_end",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "slot": 25
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": [
+              "Half-Eaten Carrot 4",
+              "Half-Eaten Carrot IV"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,15 +1,8 @@
 package me.owdding.catharsis.features.blocks.replacements
 
 import com.mojang.serialization.MapCodec
-import me.owdding.catharsis.features.blocks.BlendMode
-import me.owdding.catharsis.features.blocks.BlockReplacement
-import me.owdding.catharsis.features.blocks.BlockReplacementBakery
-import me.owdding.catharsis.features.blocks.BlockReplacementEntry
-import me.owdding.catharsis.features.blocks.BlockReplacementSelector
-import me.owdding.catharsis.features.blocks.BlockSoundDefinition
-import me.owdding.catharsis.features.blocks.VirtualBlockStateDefinition
+import me.owdding.catharsis.features.blocks.*
 import me.owdding.catharsis.generated.CatharsisCodecs
-import me.owdding.catharsis.utils.extensions.identifier
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
@@ -19,6 +12,7 @@ import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.core.BlockPos
 import net.minecraft.resources.Identifier
 import net.minecraft.util.RandomSource
+import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 
@@ -46,7 +40,7 @@ data class RedirectBlockReplacement(
         return BlockReplacementSelector.always(if (override != null) override.sounds else virtualState.sounds)
     }
 
-    override fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition {
+    override fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition {
         return virtualState.overrides[state.block] ?: virtualState
     }
 

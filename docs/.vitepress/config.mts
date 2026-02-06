@@ -34,6 +34,13 @@ export default defineConfig({
                 link: "/armor_models/index",
             },
             {
+                text: "Gui Modifications",
+                items: [
+                    {text: "Gui Definitions", link: "/guis/definitions"},
+                    {text: "Slot Definitions", link: "/guis/slots"},
+                ]
+            },
+            {
                 text: "Block replacements",
                 link: "/block_replacements/",
                 items: [
@@ -45,6 +52,7 @@ export default defineConfig({
             {
                 text: "Miscellaneous",
                 items: [
+                    {text: "Pack Metadata", link: "/miscellaneous/pack_metadata"},
                     {text: "Data Types", link: "/miscellaneous/data_types"},
                     {text: "Timespan", link: "/miscellaneous/timespans"},
                     {text: "Tooltip Background", link: "/miscellaneous/tooltip_background"},

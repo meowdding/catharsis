@@ -1,0 +1,96 @@
+{
+  "target": {
+    "type": "title",
+    "title": "(?:(?:Late|Early) )?(?:Spring|Summer|Autumn|Winter), Year \\d+"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:calendar/current_day",
+      "target": {
+        "type": "item",
+        "items": "minecraft:lime_dye"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/other_day",
+      "target": {
+        "type": "item",
+        "items": "minecraft:paper"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/farming_contest",
+      "target": {
+        "type": "item",
+        "items": "minecraft:wheat"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/dark_auction",
+      "target": {
+        "type": "item",
+        "items": "minecraft:nether_brick"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/hoppity",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "minecraft:player_head"
+          },
+          {
+            "type": "texture",
+            "textures": "ewogICJ0aW1lc3RhbXAiIDogMTcxMTYzNDM5MTg3OCwKICAicHJvZmlsZUlkIiA6ICIxNmQ4NjI4NzYzMWY0NDY2OGQ0NDM2ZTJlY2IwNTllNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJSZXphVG91cm5leSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iNzllN2YzMzQxYjY3MmQ5ZGU2NTY0Y2JhY2EwNTJhNmE3MjNlYTQ2NmEyZTY2YWYzNWJhMWJhODU1ZjBkNjkyIgogICAgfQogIH0KfQ=="
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/traveling_zoo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "minecraft:player_head"
+          },
+          {
+            "type": "texture",
+            "textures": "ewogICJ0aW1lc3RhbXAiIDogMTU4ODU4NDM4MTU0OSwKICAicHJvZmlsZUlkIiA6ICI3NTE0NDQ4MTkxZTY0NTQ2OGM5NzM5YTZlMzk1N2JlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGFua3NNb2phbmciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQ5ZmU1OTVjNmEwOGFkZWM4YjlkYWIwOTg2ODUzMjcxYzZiODdkODk3ZDczMThiMWJhZGFkMmMzNGJkNWEwZSIKICAgIH0KICB9Cn0="
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/spooky",
+      "target": {
+        "type": "item",
+        "items": "minecraft:jack_o_lantern"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/workshop_opens",
+      "target": {
+        "type": "item",
+        "items": "minecraft:snow_block"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/season_of_jerry",
+      "target": {
+        "type": "item",
+        "items": "minecraft:snowball"
+      }
+    },
+    {
+      "id": "skyblock_gui:calendar/new_year",
+      "target": {
+        "type": "item",
+        "items": "minecraft:cake"
+      }
+    }
+  ]
+}

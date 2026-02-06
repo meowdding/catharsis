@@ -30,5 +30,6 @@ object GuiDefConditions {
         ID_MAPPER.put(Catharsis.id("slot"), CatharsisCodecs.getMapCodec<GuiDefinitionSlotCondition>())
         ID_MAPPER.put(Catharsis.id("title"), CatharsisCodecs.getMapCodec<GuiDefinitionTitleCondition>())
         ID_MAPPER.put(Catharsis.id("type"), CatharsisCodecs.getMapCodec<GuiDefinitionTypeCondition>())
+        ID_MAPPER.put(Catharsis.id("islands"), CatharsisCodecs.getMapCodec<GuiDefinitionIslandCondition>())
     }
 }

@@ -5,7 +5,7 @@ import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.core.BlockPos
 import net.minecraft.util.RandomSource
-import net.minecraft.world.level.Level
+import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.state.BlockState
 import tech.thatgravyboat.skyblockapi.api.area.isle.kuudra.KuudraTier
 
@@ -19,7 +19,7 @@ data class KuudraTierCondition(
     override fun check(
         state: BlockState,
         pos: BlockPos,
-        level: Level,
+        level: BlockAndTintGetter,
         random: RandomSource,
     ): Boolean = false
 }

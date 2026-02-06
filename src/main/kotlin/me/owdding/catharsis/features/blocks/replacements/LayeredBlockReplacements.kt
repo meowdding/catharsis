@@ -8,6 +8,7 @@ import me.owdding.catharsis.utils.CatharsisLogger
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.core.BlockPos
 import net.minecraft.util.RandomSource
+import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 
@@ -15,8 +16,8 @@ data class LayeredBlockReplacements(
     val definitions: List<BlockReplacement>,
 ) {
     fun listStates(): List<VirtualBlockStateDefinition> = definitions.flatMap { it.listStates() }
-    fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
-        return definitions.firstNotNullOfOrNull { it.select(state, pos, random) }
+    fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
+        return definitions.firstNotNullOfOrNull { it.select(level, state, pos, random) }
     }
 
     data class Completable(
@@ -35,10 +36,11 @@ data class LayeredBlockReplacements(
         val blockReplacementSelectors: List<BlockReplacementSelector<T>>,
     ) : BlockReplacementSelector<T> {
         override fun select(
+            level: BlockAndTintGetter?,
             state: BlockState,
             pos: BlockPos,
             random: RandomSource,
-        ): T? = blockReplacementSelectors.firstNotNullOfOrNull { it.select(state, pos, random) }
+        ): T? = blockReplacementSelectors.firstNotNullOfOrNull { it.select(level, state, pos, random) }
     }
 
     fun <T : Any> bake(baker: BlockReplacement.() -> BlockReplacementSelector<T>): BlockReplacementSelector<T> = LayeredBlockReplacementSelector(definitions.map { it.bake(baker) })

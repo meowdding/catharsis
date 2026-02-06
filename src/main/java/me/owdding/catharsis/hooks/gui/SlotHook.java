@@ -5,6 +5,8 @@ import org.joml.Vector2ic;
 
 public interface SlotHook {
 
+    ThreadLocal<Boolean> INITIALIZING = new ThreadLocal<>();
+
     default void catharsis$setPosition(@Nullable Vector2ic position) {
         throw new UnsupportedOperationException();
     }

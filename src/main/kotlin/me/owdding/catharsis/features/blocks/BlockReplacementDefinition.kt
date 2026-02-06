@@ -11,6 +11,7 @@ import net.minecraft.core.BlockPos
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.util.RandomSource
+import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 
@@ -28,6 +29,7 @@ interface BlockReplacement {
     fun bakeSounds(block: Block): BlockReplacementSelector<BlockSoundDefinition> = bake { bakeSounds(block) }
 
     fun select(
+        level: BlockAndTintGetter?,
         state: BlockState,
         pos: BlockPos,
         random: RandomSource,

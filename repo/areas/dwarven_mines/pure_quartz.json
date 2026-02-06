@@ -1,0 +1,24 @@
+{
+  "_comment": "All Pure Quartz Ore Veins in Dwarven Mines.",
+  "type": "multiple",
+  "boxes": [
+    {
+      "min": "-198:145:-39",
+      "max": "-178:155:-32"
+    },
+    {
+      "min": "-204:155:-34",
+      "max": "-194:160:-21"
+    },
+    {
+      "min": "-183:134:-17",
+      "max": "-167:145:3"
+    },
+    {
+      "min": "-203:143:-10",
+      "max": "-189:155:2"
+    }
+  ],
+  "islands": "dwarven_mines",
+  "min_size": 4
+}

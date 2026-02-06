@@ -9,14 +9,14 @@ import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.core.BlockPos
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.util.RandomSource
-import net.minecraft.world.level.Level
+import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.state.BlockState
 
 interface BlockCondition {
 
     val codec: MapCodec<out BlockCondition>
 
-    fun check(state: BlockState, pos: BlockPos, level: Level, random: RandomSource): Boolean
+    fun check(state: BlockState, pos: BlockPos, level: BlockAndTintGetter, random: RandomSource): Boolean
 }
 
 object BlockConditions {
@@ -46,10 +46,10 @@ object BlockConditions {
 data object AlwaysBlockCondition : BlockCondition {
     override val codec: MapCodec<out BlockCondition> = MapCodec.unit(AlwaysBlockCondition)
 
-    override fun check(state: BlockState, pos: BlockPos, level: Level, random: RandomSource): Boolean = true
+    override fun check(state: BlockState, pos: BlockPos, level: BlockAndTintGetter, random: RandomSource): Boolean = true
 }
 
 data object NeverBlockCondition : BlockCondition {
     override val codec: MapCodec<out BlockCondition> = MapCodec.unit(NeverBlockCondition)
-    override fun check(state: BlockState, pos: BlockPos, level: Level, random: RandomSource, ): Boolean = false
+    override fun check(state: BlockState, pos: BlockPos, level: BlockAndTintGetter, random: RandomSource, ): Boolean = false
 }

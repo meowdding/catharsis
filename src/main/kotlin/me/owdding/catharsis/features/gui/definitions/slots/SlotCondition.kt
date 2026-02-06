@@ -32,6 +32,8 @@ object SlotConditions {
         ID_MAPPER.put(Catharsis.id("item"), CatharsisCodecs.getMapCodec<SlotItemCondition>())
         ID_MAPPER.put(Catharsis.id("name"), CatharsisCodecs.getMapCodec<SlotNameCondition>())
         ID_MAPPER.put(Catharsis.id("has_component"), CatharsisCodecs.getMapCodec<HasComponentCondition>())
+        ID_MAPPER.put(Catharsis.id("islands"), CatharsisCodecs.getMapCodec<SlotIslandCondition>())
+        ID_MAPPER.put(Catharsis.id("texture"), CatharsisCodecs.getMapCodec<SlotTextureCondition>())
         ID_MAPPER.put(Catharsis.id("is_tooltip_hidden"), IsTooltipHiddenCondition.codec)
     }
 }

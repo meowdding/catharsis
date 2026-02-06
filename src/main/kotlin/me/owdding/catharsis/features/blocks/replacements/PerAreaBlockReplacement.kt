@@ -13,15 +13,16 @@ import me.owdding.ktcodecs.NamedCodec
 import net.minecraft.core.BlockPos
 import net.minecraft.resources.Identifier
 import net.minecraft.util.RandomSource
+import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.state.BlockState
 
 data class PerAreaBlockReplacement(
     val values: Map<Identifier, BlockReplacement>,
 ) : BlockReplacement {
     override fun listStates(): List<VirtualBlockStateDefinition> = values.values.flatMap { it.listStates() }
-    override fun select(state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
+    override fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition? {
         return values.firstNotNullOfOrNull { (area, value) ->
-            value.takeIf { Areas.getLoadedAreas()[area]?.contains(pos) == true }?.select(state, pos, random)
+            value.takeIf { Areas.getLoadedAreas()[area]?.contains(pos) == true }?.select(level, state, pos, random)
         }
     }
 
@@ -29,12 +30,13 @@ data class PerAreaBlockReplacement(
         val values: Map<Identifier, BlockReplacementSelector<T>>,
     ) : BlockReplacementSelector<T> {
         override fun select(
+            level: BlockAndTintGetter?,
             state: BlockState,
             pos: BlockPos,
             random: RandomSource,
         ): T? {
             return values.firstNotNullOfOrNull { (area, value) ->
-                value.takeIf { Areas.getLoadedAreas()[area]?.contains(pos) == true }?.select(state, pos, random)
+                value.takeIf { Areas.getLoadedAreas()[area]?.contains(pos) == true }?.select(level, state, pos, random)
             }
         }
 

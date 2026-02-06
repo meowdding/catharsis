@@ -11,8 +11,8 @@ import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
 import net.minecraft.core.BlockPos
 import net.minecraft.util.RandomSource
+import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.state.BlockState
-import tech.thatgravyboat.skyblockapi.helpers.McLevel
 
 data class ConditionalBlockReplacement(
     val condition: BlockCondition,
@@ -28,15 +28,16 @@ data class ConditionalBlockReplacement(
     )
 
     override fun select(
+        level: BlockAndTintGetter?,
         state: BlockState,
         pos: BlockPos,
         random: RandomSource,
     ): VirtualBlockStateDefinition? {
         return when {
-            !McLevel.hasLevel -> null
-            condition.check(McLevel[pos], pos, McLevel.level, random) -> definition
+            level == null -> null
+            condition.check(level.getBlockState(pos), pos, level, random) -> definition
             else -> fallback
-        }?.select(state, pos, random)
+        }?.select(level, state, pos, random)
     }
 
     @GenerateCodec
@@ -60,12 +61,12 @@ data class ConditionalBlockReplacement(
         val definition: BlockReplacementSelector<T>,
         val fallback: BlockReplacementSelector<T>?,
     ) : BlockReplacementSelector<T> {
-        override fun select(state: BlockState, pos: BlockPos, random: RandomSource): T? {
+        override fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos, random: RandomSource): T? {
             return when {
-                !McLevel.hasLevel -> null
-                condition.check(McLevel[pos], pos, McLevel.level, random) -> definition
+                level == null -> null
+                condition.check(level.getBlockState(pos), pos, level, random) -> definition
                 else -> fallback
-            }?.select(state, pos, random)
+            }?.select(level, state, pos, random)
         }
     }
 }

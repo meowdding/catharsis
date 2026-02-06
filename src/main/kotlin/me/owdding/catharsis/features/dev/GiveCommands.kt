@@ -47,7 +47,7 @@ import net.minecraft.nbt.CompoundTag
 import net.minecraft.nbt.Tag
 import net.minecraft.world.item.component.CustomData
 import tech.thatgravyboat.skyblockapi.utils.builders.ItemBuilder
-
+import tech.thatgravyboat.skyblockapi.utils.extentions.cleanName
 
 @Module
 // TODO: move into package
@@ -97,7 +97,7 @@ object GiveCommands {
                 val nameCallback: CommandContext<FabricClientCommandSource>.() -> Unit = {
                     val flags = runCatching { argument<Map<FindFlag, Any>>("flags") }.getOrDefault(emptyMap())
                     val search = argument<String>("filter")
-                    findBy(flags, search) { it.toItem().hoverName.stripped }
+                    findBy(flags, search) { it.toItem().cleanName }
                 }
                 then("flags", FlagArgument.enum<FindFlag>()) {
                     thenCallback("filter", StringArgumentType.greedyString(), block = nameCallback)
@@ -268,7 +268,7 @@ object GiveCommands {
             }
             append(" to your inventory!")
             color = CatppuccinColors.Frappe.green
-        }.sendWithPrefix("catharsis-dev-give-added-${item.getSkyBlockId() ?: item.hoverName.stripped}")
+        }.sendWithPrefix("catharsis-dev-give-added-${item.getSkyBlockId() ?: item.cleanName}")
 
         val freeSlot = McClient.self.player?.inventory?.freeSlot ?: -1
         McClient.self.player?.inventory?.setItem(freeSlot, item)

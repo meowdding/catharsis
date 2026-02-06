@@ -21,10 +21,10 @@ import net.minecraft.world.level.block.state.BlockState
 import java.util.function.Predicate
 
 fun interface BlockReplacementSelector<T : Any> {
-    fun select(state: BlockState, pos: BlockPos, random: RandomSource): T?
+    fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos, random: RandomSource): T?
 
     companion object {
-        fun <T : Any> always(entry: T?): BlockReplacementSelector<T> = BlockReplacementSelector { _, _, _ -> entry }
+        fun <T : Any> always(entry: T?): BlockReplacementSelector<T> = BlockReplacementSelector { _, _, _, _ -> entry }
     }
 }
 
@@ -40,8 +40,8 @@ data class BlockStateModelReplacement(
     val replacementSelector: BlockReplacementSelector<BlockReplacementEntry>,
     val overrides: Map<Block, BlockReplacementSelector<BlockReplacementEntry>>
 ) : FabricBlockStateModel by original as FabricBlockStateModel, BlockStateModel {
-    override fun emitQuads(emitter: QuadEmitter, blockView: BlockAndTintGetter, pos: BlockPos, state: BlockState, random: RandomSource, cullTest: Predicate<Direction?>) {
-        val replacement = select(state, pos)
+    override fun emitQuads(emitter: QuadEmitter, level: BlockAndTintGetter, pos: BlockPos, state: BlockState, random: RandomSource, cullTest: Predicate<Direction?>) {
+        val replacement = select(level, state, pos)
         val model = replacement?.models[state]
 
         if (model != null) {
@@ -60,7 +60,7 @@ data class BlockStateModelReplacement(
                 }
             }
             emitter.pushTransform(replacement.transform)
-            model.emitQuads(emitter, blockView, pos, state, random, cullTest)
+            model.emitQuads(emitter, level, pos, state, random, cullTest)
             emitter.popTransform()
 
             if (replacement.ignoreOriginalOffset) {
@@ -68,32 +68,32 @@ data class BlockStateModelReplacement(
             }
             return
         }
-        super<BlockStateModel>.emitQuads(emitter, blockView, pos, state, random, cullTest)
+        super<BlockStateModel>.emitQuads(emitter, level, pos, state, random, cullTest)
     }
 
     override fun collectParts(random: RandomSource, output: List<BlockModelPart>) {
         original.collectParts(random, output)
     }
 
-    override fun particleSprite(blockView: BlockAndTintGetter, pos: BlockPos, state: BlockState): TextureAtlasSprite? {
-        val replacement = select(state, pos)
+    override fun particleSprite(level: BlockAndTintGetter, pos: BlockPos, state: BlockState): TextureAtlasSprite? {
+        val replacement = select(level, state, pos)
         val model = replacement?.models[state]
         if (model != null) {
-            return model.particleSprite(blockView, pos, state)
+            return model.particleSprite(level, pos, state)
         }
-        return super<FabricBlockStateModel>.particleSprite(blockView, pos, state)
+        return super<FabricBlockStateModel>.particleSprite(level, pos, state)
     }
 
     override fun particleIcon(): TextureAtlasSprite? {
         return original.particleIcon()
     }
 
-    fun select(state: BlockState, pos: BlockPos): BlockReplacementEntry? {
+    fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos): BlockReplacementEntry? {
         val random = RandomSource.create(Mth.getSeed(pos))
 
         val cacheState = BlockReplacements.blocksCache.getIfPresent(pos)
         val override = overrides[cacheState?.block]
-        return replacementSelector.select(state, pos, random) ?: cacheState?.let { override?.select(cacheState, pos, random) }
+        return replacementSelector.select(level, state, pos, random) ?: cacheState?.let { override?.select(level, cacheState, pos, random) }
     }
 }
 

@@ -47,3 +47,7 @@ Returns the item held by a pet, only works on pets in GUIs (probably).
 ### `catharsis:pet_skin`
 
 Returns the skin of a pet, only works on pets in GUIs (probably).
+
+### `catharsis:texture`
+
+Returns the texture of the item, only works on items that have custom textures (like heads).

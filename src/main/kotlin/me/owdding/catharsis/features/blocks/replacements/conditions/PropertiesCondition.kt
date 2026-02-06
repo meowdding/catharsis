@@ -6,7 +6,7 @@ import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
 import net.minecraft.core.BlockPos
 import net.minecraft.util.RandomSource
-import net.minecraft.world.level.Level
+import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.block.state.properties.Property
 
@@ -17,7 +17,7 @@ data class PropertiesCondition(
 
     override val codec: MapCodec<out BlockCondition> = CatharsisCodecs.getMapCodec<PropertiesCondition>()
 
-    override fun check(state: BlockState, pos: BlockPos, level: Level, random: RandomSource): Boolean {
+    override fun check(state: BlockState, pos: BlockPos, level: BlockAndTintGetter, random: RandomSource): Boolean {
         for ((key, value) in properties) {
            if (state.block.stateDefinition.getProperty(key)?.check(state, value) != true) {
                return false

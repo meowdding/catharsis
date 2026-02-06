@@ -63,6 +63,7 @@ object ItemUtils {
         }
 
         return when {
+            itemId.isPet -> resolvePet(itemId)
             itemId.isAttribute -> resolveAttribute(itemId)
             itemId.isRune -> resolveRune(itemId)
             itemId.isEnchantment -> resolveEnchantment(itemId)
@@ -71,6 +72,12 @@ object ItemUtils {
     }
 
     private fun SkyBlockId.cleanOrNull() = this.cleanId.lowercase().takeUnless { it == UNKNOWN }
+
+    fun resolvePet(itemId: SkyBlockId): Identifier? {
+        val cleanId = itemId.cleanOrNull() ?: return null
+
+        return Identifier.tryBuild("skyblock", "pets/${cleanId.substringBefore(":").lowercase()}")
+    }
 
     fun resolveEnchantment(itemId: SkyBlockId): Identifier? {
         val cleanId = itemId.cleanOrNull() ?: return null

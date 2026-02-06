@@ -8,7 +8,7 @@ import me.owdding.ktcodecs.NamedCodec
 import net.minecraft.core.BlockPos
 import net.minecraft.tags.TagKey
 import net.minecraft.util.RandomSource
-import net.minecraft.world.level.Level
+import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 
@@ -18,7 +18,7 @@ data class BlockIdCondition(
 ) : BlockCondition {
 
     override val codec: MapCodec<out BlockCondition> = CatharsisCodecs.getMapCodec<BlockIdCondition>()
-    override fun check(state: BlockState, pos: BlockPos, level: Level, random: RandomSource): Boolean {
+    override fun check(state: BlockState, pos: BlockPos, level: BlockAndTintGetter, random: RandomSource): Boolean {
         return block.map({ tag -> state.`is`(tag) }, { blocks -> blocks.contains(state.block) })
     }
 }

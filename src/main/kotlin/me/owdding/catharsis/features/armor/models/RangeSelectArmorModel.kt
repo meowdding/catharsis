@@ -13,9 +13,6 @@ import net.minecraft.world.item.ItemStack
 import java.util.*
 import kotlin.jvm.optionals.getOrNull
 
-//? = 1.21.8
-/*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
-
 class RangeSelectArmorModel(
     private val property: RangeSelectItemModelProperty,
     private val scale: Float,

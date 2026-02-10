@@ -3,6 +3,7 @@ package me.owdding.catharsis.mixins.items;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
 import me.owdding.catharsis.features.gui.definitions.GuiDefinitions;
+import me.owdding.catharsis.features.item.MiscItemModels;
 import me.owdding.catharsis.hooks.items.AbstractContainerScreenHook;
 import me.owdding.catharsis.utils.ItemUtils;
 import net.minecraft.client.player.LocalPlayer;
@@ -41,7 +42,7 @@ public class ItemModelResolverMixin {
         var slot = AbstractContainerScreenHook.SLOT.get();
         var guiId = isCarried ? GuiDefinitions.getSlot(stack) : (slot != null ? GuiDefinitions.getSlot(slot.index) : null);
         var itemId = ItemUtils.INSTANCE.getCustomLocation(stack);
-        var model = guiId != null ? guiId : itemId;
+        var model = guiId != null ? guiId : itemId != null ? itemId : MiscItemModels.getModel(stack);
 
         return model == null || !manager.catharsis$hasCustomModel(model) ? original : model;
     }

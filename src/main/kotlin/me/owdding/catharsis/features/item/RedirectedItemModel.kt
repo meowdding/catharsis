@@ -14,9 +14,6 @@ import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemDisplayContext
 import net.minecraft.world.item.ItemStack
 
-//? = 1.21.8
-/*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
-
 data class RedirectedItemModel(
     private val slot: EquipmentSlot,
     private val model: ItemModel

@@ -13,9 +13,6 @@ import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemStack
 
-//? = 1.21.8
-/*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
-
 class TextureTooltipDefinition(private val state: TooltipDefinitionState) : TooltipDefinition {
 
     override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState = state

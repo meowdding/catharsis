@@ -1,583 +1,583 @@
 {
   "target": {
-    "type": "title",
-    "title": "Wild Rose Collection"
+    "title": "Wild Rose Collection",
+    "type": "catharsis:title"
   },
   "layout": [
     {
       "id": "skyblock_gui:collections/farming/unlocked/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 1",
               "Wild Rose I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocking/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 1",
               "Wild Rose I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/locked/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 1",
               "Wild Rose I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 2",
               "Wild Rose II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 2",
               "Wild Rose II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 2",
               "Wild Rose II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 3",
               "Wild Rose III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 3",
               "Wild Rose III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 3",
               "Wild Rose III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocked/connector_skip",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 4",
               "Wild Rose IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocking/connector_skip",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 4",
               "Wild Rose IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/locked/connector_skip",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 4",
               "Wild Rose IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocked/skip_connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 5",
               "Wild Rose V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocking/skip_connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 5",
               "Wild Rose V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/locked/skip_connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 5",
               "Wild Rose V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 6",
               "Wild Rose VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 6",
               "Wild Rose VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 6",
               "Wild Rose VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 7",
               "Wild Rose VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 7",
               "Wild Rose VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 7",
               "Wild Rose VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocked/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 8",
               "Wild Rose VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/unlocking/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 8",
               "Wild Rose VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/farming/locked/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Wild Rose 8",
               "Wild Rose VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     }
   ]

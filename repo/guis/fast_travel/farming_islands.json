@@ -1,0 +1,152 @@
+{
+  "target": {
+    "title": "The Farming Islands Warps",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/farming_islands/spawn_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Barn - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_islands/spawn_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Barn - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_islands/desert_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mushroom Desert - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_islands/desert_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mushroom Desert - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_islands/trapper_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mushroom Desert - Trapper\u0027s Den",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_islands/trapper_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mushroom Desert - Trapper\u0027s Den",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

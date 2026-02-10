@@ -12,11 +12,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
-
-//? = 1.21.8
-/*import com.llamalad7.mixinextras.sugar.Local;*/
-
-//? >= 1.21.9
 import net.minecraft.server.packs.metadata.pack.PackFormat;
 
 @Mixin(Pack.class)
@@ -26,7 +21,6 @@ public class PackMixin implements PackMetadataHook {
     @Final
     private Pack.Metadata metadata;
 
-    //? if >= 1.21.9 {
     @WrapOperation(
         method = "readMetaAndCreate",
         at = @At(
@@ -35,25 +29,10 @@ public class PackMixin implements PackMetadataHook {
         )
     )
     private static Pack.Metadata readCatharsisMetadata(PackLocationInfo info, Pack.ResourcesSupplier resources, PackFormat format, PackType type, Operation<Pack.Metadata> original) {
-    //?} else {
-    /*@WrapOperation(
-        method = "readMetaAndCreate",
-        at = @At(
-            value = "INVOKE",
-            target = "Lnet/minecraft/server/packs/repository/Pack;readPackMetadata(Lnet/minecraft/server/packs/PackLocationInfo;Lnet/minecraft/server/packs/repository/Pack$ResourcesSupplier;I)Lnet/minecraft/server/packs/repository/Pack$Metadata;"
-        )
-    )
-    private static Pack.Metadata readCatharsisMetadata(PackLocationInfo info, Pack.ResourcesSupplier resources, int config, Operation<Pack.Metadata> original, @Local(argsOnly = true) PackType type) {
-    *///?}
-
         // This needs to be done before the original method is called so that its done before fabric's so it can be used within the overlays
         var catharsisMetadata = type == PackType.CLIENT_RESOURCES ? catharsis$parseMetadata(resources, info) : null;
 
-        //? if >= 1.21.9 {
         var metadata = original.call(info, resources, format, type);
-        //?} else {
-         /*var metadata = original.call(info, resources, config);
-         *///?}
 
         if (metadata != null) {
             metadata.catharsis$setMetadata(catharsisMetadata);

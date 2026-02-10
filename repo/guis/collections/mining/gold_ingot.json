@@ -1,727 +1,727 @@
 {
   "target": {
-    "type": "title",
-    "title": "Gold Ingot Collection"
+    "title": "Gold Ingot Collection",
+    "type": "catharsis:title"
   },
   "layout": [
     {
       "id": "skyblock_gui:collections/mining/unlocked/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 1",
               "Gold Ingot I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 1",
               "Gold Ingot I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 1",
               "Gold Ingot I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 2",
               "Gold Ingot II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 2",
               "Gold Ingot II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 2",
               "Gold Ingot II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 3",
               "Gold Ingot III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 3",
               "Gold Ingot III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 3",
               "Gold Ingot III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 4",
               "Gold Ingot IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 4",
               "Gold Ingot IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 4",
               "Gold Ingot IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 22
+            "slot": 22,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 5",
               "Gold Ingot V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 22
+            "slot": 22,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 5",
               "Gold Ingot V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 22
+            "slot": 22,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 5",
               "Gold Ingot V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 6",
               "Gold Ingot VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 6",
               "Gold Ingot VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 6",
               "Gold Ingot VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 7",
               "Gold Ingot VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 7",
               "Gold Ingot VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 7",
               "Gold Ingot VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 8",
               "Gold Ingot VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 8",
               "Gold Ingot VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 8",
               "Gold Ingot VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 9",
               "Gold Ingot IX"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 9",
               "Gold Ingot IX"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 9",
               "Gold Ingot IX"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/start_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 27
+            "slot": 27,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 10",
               "Gold Ingot X"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/start_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 27
+            "slot": 27,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 10",
               "Gold Ingot X"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/start_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 27
+            "slot": 27,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Gold Ingot 10",
               "Gold Ingot X"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     }
   ]

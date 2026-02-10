@@ -1,3133 +1,3096 @@
 {
   "target": {
-    "type": "title",
-    "title": "Catacombs Rewards"
+    "title": "Catacombs Rewards",
+    "type": "catharsis:title"
   },
   "layout": [
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/icon",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "name",
-            "name": "Catacombs"
+            "name": "Catacombs",
+            "mode": "equals",
+            "type": "catharsis:name"
           },
           {
-            "type": "slot",
-            "slot": 0
+            "slot": 0,
+            "type": "catharsis:slot"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery I",
-              "Catacombs Mastery 1"
-            ]
+              "Catacombs Mastery 1",
+              "Catacombs Mastery I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery I",
-              "Catacombs Mastery 1"
-            ]
+              "Catacombs Mastery 1",
+              "Catacombs Mastery I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery I",
-              "Catacombs Mastery 1"
-            ]
+              "Catacombs Mastery 1",
+              "Catacombs Mastery I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery II",
-              "Catacombs Mastery 2"
-            ]
+              "Catacombs Mastery 2",
+              "Catacombs Mastery II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery II",
-              "Catacombs Mastery 2"
-            ]
+              "Catacombs Mastery 2",
+              "Catacombs Mastery II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery II",
-              "Catacombs Mastery 2"
-            ]
+              "Catacombs Mastery 2",
+              "Catacombs Mastery II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery III",
-              "Catacombs Mastery 3"
-            ]
+              "Catacombs Mastery 3",
+              "Catacombs Mastery III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery III",
-              "Catacombs Mastery 3"
-            ]
+              "Catacombs Mastery 3",
+              "Catacombs Mastery III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery III",
-              "Catacombs Mastery 3"
-            ]
+              "Catacombs Mastery 3",
+              "Catacombs Mastery III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery IV",
-              "Catacombs Mastery 4"
-            ]
+              "Catacombs Mastery 4",
+              "Catacombs Mastery IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery IV",
-              "Catacombs Mastery 4"
-            ]
+              "Catacombs Mastery 4",
+              "Catacombs Mastery IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery IV",
-              "Catacombs Mastery 4"
-            ]
+              "Catacombs Mastery 4",
+              "Catacombs Mastery IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "player_head"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:player_head"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery V",
-              "Catacombs Mastery 5"
-            ]
+              "Catacombs Mastery 5",
+              "Catacombs Mastery V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery V",
-              "Catacombs Mastery 5"
-            ]
+              "Catacombs Mastery 5",
+              "Catacombs Mastery V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery V",
-              "Catacombs Mastery 5"
-            ]
+              "Catacombs Mastery 5",
+              "Catacombs Mastery V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery VI",
-              "Catacombs Mastery 6"
-            ]
+              "Catacombs Mastery 6",
+              "Catacombs Mastery VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery VI",
-              "Catacombs Mastery 6"
-            ]
+              "Catacombs Mastery 6",
+              "Catacombs Mastery VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery VI",
-              "Catacombs Mastery 6"
-            ]
+              "Catacombs Mastery 6",
+              "Catacombs Mastery VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery VII",
-              "Catacombs Mastery 7"
-            ]
+              "Catacombs Mastery 7",
+              "Catacombs Mastery VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery VII",
-              "Catacombs Mastery 7"
-            ]
+              "Catacombs Mastery 7",
+              "Catacombs Mastery VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery VII",
-              "Catacombs Mastery 7"
-            ]
+              "Catacombs Mastery 7",
+              "Catacombs Mastery VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery VIII",
-              "Catacombs Mastery 8"
-            ]
+              "Catacombs Mastery 8",
+              "Catacombs Mastery VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery VIII",
-              "Catacombs Mastery 8"
-            ]
+              "Catacombs Mastery 8",
+              "Catacombs Mastery VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery VIII",
-              "Catacombs Mastery 8"
-            ]
+              "Catacombs Mastery 8",
+              "Catacombs Mastery VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery IX",
-              "Catacombs Mastery 9"
-            ]
+              "Catacombs Mastery 9",
+              "Catacombs Mastery IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery IX",
-              "Catacombs Mastery 9"
-            ]
+              "Catacombs Mastery 9",
+              "Catacombs Mastery IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery IX",
-              "Catacombs Mastery 9"
-            ]
+              "Catacombs Mastery 9",
+              "Catacombs Mastery IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "player_head"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:player_head"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery X",
-              "Catacombs Mastery 10"
-            ]
+              "Catacombs Mastery 10",
+              "Catacombs Mastery X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery X",
-              "Catacombs Mastery 10"
-            ]
+              "Catacombs Mastery 10",
+              "Catacombs Mastery X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery X",
-              "Catacombs Mastery 10"
-            ]
+              "Catacombs Mastery 10",
+              "Catacombs Mastery X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XI",
-              "Catacombs Mastery 11"
-            ]
+              "Catacombs Mastery 11",
+              "Catacombs Mastery XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XI",
-              "Catacombs Mastery 11"
-            ]
+              "Catacombs Mastery 11",
+              "Catacombs Mastery XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XI",
-              "Catacombs Mastery 11"
-            ]
+              "Catacombs Mastery 11",
+              "Catacombs Mastery XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XII",
-              "Catacombs Mastery 12"
-            ]
+              "Catacombs Mastery 12",
+              "Catacombs Mastery XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XII",
-              "Catacombs Mastery 12"
-            ]
+              "Catacombs Mastery 12",
+              "Catacombs Mastery XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XII",
-              "Catacombs Mastery 12"
-            ]
+              "Catacombs Mastery 12",
+              "Catacombs Mastery XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XIII",
-              "Catacombs Mastery 13"
-            ]
+              "Catacombs Mastery 13",
+              "Catacombs Mastery XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XIII",
-              "Catacombs Mastery 13"
-            ]
+              "Catacombs Mastery 13",
+              "Catacombs Mastery XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XIII",
-              "Catacombs Mastery 13"
-            ]
+              "Catacombs Mastery 13",
+              "Catacombs Mastery XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XIV",
-              "Catacombs Mastery 14"
-            ]
+              "Catacombs Mastery 14",
+              "Catacombs Mastery XIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XIV",
-              "Catacombs Mastery 14"
-            ]
+              "Catacombs Mastery 14",
+              "Catacombs Mastery XIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XIV",
-              "Catacombs Mastery 14"
-            ]
+              "Catacombs Mastery 14",
+              "Catacombs Mastery XIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "player_head"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:player_head"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XV",
-              "Catacombs Mastery 15"
-            ]
+              "Catacombs Mastery 15",
+              "Catacombs Mastery XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XV",
-              "Catacombs Mastery 15"
-            ]
+              "Catacombs Mastery 15",
+              "Catacombs Mastery XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XV",
-              "Catacombs Mastery 15"
-            ]
+              "Catacombs Mastery 15",
+              "Catacombs Mastery XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XVI",
-              "Catacombs Mastery 16"
-            ]
+              "Catacombs Mastery 16",
+              "Catacombs Mastery XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XVI",
-              "Catacombs Mastery 16"
-            ]
+              "Catacombs Mastery 16",
+              "Catacombs Mastery XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XVI",
-              "Catacombs Mastery 16"
-            ]
+              "Catacombs Mastery 16",
+              "Catacombs Mastery XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XVII",
-              "Catacombs Mastery 17"
-            ]
+              "Catacombs Mastery 17",
+              "Catacombs Mastery XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XVII",
-              "Catacombs Mastery 17"
-            ]
+              "Catacombs Mastery 17",
+              "Catacombs Mastery XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XVII",
-              "Catacombs Mastery 17"
-            ]
+              "Catacombs Mastery 17",
+              "Catacombs Mastery XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XVIII",
-              "Catacombs Mastery 18"
-            ]
+              "Catacombs Mastery 18",
+              "Catacombs Mastery XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XVIII",
-              "Catacombs Mastery 18"
-            ]
+              "Catacombs Mastery 18",
+              "Catacombs Mastery XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XVIII",
-              "Catacombs Mastery 18"
-            ]
+              "Catacombs Mastery 18",
+              "Catacombs Mastery XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XIX",
-              "Catacombs Mastery 19"
-            ]
+              "Catacombs Mastery 19",
+              "Catacombs Mastery XIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XIX",
-              "Catacombs Mastery 19"
-            ]
+              "Catacombs Mastery 19",
+              "Catacombs Mastery XIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XIX",
-              "Catacombs Mastery 19"
-            ]
+              "Catacombs Mastery 19",
+              "Catacombs Mastery XIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "player_head"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:player_head"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XX",
-              "Catacombs Mastery 20"
-            ]
+              "Catacombs Mastery 20",
+              "Catacombs Mastery XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XX",
-              "Catacombs Mastery 20"
-            ]
+              "Catacombs Mastery 20",
+              "Catacombs Mastery XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XX",
-              "Catacombs Mastery 20"
-            ]
+              "Catacombs Mastery 20",
+              "Catacombs Mastery XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXI",
-              "Catacombs Mastery 21"
-            ]
+              "Catacombs Mastery 21",
+              "Catacombs Mastery XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXI",
-              "Catacombs Mastery 21"
-            ]
+              "Catacombs Mastery 21",
+              "Catacombs Mastery XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXI",
-              "Catacombs Mastery 21"
-            ]
+              "Catacombs Mastery 21",
+              "Catacombs Mastery XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXII",
-              "Catacombs Mastery 22"
-            ]
+              "Catacombs Mastery 22",
+              "Catacombs Mastery XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXII",
-              "Catacombs Mastery 22"
-            ]
+              "Catacombs Mastery 22",
+              "Catacombs Mastery XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXII",
-              "Catacombs Mastery 22"
-            ]
+              "Catacombs Mastery 22",
+              "Catacombs Mastery XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXIII",
-              "Catacombs Mastery 23"
-            ]
+              "Catacombs Mastery 23",
+              "Catacombs Mastery XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXIII",
-              "Catacombs Mastery 23"
-            ]
+              "Catacombs Mastery 23",
+              "Catacombs Mastery XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXIII",
-              "Catacombs Mastery 23"
-            ]
+              "Catacombs Mastery 23",
+              "Catacombs Mastery XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXIV",
-              "Catacombs Mastery 24"
-            ]
+              "Catacombs Mastery 24",
+              "Catacombs Mastery XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXIV",
-              "Catacombs Mastery 24"
-            ]
+              "Catacombs Mastery 24",
+              "Catacombs Mastery XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXIV",
-              "Catacombs Mastery 24"
-            ]
+              "Catacombs Mastery 24",
+              "Catacombs Mastery XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "player_head"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:player_head"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXV",
-              "Catacombs Mastery 25"
-            ]
+              "Catacombs Mastery 25",
+              "Catacombs Mastery XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXV",
-              "Catacombs Mastery 25"
-            ]
+              "Catacombs Mastery 25",
+              "Catacombs Mastery XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXV",
-              "Catacombs Mastery 25"
-            ]
+              "Catacombs Mastery 25",
+              "Catacombs Mastery XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXVI",
-              "Catacombs Mastery 26"
-            ]
+              "Catacombs Mastery 26",
+              "Catacombs Mastery XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXVI",
-              "Catacombs Mastery 26"
-            ]
+              "Catacombs Mastery 26",
+              "Catacombs Mastery XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXVI",
-              "Catacombs Mastery 26"
-            ]
+              "Catacombs Mastery 26",
+              "Catacombs Mastery XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXVII",
-              "Catacombs Mastery 27"
-            ]
+              "Catacombs Mastery 27",
+              "Catacombs Mastery XXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXVII",
-              "Catacombs Mastery 27"
-            ]
+              "Catacombs Mastery 27",
+              "Catacombs Mastery XXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXVII",
-              "Catacombs Mastery 27"
-            ]
+              "Catacombs Mastery 27",
+              "Catacombs Mastery XXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXVIII",
-              "Catacombs Mastery 28"
-            ]
+              "Catacombs Mastery 28",
+              "Catacombs Mastery XXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXVIII",
-              "Catacombs Mastery 28"
-            ]
+              "Catacombs Mastery 28",
+              "Catacombs Mastery XXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXVIII",
-              "Catacombs Mastery 28"
-            ]
+              "Catacombs Mastery 28",
+              "Catacombs Mastery XXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXIX",
-              "Catacombs Mastery 29"
-            ]
+              "Catacombs Mastery 29",
+              "Catacombs Mastery XXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXIX",
-              "Catacombs Mastery 29"
-            ]
+              "Catacombs Mastery 29",
+              "Catacombs Mastery XXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXIX",
-              "Catacombs Mastery 29"
-            ]
+              "Catacombs Mastery 29",
+              "Catacombs Mastery XXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "player_head"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:player_head"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXX",
-              "Catacombs Mastery 30"
-            ]
+              "Catacombs Mastery 30",
+              "Catacombs Mastery XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXX",
-              "Catacombs Mastery 30"
-            ]
+              "Catacombs Mastery 30",
+              "Catacombs Mastery XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXX",
-              "Catacombs Mastery 30"
-            ]
+              "Catacombs Mastery 30",
+              "Catacombs Mastery XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXI",
-              "Catacombs Mastery 31"
-            ]
+              "Catacombs Mastery 31",
+              "Catacombs Mastery XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXI",
-              "Catacombs Mastery 31"
-            ]
+              "Catacombs Mastery 31",
+              "Catacombs Mastery XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXI",
-              "Catacombs Mastery 31"
-            ]
+              "Catacombs Mastery 31",
+              "Catacombs Mastery XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXII",
-              "Catacombs Mastery 32"
-            ]
+              "Catacombs Mastery 32",
+              "Catacombs Mastery XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXII",
-              "Catacombs Mastery 32"
-            ]
+              "Catacombs Mastery 32",
+              "Catacombs Mastery XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXII",
-              "Catacombs Mastery 32"
-            ]
+              "Catacombs Mastery 32",
+              "Catacombs Mastery XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXIII",
-              "Catacombs Mastery 33"
-            ]
+              "Catacombs Mastery 33",
+              "Catacombs Mastery XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXIII",
-              "Catacombs Mastery 33"
-            ]
+              "Catacombs Mastery 33",
+              "Catacombs Mastery XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXIII",
-              "Catacombs Mastery 33"
-            ]
+              "Catacombs Mastery 33",
+              "Catacombs Mastery XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXIV",
-              "Catacombs Mastery 34"
-            ]
+              "Catacombs Mastery 34",
+              "Catacombs Mastery XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXIV",
-              "Catacombs Mastery 34"
-            ]
+              "Catacombs Mastery 34",
+              "Catacombs Mastery XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXIV",
-              "Catacombs Mastery 34"
-            ]
+              "Catacombs Mastery 34",
+              "Catacombs Mastery XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "player_head"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:player_head"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXV",
-              "Catacombs Mastery 35"
-            ]
+              "Catacombs Mastery 35",
+              "Catacombs Mastery XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXV",
-              "Catacombs Mastery 35"
-            ]
+              "Catacombs Mastery 35",
+              "Catacombs Mastery XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXV",
-              "Catacombs Mastery 35"
-            ]
+              "Catacombs Mastery 35",
+              "Catacombs Mastery XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXVI",
-              "Catacombs Mastery 36"
-            ]
+              "Catacombs Mastery 36",
+              "Catacombs Mastery XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXVI",
-              "Catacombs Mastery 36"
-            ]
+              "Catacombs Mastery 36",
+              "Catacombs Mastery XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXVI",
-              "Catacombs Mastery 36"
-            ]
+              "Catacombs Mastery 36",
+              "Catacombs Mastery XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXVII",
-              "Catacombs Mastery 37"
-            ]
+              "Catacombs Mastery 37",
+              "Catacombs Mastery XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXVII",
-              "Catacombs Mastery 37"
-            ]
+              "Catacombs Mastery 37",
+              "Catacombs Mastery XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXVII",
-              "Catacombs Mastery 37"
-            ]
+              "Catacombs Mastery 37",
+              "Catacombs Mastery XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXVIII",
-              "Catacombs Mastery 38"
-            ]
+              "Catacombs Mastery 38",
+              "Catacombs Mastery XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXVIII",
-              "Catacombs Mastery 38"
-            ]
+              "Catacombs Mastery 38",
+              "Catacombs Mastery XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXVIII",
-              "Catacombs Mastery 38"
-            ]
+              "Catacombs Mastery 38",
+              "Catacombs Mastery XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXIX",
-              "Catacombs Mastery 39"
-            ]
+              "Catacombs Mastery 39",
+              "Catacombs Mastery XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXIX",
-              "Catacombs Mastery 39"
-            ]
+              "Catacombs Mastery 39",
+              "Catacombs Mastery XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XXXIX",
-              "Catacombs Mastery 39"
-            ]
+              "Catacombs Mastery 39",
+              "Catacombs Mastery XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "player_head"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:player_head"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XL",
-              "Catacombs Mastery 40"
-            ]
+              "Catacombs Mastery 40",
+              "Catacombs Mastery XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XL",
-              "Catacombs Mastery 40"
-            ]
+              "Catacombs Mastery 40",
+              "Catacombs Mastery XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XL",
-              "Catacombs Mastery 40"
-            ]
+              "Catacombs Mastery 40",
+              "Catacombs Mastery XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLI",
-              "Catacombs Mastery 41"
-            ]
+              "Catacombs Mastery 41",
+              "Catacombs Mastery XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLI",
-              "Catacombs Mastery 41"
-            ]
+              "Catacombs Mastery 41",
+              "Catacombs Mastery XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLI",
-              "Catacombs Mastery 41"
-            ]
+              "Catacombs Mastery 41",
+              "Catacombs Mastery XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLII",
-              "Catacombs Mastery 42"
-            ]
+              "Catacombs Mastery 42",
+              "Catacombs Mastery XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLII",
-              "Catacombs Mastery 42"
-            ]
+              "Catacombs Mastery 42",
+              "Catacombs Mastery XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLII",
-              "Catacombs Mastery 42"
-            ]
+              "Catacombs Mastery 42",
+              "Catacombs Mastery XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLIII",
-              "Catacombs Mastery 43"
-            ]
+              "Catacombs Mastery 43",
+              "Catacombs Mastery XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLIII",
-              "Catacombs Mastery 43"
-            ]
+              "Catacombs Mastery 43",
+              "Catacombs Mastery XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLIII",
-              "Catacombs Mastery 43"
-            ]
+              "Catacombs Mastery 43",
+              "Catacombs Mastery XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLIV",
-              "Catacombs Mastery 44"
-            ]
+              "Catacombs Mastery 44",
+              "Catacombs Mastery XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLIV",
-              "Catacombs Mastery 44"
-            ]
+              "Catacombs Mastery 44",
+              "Catacombs Mastery XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLIV",
-              "Catacombs Mastery 44"
-            ]
+              "Catacombs Mastery 44",
+              "Catacombs Mastery XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "player_head"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:player_head"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLV",
-              "Catacombs Mastery 45"
-            ]
+              "Catacombs Mastery 45",
+              "Catacombs Mastery XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLV",
-              "Catacombs Mastery 45"
-            ]
+              "Catacombs Mastery 45",
+              "Catacombs Mastery XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLV",
-              "Catacombs Mastery 45"
-            ]
+              "Catacombs Mastery 45",
+              "Catacombs Mastery XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLVI",
-              "Catacombs Mastery 46"
-            ]
+              "Catacombs Mastery 46",
+              "Catacombs Mastery XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLVI",
-              "Catacombs Mastery 46"
-            ]
+              "Catacombs Mastery 46",
+              "Catacombs Mastery XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLVI",
-              "Catacombs Mastery 46"
-            ]
+              "Catacombs Mastery 46",
+              "Catacombs Mastery XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLVII",
-              "Catacombs Mastery 47"
-            ]
+              "Catacombs Mastery 47",
+              "Catacombs Mastery XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLVII",
-              "Catacombs Mastery 47"
-            ]
+              "Catacombs Mastery 47",
+              "Catacombs Mastery XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLVII",
-              "Catacombs Mastery 47"
-            ]
+              "Catacombs Mastery 47",
+              "Catacombs Mastery XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLVIII",
-              "Catacombs Mastery 48"
-            ]
+              "Catacombs Mastery 48",
+              "Catacombs Mastery XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLVIII",
-              "Catacombs Mastery 48"
-            ]
+              "Catacombs Mastery 48",
+              "Catacombs Mastery XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLVIII",
-              "Catacombs Mastery 48"
-            ]
+              "Catacombs Mastery 48",
+              "Catacombs Mastery XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLIX",
-              "Catacombs Mastery 49"
-            ]
+              "Catacombs Mastery 49",
+              "Catacombs Mastery XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLIX",
-              "Catacombs Mastery 49"
-            ]
+              "Catacombs Mastery 49",
+              "Catacombs Mastery XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery XLIX",
-              "Catacombs Mastery 49"
-            ]
+              "Catacombs Mastery 49",
+              "Catacombs Mastery XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "player_head"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:player_head"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery L",
-              "Catacombs Mastery 50"
-            ]
+              "Catacombs Mastery 50",
+              "Catacombs Mastery L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/unlocking/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery L",
-              "Catacombs Mastery 50"
-            ]
+              "Catacombs Mastery 50",
+              "Catacombs Mastery L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/dungeoneering/catacombs/locked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Catacombs Mastery L",
-              "Catacombs Mastery 50"
-            ]
+              "Catacombs Mastery 50",
+              "Catacombs Mastery L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/catacombs_profile",
+      "target": {
+        "conditions": [
+          {
+            "slot": 45,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:oak_sign",
+            "type": "catharsis:item"
+          },
+          {
+            "name": "Catacombs Profile",
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/catacombs_rng_meter",
+      "target": {
+        "conditions": [
+          {
+            "slot": 40,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:player_head",
+            "type": "catharsis:item"
+          },
+          {
+            "name": "Catacombs RNG Meters",
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
       }
     }
   ]

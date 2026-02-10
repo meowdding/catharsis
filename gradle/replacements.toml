@@ -60,11 +60,3 @@ regex = "import net.minecraft.client.renderer.RenderTypes(?!;)"
 to = "import net.minecraft.client.renderer.RenderType as RenderTypes"
 reverseRegex = "import net.minecraft.client.renderer.RenderType as RenderTypes"
 reverse = "import net.minecraft.client.renderer.RenderTypes"
-
-[item_holder]
-type = "regex"
-condition = "<=1.21.8"
-regex = "import net.minecraft.world.entity.ItemOwner(?!;)"
-to = "import net.minecraft.world.entity.LivingEntity as ItemOwner"
-reverseRegex = "import net.minecraft.world.entity.LivingEntity as ItemOwner"
-reverse = "import net.minecraft.world.entity.ItemOwner"

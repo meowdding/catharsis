@@ -1,655 +1,655 @@
 {
   "target": {
-    "type": "title",
-    "title": "Fig Log Collection"
+    "title": "Fig Log Collection",
+    "type": "catharsis:title"
   },
   "layout": [
     {
       "id": "skyblock_gui:collections/foraging/unlocked/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 1",
               "Fig Log I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocking/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 1",
               "Fig Log I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/locked/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 1",
               "Fig Log I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 2",
               "Fig Log II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 2",
               "Fig Log II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 2",
               "Fig Log II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 3",
               "Fig Log III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 3",
               "Fig Log III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 3",
               "Fig Log III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 4",
               "Fig Log IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 4",
               "Fig Log IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 4",
               "Fig Log IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 22
+            "slot": 22,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 5",
               "Fig Log V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 22
+            "slot": 22,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 5",
               "Fig Log V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 22
+            "slot": 22,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 5",
               "Fig Log V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 6",
               "Fig Log VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 6",
               "Fig Log VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 6",
               "Fig Log VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 7",
               "Fig Log VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 7",
               "Fig Log VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 7",
               "Fig Log VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 8",
               "Fig Log VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 8",
               "Fig Log VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 8",
               "Fig Log VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocked/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 9",
               "Fig Log IX"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/unlocking/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 9",
               "Fig Log IX"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/foraging/locked/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Fig Log 9",
               "Fig Log IX"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     }
   ]

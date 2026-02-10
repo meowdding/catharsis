@@ -1,583 +1,583 @@
 {
   "target": {
-    "type": "title",
-    "title": "Red Sand Collection"
+    "title": "Red Sand Collection",
+    "type": "catharsis:title"
   },
   "layout": [
     {
       "id": "skyblock_gui:collections/mining/unlocked/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 1",
               "Red Sand I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 1",
               "Red Sand I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 1",
               "Red Sand I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 2",
               "Red Sand II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 2",
               "Red Sand II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 2",
               "Red Sand II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 3",
               "Red Sand III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 3",
               "Red Sand III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 3",
               "Red Sand III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector_skip",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 4",
               "Red Sand IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector_skip",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 4",
               "Red Sand IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector_skip",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 4",
               "Red Sand IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/skip_connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 5",
               "Red Sand V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/skip_connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 5",
               "Red Sand V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/skip_connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 5",
               "Red Sand V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 6",
               "Red Sand VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 6",
               "Red Sand VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 6",
               "Red Sand VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 7",
               "Red Sand VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 7",
               "Red Sand VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 7",
               "Red Sand VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocked/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 8",
               "Red Sand VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/unlocking/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 8",
               "Red Sand VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/mining/locked/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Red Sand 8",
               "Red Sand VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     }
   ]

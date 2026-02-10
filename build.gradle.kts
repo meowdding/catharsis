@@ -178,3 +178,17 @@ tasks.withType<ProcessResources>().configureEach {
 }
 
 tasks.withType<ValidateAccessWidenerTask> { enabled = false }
+
+val fat by configurations.creating {
+    isCanBeConsumed = true
+    isCanBeResolved = false
+
+    extendsFrom(configurations["runtimeClasspath"], configurations["compileClasspath"])
+}
+
+val unobfuscatedBuild by configurations.creating {
+    isCanBeConsumed = true
+    isCanBeResolved = false
+}
+
+artifacts.add("unobfuscatedBuild", tasks.jar)

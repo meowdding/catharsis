@@ -1,4 +1,5 @@
 {
+  "priority": -1,
   "target": {
     "type": "title",
     "title": ".*"

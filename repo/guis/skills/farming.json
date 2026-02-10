@@ -1,3755 +1,3723 @@
 {
   "target": {
-    "type": "title",
-    "title": "Farming Skill"
+    "title": "Farming Skill",
+    "type": "catharsis:title"
   },
   "layout": [
     {
       "id": "skyblock_gui:skills/farming/icon",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "name",
-            "name": "Farming Skill"
+            "name": "Farming Skill",
+            "mode": "equals",
+            "type": "catharsis:name"
           },
           {
-            "type": "slot",
-            "slot": 0
+            "slot": 0,
+            "type": "catharsis:slot"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level I",
-              "Farming Level 1"
-            ]
+              "Farming Level 1",
+              "Farming Level I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level I",
-              "Farming Level 1"
-            ]
+              "Farming Level 1",
+              "Farming Level I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level I",
-              "Farming Level 1"
-            ]
+              "Farming Level 1",
+              "Farming Level I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level II",
-              "Farming Level 2"
-            ]
+              "Farming Level 2",
+              "Farming Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level II",
-              "Farming Level 2"
-            ]
+              "Farming Level 2",
+              "Farming Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level II",
-              "Farming Level 2"
-            ]
+              "Farming Level 2",
+              "Farming Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level III",
-              "Farming Level 3"
-            ]
+              "Farming Level 3",
+              "Farming Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level III",
-              "Farming Level 3"
-            ]
+              "Farming Level 3",
+              "Farming Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level III",
-              "Farming Level 3"
-            ]
+              "Farming Level 3",
+              "Farming Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level IV",
-              "Farming Level 4"
-            ]
+              "Farming Level 4",
+              "Farming Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level IV",
-              "Farming Level 4"
-            ]
+              "Farming Level 4",
+              "Farming Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level IV",
-              "Farming Level 4"
-            ]
+              "Farming Level 4",
+              "Farming Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level V",
-              "Farming Level 5"
-            ]
+              "Farming Level 5",
+              "Farming Level V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level V",
-              "Farming Level 5"
-            ]
+              "Farming Level 5",
+              "Farming Level V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level V",
-              "Farming Level 5"
-            ]
+              "Farming Level 5",
+              "Farming Level V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level VI",
-              "Farming Level 6"
-            ]
+              "Farming Level 6",
+              "Farming Level VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level VI",
-              "Farming Level 6"
-            ]
+              "Farming Level 6",
+              "Farming Level VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level VI",
-              "Farming Level 6"
-            ]
+              "Farming Level 6",
+              "Farming Level VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level VII",
-              "Farming Level 7"
-            ]
+              "Farming Level 7",
+              "Farming Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level VII",
-              "Farming Level 7"
-            ]
+              "Farming Level 7",
+              "Farming Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level VII",
-              "Farming Level 7"
-            ]
+              "Farming Level 7",
+              "Farming Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level VIII",
-              "Farming Level 8"
-            ]
+              "Farming Level 8",
+              "Farming Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level VIII",
-              "Farming Level 8"
-            ]
+              "Farming Level 8",
+              "Farming Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level VIII",
-              "Farming Level 8"
-            ]
+              "Farming Level 8",
+              "Farming Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level IX",
-              "Farming Level 9"
-            ]
+              "Farming Level 9",
+              "Farming Level IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level IX",
-              "Farming Level 9"
-            ]
+              "Farming Level 9",
+              "Farming Level IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level IX",
-              "Farming Level 9"
-            ]
+              "Farming Level 9",
+              "Farming Level IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level X",
-              "Farming Level 10"
-            ]
+              "Farming Level 10",
+              "Farming Level X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level X",
-              "Farming Level 10"
-            ]
+              "Farming Level 10",
+              "Farming Level X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level X",
-              "Farming Level 10"
-            ]
+              "Farming Level 10",
+              "Farming Level X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XI",
-              "Farming Level 11"
-            ]
+              "Farming Level 11",
+              "Farming Level XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XI",
-              "Farming Level 11"
-            ]
+              "Farming Level 11",
+              "Farming Level XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XI",
-              "Farming Level 11"
-            ]
+              "Farming Level 11",
+              "Farming Level XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XII",
-              "Farming Level 12"
-            ]
+              "Farming Level 12",
+              "Farming Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XII",
-              "Farming Level 12"
-            ]
+              "Farming Level 12",
+              "Farming Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XII",
-              "Farming Level 12"
-            ]
+              "Farming Level 12",
+              "Farming Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XIII",
-              "Farming Level 13"
-            ]
+              "Farming Level 13",
+              "Farming Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XIII",
-              "Farming Level 13"
-            ]
+              "Farming Level 13",
+              "Farming Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XIII",
-              "Farming Level 13"
-            ]
+              "Farming Level 13",
+              "Farming Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XIV",
-              "Farming Level 14"
-            ]
+              "Farming Level 14",
+              "Farming Level XIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XIV",
-              "Farming Level 14"
-            ]
+              "Farming Level 14",
+              "Farming Level XIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XIV",
-              "Farming Level 14"
-            ]
+              "Farming Level 14",
+              "Farming Level XIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XV",
-              "Farming Level 15"
-            ]
+              "Farming Level 15",
+              "Farming Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XV",
-              "Farming Level 15"
-            ]
+              "Farming Level 15",
+              "Farming Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XV",
-              "Farming Level 15"
-            ]
+              "Farming Level 15",
+              "Farming Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XVI",
-              "Farming Level 16"
-            ]
+              "Farming Level 16",
+              "Farming Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XVI",
-              "Farming Level 16"
-            ]
+              "Farming Level 16",
+              "Farming Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XVI",
-              "Farming Level 16"
-            ]
+              "Farming Level 16",
+              "Farming Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XVII",
-              "Farming Level 17"
-            ]
+              "Farming Level 17",
+              "Farming Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XVII",
-              "Farming Level 17"
-            ]
+              "Farming Level 17",
+              "Farming Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XVII",
-              "Farming Level 17"
-            ]
+              "Farming Level 17",
+              "Farming Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XVIII",
-              "Farming Level 18"
-            ]
+              "Farming Level 18",
+              "Farming Level XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XVIII",
-              "Farming Level 18"
-            ]
+              "Farming Level 18",
+              "Farming Level XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XVIII",
-              "Farming Level 18"
-            ]
+              "Farming Level 18",
+              "Farming Level XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XIX",
-              "Farming Level 19"
-            ]
+              "Farming Level 19",
+              "Farming Level XIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XIX",
-              "Farming Level 19"
-            ]
+              "Farming Level 19",
+              "Farming Level XIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XIX",
-              "Farming Level 19"
-            ]
+              "Farming Level 19",
+              "Farming Level XIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XX",
-              "Farming Level 20"
-            ]
+              "Farming Level 20",
+              "Farming Level XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XX",
-              "Farming Level 20"
-            ]
+              "Farming Level 20",
+              "Farming Level XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XX",
-              "Farming Level 20"
-            ]
+              "Farming Level 20",
+              "Farming Level XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXI",
-              "Farming Level 21"
-            ]
+              "Farming Level 21",
+              "Farming Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXI",
-              "Farming Level 21"
-            ]
+              "Farming Level 21",
+              "Farming Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXI",
-              "Farming Level 21"
-            ]
+              "Farming Level 21",
+              "Farming Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXII",
-              "Farming Level 22"
-            ]
+              "Farming Level 22",
+              "Farming Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXII",
-              "Farming Level 22"
-            ]
+              "Farming Level 22",
+              "Farming Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXII",
-              "Farming Level 22"
-            ]
+              "Farming Level 22",
+              "Farming Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXIII",
-              "Farming Level 23"
-            ]
+              "Farming Level 23",
+              "Farming Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXIII",
-              "Farming Level 23"
-            ]
+              "Farming Level 23",
+              "Farming Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXIII",
-              "Farming Level 23"
-            ]
+              "Farming Level 23",
+              "Farming Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXIV",
-              "Farming Level 24"
-            ]
+              "Farming Level 24",
+              "Farming Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXIV",
-              "Farming Level 24"
-            ]
+              "Farming Level 24",
+              "Farming Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXIV",
-              "Farming Level 24"
-            ]
+              "Farming Level 24",
+              "Farming Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXV",
-              "Farming Level 25"
-            ]
+              "Farming Level 25",
+              "Farming Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXV",
-              "Farming Level 25"
-            ]
+              "Farming Level 25",
+              "Farming Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXV",
-              "Farming Level 25"
-            ]
+              "Farming Level 25",
+              "Farming Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXVI",
-              "Farming Level 26"
-            ]
+              "Farming Level 26",
+              "Farming Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXVI",
-              "Farming Level 26"
-            ]
+              "Farming Level 26",
+              "Farming Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXVI",
-              "Farming Level 26"
-            ]
+              "Farming Level 26",
+              "Farming Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXVII",
-              "Farming Level 27"
-            ]
+              "Farming Level 27",
+              "Farming Level XXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXVII",
-              "Farming Level 27"
-            ]
+              "Farming Level 27",
+              "Farming Level XXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXVII",
-              "Farming Level 27"
-            ]
+              "Farming Level 27",
+              "Farming Level XXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXVIII",
-              "Farming Level 28"
-            ]
+              "Farming Level 28",
+              "Farming Level XXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXVIII",
-              "Farming Level 28"
-            ]
+              "Farming Level 28",
+              "Farming Level XXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXVIII",
-              "Farming Level 28"
-            ]
+              "Farming Level 28",
+              "Farming Level XXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXIX",
-              "Farming Level 29"
-            ]
+              "Farming Level 29",
+              "Farming Level XXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXIX",
-              "Farming Level 29"
-            ]
+              "Farming Level 29",
+              "Farming Level XXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXIX",
-              "Farming Level 29"
-            ]
+              "Farming Level 29",
+              "Farming Level XXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXX",
-              "Farming Level 30"
-            ]
+              "Farming Level 30",
+              "Farming Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXX",
-              "Farming Level 30"
-            ]
+              "Farming Level 30",
+              "Farming Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXX",
-              "Farming Level 30"
-            ]
+              "Farming Level 30",
+              "Farming Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXI",
-              "Farming Level 31"
-            ]
+              "Farming Level 31",
+              "Farming Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXI",
-              "Farming Level 31"
-            ]
+              "Farming Level 31",
+              "Farming Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXI",
-              "Farming Level 31"
-            ]
+              "Farming Level 31",
+              "Farming Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXII",
-              "Farming Level 32"
-            ]
+              "Farming Level 32",
+              "Farming Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXII",
-              "Farming Level 32"
-            ]
+              "Farming Level 32",
+              "Farming Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXII",
-              "Farming Level 32"
-            ]
+              "Farming Level 32",
+              "Farming Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXIII",
-              "Farming Level 33"
-            ]
+              "Farming Level 33",
+              "Farming Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXIII",
-              "Farming Level 33"
-            ]
+              "Farming Level 33",
+              "Farming Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXIII",
-              "Farming Level 33"
-            ]
+              "Farming Level 33",
+              "Farming Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXIV",
-              "Farming Level 34"
-            ]
+              "Farming Level 34",
+              "Farming Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXIV",
-              "Farming Level 34"
-            ]
+              "Farming Level 34",
+              "Farming Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXIV",
-              "Farming Level 34"
-            ]
+              "Farming Level 34",
+              "Farming Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXV",
-              "Farming Level 35"
-            ]
+              "Farming Level 35",
+              "Farming Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXV",
-              "Farming Level 35"
-            ]
+              "Farming Level 35",
+              "Farming Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXV",
-              "Farming Level 35"
-            ]
+              "Farming Level 35",
+              "Farming Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXVI",
-              "Farming Level 36"
-            ]
+              "Farming Level 36",
+              "Farming Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXVI",
-              "Farming Level 36"
-            ]
+              "Farming Level 36",
+              "Farming Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXVI",
-              "Farming Level 36"
-            ]
+              "Farming Level 36",
+              "Farming Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXVII",
-              "Farming Level 37"
-            ]
+              "Farming Level 37",
+              "Farming Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXVII",
-              "Farming Level 37"
-            ]
+              "Farming Level 37",
+              "Farming Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXVII",
-              "Farming Level 37"
-            ]
+              "Farming Level 37",
+              "Farming Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXVIII",
-              "Farming Level 38"
-            ]
+              "Farming Level 38",
+              "Farming Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXVIII",
-              "Farming Level 38"
-            ]
+              "Farming Level 38",
+              "Farming Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXVIII",
-              "Farming Level 38"
-            ]
+              "Farming Level 38",
+              "Farming Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXIX",
-              "Farming Level 39"
-            ]
+              "Farming Level 39",
+              "Farming Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXIX",
-              "Farming Level 39"
-            ]
+              "Farming Level 39",
+              "Farming Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XXXIX",
-              "Farming Level 39"
-            ]
+              "Farming Level 39",
+              "Farming Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XL",
-              "Farming Level 40"
-            ]
+              "Farming Level 40",
+              "Farming Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XL",
-              "Farming Level 40"
-            ]
+              "Farming Level 40",
+              "Farming Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XL",
-              "Farming Level 40"
-            ]
+              "Farming Level 40",
+              "Farming Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLI",
-              "Farming Level 41"
-            ]
+              "Farming Level 41",
+              "Farming Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLI",
-              "Farming Level 41"
-            ]
+              "Farming Level 41",
+              "Farming Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLI",
-              "Farming Level 41"
-            ]
+              "Farming Level 41",
+              "Farming Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLII",
-              "Farming Level 42"
-            ]
+              "Farming Level 42",
+              "Farming Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLII",
-              "Farming Level 42"
-            ]
+              "Farming Level 42",
+              "Farming Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLII",
-              "Farming Level 42"
-            ]
+              "Farming Level 42",
+              "Farming Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLIII",
-              "Farming Level 43"
-            ]
+              "Farming Level 43",
+              "Farming Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLIII",
-              "Farming Level 43"
-            ]
+              "Farming Level 43",
+              "Farming Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLIII",
-              "Farming Level 43"
-            ]
+              "Farming Level 43",
+              "Farming Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLIV",
-              "Farming Level 44"
-            ]
+              "Farming Level 44",
+              "Farming Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLIV",
-              "Farming Level 44"
-            ]
+              "Farming Level 44",
+              "Farming Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLIV",
-              "Farming Level 44"
-            ]
+              "Farming Level 44",
+              "Farming Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLV",
-              "Farming Level 45"
-            ]
+              "Farming Level 45",
+              "Farming Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLV",
-              "Farming Level 45"
-            ]
+              "Farming Level 45",
+              "Farming Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLV",
-              "Farming Level 45"
-            ]
+              "Farming Level 45",
+              "Farming Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLVI",
-              "Farming Level 46"
-            ]
+              "Farming Level 46",
+              "Farming Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLVI",
-              "Farming Level 46"
-            ]
+              "Farming Level 46",
+              "Farming Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLVI",
-              "Farming Level 46"
-            ]
+              "Farming Level 46",
+              "Farming Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLVII",
-              "Farming Level 47"
-            ]
+              "Farming Level 47",
+              "Farming Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLVII",
-              "Farming Level 47"
-            ]
+              "Farming Level 47",
+              "Farming Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLVII",
-              "Farming Level 47"
-            ]
+              "Farming Level 47",
+              "Farming Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLVIII",
-              "Farming Level 48"
-            ]
+              "Farming Level 48",
+              "Farming Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLVIII",
-              "Farming Level 48"
-            ]
+              "Farming Level 48",
+              "Farming Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLVIII",
-              "Farming Level 48"
-            ]
+              "Farming Level 48",
+              "Farming Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLIX",
-              "Farming Level 49"
-            ]
+              "Farming Level 49",
+              "Farming Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLIX",
-              "Farming Level 49"
-            ]
+              "Farming Level 49",
+              "Farming Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level XLIX",
-              "Farming Level 49"
-            ]
+              "Farming Level 49",
+              "Farming Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level L",
-              "Farming Level 50"
-            ]
+              "Farming Level 50",
+              "Farming Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level L",
-              "Farming Level 50"
-            ]
+              "Farming Level 50",
+              "Farming Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level L",
-              "Farming Level 50"
-            ]
+              "Farming Level 50",
+              "Farming Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LI",
-              "Farming Level 51"
-            ]
+              "Farming Level 51",
+              "Farming Level LI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LI",
-              "Farming Level 51"
-            ]
+              "Farming Level 51",
+              "Farming Level LI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LI",
-              "Farming Level 51"
-            ]
+              "Farming Level 51",
+              "Farming Level LI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LII",
-              "Farming Level 52"
-            ]
+              "Farming Level 52",
+              "Farming Level LII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LII",
-              "Farming Level 52"
-            ]
+              "Farming Level 52",
+              "Farming Level LII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LII",
-              "Farming Level 52"
-            ]
+              "Farming Level 52",
+              "Farming Level LII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LIII",
-              "Farming Level 53"
-            ]
+              "Farming Level 53",
+              "Farming Level LIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LIII",
-              "Farming Level 53"
-            ]
+              "Farming Level 53",
+              "Farming Level LIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LIII",
-              "Farming Level 53"
-            ]
+              "Farming Level 53",
+              "Farming Level LIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LIV",
-              "Farming Level 54"
-            ]
+              "Farming Level 54",
+              "Farming Level LIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LIV",
-              "Farming Level 54"
-            ]
+              "Farming Level 54",
+              "Farming Level LIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LIV",
-              "Farming Level 54"
-            ]
+              "Farming Level 54",
+              "Farming Level LIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LV",
-              "Farming Level 55"
-            ]
+              "Farming Level 55",
+              "Farming Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LV",
-              "Farming Level 55"
-            ]
+              "Farming Level 55",
+              "Farming Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LV",
-              "Farming Level 55"
-            ]
+              "Farming Level 55",
+              "Farming Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LVI",
-              "Farming Level 56"
-            ]
+              "Farming Level 56",
+              "Farming Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LVI",
-              "Farming Level 56"
-            ]
+              "Farming Level 56",
+              "Farming Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LVI",
-              "Farming Level 56"
-            ]
+              "Farming Level 56",
+              "Farming Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LVII",
-              "Farming Level 57"
-            ]
+              "Farming Level 57",
+              "Farming Level LVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LVII",
-              "Farming Level 57"
-            ]
+              "Farming Level 57",
+              "Farming Level LVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LVII",
-              "Farming Level 57"
-            ]
+              "Farming Level 57",
+              "Farming Level LVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LVIII",
-              "Farming Level 58"
-            ]
+              "Farming Level 58",
+              "Farming Level LVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LVIII",
-              "Farming Level 58"
-            ]
+              "Farming Level 58",
+              "Farming Level LVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LVIII",
-              "Farming Level 58"
-            ]
+              "Farming Level 58",
+              "Farming Level LVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LIX",
-              "Farming Level 59"
-            ]
+              "Farming Level 59",
+              "Farming Level LIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LIX",
-              "Farming Level 59"
-            ]
+              "Farming Level 59",
+              "Farming Level LIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LIX",
-              "Farming Level 59"
-            ]
+              "Farming Level 59",
+              "Farming Level LIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocked/left_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "hay_block"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:hay_block"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LX",
-              "Farming Level 60"
-            ]
+              "Farming Level 60",
+              "Farming Level LX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/unlocking/left_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LX",
-              "Farming Level 60"
-            ]
+              "Farming Level 60",
+              "Farming Level LX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:skills/farming/locked/left_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Farming Level LX",
-              "Farming Level 60"
-            ]
+              "Farming Level 60",
+              "Farming Level LX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/farming/garden",
+      "target": {
+        "conditions": [
+          {
+            "slot": 39,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:sunflower",
+            "type": "catharsis:item"
+          },
+          {
+            "conditions": [
+              {
+                "name": "Garden Level \\d+",
+                "type": "catharsis:name"
+              },
+              {
+                "name": "Garden Level [XIV]+",
+                "type": "catharsis:name"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/farming/chips",
+      "target": {
+        "conditions": [
+          {
+            "slot": 41,
+            "type": "catharsis:slot"
+          },
+          {
+            "name": "Manage Chips",
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/farming/farming_contests",
+      "target": {
+        "conditions": [
+          {
+            "slot": 45,
+            "type": "catharsis:slot"
+          },
+          {
+            "name": "Jacob\u0027s Farming Contests",
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
       }
     }
   ]

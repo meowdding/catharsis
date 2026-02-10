@@ -12,7 +12,7 @@ plugins {
 }
 rootProject.name = "catharsis"
 
-val versions = listOf("1.21.11", "1.21.10", "1.21.8")
+val versions = listOf("1.21.11", "1.21.10")
 
 stonecutter {
     create(rootProject) {
@@ -37,5 +37,12 @@ dependencyResolutionManagement {
     }
 }
 
-include("repo")
-project(":repo").buildFileName = "../repo.gradle.kts"
+fun includeProject(name: String, fileName: String = "$name.gradle.kts") {
+    include(name)
+    project(":$name").apply {
+        buildFileName = "../$fileName"
+    }
+}
+
+includeProject("repo")
+includeProject("scripts")

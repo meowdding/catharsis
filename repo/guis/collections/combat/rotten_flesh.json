@@ -1,727 +1,727 @@
 {
   "target": {
-    "type": "title",
-    "title": "Rotten Flesh Collection"
+    "title": "Rotten Flesh Collection",
+    "type": "catharsis:title"
   },
   "layout": [
     {
       "id": "skyblock_gui:collections/combat/unlocked/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 1",
               "Rotten Flesh I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocking/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 1",
               "Rotten Flesh I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/locked/start",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 18
+            "slot": 18,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 1",
               "Rotten Flesh I"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 2",
               "Rotten Flesh II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 2",
               "Rotten Flesh II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 19
+            "slot": 19,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 2",
               "Rotten Flesh II"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 3",
               "Rotten Flesh III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 3",
               "Rotten Flesh III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 20
+            "slot": 20,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 3",
               "Rotten Flesh III"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 4",
               "Rotten Flesh IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 4",
               "Rotten Flesh IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 21
+            "slot": 21,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 4",
               "Rotten Flesh IV"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 22
+            "slot": 22,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 5",
               "Rotten Flesh V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 22
+            "slot": 22,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 5",
               "Rotten Flesh V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 22
+            "slot": 22,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 5",
               "Rotten Flesh V"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 6",
               "Rotten Flesh VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 6",
               "Rotten Flesh VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 23
+            "slot": 23,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 6",
               "Rotten Flesh VI"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 7",
               "Rotten Flesh VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 7",
               "Rotten Flesh VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 24
+            "slot": 24,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 7",
               "Rotten Flesh VII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 8",
               "Rotten Flesh VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocking/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 8",
               "Rotten Flesh VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/locked/connector",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 25
+            "slot": 25,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 8",
               "Rotten Flesh VIII"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocked/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 9",
               "Rotten Flesh IX"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocking/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 9",
               "Rotten Flesh IX"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/locked/end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 26
+            "slot": 26,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 9",
               "Rotten Flesh IX"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocked/start_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 27
+            "slot": 27,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "lime_stained_glass_pane"
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 10",
               "Rotten Flesh X"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/unlocking/start_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 27
+            "slot": 27,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 10",
               "Rotten Flesh X"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:collections/combat/locked/start_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "slot",
-            "slot": 27
+            "slot": 27,
+            "type": "catharsis:slot"
           },
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
               "Rotten Flesh 10",
               "Rotten Flesh X"
-            ]
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     }
   ]

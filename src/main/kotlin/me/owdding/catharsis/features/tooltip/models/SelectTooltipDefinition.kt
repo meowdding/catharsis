@@ -26,9 +26,6 @@ import java.util.*
 import kotlin.collections.forEach
 import kotlin.jvm.optionals.getOrNull
 
-//? = 1.21.8
-/*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
-
 typealias UnbakedTooltipSelectCase<Type> = Pair<List<Type>, TooltipDefinition.Unbaked>
 
 @Suppress("UNCHECKED_CAST", "KotlinConstantConditions")

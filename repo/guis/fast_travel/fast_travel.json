@@ -1,0 +1,215 @@
+{
+  "target": {
+    "title": "Fast Travel",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/island_browser",
+      "target": {
+        "name": "Island Browser",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/paper_icons/enabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Paper Icons",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:filled_map",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/paper_icons/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Paper Icons",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:map",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/advanced_mode/enabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Advanced Mode",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_dye",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/advanced_mode/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Advanced Mode",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:gray_dye",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/undiscovered_island",
+      "target": {
+        "name": "Undiscovered Island",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/hub/spawn_unlocked",
+      "target": {
+        "name": "SkyBlock Hub",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/private_island/spawn_unlocked",
+      "target": {
+        "name": "Private Island",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/dungeon_hub/spawn_unlocked",
+      "target": {
+        "name": "Dungeon Hub(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_islands/spawn_unlocked",
+      "target": {
+        "name": "The Barn(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/park/spawn_unlocked",
+      "target": {
+        "name": "The Park(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/galatea/spawn_unlocked",
+      "target": {
+        "name": "Galatea(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/gold_mine/spawn_unlocked",
+      "target": {
+        "name": "Gold Mine(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/deep_caverns/spawn_unlocked",
+      "target": {
+        "name": "Deep Caverns(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/dwarven_mines/spawn_unlocked",
+      "target": {
+        "name": "Dwarven Mines(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/crystal_hollows/entrance_unlocked",
+      "target": {
+        "name": "Crystal Hollows(?: - Entrance)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/spiders_den/spawn_unlocked",
+      "target": {
+        "name": "Spider\u0027s Den(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/the_end/spawn_unlocked",
+      "target": {
+        "name": "The End(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/crimson_isle/spawn_unlocked",
+      "target": {
+        "name": "Crimson Isle(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/garden/spawn_unlocked",
+      "target": {
+        "name": "The Garden",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/rift/wizard_tower_unlocked",
+      "target": {
+        "name": "The Rift(?: - Wizard Tower)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/backwater_bayou/spawn_unlocked",
+      "target": {
+        "name": "Backwater Bayou(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/jerrys_workshop/spawn_unlocked",
+      "target": {
+        "name": "Warp to: Jerry\u0027s Workshop",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    }
+  ]
+}

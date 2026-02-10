@@ -1,0 +1,152 @@
+{
+  "target": {
+    "title": "The End Warps",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/the_end/spawn_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The End - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/the_end/spawn_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The End - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/the_end/nest_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The End - Dragon\u0027s Nest",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/the_end/nest_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The End - Dragon\u0027s Nest",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/the_end/sepulture_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The End - Void Sepulture",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/the_end/sepulture_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The End - Void Sepulture",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

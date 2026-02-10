@@ -1,3133 +1,3054 @@
 {
   "target": {
-    "type": "title",
-    "title": "Tank Class Perks"
+    "title": "Tank Class Perks",
+    "type": "catharsis:title"
   },
   "layout": [
     {
       "id": "skyblock_gui:classes/tank/icon",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "name",
-            "name": "Tank Class"
+            "name": "Tank Class",
+            "mode": "equals",
+            "type": "catharsis:name"
           },
           {
-            "type": "slot",
-            "slot": 0
+            "slot": 0,
+            "type": "catharsis:slot"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level I",
-              "Tank Level 1"
-            ]
+              "Tank Level 1",
+              "Tank Level I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level I",
-              "Tank Level 1"
-            ]
+              "Tank Level 1",
+              "Tank Level I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level I",
-              "Tank Level 1"
-            ]
+              "Tank Level 1",
+              "Tank Level I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level II",
-              "Tank Level 2"
-            ]
+              "Tank Level 2",
+              "Tank Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level II",
-              "Tank Level 2"
-            ]
+              "Tank Level 2",
+              "Tank Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level II",
-              "Tank Level 2"
-            ]
+              "Tank Level 2",
+              "Tank Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level III",
-              "Tank Level 3"
-            ]
+              "Tank Level 3",
+              "Tank Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level III",
-              "Tank Level 3"
-            ]
+              "Tank Level 3",
+              "Tank Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level III",
-              "Tank Level 3"
-            ]
+              "Tank Level 3",
+              "Tank Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level IV",
-              "Tank Level 4"
-            ]
+              "Tank Level 4",
+              "Tank Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level IV",
-              "Tank Level 4"
-            ]
+              "Tank Level 4",
+              "Tank Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level IV",
-              "Tank Level 4"
-            ]
+              "Tank Level 4",
+              "Tank Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "leather_chestplate"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:leather_chestplate"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level V",
-              "Tank Level 5"
-            ]
+              "Tank Level 5",
+              "Tank Level V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level V",
-              "Tank Level 5"
-            ]
+              "Tank Level 5",
+              "Tank Level V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level V",
-              "Tank Level 5"
-            ]
+              "Tank Level 5",
+              "Tank Level V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level VI",
-              "Tank Level 6"
-            ]
+              "Tank Level 6",
+              "Tank Level VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level VI",
-              "Tank Level 6"
-            ]
+              "Tank Level 6",
+              "Tank Level VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level VI",
-              "Tank Level 6"
-            ]
+              "Tank Level 6",
+              "Tank Level VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level VII",
-              "Tank Level 7"
-            ]
+              "Tank Level 7",
+              "Tank Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level VII",
-              "Tank Level 7"
-            ]
+              "Tank Level 7",
+              "Tank Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level VII",
-              "Tank Level 7"
-            ]
+              "Tank Level 7",
+              "Tank Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level VIII",
-              "Tank Level 8"
-            ]
+              "Tank Level 8",
+              "Tank Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level VIII",
-              "Tank Level 8"
-            ]
+              "Tank Level 8",
+              "Tank Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level VIII",
-              "Tank Level 8"
-            ]
+              "Tank Level 8",
+              "Tank Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level IX",
-              "Tank Level 9"
-            ]
+              "Tank Level 9",
+              "Tank Level IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level IX",
-              "Tank Level 9"
-            ]
+              "Tank Level 9",
+              "Tank Level IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level IX",
-              "Tank Level 9"
-            ]
+              "Tank Level 9",
+              "Tank Level IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "leather_chestplate"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:leather_chestplate"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level X",
-              "Tank Level 10"
-            ]
+              "Tank Level 10",
+              "Tank Level X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level X",
-              "Tank Level 10"
-            ]
+              "Tank Level 10",
+              "Tank Level X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level X",
-              "Tank Level 10"
-            ]
+              "Tank Level 10",
+              "Tank Level X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XI",
-              "Tank Level 11"
-            ]
+              "Tank Level 11",
+              "Tank Level XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XI",
-              "Tank Level 11"
-            ]
+              "Tank Level 11",
+              "Tank Level XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XI",
-              "Tank Level 11"
-            ]
+              "Tank Level 11",
+              "Tank Level XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XII",
-              "Tank Level 12"
-            ]
+              "Tank Level 12",
+              "Tank Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XII",
-              "Tank Level 12"
-            ]
+              "Tank Level 12",
+              "Tank Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XII",
-              "Tank Level 12"
-            ]
+              "Tank Level 12",
+              "Tank Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XIII",
-              "Tank Level 13"
-            ]
+              "Tank Level 13",
+              "Tank Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XIII",
-              "Tank Level 13"
-            ]
+              "Tank Level 13",
+              "Tank Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XIII",
-              "Tank Level 13"
-            ]
+              "Tank Level 13",
+              "Tank Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XIV",
-              "Tank Level 14"
-            ]
+              "Tank Level 14",
+              "Tank Level XIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XIV",
-              "Tank Level 14"
-            ]
+              "Tank Level 14",
+              "Tank Level XIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XIV",
-              "Tank Level 14"
-            ]
+              "Tank Level 14",
+              "Tank Level XIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "leather_chestplate"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:leather_chestplate"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XV",
-              "Tank Level 15"
-            ]
+              "Tank Level 15",
+              "Tank Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XV",
-              "Tank Level 15"
-            ]
+              "Tank Level 15",
+              "Tank Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XV",
-              "Tank Level 15"
-            ]
+              "Tank Level 15",
+              "Tank Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XVI",
-              "Tank Level 16"
-            ]
+              "Tank Level 16",
+              "Tank Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XVI",
-              "Tank Level 16"
-            ]
+              "Tank Level 16",
+              "Tank Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XVI",
-              "Tank Level 16"
-            ]
+              "Tank Level 16",
+              "Tank Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XVII",
-              "Tank Level 17"
-            ]
+              "Tank Level 17",
+              "Tank Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XVII",
-              "Tank Level 17"
-            ]
+              "Tank Level 17",
+              "Tank Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XVII",
-              "Tank Level 17"
-            ]
+              "Tank Level 17",
+              "Tank Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XVIII",
-              "Tank Level 18"
-            ]
+              "Tank Level 18",
+              "Tank Level XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XVIII",
-              "Tank Level 18"
-            ]
+              "Tank Level 18",
+              "Tank Level XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XVIII",
-              "Tank Level 18"
-            ]
+              "Tank Level 18",
+              "Tank Level XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XIX",
-              "Tank Level 19"
-            ]
+              "Tank Level 19",
+              "Tank Level XIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XIX",
-              "Tank Level 19"
-            ]
+              "Tank Level 19",
+              "Tank Level XIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XIX",
-              "Tank Level 19"
-            ]
+              "Tank Level 19",
+              "Tank Level XIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "leather_chestplate"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:leather_chestplate"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XX",
-              "Tank Level 20"
-            ]
+              "Tank Level 20",
+              "Tank Level XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XX",
-              "Tank Level 20"
-            ]
+              "Tank Level 20",
+              "Tank Level XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XX",
-              "Tank Level 20"
-            ]
+              "Tank Level 20",
+              "Tank Level XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXI",
-              "Tank Level 21"
-            ]
+              "Tank Level 21",
+              "Tank Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXI",
-              "Tank Level 21"
-            ]
+              "Tank Level 21",
+              "Tank Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXI",
-              "Tank Level 21"
-            ]
+              "Tank Level 21",
+              "Tank Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXII",
-              "Tank Level 22"
-            ]
+              "Tank Level 22",
+              "Tank Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXII",
-              "Tank Level 22"
-            ]
+              "Tank Level 22",
+              "Tank Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXII",
-              "Tank Level 22"
-            ]
+              "Tank Level 22",
+              "Tank Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXIII",
-              "Tank Level 23"
-            ]
+              "Tank Level 23",
+              "Tank Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXIII",
-              "Tank Level 23"
-            ]
+              "Tank Level 23",
+              "Tank Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXIII",
-              "Tank Level 23"
-            ]
+              "Tank Level 23",
+              "Tank Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXIV",
-              "Tank Level 24"
-            ]
+              "Tank Level 24",
+              "Tank Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXIV",
-              "Tank Level 24"
-            ]
+              "Tank Level 24",
+              "Tank Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXIV",
-              "Tank Level 24"
-            ]
+              "Tank Level 24",
+              "Tank Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "leather_chestplate"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:leather_chestplate"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXV",
-              "Tank Level 25"
-            ]
+              "Tank Level 25",
+              "Tank Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXV",
-              "Tank Level 25"
-            ]
+              "Tank Level 25",
+              "Tank Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXV",
-              "Tank Level 25"
-            ]
+              "Tank Level 25",
+              "Tank Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXVI",
-              "Tank Level 26"
-            ]
+              "Tank Level 26",
+              "Tank Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXVI",
-              "Tank Level 26"
-            ]
+              "Tank Level 26",
+              "Tank Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/start_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXVI",
-              "Tank Level 26"
-            ]
+              "Tank Level 26",
+              "Tank Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXVII",
-              "Tank Level 27"
-            ]
+              "Tank Level 27",
+              "Tank Level XXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXVII",
-              "Tank Level 27"
-            ]
+              "Tank Level 27",
+              "Tank Level XXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXVII",
-              "Tank Level 27"
-            ]
+              "Tank Level 27",
+              "Tank Level XXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXVIII",
-              "Tank Level 28"
-            ]
+              "Tank Level 28",
+              "Tank Level XXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXVIII",
-              "Tank Level 28"
-            ]
+              "Tank Level 28",
+              "Tank Level XXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXVIII",
-              "Tank Level 28"
-            ]
+              "Tank Level 28",
+              "Tank Level XXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXIX",
-              "Tank Level 29"
-            ]
+              "Tank Level 29",
+              "Tank Level XXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXIX",
-              "Tank Level 29"
-            ]
+              "Tank Level 29",
+              "Tank Level XXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXIX",
-              "Tank Level 29"
-            ]
+              "Tank Level 29",
+              "Tank Level XXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "leather_chestplate"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:leather_chestplate"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXX",
-              "Tank Level 30"
-            ]
+              "Tank Level 30",
+              "Tank Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXX",
-              "Tank Level 30"
-            ]
+              "Tank Level 30",
+              "Tank Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXX",
-              "Tank Level 30"
-            ]
+              "Tank Level 30",
+              "Tank Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXI",
-              "Tank Level 31"
-            ]
+              "Tank Level 31",
+              "Tank Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXI",
-              "Tank Level 31"
-            ]
+              "Tank Level 31",
+              "Tank Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXI",
-              "Tank Level 31"
-            ]
+              "Tank Level 31",
+              "Tank Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXII",
-              "Tank Level 32"
-            ]
+              "Tank Level 32",
+              "Tank Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXII",
-              "Tank Level 32"
-            ]
+              "Tank Level 32",
+              "Tank Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXII",
-              "Tank Level 32"
-            ]
+              "Tank Level 32",
+              "Tank Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXIII",
-              "Tank Level 33"
-            ]
+              "Tank Level 33",
+              "Tank Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXIII",
-              "Tank Level 33"
-            ]
+              "Tank Level 33",
+              "Tank Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXIII",
-              "Tank Level 33"
-            ]
+              "Tank Level 33",
+              "Tank Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXIV",
-              "Tank Level 34"
-            ]
+              "Tank Level 34",
+              "Tank Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXIV",
-              "Tank Level 34"
-            ]
+              "Tank Level 34",
+              "Tank Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXIV",
-              "Tank Level 34"
-            ]
+              "Tank Level 34",
+              "Tank Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "leather_chestplate"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:leather_chestplate"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXV",
-              "Tank Level 35"
-            ]
+              "Tank Level 35",
+              "Tank Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXV",
-              "Tank Level 35"
-            ]
+              "Tank Level 35",
+              "Tank Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXV",
-              "Tank Level 35"
-            ]
+              "Tank Level 35",
+              "Tank Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXVI",
-              "Tank Level 36"
-            ]
+              "Tank Level 36",
+              "Tank Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXVI",
-              "Tank Level 36"
-            ]
+              "Tank Level 36",
+              "Tank Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXVI",
-              "Tank Level 36"
-            ]
+              "Tank Level 36",
+              "Tank Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXVII",
-              "Tank Level 37"
-            ]
+              "Tank Level 37",
+              "Tank Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXVII",
-              "Tank Level 37"
-            ]
+              "Tank Level 37",
+              "Tank Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXVII",
-              "Tank Level 37"
-            ]
+              "Tank Level 37",
+              "Tank Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXVIII",
-              "Tank Level 38"
-            ]
+              "Tank Level 38",
+              "Tank Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXVIII",
-              "Tank Level 38"
-            ]
+              "Tank Level 38",
+              "Tank Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXVIII",
-              "Tank Level 38"
-            ]
+              "Tank Level 38",
+              "Tank Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXIX",
-              "Tank Level 39"
-            ]
+              "Tank Level 39",
+              "Tank Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXIX",
-              "Tank Level 39"
-            ]
+              "Tank Level 39",
+              "Tank Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XXXIX",
-              "Tank Level 39"
-            ]
+              "Tank Level 39",
+              "Tank Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "leather_chestplate"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:leather_chestplate"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XL",
-              "Tank Level 40"
-            ]
+              "Tank Level 40",
+              "Tank Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XL",
-              "Tank Level 40"
-            ]
+              "Tank Level 40",
+              "Tank Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XL",
-              "Tank Level 40"
-            ]
+              "Tank Level 40",
+              "Tank Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLI",
-              "Tank Level 41"
-            ]
+              "Tank Level 41",
+              "Tank Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLI",
-              "Tank Level 41"
-            ]
+              "Tank Level 41",
+              "Tank Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLI",
-              "Tank Level 41"
-            ]
+              "Tank Level 41",
+              "Tank Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLII",
-              "Tank Level 42"
-            ]
+              "Tank Level 42",
+              "Tank Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLII",
-              "Tank Level 42"
-            ]
+              "Tank Level 42",
+              "Tank Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_up",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLII",
-              "Tank Level 42"
-            ]
+              "Tank Level 42",
+              "Tank Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLIII",
-              "Tank Level 43"
-            ]
+              "Tank Level 43",
+              "Tank Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLIII",
-              "Tank Level 43"
-            ]
+              "Tank Level 43",
+              "Tank Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/down_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLIII",
-              "Tank Level 43"
-            ]
+              "Tank Level 43",
+              "Tank Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLIV",
-              "Tank Level 44"
-            ]
+              "Tank Level 44",
+              "Tank Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLIV",
-              "Tank Level 44"
-            ]
+              "Tank Level 44",
+              "Tank Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_right",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLIV",
-              "Tank Level 44"
-            ]
+              "Tank Level 44",
+              "Tank Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "leather_chestplate"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:leather_chestplate"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLV",
-              "Tank Level 45"
-            ]
+              "Tank Level 45",
+              "Tank Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLV",
-              "Tank Level 45"
-            ]
+              "Tank Level 45",
+              "Tank Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/left_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLV",
-              "Tank Level 45"
-            ]
+              "Tank Level 45",
+              "Tank Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLVI",
-              "Tank Level 46"
-            ]
+              "Tank Level 46",
+              "Tank Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLVI",
-              "Tank Level 46"
-            ]
+              "Tank Level 46",
+              "Tank Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLVI",
-              "Tank Level 46"
-            ]
+              "Tank Level 46",
+              "Tank Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLVII",
-              "Tank Level 47"
-            ]
+              "Tank Level 47",
+              "Tank Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLVII",
-              "Tank Level 47"
-            ]
+              "Tank Level 47",
+              "Tank Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLVII",
-              "Tank Level 47"
-            ]
+              "Tank Level 47",
+              "Tank Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLVIII",
-              "Tank Level 48"
-            ]
+              "Tank Level 48",
+              "Tank Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLVIII",
-              "Tank Level 48"
-            ]
+              "Tank Level 48",
+              "Tank Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLVIII",
-              "Tank Level 48"
-            ]
+              "Tank Level 48",
+              "Tank Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": [
-              "lime_stained_glass_pane"
-            ]
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLIX",
-              "Tank Level 49"
-            ]
+              "Tank Level 49",
+              "Tank Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLIX",
-              "Tank Level 49"
-            ]
+              "Tank Level 49",
+              "Tank Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_down",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level XLIX",
-              "Tank Level 49"
-            ]
+              "Tank Level 49",
+              "Tank Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
             "items": [
-              "lime_stained_glass_pane",
-              "leather_chestplate"
-            ]
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:leather_chestplate"
+            ],
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level L",
-              "Tank Level 50"
-            ]
+              "Tank Level 50",
+              "Tank Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/unlocking/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "yellow_stained_glass_pane"
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level L",
-              "Tank Level 50"
-            ]
+              "Tank Level 50",
+              "Tank Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     },
     {
       "id": "skyblock_gui:classes/tank/locked/up_end",
       "target": {
-        "type": "all",
         "conditions": [
           {
-            "type": "item",
-            "items": "red_stained_glass_pane"
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
           },
           {
-            "type": "name",
-            "mode": "equals",
             "name": [
-              "Tank Level L",
-              "Tank Level 50"
-            ]
+              "Tank Level 50",
+              "Tank Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
           }
-        ]
+        ],
+        "type": "catharsis:all"
       }
     }
   ]

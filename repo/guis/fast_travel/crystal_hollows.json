@@ -1,0 +1,104 @@
+{
+  "target": {
+    "title": "Crystal Hollows Warps",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/crystal_hollows/entrance_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Crystal Hollows - Entrance",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/crystal_hollows/entrance_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Crystal Hollows - Entrance",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/crystal_hollows/crystal_nucleus_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Crystal Hollows - Crystal Nucleus",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/crystal_hollows/crystal_nucleus_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Crystal Hollows - Crystal Nucleus",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

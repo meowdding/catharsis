@@ -71,7 +71,16 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
             val slots = mutableMapOf<Identifier, SlotModifier>()
             for (modifier in modifiers) {
                 modifier.slots.forEach { (identifier, modifier) ->
-                    slots.putIfAbsent(identifier, modifier)
+                    val existing = slots[identifier]
+                    if (existing != null) {
+                        slots[identifier] = SlotModifier(
+                            hidden = existing.hidden || modifier.hidden,
+                            highlightable = existing.highlightable && modifier.highlightable,
+                            position = modifier.position ?: existing.position
+                        )
+                    } else {
+                        slots[identifier] = modifier
+                    }
                 }
             }
 

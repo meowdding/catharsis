@@ -1,0 +1,152 @@
+{
+  "target": {
+    "title": "The Park Warps",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/the_park/spawn_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/the_park/spawn_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/the_park/jungle_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Jungle",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/the_park/jungle_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Jungle",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/the_park/howling_cave_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Howling Cave",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/the_park/howling_cave_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Howling Cave",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

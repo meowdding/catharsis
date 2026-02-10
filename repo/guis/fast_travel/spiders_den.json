@@ -1,0 +1,152 @@
+{
+  "target": {
+    "title": "Spider\u0027s Den Warps",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/spiders_den/spawn_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/spiders_den/spawn_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/spiders_den/top_of_nest_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Top of Nest",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/spiders_den/top_of_nest_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Top of Nest",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/spiders_den/arachne_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Arachne\u0027s Sanctuary",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:bedrock",
+                "type": "catharsis:item"
+              },
+              {
+                "name": "Warp not unlocked!",
+                "mode": "equals",
+                "line": -1,
+                "type": "catharsis:lore"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/spiders_den/arachne_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Arachne\u0027s Sanctuary",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "items": "minecraft:bedrock",
+              "type": "catharsis:item"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

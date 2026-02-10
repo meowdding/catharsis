@@ -46,11 +46,9 @@ data class GuiPlayerElement(
         } else {
             val offset = Vector3f(0.0F, player.bbHeight / 2.0f + 0.0625f * player.scale, 0.0F)
             val state = McClient.self.entityRenderDispatcher.getRenderer(player).createRenderState(player, 1f)
-            //? if > 1.21.8 {
             state.lightCoords = LightTexture.FULL_BRIGHT
             state.shadowPieces.clear()
             state.outlineColor = 0
-            //?}
 
             //? if < 1.21.11
             /*state.hitboxesRenderState = null*/

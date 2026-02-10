@@ -13,9 +13,6 @@ import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemStack
 
-//? = 1.21.8
-/*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
-
 class BedrockArmorModel(
     private val geoemtry: BakedBedrockGeometry,
     private val textures: Array<Identifier>,

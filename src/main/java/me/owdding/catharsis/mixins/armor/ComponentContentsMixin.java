@@ -22,7 +22,6 @@ public class ComponentContentsMixin {
         SelectItemModelProperty.Type<ComponentContents<T>, T> original,
         @Local(ordinal = 0) Codec<DataComponentType> typeCodec
     ) {
-        // For some reason it won't compile without it on 1.21.8, but it works fine?
         // noinspection RedundantCast
         MapCodec<SelectArmorModel.UnbakedSwitch<ComponentContents<T>, T>> armorCodec = typeCodec.dispatchMap(
             "component",

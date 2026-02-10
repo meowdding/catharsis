@@ -2,6 +2,12 @@ plugins {
     id("dev.kikugie.stonecutter")
     id("fabric-loom") version "1.14-SNAPSHOT" apply false
 }
+
+@Suppress("UNCHECKED_CAST")
+fun <T> Any?.unsafeCast() : T = this as T
+
+
+ext["latest"] = stonecutter.vcsVersion.version
 stonecutter active "1.21.11"
 
 stonecutter parameters {

@@ -1,48 +1,42 @@
 package me.owdding.catharsis.features.dev.give
 
-//? if > 1.21.8 {
-import net.minecraft.world.entity.EntityType
-import net.minecraft.world.item.component.TypedEntityData
-import java.util.*
-import me.owdding.catharsis.utils.types.commands.CommandFlag
-import me.owdding.catharsis.utils.types.commands.FlagArgument
 import com.mojang.brigadier.arguments.ArgumentType
-import net.minecraft.world.item.component.ResolvableProfile
-import tech.thatgravyboat.skyblockapi.utils.text.Text.wrap
-//?} else {
-/*import net.minecraft.world.item.component.CustomData
-*///?}
-
 import com.mojang.brigadier.context.CommandContext
 import me.owdding.catharsis.features.dev.GiveCommands
+import me.owdding.catharsis.utils.types.commands.CommandFlag
+import me.owdding.catharsis.utils.types.commands.FlagArgument
 import me.owdding.catharsis.utils.types.commands.SkyBlockIdArgument
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource
 import net.minecraft.core.component.DataComponents
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.nbt.NbtOps
+import net.minecraft.world.entity.EntityType
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.Items
+import net.minecraft.world.item.component.ResolvableProfile
+import net.minecraft.world.item.component.TypedEntityData
+import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
+import tech.thatgravyboat.skyblockapi.api.events.misc.CommandBuilder
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
 import tech.thatgravyboat.skyblockapi.api.remote.RepoItemsAPI
 import tech.thatgravyboat.skyblockapi.api.remote.api.SimpleItemAPI
 import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
 import tech.thatgravyboat.skyblockapi.api.remote.hypixel.museum.MuseumData
+import tech.thatgravyboat.skyblockapi.utils.extentions.get
 import tech.thatgravyboat.skyblockapi.utils.extentions.putCompound
 import tech.thatgravyboat.skyblockapi.utils.text.Text
+import tech.thatgravyboat.skyblockapi.utils.text.Text.wrap
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.italic
-import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
-import tech.thatgravyboat.skyblockapi.api.events.misc.CommandBuilder
-import tech.thatgravyboat.skyblockapi.utils.extentions.get
+import java.util.*
 
 @Module
 object GiveArmorstand {
 
 
-    //? if > 1.21.8 {
     enum class MannequinFlag(
         override val shortName: Char,
         longName: String? = null,
@@ -60,7 +54,6 @@ object GiveArmorstand {
 
         override val longName: String = longName ?: name.lowercase()
     }
-    //?}
 
     private val armorTypes = mutableSetOf(
         "HELMET",
@@ -82,22 +75,12 @@ object GiveArmorstand {
             then("armorstand") {
                 createGive { tag, skyBlockId ->
                     Items.ARMOR_STAND.defaultInstance.apply {
-                        set(
-                            DataComponents.ENTITY_DATA,
-                            //? if >1.21.8 {
-                            TypedEntityData.of(EntityType.ARMOR_STAND, tag),
-                            //?} else {
-                            /*CustomData.of(tag.apply {
-                                putString("id", "minecraft:armor_stand")
-                            })
-                            *///?}
-                        )
+                        set(DataComponents.ENTITY_DATA, TypedEntityData.of(EntityType.ARMOR_STAND, tag))
                         set(DataComponents.CUSTOM_NAME, Text.of(skyBlockId) { italic = false })
                     }
                 }
             }
 
-            //? if > 1.21.8 {
             fun createMannequin(flags: Set<MannequinFlag>, tag: CompoundTag, skyBlockId: String): ItemStack {
                 return Items.FOX_SPAWN_EGG.defaultInstance.apply {
                     tag.putBoolean("hide_description", true)
@@ -129,7 +112,6 @@ object GiveArmorstand {
                 }
                 createGive { tag, skyBlockId -> createMannequin(emptySet(), tag, skyBlockId) }
             }
-            //?}
         }
     }
 

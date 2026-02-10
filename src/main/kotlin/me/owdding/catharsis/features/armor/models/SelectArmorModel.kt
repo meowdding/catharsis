@@ -22,9 +22,6 @@ import net.minecraft.world.item.ItemStack
 import java.util.*
 import kotlin.jvm.optionals.getOrNull
 
-//? = 1.21.8
-/*import me.owdding.catharsis.utils.extensions.asLivingEntity*/
-
 typealias UnbakedArmorSelectCase<Type> = Pair<List<Type>, ArmorModel.Unbaked>
 
 @Suppress("UNCHECKED_CAST", "KotlinConstantConditions")

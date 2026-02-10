@@ -10,23 +10,16 @@ import net.minecraft.network.chat.Style
 import net.minecraft.world.phys.AABB
 import tech.thatgravyboat.skyblockapi.api.events.render.RenderWorldEvent
 
-//? >= 1.21.9 {
-    fun PoseStack.pose(): PoseStack.Pose = this.last()
-//?} else {
-    /*fun PoseStack.pose() = this
-*///?}
-
-//? = 1.21.8
-/*fun net.minecraft.world.entity.LivingEntity.asLivingEntity() = this*/
+fun PoseStack.pose(): PoseStack.Pose = this.last()
 
 fun RenderWorldEvent.renderLineBox(
     box: AABB,
     red: Float = 1f, green: Float = 1f, blue: Float = 1f, alpha: Float = 1f,
-    secondary: Boolean = false
+    secondary: Boolean = false,
 ) {
     //? > 1.21.10 {
     val vertexConsumer: VertexConsumer = this.buffer.getBuffer(
-        if (secondary) net.minecraft.client.renderer.rendertype.RenderTypes.SECONDARY_BLOCK_OUTLINE else net.minecraft.client.renderer.rendertype.RenderTypes.lines()
+        if (secondary) net.minecraft.client.renderer.rendertype.RenderTypes.SECONDARY_BLOCK_OUTLINE else net.minecraft.client.renderer.rendertype.RenderTypes.lines(),
     )
     ShapeRenderer.renderShape(
         this.poseStack, vertexConsumer,
@@ -34,10 +27,10 @@ fun RenderWorldEvent.renderLineBox(
             box.minX - 0.005, box.minY - 0.005, box.minZ - 0.005,
             box.maxX + 0.005, box.maxY + 0.005, box.maxZ + 0.005,
         ),
-        0.0, 0.0, 0.0, net.minecraft.util.ARGB.colorFromFloat(alpha, red, green, blue), 1f
+        0.0, 0.0, 0.0, net.minecraft.util.ARGB.colorFromFloat(alpha, red, green, blue), 1f,
     )
     //?} else {
-    
+
     /*val vertexConsumer: VertexConsumer = this.buffer.getBuffer(
         if (secondary) net.minecraft.client.renderer.RenderType.SECONDARY_BLOCK_OUTLINE else net.minecraft.client.renderer.RenderType.lines()
     )
@@ -45,7 +38,7 @@ fun RenderWorldEvent.renderLineBox(
     *///?}
 }
 
-//? if =1.21.11 {
+//? if >=1.21.11 {
 fun MultiLineTextWidget.withClickHandler(handler: (Style) -> Unit): MultiLineTextWidget {
     this.setComponentClickHandler(handler)
     return this
@@ -57,7 +50,7 @@ fun MultiLineTextWidget.withClickHandler(handler: (Style) -> Unit): MultiLineTex
 }
 *///?}
 
-//? if =1.21.11 {
+//? if >=1.21.11 {
 fun <T : Any> CycleButtonBuilder(nameFactory: (T) -> Component, value: () -> T): CycleButton.Builder<T> {
     return CycleButton.builder(nameFactory, value)
 }

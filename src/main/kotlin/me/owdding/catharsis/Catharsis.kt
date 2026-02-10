@@ -44,13 +44,15 @@ import kotlin.time.Instant
 
 @Module
 object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.autoResolve() {
-    val self = FabricLoader.getInstance().getModContainer(MOD_ID).get()
     val buildInfo: BuildInfo by lazy {
+        val self = FabricLoader.getInstance().getModContainer(MOD_ID).get()
         self.findPath("catharsis.json").get().readText().readJson<JsonObject>().toDataOrThrow(CatharsisCodecs.getCodec())
     }
 
     init {
-        CatharsisPreLoadModules.init { SkyBlockAPI.eventBus.register(it) }
+        if (FabricLoader.getInstance().isModLoaded("catharsis")) {
+            CatharsisPreLoadModules.init { SkyBlockAPI.eventBus.register(it) }
+        }
     }
 
     const val MOD_ID = "catharsis"

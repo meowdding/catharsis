@@ -19,8 +19,8 @@ Behaves like item texture replacements, but the model is the following instead:
     <span><TypeIcon type="object"/> Root <b>texture</b> object</span>
     
 - <TypeIcon type="string"/> **type**: `catharsis:texture`
-- <TypeIcon type="string"/> **background**: The resource location of the texture to use as the tooltip background.
-- <TypeIcon type="string"/> **frame**: The resource location of the texture to use as the tooltip frame.
+- <TypeIcon type="string"/> **texture**: The resource location of the texture to use as the tooltip background. In the vanilla Tooltip Style format, can be found at https://minecraft.wiki/w/Data_component_format#tooltip_style
+
 </TreeView>
 
 #### **Condition** (`minecraft:condition`)

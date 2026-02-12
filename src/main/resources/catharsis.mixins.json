@@ -18,7 +18,6 @@
         "items.ItemModelResolverMixin",
         "items.ItemStackRenderStateMixin",
         "items.ModelManagerMixin",
-        "items.TooltipRenderUtilMixin",
         "pack.FolderPackDetectorMixin",
         "pack.PackDetectorMixin",
         "pack.PackMixin",

@@ -10,6 +10,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -42,13 +43,13 @@ public class AbstractContainerScreenMixin {
             target = "Lnet/minecraft/world/item/ItemStack;get(Lnet/minecraft/core/component/DataComponentType;)Ljava/lang/Object;"
         )
     )
-    private <T> T catharsis$wrapGetTooltipStyle(ItemStack instance, DataComponentType<T> dataComponentType, Operation<T> original) {
+    private <T> T catharsis$wrapGetTooltipStyle(ItemStack instance, DataComponentType<@NotNull T> dataComponentType, Operation<T> original) {
         var definition = TooltipFeature.getDefinition();
         if (definition != null) {
             var state = definition.resolve(instance, McLevel.INSTANCE.getSelfOrNull(), McPlayer.INSTANCE.getSelf());
             if (state != null) {
                 //noinspection unchecked
-                return (T) state.getIdentifier();
+                return (T) state;
             }
         }
 

@@ -4,12 +4,12 @@ import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.features.tooltip.TooltipDefinition
-import me.owdding.catharsis.features.tooltip.TooltipDefinitionState
 import me.owdding.catharsis.features.tooltip.TooltipDefinitions
 import me.owdding.catharsis.utils.TypedResourceManager
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperties
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperty
+import net.minecraft.resources.Identifier
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemStack
@@ -38,15 +38,10 @@ class RangeSelectTooltipDefinition(
         }
     }
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState? {
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): Identifier? {
         val value = property.get(stack, level, owner?.asLivingEntity(), 0) * scale
         val model = if (value.isNaN()) fallback else models.getOrNull(lastIndexLessThanOrEqual(value)) ?: fallback
         return model?.resolve(stack, level, owner)
-    }
-
-    override fun collectAll(): List<TooltipDefinitionState> = buildList {
-        models.forEach { model -> addAll(model.collectAll()) }
-        fallback?.let { addAll(it.collectAll()) }
     }
 
     class Unbaked(

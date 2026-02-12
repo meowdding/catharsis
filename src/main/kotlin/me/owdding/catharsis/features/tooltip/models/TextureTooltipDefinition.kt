@@ -2,7 +2,6 @@ package me.owdding.catharsis.features.tooltip.models
 
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.tooltip.TooltipDefinition
-import me.owdding.catharsis.features.tooltip.TooltipDefinitionState
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.TypedResourceManager
 import me.owdding.ktcodecs.GenerateCodec
@@ -13,22 +12,20 @@ import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemStack
 
-class TextureTooltipDefinition(private val state: TooltipDefinitionState) : TooltipDefinition {
+class TextureTooltipDefinition(private val state: Identifier) : TooltipDefinition {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState = state
-    override fun collectAll(): List<TooltipDefinitionState> = listOf(state)
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): Identifier = state
 
     @GenerateCodec
     @NamedCodec("unbakedTextureTooltip")
     data class UnbakedTexture(
-        val background: Identifier,
-        val frame: Identifier,
+        val texture: Identifier,
     ) : TooltipDefinition.Unbaked {
 
         override val codec: MapCodec<out TooltipDefinition.Unbaked> = CatharsisCodecs.getMapCodec<UnbakedTexture>()
 
         override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipDefinition {
-            return TextureTooltipDefinition(TooltipDefinitionState(background, frame))
+            return TextureTooltipDefinition(this.texture)
         }
     }
 }

@@ -3,7 +3,6 @@ package me.owdding.catharsis.features.tooltip.models
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.features.tooltip.TooltipDefinition
-import me.owdding.catharsis.features.tooltip.TooltipDefinitionState
 import me.owdding.catharsis.features.tooltip.TooltipDefinitions
 import me.owdding.catharsis.utils.TypedResourceManager
 import me.owdding.catharsis.utils.extensions.createCacheSlot
@@ -11,6 +10,7 @@ import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperties
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperty
 import net.minecraft.client.renderer.item.properties.conditional.ItemModelPropertyTest
+import net.minecraft.resources.Identifier
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemDisplayContext
@@ -22,17 +22,12 @@ class ConditionalTooltipDefinition(
     private val onFalse: TooltipDefinition,
 ) : TooltipDefinition {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState? {
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): Identifier? {
         return if (property.get(stack, level, owner?.asLivingEntity(), 0, ItemDisplayContext.NONE)) {
             onTrue.resolve(stack, level, owner)
         } else {
             onFalse.resolve(stack, level, owner)
         }
-    }
-
-    override fun collectAll(): List<TooltipDefinitionState> = buildList {
-        addAll(onTrue.collectAll())
-        addAll(onFalse.collectAll())
     }
 
     class Unbaked(

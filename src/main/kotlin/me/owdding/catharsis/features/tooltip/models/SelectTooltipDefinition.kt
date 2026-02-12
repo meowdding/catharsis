@@ -8,7 +8,6 @@ import com.mojang.serialization.codecs.RecordCodecBuilder
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap
 import me.owdding.catharsis.features.tooltip.TooltipDefinition
-import me.owdding.catharsis.features.tooltip.TooltipDefinitionState
 import me.owdding.catharsis.features.tooltip.TooltipDefinitions
 import me.owdding.catharsis.hooks.armor.SelectItemModelPropertyTypeHook
 import me.owdding.catharsis.utils.TypedResourceManager
@@ -17,33 +16,30 @@ import net.minecraft.client.multiplayer.CacheSlot
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperties
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperty
+import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemDisplayContext
 import net.minecraft.world.item.ItemStack
 import java.util.*
-import kotlin.collections.forEach
 import kotlin.jvm.optionals.getOrNull
 
 typealias UnbakedTooltipSelectCase<Type> = Pair<List<Type>, TooltipDefinition.Unbaked>
 
-@Suppress("UNCHECKED_CAST", "KotlinConstantConditions")
+@Suppress("UNCHECKED_CAST")
 val <Property : SelectItemModelProperty<Type>, Type : Any> SelectItemModelProperty.Type<Property, Type>.hook: SelectItemModelPropertyTypeHook<Property, Type>
     get() = this as Any as SelectItemModelPropertyTypeHook<Property, Type>
 
 data class SelectTooltipDefinition<Type : Any>(
     private val property: SelectItemModelProperty<Type>,
-    private val children: List<TooltipDefinitionState>,
     private val models: (Type?, ClientLevel?) -> TooltipDefinition?,
 ) : TooltipDefinition {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState? {
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): Identifier? {
         val value = this.property.get(stack, level, owner?.asLivingEntity(), 0, ItemDisplayContext.NONE)
         return this.models.invoke(value, level)?.resolve(stack, level, owner)
     }
-
-    override fun collectAll(): List<TooltipDefinitionState> = children
 
     class Unbaked(
         val switch: UnbakedSwitch<*, *>,
@@ -71,19 +67,16 @@ data class SelectTooltipDefinition<Type : Any>(
 
         fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager, fallback: TooltipDefinition?): TooltipDefinition {
             val lookup = Object2ObjectOpenHashMap<Type, TooltipDefinition>()
-            val children = mutableListOf<TooltipDefinitionState>()
-            children.addAll(fallback?.collectAll() ?: emptyList())
             for ((types, model) in cases) {
                 val bakedModel = model.bake(swapper, resources)
                 for (type in types) {
                     lookup[type] = bakedModel
-                    children.addAll(bakedModel.collectAll())
                 }
             }
             lookup.defaultReturnValue(fallback)
 
             return if (swapper == null) {
-                SelectTooltipDefinition(property, children) { type, _ -> lookup[type] }
+                SelectTooltipDefinition(property) { type, _ -> lookup[type] }
             } else {
                 val cache = CacheSlot<ClientLevel, Object2ObjectMap<Type, TooltipDefinition>> { level ->
                     val cachedLookup = Object2ObjectOpenHashMap<Type, TooltipDefinition>(lookup.size)
@@ -97,7 +90,7 @@ data class SelectTooltipDefinition<Type : Any>(
                     cachedLookup
                 }
 
-                SelectTooltipDefinition(property, children) { type, level ->
+                SelectTooltipDefinition(property) { type, level ->
                     when {
                         level == null -> lookup[type]
                         type == null -> fallback

@@ -16,12 +16,10 @@ import net.minecraft.util.ExtraCodecs
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemStack
-import java.util.UUID
 
 interface TooltipDefinition {
 
-    fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): TooltipDefinitionState?
-    fun collectAll(): List<TooltipDefinitionState>
+    fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?): Identifier?
 
     interface Unbaked {
 
@@ -29,14 +27,6 @@ interface TooltipDefinition {
 
         fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): TooltipDefinition
     }
-}
-
-
-data class TooltipDefinitionState(
-    val background: Identifier,
-    val frame: Identifier,
-) {
-    val identifier = Catharsis.id(UUID.randomUUID().toString())
 }
 
 object TooltipDefinitions {

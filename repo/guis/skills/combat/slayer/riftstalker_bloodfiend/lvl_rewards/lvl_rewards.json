@@ -1,0 +1,396 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Vampire Slayer LVL Rewards"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_1/locked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 1"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -2,
+            "name": "Reward is secret!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_1/unlocking/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 1"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Level not reached!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_1/claimable/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 1"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to claim rewards!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_1/unlocked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 1"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Rewards claimed!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_2/locked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 2"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -2,
+            "name": "Reward is secret!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_2/unlocking/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 2"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Level not reached!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_2/claimable/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 2"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to claim rewards!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_2/unlocked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 2"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Rewards claimed!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_3/locked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 3"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -2,
+            "name": "Reward is secret!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_3/unlocking/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 3"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Level not reached!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_3/claimable/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 3"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to claim rewards!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_3/unlocked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 3"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Rewards claimed!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_4/locked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 4"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -2,
+            "name": "Reward is secret!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_4/unlocking/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 4"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Level not reached!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_4/claimable/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 4"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to claim rewards!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_4/unlocked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 4"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Rewards claimed!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_5/locked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 5"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -2,
+            "name": "Reward is secret!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_5/unlocking/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 5"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Level not reached!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_5/claimable/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 5"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to claim rewards!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/lvl_5/unlocked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Vampire Slayer LVL 5"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Rewards claimed!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/boss_leveling_rewards/more_to_come/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "More to come!"
+      }
+    }
+  ]
+}

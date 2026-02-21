@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Enchanting Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/enchanting/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Enchanting Recipes"
+      }
+    }
+  ]
+}

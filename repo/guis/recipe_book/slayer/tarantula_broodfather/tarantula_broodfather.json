@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Tarantula Broodfather Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/slayer/tarantula_broodfather/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Tarantula Broodfather Recipes"
+      }
+    }
+  ]
+}

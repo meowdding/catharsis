@@ -1,0 +1,70 @@
+{
+  "target": {
+    "type": "title",
+    "title": "RNG Meter"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:rng_meter/experimentation_table/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "RNG Meter"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Experimentation Table"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:rng_meter/slayer/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Slayer RNG Meters"
+      }
+    },
+    {
+      "id": "skyblock_gui:catacombs_rng_meters/slayer/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Catacombs RNG Meters"
+      }
+    },
+    {
+      "id": "skyblock_gui:rng_meter/crystal_nucleus/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "RNG Meter"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Crystal Nucleus"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:rng_meter/pity_tracker/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Pity Tracker"
+      }
+    }
+  ]
+}

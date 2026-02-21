@@ -1,0 +1,24 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Crystal Nucleus RNG Meter"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:rng_meter/crystal_nucleus/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "RNG Meter"
+      }
+    },
+    {
+      "id": "skyblock_gui:rng_meter/crystal_nucleus/reset_rng_drop/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Reset RNG Drop"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Carpentry Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/carpentry/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Carpentry Recipes"
+      }
+    }
+  ]
+}

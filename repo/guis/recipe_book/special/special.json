@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Special Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/special/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Special Recipes"
+      }
+    }
+  ]
+}

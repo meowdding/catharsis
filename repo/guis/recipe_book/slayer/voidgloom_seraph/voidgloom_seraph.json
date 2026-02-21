@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "\\(\\d+?\\/\\d+?\\) Voidgloom Seraph Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/slayer/voidgloom_seraph/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Voidgloom Seraph Recipes"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Riftstalker Bloodfiend RNG Meter"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:rng_meter/slayer/riftstalker_bloodfiend/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "RNG Meter"
+      }
+    },
+    {
+      "id": "skyblock_gui:rng_meter/slayer/riftstalker_bloodfiend/reset_rng_drop/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Reset RNG Drop"
+      }
+    }
+  ]
+}

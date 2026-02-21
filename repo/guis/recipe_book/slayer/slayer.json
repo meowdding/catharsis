@@ -1,0 +1,56 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Slayer Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/slayer/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Slayer Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/slayer/revenant_horror/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Revenant Horror Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/slayer/tarantula_broodfather/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Tarantula Broodfather Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/slayer/sven_packmaster/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Sven Packmaster Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/slayer/voidgloom_seraph/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Voidgloom Seraph Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/slayer/inferno_demonlord/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Inferno Demonlord Recipes"
+      }
+    }
+  ]
+}

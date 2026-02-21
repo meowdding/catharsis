@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "\\(\\d+?\\/\\d+?\\) Alchemy Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/alchemy/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Alchemy Recipes"
+      }
+    }
+  ]
+}

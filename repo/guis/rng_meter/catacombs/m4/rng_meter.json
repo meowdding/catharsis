@@ -1,0 +1,24 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Catacombs \\(M4\\) RNG Meter"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:rng_meter/catacombs/m4/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "RNG Meter"
+      }
+    },
+    {
+      "id": "skyblock_gui:rng_meter/catacombs/m4/reset_rng_drop/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Reset RNG Drop"
+      }
+    }
+  ]
+}

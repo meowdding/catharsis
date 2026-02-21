@@ -1,0 +1,112 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Recipe Book"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Recipe Book"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/farming/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Farming Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/mining/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mining Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/combat/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Combat Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/fishing/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Fishing Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/foraging/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Foraging Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/enchanting/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Enchanting Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/alchemy/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Alchemy Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/carpentry/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Carpentry Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/hunting/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Hunting Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/slayer/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Slayer Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/special/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Special Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:recipe_book/trades/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Trades"
+      }
+    }
+  ]
+}

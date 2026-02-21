@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Sven Packmaster Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/slayer/sven_packmaster/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Sven Packmaster Recipes"
+      }
+    }
+  ]
+}

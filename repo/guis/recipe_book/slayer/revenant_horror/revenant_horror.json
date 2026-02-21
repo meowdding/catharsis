@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Revenant Horror Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/slayer/revenant_horror/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Revenant Horror Recipes"
+      }
+    }
+  ]
+}

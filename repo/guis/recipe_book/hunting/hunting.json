@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Hunting Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/hunting/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Hunting Recipes"
+      }
+    }
+  ]
+}

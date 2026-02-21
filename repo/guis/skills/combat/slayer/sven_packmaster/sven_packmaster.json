@@ -1,0 +1,373 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Sven Packmaster"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_1/unlocked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster I"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to slay!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_1/expensive/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster I"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Cannot afford quest!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_2/locked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster II"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Slay Tier I to unlock!"
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Requires Combat Level V!"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_2/unlocked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster II"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to slay!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_2/expensive/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster II"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Cannot afford quest!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_3/locked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster III"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Slay Tier II to unlock!"
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Requires Combat Level X!"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_3/unlocked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster III"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to slay!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_3/expensive/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster III"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Cannot afford quest!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_4/locked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster IV"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Slay Tier III to unlock!"
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Requires Combat Level XV!"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_4/unlocked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster IV"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to slay!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_4/expensive/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster IV"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Cannot afford quest!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_5/locked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster V"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Slay Tier IV to unlock!"
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Requires Combat Level XXV!"
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Requires Sven Packmaster Slayer 7"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_5/unlocked/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster V"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to slay!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_5/expensive/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster V"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Cannot afford quest!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/tier_5/unimplemented",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Sven Packmaster V"
+          },
+          {
+            "type": "item",
+            "items": "coal_block"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/boss_leveling_rewards/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Boss Leveling Rewards"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/boss_drops/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Boss Drops"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/boss_leveling_rewards/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Slayer Recipes"
+      }
+    },
+    {
+      "id": "skyblock_gui:rngmeter/slayer/sven_packmaster/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "RNG Meter"
+      }
+    }
+  ]
+}

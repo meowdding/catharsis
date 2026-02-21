@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "\\(\\d+?\\/\\d+?\\) Inferno Demonlord Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/slayer/inferno_demonlord/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Inferno Demonlord Recipes"
+      }
+    }
+  ]
+}

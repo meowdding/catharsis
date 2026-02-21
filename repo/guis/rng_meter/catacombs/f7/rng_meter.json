@@ -1,0 +1,24 @@
+{
+  "target": {
+    "type": "title",
+    "title": "\\(\\d+?\\/\\d+?\\) Catacombs \\(F7\\) RNG Meter"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:rng_meter/catacombs/f7/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "RNG Meter"
+      }
+    },
+    {
+      "id": "skyblock_gui:rng_meter/catacombs/f7/reset_rng_drop/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Reset RNG Drop"
+      }
+    }
+  ]
+}

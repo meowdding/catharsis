@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "\\(\\d+?\\/\\d+?\\) Fishing Recipes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:recipe_book/fishing/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Fishing Recipes"
+      }
+    }
+  ]
+}

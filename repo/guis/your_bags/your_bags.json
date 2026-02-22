@@ -1,0 +1,56 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Your Bags"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:your_bags/sack_of_sacks/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Sack of Sacks"
+      }
+    },
+    {
+      "id": "skyblock_gui:your_bags/fishing_bag/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Fishing Bag"
+      }
+    },
+    {
+      "id": "skyblock_gui:your_bags/potion_bag/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Potion Bag"
+      }
+    },
+    {
+      "id": "skyblock_gui:your_bags/quiver/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver"
+      }
+    },
+    {
+      "id": "skyblock_gui:your_bags/accessory_bag/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Accessory Bag"
+      }
+    },
+    {
+      "id": "skyblock_gui:your_bags/time_pocket/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Time Pocket"
+      }
+    }
+  ]
+}

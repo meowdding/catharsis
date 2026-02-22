@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Time Pocket"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:your_bags/time_pocket/upgrade/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Upgrade Time Pocket"
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:generic/filler",
+      "id": "skyblock_gui:generic/miscellaneous/filler",
       "target": {
         "type": "all",
         "conditions": [
@@ -15,62 +15,21 @@
           },
           {
             "type": "item",
-            "items": [
-              "minecraft:black_stained_glass_pane"
-            ]
+            "items": ["minecraft:black_stained_glass_pane"]
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:generic/close",
+      "id": "skyblock_gui:generic/miscellaneous/filler",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "Close"
+        "name": "Information"
       }
     },
     {
-      "id": "skyblock_gui:generic/go_back",
-      "target": {
-        "type": "name",
-        "mode": "equals",
-        "name": "Go Back"
-      }
-    },
-    {
-      "id": "skyblock_gui:generic/previous_page",
-      "target": {
-        "type": "name",
-        "mode": "equals",
-        "name": "Previous Page"
-      }
-    },
-    {
-      "id": "skyblock_gui:generic/next_page",
-      "target": {
-        "type": "name",
-        "name": "Next Page|(?:Levels|Mastery) \\d+ - \\d+"
-      }
-    },
-    {
-      "id": "skyblock_gui:generic/scroll_up",
-      "target": {
-        "type": "name",
-        "mode": "equals",
-        "name": "Scroll Up"
-      }
-    },
-    {
-      "id": "skyblock_gui:generic/scroll_down",
-      "target": {
-        "type": "name",
-        "mode": "equals",
-        "name": "Scroll Down"
-      }
-    },
-    {
-      "id": "skyblock_gui:generic/settings",
+      "id": "skyblock_gui:generic/settings/icon",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -78,11 +37,142 @@
       }
     },
     {
-      "id": "skyblock_gui:generic/sell_item",
+      "id": "skyblock_gui:generic/settings/enabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "lime_dye"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to disable!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/settings/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "gray_dye"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to enable!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/settings/disabled",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Settings"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/close",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Close"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/go_back",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Go Back"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/previous_page",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Previous Page"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/next_page",
+      "target": {
+        "type": "name",
+        "name": "Next Page|(?:Levels|Mastery) \\d+ - \\d+"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/scroll_up",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Scroll Up"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/scroll_down",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Scroll Down"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/search",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Search"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/inventory_management/sell_item",
       "target": {
         "type": "name",
         "mode": "equals",
         "name": "Sell Item"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/inventory_management/sell_inventory_now",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Sell Inventory Now"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/inventory_management/sell_sacks_now",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Sell Sacks Now"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/inventory_management/insert_inventory",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Insert inventory"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/inventory_management/pickup_all",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Pickup All"
       }
     }
   ]

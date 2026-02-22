@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Quiver"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:your_bags/quiver/clear/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Clear Quiver"
+      }
+    }
+  ]
+}

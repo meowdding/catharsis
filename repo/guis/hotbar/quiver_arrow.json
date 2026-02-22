@@ -1,0 +1,105 @@
+{
+  "priority": -1,
+  "target": {
+    "type": "title",
+    "title": "Crafting"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/flint_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Flint Arrow"
+      }
+    },
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/reinforced_iron_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Reinforced Iron Arrow"
+      }
+    },
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/gold_tipped_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Gold-tipped Arrow"
+      }
+    },
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/redstone_tipped_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Redstone-tipped Arrow"
+      }
+    },
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/emerald_tipped_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Emerald-tipped Arrow"
+      }
+    },
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/bouncy_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Bouncy Arrow"
+      }
+    },
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/icy_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Icy Arrow"
+      }
+    },
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/armorshred_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Armorshred Arrow"
+      }
+    },
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/explosive_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Explosive Arrow"
+      }
+    },
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/glue_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Glue Arrow"
+      }
+    },
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/nansorb_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Nansorb Arrow"
+      }
+    },
+    {
+      "id": "skyblock_gui:hotbar/quiver/icon/magma_arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Quiver Magma Arrow"
+      }
+    }
+  ]
+}

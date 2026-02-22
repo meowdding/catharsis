@@ -1,0 +1,80 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Collections"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:collections/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Collections"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/farming/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Farming Collections"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/mining/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Mining Collections"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/combat/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Combat Collections"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/foraging/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Foraging Collections"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Fishing Collections"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/boss/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Boss Collections"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/rift/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Rift Collections"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/crafted_minions/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Crafted Minions"
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:calendar_and_events/event_rewards",
+      "id": "skyblock_gui:calendar_and_events/event_rewards/icon",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -101,7 +101,7 @@
       }
     },
     {
-      "id": "skyblock_gui:calendar/icon",
+      "id": "skyblock_gui:calendar_and_events/calendar/icon",
       "target": {
         "type": "name",
         "mode": "equals",

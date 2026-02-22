@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:rng_meter/slayer/revenant_horror/icon",
+      "id": "skyblock_gui:rng_meter/slayer/icon/revenant_horror",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/slayer/revenant_horror/reset_rng_drop/icon",
+      "id": "skyblock_gui:rng_meter/slayer/revenant_horror/icon/reset_rng_drop",
       "target": {
         "type": "name",
         "mode": "equals",

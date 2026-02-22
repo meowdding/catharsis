@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:rng_meter/slayer/riftstalker_bloodfiend/icon",
+      "id": "skyblock_gui:rng_meter/slayer/icon/riftstalker_bloodfiend",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/slayer/riftstalker_bloodfiend/reset_rng_drop/icon",
+      "id": "skyblock_gui:rng_meter/slayer/riftstalker_bloodfiend/icon/reset_rng_drop",
       "target": {
         "type": "name",
         "mode": "equals",

@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:rng_meter/slayer/inferno_demonlord/icon",
+      "id": "skyblock_gui:rng_meter/slayer/icon/inferno_demonlord",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/slayer/inferno_demonlord/reset_rng_drop/icon",
+      "id": "skyblock_gui:rng_meter/slayer/inferno_demonlord/icon/reset_rng_drop",
       "target": {
         "type": "name",
         "mode": "equals",

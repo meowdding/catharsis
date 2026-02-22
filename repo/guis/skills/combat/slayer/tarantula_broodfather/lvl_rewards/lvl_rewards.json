@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_1/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_1/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_1/unlocking/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_1/icon/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_1/claimable/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_1/icon/claimable",
       "target": {
         "type": "all",
         "conditions": [
@@ -62,7 +62,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_1/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_1/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -81,7 +81,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_2/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_2/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -100,7 +100,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_2/unlocking/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_2/icon/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -119,7 +119,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_2/claimable/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_2/icon/claimable",
       "target": {
         "type": "all",
         "conditions": [
@@ -138,7 +138,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_2/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_2/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -157,7 +157,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_3/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_3/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -176,7 +176,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_3/unlocking/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_3/icon/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -195,7 +195,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_3/claimable/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_3/icon/claimable",
       "target": {
         "type": "all",
         "conditions": [
@@ -214,7 +214,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_3/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_3/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -233,7 +233,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_4/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_4/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -252,7 +252,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_4/unlocking/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_4/icon/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -271,7 +271,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_4/claimable/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_4/icon/claimable",
       "target": {
         "type": "all",
         "conditions": [
@@ -290,7 +290,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_4/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_4/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -309,7 +309,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_5/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_5/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -328,7 +328,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_5/unlocking/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_5/icon/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -347,7 +347,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_5/claimable/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_5/icon/claimable",
       "target": {
         "type": "all",
         "conditions": [
@@ -366,7 +366,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_5/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_5/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -385,7 +385,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_6/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_6/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -404,7 +404,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_6/unlocking/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_6/icon/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -423,7 +423,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_6/claimable/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_6/icon/claimable",
       "target": {
         "type": "all",
         "conditions": [
@@ -442,7 +442,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_6/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_6/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -461,7 +461,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_7/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_7/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -480,7 +480,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_7/unlocking/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_7/icon/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -499,7 +499,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_7/claimable/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_7/icon/claimable",
       "target": {
         "type": "all",
         "conditions": [
@@ -518,7 +518,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_7/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_7/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -537,7 +537,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_5/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_5/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -556,7 +556,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_8/unlocking/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_8/icon/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -575,7 +575,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_8/claimable/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_8/icon/claimable",
       "target": {
         "type": "all",
         "conditions": [
@@ -594,7 +594,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_8/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_8/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -613,7 +613,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_9/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_9/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -632,7 +632,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_9/unlocking/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_9/icon/unlocking",
       "target": {
         "type": "all",
         "conditions": [
@@ -651,7 +651,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_9/claimable/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_9/icon/claimable",
       "target": {
         "type": "all",
         "conditions": [
@@ -670,7 +670,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_9/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/lvl_9/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -689,7 +689,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/more_to_come/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantul_broodfather/boss_leveling_rewards/icon/more_to_come",
       "target": {
         "type": "name",
         "mode": "equals",

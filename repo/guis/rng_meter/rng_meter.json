@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:rng_meter/experimentation_table/icon",
+      "id": "skyblock_gui:rng_meter/icon/experimentation_table",
       "target": {
         "type": "all",
         "conditions": [
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/slayer/icon",
+      "id": "skyblock_gui:rng_meter/icon/slayer",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -32,7 +32,7 @@
       }
     },
     {
-      "id": "skyblock_gui:catacombs_rng_meters/slayer/icon",
+      "id": "skyblock_gui:catacombs_rng_meters/icon/slayer",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -40,7 +40,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/crystal_nucleus/icon",
+      "id": "skyblock_gui:rng_meter/icon/crystal_nucleus",
       "target": {
         "type": "all",
         "conditions": [
@@ -59,7 +59,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/pity_tracker/icon",
+      "id": "skyblock_gui:rng_meter/icon/pity_tracker",
       "target": {
         "type": "name",
         "mode": "equals",

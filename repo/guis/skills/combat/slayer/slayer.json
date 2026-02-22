@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:skills/combat/slayer/revenant_horror/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/revenant_horror/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/revenant_horror/rift/icon",
+      "id": "skyblock_gui:skills/combat/slayer/revenant_horror/icon/rift",
       "target": {
         "type": "all",
         "conditions": [
@@ -41,7 +41,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantula_broodfather/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantula_broodfather/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -60,7 +60,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/tarantula_broodfather/rift/icon",
+      "id": "skyblock_gui:skills/combat/slayer/tarantula_broodfather/icon/rift",
       "target": {
         "type": "all",
         "conditions": [
@@ -77,7 +77,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -97,7 +97,7 @@
     },
 
     {
-      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -116,7 +116,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/rift/icon",
+      "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/icon/rift",
       "target": {
         "type": "all",
         "conditions": [
@@ -133,7 +133,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -152,7 +152,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -171,7 +171,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/rift/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/icon/rift",
       "target": {
         "type": "all",
         "conditions": [
@@ -188,7 +188,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/overworld/icon",
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/icon/overworld",
       "target": {
         "type": "all",
         "conditions": [
@@ -207,7 +207,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/riftstalker_bloodfiend/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -226,7 +226,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/inferno_demonlord/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/inferno_demonlord/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -245,7 +245,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/inferno_demonlord/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/inferno_demonlord/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -264,7 +264,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/inferno_demonlord/rift/icon",
+      "id": "skyblock_gui:skills/combat/slayer/inferno_demonlord/icon/rift",
       "target": {
         "type": "all",
         "conditions": [
@@ -281,7 +281,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/unreleased/icon",
+      "id": "skyblock_gui:skills/combat/slayer/icon/unreleased",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -289,7 +289,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/auto_slayer/disabled/icon",
+      "id": "skyblock_gui:skills/combat/slayer/auto_slayer/icon/disabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -306,7 +306,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/auto_slayer/enabled/icon",
+      "id": "skyblock_gui:skills/combat/slayer/auto_slayer/icon/enabled",
       "target": {
         "type": "all",
         "conditions": [
@@ -323,7 +323,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/slayer_leaderboards/icon",
+      "id": "skyblock_gui:skills/combat/slayer/icon/slayer_leaderboards",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -331,7 +331,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/global_combat_wisdom_buff/icon",
+      "id": "skyblock_gui:skills/combat/slayer/icon/global_combat_wisdom_buff",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -339,7 +339,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/slayer_bonus_rewards/icon",
+      "id": "skyblock_gui:skills/combat/slayer/icon/slayer_bonus_rewards",
       "target": {
         "type": "name",
         "mode": "equals",

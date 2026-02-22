@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:rng_meter/catacombs/icon",
+      "id": "skyblock_gui:rng_meter/icon/catacombs",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/f1/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/f1",
       "target": {
         "type": "all",
         "conditions": [
@@ -32,7 +32,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/f2/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/f2",
       "target": {
         "type": "all",
         "conditions": [
@@ -51,7 +51,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/f3/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/f3",
       "target": {
         "type": "all",
         "conditions": [
@@ -70,7 +70,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/f4/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/f4",
       "target": {
         "type": "all",
         "conditions": [
@@ -89,7 +89,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/f5/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/f5",
       "target": {
         "type": "all",
         "conditions": [
@@ -108,7 +108,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/f6/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/f6",
       "target": {
         "type": "all",
         "conditions": [
@@ -127,7 +127,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/f7/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/f7",
       "target": {
         "type": "all",
         "conditions": [
@@ -146,7 +146,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/m1/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/m1",
       "target": {
         "type": "all",
         "conditions": [
@@ -165,7 +165,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/m2/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/m2",
       "target": {
         "type": "all",
         "conditions": [
@@ -184,7 +184,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/m3/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/m3",
       "target": {
         "type": "all",
         "conditions": [
@@ -203,7 +203,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/m4/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/m4",
       "target": {
         "type": "all",
         "conditions": [
@@ -222,7 +222,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/m5/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/m5",
       "target": {
         "type": "all",
         "conditions": [
@@ -241,7 +241,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/m6/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/m6",
       "target": {
         "type": "all",
         "conditions": [
@@ -260,7 +260,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/m7/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/m7",
       "target": {
         "type": "all",
         "conditions": [

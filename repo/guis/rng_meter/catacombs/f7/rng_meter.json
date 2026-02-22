@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:rng_meter/catacombs/f7/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/icon/f7",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/catacombs/f7/reset_rng_drop/icon",
+      "id": "skyblock_gui:rng_meter/catacombs/f7/icon/reset_rng_drop",
       "target": {
         "type": "name",
         "mode": "equals",

@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:rng_meter/slayer/icon",
+      "id": "skyblock_gui:rng_meter/icon/slayer",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/slayer/revenant_horror/icon",
+      "id": "skyblock_gui:rng_meter/slayer/icon/revenant_horror",
       "target": {
         "type": "all",
         "conditions": [
@@ -30,7 +30,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/slayer/tarantula_broodfather/icon",
+      "id": "skyblock_gui:rng_meter/slayer/icon/tarantula_broodfather",
       "target": {
         "type": "all",
         "conditions": [
@@ -47,7 +47,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/slayer/sven_packmaster/icon",
+      "id": "skyblock_gui:rng_meter/slayer/icon/sven_packmaster",
       "target": {
         "type": "all",
         "conditions": [
@@ -64,7 +64,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/slayer/voidgloom_seraph/icon",
+      "id": "skyblock_gui:rng_meter/slayer/icon/voidgloom_seraph",
       "target": {
         "type": "all",
         "conditions": [
@@ -81,7 +81,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/slayer/riftstalker_bloodfiend/icon",
+      "id": "skyblock_gui:rng_meter/slayer/icon/riftstalker_bloodfiend",
       "target": {
         "type": "all",
         "conditions": [
@@ -98,7 +98,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/slayer/inferno_demonlord/icon",
+      "id": "skyblock_gui:rng_meter/slayer/icon/inferno_demonlord",
       "target": {
         "type": "all",
         "conditions": [

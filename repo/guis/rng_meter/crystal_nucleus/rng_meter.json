@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:rng_meter/crystal_nucleus/icon",
+      "id": "skyblock_gui:rng_meter/icon/crystal_nucleus",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rng_meter/crystal_nucleus/reset_rng_drop/icon",
+      "id": "skyblock_gui:rng_meter/crystal_nucleus/icon/reset_rng_drop",
       "target": {
         "type": "name",
         "mode": "equals",

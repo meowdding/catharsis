@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_1/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_1/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_1/expensive/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_1/icon/expensive",
       "target": {
         "type": "all",
         "conditions": [
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_2/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_2/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -73,7 +73,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_2/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_2/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -92,7 +92,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_2/expensive/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_2/icon/expensive",
       "target": {
         "type": "all",
         "conditions": [
@@ -111,7 +111,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_3/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_3/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -141,7 +141,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_3/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_3/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -160,7 +160,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_3/expensive/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_3/icon/expensive",
       "target": {
         "type": "all",
         "conditions": [
@@ -179,7 +179,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_4/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_4/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -209,7 +209,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_4/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_4/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -228,7 +228,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_4/expensive/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_4/icon/expensive",
       "target": {
         "type": "all",
         "conditions": [
@@ -247,7 +247,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_5/locked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_5/icon/locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -283,7 +283,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_5/unlocked/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_5/icon/unlocked",
       "target": {
         "type": "all",
         "conditions": [
@@ -302,7 +302,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_5/expensive/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/tier_5/icon/expensive",
       "target": {
         "type": "all",
         "conditions": [
@@ -338,7 +338,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/boss_leveling_rewards/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/icon/boss_leveling_rewards",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -346,7 +346,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/boss_drops/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/icon/boss_drops",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -354,7 +354,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/boss_leveling_rewards/icon",
+      "id": "skyblock_gui:skills/combat/slayer/voidgloom_seraph/icon/boss_leveling_rewards",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -362,7 +362,7 @@
       }
     },
     {
-      "id": "skyblock_gui:rngmeter/slayer/voidgloom_seraph/icon",
+      "id": "skyblock_gui:rngmeter/slayer/icon/voidgloom_seraph",
       "target": {
         "type": "name",
         "mode": "equals",

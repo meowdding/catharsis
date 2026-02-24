@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Sugar Cane Fortune"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/farming/sugar_cane_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Sugar Cane Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:sugar_cane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/sugar_cane_fortune/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/sugar_cane_fortune/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/sugar_cane_fortune/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/sugar_cane_fortune/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/sugar_cane_fortune/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Cap"
+      }
+    }
+  ]
+}

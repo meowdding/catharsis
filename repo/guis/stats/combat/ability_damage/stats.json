@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Ability Damage"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/combat/ability_damage/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "๑ Ability Damage.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:beacon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ability_damage/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "๑ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ability_damage/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ability_damage/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "๑ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ability_damage/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "๑ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ability_damage/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "๑ Cap"
+      }
+    }
+  ]
+}

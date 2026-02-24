@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Moonflower Fortune"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/farming/moonflower_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Moonflower Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:blue_orchid"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/moonflower_fortune/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/moonflower_fortune/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/moonflower_fortune/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/moonflower_fortune/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/moonflower_fortune/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Cap"
+      }
+    }
+  ]
+}

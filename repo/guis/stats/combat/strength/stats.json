@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Strength"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/combat/strength/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❁ Strength.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:blaze_powder"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/strength/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❁ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/strength/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/strength/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❁ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/strength/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❁ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/strength/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❁ Cap"
+      }
+    }
+  ]
+}

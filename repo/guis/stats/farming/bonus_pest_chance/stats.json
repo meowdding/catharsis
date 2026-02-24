@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Bonus Pest Chance"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/farming/bonus_pest_chance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "ൠ Bonus Pest Chance.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:dirt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/bonus_pest_chance/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ൠ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/bonus_pest_chance/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/bonus_pest_chance/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ൠ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/bonus_pest_chance/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ൠ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/bonus_pest_chance/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ൠ Cap"
+      }
+    }
+  ]
+}

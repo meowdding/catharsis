@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Bonus Attack Speed"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/combat/bonus_attack_speed/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⚔ Bonus Attack Speed.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:golden_axe"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/bonus_attack_speed/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚔ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/bonus_attack_speed/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/bonus_attack_speed/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚔ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/bonus_attack_speed/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚔ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/bonus_attack_speed/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚔ Cap"
+      }
+    }
+  ]
+}

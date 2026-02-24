@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Pumpkin Fortune"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/farming/pumpkin_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Pumpkin Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:carved_pumpkin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/pumpkin_fortune/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/pumpkin_fortune/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/pumpkin_fortune/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/pumpkin_fortune/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/pumpkin_fortune/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Cap"
+      }
+    }
+  ]
+}

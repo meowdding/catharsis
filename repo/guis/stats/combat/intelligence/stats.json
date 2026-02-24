@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Intelligence"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/combat/intelligence/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "✎ Intelligence.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:enchanted_book"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/intelligence/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "✎ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/intelligence/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/intelligence/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "✎ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/intelligence/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "✎ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/intelligence/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "✎ Cap"
+      }
+    }
+  ]
+}

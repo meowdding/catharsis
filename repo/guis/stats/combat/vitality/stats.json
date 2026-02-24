@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Vitality"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/combat/vitality/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "♨ Vitality.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:golden_apple"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/vitality/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "♨ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/vitality/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/vitality/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "♨ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/vitality/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "♨ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/vitality/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "♨ Cap"
+      }
+    }
+  ]
+}

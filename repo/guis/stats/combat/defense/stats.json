@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Defense"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/combat/defense/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❈ Defense.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:iron_chestplate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/defense/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❈ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/defense/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/defense/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❈ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/defense/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❈ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/defense/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❈ Cap"
+      }
+    }
+  ]
+}

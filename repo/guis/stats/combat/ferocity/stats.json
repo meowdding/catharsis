@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Ferocity"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/combat/ferocity/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⫽ Ferocity.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ferocity/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⫽ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ferocity/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ferocity/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⫽ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ferocity/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⫽ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/ferocity/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⫽ Cap"
+      }
+    }
+  ]
+}

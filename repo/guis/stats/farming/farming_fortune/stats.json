@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Farming Fortune"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/farming/farming_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Farming Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/farming_fortune/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/farming_fortune/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/farming_fortune/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/farming_fortune/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/farming_fortune/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Cap"
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Crit Damage"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/combat/crit_damage/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☠ Crit Damage.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/crit_damage/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☠ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/crit_damage/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/crit_damage/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☠ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/crit_damage/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☠ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/crit_damage/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☠ Cap"
+      }
+    }
+  ]
+}

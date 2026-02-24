@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Mending"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/combat/mending/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☄ Mending.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:ghast_tear"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/mending/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☄ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/mending/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/mending/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☄ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/mending/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☄ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/mending/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☄ Cap"
+      }
+    }
+  ]
+}

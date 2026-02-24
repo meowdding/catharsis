@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Wheat Fortune"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/farming/wheat_fortune/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☘ Wheat Fortune.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:wheat"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/wheat_fortune/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/wheat_fortune/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/wheat_fortune/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/wheat_fortune/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/farming/wheat_fortune/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☘ Cap"
+      }
+    }
+  ]
+}

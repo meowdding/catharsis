@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ True Defense"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/combat/true_defense/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❂ True Defense.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:bone_meal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/true_defense/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❂ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/true_defense/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/true_defense/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❂ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/true_defense/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❂ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/combat/true_defense/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❂ Cap"
+      }
+    }
+  ]
+}

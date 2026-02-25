@@ -1314,7 +1314,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked",
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked/tier_1",
       "target": {
         "type": "all",
         "conditions": [
@@ -1324,8 +1324,181 @@
             "name": "Core of the Mountain"
           },
           {
-            "type": "item",
-            "items": "minecraft:redstone_block"
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Level 1/10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked/tier_2",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Core of the Mountain"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Level 2/10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked/tier_3",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Core of the Mountain"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Level 3/10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked/tier_4",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Core of the Mountain"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Level 4/10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked/tier_5",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Core of the Mountain"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Level 5/10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked/tier_6",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Core of the Mountain"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Level 6/10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked/tier_7",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Core of the Mountain"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Level 7/10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked/tier_8",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Core of the Mountain"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Level 8/10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked/tier_9",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Core of the Mountain"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Level 9/10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotm/core_of_the_mountain/unlocked/tier_10",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Core of the Mountain"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Level 10"
           }
         ]
       }

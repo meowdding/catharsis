@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Alchemy Wisdom"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/wisdom/alchemy/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Alchemy Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:brewing_stand"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/alchemy/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/alchemy/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/alchemy/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/alchemy/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/alchemy/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Cap"
+      }
+    }
+  ]
+}

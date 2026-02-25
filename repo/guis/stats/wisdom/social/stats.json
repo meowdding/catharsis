@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Social Wisdom"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/wisdom/social/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Social Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/social/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/social/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/social/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/social/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/social/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Cap"
+      }
+    }
+  ]
+}

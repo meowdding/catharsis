@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Cold Resistance"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/miscellaneous/cold_resistance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❄ Cold Resistance.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:ice"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/cold_resistance/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❄ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/cold_resistance/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/cold_resistance/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❄ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/cold_resistance/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❄ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/cold_resistance/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❄ Cap"
+      }
+    }
+  ]
+}

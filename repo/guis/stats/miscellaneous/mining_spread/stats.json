@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Mining Spread"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/mining/mining_spread/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "▚ Mining Spread.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:golden_pickaxe"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_spread/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "▚ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_spread/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_spread/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "▚ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_spread/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "▚ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_spread/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "▚ Cap"
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Pet Luck"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pet_luck/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "♣ Pet Luck.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pet_luck/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "♣ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pet_luck/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pet_luck/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "♣ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pet_luck/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "♣ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pet_luck/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "♣ Cap"
+      }
+    }
+  ]
+}

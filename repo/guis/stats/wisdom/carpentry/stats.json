@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Carpentry Wisdom"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/wisdom/carpentry/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Carpentry Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:crafting_table"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/carpentry/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/carpentry/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/carpentry/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/carpentry/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/carpentry/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Cap"
+      }
+    }
+  ]
+}

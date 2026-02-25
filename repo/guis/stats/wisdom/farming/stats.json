@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Farming Wisdom"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/wisdom/farming/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Farming Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:golden_hoe"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/farming/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/farming/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/farming/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/farming/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/farming/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Cap"
+      }
+    }
+  ]
+}

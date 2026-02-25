@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Mana Regen"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/rift/mana_regen/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⚡ Mana Regen.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/mana_regen/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚡ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/mana_regen/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/mana_regen/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚡ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/mana_regen/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚡ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/mana_regen/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚡ Cap"
+      }
+    }
+  ]
+}

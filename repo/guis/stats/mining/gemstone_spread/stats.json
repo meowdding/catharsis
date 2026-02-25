@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Gemstone Spread"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/mining/gemstone_spread/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "▚ Gemstone Spread.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:golden_pickaxe"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/gemstone_spread/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "▚ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/gemstone_spread/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/gemstone_spread/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "▚ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/gemstone_spread/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "▚ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/gemstone_spread/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "▚ Cap"
+      }
+    }
+  ]
+}

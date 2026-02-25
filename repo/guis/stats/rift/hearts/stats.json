@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Hearts"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/rift/hearts/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❤ Hearts.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:apple"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/hearts/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❤ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/hearts/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/hearts/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❤ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/hearts/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❤ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/hearts/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❤ Cap"
+      }
+    }
+  ]
+}

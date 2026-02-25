@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Enchanting Wisdom"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/wisdom/enchanting/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☯ Enchanting Wisdom.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:enchanting_table"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/enchanting/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/enchanting/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/enchanting/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/enchanting/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/wisdom/enchanting/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☯ Cap"
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Fishing Speed"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/fishing/fishing_speed/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☂ Fishing Speed.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:fishing_rod"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/fishing_speed/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☂ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/fishing_speed/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/fishing_speed/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☂ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/fishing_speed/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☂ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/fishing_speed/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☂ Cap"
+      }
+    }
+  ]
+}

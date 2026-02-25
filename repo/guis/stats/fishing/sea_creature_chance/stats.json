@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Sea Creature Chance"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/fishing/sea_creature_chance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "α Sea Creature Chance.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:prismarine_crystals"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/sea_creature_chance/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "α Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/sea_creature_chance/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/sea_creature_chance/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "α Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/sea_creature_chance/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "α Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/sea_creature_chance/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "α Cap"
+      }
+    }
+  ]
+}

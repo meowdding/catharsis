@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Pristine"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/mining/pristine/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "✧ Pristine.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/pristine/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "✧ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/pristine/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/pristine/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "✧ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/pristine/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "✧ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/pristine/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "✧ Cap"
+      }
+    }
+  ]
+}

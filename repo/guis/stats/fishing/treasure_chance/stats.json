@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Treasure Chance"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/fishing/treasure_chance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⛃ Treasure Chance.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:chest"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/treasure_chance/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⛃ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/treasure_chance/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/treasure_chance/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⛃ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/treasure_chance/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⛃ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/treasure_chance/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⛃ Cap"
+      }
+    }
+  ]
+}

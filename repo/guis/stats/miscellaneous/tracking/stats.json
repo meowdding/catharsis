@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Tracking"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/miscellaneous/tracking/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❃ Tracking.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:compass"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/tracking/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❃ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/tracking/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/tracking/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❃ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/tracking/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❃ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/tracking/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❃ Cap"
+      }
+    }
+  ]
+}

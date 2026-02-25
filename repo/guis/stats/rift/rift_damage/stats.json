@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Rift Damage"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/rift/rift_damage/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❁ Rift Damage.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond_sword"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_damage/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❁ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_damage/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_damage/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❁ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_damage/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❁ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_damage/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❁ Cap"
+      }
+    }
+  ]
+}

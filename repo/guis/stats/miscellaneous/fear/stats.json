@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Fear"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/miscellaneous/fear/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☠ Fear.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:cauldron"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/fear/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☠ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/fear/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/fear/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☠ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/fear/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☠ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/fear/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "☠ Cap"
+      }
+    }
+  ]
+}

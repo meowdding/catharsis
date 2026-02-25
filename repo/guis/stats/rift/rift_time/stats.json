@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Rift Time"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/rift/rift_time/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "ф Rift Time.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:clock"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_time/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ф Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_time/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_time/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ф Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_time/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ф Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/rift/rift_time/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ф Cap"
+      }
+    }
+  ]
+}

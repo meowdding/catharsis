@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Double Hook Chance"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/fishing/double_hook_chance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⚓ Double Hook Chance.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:cooked_cod"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/double_hook_chance/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚓ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/double_hook_chance/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/double_hook_chance/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚓ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/double_hook_chance/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚓ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/fishing/double_hook_chance/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⚓ Cap"
+      }
+    }
+  ]
+}

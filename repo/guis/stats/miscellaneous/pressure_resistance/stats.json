@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Pressure Resistance"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pressure_resistance/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "❍ Pressure Resistance.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:glass_bottle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pressure_resistance/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❍ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pressure_resistance/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pressure_resistance/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❍ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pressure_resistance/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❍ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/miscellaneous/pressure_resistance/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "❍ Cap"
+      }
+    }
+  ]
+}

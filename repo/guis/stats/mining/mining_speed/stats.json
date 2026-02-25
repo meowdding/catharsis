@@ -1,0 +1,64 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Stats ➜ Mining Speed"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:stats/mining/mining_speed/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "⸕ Mining Speed.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:diamond_pickaxe"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_speed/flat_bonuses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⸕ Flat Bonuses"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_speed/arrow",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "➭"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_speed/additive_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⸕ Additive Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_speed/multiplicative_buffs",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⸕ Multiplicative Buffs"
+      }
+    },
+    {
+      "id": "skyblock_gui:stats/mining/mining_speed/cap",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "⸕ Cap"
+      }
+    }
+  ]
+}

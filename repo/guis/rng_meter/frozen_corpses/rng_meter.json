@@ -1,0 +1,24 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Frozen Corpses RNG Meter"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:rng_meter/icon/frozem_corpses",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "RNG Meter"
+      }
+    },
+    {
+      "id": "skyblock_gui:rng_meter/frozen_corpses/icon/reset_rng_drop",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Reset RNG Drop"
+      }
+    }
+  ]
+}

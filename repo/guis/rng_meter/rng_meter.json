@@ -59,6 +59,25 @@
       }
     },
     {
+      "id": "skyblock_gui:rng_meter/icon/frozen_corpses",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "RNG Meter"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Frozen Corpses"
+          }
+        ]
+      }
+    },
+    {
       "id": "skyblock_gui:rng_meter/icon/pity_tracker",
       "target": {
         "type": "name",

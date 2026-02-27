@@ -1,0 +1,72 @@
+{
+  "target": {
+    "title": "Challenges",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:npc/master_tao/challenges/test_of_force",
+      "target": {
+        "name": "Test of Force",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/master_tao/challenges/test_of_stamina",
+      "target": {
+        "name": "Test of Stamina",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/master_tao/challenges/test_of_mastery",
+      "target": {
+        "name": "Test of Mastery",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/master_tao/challenges/test_of_discipline",
+      "target": {
+        "name": "Test of Discipline",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/master_tao/challenges/test_of_swiftness",
+      "target": {
+        "name": "Test of Swiftness",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/master_tao/challenges/test_of_control",
+      "target": {
+        "name": "Test of Control",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/master_tao/challenges/test_of_tenacity",
+      "target": {
+        "name": "Test of Tenacity",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/master_tao/challenges/rank",
+      "target": {
+        "name": "Rank",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    }
+  ]
+}

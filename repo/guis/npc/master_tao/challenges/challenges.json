@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:npc/master_tao/challenges/test_of_force",
+      "id": "skyblock_gui:npc/master_tao/challenges/tests/force",
       "target": {
         "name": "Test of Force",
         "mode": "equals",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": "skyblock_gui:npc/master_tao/challenges/test_of_stamina",
+      "id": "skyblock_gui:npc/master_tao/challenges/tests/stamina",
       "target": {
         "name": "Test of Stamina",
         "mode": "equals",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:npc/master_tao/challenges/test_of_mastery",
+      "id": "skyblock_gui:npc/master_tao/challenges/tests/mastery",
       "target": {
         "name": "Test of Mastery",
         "mode": "equals",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "id": "skyblock_gui:npc/master_tao/challenges/test_of_discipline",
+      "id": "skyblock_gui:npc/master_tao/challenges/tests/discipline",
       "target": {
         "name": "Test of Discipline",
         "mode": "equals",
@@ -37,7 +37,7 @@
       }
     },
     {
-      "id": "skyblock_gui:npc/master_tao/challenges/test_of_swiftness",
+      "id": "skyblock_gui:npc/master_tao/challenges/tests/swiftness",
       "target": {
         "name": "Test of Swiftness",
         "mode": "equals",
@@ -45,7 +45,7 @@
       }
     },
     {
-      "id": "skyblock_gui:npc/master_tao/challenges/test_of_control",
+      "id": "skyblock_gui:npc/master_tao/challenges/tests/control",
       "target": {
         "name": "Test of Control",
         "mode": "equals",
@@ -53,7 +53,7 @@
       }
     },
     {
-      "id": "skyblock_gui:npc/master_tao/challenges/test_of_tenacity",
+      "id": "skyblock_gui:npc/master_tao/challenges/tests/tenacity",
       "target": {
         "name": "Test of Tenacity",
         "mode": "equals",

@@ -1,0 +1,257 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Auctions.+"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:generic/miscellaneous/filler",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "is_tooltip_hidden"
+          },
+          {
+            "type": "item",
+            "items": [
+              "yellow_stained_glass_pane",
+              "blue_stained_glass_pane",
+              "green_stained_glass_pane",
+              "red_stained_glass_pane",
+              "orange_stained_glass_pane",
+              "purple_stained_glass_pane"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/weapons/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Weapons",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/weapons/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Weapons",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/armor/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Armor",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/armor/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Armor",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/accessories/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Accessories",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/accessories/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Accessories",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/consumables/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Consumables",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/consumables/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Consumables",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/cosmetics/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Cosmetics",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/cosmetics/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Cosmetics",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },    {
+      "id": "skyblock_gui:auction_house/auctions_browser/tools_and_misc/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tools & Misc",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/tools_and_misc/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tools & Misc",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

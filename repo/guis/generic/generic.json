@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:generic/miscellaneous/filler",
+      "id": "skyblock_gui:generic/miscellaneous/information",
       "target": {
         "type": "name",
         "mode": "equals",

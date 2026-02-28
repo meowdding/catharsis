@@ -168,22 +168,6 @@
       }
     },
     {
-      "id": "skyblock_gui:generic/inventory_management/sell_inventory_now",
-      "target": {
-        "type": "name",
-        "mode": "equals",
-        "name": "Sell Inventory Now"
-      }
-    },
-    {
-      "id": "skyblock_gui:generic/inventory_management/sell_sacks_now",
-      "target": {
-        "type": "name",
-        "mode": "equals",
-        "name": "Sell Sacks Now"
-      }
-    },
-    {
       "id": "skyblock_gui:generic/inventory_management/insert_inventory",
       "target": {
         "type": "name",

@@ -6,15 +6,19 @@ import me.owdding.catharsis.features.gui.definitions.conditions.GuiDefConditions
 import me.owdding.catharsis.features.gui.definitions.conditions.GuiDefinitionCondition
 import me.owdding.catharsis.features.gui.definitions.slots.GuiSlotDefinition
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.catharsis.utils.codecs.nonPartialFieldOf
 import me.owdding.catharsis.utils.codecs.nonPartialListOf
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
+import net.minecraft.resources.Identifier
 
 data class GuiDefinition(
     val priority: Int = 0,
     val target: GuiDefinitionCondition,
     val layout: List<GuiSlotDefinition>,
-) {
+) : SavableData<GuiDefinition> {
+    override val codec: Codec<GuiDefinition> get() = CODEC
+    override fun toFileName(identifier: Identifier): Identifier = GuiDefinitions.uiDefinitionConverter.idToFile(identifier)
 
     fun matches(screen: AbstractContainerScreen<*>): Boolean {
         return target.matches(screen)

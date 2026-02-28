@@ -72,7 +72,7 @@ object PackConfigHandler : ResourceManagerReloadListener {
             }
         }
 
-        McClient.registerClientReloadListener(Catharsis.id("packconfig_handler"), this)
+        Catharsis.registerClientReloadListener(Catharsis.id("packconfig_handler"), this)
     }
 
     fun getConfig(packId: String): PackConfig {

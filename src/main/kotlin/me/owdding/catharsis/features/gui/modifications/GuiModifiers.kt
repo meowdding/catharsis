@@ -22,9 +22,9 @@ import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
 
     private val logger = Catharsis.featureLogger("GuiModifiers")
-    private val converter = FileToIdConverter.json("catharsis/gui_modifiers")
+    val converter: FileToIdConverter = FileToIdConverter.json("catharsis/gui_modifiers")
     private val gson = GsonBuilder().create()
-    private val codec = CatharsisCodecs.getCodec<GuiModifier>()
+    val codec = CatharsisCodecs.getCodec<GuiModifier>()
 
     private val definitionModifiers: MutableMap<Identifier, MutableList<GuiModifier>> = mutableMapOf()
 
@@ -76,7 +76,8 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
                         slots[identifier] = SlotModifier(
                             hidden = existing.hidden || modifier.hidden,
                             highlightable = existing.highlightable && modifier.highlightable,
-                            position = modifier.position ?: existing.position
+                            position = modifier.position ?: existing.position,
+                            clickable = modifier.clickable && existing.clickable
                         )
                     } else {
                         slots[identifier] = modifier
@@ -99,6 +100,6 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
     }
 
     init {
-        McClient.registerClientReloadListener(Catharsis.id("gui_modifiers"), this)
+        Catharsis.registerClientReloadListener(Catharsis.id("gui_modifiers"), this)
     }
 }

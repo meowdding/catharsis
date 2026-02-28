@@ -1,9 +1,11 @@
 package me.owdding.catharsis.features.area
 
+import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.codecs.IncludedCodecs
+import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.catharsis.utils.types.boundingboxes.BoundingBox
 import me.owdding.catharsis.utils.types.boundingboxes.DebugRenderable
 import me.owdding.catharsis.utils.types.boundingboxes.Octree
@@ -15,7 +17,10 @@ import net.minecraft.util.ExtraCodecs
 import tech.thatgravyboat.skyblockapi.api.location.LocationAPI
 import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
 
-interface AreaDefinition {
+interface AreaDefinition : SavableData<AreaDefinition> {
+    override val codec: Codec<AreaDefinition> get() = Areas.codec
+    override fun toFileName(identifier: Identifier): Identifier = Areas.converter.idToFile(identifier)
+
     fun codec(): MapCodec<out AreaDefinition>
     fun contains(blockPos: BlockPos): Boolean
     val renderable: DebugRenderable?

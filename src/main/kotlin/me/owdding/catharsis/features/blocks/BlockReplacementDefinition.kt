@@ -1,10 +1,12 @@
 package me.owdding.catharsis.features.blocks
 
+import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.blocks.replacements.*
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.codecs.IncludedCodecs
+import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.core.BlockPos
@@ -16,8 +18,11 @@ import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 
 interface BlockReplacement {
-    interface Completable {
-        val codec: MapCodec<out Completable>
+    interface Completable : SavableData<Completable> {
+        override val codec: Codec<Completable> get() = BlockReplacements.blockDefinitionCodec
+        override fun toFileName(identifier: Identifier): Identifier = BlockReplacements.blockReplacementConverter.idToFile(identifier)
+
+        fun codec(): MapCodec<out Completable>
 
         fun virtualStates(): List<Identifier>
         fun bake(bakery: BlockReplacementBakery): BlockReplacement

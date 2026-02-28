@@ -124,6 +124,6 @@ object Timespans : SimplePreparableReloadListener<List<Pair<Identifier, Timespan
     fun getLoadedTimespans(): Map<Identifier, TimespanDefinition> = timespans
 
     init {
-        McClient.registerClientReloadListener(Catharsis.id("timespans"), this)
+        Catharsis.registerClientReloadListener(Catharsis.id("timespans"), this)
     }
 }

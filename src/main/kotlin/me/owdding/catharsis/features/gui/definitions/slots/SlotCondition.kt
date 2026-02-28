@@ -13,8 +13,10 @@ import net.minecraft.world.item.ItemStack
 interface SlotCondition {
 
     val codec: MapCodec<out SlotCondition>
+    val cost: Int get() = 0
 
     fun matches(slot: Int, stack: ItemStack): Boolean
+    fun optimize(): SlotCondition = this
 }
 
 object SlotConditions {
@@ -22,7 +24,9 @@ object SlotConditions {
     val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out SlotCondition>>()
 
     @IncludedCodec
-    val CODEC: Codec<SlotCondition> = ID_MAPPER.codec(IncludedCodecs.catharsisIdentifier).dispatch(SlotCondition::codec) { it }
+    val CODEC: Codec<SlotCondition> = ID_MAPPER.codec(IncludedCodecs.catharsisIdentifier)
+        .dispatch(SlotCondition::codec) { it }
+        .xmap(SlotCondition::optimize) { it }
 
     init {
         ID_MAPPER.put(Catharsis.id("any"), CatharsisCodecs.getMapCodec<SlotAnyCondition>())

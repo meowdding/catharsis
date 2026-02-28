@@ -8,6 +8,8 @@ import me.owdding.catharsis.events.BootstrapNumericPropertiesEvent
 import me.owdding.catharsis.events.BootstrapSelectPropertiesEvent
 import me.owdding.catharsis.events.FinishRepoLoadEvent
 import me.owdding.catharsis.events.StartRepoLoadEvent
+import me.owdding.catharsis.features.imc.ImcHandler.withCatharsisId
+import me.owdding.catharsis.features.text.targets.ItemTextReplacements
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.generated.CatharsisModules
 import me.owdding.catharsis.generated.CatharsisPreLoadModules
@@ -27,6 +29,8 @@ import net.minecraft.client.renderer.item.properties.conditional.ConditionalItem
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperties
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperties
 import net.minecraft.resources.Identifier
+import net.minecraft.server.packs.resources.PreparableReloadListener
+import net.minecraft.world.item.ItemStack
 import org.intellij.lang.annotations.Pattern
 import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
@@ -39,6 +43,8 @@ import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 import java.util.concurrent.CompletableFuture
+import java.util.function.BiConsumer
+import java.util.function.Consumer
 import kotlin.io.path.readText
 import kotlin.time.Instant
 
@@ -66,6 +72,20 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
         BootstrapItemModelsEvent(ItemModels.ID_MAPPER::put).post(SkyBlockAPI.eventBus)
 
         loadRepo()
+
+        val invokers = runCatching {
+            FabricLoader.getInstance()
+                .getEntrypoints("catharsis:imc/item_id", Consumer::class.java)
+        }.onFailure(Throwable::printStackTrace)
+            .getOrDefault(listOf())
+
+        for (invoker in invokers) {
+            runCatching {
+                (invoker as Consumer<BiConsumer<ItemStack, Identifier>>).accept { item, id ->
+                    item.withCatharsisId(id)
+                }
+            }.onFailure(Throwable::printStackTrace)
+        }
     }
 
     fun loadRepo(notify: Boolean = CatharsisDevUtils.getBoolean("repo_notify")) {
@@ -114,6 +134,10 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
     fun id(@Pattern("[a-z_0-9\\/.-]+") path: String): Identifier = Identifiers.of(MOD_ID, path)
     fun mc(@Pattern("[a-z_0-9\\/.-]+") path: String): Identifier = Identifiers.of(path)
     fun sbapi(@Pattern("[a-z_0-9\\/.-]+") path: String): Identifier = Identifiers.of(SkyBlockAPI.MOD_ID, path)
+    fun registerClientReloadListener(id: Identifier, replacements: PreparableReloadListener) {
+        if (System.getProperties().containsKey("catharsis.skip-listeners")) return
+        McClient.registerClientReloadListener(id, replacements)
+    }
 
     @GenerateCodec
     data class BuildInfo(

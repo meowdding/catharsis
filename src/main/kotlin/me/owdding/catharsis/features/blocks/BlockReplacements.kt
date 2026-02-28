@@ -44,12 +44,12 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     }
 
     private val logger: CatharsisLogger = this
-    private val blockReplacementConverter = FileToIdConverter.json("catharsis/block_replacements")
-    private val blockStateConverter = FileToIdConverter.json("catharsis/virtual_block_states")
+    val blockReplacementConverter: FileToIdConverter = FileToIdConverter.json("catharsis/block_replacements")
+    val blockStateConverter: FileToIdConverter = FileToIdConverter.json("catharsis/virtual_block_states")
     private val gson = GsonBuilder().create()
 
-    private val blockDefinitionCodec: Codec<BlockReplacement.Completable> = BlockStateDefinitions.CODEC.codec()
-    private val virtualBlockStateCodec: Codec<VirtualBlockStateDefinition> = CatharsisCodecs.VirtualBlockStateDefinitionCodec.codec()
+    val blockDefinitionCodec: Codec<BlockReplacement.Completable> = BlockStateDefinitions.CODEC.codec()
+    val virtualBlockStateCodec: Codec<VirtualBlockStateDefinition> = CatharsisCodecs.VirtualBlockStateDefinitionCodec.codec()
 
     private val map: MutableMap<Block, BakedSoundDefinition> = mutableMapOf()
 

@@ -62,7 +62,7 @@ data class RandomBlockReplacement(
         val definition: BlockReplacement.Completable,
         val fallback: BlockReplacement.Completable?,
     ) : BlockReplacement.Completable {
-        override val codec: MapCodec<Completable> = CatharsisCodecs.getMapCodec()
+        override fun codec(): MapCodec<Completable> = CatharsisCodecs.getMapCodec()
         override fun virtualStates() = listOfNotNull(definition.virtualStates(), fallback?.virtualStates()).flatten()
         override fun bake(bakery: BlockReplacementBakery) = RandomBlockReplacement(
             min, max, threshold,

@@ -2,13 +2,17 @@ package me.owdding.catharsis.features.gui.modifications
 
 //? >= 1.21.9
 import com.mojang.blaze3d.platform.cursor.CursorTypes
+import com.mojang.serialization.Codec
 import me.owdding.catharsis.features.gui.modifications.conditions.GuiModifierCondition
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElement
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElementRenderLayer
 import me.owdding.catharsis.features.gui.modifications.elements.GuiWidgetElement
 import me.owdding.catharsis.features.gui.modifications.modifiers.SlotModifier
+import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
+import me.owdding.ktcodecs.OptionalBoolean
+import me.owdding.ktcodecs.OptionalIfEmpty
 import net.minecraft.client.gui.GuiGraphics
 import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.resources.Identifier
@@ -18,15 +22,17 @@ import org.joml.Vector2i
 data class GuiModifier(
     val target: GuiModifierCondition,
 
-    val overrideLabels: Boolean = false,
-    val overrideBackground: Boolean = false,
+    @OptionalBoolean(false) val overrideLabels: Boolean = false,
+    @OptionalBoolean(false) val overrideBackground: Boolean = false,
 
     @NamedCodec("size") val bounds: Vector2i?,
 
-    val slots: Map<Identifier, SlotModifier> = emptyMap(),
-    val elements: List<GuiElement> = emptyList(),
-    val widgets: List<GuiWidgetElement> = emptyList(),
-) {
+    @OptionalIfEmpty val slots: Map<Identifier, SlotModifier> = emptyMap(),
+    @OptionalIfEmpty val elements: List<GuiElement> = emptyList(),
+    @OptionalIfEmpty val widgets: List<GuiWidgetElement> = emptyList(),
+) : SavableData<GuiModifier> {
+    override val codec: Codec<GuiModifier> get() = GuiModifiers.codec
+    override fun toFileName(identifier: Identifier): Identifier = GuiModifiers.converter.idToFile(identifier)
 
     private val elementsByLayer = (elements + widgets).groupBy { it.layer }
 

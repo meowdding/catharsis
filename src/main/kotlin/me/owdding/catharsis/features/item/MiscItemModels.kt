@@ -27,7 +27,7 @@ import tech.thatgravyboat.skyblockapi.utils.json.Json.toData
 object MiscItemModels : SimplePreparableReloadListener<List<MiscItemModels.MiscItems>>(), CatharsisLogger by Catharsis.featureLogger() {
 
     init {
-        McClient.registerClientReloadListener(Catharsis.id("misc_items"), this)
+        Catharsis.registerClientReloadListener(Catharsis.id("misc_items"), this)
     }
 
     private var cache: MiscItems? = null

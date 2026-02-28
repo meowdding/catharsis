@@ -11,6 +11,7 @@ import net.minecraft.util.ExtraCodecs
 interface TextMatcher {
 
     val codec: MapCodec<out TextMatcher>
+    val cost: Int get() = 0
 
     fun matches(text: String): Boolean
 }

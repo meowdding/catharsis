@@ -36,9 +36,9 @@ object Areas : SimplePreparableReloadListener<List<Pair<Identifier, AreaDefiniti
 
     private val enabledDebugRenderers: MutableSet<Identifier> = mutableSetOf()
     private val logger = Catharsis.featureLogger("Areas")
-    private val converter = FileToIdConverter.json("catharsis/areas")
+    val converter: FileToIdConverter = FileToIdConverter.json("catharsis/areas")
     private val gson = GsonBuilder().create()
-    private val codec = CatharsisCodecs.getCodec<AreaDefinition>()
+    val codec = CatharsisCodecs.getCodec<AreaDefinition>()
 
     private val areas: MutableMap<Identifier, AreaDefinition> = mutableMapOf()
     private val repoAreas: MutableMap<Identifier, AreaDefinition> = mutableMapOf()
@@ -142,6 +142,6 @@ object Areas : SimplePreparableReloadListener<List<Pair<Identifier, AreaDefiniti
     fun getLoadedAreas(): Map<Identifier, AreaDefinition> = areas
 
     init {
-        McClient.registerClientReloadListener(Catharsis.id("areas"), this)
+        Catharsis.registerClientReloadListener(Catharsis.id("areas"), this)
     }
 }

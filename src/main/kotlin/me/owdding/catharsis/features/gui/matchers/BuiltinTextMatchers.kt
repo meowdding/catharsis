@@ -13,7 +13,14 @@ data class EqualsTextMatcher(
     constructor(vararg name: String) : this(setOf(*name))
 
     override val codec = CatharsisCodecs.getMapCodec<EqualsTextMatcher>()
+    override val cost: Int = COST
+
     override fun matches(text: String): Boolean = this.name.any { it == text }
+
+    companion object {
+
+        const val COST = 1
+    }
 }
 
 @GenerateCodec
@@ -23,6 +30,13 @@ data class RegexTextMatcher(
     constructor(@Language("RegExp") regex: String) : this(Regex(regex))
 
     override val codec = CatharsisCodecs.getMapCodec<RegexTextMatcher>()
+    override val cost: Int = COST
+
     override fun matches(text: String): Boolean = this.name.matches(text)
+
+    companion object {
+
+        const val COST = 5
+    }
 }
 

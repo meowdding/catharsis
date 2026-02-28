@@ -2,11 +2,18 @@ classTweaker v1 named
 accessible class net/minecraft/client/multiplayer/ClientChunkCache$Storage
 accessible method net/minecraft/client/renderer/GameRenderer pick (Lnet/minecraft/world/entity/Entity;DDF)Lnet/minecraft/world/phys/HitResult;
 accessible field net/minecraft/client/model/PlayerCapeModel cape Lnet/minecraft/client/model/geom/ModelPart;
+accessible field net/minecraft/client/model/player/PlayerModel slim Z
+accessible field net/minecraft/client/model/PlayerModel slim Z
 accessible field net/minecraft/client/multiplayer/ClientChunkCache storage Lnet/minecraft/client/multiplayer/ClientChunkCache$Storage;
 accessible field net/minecraft/client/multiplayer/ClientChunkCache$Storage chunks Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
+extendable class net/minecraft/client/model/geom/ModelPart
+accessible field net/minecraft/client/model/geom/ModelPart children Ljava/util/Map;
+accessible field net/minecraft/client/model/geom/ModelPart cubes Ljava/util/List;
+
 inject-interface net/minecraft/client/gui/screens/packs/PackSelectionModel$EntryBase me/owdding/catharsis/hooks/pack/PackEntryHook
 inject-interface net/minecraft/client/renderer/item/properties/select/SelectItemModelProperty$Type me/owdding/catharsis/hooks/armor/SelectItemModelPropertyTypeHook
+inject-interface net/minecraft/client/renderer/entity/state/EntityRenderState me/owdding/catharsis/hooks/entity/EntityRenderStateHook
 inject-interface net/minecraft/client/renderer/entity/state/LivingEntityRenderState me/owdding/catharsis/hooks/armor/LivingEntityRenderStateHook
 inject-interface net/minecraft/client/renderer/item/ItemStackRenderState me/owdding/catharsis/hooks/items/ItemStackRenderStateHook
 inject-interface net/minecraft/client/resources/model/ModelManager me/owdding/catharsis/hooks/items/ModelManagerHook
@@ -14,3 +21,4 @@ inject-interface net/minecraft/server/packs/repository/Pack me/owdding/catharsis
 inject-interface net/minecraft/server/packs/repository/Pack$Metadata me/owdding/catharsis/hooks/pack/PackMetadataHook
 inject-interface net/minecraft/world/inventory/Slot me/owdding/catharsis/hooks/gui/SlotHook
 inject-interface net/minecraft/world/item/component/ItemLore me/owdding/catharsis/hooks/text/TooltipProviderHook
+inject-interface net/minecraft/world/entity/Entity me/owdding/catharsis/hooks/entity/EntityHook

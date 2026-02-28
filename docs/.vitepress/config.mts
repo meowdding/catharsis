@@ -55,6 +55,7 @@ export default defineConfig({
                     {text: "Pack Metadata", link: "/miscellaneous/pack_metadata"},
                     {text: "Data Types", link: "/miscellaneous/data_types"},
                     {text: "Timespan", link: "/miscellaneous/timespans"},
+                    {text: "Tooltip Background", link: "/miscellaneous/tooltip_background"},
                     {text: ".cats file format", link: "/miscellaneous/cats_file_format"},
                 ]
             },

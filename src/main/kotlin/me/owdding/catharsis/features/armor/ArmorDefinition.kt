@@ -2,12 +2,16 @@ package me.owdding.catharsis.features.armor
 
 import com.mojang.serialization.Codec
 import com.mojang.serialization.codecs.RecordCodecBuilder
+import me.owdding.catharsis.features.area.AreaDefinition
+import me.owdding.catharsis.features.area.Areas
 import me.owdding.catharsis.features.armor.models.ArmorModel
 import me.owdding.catharsis.features.armor.models.ArmorModelState
 import me.owdding.catharsis.utils.TypedResourceManager
+import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.IncludedCodec
+import net.minecraft.resources.Identifier
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.LivingEntity
@@ -28,7 +32,9 @@ data class ArmorDefinition(
     data class Unbaked(
         val model: ArmorModel.Unbaked,
         @FieldName("part_visibility") val partVisibility: EnumMap<BodyPart, PartVisibilityState> = EnumMap(BodyPart::class.java),
-    ) {
+    ) : SavableData<Unbaked> {
+        override val codec: Codec<Unbaked> get() = ArmorDefinitions.codec
+        override fun toFileName(identifier: Identifier): Identifier = ArmorDefinitions.converter.idToFile(identifier)
 
         fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): ArmorDefinition {
             return ArmorDefinition(model.bake(swapper, resources), partVisibility)

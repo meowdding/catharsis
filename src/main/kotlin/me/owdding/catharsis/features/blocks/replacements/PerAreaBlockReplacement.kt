@@ -51,7 +51,7 @@ data class PerAreaBlockReplacement(
     data class Completable(
         @FieldName("entries") val values: Map<Identifier, BlockReplacement.Completable>,
     ) : BlockReplacement.Completable {
-        override val codec: MapCodec<Completable> = CatharsisCodecs.getMapCodec()
+        override fun codec(): MapCodec<Completable> = CatharsisCodecs.getMapCodec()
         override fun virtualStates() = values.values.flatMap { it.virtualStates() }
         override fun bake(bakery: BlockReplacementBakery): BlockReplacement = PerAreaBlockReplacement(values.mapValues { it.value.bake(bakery) })
     }

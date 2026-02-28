@@ -30,6 +30,11 @@ data class SlotAllCondition(
     constructor(vararg conditions: SlotCondition) : this(listOf(*conditions))
 
     override val codec = CatharsisCodecs.getMapCodec<SlotAllCondition>()
+    override val cost: Int = this.conditions.sumOf(SlotCondition::cost) + 1
+
+    override fun optimize(): SlotCondition = SlotAllCondition(
+        this.conditions.map(SlotCondition::optimize).sortedBy(SlotCondition::cost)
+    )
     override fun matches(slot: Int, stack: ItemStack): Boolean = this.conditions.all { it.matches(slot, stack) }
 }
 
@@ -40,6 +45,11 @@ data class SlotAnyCondition(
     constructor(vararg conditions: SlotCondition) : this(listOf(*conditions))
 
     override val codec = CatharsisCodecs.getMapCodec<SlotAnyCondition>()
+    override val cost: Int = this.conditions.sumOf(SlotCondition::cost) + 1
+
+    override fun optimize(): SlotCondition = SlotAnyCondition(
+        this.conditions.map(SlotCondition::optimize).sortedBy(SlotCondition::cost)
+    )
     override fun matches(slot: Int, stack: ItemStack): Boolean = this.conditions.any { it.matches(slot, stack) }
 }
 
@@ -47,8 +57,12 @@ data class SlotAnyCondition(
 data class SlotNotCondition(
     val condition: SlotCondition,
 ) : SlotCondition {
+
     override val codec = CatharsisCodecs.getMapCodec<SlotNotCondition>()
+    override val cost: Int = this.condition.cost
+
     override fun matches(slot: Int, stack: ItemStack): Boolean = !this.condition.matches(slot, stack)
+    override fun optimize(): SlotCondition = if (this.condition is SlotNotCondition) this.condition.condition.optimize() else this
 }
 
 @GenerateCodec
@@ -83,8 +97,12 @@ data class SlotItemCondition(
 data class SlotNameCondition(
     @Inline val matcher: TextMatcher,
 ) : SlotCondition {
+
     override val codec = CatharsisCodecs.getMapCodec<SlotNameCondition>()
+    override val cost: Int = this.matcher.cost
+
     override fun matches(slot: Int, stack: ItemStack): Boolean = this.matcher.matches(stack.cleanName)
+
 }
 
 @GenerateCodec
@@ -97,6 +115,7 @@ data class SlotLoreCondition(
     val to: Int get() = this.line.map({ it }, { it.to })
 
     override val codec = CatharsisCodecs.getMapCodec<SlotLoreCondition>()
+    override val cost: Int = this.matcher.cost
 
     override fun matches(slot: Int, stack: ItemStack): Boolean {
         val lines = stack.getRawLore().takeUnless(List<*>::isEmpty) ?: return false

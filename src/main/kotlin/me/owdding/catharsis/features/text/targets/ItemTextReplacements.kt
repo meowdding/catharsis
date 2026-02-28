@@ -10,6 +10,6 @@ import tech.thatgravyboat.skyblockapi.helpers.McClient
 object ItemTextReplacements : TextReplacements<ItemStack>("item") {
 
     init {
-        McClient.registerClientReloadListener(Catharsis.id("text_replacements/item"), this)
+        Catharsis.registerClientReloadListener(Catharsis.id("text_replacements/item"), this)
     }
 }

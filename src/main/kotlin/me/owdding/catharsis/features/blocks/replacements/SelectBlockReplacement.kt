@@ -40,7 +40,7 @@ data class SelectBlockReplacement(
         val definitions: List<BlockReplacement.Completable>,
         val fallback: BlockReplacement.Completable?,
     ) : BlockReplacement.Completable {
-        override val codec: MapCodec<Completable> = CatharsisCodecs.getMapCodec()
+        override fun codec(): MapCodec<Completable> = CatharsisCodecs.getMapCodec()
         override fun virtualStates() = listOfNotNull(definitions.flatMap { it.virtualStates() }, fallback?.virtualStates()).flatten()
 
         override fun bake(bakery: BlockReplacementBakery) = SelectBlockReplacement(

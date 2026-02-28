@@ -1,6 +1,8 @@
 package me.owdding.catharsis.mixins.gui;
 
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
+import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;
+import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.sugar.Local;
 import me.owdding.catharsis.features.gui.definitions.GuiDefinitions;
 import me.owdding.catharsis.features.gui.modifications.GuiModifiers;
@@ -11,6 +13,8 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ClickType;
+import net.minecraft.world.inventory.Slot;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -51,5 +55,17 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
             return mouseX < x || mouseY < y || mouseX >= x + clickableBounds.x || mouseY >= y + clickableBounds.y;
         }
         return true;
+    }
+
+    @WrapMethod(method = "slotClicked")
+    private void catharsis$onSlotClick(Slot slot, int slotId, int mouseButton, ClickType type, Operation<Void> original) {
+        if (slot != null) {
+            var modifier = GuiModifiers.getActiveModifier();
+            var id = GuiDefinitions.getSlot(slot.index);
+            var slotModifier = modifier != null && id != null ? modifier.getSlots().get(id) : null;
+
+            if (slotModifier != null && !slotModifier.getClickable()) return;
+        }
+        original.call(slot, slotId, mouseButton, type);
     }
 }

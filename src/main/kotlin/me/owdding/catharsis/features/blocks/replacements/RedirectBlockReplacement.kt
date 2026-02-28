@@ -66,7 +66,7 @@ data class RedirectBlockReplacement(
     data class Completable(
         @FieldName("virtual_state") val virtualState: Identifier,
     ) : BlockReplacement.Completable {
-        override val codec: MapCodec<Completable> = CatharsisCodecs.getMapCodec()
+        override fun codec(): MapCodec<Completable> = CatharsisCodecs.getMapCodec()
         override fun virtualStates() = listOf(virtualState)
         override fun bake(bakery: BlockReplacementBakery): BlockReplacement = RedirectBlockReplacement(bakery.virtualStates[virtualState]!!.copy())
     }

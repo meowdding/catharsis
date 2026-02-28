@@ -1,0 +1,13 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "attribute",
+        "attribute": "minecraft:max_health",
+        "value": 100
+      }
+    ]
+  },
+  "type": "minecraft:zombie"
+}

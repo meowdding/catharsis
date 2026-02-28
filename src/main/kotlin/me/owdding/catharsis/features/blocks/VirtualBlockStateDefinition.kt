@@ -1,6 +1,8 @@
 package me.owdding.catharsis.features.blocks
 
 
+import com.mojang.serialization.Codec
+import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.Inline
@@ -8,6 +10,7 @@ import net.minecraft.client.renderer.block.model.BlockModelDefinition
 import net.minecraft.client.renderer.block.model.BlockStateModel
 import net.minecraft.client.renderer.chunk.ChunkSectionLayer
 import net.minecraft.client.resources.model.ModelBaker
+import net.minecraft.resources.Identifier
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 import tech.thatgravyboat.skyblockapi.platform.identifier
@@ -19,7 +22,9 @@ data class VirtualBlockStateDefinition(
     val blend: BlendMode?,
     @FieldName("ignore_original_offset") val ignoreOriginalOffset: Boolean = false,
     val overrides: Map<Block, VirtualBlockStateDefinition> = emptyMap(),
-) {
+) : SavableData<VirtualBlockStateDefinition> {
+    override val codec: Codec<VirtualBlockStateDefinition> get() = BlockReplacements.virtualBlockStateCodec
+    override fun toFileName(identifier: Identifier): Identifier = BlockReplacements.blockStateConverter.idToFile(identifier)
 
     private var roots: Map<BlockState, BlockStateModel.UnbakedRoot>? = null
 

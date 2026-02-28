@@ -13,8 +13,10 @@ import net.minecraft.util.ExtraCodecs
 interface GuiDefinitionCondition {
 
     val codec: MapCodec<out GuiDefinitionCondition>
+    val cost: Int get() = 0
 
     fun matches(screen: AbstractContainerScreen<*>): Boolean
+    fun optimize(): GuiDefinitionCondition = this
 }
 
 object GuiDefConditions {
@@ -22,7 +24,9 @@ object GuiDefConditions {
     val ID_MAPPER = ExtraCodecs.LateBoundIdMapper<Identifier, MapCodec<out GuiDefinitionCondition>>()
 
     @IncludedCodec
-    val CODEC: Codec<GuiDefinitionCondition> = ID_MAPPER.codec(IncludedCodecs.catharsisIdentifier).dispatch(GuiDefinitionCondition::codec) { it }
+    val CODEC: Codec<GuiDefinitionCondition> = ID_MAPPER.codec(IncludedCodecs.catharsisIdentifier)
+        .dispatch(GuiDefinitionCondition::codec) { it }
+        .xmap(GuiDefinitionCondition::optimize) { it }
 
     init {
         ID_MAPPER.put(Catharsis.id("any"), CatharsisCodecs.getMapCodec<GuiDefinitionAnyCondition>())

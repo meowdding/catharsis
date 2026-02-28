@@ -46,3 +46,5 @@ fun Vector3i.toVec3i(): Vec3i = Vec3i(x, y, z)
 
 fun BlockPos.add(vec3: Vector3ic): BlockPos = this.offset(vec3.x(), vec3.y(), vec3.z())
 operator fun BlockPos.plus(vec3: Vector3ic): BlockPos = add(vec3)
+
+fun List<Float>.toVector3f(): Vector3f = if (this.size == 3) Vector3f(this[0], this[1], this[2]) else throw IllegalArgumentException("Vector size is too large")

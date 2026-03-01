@@ -49,6 +49,7 @@
   "mixins": [
     "entity.EntityMixin",
     "gui.AbstractContainerMenuMixin",
+    "items.CustomDataMixin",
     "pack.PathPackResourcesMixin",
     "sounds.BlockItemMixin",
     "sounds.EntityMixin",

@@ -14,6 +14,9 @@ public class ItemStackMixin implements ItemStackHook {
     @Unique
     private Identifier catharsis$id;
 
+    @Unique
+    private boolean catharsis$disabled;
+
     @Override
     public void catharsis$setExtraId(@NotNull Identifier id) {
         this.catharsis$id = id;
@@ -22,5 +25,15 @@ public class ItemStackMixin implements ItemStackHook {
     @Override
     public Identifier catharsis$getExtraId() {
         return this.catharsis$id;
+    }
+
+    @Override
+    public void catharsis$setDisabled(boolean disabled) {
+        this.catharsis$disabled = disabled;
+    }
+
+    @Override
+    public boolean catharsis$isDisabled() {
+        return this.catharsis$disabled;
     }
 }

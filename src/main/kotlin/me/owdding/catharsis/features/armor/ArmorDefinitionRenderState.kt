@@ -1,6 +1,7 @@
 package me.owdding.catharsis.features.armor
 
 import me.owdding.catharsis.features.armor.models.ArmorModelState
+import me.owdding.catharsis.features.imc.ImcHandler.isDisabled
 import me.owdding.catharsis.hooks.armor.LivingEntityRenderStateHook
 import me.owdding.catharsis.utils.ItemUtils
 import me.owdding.ktmodules.Module
@@ -52,17 +53,21 @@ object ArmorDefinitionRenderStateHandler {
 
     private fun ArmorDefinitionRenderState.updateState(entity: LivingEntity, slot: EquipmentSlot, updater: (ArmorDefinitionRenderState, ArmorModelState?) -> Unit) {
         val item = entity.getItemBySlot(slot)
-        val definition = ArmorDefinitions.getDefinition(ItemUtils.getCustomLocation(item)) ?: ArmorDefinitions.getDefinition(item.get(DataComponents.ITEM_MODEL))
-        updater.invoke(this, definition?.resolve(item, entity, slot))
+        if (item.isDisabled()) {
+            updater.invoke(this, null)
+        } else {
+            val definition = ArmorDefinitions.getDefinition(ItemUtils.getCustomLocation(item)) ?: ArmorDefinitions.getDefinition(item.get(DataComponents.ITEM_MODEL))
+            updater.invoke(this, definition?.resolve(item, entity, slot))
 
-        definition?.partVisibility?.forEach { (part, state) ->
-            this.partVisibility.compute(part) { _, existing ->
-                when {
-                    existing == null -> state
-                    else -> PartVisibilityState(
-                        overlay = existing.overlay || state.overlay,
-                        base = existing.base || state.base,
-                    )
+            definition?.partVisibility?.forEach { (part, state) ->
+                this.partVisibility.compute(part) { _, existing ->
+                    when {
+                        existing == null -> state
+                        else -> PartVisibilityState(
+                            overlay = existing.overlay || state.overlay,
+                            base = existing.base || state.base,
+                        )
+                    }
                 }
             }
         }

@@ -41,6 +41,7 @@ public class ItemModelResolverMixin {
     ) {
         if (manager == null || state == null || VisualItemAccessorKt.getVisualItem(stack) != null) return original;
         if (!state.catharsis$canFallthrough()) return original;
+        if (ImcHandler.isDisabled(stack)) return original;
 
         var isCarried = McPlayer.INSTANCE.getSelf() instanceof LocalPlayer player && player.containerMenu.getCarried() == stack;
         var slot = AbstractContainerScreenHook.SLOT.get();

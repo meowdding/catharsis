@@ -10,4 +10,6 @@ public interface ItemStackHook {
     void catharsis$setExtraId(@NotNull Identifier id);
     @Nullable Identifier catharsis$getExtraId();
 
+    void catharsis$setDisabled(boolean disabled);
+    boolean catharsis$isDisabled();
 }

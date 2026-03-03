@@ -114,11 +114,11 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
         )
         getOptionWidget(option)?.let(line::addChild)
 
-        if (option is PackConfigOption.Separator) {
+        if (option is PackConfigOption.Separator || option is PackConfigOption.Information) {
             return LinearLayout.vertical().apply {
                 this.spacing(2)
                 this.addChild(line)
-                this.addChild(DividerElement(width = 310, height = 1))
+                if (option is PackConfigOption.Separator) this.addChild(DividerElement(width = 310, height = 1))
             }
         }
         return line

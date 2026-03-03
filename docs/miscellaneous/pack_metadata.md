@@ -23,7 +23,7 @@ TODO
       - <TypeIcon type="string"/> The version range (e.g., `>=1.0.0`).
   - <TypeIcon type="array"/> **config**: (Optional) A list of config elements for the settings menu.
     - <TypeIcon type="object"/> **Config Element**:
-      - <TypeIcon type="string"/> **type**: The type of element (`tab`, `dropdown`, `boolean`, or `separator`).
+      - <TypeIcon type="string"/> **type**: The type of element (`tab`, `dropdown`, `boolean`, `information`, or `separator`).
       - <TypeIcon type="string"/> **id**: (Required for inputs) The unique key for this config option, needs to be `[a-z0-9_.-]+`.
       - <TypeIcon type="string"/> **title**: The display name, supporting both string and JSON text component.
       - <TypeIcon type="string"/> **description**: (Optional) A description for the option, supporting both string and JSON text component.

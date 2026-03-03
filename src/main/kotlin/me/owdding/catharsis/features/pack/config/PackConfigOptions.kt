@@ -33,8 +33,13 @@ sealed interface PackConfigOption {
 
     @GenerateCodec
     data class Separator(override val title: Component, override val description: Component) : PackConfigOption {
-
         override val type: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Separator>()
+        override val id: String? = null
+    }
+
+    @GenerateCodec
+    data class Information(override val title: Component, override val description: Component) : PackConfigOption {
+        override val type: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Information>()
         override val id: String? = null
     }
 
@@ -117,6 +122,7 @@ sealed interface PackConfigOption {
 
         init {
             ID_MAPPER.put("separator", CatharsisCodecs.getMapCodec<Separator>())
+            ID_MAPPER.put("information", CatharsisCodecs.getMapCodec<Information>())
             ID_MAPPER.put("boolean", CatharsisCodecs.getMapCodec<Bool>())
             ID_MAPPER.put("dropdown", Dropdown.CODEC)
             ID_MAPPER.put("tab", Tab.CODEC)

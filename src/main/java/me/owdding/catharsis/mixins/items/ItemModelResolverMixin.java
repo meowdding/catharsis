@@ -39,7 +39,7 @@ public class ItemModelResolverMixin {
         @Local(argsOnly = true) ItemStack stack,
         @Local(argsOnly = true) ItemStackRenderState state
     ) {
-        if (manager == null || state == null || VisualItemAccessorKt.getVisualItem(stack) != null) return original;
+        if (manager == null || state == null) return original;
         if (!state.catharsis$canFallthrough()) return original;
 
         var isCarried = McPlayer.INSTANCE.getSelf() instanceof LocalPlayer player && player.containerMenu.getCarried() == stack;

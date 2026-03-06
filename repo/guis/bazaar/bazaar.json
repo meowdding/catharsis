@@ -1,7 +1,7 @@
 {
   "target": {
     "type": "title",
-    "title": "Bazaar ➜.+"
+    "title": "Bazaar ➜ (Farming|Mining|Combat|Woods & Fishes|Oddities|\".+\")"
   },
   "layout": [
     {
@@ -225,6 +225,14 @@
       }
     },
     {
+      "id": "skyblock_gui:bazaar/no_product_found",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "No Product Found"
+      }
+    },
+    {
       "id": "skyblock_gui:bazaar/sell_inventory_now",
       "target": {
         "type": "name",
@@ -262,6 +270,25 @@
         "name": "Bazaar Settings",
         "mode": "equals",
         "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/go_back",
+      "target": {
+        "conditions": [
+          {
+            "name": "Go Back",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "To Bazaar",
+            "mode": "equals",
+            "line": 0,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
       }
     }
   ]

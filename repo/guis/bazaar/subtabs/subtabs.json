@@ -1,0 +1,179 @@
+{
+  "target": {
+    "type": "title",
+    "title": ".+ ➜ .+"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:bazaar/go_back/icon",
+      "target": {
+        "conditions": [
+          {
+            "name": "Go Back",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "To Bazaar",
+            "mode": "equals",
+            "line": 0,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/buy_instantly/icon",
+      "target": {
+        "name": "Buy Instantly",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/sell_instantly/icon",
+      "target": {
+        "name": "Sell Instantly",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/buy_order/icon",
+      "target": {
+        "name": "Create Buy Order",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/sell_offer/icon",
+      "target": {
+        "name": "Create Sell Offer",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/fill_my_inventory/icon",
+      "target": {
+        "name": "Fill my inventory!",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/manage_orders/icon",
+      "target": {
+        "name": "Manage Orders",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/custom_amount/icon",
+      "target": {
+        "conditions": [
+          {
+            "name": "Custom Amount",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "type": "item",
+            "items": "oak_sign"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/custom_amount/invalid",
+      "target": {
+        "conditions": [
+          {
+            "name": "Custom Amount",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "type": "item",
+            "items": "redstone_block"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/direct_mode/icon",
+      "target": {
+        "name": "Direct Mode",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/advanced_mode/icon",
+      "target": {
+        "name": "Advanced Mode",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/view_graphs/icon",
+      "target": {
+        "name": "View Graphs",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/instasell_ignore/icon",
+      "target": {
+        "name": "Instasell Ignore List",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/instasell_ignore/icon/allowed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Instasell Ignore",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Bulk Instasell: Allowed!",
+            "mode": "equals",
+            "line": 4,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/instasell_ignore/icon/ignored",
+      "target": {
+        "conditions": [
+          {
+            "name": "Instasell Ignore",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Bulk Instasell: Ignored!",
+            "mode": "equals",
+            "line": 4,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

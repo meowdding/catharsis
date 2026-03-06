@@ -1,0 +1,665 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Auctions.+"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:generic/miscellaneous/filler",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "is_tooltip_hidden"
+          },
+          {
+            "type": "item",
+            "items": [
+              "yellow_stained_glass_pane",
+              "blue_stained_glass_pane",
+              "green_stained_glass_pane",
+              "red_stained_glass_pane",
+              "orange_stained_glass_pane",
+              "purple_stained_glass_pane"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/weapons/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Weapons",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/weapons/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Weapons",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/armor/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Armor",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/armor/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Armor",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/accessories/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Accessories",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/accessories/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Accessories",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/consumables/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Consumables",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/consumables/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Consumables",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/cosmetics/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Cosmetics",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/cosmetics/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Cosmetics",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/tools_and_misc/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tools & Misc",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently browsing!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/tools_and_misc/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tools & Misc",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view items!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/reset_settings/icon",
+      "target": {
+        "name": "Reset Settings",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/sort/highest_bid",
+      "target": {
+        "conditions": [
+          {
+            "name": "Sort",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Highest Bid",
+            "mode": "equals",
+            "line": 1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/sort/highest_price",
+      "target": {
+        "conditions": [
+          {
+            "name": "Sort",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Highest Price",
+            "mode": "equals",
+            "line": 1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/sort/lowest_bid",
+      "target": {
+        "conditions": [
+          {
+            "name": "Sort",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Lowest Bid",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/sort/lowest_price",
+      "target": {
+        "conditions": [
+          {
+            "name": "Sort",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Lowest Price",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/sort/ending_soon",
+      "target": {
+        "conditions": [
+          {
+            "name": "Sort",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Ending soon",
+            "mode": "equals",
+            "line": 3,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/sort/random",
+      "target": {
+        "conditions": [
+          {
+            "name": "Sort",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Random",
+            "mode": "equals",
+            "line": 4,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/sort/most_bids",
+      "target": {
+        "conditions": [
+          {
+            "name": "Sort",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Most Bids",
+            "mode": "equals",
+            "line": 4,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/item_tier/no_filter",
+      "target": {
+        "conditions": [
+          {
+            "name": "Item Tier",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ No filter",
+            "mode": "equals",
+            "line": 1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/item_tier/common",
+      "target": {
+        "conditions": [
+          {
+            "name": "Item Tier",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Common",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/item_tier/uncommon",
+      "target": {
+        "conditions": [
+          {
+            "name": "Item Tier",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Uncommon",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/item_tier/rare",
+      "target": {
+        "conditions": [
+          {
+            "name": "Item Tier",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Rare",
+            "mode": "equals",
+            "line": 3,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/item_tier/epic",
+      "target": {
+        "conditions": [
+          {
+            "name": "Item Tier",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Epic",
+            "mode": "equals",
+            "line": 4,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/item_tier/legendary",
+      "target": {
+        "conditions": [
+          {
+            "name": "Item Tier",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Legendary",
+            "mode": "equals",
+            "line": 5,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/item_tier/mythic",
+      "target": {
+        "conditions": [
+          {
+            "name": "Item Tier",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Mythic",
+            "mode": "equals",
+            "line": 6,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/item_tier/divine",
+      "target": {
+        "conditions": [
+          {
+            "name": "Item Tier",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Divine",
+            "mode": "equals",
+            "line": 7,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/item_tier/special",
+      "target": {
+        "conditions": [
+          {
+            "name": "Item Tier",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Special",
+            "mode": "equals",
+            "line": 8,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/item_tier/very_special",
+      "target": {
+        "conditions": [
+          {
+            "name": "Item Tier",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Very Special",
+            "mode": "equals",
+            "line": 9,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/item_tier/ultimate",
+      "target": {
+        "conditions": [
+          {
+            "name": "Item Tier",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Ultimate",
+            "mode": "equals",
+            "line": 10,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/bin_filter/show_all",
+      "target": {
+        "conditions": [
+          {
+            "name": "BIN Filter",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Show All",
+            "mode": "equals",
+            "line": 1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/bin_filter/bin_only",
+      "target": {
+        "conditions": [
+          {
+            "name": "BIN Filter",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ BIN Only",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:auction_house/auctions_browser/bin_filter/auctions_only",
+      "target": {
+        "conditions": [
+          {
+            "name": "BIN Filter",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "▶ Auctions Only",
+            "mode": "equals",
+            "line": 3,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

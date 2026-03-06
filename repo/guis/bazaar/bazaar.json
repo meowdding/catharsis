@@ -1,0 +1,295 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Bazaar ➜ (Farming|Mining|Combat|Woods & Fishes|Oddities|\".+\")"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:generic/miscellaneous/filler",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "is_tooltip_hidden"
+          },
+          {
+            "type": "item",
+            "items": [
+              "yellow_stained_glass_pane",
+              "cyan_stained_glass_pane",
+              "red_stained_glass_pane",
+              "orange_stained_glass_pane",
+              "pink_stained_glass_pane",
+              "lime_stained_glass_pane"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/farming/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Farming",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently viewing!",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/farming/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Farming",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view!",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/mining/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mining",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently viewing!",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/mining/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mining",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view!",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/combat/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Combat",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently viewing!",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/combat/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Combat",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view!",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/woods_and_fishes/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Woods & Fishes",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently viewing!",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/woods_and_fishes/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Woods & Fishes",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view!",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/oddities/selected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Oddities",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Currently viewing!",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/oddities/unselected",
+      "target": {
+        "conditions": [
+          {
+            "name": "Oddities",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Click to view!",
+            "mode": "equals",
+            "line": 2,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/search",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Search"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/no_product_found",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "No Product Found"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/sell_inventory_now",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Sell Inventory Now"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/sell_sacks_now",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Sell Sacks Now"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/manage_orders/icon",
+      "target": {
+        "name": "Manage Orders",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/bazaar_history/icon",
+      "target": {
+        "name": "Bazaar History",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/bazaar_settings/icon",
+      "target": {
+        "name": "Bazaar Settings",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:bazaar/go_back",
+      "target": {
+        "conditions": [
+          {
+            "name": "Go Back",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "To Bazaar",
+            "mode": "equals",
+            "line": 0,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

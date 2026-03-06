@@ -29,6 +29,30 @@
       }
     },
     {
+      "id": "skyblock_gui:generic/miscellaneous/cancel",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Cancel"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/miscellaneous/confirm",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Confirm"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/miscellaneous/warning",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "WARNING"
+      }
+    },
+    {
       "id": "skyblock_gui:generic/settings/icon",
       "target": {
         "type": "name",
@@ -70,14 +94,6 @@
             "name": "Click to enable!"
           }
         ]
-      }
-    },
-    {
-      "id": "skyblock_gui:generic/settings/disabled",
-      "target": {
-        "type": "name",
-        "mode": "equals",
-        "name": "Settings"
       }
     },
     {

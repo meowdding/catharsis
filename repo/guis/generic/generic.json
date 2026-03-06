@@ -97,14 +97,6 @@
       }
     },
     {
-      "id": "skyblock_gui:generic/settings/disabled",
-      "target": {
-        "type": "name",
-        "mode": "equals",
-        "name": "Settings"
-      }
-    },
-    {
       "id": "skyblock_gui:generic/navigation/close",
       "target": {
         "type": "name",
@@ -165,6 +157,22 @@
         "type": "name",
         "mode": "equals",
         "name": "Sell Item"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/inventory_management/sell_inventory_now",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Sell Inventory Now"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/inventory_management/sell_sacks_now",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Sell Sacks Now"
       }
     },
     {

@@ -1,0 +1,48 @@
+{
+  "target": {
+    "title": "Dungeon Rules and Tips",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:npc/mort/catacombs_gate/rules_and_tips/general_changes",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "General Changes"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/mort/catacombs_gate/rules_and_tips/combat_changes",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Combat Changes"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/mort/catacombs_gate/rules_and_tips/enchantment_changes",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Enchantment Changes"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/mort/catacombs_gate/rules_and_tips/death_rules",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Death Rules"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/mort/catacombs_gate/rules_and_tips/tips",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Tips"
+      }
+    }
+  ]
+}

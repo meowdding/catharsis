@@ -1,0 +1,67 @@
+{
+  "target": {
+    "title": "Dungeoneering",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon",
+      "target": {
+        "name": "The Catacombs \\d+",
+        "mode": "regex",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/not_coming_soon/icon",
+      "target": {
+        "name": "Not Coming Soon",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/healer/icon",
+      "target": {
+        "name": "Healer \\d+",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/mage/icon",
+      "target": {
+        "name": "Mage \\d+",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/berserk/icon",
+      "target": {
+        "name": "Berserk \\d+",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/icon",
+      "target": {
+        "name": "Archer \\d+",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/tank/icon",
+      "target": {
+        "name": "Tank \\d+",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/currency/essences/icon",
+      "target": {
+        "name": "Your Essence",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    }
+  ]
+}

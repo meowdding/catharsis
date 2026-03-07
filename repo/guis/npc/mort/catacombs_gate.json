@@ -1,0 +1,1036 @@
+{
+  "target": {
+    "title": "Catacombs Gate",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/entrance/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Entrance"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "✗ Combat Skill 15."
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/entrance/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Entrance"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "✓ Combat Skill 15."
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f1/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor I"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -5,
+                "name": "✗ Catacombs Skill 1."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ The Catacombs Entrance"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f1/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor I"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -5,
+            "name": "✓ Catacombs Skill 1."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ The Catacombs Entrance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f2/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor II"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Catacombs Skill 3."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -3,
+                "name": "✗ The Catacombs Floor I Completion."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f2/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor II"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Catacombs Skill 3."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "✓ The Catacombs Floor I Completion."
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f3/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor III"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Catacombs Skill 5."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -3,
+                "name": "✗ The Catacombs Floor II Completion."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f3/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor III"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Catacombs Skill 5."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "✓ The Catacombs Floor II Completion."
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f4/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor IV"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Catacombs Skill 9."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -3,
+                "name": "✗ The Catacombs Floor III Completion."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f4/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor IV"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Catacombs Skill 9."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "✓ The Catacombs Floor III Completion."
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f5/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor V"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Catacombs Skill 14."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -3,
+                "name": "✗ The Catacombs Floor IV Completion."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f5/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor V"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Catacombs Skill 14."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "✓ The Catacombs Floor IV Completion."
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f6/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor VI"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Catacombs Skill 19."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -3,
+                "name": "✗ The Catacombs Floor V Completion."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f6/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor VI"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Catacombs Skill 19."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "✓ The Catacombs Floor V Completion."
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f7/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor VII"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Catacombs Skill 24."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -3,
+                "name": "✗ The Catacombs Floor VI Completion."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f7/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor VII"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Catacombs Skill 24."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "✓ The Catacombs Floor VI Completion."
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/master_entrance/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "items": "red_stained_glass_pane"
+          },
+          {
+            "type": "slot",
+            "mode": "equals",
+            "slot": 11
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m1/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor I"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -45,
+                "name": "✗ Catacombs Skill 24."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ The Catacombs Floor VII"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m1/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor I"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -5,
+            "name": "✓ Catacombs Skill 24."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ The Catacombs Floor VII"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m2/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor II"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -45,
+                "name": "✗ Catacombs Skill 26."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Master Mode The Catacombs Floor"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m2/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor II"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -5,
+            "name": "✓ Catacombs Skill 26."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Master Mode The Catacombs Floor"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m3/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor III"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -5,
+                "name": "✗ Catacombs Skill 28."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Master Mode The Catacombs Floor"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m3/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor III"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -5,
+            "name": "✓ Catacombs Skill 28."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Master Mode The Catacombs Floor"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m4/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor IV"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -5,
+                "name": "✗ Catacombs Skill 30."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Master Mode The Catacombs Floor"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m4/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor IV"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -5,
+            "name": "✓ Catacombs Skill 30."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Master Mode The Catacombs Floor"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m5/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor V"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -5,
+                "name": "✗ Catacombs Skill 32."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Master Mode The Catacombs Floor"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m5/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor V"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -5,
+            "name": "✓ Catacombs Skill 32."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Master Mode The Catacombs Floor"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m6/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor VI"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -5,
+                "name": "✗ Catacombs Skill 34."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Master Mode The Catacombs Floor"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m6/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor VI"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -5,
+            "name": "✓ Catacombs Skill 34."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Master Mode The Catacombs Floor"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m7/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor VII "
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -5,
+                "name": "✗ Catacombs Skill 36."
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -4,
+                "name": "✗ Master Mode The Catacombs Floor"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m7/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor VII"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -5,
+            "name": "✓ Catacombs Skill 36."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Master Mode The Catacombs Floor"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m7/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "MM The Catacombs - Floor VII"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -5,
+            "name": "✓ Catacombs Skill 36."
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -4,
+            "name": "✓ Master Mode The Catacombs Floor"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/mort/catacombs_gate/master_mode_switch/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Master Mode"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/healer/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Dungeon Classes"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "Currently Selected: Healer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/mage/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Dungeon Classes"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "Currently Selected: Mage"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/berserk/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Dungeon Classes"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "Currently Selected: Berserk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Dungeon Classes"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "Currently Selected: Archer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/tank/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Dungeon Classes"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -3,
+            "name": "Currently Selected: Tank"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/mort/catacombs_gate/party_finder/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Find a Party"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/mort/catacombs_gate/auto_ready/icon/enabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Toggle Auto Ready Up"
+          },
+          {
+            "type": "item",
+            "items": "lime_stained_glass"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/mort/catacombs_gate/auto_ready/icon/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Toggle Auto Ready Up"
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/mort/catacombs_gate/auto_ready/icon/disabled",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Toggle Auto Ready Up"
+          },
+          {
+            "type": "item",
+            "items": "red_stained_glass"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/catacombs_profile/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Catacombs Profile"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/mort/catacombs_gate/rules_and_tips/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Dungeon Rules and Tips"
+      }
+    }
+  ]
+}

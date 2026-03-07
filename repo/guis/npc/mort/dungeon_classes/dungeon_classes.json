@@ -1,0 +1,93 @@
+{
+  "target": {
+    "title": "Dungeon Classes",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:classes/healer/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "mode": "equals",
+            "slot": 11
+          },
+          {
+            "type": "item",
+            "items": "splash_potion"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/mage/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "mode": "equals",
+            "slot": 12
+          },
+          {
+            "type": "item",
+            "items": "blaze_rod"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/berserk/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "mode": "equals",
+            "slot": 13
+          },
+          {
+            "type": "item",
+            "items": "iron_sword"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "mode": "equals",
+            "slot": 14
+          },
+          {
+            "type": "item",
+            "items": "bow"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/tank/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "slot",
+            "mode": "equals",
+            "slot": 15
+          },
+          {
+            "type": "item",
+            "items": "leather_chestplate"
+          }
+        ]
+      }
+    }
+  ]
+}

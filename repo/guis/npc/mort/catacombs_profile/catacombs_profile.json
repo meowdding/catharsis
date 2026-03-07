@@ -1,0 +1,518 @@
+{
+  "target": {
+    "title": "Catacombs Profile",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/entrance/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Entrance"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/entrance/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Entrance"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f1/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor I"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f1/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor I"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f2/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor II"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f2/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor II"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f3/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor III"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f3/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor III"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f4/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor IV"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f4/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor IV"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f5/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor V"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f5/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor V"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f6/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor VI"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f6/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor VI"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f7/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor VII"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/f7/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "The Catacombs - Floor VII"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m1/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor I"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m1/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor I"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m2/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor II"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m2/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor II"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m3/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor III"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m3/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor III"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m4/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor IV"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m4/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor IV"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m5/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor V"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m5/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor V"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m6/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor VI"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m6/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor VI"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m7/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor VII"
+          },
+          {
+            "type": "item",
+            "items": "gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/dungeoneering/catacombs/icon/m7/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Master Mode The Catacombs - Floor VII"
+          },
+          {
+            "type": "item",
+            "items": "player_head"
+          }
+        ]
+      }
+    }
+  ]
+}

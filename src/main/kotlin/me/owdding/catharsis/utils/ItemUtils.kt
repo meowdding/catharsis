@@ -79,7 +79,7 @@ object ItemUtils {
     }
 
     @JvmStatic
-    fun resolveIdentifier(predicate: Predicate<Identifier>, stack: ItemStack): Identifier? {
+    fun resolveModelId(predicate: Predicate<Identifier>, stack: ItemStack): Identifier? {
         val extraId = stack.getCatharsisId()
         if (extraId != null) {
             return extraId

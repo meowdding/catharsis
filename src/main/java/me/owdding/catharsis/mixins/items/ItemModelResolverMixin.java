@@ -45,7 +45,7 @@ public class ItemModelResolverMixin {
         var isCarried = McPlayer.INSTANCE.getSelf() instanceof LocalPlayer player && player.containerMenu.getCarried() == stack;
         var slot = AbstractContainerScreenHook.SLOT.get();
         var guiId = isCarried ? GuiDefinitions.getSlot(stack) : (slot != null ? GuiDefinitions.getSlot(slot.index) : null);
-        var itemId = ItemUtils.resolveIdentifier(manager::catharsis$hasCustomModel, stack);
+        var itemId = ItemUtils.resolveModelId(manager::catharsis$hasCustomModel, stack);
 
         final Identifier model;
         if (guiId != null) {

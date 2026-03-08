@@ -19,7 +19,6 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import tech.thatgravyboat.skyblockapi.api.item.VisualItemAccessorKt;
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer;
 
 @Mixin(ItemModelResolver.class)
@@ -46,17 +45,14 @@ public class ItemModelResolverMixin {
         var isCarried = McPlayer.INSTANCE.getSelf() instanceof LocalPlayer player && player.containerMenu.getCarried() == stack;
         var slot = AbstractContainerScreenHook.SLOT.get();
         var guiId = isCarried ? GuiDefinitions.getSlot(stack) : (slot != null ? GuiDefinitions.getSlot(slot.index) : null);
-        var itemId = ItemUtils.INSTANCE.getCustomLocation(stack);
-        var extraId = ImcHandler.getCatharsisId(stack);
+        var itemId = ItemUtils.resolveIdentifier(manager::catharsis$hasCustomModel, stack);
 
         final Identifier model;
         if (guiId != null) {
             model = guiId;
-        } else if (extraId != null) {
-            model = extraId;
         } else if (itemId != null) {
             model = itemId;
-        }  else {
+        } else {
             model = MiscItemModels.getModel(stack);
         }
 

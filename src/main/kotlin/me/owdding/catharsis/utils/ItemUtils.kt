@@ -1,5 +1,6 @@
 package me.owdding.catharsis.utils
 
+import me.owdding.catharsis.features.imc.ImcHandler.getCatharsisId
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.types.colors.CatppuccinColors
 import me.owdding.ktmodules.Module
@@ -18,6 +19,7 @@ import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.onClick
+import java.util.function.Predicate
 
 @Module
 object ItemUtils {
@@ -69,6 +71,31 @@ object ItemUtils {
             itemId.isEnchantment -> resolveEnchantment(itemId)
             else -> null
         }
+    }
+
+    fun getHypixelLocation(item: ItemStack): Identifier? {
+        val itemId = item[DataTypes.ID]?.lowercase() ?: return null
+        return Identifier.tryBuild("skyblock", itemId)
+    }
+
+    @JvmStatic
+    fun resolveIdentifier(predicate: Predicate<Identifier>, stack: ItemStack): Identifier? {
+        val extraId = stack.getCatharsisId()
+        if (extraId != null) {
+            return extraId
+        }
+
+        val itemId = getCustomLocation(stack)
+        if (itemId != null && predicate.test(itemId)) {
+            return itemId
+        }
+
+        val baseId = getHypixelLocation(stack)
+        if (baseId != null && predicate.test(baseId)) {
+            return baseId
+        }
+
+        return null
     }
 
     private fun SkyBlockId.cleanOrNull() = this.cleanId.lowercase().takeUnless { it == UNKNOWN }

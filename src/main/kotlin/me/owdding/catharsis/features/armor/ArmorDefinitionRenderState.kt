@@ -56,7 +56,7 @@ object ArmorDefinitionRenderStateHandler {
         if (item.isDisabled()) {
             updater.invoke(this, null)
         } else {
-            val definition = ArmorDefinitions.getDefinition(ItemUtils.getCustomLocation(item)) ?: ArmorDefinitions.getDefinition(item.get(DataComponents.ITEM_MODEL))
+            val definition = ArmorDefinitions.getDefinition(ItemUtils.resolveIdentifier(ArmorDefinitions::hasDefinition, item)) ?: ArmorDefinitions.getDefinition(item.get(DataComponents.ITEM_MODEL))
             updater.invoke(this, definition?.resolve(item, entity, slot))
 
             definition?.partVisibility?.forEach { (part, state) ->

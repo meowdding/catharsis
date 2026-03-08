@@ -14,7 +14,6 @@ import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.PlaceholderLookupProvider
 import net.minecraft.util.profiling.ProfilerFiller
-import tech.thatgravyboat.skyblockapi.helpers.McClient
 
 @Module
 object ArmorDefinitions : SimplePreparableReloadListener<Map<Identifier, ArmorDefinition>>() {
@@ -56,6 +55,11 @@ object ArmorDefinitions : SimplePreparableReloadListener<Map<Identifier, ArmorDe
     @JvmStatic
     fun getDefinition(id: Identifier?): ArmorDefinition? {
         return if (id == null) null else definitions[id]
+    }
+
+    @JvmStatic
+    fun hasDefinition(id: Identifier?): Boolean {
+        return getDefinition(id) != null
     }
 
     init {

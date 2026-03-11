@@ -1,0 +1,147 @@
+{
+  "target": {
+    "type": "title",
+    "title": ".+Minion [IVXLC]+"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:minion/ideal_layout/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Ideal Layout"
+      }
+    },
+    {
+      "id": "skyblock_gui:minion/next_tier/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Next Tier"
+      }
+    },
+    {
+      "id": "skyblock_gui:minion/skin",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Minion Skin Slot"
+      }
+    },
+    {
+      "id": "skyblock_gui:minion/fuel",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Fuel"
+      }
+    },
+    {
+      "id": "skyblock_gui:minion/automated_shipping",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Automated Shipping"
+      }
+    },
+    {
+      "id": "skyblock_gui:minion/upgrade/1",
+      "target": {
+        "type": "catharsis:all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Upgrade Slot"
+          },
+          {
+            "type": "slot",
+            "slot": 37
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:minion/upgrade/2",
+      "target": {
+        "type": "catharsis:all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Upgrade Slot"
+          },
+          {
+            "type": "slot",
+            "slot": 46
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:minion/quick_upgrade/unaffordable",
+      "target": {
+        "type": "catharsis:all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Quick-Upgrade Minion"
+          },
+          {
+            "type": "lore",
+            "mode": "regex",
+            "line": 6,
+            "name": "You need [\\d]+ more.+"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:minion/quick_upgrade/affordable",
+      "target": {
+        "type": "catharsis:all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Quick-Upgrade Minion"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to upgrade!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:minion/quick_upgrade/maxed",
+      "target": {
+        "type": "catharsis:all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Quick-Upgrade Minion"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 3,
+            "name": "This minion has reached the maximum"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:minion/pickup",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Pickup Minion"
+      }
+    }
+  ]
+}

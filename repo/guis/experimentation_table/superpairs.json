@@ -1,0 +1,56 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Superpairs ➜ Stakes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:experimentation_table/superpairs/beginner",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Beginner Experiment"
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/superpairs/high",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "High Experiment"
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/superpairs/grand",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Grand Experiment"
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/superpairs/supreme",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Supreme Experiment"
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/superpairs/transcendent",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Transcendent Experiment"
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/superpairs/metaphysical",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Metaphysical Experiment"
+      }
+    }
+  ]
+}

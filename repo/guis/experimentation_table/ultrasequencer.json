@@ -1,0 +1,32 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Ultrasequencer ➜ Stakes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:experimentation_table/ultrasequencer/supreme",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Supreme Experiment"
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/ultrasequencer/transcendent",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Transcendent Experiment"
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/ultrasequencer/metaphysical",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Metaphysical Experiment"
+      }
+    }
+  ]
+}

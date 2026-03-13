@@ -1,0 +1,133 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Experimentation Table"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:experimentation_table/superpairs/unavailable",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Superpairs"
+          },
+          {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Play add-ons first!"
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Experiments on cooldown!"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/superpairs/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Superpairs"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to play!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/chronomatron/unavailable",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Chronomatron"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "On cooldown!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/chronomatron/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Chronomatron"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to play!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/ultrasequencer/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Ultrasequencer"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "Click to play!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/ultrasequencer/unavailable",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Ultrasequencer"
+          },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": -1,
+            "name": "On cooldown!"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1679 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Storage"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:storage/overworld/ender_chest/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Ender Chest"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/ender_chest/page_1/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Ender Chest Page 1"
+          },
+          {
+            "type": "item",
+            "items": "purple_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/ender_chest/page_2/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Ender Chest Page 2"
+          },
+          {
+            "type": "item",
+            "items": "purple_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/ender_chest/page_3/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Ender Chest Page 3"
+          },
+          {
+            "type": "item",
+            "items": "purple_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/ender_chest/page_4/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Ender Chest Page 4"
+          },
+          {
+            "type": "item",
+            "items": "purple_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/ender_chest/page_5/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Ender Chest Page 5"
+          },
+          {
+            "type": "item",
+            "items": "purple_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/ender_chest/page_6/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Ender Chest Page 6"
+          },
+          {
+            "type": "item",
+            "items": "purple_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/ender_chest/page_7/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Ender Chest Page 7"
+          },
+          {
+            "type": "item",
+            "items": "purple_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/ender_chest/page_8/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Ender Chest Page 8"
+          },
+          {
+            "type": "item",
+            "items": "purple_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/ender_chest/page_9/unlocked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Ender Chest Page 9"
+          },
+          {
+            "type": "item",
+            "items": "purple_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Backpacks"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_1/locked",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Locked Backpack Slot 1"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_1/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 1"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_1/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 1" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_1/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 1" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_1/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 1" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_1/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 1" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_1/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 1" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_2/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 2"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_2/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 2" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_2/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 2" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_2/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 2" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_2/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 2" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_2/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 2" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_3/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 3"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_3/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 3" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_3/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 3" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_3/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 3" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_3/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 3" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_3/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 3" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_4/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 4"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_4/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 4" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_4/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 4" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_4/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 4" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_4/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 4" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_4/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 4" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_5/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 5"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_5/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 5" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_5/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 5" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_5/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 5" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_5/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 5" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_5/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 5" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_6/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 6"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_6/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 6" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_6/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 6" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_6/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 6" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_6/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 6" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_6/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 6" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_7/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 7"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_7/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 7" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_7/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 7" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_7/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 7" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_7/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 7" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_7/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 7" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_8/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 8"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_8/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 8" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_8/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 8" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_8/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 8" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_8/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 8" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_8/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 8" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_9/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 9"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_9/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 9" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_9/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 9" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_9/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 9" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_9/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 9" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_9/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 9" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_10/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 10"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_10/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 10" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_10/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 10" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_10/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 10" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_10/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 10" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_10/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 10" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_11/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 11"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_11/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 11" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_11/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 11" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_11/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 11" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_11/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 11" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_11/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 11" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_12/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 12"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_12/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 12" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_12/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 12" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_12/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 12" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_12/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 12" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_12/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 12" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_13/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 13"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_13/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 13" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_13/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 13" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_13/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 13" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_13/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 13" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_13/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 13" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_14/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 14"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_14/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 14" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_14/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 14" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_14/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 14" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_14/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 14" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_14/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 14" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_15/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 15"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_15/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 15" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_15/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 15" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_15/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 15" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_15/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 15" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_15/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 15" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_16/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 16"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_16/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 16" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_16/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 16" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_16/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 16" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_16/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 16" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_16/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 16" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_17/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 17"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_17/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 17" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_17/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 17" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_17/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 17" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_17/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 17" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_17/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 17" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_18/empty",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Empty Backpack Slot 18"
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_18/small",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 18" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Small Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_18/medium",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 18" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Medium Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_18/large",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 18" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Large Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_18/greater",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 18" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Greater Backpack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:storage/overworld/backpacks/slot_18/jumbo",
+      "target": {
+        "type": "all",
+        "conditions": [
+          { "type": "name", "mode": "equals", "name": "Backpack Slot 18" },
+          {
+            "type": "lore",
+            "mode": "equals",
+            "line": 0,
+            "name": "Jumbo Backpack"
+          }
+        ]
+      }
+    }
+  ]
+}

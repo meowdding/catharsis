@@ -1,0 +1,48 @@
+{
+  "target": {
+    "type": "title",
+    "title": ".+Backpack \\(Slot #[\\d]+\\)"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:generic/navigation/go_back",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Back"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/first_page",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "« First Page"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/previous_page",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "← Previous Page"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/next_page",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Next Page →"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/last_page",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Last Page »"
+      }
+    }
+  ]
+}

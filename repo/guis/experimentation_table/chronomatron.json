@@ -1,0 +1,48 @@
+{
+  "target": {
+    "type": "title",
+    "title": "Chronomatron ➜ Stakes"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:experimentation_table/chronomatron/high",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "High Experiment"
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/chronomatron/grand",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Grand Experiment"
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/chronomatron/supreme",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Supreme Experiment"
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/chronomatron/transcendent",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Transcendent Experiment"
+      }
+    },
+    {
+      "id": "skyblock_gui:experimentation_table/chronomatron/metaphysical",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Metaphysical Experiment"
+      }
+    }
+  ]
+}

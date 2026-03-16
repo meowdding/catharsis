@@ -9,6 +9,7 @@ import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.types.suggestion.IterableSuggestionProvider
 import me.owdding.ktmodules.Module
+import net.minecraft.server.packs.repository.Pack
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.ResourceManagerReloadListener
 import net.minecraft.util.GsonHelper
@@ -43,6 +44,7 @@ data class PackConfig(
     }
 
     fun options(): List<PackConfigOption>? = PackConfigHandler.catharsisPackOptions[packId]?.takeUnless(List<PackConfigOption>::isEmpty)
+    fun options(): List<PackConfigOption>? = PackConfigHandler.catharsisPacks.find { it.catharsisId == packId }?.config?.takeUnless { it.isEmpty() }
 }
 
 @Module
@@ -56,6 +58,7 @@ object PackConfigHandler : ResourceManagerReloadListener {
     private var saveRequestedAt = Instant.DISTANT_PAST
 
     var catharsisPackOptions: Map<String, List<PackConfigOption>?> = emptyMap()
+    var catharsisPacks: List<CatharsisPack> = emptyList()
         private set
 
     init {
@@ -112,7 +115,7 @@ object PackConfigHandler : ResourceManagerReloadListener {
     @Subscription
     fun onCommand(event: RegisterCommandsEvent) {
         event.register("catharsis config") {
-            thenCallback("id", StringArgumentType.string(), IterableSuggestionProvider(catharsisPackOptions.keys)) {
+            thenCallback("id", StringArgumentType.string(), IterableSuggestionProvider(catharsisPackOptions.map { it.catharsisId })) {
                 val id = argument<String>("id")
                 val options = getConfig(id).options() ?: run {
                     Text.of("No config found for $id").sendWithPrefix()
@@ -120,10 +123,23 @@ object PackConfigHandler : ResourceManagerReloadListener {
                 }
                 McClient.setScreenAsync { PackConfigScreen(McScreen.self, id, options) }
             }
+            callback { McClient.setScreenAsync { PackConfigsScreen(catharsisPacks) } }
         }
     }
 
     override fun onResourceManagerReload(resourceManager: ResourceManager) {
+        catharsisPacks = McClient.self.resourcePackRepository.selectedPacks.mapNotNull {
+            val meta = it.open().getMetadataSection(CatharsisMetadataSection.TYPE) ?: return@mapNotNull null
+            CatharsisPack(it, meta)
+        }
+    }
+
+    data class CatharsisPack(
+        val pack: Pack,
+        val metaData: CatharsisMetadataSection,
+    ) {
+        val catharsisId = metaData.id
+        val config get() = metaData.config
         catharsisPackOptions = resourceManager.listPacks().toList().mapNotNull { pack ->
             val meta = pack.getMetadataSection(CatharsisMetadataSection.TYPE) ?: return@mapNotNull null
             val options = PackConfigOption.fromResource(pack)

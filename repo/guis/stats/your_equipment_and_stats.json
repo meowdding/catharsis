@@ -175,15 +175,17 @@
     {
       "id": "skyblock_gui:stats/hunting/icon",
       "target": {
-        "type": "catharsis:slot",
-        "slot": 32
+        "type": "name",
+        "mode": "equals",
+        "name": "Hunting Stats"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/icon",
       "target": {
-        "type": "catharsis:slot",
-        "slot": 34
+        "type": "name",
+        "mode": "equals",
+        "name": "Wisdom Stats"
       }
     },
     {
@@ -237,15 +239,17 @@
     {
       "id": "skyblock_gui:active_effects",
       "target": {
-        "type": "catharsis:slot",
-        "slot": 50
+        "type": "name",
+        "mode": "equals",
+        "name": "Active Effects"
       }
     },
     {
       "id": "skyblock_gui:skyblock_achievements",
       "target": {
-        "type": "catharsis:slot",
-        "slot": 51
+        "type": "name",
+        "mode": "equals",
+        "name": "Skyblock Achievements"
       }
     }
   ]

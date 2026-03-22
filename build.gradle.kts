@@ -132,10 +132,17 @@ tasks.processResources {
     dependsOn(gitRef, gitBranch, buildRepo)
     mustRunAfter(gitRef, gitBranch, buildRepo)
 
+    val range = if (versionedCatalog.has("minecraft.range")) {
+        versionedCatalog.versions["minecraft.range"].toString()
+    } else {
+        val start = versionedCatalog.versions.getOrFallback("minecraft.start", "minecraft")
+        val end = versionedCatalog.versions.getOrFallback("minecraft.end", "minecraft")
+        ">=$start <=$end"
+    }
+
     val replacements = mapOf(
         "version" to version,
-        "minecraft_start" to versionedCatalog.versions.getOrFallback("minecraft.start", "minecraft"),
-        "minecraft_end" to versionedCatalog.versions.getOrFallback("minecraft.end", "minecraft"),
+        "minecraft_range" to range,
         "fabric_lang_kotlin" to libs.versions.fabric.language.kotlin.get(),
         "sbapi" to libs.versions.skyblockapi.get(),
     )

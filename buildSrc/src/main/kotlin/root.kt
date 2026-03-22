@@ -15,8 +15,10 @@ data class ForwardingVersionCatalog(
 ) {
     constructor(vararg catalogs: VersionCatalog) : this(listOf(*catalogs))
 
-    private fun <T> first(name: String, lookup: VersionCatalog.(String) -> Optional<T>): T {
-        return catalogs.firstNotNullOf { it.lookup(name).orElse(null) }
+    private fun <T> first(name: String, lookup: VersionCatalog.(String) -> Optional<T>): T = try {
+        catalogs.firstNotNullOf { it.lookup(name).orElse(null) }
+    } catch (e: Exception) {
+        throw RuntimeException(catalogs.joinToString(", ") { it.name } + " - " + name, e)
     }
 
     val libraries: ForwardingProperty<Provider<MinimalExternalModuleDependency>> = ForwardingProperty(this, VersionCatalog::findLibrary)
@@ -29,6 +31,7 @@ data class ForwardingVersionCatalog(
     fun plugin(name: String): Provider<PluginDependency> = first(name, VersionCatalog::findPlugin)
     fun version(name: String): VersionConstraint = first(name, VersionCatalog::findVersion)
 
+    fun has(name: String): Boolean = runCatching { get(name) }.map { true }.getOrDefault(false)
     operator fun get(name: String): Provider<MinimalExternalModuleDependency> = library(name)
 
     data class ForwardingProperty<T>(

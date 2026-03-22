@@ -22,7 +22,7 @@
   ],
   "depends": {
     "fabricloader": ">=0.18.0",
-    "minecraft": ">=${minecraft_start} <=${minecraft_end}",
+    "minecraft": "${minecraft_range}",
     "fabric": "*",
     "fabric-language-kotlin": ">=${fabric_lang_kotlin}",
     "skyblock-api": ">=${sbapi}"

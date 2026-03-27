@@ -114,6 +114,9 @@ data class GuiDefinitionExternalModConfigCondition(
     val value: JsonElement,
 ) : GuiDefinitionCondition {
     val file: Path = McClient.config.resolve(configFile)
+    init {
+        if (!file.normalize().startsWith(McClient.config.normalize())) throw UnsupportedOperationException("Insecure path detected! $file isn't a child of ${McClient.config}")
+    }
 
     val cache = CachedValue(timeToLive = 1.minutes) {
         if (!file.exists()) return@CachedValue false
@@ -147,4 +150,6 @@ data class GuiDefinitionExternalModConfigCondition(
     companion object {
         private val validJsons = listOf("json", "jsonc", "json5")
     }
+
+    override val cost: Int = 25
 }

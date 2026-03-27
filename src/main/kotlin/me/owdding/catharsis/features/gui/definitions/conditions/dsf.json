@@ -1,6 +1,0 @@
-{
-  "type": "external_mod_config",
-  "file": "firmament/<storage.json or whatever>",
-  "path": "<maybe just enabled who even knows>",
-  "value": true
-}

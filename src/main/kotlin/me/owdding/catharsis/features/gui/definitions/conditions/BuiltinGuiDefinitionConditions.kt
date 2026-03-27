@@ -135,9 +135,11 @@ data class GuiDefinitionExternalModConfigCondition(
             if (!FabricLoader.getInstance().isModLoaded(it)) return false
         }
 
-        if (cache.lastUpdated.toEpochMilliseconds() < file.getLastModifiedTime().toMillis()) {
-            cache.invalidate()
-        }
+        runCatching {
+            if (cache.lastUpdated.toEpochMilliseconds() < file.getLastModifiedTime().toMillis()) {
+                cache.invalidate()
+            }
+        }.getOrElse { cache.invalidate() }
 
         return cache.getValue()
     }

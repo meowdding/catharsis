@@ -1,12 +1,24 @@
 package me.owdding.catharsis.features.gui.definitions.conditions
 
+import com.google.gson.JsonElement
+import com.google.gson.JsonParser
 import me.owdding.catharsis.features.gui.definitions.slots.SlotCondition
 import me.owdding.catharsis.features.gui.matchers.RegexTextMatcher
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.utils.CachedValue
+import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
+import net.fabricmc.loader.api.FabricLoader
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
 import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
+import tech.thatgravyboat.skyblockapi.helpers.McClient
+import tech.thatgravyboat.skyblockapi.utils.json.getPath
 import tech.thatgravyboat.skyblockapi.utils.text.TextProperties.stripped
+import java.nio.file.Path
+import kotlin.io.path.exists
+import kotlin.io.path.getLastModifiedTime
+import kotlin.io.path.readText
+import kotlin.time.Duration.Companion.minutes
 
 @GenerateCodec
 data class GuiDefinitionAllCondition(
@@ -91,4 +103,39 @@ data class GuiDefinitionIslandCondition(val islands: Set<SkyBlockIsland>) : GuiD
     override val codec = CatharsisCodecs.getMapCodec<GuiDefinitionIslandCondition>()
 
     override fun matches(screen: AbstractContainerScreen<*>): Boolean = SkyBlockIsland.inAnyIsland(islands)
+}
+
+@GenerateCodec
+data class GuiDefinitionExternalModConfigCondition(
+    val mod: String?,
+    @FieldName("file") val configFile: String,
+    val path: String,
+    val value: JsonElement,
+) : GuiDefinitionCondition {
+    val file: Path = McClient.config.resolve(configFile)
+
+    val cache = CachedValue(
+        timeToLive = 1.minutes
+    ) {
+        if (!file.exists()) return@CachedValue false
+        try {
+            JsonParser.parseString(file.readText()).getPath(path) == value
+        } catch (_: Exception) {
+            false
+        }
+    }
+
+    override val codec = CatharsisCodecs.getMapCodec<GuiDefinitionExternalModConfigCondition>()
+
+    override fun matches(screen: AbstractContainerScreen<*>): Boolean {
+        mod?.let {
+            if (!FabricLoader.getInstance().isModLoaded(it)) return false
+        }
+
+        if (cache.lastUpdated.toEpochMilliseconds() < file.getLastModifiedTime().toMillis()) {
+            cache.invalidate()
+        }
+
+        return cache.getValue()
+    }
 }

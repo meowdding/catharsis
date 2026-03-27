@@ -2,6 +2,7 @@ package me.owdding.catharsis.features.gui.definitions.conditions
 
 import com.google.gson.JsonElement
 import com.google.gson.JsonParser
+import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.gui.definitions.slots.SlotCondition
 import me.owdding.catharsis.features.gui.matchers.RegexTextMatcher
 import me.owdding.catharsis.generated.CatharsisCodecs
@@ -114,10 +115,12 @@ data class GuiDefinitionExternalModConfigCondition(
 ) : GuiDefinitionCondition {
     val file: Path = McClient.config.resolve(configFile)
 
-    val cache = CachedValue(
-        timeToLive = 1.minutes
-    ) {
+    val cache = CachedValue(timeToLive = 1.minutes) {
         if (!file.exists()) return@CachedValue false
+        if (validJsons.any { file.endsWith(it) }) {
+            Catharsis.error("Non json defined external mod config gui condition for path $configFile. This will not work.")
+            return@CachedValue false
+        }
         try {
             JsonParser.parseString(file.readText()).getPath(path) == value
         } catch (_: Exception) {
@@ -137,5 +140,9 @@ data class GuiDefinitionExternalModConfigCondition(
         }
 
         return cache.getValue()
+    }
+
+    companion object {
+        private val validJsons = listOf("json", "jsonc", "json5")
     }
 }

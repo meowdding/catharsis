@@ -40,8 +40,7 @@ object IncludedCodecs {
     @IncludedCodec
     val regexCodec: Codec<Regex> = Codec.STRING.xmap({ str -> Regex(str) }, { regex -> regex.pattern })
 
-    @IncludedCodec
-        (keyable = true)
+    @IncludedCodec(keyable = true)
     val resourceLocationCodec: Codec<Identifier> = Identifier.CODEC
 
     @IncludedCodec(named = "catharsis_identifier", keyable = true)

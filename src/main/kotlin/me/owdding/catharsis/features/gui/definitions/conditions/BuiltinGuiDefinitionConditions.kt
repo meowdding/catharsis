@@ -131,6 +131,7 @@ data class GuiDefinitionExternalModConfigCondition(
         }
     }
 
+    override val cost: Int = 25
     override val codec = CatharsisCodecs.getMapCodec<GuiDefinitionExternalModConfigCondition>()
 
     override fun matches(screen: AbstractContainerScreen<*>): Boolean {
@@ -150,6 +151,4 @@ data class GuiDefinitionExternalModConfigCondition(
     companion object {
         private val validJsons = listOf("json", "jsonc", "json5")
     }
-
-    override val cost: Int = 25
 }

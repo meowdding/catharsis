@@ -8,6 +8,7 @@ import me.owdding.catharsis.events.GuiDefinitionsApplied
 import me.owdding.catharsis.events.SlotChangedEvent
 import me.owdding.catharsis.events.StartRepoLoadEvent
 import me.owdding.catharsis.features.gui.definitions.slots.GuiSlotDefinition
+import me.owdding.catharsis.features.imc.ImcHandler.isDisabled
 import me.owdding.catharsis.repo.CatharsisRemoteRepo
 import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
@@ -47,7 +48,7 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
 
     private val updating = AtomicBoolean(false)
 
-    private fun enqueueUpdate() {
+    internal fun enqueueUpdate() {
         if (updating.compareAndSet(false, true)) {
             McClient.runNextTick {
                 McScreen.asMenu?.let(this::update)
@@ -66,6 +67,7 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
         if (screen == null) return
 
         for (slot in screen.menu.slots) {
+            if (slot.item.isDisabled()) continue
             val definition = this.selected.findSlotDefinition(slot.index, slot.item)
             if (definition != null) {
                 slots[slot.index] = definition

@@ -78,8 +78,25 @@ Menu Type names are located [here](https://github.com/misode/mcmeta/blob/registr
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>menu</b> gui definition target object</span>
+
 - <TypeIcon type="string"/> **type**: `catharsis:type`
 - <TypeIcon type="string"/> **menu**: The menu type to match against.
+
+</TreeView>
+
+### **External Mod Config** (`catharsis:external_mod_config`)
+
+Match against external mod config values.
+This allows you to ensure compatability with mods that override some guis.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>external_mod_config</b> gui definition target object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:external_mod_config`
+- <TypeIcon type="string"/> **modId**: (Optional) The modid of the mod. While its optional, its very recommended.
+- <TypeIcon type="string"/> **file**: The path to the specific config file, starting from the .minecraft/config folder, needs to end in .json, .jsonc or .json5.
+- <TypeIcon type="string"/> **path**: The JsonPath to the value to check, supports basic dot notation.
+- <TypeIcon /> **value**: The value to check against, supports every json value.
 
 </TreeView>
 

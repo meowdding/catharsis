@@ -108,7 +108,7 @@ data class GuiDefinitionIslandCondition(val islands: Set<SkyBlockIsland>) : GuiD
 
 @GenerateCodec
 data class GuiDefinitionExternalModConfigCondition(
-    val mod: String?,
+    val modId: String?,
     @FieldName("file") val configFile: String,
     val path: String,
     val value: JsonElement,
@@ -134,7 +134,7 @@ data class GuiDefinitionExternalModConfigCondition(
     override val codec = CatharsisCodecs.getMapCodec<GuiDefinitionExternalModConfigCondition>()
 
     override fun matches(screen: AbstractContainerScreen<*>): Boolean {
-        mod?.let {
+        modId?.let {
             if (!FabricLoader.getInstance().isModLoaded(it)) return false
         }
 

@@ -194,7 +194,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 1" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 1"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -209,7 +213,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 1" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 1"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -224,7 +232,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 1" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 1"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -239,7 +251,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 1" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 1"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -254,7 +270,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 1" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 1"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -277,7 +297,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 2" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 2"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -292,7 +316,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 2" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 2"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -307,7 +335,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 2" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 2"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -322,7 +354,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 2" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 2"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -337,7 +373,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 2" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 2"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -360,7 +400,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 3" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 3"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -375,7 +419,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 3" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 3"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -390,7 +438,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 3" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 3"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -405,7 +457,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 3" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 3"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -420,7 +476,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 3" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 3"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -443,7 +503,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 4" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 4"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -458,7 +522,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 4" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 4"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -473,7 +541,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 4" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 4"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -488,7 +560,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 4" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 4"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -503,7 +579,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 4" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 4"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -526,7 +606,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 5" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 5"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -541,7 +625,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 5" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 5"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -556,7 +644,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 5" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 5"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -571,7 +663,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 5" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 5"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -586,7 +682,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 5" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 5"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -609,7 +709,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 6" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 6"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -624,7 +728,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 6" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 6"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -639,7 +747,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 6" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 6"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -654,7 +766,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 6" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 6"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -669,7 +785,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 6" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 6"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -692,7 +812,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 7" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 7"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -707,7 +831,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 7" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 7"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -722,7 +850,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 7" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 7"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -737,7 +869,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 7" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 7"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -752,7 +888,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 7" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 7"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -775,7 +915,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 8" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 8"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -790,7 +934,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 8" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 8"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -805,7 +953,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 8" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 8"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -820,7 +972,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 8" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 8"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -835,7 +991,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 8" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 8"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -858,7 +1018,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 9" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 9"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -873,7 +1037,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 9" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 9"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -888,7 +1056,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 9" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 9"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -903,7 +1075,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 9" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 9"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -918,7 +1094,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 9" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 9"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -941,7 +1121,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 10" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 10"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -956,7 +1140,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 10" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 10"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -971,7 +1159,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 10" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 10"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -986,7 +1178,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 10" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 10"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1001,7 +1197,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 10" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 10"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1024,7 +1224,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 11" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 11"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1039,7 +1243,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 11" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 11"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1054,7 +1262,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 11" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 11"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1069,7 +1281,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 11" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 11"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1084,7 +1300,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 11" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 11"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1107,7 +1327,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 12" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 12"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1122,7 +1346,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 12" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 12"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1137,7 +1365,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 12" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 12"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1152,7 +1384,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 12" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 12"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1167,7 +1403,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 12" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 12"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1190,7 +1430,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 13" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 13"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1205,7 +1449,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 13" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 13"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1220,7 +1468,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 13" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 13"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1235,7 +1487,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 13" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 13"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1250,7 +1506,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 13" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 13"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1273,7 +1533,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 14" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 14"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1288,7 +1552,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 14" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 14"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1303,7 +1571,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 14" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 14"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1318,7 +1590,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 14" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 14"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1333,7 +1609,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 14" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 14"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1356,7 +1636,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 15" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 15"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1371,7 +1655,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 15" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 15"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1386,7 +1674,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 15" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 15"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1401,7 +1693,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 15" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 15"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1416,7 +1712,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 15" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 15"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1439,7 +1739,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 16" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 16"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1454,7 +1758,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 16" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 16"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1469,7 +1777,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 16" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 16"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1484,7 +1796,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 16" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 16"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1499,7 +1815,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 16" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 16"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1522,7 +1842,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 17" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 17"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1537,7 +1861,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 17" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 17"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1552,7 +1880,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 17" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 17"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1567,7 +1899,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 17" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 17"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1582,7 +1918,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 17" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 17"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1605,7 +1945,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 18" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 18"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1620,7 +1964,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 18" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 18"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1635,7 +1983,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 18" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 18"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1650,7 +2002,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 18" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 18"
+          },
           {
             "type": "lore",
             "mode": "equals",
@@ -1665,7 +2021,11 @@
       "target": {
         "type": "all",
         "conditions": [
-          { "type": "name", "mode": "equals", "name": "Backpack Slot 18" },
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Backpack Slot 18"
+          },
           {
             "type": "lore",
             "mode": "equals",

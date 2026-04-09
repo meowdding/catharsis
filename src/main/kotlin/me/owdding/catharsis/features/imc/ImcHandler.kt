@@ -1,5 +1,8 @@
 package me.owdding.catharsis.features.imc
 
+import me.owdding.catharsis.features.gui.definitions.GuiDefinition
+import me.owdding.catharsis.features.gui.definitions.GuiDefinitions
+import me.owdding.catharsis.features.gui.modifications.GuiModifiers
 import me.owdding.catharsis.hooks.items.CustomDataHook
 import me.owdding.catharsis.hooks.items.ItemStackHook
 import net.fabricmc.loader.api.FabricLoader
@@ -46,6 +49,7 @@ object ImcHandler {
 
     fun ItemStack.withDisabled(disabled: Boolean) {
         (this as ItemStackHook).`catharsis$setDisabled`(disabled)
+        GuiDefinitions.enqueueUpdate()
     }
 
     @JvmStatic

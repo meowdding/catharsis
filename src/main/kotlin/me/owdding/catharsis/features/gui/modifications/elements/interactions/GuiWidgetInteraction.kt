@@ -26,7 +26,7 @@ object GuiWidgetInteractions {
     init {
         ID_MAPPER.put(Catharsis.id("link"), CatharsisCodecs.getMapCodec<GuiLinkWidgetInteraction>())
         ID_MAPPER.put(Catharsis.id("slot"), CatharsisCodecs.getMapCodec<GuiSlotClickWidgetInteraction>())
-        ID_MAPPER.put(Catharsis.id("command"), CatharsisCodecs.getMapCodec<GuiCommandWidgetInteraction>())
+        //ID_MAPPER.put(Catharsis.id("command"), CatharsisCodecs.getMapCodec<GuiCommandWidgetInteraction>())
     }
 
 }

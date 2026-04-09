@@ -87,7 +87,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:golden_apple"]
+            "items": "minecraft:golden_apple"
           }
         ]
       }
@@ -103,7 +103,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:iron_chestplate"]
+            "items": "minecraft:iron_chestplate"
           }
         ]
       }
@@ -119,7 +119,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:bone_meal"]
+            "items": "minecraft:bone_meal"
           }
         ]
       }
@@ -135,7 +135,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:blaze_powder"]
+            "items": "minecraft:blaze_powder"
           }
         ]
       }
@@ -151,7 +151,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -167,7 +167,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -183,7 +183,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:golden_axe"]
+            "items": "minecraft:golden_axe"
           }
         ]
       }
@@ -199,7 +199,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:red_dye"]
+            "items": "minecraft:red_dye"
           }
         ]
       }
@@ -215,7 +215,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:stone_sword"]
+            "items": "minecraft:stone_sword"
           }
         ]
       }
@@ -231,7 +231,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:enchanted_book"]
+            "items": "minecraft:enchanted_book"
           }
         ]
       }
@@ -247,7 +247,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:beacon"]
+            "items": "minecraft:beacon"
           }
         ]
       }
@@ -263,7 +263,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:potion"]
+            "items": "minecraft:potion"
           }
         ]
       }
@@ -279,7 +279,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:glistering_melon_slice"]
+            "items": "minecraft:glistering_melon_slice"
           }
         ]
       }
@@ -295,7 +295,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:ghast_tear"]
+            "items": "minecraft:ghast_tear"
           }
         ]
       }
@@ -311,7 +311,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:emerald"]
+            "items": "minecraft:emerald"
           }
         ]
       }
@@ -327,7 +327,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:diamond_pickaxe"]
+            "items": "minecraft:diamond_pickaxe"
           }
         ]
       }
@@ -343,7 +343,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:golden_pickaxe"]
+            "items": "minecraft:golden_pickaxe"
           }
         ]
       }
@@ -359,7 +359,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:golden_pickaxe"]
+            "items": "minecraft:golden_pickaxe"
           }
         ]
       }
@@ -375,7 +375,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -391,7 +391,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -407,7 +407,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -423,7 +423,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -439,7 +439,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -455,7 +455,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -471,7 +471,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:dirt"]
+            "items": "minecraft:dirt"
           }
         ]
       }
@@ -487,7 +487,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -503,7 +503,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:wheat"]
+            "items": "minecraft:wheat"
           }
         ]
       }
@@ -519,7 +519,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:carrot"]
+            "items": "minecraft:carrot"
           }
         ]
       }
@@ -535,7 +535,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:potato"]
+            "items": "minecraft:potato"
           }
         ]
       }
@@ -551,7 +551,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:carved_pumpkin"]
+            "items": "minecraft:carved_pumpkin"
           }
         ]
       }
@@ -567,7 +567,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:sugar_cane"]
+            "items": "minecraft:sugar_cane"
           }
         ]
       }
@@ -583,7 +583,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:melon_slice"]
+            "items": "minecraft:melon_slice"
           }
         ]
       }
@@ -599,7 +599,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:cactus"]
+            "items": "minecraft:cactus"
           }
         ]
       }
@@ -615,7 +615,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:cocoa_beans"]
+            "items": "minecraft:cocoa_beans"
           }
         ]
       }
@@ -631,7 +631,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:red_mushroom"]
+            "items": "minecraft:red_mushroom"
           }
         ]
       }
@@ -647,7 +647,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:nether_wart"]
+            "items": "minecraft:nether_wart"
           }
         ]
       }
@@ -663,7 +663,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:sunflower"]
+            "items": "minecraft:sunflower"
           }
         ]
       }
@@ -679,7 +679,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:blue_orchid"]
+            "items": "minecraft:blue_orchid"
           }
         ]
       }
@@ -695,7 +695,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:rose_bush"]
+            "items": "minecraft:rose_bush"
           }
         ]
       }
@@ -711,7 +711,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:diamond_axe"]
+            "items": "minecraft:diamond_axe"
           }
         ]
       }
@@ -727,7 +727,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -743,7 +743,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -759,7 +759,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -775,7 +775,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:fishing_rod"]
+            "items": "minecraft:fishing_rod"
           }
         ]
       }
@@ -791,7 +791,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:prismarine_crystals"]
+            "items": "minecraft:prismarine_crystals"
           }
         ]
       }
@@ -807,7 +807,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:cooked_cod"]
+            "items": "minecraft:cooked_cod"
           }
         ]
       }
@@ -823,7 +823,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -839,7 +839,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:chest"]
+            "items": "minecraft:chest"
           }
         ]
       }
@@ -855,7 +855,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:sugar"]
+            "items": "minecraft:sugar"
           }
         ]
       }
@@ -871,7 +871,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:stick"]
+            "items": "minecraft:stick"
           }
         ]
       }
@@ -887,7 +887,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:player_head"]
+            "items": "minecraft:player_head"
           }
         ]
       }
@@ -903,7 +903,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:lava_bucket"]
+            "items": "minecraft:lava_bucket"
           }
         ]
       }
@@ -919,7 +919,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:ice"]
+            "items": "minecraft:ice"
           }
         ]
       }
@@ -935,7 +935,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:glass_bottle"]
+            "items": "minecraft:glass_bottle"
           }
         ]
       }
@@ -951,7 +951,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:glass_bottle"]
+            "items": "minecraft:glass_bottle"
           }
         ]
       }
@@ -967,7 +967,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:cauldron"]
+            "items": "minecraft:cauldron"
           }
         ]
       }
@@ -983,7 +983,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:compass"]
+            "items": "minecraft:compass"
           }
         ]
       }
@@ -999,7 +999,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:cobweb"]
+            "items": "minecraft:cobweb"
           }
         ]
       }
@@ -1015,7 +1015,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:prismarine_shard"]
+            "items": "minecraft:prismarine_shard"
           }
         ]
       }
@@ -1031,7 +1031,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:stone_sword"]
+            "items": "minecraft:stone_sword"
           }
         ]
       }
@@ -1047,7 +1047,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:golden_hoe"]
+            "items": "minecraft:golden_hoe"
           }
         ]
       }
@@ -1063,7 +1063,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:fishing_rod"]
+            "items": "minecraft:fishing_rod"
           }
         ]
       }
@@ -1079,7 +1079,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:stone_pickaxe"]
+            "items": "minecraft:stone_pickaxe"
           }
         ]
       }
@@ -1095,7 +1095,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:jungle_sapling"]
+            "items": "minecraft:jungle_sapling"
           }
         ]
       }
@@ -1111,7 +1111,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:enchanting_table"]
+            "items": "minecraft:enchanting_table"
           }
         ]
       }
@@ -1127,7 +1127,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:brewing_stand"]
+            "items": "minecraft:brewing_stand"
           }
         ]
       }
@@ -1143,7 +1143,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:crafting_table"]
+            "items": "minecraft:crafting_table"
           }
         ]
       }
@@ -1159,7 +1159,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:magma_cream"]
+            "items": "minecraft:magma_cream"
           }
         ]
       }
@@ -1175,7 +1175,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:polar_bear_spawn_egg"]
+            "items": "minecraft:polar_bear_spawn_egg"
           }
         ]
       }
@@ -1191,7 +1191,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:emerald"]
+            "items": "minecraft:emerald"
           }
         ]
       }
@@ -1207,7 +1207,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:lead"]
+            "items": "minecraft:lead"
           }
         ]
       }
@@ -1223,7 +1223,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:clock"]
+            "items": "minecraft:clock"
           }
         ]
       }
@@ -1239,7 +1239,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:diamond_sword"]
+            "items": "minecraft:diamond_sword"
           }
         ]
       }
@@ -1255,7 +1255,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:diamond"]
+            "items": "minecraft:diamond"
           }
         ]
       }
@@ -1271,7 +1271,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:apple"]
+            "items": "minecraft:apple"
           }
         ]
       }

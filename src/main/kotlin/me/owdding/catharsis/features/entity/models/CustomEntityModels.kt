@@ -14,6 +14,7 @@ import net.minecraft.util.profiling.ProfilerFiller
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.entity.EntityAttributesUpdateEvent
 import tech.thatgravyboat.skyblockapi.api.events.entity.EntityEquipmentUpdateEvent
+import tech.thatgravyboat.skyblockapi.api.events.screen.PlayerEquipmentChangeEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McLevel
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
@@ -57,8 +58,8 @@ object CustomEntityModels : SimplePreparableReloadListener<Map<Identifier, Custo
         this.definitions.clear()
         this.definitions.putAll(definitions)
 
-        if (McLevel.hasLevel) {
-            for (entity in McLevel.level.entitiesForRendering()) {
+        McLevel.selfOrNull?.let {
+            for (entity in it.entitiesForRendering()) {
                 entity.`catharsis$resetCustomModel`()
             }
         }
@@ -71,6 +72,11 @@ object CustomEntityModels : SimplePreparableReloadListener<Map<Identifier, Custo
 
     @Subscription
     private fun EntityEquipmentUpdateEvent.onEquipmentUpdate() {
+        this.entity.`catharsis$resetCustomModel`()
+    }
+
+    @Subscription
+    private fun PlayerEquipmentChangeEvent.onPlayerEquipmentUpdate() {
         this.entity.`catharsis$resetCustomModel`()
     }
 

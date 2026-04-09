@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.pack.config
 
+import com.google.gson.JsonArray
 import com.google.gson.JsonPrimitive
 import me.owdding.catharsis.utils.extensions.CycleButtonBuilder
 import me.owdding.catharsis.utils.extensions.withClickHandler
@@ -19,7 +20,9 @@ import net.minecraft.util.Util
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McFont
 import tech.thatgravyboat.skyblockapi.utils.extentions.asBoolean
+import tech.thatgravyboat.skyblockapi.utils.extentions.asInt
 import tech.thatgravyboat.skyblockapi.utils.extentions.asString
+import tech.thatgravyboat.skyblockapi.utils.extentions.asStringList
 import java.util.function.Consumer
 import kotlin.math.max
 
@@ -49,14 +52,11 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
         }
 
         this.navigation = this.addRenderableWidget(
-            TabNavigationBar.builder(this.tabs, this.width)
-                .addTabs(
-                    *contents
-                        .map { (title, layout) -> PackConfigScreenTab(title, layout) }
-                        .sortedBy { tab -> if (tab.title == GENERAL_TAB) 0 else 1 }
-                        .toTypedArray(),
-                )
-                .build(),
+            MinSizedTabNavigation(
+                this.width,
+                this.tabs,
+                contents.map { (title, layout) -> PackConfigScreenTab(title, layout) }.sortedBy { tab -> if (tab.title == GENERAL_TAB) 0 else 1 }
+            )
         )
         this.navigation!!.selectTab(0, false)
 
@@ -143,6 +143,46 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
                     value = entry
                     config.set(option.id, JsonPrimitive(entry.value))
                 }
+        }
+
+        is PackConfigOption.Select if option.single -> {
+            val value = config.get(option.id).asString()?.let { option.options.find { entry -> entry.value == it } } ?: option.default.first()
+            val width = max(option.options.maxOf { max(McFont.width(it.selectedText), McFont.width(it.unselectedText)) } + 8, 88)
+
+            SelectButton<PackConfigOption.Select.SelectEntry>(width, 20).apply {
+                this.singleValue = true
+                this.onChange = { selected -> config.set(option.id, JsonPrimitive(selected.first().value)) }
+
+                for (entry in option.options) {
+                    this.withEntry(entry, entry.selectedText, entry.unselectedText, entry == value)
+                }
+            }
+        }
+
+        is PackConfigOption.Select if true -> {
+            val values = config.get(option.id).asStringList().mapNotNull { str -> option.options.find { it.value == str } }.toSet()
+            val width = max(option.options.maxOf { max(McFont.width(it.selectedText), McFont.width(it.unselectedText)) } + 8, 88)
+
+            SelectButton<PackConfigOption.Select.SelectEntry>(width, 20).apply {
+                this.singleValue = false
+                this.onChange = { selected ->
+                    val json = JsonArray(selected.size)
+                    selected.forEach { json.add(it.value) }
+                    config.set(option.id, json)
+                }
+
+                for (entry in option.options) {
+                    this.withEntry(entry, entry.selectedText, entry.unselectedText, entry in values)
+                }
+            }
+        }
+
+        is PackConfigOption.Color -> {
+            val value = config.get(option.id).asInt(option.default)
+
+            ColorPickerButton(76, 20, value, option.alpha) { newColor ->
+                config.set(option.id, JsonPrimitive(newColor))
+            }
         }
 
         else -> null

@@ -9,13 +9,14 @@ import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
+import net.minecraft.world.inventory.Slot
 
 interface GuiDefinitionCondition {
 
     val codec: MapCodec<out GuiDefinitionCondition>
     val cost: Int get() = 0
 
-    fun matches(screen: AbstractContainerScreen<*>): Boolean
+    fun matches(slots: List<Slot>, screen: AbstractContainerScreen<*>): Boolean
     fun optimize(): GuiDefinitionCondition = this
 }
 
@@ -31,9 +32,11 @@ object GuiDefConditions {
     init {
         ID_MAPPER.put(Catharsis.id("any"), CatharsisCodecs.getMapCodec<GuiDefinitionAnyCondition>())
         ID_MAPPER.put(Catharsis.id("all"), CatharsisCodecs.getMapCodec<GuiDefinitionAllCondition>())
+        ID_MAPPER.put(Catharsis.id("not"), CatharsisCodecs.getMapCodec<GuiDefinitionNotCondition>())
         ID_MAPPER.put(Catharsis.id("slot"), CatharsisCodecs.getMapCodec<GuiDefinitionSlotCondition>())
         ID_MAPPER.put(Catharsis.id("title"), CatharsisCodecs.getMapCodec<GuiDefinitionTitleCondition>())
         ID_MAPPER.put(Catharsis.id("type"), CatharsisCodecs.getMapCodec<GuiDefinitionTypeCondition>())
         ID_MAPPER.put(Catharsis.id("islands"), CatharsisCodecs.getMapCodec<GuiDefinitionIslandCondition>())
+        ID_MAPPER.put(Catharsis.id("external_mod_config"), CatharsisCodecs.getMapCodec<GuiDefinitionExternalModConfigCondition>())
     }
 }

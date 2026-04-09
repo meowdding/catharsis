@@ -20,6 +20,7 @@ data class ConfigResourceCondition(val pack: String, val id: String, val value: 
         return when {
             entry.isBoolean -> entry.asBoolean
             entry.isString -> entry.asString == this.value
+            entry.isJsonArray -> entry.asJsonArray.any { it.asString == this.value }
             else -> false
         }
     }

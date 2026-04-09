@@ -19,7 +19,9 @@ class SafeModelPart(
     initialPose: PartPose,
     val name: String = "Unnamed",
     val path: String = "root",
-) : ModelPart(cubes, children) {
+) : ModelPart(cubes, children.mapValues { (name, part) -> part as? SafeModelPart ?: part.asSafe(name, path) }) {
+
+    private val missingBones = mutableSetOf<String>()
 
     init {
         this.initialPose = initialPose
@@ -28,17 +30,17 @@ class SafeModelPart(
 
     override fun getChild(name: String): ModelPart {
         return if (super.hasChild(name)) {
-            val unsafeModelPart = super.getChild(name)
-
-            SafeModelPart(
-                unsafeModelPart.cubes,
-                unsafeModelPart.children,
-                unsafeModelPart.initialPose,
-                this.name,
-                "$path/$name",
-            )
-        } else {
+            val child = super.getChild(name)
+            if (child is SafeModelPart) {
+                child
+            } else {
+                Catharsis.warn("model ${this.name} bone $name is not a SafeModelPart!")
+                DummyModelPart()
+            }
+        } else if (missingBones.add(name)) {
             Catharsis.warn("model ${this.name} missing bone $name!")
+            DummyModelPart()
+        } else {
             DummyModelPart()
         }
     }
@@ -47,10 +49,14 @@ class SafeModelPart(
         val parentLookup = super.createPartLookup()
         return Function { boneName: String ->
             val parentBone = parentLookup.apply(boneName)
-            if (parentBone == null) {
-                Catharsis.warn("Bone $boneName in model $name is missing!")
+            if (parentBone != null) {
+                parentBone
+            } else if (missingBones.add(boneName)) {
+                Catharsis.warn("model ${this.name} missing bone $boneName!")
                 DummyModelPart()
-            } else parentBone
+            } else {
+                DummyModelPart()
+            }
         }
     }
 
@@ -72,6 +78,10 @@ class SafeModelPart(
                 CubeDeformation(inflate ?: 0f),
             )
             if (mirror == true) mirror(false)
+        }
+
+        private fun ModelPart.asSafe(name: String, path: String): SafeModelPart {
+            return SafeModelPart(this.cubes, this.children, this.initialPose, name, "$path/$name")
         }
 
         fun convertFromBedrockModel(model: BedrockGeometry?): ModelPart? {

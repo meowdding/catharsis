@@ -95,7 +95,6 @@
         ]
       }
     },
-
     {
       "id": "skyblock_gui:skills/combat/slayer/sven_packmaster/icon/unlocked",
       "target": {
@@ -300,7 +299,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:gray_dye"]
+            "items": "minecraft:gray_dye"
           }
         ]
       }
@@ -317,7 +316,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:lime_dye"]
+            "items": "minecraft:lime_dye"
           }
         ]
       }

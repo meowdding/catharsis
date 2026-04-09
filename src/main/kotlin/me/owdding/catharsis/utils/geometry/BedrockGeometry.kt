@@ -12,6 +12,7 @@ import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 @GenerateCodec
 data class BedrockGeometry(
     val description: BedrockGeometryDescription,
+    // cape, I have no idea what this is for.
     val bones: List<BedrockBone>,
 ) {
 
@@ -55,6 +56,7 @@ data class BedrockBone(
     // debug, the spec has no mention of what its purpose is
     // render_group_id, this is also not documented what its purpose is
     val cubes: List<BedrockCube> = listOf(),
+    // binding, molang query (out of scope for this project)
     // locators, allows for locating specific points on the model, we don't need this
     // poly_mesh, this is for custom meshes, way beyond the scope of this project
     // texture_meshes, also for custom meshes
@@ -75,5 +77,6 @@ data class BedrockCube(
 data class UvFace(
     val uv: List<Float>,
     @FieldName("uv_size") val uvSize: List<Float>,
+    @FieldName("uv_rotation") val uvRotation: Int = 0,
     // material_instance, seemingly only used for blocks
 )

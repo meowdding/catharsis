@@ -9,6 +9,10 @@ lang: en-US
 
 Prints the id used to modify the item into chat. Also adds a copy button.
 
+### `/catharsis dev hand_data_types`
+
+Adds a copy button in chat to copy all the data types ids with their values for the item in your hand in the chat.
+
 ### `/catharsis dev areas`
 
 #### `/catharsis dev areas toggle <id>`

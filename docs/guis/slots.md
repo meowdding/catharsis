@@ -115,3 +115,28 @@ Check if any in list of conditions are true, useful for chaining conditions.
 - <TypeIcon type="array"/> **conditions**: a list of conditions to check through.
 </TreeView>
 
+### **Relative** (`catharsis:relative_slot`)
+
+Allows you to apply other conditions based on relative slots.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>relative_slot</b> condition object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:relative_slot`
+- <TypeIcon type="Int"/> **offset**: The relative offset for the slot.
+- <TypeIcon type="object"/> **condition**: The child condition to check with the applied offset.
+</TreeView>
+
+### **Menu Border** (`catharsis:menu_border`)
+
+Allows you to filter if a slot is on the border of a menu.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>menu_border</b> slot condition object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:menu_border`
+- <TypeIcon type="Int"/> **allow_left**: (Optional) Whether the slot can be on the left border or not (defaults to true) 
+- <TypeIcon type="Int"/> **allow_right**: (Optional) Whether the slot can be on the right border or not (defaults to true) 
+- <TypeIcon type="Int"/> **allow_bottom**: (Optional) Whether the slot can be on the bottom border or not (defaults to true) 
+- <TypeIcon type="Int"/> **allow_top**: (Optional) Whether the slot can be on the top border or not (defaults to true)
+</TreeView>

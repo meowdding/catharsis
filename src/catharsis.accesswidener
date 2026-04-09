@@ -6,6 +6,9 @@ accessible field net/minecraft/client/model/player/PlayerModel slim Z
 accessible field net/minecraft/client/model/PlayerModel slim Z
 accessible field net/minecraft/client/multiplayer/ClientChunkCache storage Lnet/minecraft/client/multiplayer/ClientChunkCache$Storage;
 accessible field net/minecraft/client/multiplayer/ClientChunkCache$Storage chunks Ljava/util/concurrent/atomic/AtomicReferenceArray;
+accessible method net/minecraft/client/gui/components/tabs/TabNavigationBar <init> (ILnet/minecraft/client/gui/components/tabs/TabManager;Ljava/lang/Iterable;)V
+accessible field net/minecraft/client/gui/components/tabs/TabNavigationBar tabButtons Lcom/google/common/collect/ImmutableList;
+accessible field net/minecraft/client/gui/components/tabs/TabNavigationBar layout Lnet/minecraft/client/gui/layouts/LinearLayout;
 
 extendable class net/minecraft/client/model/geom/ModelPart
 accessible field net/minecraft/client/model/geom/ModelPart children Ljava/util/Map;

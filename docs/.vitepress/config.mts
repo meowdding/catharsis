@@ -50,6 +50,12 @@ export default defineConfig({
                 ]
             },
             {
+                "text": "Entities",
+                "items": [
+                    {"text": "Entity Overrides", "link": "/entity_overrides/index"},
+                ]
+            },
+            {
                 text: "Miscellaneous",
                 items: [
                     {text: "Pack Metadata", link: "/miscellaneous/pack_metadata"},

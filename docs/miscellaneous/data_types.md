@@ -7,13 +7,15 @@ lang: en-US
 
 This page lists all available data types.
 
-All Data Types can be found [here](https://github.com/SkyblockAPI/SkyblockAPI/blob/2.0/src/common/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/DataTypes.kt).
+All Data Types can be found [here](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/DataTypes.kt).
 
 IDs of Data Types can be found at these locations:
-[GenericDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/2.0/src/common/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/GenericDataTypes.kt),
-[LoreDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/2.0/src/common/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/LoreDataTypes.kt),
-[MiningDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/2.0/src/common/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/MiningDataTypes.kt),
-[PersonalAccessoryDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/2.0/src/common/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/PersonalAccessoryDataTypes.kt).
+[GenericDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/GenericDataTypes.kt),
+[LoreDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/LoreDataTypes.kt),
+[MiningDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/MiningDataTypes.kt),
+[PersonalAccessoryDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/PersonalAccessoryDataTypes.kt).
+
+You can use `/catharsis dev hand_data_types` to view all data types of the item in your hand.
 
 ## Data Type Categories and Comparing
 
@@ -29,11 +31,12 @@ Data Types that return any form of number (so Integer, Double, Float, Long, Shor
 
 ### Custom Number Data Types
 
-| Data Type                | Description                                            |
-|--------------------------|--------------------------------------------------------|
-| `snowballs`              | Returns the current snowballs in the snowball shooter. |
-| `dungeonbreaker_charges` | Returns the current charges.                           |
-| `drill_fuel`             | Returns the current drill fuel.                        |
+| Data Type                 | Description                                            |
+|---------------------------|--------------------------------------------------------|
+| `snowballs`               | Returns the current snowballs in the snowball shooter. |
+| `dungeon_breaker_charges` | Returns the current charges.                           |
+| `fuel`                    | Returns the current drill fuel.                        |
+| `water_level`             | Returns the current water level.                       |
 
 ## Available String Data Types
 

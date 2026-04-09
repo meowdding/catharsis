@@ -25,6 +25,7 @@ repositories {
     scopedMaven("https://api.modrinth.com/maven", "maven.modrinth")
     scopedMaven("https://maven.teamresourceful.com/repository/maven-public/", "tech.thatgravyboat", "me.owdding")
     scopedMaven("https://maven.nucleoid.xyz/", "eu.pb4")
+    scopedMaven("https://raw.githubusercontent.com/fishstiz/maven/m2", "io.github.fishstiz")
     mavenCentral()
     mavenLocal()
 }
@@ -57,6 +58,10 @@ dependencies {
     compileOnly(libs.meowdding.ktcodecs)
     ksp(libs.meowdding.ktmodules)
     ksp(libs.meowdding.ktcodecs)
+
+    // Packed Packs compat
+    modCompileOnly(versionedCatalog["packed_packs"])
+    modLocalRuntime(versionedCatalog["packed_packs"])
 
     modRuntimeOnly(libs.devauth)
 }

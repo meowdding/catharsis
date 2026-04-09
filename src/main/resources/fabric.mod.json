@@ -15,6 +15,12 @@
         "adapter": "kotlin",
         "value": "me.owdding.catharsis.Catharsis"
       }
+    ],
+    "packed_packs": [
+      {
+        "adapter": "kotlin",
+        "value": "me.owdding.catharsis.compat.PackedPacksCompat"
+      }
     ]
   },
   "mixins": [

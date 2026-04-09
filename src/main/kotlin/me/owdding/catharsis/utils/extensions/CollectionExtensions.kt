@@ -12,3 +12,19 @@ fun <OriginalKey, NewKey, Value> Map<OriginalKey, Value>.mapKeysNotNull(transfor
 fun <OriginalKey, NewKey, OriginalValue, NewValue> Map<OriginalKey, OriginalValue>.mapBothNotNull(transform: (Map.Entry<OriginalKey, OriginalValue>) -> Pair<NewKey?, NewValue?>?): Map<NewKey, NewValue> {
     return buildMap { this@mapBothNotNull.forEach { entry -> transform(entry)?.let { put(it.first ?: return@forEach, it.second ?: return@forEach) } } }
 }
+
+fun <Type> Iterable<Type>.extremesOf(converter: (Type) -> Int): Pair<Int, Int>? {
+    val iterator = this.iterator()
+    if (!iterator.hasNext()) return null
+
+    var min = converter(iterator.next())
+    var max = min
+
+    for (element in this) {
+        val value = converter(element)
+        if (value < min) min = value
+        if (value > max) max = value
+    }
+
+    return min to max
+}

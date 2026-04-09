@@ -94,7 +94,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:black_stained_glass_pane"]
+            "items": "minecraft:black_stained_glass_pane"
           }
         ]
       }
@@ -113,7 +113,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:lime_dye"]
+            "items": "minecraft:lime_dye"
           }
         ]
       }
@@ -132,7 +132,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:pink_dye"]
+            "items": "minecraft:pink_dye"
           }
         ]
       }
@@ -151,7 +151,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:gray_dye"]
+            "items": "minecraft:gray_dye"
           }
         ]
       }
@@ -170,7 +170,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:red_dye"]
+            "items": "minecraft:red_dye"
           }
         ]
       }

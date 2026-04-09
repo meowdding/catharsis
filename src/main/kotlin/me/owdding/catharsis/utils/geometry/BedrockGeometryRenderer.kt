@@ -6,7 +6,10 @@ import net.minecraft.client.model.HumanoidModel
 import net.minecraft.core.Direction
 import net.minecraft.util.Mth
 import net.minecraft.world.entity.EquipmentSlot
-import org.joml.*
+import org.joml.Quaternionf
+import org.joml.component1
+import org.joml.component2
+import org.joml.component3
 
 private const val DEBUG = false
 private const val HEAD_BONE = "head"
@@ -114,7 +117,7 @@ object BedrockGeometryRenderer {
                         .setUv(vertex.uv.x, vertex.uv.y)
                         .setOverlay(overlay)
                         .setLight(light)
-                        .setNormal(pose, -x, y, -z)
+                        .setNormal(pose, quad.normalX, quad.normalY, quad.normalZ)
                 }
             }
         }

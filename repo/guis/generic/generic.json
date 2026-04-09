@@ -15,7 +15,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:black_stained_glass_pane"]
+            "items": "minecraft:black_stained_glass_pane"
           }
         ]
       }
@@ -63,17 +63,37 @@
     {
       "id": "skyblock_gui:generic/settings/enabled",
       "target": {
-        "type": "all",
+        "type": "any",
         "conditions": [
           {
-            "type": "item",
-            "items": "lime_dye"
+            "type": "all",
+            "conditions": [
+              {
+                "type": "item",
+                "items": "lime_dye"
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Click to disable!"
+              }
+            ]
           },
           {
-            "type": "lore",
-            "mode": "equals",
-            "line": -1,
-            "name": "Click to disable!"
+            "type": "all",
+            "conditions": [
+              {
+                "type": "item",
+                "items": "comparator"
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -3,
+                "name": "Confirmations: Enabled!"
+              }
+            ]
           }
         ]
       }
@@ -81,17 +101,37 @@
     {
       "id": "skyblock_gui:generic/settings/disabled",
       "target": {
-        "type": "all",
+        "type": "any",
         "conditions": [
           {
-            "type": "item",
-            "items": "gray_dye"
+            "type": "all",
+            "conditions": [
+              {
+                "type": "item",
+                "items": "gray_dye"
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -1,
+                "name": "Click to enable!"
+              }
+            ]
           },
           {
-            "type": "lore",
-            "mode": "equals",
-            "line": -1,
-            "name": "Click to enable!"
+            "type": "all",
+            "conditions": [
+              {
+                "type": "item",
+                "items": "comparator"
+              },
+              {
+                "type": "lore",
+                "mode": "equals",
+                "line": -3,
+                "name": "Confirmations: OFF"
+              }
+            ]
           }
         ]
       }

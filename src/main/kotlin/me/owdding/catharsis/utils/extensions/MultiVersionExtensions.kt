@@ -17,7 +17,7 @@ fun RenderWorldEvent.renderLineBox(
     red: Float = 1f, green: Float = 1f, blue: Float = 1f, alpha: Float = 1f,
     secondary: Boolean = false,
 ) {
-    //? > 1.21.10 {
+    //? >= 1.21.11 {
     val vertexConsumer: VertexConsumer = this.buffer.getBuffer(
         if (secondary) net.minecraft.client.renderer.rendertype.RenderTypes.SECONDARY_BLOCK_OUTLINE else net.minecraft.client.renderer.rendertype.RenderTypes.lines(),
     )
@@ -38,24 +38,17 @@ fun RenderWorldEvent.renderLineBox(
     *///?}
 }
 
-//? if >=1.21.11 {
 fun MultiLineTextWidget.withClickHandler(handler: (Style) -> Unit): MultiLineTextWidget {
+    //? if >=1.21.11 {
     this.setComponentClickHandler(handler)
+    //?} else
+     /*this.configureStyleHandling(true, handler)*/
     return this
 }
-//?} else {
-/*fun MultiLineTextWidget.withClickHandler(handler: (Style) -> Unit): MultiLineTextWidget {
-    this.configureStyleHandling(true, handler)
-    return this
-}
-*///?}
 
-//? if >=1.21.11 {
 fun <T : Any> CycleButtonBuilder(nameFactory: (T) -> Component, value: () -> T): CycleButton.Builder<T> {
+    //? if >=1.21.11 {
     return CycleButton.builder(nameFactory, value)
+    //?} else
+     /*return CycleButton.builder(nameFactory).withInitialValue(value.invoke())*/
 }
-//?} else {
-/*fun <T : Any> CycleButtonBuilder(nameFactory: (T) -> Component, value: () -> T): CycleButton.Builder<T> {
-    return CycleButton.builder(nameFactory).withInitialValue(value.invoke())
-}
-*///?}

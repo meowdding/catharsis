@@ -1,6 +1,7 @@
 package me.owdding.catharsis.events
 
 import com.mojang.serialization.MapCodec
+import net.minecraft.client.color.item.ItemTintSource
 import net.minecraft.client.renderer.item.ItemModel
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperty
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperty
@@ -27,9 +28,14 @@ data class BootstrapNumericPropertiesEvent(
     fun register(location: Identifier, codec: MapCodec<out RangeSelectItemModelProperty>) = consumer.accept(location, codec)
 }
 
-
 data class BootstrapItemModelsEvent(
     private val consumer: BiConsumer<Identifier, MapCodec<out ItemModel.Unbaked>>
 ) : SkyBlockEvent() {
     fun register(location: Identifier, codec: MapCodec<out ItemModel.Unbaked>) = consumer.accept(location, codec)
+}
+
+data class BootstrapItemTintSourceEvent(
+    private val consumer: BiConsumer<Identifier, MapCodec<out ItemTintSource>>
+) : SkyBlockEvent() {
+    fun register(location: Identifier, codec: MapCodec<out ItemTintSource>) = consumer.accept(location, codec)
 }

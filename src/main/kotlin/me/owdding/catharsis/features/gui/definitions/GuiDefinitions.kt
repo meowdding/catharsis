@@ -8,6 +8,7 @@ import me.owdding.catharsis.events.GuiDefinitionsApplied
 import me.owdding.catharsis.events.SlotChangedEvent
 import me.owdding.catharsis.events.StartRepoLoadEvent
 import me.owdding.catharsis.features.gui.definitions.slots.GuiSlotDefinition
+import me.owdding.catharsis.features.imc.ImcHandler.isDisabled
 import me.owdding.catharsis.repo.CatharsisRemoteRepo
 import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
@@ -20,6 +21,9 @@ import net.minecraft.resources.Identifier
 import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.profiling.ProfilerFiller
+import net.minecraft.world.entity.player.Inventory
+import net.minecraft.world.inventory.InventoryMenu
+import net.minecraft.world.inventory.Slot
 import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
@@ -29,6 +33,8 @@ import tech.thatgravyboat.skyblockapi.api.events.screen.ScreenInitializedEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McScreen
 import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
+import java.util.concurrent.atomic.AtomicBoolean
+import kotlin.collections.sortedBy
 import kotlin.io.path.readText
 
 
@@ -44,20 +50,21 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
     private var selected = listOf<DefinitionEntry>()
     private var slots = Int2ObjectArrayMap<GuiSlotDefinition>()
 
-    private var needsUpdate = false
+    private val updating = AtomicBoolean(false)
 
-    private fun enqueueUpdate() {
-        if (!needsUpdate) {
+    internal fun enqueueUpdate() {
+        if (updating.compareAndSet(false, true)) {
             McClient.runNextTick {
                 McScreen.asMenu?.let(this::update)
-                needsUpdate = false
+                updating.set(false)
             }
         }
-        needsUpdate = true
     }
 
     private fun update(screen: AbstractContainerScreen<*>?) {
-        selected = screen?.let { definitions.filter { it.matches(screen) } } ?: emptyList()
+        val menuSlots = screen?.menu?.slots ?: emptyList()
+        val filteredSlots = menuSlots.filter { it.container !is Inventory }.sortedBy { it.index }
+        selected = screen?.let { definitions.filter { it.matches(filteredSlots, screen) } } ?: emptyList()
         slots.clear()
 
         GuiDefinitionsApplied(selected.map { it.id }).post(SkyBlockAPI.eventBus)
@@ -65,8 +72,9 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
         if (selected.isEmpty()) return
         if (screen == null) return
 
-        for (slot in screen.menu.slots) {
-            val definition = this.selected.findSlotDefinition(slot.index, slot.item)
+        for (slot in menuSlots) {
+            if (slot.item.isDisabled()) continue
+            val definition = this.selected.findSlotDefinition(filteredSlots, slot.index, slot.item)
             if (definition != null) {
                 slots[slot.index] = definition
             }
@@ -134,7 +142,8 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
     fun getGuis(): List<Identifier> = selected.map { it.id }
 
     @JvmStatic
-    fun getSlot(stack: ItemStack): Identifier? = this.selected.findSlotDefinition(-1, stack)?.id
+    fun getSlot(stack: ItemStack): Identifier? = this.selected.findSlotDefinition(McScreen.asMenu?.menu?.slots ?: emptyList(), -1, stack)?.id
+
 
     @JvmStatic
     fun getSlot(slot: Int): Identifier? = this.slots[slot]?.id
@@ -146,9 +155,9 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
         this.definitions.sortByDescending { it.priority }
     }
 
-    private fun Iterable<DefinitionEntry>.findSlotDefinition(slot: Int, stack: ItemStack): GuiSlotDefinition? {
+    private fun Iterable<DefinitionEntry>.findSlotDefinition(slots: List<Slot>, slot: Int, stack: ItemStack): GuiSlotDefinition? {
         return this.firstNotNullOfOrNull {
-            it.layout.find { def -> def.matches(slot, stack) }
+            it.layout.find { def -> def.matches(slots, slot, stack) }
         }
     }
 
@@ -161,8 +170,8 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
         val priority: Int = definition.priority
         val layout: List<GuiSlotDefinition> = definition.layout
 
-        fun matches(screen: AbstractContainerScreen<*>): Boolean {
-            return definition.matches(screen)
+        fun matches(slots: List<Slot>, screen: AbstractContainerScreen<*>): Boolean {
+            return definition.matches(slots, screen)
         }
     }
 }

@@ -15,7 +15,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:light_gray_stained_glass_pane"]
+            "items": "minecraft:light_gray_stained_glass_pane"
           }
         ]
       }
@@ -31,7 +31,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:light_gray_stained_glass_pane"]
+            "items": "minecraft:light_gray_stained_glass_pane"
           }
         ]
       }
@@ -47,7 +47,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:light_gray_stained_glass_pane"]
+            "items": "minecraft:light_gray_stained_glass_pane"
           }
         ]
       }
@@ -87,7 +87,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:light_gray_stained_glass_pane"]
+            "items": "minecraft:light_gray_stained_glass_pane"
           }
         ]
       }
@@ -103,7 +103,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:light_gray_stained_glass_pane"]
+            "items": "minecraft:light_gray_stained_glass_pane"
           }
         ]
       }
@@ -151,7 +151,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:light_gray_stained_glass_pane"]
+            "items": "minecraft:light_gray_stained_glass_pane"
           }
         ]
       }
@@ -167,7 +167,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:light_gray_stained_glass_pane"]
+            "items": "minecraft:light_gray_stained_glass_pane"
           }
         ]
       }
@@ -199,7 +199,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:light_gray_stained_glass_pane"]
+            "items": "minecraft:light_gray_stained_glass_pane"
           }
         ]
       }
@@ -215,7 +215,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:light_gray_stained_glass_pane"]
+            "items": "minecraft:light_gray_stained_glass_pane"
           }
         ]
       }
@@ -231,7 +231,7 @@
           },
           {
             "type": "item",
-            "items": ["minecraft:light_gray_stained_glass_pane"]
+            "items": "minecraft:light_gray_stained_glass_pane"
           }
         ]
       }

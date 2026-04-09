@@ -161,10 +161,11 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     }
 
     fun markAllDirty() {
-        val chunks = McLevel.level.chunkSource.storage.chunks
+        val level = McLevel.selfOrNull ?: return
+        val chunks = level.chunkSource.storage.chunks
         val renderer = McClient.self.levelRenderer
         for (i in 0 until chunks.length()) {
-            val chunk = McLevel.level.chunkSource.storage.chunks.get(i)
+            val chunk = level.chunkSource.storage.chunks.get(i)
             if (chunk == null || chunk.isEmpty) continue
 
             for ((index, section) in chunk.sections.withIndex()) {

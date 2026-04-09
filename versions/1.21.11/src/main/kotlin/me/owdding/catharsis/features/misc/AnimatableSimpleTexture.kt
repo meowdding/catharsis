@@ -9,6 +9,7 @@ import com.mojang.blaze3d.textures.AddressMode
 import com.mojang.blaze3d.textures.FilterMode
 import com.mojang.blaze3d.textures.GpuTexture
 import com.mojang.blaze3d.textures.TextureFormat
+import me.owdding.catharsis.mixins.textures.AnimationStateAccessor
 import me.owdding.catharsis.utils.CatharsisLogger
 import net.minecraft.client.renderer.texture.SimpleTexture
 import net.minecraft.client.renderer.texture.SpriteContents
@@ -31,6 +32,7 @@ class AnimatableSimpleTexture(location: Identifier) : SimpleTexture(location), T
 
     private var contents: SpriteContents? = null
     private var data: AnimationData? = null
+    private var interpolated: Boolean = false
 
     val canTick: Boolean get() = contents?.isAnimated == true
 
@@ -51,6 +53,8 @@ class AnimatableSimpleTexture(location: Identifier) : SimpleTexture(location), T
             frameSize = FrameSize(image.width, image.height)
             animatedMetadata = null
         }
+
+        this.interpolated = animatedMetadata?.interpolatedFrames ?: false
         this.contents = SpriteContents(id, frameSize, image, Optional.ofNullable(animatedMetadata), listOf(), Optional.ofNullable(textureMetadata))
 
         return TextureContents(image, textureMetadata)
@@ -85,7 +89,7 @@ class AnimatableSimpleTexture(location: Identifier) : SimpleTexture(location), T
         this.textureView = device.createTextureView(this.texture!!)
 
         this.contents?.uploadFirstFrame(this.texture!!, 0)
-        this.data = this.contents?.createAndUploadState(id.toString())
+        this.data = this.contents?.createAndUploadState(id.toString(), this.interpolated)
 
         if (this.contents == null) {
             device.createCommandEncoder().writeToTexture(this.texture!!, image)
@@ -117,11 +121,19 @@ class AnimatableSimpleTexture(location: Identifier) : SimpleTexture(location), T
         this.contents = null
     }
 
-    private data class AnimationData(val state: SpriteContents.AnimationState, val buffer: GpuBuffer) : Closeable {
+    private data class AnimationData(
+        val state: SpriteContents.AnimationState,
+        val buffer: GpuBuffer,
+        val interpolated: Boolean,
+    ) : Closeable {
 
         fun tick(): Boolean {
             state.tick()
-            return state.needsToDraw()
+
+            // We also check the conditions ourselves since some optimization mods try
+            // to only render activate textures but this doesn't work since we can't guarantee
+            // that the contents are set as active, so for this specific animated textures they always tick
+            return state.needsToDraw() || (state as? AnimationStateAccessor)?.`catharsis$isDirty`() == true || interpolated
         }
 
         fun drawToPass(pass: RenderPass) {
@@ -137,7 +149,7 @@ class AnimatableSimpleTexture(location: Identifier) : SimpleTexture(location), T
     companion object {
         private val logger = CatharsisLogger.named("AnimatedTextures")
 
-        private fun SpriteContents.createAndUploadState(label: String): AnimationData? {
+        private fun SpriteContents.createAndUploadState(label: String, interpolated: Boolean): AnimationData? {
             if (!this.isAnimated) return null
 
             val size = Mth.roundToward(SpriteContents.UBO_SIZE, RenderSystem.getDevice().uniformOffsetAlignment)
@@ -152,7 +164,7 @@ class AnimatableSimpleTexture(location: Identifier) : SimpleTexture(location), T
             val gpuBuffer = RenderSystem.getDevice().createBuffer({ "$label sprite UBOs" }, GpuBuffer.USAGE_UNIFORM, byteBuffer)
             val state = this.createAnimationState(gpuBuffer.slice(0, size.toLong()), size)!!
 
-            return AnimationData(state, gpuBuffer)
+            return AnimationData(state, gpuBuffer, interpolated)
         }
     }
 }

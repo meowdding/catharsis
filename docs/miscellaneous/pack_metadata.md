@@ -54,6 +54,6 @@ This metadata allows you to specify important information about your Catharsis p
 
 ## Fabric Overlays Explanation
 
-Pack overlays, (or also called Minipacks by a few), are a system provided by Fabric themselves, just not documented anywhere.
+Pack overlays, (or also called Minipacks by a few), are a system provided by Fabric themselves.
 
-They allow resource packs to conditionally load sub-folders based on certain conditions (or always), providing a way to have modular resource packs or just organised packs.
+Their docs are located [here](https://wiki.fabricmc.net/drafts:resourceconditions)

@@ -7,6 +7,7 @@ import com.llamalad7.mixinextras.sugar.Local;
 import me.owdding.catharsis.features.gui.definitions.GuiDefinitions;
 import me.owdding.catharsis.features.gui.modifications.GuiModifiers;
 import me.owdding.catharsis.features.gui.modifications.modifiers.SlotModifier;
+import me.owdding.catharsis.features.imc.ImcHandler;
 import net.minecraft.Optionull;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
@@ -35,6 +36,12 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
     private void catharsis$onRender(GuiGraphics graphics, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
         var modifier = GuiModifiers.getActiveModifier();
         for (var slot : this.menu.slots) {
+            if (ImcHandler.isDisabled(slot.getItem())) {
+                slot.catharsis$setPosition(null);
+                slot.catharsis$setHighlightable(true);
+                slot.catharsis$setHidden(false);
+                return;
+            }
             var id = GuiDefinitions.getSlot(slot.index);
             var slotModifier = modifier != null && id != null ? modifier.getSlots().get(id) : null;
 
@@ -60,11 +67,13 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
     @WrapMethod(method = "slotClicked")
     private void catharsis$onSlotClick(Slot slot, int slotId, int mouseButton, ClickType type, Operation<Void> original) {
         if (slot != null) {
-            var modifier = GuiModifiers.getActiveModifier();
-            var id = GuiDefinitions.getSlot(slot.index);
-            var slotModifier = modifier != null && id != null ? modifier.getSlots().get(id) : null;
+            if (!ImcHandler.isDisabled(slot.getItem())) {
+                var modifier = GuiModifiers.getActiveModifier();
+                var id = GuiDefinitions.getSlot(slot.index);
+                var slotModifier = modifier != null && id != null ? modifier.getSlots().get(id) : null;
 
-            if (slotModifier != null && !slotModifier.getClickable()) return;
+                if (slotModifier != null && !slotModifier.getClickable()) return;
+            }
         }
         original.call(slot, slotId, mouseButton, type);
     }

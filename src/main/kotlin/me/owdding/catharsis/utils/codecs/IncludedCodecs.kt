@@ -12,6 +12,8 @@ import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.color.item.ItemTintSource
 import net.minecraft.client.color.item.ItemTintSources
 import net.minecraft.client.renderer.block.model.BlockModelDefinition
+import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperties
+import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperty
 import net.minecraft.core.Holder
 import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.registries.BuiltInRegistries
@@ -40,8 +42,7 @@ object IncludedCodecs {
     @IncludedCodec
     val regexCodec: Codec<Regex> = Codec.STRING.xmap({ str -> Regex(str) }, { regex -> regex.pattern })
 
-    @IncludedCodec
-        (keyable = true)
+    @IncludedCodec(keyable = true)
     val resourceLocationCodec: Codec<Identifier> = Identifier.CODEC
 
     @IncludedCodec(named = "catharsis_identifier", keyable = true)
@@ -137,4 +138,7 @@ object IncludedCodecs {
     
     @IncludedCodec
     val dataComponentCodec: Codec<DataComponentType<*>> = BuiltInRegistries.DATA_COMPONENT_TYPE.byNameCodec()
+
+    @IncludedCodec
+    val conditionalItemPropertyCodec: MapCodec<ConditionalItemModelProperty> = ConditionalItemModelProperties.MAP_CODEC
 }

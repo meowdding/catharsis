@@ -50,11 +50,9 @@ object MiscItemModels : SimplePreparableReloadListener<List<MiscItemModels.MiscI
         resourceManager: ResourceManager,
         profiler: ProfilerFiller,
     ): List<MiscItems> {
-        return resourceManager.listResourceStacks("misc_items.json") {
-            it.path == "misc_items.json"
-        }[Catharsis.id("misc_items.json")]?.map {
+        return resourceManager.getResourceStack(Catharsis.id("misc_items.json")).map {
             it.readWithCodec(CatharsisCodecs.MiscItemsCodec.codec())
-        } ?: emptyList()
+        }
     }
 
     override fun apply(

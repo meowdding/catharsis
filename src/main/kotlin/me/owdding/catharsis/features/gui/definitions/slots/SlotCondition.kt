@@ -8,6 +8,7 @@ import me.owdding.catharsis.utils.codecs.IncludedCodecs
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
+import net.minecraft.world.inventory.Slot
 import net.minecraft.world.item.ItemStack
 
 interface SlotCondition {
@@ -15,8 +16,11 @@ interface SlotCondition {
     val codec: MapCodec<out SlotCondition>
     val cost: Int get() = 0
 
-    fun matches(slot: Int, stack: ItemStack): Boolean
+    fun matches(slots: List<Slot>, slot: Int, stack: ItemStack): Boolean
     fun optimize(): SlotCondition = this
+
+    operator fun invoke(slots: List<Slot>, slot: Slot): Boolean = matches(slots, slot.index, slot.item)
+    operator fun invoke(slots: List<Slot>, slot: Int, stack: ItemStack): Boolean = matches(slots, slot, stack)
 }
 
 object SlotConditions {
@@ -41,5 +45,7 @@ object SlotConditions {
         ID_MAPPER.put(Catharsis.id("texture"), CatharsisCodecs.getMapCodec<SlotTextureCondition>())
         ID_MAPPER.put(Catharsis.id("is_tooltip_hidden"), IsTooltipHiddenCondition.codec)
         ID_MAPPER.put(Catharsis.id("not"), CatharsisCodecs.getMapCodec<SlotNotCondition>())
+        ID_MAPPER.put(Catharsis.id("relative_slot"), CatharsisCodecs.getMapCodec<RelativeSlotCondition>())
+        ID_MAPPER.put(Catharsis.id("menu_border"), CatharsisCodecs.getMapCodec<SlotBorderCondition>())
     }
 }

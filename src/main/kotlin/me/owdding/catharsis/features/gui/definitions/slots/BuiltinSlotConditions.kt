@@ -2,19 +2,18 @@ package me.owdding.catharsis.features.gui.definitions.slots
 
 import com.mojang.datafixers.util.Either
 import com.mojang.serialization.MapCodec
+import com.mojang.serialization.codecs.RecordCodecBuilder
 import it.unimi.dsi.fastutil.ints.IntArraySet
 import me.owdding.catharsis.features.gui.matchers.TextMatcher
 import me.owdding.catharsis.features.imc.ImcHandler.isDisabled
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.generated.CodecUtils
+import me.owdding.catharsis.utils.codecs.IncludedCodecs
+import me.owdding.catharsis.utils.extensions.base64Texture
 import me.owdding.catharsis.utils.extensions.extremesOf
+import me.owdding.catharsis.utils.types.Base64String
 import me.owdding.catharsis.utils.types.IntPredicate
-import me.owdding.ktcodecs.Compact
-import me.owdding.ktcodecs.FieldName
-import me.owdding.ktcodecs.FieldNames
-import me.owdding.ktcodecs.GenerateCodec
-import me.owdding.ktcodecs.Inline
-import me.owdding.ktcodecs.NamedCodec
-import me.owdding.ktcodecs.OptionalBoolean
+import me.owdding.ktcodecs.*
 import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.component.DataComponents
 import net.minecraft.world.inventory.Slot
@@ -25,7 +24,6 @@ import tech.thatgravyboat.skyblockapi.api.datatype.getData
 import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
 import tech.thatgravyboat.skyblockapi.utils.extentions.cleanName
 import tech.thatgravyboat.skyblockapi.utils.extentions.getRawLore
-import tech.thatgravyboat.skyblockapi.utils.extentions.getTexture
 import kotlin.math.max
 import kotlin.math.min
 
@@ -150,14 +148,21 @@ data class SlotIslandCondition(
     override fun matches(slots: List<Slot>, slot: Int, stack: ItemStack): Boolean = SkyBlockIsland.inAnyIsland(islands)
 }
 
-@GenerateCodec
 data class SlotTextureCondition(
-    @Compact val textures: Set<String>,
+    @Compact val textures: Set</*@NamedCodec("base64_string")*/ Base64String>,
 ) : SlotCondition {
-    override val codec = CatharsisCodecs.getMapCodec<SlotTextureCondition>()
+    override val codec = CODEC
     override fun matches(slots: List<Slot>, slot: Int, stack: ItemStack): Boolean {
-        val texture = stack.getTexture() ?: return false
+        val texture = stack.base64Texture ?: return false
         return texture in this.textures
+    }
+
+    companion object {
+
+        // TODO remove when NamedCodec works on type parameters
+        val CODEC: MapCodec<SlotTextureCondition> = RecordCodecBuilder.mapCodec { it.group(
+            CodecUtils.compactSet(IncludedCodecs.BASE64_STRING_CODEC).fieldOf("textures").forGetter(SlotTextureCondition::textures)
+        ).apply(it, ::SlotTextureCondition) }
     }
 }
 

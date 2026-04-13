@@ -2,13 +2,17 @@ package me.owdding.catharsis.utils.extensions
 
 import com.google.gson.JsonElement
 import com.mojang.serialization.Codec
+import me.owdding.catharsis.utils.types.Base64String
+import me.owdding.catharsis.utils.types.requireBase64Padding
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
 import net.minecraft.server.packs.resources.Resource
 import net.minecraft.util.ExtraCodecs
+import net.minecraft.world.item.ItemStack
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.phys.Vec3
 import tech.thatgravyboat.skyblockapi.platform.identifier
+import tech.thatgravyboat.skyblockapi.utils.extentions.getTexture
 import tech.thatgravyboat.skyblockapi.utils.extentions.plus
 import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
@@ -24,3 +28,5 @@ fun <T : Any> Resource.readWithCodec(codec: Codec<T>): T = this.open().use { it.
 
 @Suppress("DEPRECATION")
 val Block.identifier get() = this.builtInRegistryHolder().key().identifier
+
+val ItemStack.base64Texture: Base64String? get() = this.getTexture()?.requireBase64Padding()

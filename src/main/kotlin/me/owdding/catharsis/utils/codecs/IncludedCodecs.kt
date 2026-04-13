@@ -8,6 +8,8 @@ import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CodecUtils
 import me.owdding.catharsis.utils.Utils
+import me.owdding.catharsis.utils.types.Base64String
+import me.owdding.catharsis.utils.types.requireBase64Padding
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.color.item.ItemTintSource
 import net.minecraft.client.color.item.ItemTintSources
@@ -141,4 +143,10 @@ object IncludedCodecs {
 
     @IncludedCodec
     val conditionalItemPropertyCodec: MapCodec<ConditionalItemModelProperty> = ConditionalItemModelProperties.MAP_CODEC
+
+//     @IncludedCodec(keyable = true, named = "base64_string")
+    val BASE64_STRING_CODEC: Codec<Base64String> = Codec.STRING.xmap(
+        { it.requireBase64Padding() },
+        { it },
+    )
 }

@@ -31,13 +31,13 @@ data class ForwardingVersionCatalog(
     fun plugin(name: String): Provider<PluginDependency> = first(name, VersionCatalog::findPlugin)
     fun version(name: String): VersionConstraint = first(name, VersionCatalog::findVersion)
 
-    fun has(name: String): Boolean = runCatching { get(name) }.map { true }.getOrDefault(false)
     operator fun get(name: String): Provider<MinimalExternalModuleDependency> = library(name)
 
     data class ForwardingProperty<T>(
         val parent: ForwardingVersionCatalog,
         val lookup: VersionCatalog.(String) -> Optional<T>
     ) {
+        fun has(name: String): Boolean = runCatching { get(name) }.map { true }.getOrDefault(false)
         operator fun get(name: String): T = parent.first(name, lookup)
         fun getOrFallback(
             name: String,

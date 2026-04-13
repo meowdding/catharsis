@@ -53,10 +53,12 @@ sealed interface IntPredicate {
 sealed interface FloatPredicate {
     operator fun contains(value: Float): Boolean
 
+    @GenerateCodec
     data class Range(val min: Float, val max: Float) : FloatPredicate {
         override fun contains(value: Float) = value in min..max
     }
 
+    @GenerateCodec
     data class Set(val set: FloatSet) : FloatPredicate {
         override fun contains(value: Float) = value in set
     }

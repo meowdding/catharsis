@@ -15,13 +15,12 @@ import org.jetbrains.kotlin.gradle.dsl.abi.ExperimentalAbiValidation
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+    id("idea")
     kotlin("jvm")
     id("me.owdding.resources")
     id("me.owdding.auto-mixins")
     id("com.google.devtools.ksp")
     id("versioned-catalogues")
-    id("item-data")
-    id("idea")
 }
 
 kotlin {
@@ -176,17 +175,9 @@ afterEvaluate {
     }
 }
 
-extensions.getByType<KspExtension>().apply {
-    arg("meowdding.modules.project_name", "SkyblockAPI")
-    arg("meowdding.modules.package", "tech.thatgravyboat.skyblockapi.generated")
-    arg("meowdding.codecs.project_name", "SkyblockAPI")
-    arg("meowdding.codecs.package", "tech.thatgravyboat.skyblockapi.generated")
-}
-
-extensions.getByType<AutoMixinExtension>().apply {
-    mixinPackage = "tech.thatgravyboat.skyblockapi.mixins"
-    projectName = "skyblock-api"
-    mixinExtrasVersion = "0.5.0"
+ksp {
+    arg("meowdding.project_name", "catharsis")
+    arg("meowdding.package", "me.owdding.catharsis.generated")
 }
 
 extensions.getByType<IdeaModel>().apply {
@@ -196,16 +187,6 @@ extensions.getByType<IdeaModel>().apply {
 
         excludeDirs.add(file("run"))
     }
-}
-
-extensions.getByType<CompactingResourcesExtension>().apply {
-    basePath = "repo"
-    pathDirectory = "../../src"
-
-    configureTask(tasks.named<AbstractCopyTask>("processResources").get())
-
-    removeComments("skyblockid/unobtainable_ids")
-    substituteFromDifferentFile("slayer", "slayers")
 }
 
 kotlin {

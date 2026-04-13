@@ -1,6 +1,5 @@
 plugins {
     id("dev.kikugie.stonecutter")
-    id("fabric-loom") version "1.14-SNAPSHOT" apply false
 }
 
 @Suppress("UNCHECKED_CAST")
@@ -14,6 +13,7 @@ stonecutter parameters {
     swaps["mod_version"] = "\"" + property("version") + "\";"
     swaps["minecraft"] = "\"" + node.metadata.version + "\";"
     Replacements.read(project).replacements.forEach { (name, replacement) ->
+        /*
         when (replacement) {
             is StringReplacement if replacement.named -> replacements.string(name) {
                 direction = eval(current.version, replacement.condition)
@@ -36,6 +36,6 @@ stonecutter parameters {
                 replace(replacement.regex, replacement.to)
                 reverse(replacement.reverseRegex, replacement.reverse)
             }
-        }
+        }*/
     }
 }

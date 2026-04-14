@@ -17,15 +17,12 @@ import net.minecraft.network.chat.Component
 import net.minecraft.server.packs.PackResources
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.util.GsonHelper
-import tech.thatgravyboat.skyblockapi.utils.text.CommonText
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 
 sealed interface PackConfigOption {
 
     val type: MapCodec<out PackConfigOption>
 
-    val title: Component
-    val description: Component
     val id: String? get() = null
 
     val asJson: JsonElement? get() = null
@@ -37,35 +34,46 @@ sealed interface PackConfigOption {
         json.add(id, value)
     }
 
+    fun title(value: String?): Component
+    fun description(value: String?): Component
+
     @GenerateCodec
-    data class Separator(override val title: Component, override val description: Component) : PackConfigOption {
+    data class Separator(val title: Component, val description: Component) : PackConfigOption {
         override val type: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Separator>()
         override val id: String? = null
+        override fun title(value: String?): Component = title
+        override fun description(value: String?): Component = description
     }
 
     @GenerateCodec
-    data class Information(override val title: Component, override val description: Component) : PackConfigOption {
+    data class Information(val title: Component, val description: Component) : PackConfigOption {
         override val type: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Information>()
         override val id: String? = null
+        override fun title(value: String?): Component = title
+        override fun description(value: String?): Component = description
     }
 
     @GenerateCodec
     data class Bool(
         override val id: String,
-        override val title: Component,
-        override val description: Component,
+        val title: Component,
+        val description: Component = Component.empty(),
+        val descriptions: Map<String, Component> = mapOf(),
         val default: Boolean = false,
     ) : PackConfigOption {
 
         override val type: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Bool>()
         override val asJson: JsonElement get() = JsonPrimitive(default)
+        override fun title(value: String?): Component = title
+        override fun description(value: String?): Component = descriptions[value] ?: description
     }
 
     @GenerateCodec
     data class Dropdown(
         override val id: String,
-        override val title: Component,
-        override val description: Component,
+        val title: Component,
+        val description: Component = Component.empty(),
+        val descriptions: Map<String, Component> = mapOf(),
         val options: List<Entry>,
     ) : PackConfigOption {
 
@@ -73,6 +81,8 @@ sealed interface PackConfigOption {
 
         override val type: MapCodec<out PackConfigOption> = CODEC
         override val asJson: JsonElement get() = JsonPrimitive(default.value)
+        override fun title(value: String?): Component = title
+        override fun description(value: String?): Component = descriptions[value] ?: description
 
         @GenerateCodec
         data class Entry(val value: String, val text: Component, val default: Boolean = false)
@@ -96,8 +106,9 @@ sealed interface PackConfigOption {
     @GenerateCodec
     data class Select(
         override val id: String,
-        override val title: Component,
-        override val description: Component,
+        val title: Component,
+        val description: Component = Component.empty(),
+        val descriptions: Map<String, Component> = mapOf(),
         val options: List<SelectEntry>,
         val single: Boolean = false,
     ) : PackConfigOption {
@@ -110,6 +121,8 @@ sealed interface PackConfigOption {
         } else {
             JsonArray(default.size).also { array -> default.forEach { array.add(it.value) } }
         }
+        override fun title(value: String?): Component = title
+        override fun description(value: String?): Component = descriptions[value] ?: description
 
         @GenerateCodec
         data class SelectEntry(
@@ -145,25 +158,28 @@ sealed interface PackConfigOption {
     @GenerateCodec
     data class Color(
         override val id: String,
-        override val title: Component,
-        override val description: Component,
+        val title: Component,
+        val description: Component,
         val default: Int = 0,
         val alpha: Boolean = false,
     ) : PackConfigOption {
 
         override val type: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Color>()
         override val asJson: JsonElement get() = JsonPrimitive(default)
+        override fun title(value: String?): Component = title
+        override fun description(value: String?): Component = description
     }
 
     @GenerateCodec
     data class Tab(
-        override val title: Component,
+        val title: Component,
         val options: List<PackConfigOption>,
     ) : PackConfigOption {
 
         override val type: MapCodec<out PackConfigOption> = CODEC
         override val id: String? = null
-        override val description: Component = CommonText.EMPTY
+        override fun title(value: String?): Component = title
+        override fun description(value: String?): Component = Component.empty()
 
         override fun addToDefault(json: JsonObject) {
             for (option in options) {

@@ -92,6 +92,11 @@ object PackConfigHandler : ResourceManagerReloadListener {
         }
     }
 
+    @JvmStatic
+    fun isLoaded(id: String): Boolean {
+        return catharsisPackOptions.containsKey(id)
+    }
+
     @Subscription(TickEvent::class)
     @TimePassed("10s")
     fun onTick() {

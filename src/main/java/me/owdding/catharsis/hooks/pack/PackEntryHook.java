@@ -14,4 +14,8 @@ public interface PackEntryHook {
     default List<PackConfigOption> catharsis$getConfig() {
         throw new UnsupportedOperationException();
     }
+
+    default boolean catharsis$requiresPackToOpenConfig() {
+        return false;
+    }
 }

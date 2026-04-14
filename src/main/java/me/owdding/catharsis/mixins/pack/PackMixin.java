@@ -74,6 +74,11 @@ public class PackMixin implements PackMetadataHook {
         return this.metadata.catharsis$getConfig();
     }
 
+    @Override
+    public boolean catharsis$requiresPackToOpenConfig() {
+        return this.metadata.catharsis$requiresPackToOpenConfig();
+    }
+
     @Unique
     private static CatharsisMetadataSection catharsis$parseMetadata(Pack.ResourcesSupplier resources, PackLocationInfo info) {
         try (var sources = resources.openPrimary(info)) {
@@ -118,6 +123,11 @@ public class PackMixin implements PackMetadataHook {
         @Override
         public List<PackConfigOption> catharsis$getConfig() {
             return Objects.requireNonNullElseGet(this.catharsis$config, () -> this.catharsis$metadata != null ? this.catharsis$metadata.getConfig() : List.of());
+        }
+
+        @Override
+        public boolean catharsis$requiresPackToOpenConfig() {
+            return this.catharsis$metadata != null && this.catharsis$metadata.getPackRequiredForConfig();
         }
     }
 }

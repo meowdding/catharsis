@@ -16,7 +16,7 @@ data class ConfigResourceCondition(val pack: String, val id: String, val value: 
 
     override fun getType(): ResourceConditionType<*> = TYPE
     override fun test(registryInfo: RegistryOps.RegistryInfoLookup?): Boolean {
-        val entry = PackConfigHandler.getConfig(pack).get(id) as? JsonPrimitive ?: return false
+        val entry = PackConfigHandler.getConfig(pack).get(id) ?: return false
         return when {
             entry.isBoolean -> entry.asBoolean
             entry.isString -> entry.asString == this.value

@@ -6,6 +6,7 @@ import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import me.owdding.catharsis.features.gui.modifications.GuiModifiers;
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElementRenderLayer;
+import me.owdding.catharsis.hooks.gui.AbstractContainerScreenHook;
 import me.owdding.catharsis.hooks.gui.CatharsisScreenBounds;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
@@ -23,7 +24,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AbstractContainerScreen.class)
-public abstract class AbstractContainerScreenElementsMixin<T extends AbstractContainerMenu> extends Screen {
+public abstract class AbstractContainerScreenElementsMixin<T extends AbstractContainerMenu> extends Screen implements AbstractContainerScreenHook {
 
     @Shadow @Final protected T menu;
     @Shadow protected int leftPos;
@@ -42,6 +43,11 @@ public abstract class AbstractContainerScreenElementsMixin<T extends AbstractCon
         this.catharsis$bounds = new CatharsisScreenBounds(this.leftPos, this.topPos, this.imageWidth, this.imageHeight);
     }
 
+    @Override
+    public CatharsisScreenBounds catharsis$containerBounds() {
+        return catharsis$bounds;
+    }
+
     @WrapWithCondition(
         //~ if >= 26.1 'renderContents' -> 'extractContents'
         method = "extractContents",
@@ -53,8 +59,8 @@ public abstract class AbstractContainerScreenElementsMixin<T extends AbstractCon
         return modifier == null || !modifier.getOverrideLabels();
     }
 
-    /* TODO ????
-    @WrapOperation(method = "renderBackground", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screens/inventory/AbstractContainerScreen;renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V"))
+    //? < 26.1 {
+    /*@WrapOperation(method = "renderBackground", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screens/inventory/AbstractContainerScreen;renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V"))
     private void catharsis$renderBackground(AbstractContainerScreen<?> instance, GuiGraphics graphics, float partialTick, int mouseX, int mouseY, Operation<Void> original) {
         var modifier = GuiModifiers.getActiveModifier();
         var hasModifier = modifier != null && this.catharsis$bounds != null;
@@ -72,7 +78,7 @@ public abstract class AbstractContainerScreenElementsMixin<T extends AbstractCon
             );
         }
     }
-     */
+     *///? }
 
     @Inject(
         //~ if >= 26.1 'renderContents' -> 'extractContents'

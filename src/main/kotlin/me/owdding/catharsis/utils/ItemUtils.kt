@@ -206,7 +206,17 @@ object ItemUtils {
             return hypixelId
         }
 
-        return MiscItemModels.getModel(stack)
+        val baseMiscModel = MiscItemModels.getBaseModel(stack)
+        if (baseMiscModel != null && predicate.test(baseMiscModel)) {
+            return baseMiscModel
+        }
+
+        val extraMiscModel = MiscItemModels.getExtraModel(stack)
+        if (extraMiscModel != null && predicate.test(extraMiscModel)) {
+            return extraMiscModel
+        }
+
+        return null
     }
 
     private fun SkyBlockId.cleanOrNull() = this.cleanId.lowercase().takeUnless { it == UNKNOWN }

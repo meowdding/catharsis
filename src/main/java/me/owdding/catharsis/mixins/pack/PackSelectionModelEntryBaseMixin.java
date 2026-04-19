@@ -32,4 +32,9 @@ public class PackSelectionModelEntryBaseMixin implements PackEntryHook {
         }
         return null;
     }
+
+    @Override
+    public boolean catharsis$requiresPackToOpenConfig() {
+        return this.pack != null && this.pack.catharsis$requiresPackToOpenConfig();
+    }
 }

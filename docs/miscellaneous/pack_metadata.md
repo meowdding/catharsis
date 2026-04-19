@@ -21,6 +21,7 @@ TODO
   - <TypeIcon type="object"/> **dependencies**: (Optional) A map of required mods.
     - <TypeIcon type="string"/> **&lt;key&gt;**: The id of the mod.
       - <TypeIcon type="string"/> The version range (e.g., `>=1.0.0`).
+  - <TypeIcon type="boolean"/> **pack_required_for_config**: (Optional) Whether the pack is required for the config menu to show up, defaults to `false`.
   - <TypeIcon type="array"/> **config**: (Optional) A list of config elements for the settings menu.
     - <TypeIcon type="object"/> **Config Element**:
       - <TypeIcon type="string"/> **type**: The type of element (`tab`, `dropdown`, `boolean`, `information`, or `separator`).

@@ -34,9 +34,15 @@ object MiscItemModels : SimplePreparableReloadListener<List<MiscItemModels.MiscI
     private var extra: MutableList<MiscItems> = mutableListOf()
 
     @JvmStatic
-    fun getModel(stack: ItemStack): Identifier? {
+    fun getBaseModel(stack: ItemStack): Identifier? {
         val skin = stack.base64Texture ?: return null
-        return cache?.reverseMap[skin] ?: extra.firstNotNullOfOrNull { it.reverseMap[skin] }
+        return cache?.reverseMap[skin]
+    }
+
+    @JvmStatic
+    fun getExtraModel(stack: ItemStack): Identifier? {
+        val skin = stack.base64Texture ?: return null
+        return extra.firstNotNullOfOrNull { it.reverseMap[skin] }
     }
 
     @Subscription

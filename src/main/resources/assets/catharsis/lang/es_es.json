@@ -1,0 +1,6 @@
+{
+  "pack.catharsis.incompatible.title": "Incompatibilidad de Mods",
+  "pack.catharsis.incompatible.desc": "Incompatibilidades de mods encontradas. Pasa el cursor por encima para más detalles.",
+  "pack.catharsis.incompatible.tooltip.missing": "Mods no Encontrados:",
+  "pack.catharsis.incompatible.tooltip.conflicting": "Versiones de Mods Obsoletas:"
+}

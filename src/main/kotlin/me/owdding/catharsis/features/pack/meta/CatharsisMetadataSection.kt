@@ -22,6 +22,7 @@ data class CatharsisMetadataSection(
     @FieldName("update_url") val updateUrl: String?,
     val dependencies: Map<String, String> = emptyMap(),
     val config: List<PackConfigOption> = emptyList(),
+    @FieldName("pack_required_for_config") val packRequiredForConfig: Boolean = false,
 ) {
 
     val incompatibilities: List<Pair<String, ModContainer?>> = dependencies.mapNotNull { (mod, range) ->

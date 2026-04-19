@@ -45,7 +45,6 @@ public abstract class HumanoidArmorModelMixin<S extends HumanoidRenderState, A e
             var texture = textures[i];
             var color = colors[i];
 
-            //~ if >= 26.1 'entityCutoutNoCull' -> 'entityCutout'
             nodes.order(i + 1).submitCustomGeometry(stack, RenderTypes.entityCutout(texture), (pose, consumer) -> {
                 model.setupAnim(state);
                 BedrockGeometryRenderer.render(renderer.getGeometry(), slot, model, pose, consumer, color, light, OverlayTexture.NO_OVERLAY);

@@ -1,4 +1,3 @@
-//~ named_identifier
 package me.owdding.catharsis.mixins.entity;
 
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
@@ -33,7 +32,6 @@ public abstract class LivingEntityRendererMixin<S extends LivingEntityRenderStat
     protected abstract boolean isBodyVisible(S renderState);
 
     @WrapMethod(
-        //~ if >= 26.1 'Lnet/minecraft/client/renderer/state/CameraRenderState;' -> 'Lnet/minecraft/client/renderer/state/level/CameraRenderState;'
         method = "submit(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;Lnet/minecraft/client/renderer/state/level/CameraRenderState;)V"
     )
     private void catharsis$swapOutModel(S renderState, PoseStack poseStack, SubmitNodeCollector nodeCollector, CameraRenderState cameraRenderState, Operation<Void> original) {
@@ -52,7 +50,6 @@ public abstract class LivingEntityRendererMixin<S extends LivingEntityRenderStat
     }
 
     @ModifyArg(
-        //~ if >= 26.1 'Lnet/minecraft/client/renderer/state/CameraRenderState;' -> 'Lnet/minecraft/client/renderer/state/level/CameraRenderState;'
         method = "submit(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;Lnet/minecraft/client/renderer/state/level/CameraRenderState;)V",
         at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/SubmitNodeCollector;submitModel(Lnet/minecraft/client/model/Model;Ljava/lang/Object;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/rendertype/RenderType;IIILnet/minecraft/client/renderer/texture/TextureAtlasSprite;ILnet/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay;)V"),
         index = 3
@@ -68,7 +65,6 @@ public abstract class LivingEntityRendererMixin<S extends LivingEntityRenderStat
     }
 
     @WrapWithCondition(
-        //~ if >= 26.1 'Lnet/minecraft/client/renderer/state/CameraRenderState;' -> 'Lnet/minecraft/client/renderer/state/level/CameraRenderState;'
         method = "submit(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;Lnet/minecraft/client/renderer/state/level/CameraRenderState;)V",
         at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/entity/layers/RenderLayer;submit(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;ILnet/minecraft/client/renderer/entity/state/EntityRenderState;FF)V")
     )
@@ -98,13 +94,11 @@ public abstract class LivingEntityRendererMixin<S extends LivingEntityRenderStat
                 return RenderTypes.entityTranslucent(texture, false);
             }
             if (bodyVisible) {
-                //~ if >= 26.1 'entityCutoutNoCull' -> 'entityCutout'
                 return RenderTypes.entityCutout(texture, false);
             }
         }
 
         if (spectatorVisible) {
-            //~ if >= 26.1 'itemEntityTranslucentCull' -> 'itemTranslucent'
             return RenderTypes.itemTranslucent(texture);
         }
 

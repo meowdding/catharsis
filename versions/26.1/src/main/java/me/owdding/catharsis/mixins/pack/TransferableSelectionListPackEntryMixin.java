@@ -1,4 +1,3 @@
-//~ named_identifier
 package me.owdding.catharsis.mixins.pack;
 
 import com.llamalad7.mixinextras.sugar.Local;
@@ -11,7 +10,6 @@ import me.owdding.catharsis.features.pack.meta.CatharsisMetadataSection;
 import me.owdding.catharsis.hooks.pack.PackEntryHook;
 import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.client.Minecraft;
-//~ gui_graphics
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.MultiLineTextWidget;
 import net.minecraft.client.gui.components.ObjectSelectionList;
@@ -63,7 +61,6 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     private int top = 0;
 
     @Inject(
-        //~ if >= 26.1 'renderContent' -> 'extractContent'
         method = "extractContent",
         at = @At("HEAD")
     )
@@ -73,7 +70,6 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     }
 
     @Inject(
-        //~ if >= 26.1 'renderContent' -> 'extractContent'
         method = "extractContent",
         at = @At(
             value = "INVOKE",
@@ -98,7 +94,6 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     }
 
     @Inject(
-        //~ if >= 26.1 'renderContent' -> 'extractContent'
         method = "extractContent",
         at = @At("TAIL")
     )

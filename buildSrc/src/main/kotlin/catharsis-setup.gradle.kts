@@ -155,6 +155,7 @@ tasks.withType<ProcessResources>().configureEach {
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
     with(copySpec {
         from(accessWidenerFile)
+        rename { it.replace(".obf", "") }
     })
 }
 
@@ -189,7 +190,7 @@ dependencies {
         capabilities { requireCapability("tech.thatgravyboat:skyblock-api-${stonecutter.current.version}") }
     }
     "include"(versionedCatalog["skyblockapi"]) {
-        capabilities { requireCapability("tech.thatgravyboat:skyblock-api-${stonecutter.current.version}-remapped") }
+        capabilities { requireCapability("tech.thatgravyboat:skyblock-api-${stonecutter.current.version}${if (isUnobfuscated()) "" else "-remapped"}") }
     }
 
     includeImplementation(versionedCatalog["placeholders"])

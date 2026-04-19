@@ -13,8 +13,6 @@ import net.minecraft.client.renderer.block.dispatch.BlockStateModel
 import net.minecraft.client.renderer.block.dispatch.BlockStateModelPart
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.client.resources.model.ResolvableModel
-import net.minecraft.client.resources.model.geometry.BakedQuad
-import net.minecraft.client.resources.model.sprite.Material
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
 import net.minecraft.util.Mth
@@ -79,8 +77,8 @@ data class BlockStateModelReplacement(
     }
 
     //? >= 26.1 {
-    override fun materialFlags(): @BakedQuad.MaterialFlags Int = original.materialFlags()
-    override fun materialFlags(level: BlockAndTintGetter, pos: BlockPos, state: BlockState, random: RandomSource): @BakedQuad.MaterialFlags Int {
+    override fun materialFlags(): Int = original.materialFlags()
+    override fun materialFlags(level: BlockAndTintGetter, pos: BlockPos, state: BlockState, random: RandomSource): Int {
         val replacement = select(level, state, pos)
         val model = replacement?.models[state]
         if (model != null) {
@@ -89,8 +87,8 @@ data class BlockStateModelReplacement(
         return super<BlockStateModel>.materialFlags(level, pos, state, random)
     }
 
-    override fun hasMaterialFlag(flag: @BakedQuad.MaterialFlags Int): Boolean = original.hasMaterialFlag(flag)
-    override fun hasMaterialFlag(level: BlockAndTintGetter, pos: BlockPos, state: BlockState, random: RandomSource, flag: @BakedQuad.MaterialFlags Int): Boolean {
+    override fun hasMaterialFlag(flag: Int): Boolean = original.hasMaterialFlag(flag)
+    override fun hasMaterialFlag(level: BlockAndTintGetter, pos: BlockPos, state: BlockState, random: RandomSource, flag: Int): Boolean {
         val replacement = select(level, state, pos)
         val model = replacement?.models[state]
         if (model != null) {
@@ -112,7 +110,7 @@ data class BlockStateModelReplacement(
     //~ }
 
     //~ if >= 26.1 'particleIcon(' -> 'particleMaterial('
-    override fun particleMaterial(): Material.Baked = original.particleMaterial()
+    override fun particleMaterial() = original.particleMaterial()
 
     fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos): BlockReplacementEntry? {
         val random = RandomSource.create(Mth.getSeed(pos))

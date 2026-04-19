@@ -27,7 +27,7 @@ abstract class BaseButtonWidget(x: Int, y: Int, width: Int, height: Int) : Abstr
     }
 
     //? < 1.21.11 {
-    /*override fun renderWidget(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float) {
+    /*override fun renderWidget(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float) {
         this.renderContents(graphics, mouseX, mouseY, partialTicks)
         if (this.isHovered()) {
             graphics.requestCursor(if (this.isActive) com.mojang.blaze3d.platform.cursor.CursorTypes.POINTING_HAND else com.mojang.blaze3d.platform.cursor.CursorTypes.NOT_ALLOWED)
@@ -36,7 +36,7 @@ abstract class BaseButtonWidget(x: Int, y: Int, width: Int, height: Int) : Abstr
     *///?}
 
     //? < 1.21.11 {
-    /*abstract fun renderContents(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float)
+    /*abstract fun renderContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float)
     *///?}
 
     companion object {

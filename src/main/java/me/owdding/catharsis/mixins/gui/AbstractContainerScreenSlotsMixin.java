@@ -67,7 +67,7 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
         return true;
     }
 
-    @WrapMethod(method = "slotClicked")
+    @WrapMethod(method = "slotClicked") //~ if >= 26.1 'ClickType' -> 'ContainerInput'
     private void catharsis$onSlotClick(Slot slot, int slotId, int mouseButton, ContainerInput type, Operation<Void> original) {
         if (slot != null) {
             if (!ImcHandler.isDisabled(slot.getItem())) {

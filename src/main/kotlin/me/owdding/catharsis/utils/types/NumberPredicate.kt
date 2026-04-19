@@ -11,6 +11,7 @@ import it.unimi.dsi.fastutil.ints.IntSets
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.IncludedCodec
+import me.owdding.ktcodecs.NamedCodec
 import net.minecraft.util.ExtraCodecs
 
 sealed interface IntPredicate {
@@ -54,6 +55,7 @@ sealed interface FloatPredicate {
     operator fun contains(value: Float): Boolean
 
     @GenerateCodec
+    @NamedCodec("FloatRange")
     data class Range(val min: Float, val max: Float) : FloatPredicate {
         override fun contains(value: Float) = value in min..max
     }

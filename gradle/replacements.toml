@@ -103,3 +103,16 @@ regex = "import net.minecraft.client.gui.GuiGraphicsExtractor(?!;)"
 to = "import net.minecraft.client.gui.GuiGraphics as GuiGraphicsExtractor"
 reverseRegex = "import net.minecraft.client.gui.GuiGraphics as GuiGraphicsExtractor"
 reverse = "import net.minecraft.client.gui.GuiGraphicsExtractor"
+
+[camera_render_state]
+type = "string"
+condition = "< 26.1"
+from = "import net.minecraft.client.renderer.state.level.CameraRenderState"
+to = "import net.minecraft.client.renderer.state.CameraRenderState"
+
+[gui_graphics]
+type = "string"
+named = "true"
+condition = "< 26.1"
+from = "GuiGraphicsExtractor"
+to = "GuiGraphics"

@@ -6,7 +6,7 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.utils.HsbState
 import me.owdding.catharsis.utils.ui.BaseButtonWidget
 import me.owdding.catharsis.utils.ui.Overlay
-import net.minecraft.client.gui.GuiGraphics
+import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.components.tabs.Tab
 import net.minecraft.client.gui.components.tabs.TabManager
 import net.minecraft.client.gui.components.tabs.TabNavigationBar
@@ -36,10 +36,12 @@ private const val TAB_PADDING = 5
 
 class MinSizedTabNavigation(private var _width: Int, manager: TabManager, tabs: List<Tab>) : TabNavigationBar(_width, manager, tabs) {
 
-    override fun setWidth(width: Int) {
+    //~ if >= 26.1 'setWidth' -> 'updateWidth' {
+    override fun updateWidth(width: Int) {
         this._width = width
-        super.setWidth(width)
+        super.updateWidth(width)
     }
+    //~ }
 
     override fun arrangeElements() {
         val minTabWidth = this.tabButtons.maxOf { it.message.width + TAB_PADDING * 2 }
@@ -69,7 +71,8 @@ class ColorPickerButton(width: Int, height: Int, color: Int, val opaque: Boolean
         McClient.setScreen(ColorOverlay(this))
     }
 
-    override fun renderContents(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float) {
+    //~ if >= 26.1 'renderContents' -> 'extractContents'
+    override fun extractContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float) {
         graphics.drawSprite(SPRITES.get(this.active, this.isHoveredOrFocused), this.x, this.y, this.width, this.height)
 
         val padding = (this.height - 10) / 2
@@ -126,11 +129,16 @@ class ColorPickerButton(width: Int, height: Int, color: Int, val opaque: Boolean
             )
         }
 
-        override fun renderBackground(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTick: Float) {
-            super.renderBackground(graphics, mouseX, mouseY, partialTick)
-            this.renderTransparentBackground(graphics)
 
-            this.button.render(graphics, -1, -1, partialTick) // Rerender the button on top of the background for better visibility
+        //~ if >= 26.1 'renderBackground' -> 'extractBackground'
+        override fun extractBackground(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
+            //~ if >= 26.1 'renderBackground' -> 'extractBackground'
+            super.extractBackground(graphics, mouseX, mouseY, partialTick)
+            //~ if >= 26.1 'renderTransparentBackground' -> 'extractTransparentBackground'
+            this.extractTransparentBackground(graphics)
+
+            //~ if >= 26.1 'render(' -> 'extractRenderState('
+            this.button.extractRenderState(graphics, -1, -1, partialTick) // Rerender the button on top of the background for better visibility
 
             val bounds = this.bounds ?: return
 
@@ -196,7 +204,8 @@ class SelectButton<T>(width: Int, height: Int) : BaseButtonWidget(0, 0, width, h
         }
     }
 
-    override fun renderContents(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float) {
+    //~ if >= 26.1 'renderContents' -> 'extractContents'
+    override fun extractContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float) {
         val text = this.getMessage()
 
         graphics.drawSprite(SPRITES.get(this.active, this.isHoveredOrFocused), this.x, this.y, this.width, this.height)
@@ -224,8 +233,10 @@ class SelectButton<T>(width: Int, height: Int) : BaseButtonWidget(0, 0, width, h
             return mouseX.toInt() >= this.x && mouseX.toInt() <= this.x + button.width && mouseY.toInt() >= this.y && mouseY.toInt() <= this.y + SELECT_BUTTON_MAX_HEIGHT
         }
 
-        override fun renderBackground(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTick: Float) {
-            super.renderBackground(graphics, mouseX, mouseY, partialTick)
+        //~ if >= 26.1 'renderBackground' -> 'extractBackground'
+        override fun extractBackground(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
+            //~ if >= 26.1 'renderBackground' -> 'extractBackground'
+            super.extractBackground(graphics, mouseX, mouseY, partialTick)
 
             val height = min(
                 this.button.entries.size * SELECT_BUTTON_HEIGHT + (this.button.entries.size - 1) * SELECT_BUTTON_SPACING + SELECT_BUTTON_PADDING * 2,
@@ -248,7 +259,8 @@ class SelectButton<T>(width: Int, height: Int) : BaseButtonWidget(0, 0, width, h
             }
         }
 
-        override fun render(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTick: Float) {
+        //~ if >= 26.1 'render(' -> 'extractRenderState('
+        override fun extractRenderState(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
             graphics.scissor(x, y, button.width, SELECT_BUTTON_MAX_HEIGHT) {
                 for (i in 0 until SELECT_BUTTON_MAX_ENTRIES) {
                     val index = i + offset

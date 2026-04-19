@@ -11,7 +11,8 @@ import me.owdding.catharsis.features.pack.meta.CatharsisMetadataSection;
 import me.owdding.catharsis.hooks.pack.PackEntryHook;
 import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
+//~ gui_graphics
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.MultiLineTextWidget;
 import net.minecraft.client.gui.components.ObjectSelectionList;
 import net.minecraft.client.gui.components.StringWidget;
@@ -62,7 +63,8 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     private int top = 0;
 
     @Inject(
-        method = "renderContent",
+        //~ if >= 26.1 'renderContent' -> 'extractContent'
+        method = "extractContent",
         at = @At("HEAD")
     )
     private void renderConfigButton(CallbackInfo ci) {
@@ -71,7 +73,8 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     }
 
     @Inject(
-        method = "renderContent",
+        //~ if >= 26.1 'renderContent' -> 'extractContent'
+        method = "extractContent",
         at = @At(
             value = "INVOKE",
             shift = At.Shift.AFTER,
@@ -81,7 +84,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     )
     private void renderDescription(
         CallbackInfo ci,
-        @Local(ordinal = 0, argsOnly = true) GuiGraphics graphics,
+        @Local(ordinal = 0, argsOnly = true) GuiGraphicsExtractor graphics,
         @Local(ordinal = 0, argsOnly = true) int mouseX,
         @Local(ordinal = 1, argsOnly = true) int mouseY
     ) {
@@ -95,12 +98,13 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     }
 
     @Inject(
-        method = "renderContent",
+        //~ if >= 26.1 'renderContent' -> 'extractContent'
+        method = "extractContent",
         at = @At("TAIL")
     )
     private void renderConfigButton(
         CallbackInfo ci,
-        @Local(ordinal = 0, argsOnly = true) GuiGraphics graphics,
+        @Local(ordinal = 0, argsOnly = true) GuiGraphicsExtractor graphics,
         @Local(ordinal = 0, argsOnly = true) int mouseX,
         @Local(ordinal = 1, argsOnly = true) int mouseY,
         @Local(ordinal = 0, argsOnly = true) boolean isHovering

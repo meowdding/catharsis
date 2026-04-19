@@ -1,6 +1,6 @@
 package me.owdding.catharsis.utils.ui
 
-import net.minecraft.client.gui.GuiGraphics
+import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.components.AbstractButton
 import net.minecraft.client.gui.components.AbstractWidget
 import net.minecraft.client.gui.components.WidgetSprites
@@ -59,7 +59,8 @@ class SelectedTextButton(x: Int, y: Int, width: Int, height: Int, text: Componen
         this.onPress(this)
     }
 
-    override fun renderContents(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float) {
+    //~ if >= 26.1 'renderContents' -> 'extractContents'
+    override fun extractContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float) {
         val component = when {
             this.selected && this.isHoveredOrFocused -> this.hoveredSelectedText
             this.selected -> this.normalSelectedText

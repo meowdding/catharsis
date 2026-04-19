@@ -13,7 +13,6 @@ stonecutter parameters {
     swaps["mod_version"] = "\"" + property("version") + "\";"
     swaps["minecraft"] = "\"" + node.metadata.version + "\";"
     Replacements.read(project).replacements.forEach { (name, replacement) ->
-        /*
         when (replacement) {
             is StringReplacement if replacement.named -> replacements.string(name) {
                 direction = eval(current.version, replacement.condition)
@@ -34,6 +33,6 @@ stonecutter parameters {
                 direction = eval(current.version, replacement.condition)
                 replace(replacement.regex, replacement.to, replacement.reverseRegex, replacement.reverse)
             }
-        }*/
+        }
     }
 }

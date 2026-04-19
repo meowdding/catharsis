@@ -1,9 +1,10 @@
 package me.owdding.catharsis.mixins.items;
 
+//~ gui_graphics
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import me.owdding.catharsis.features.tooltip.TooltipFeature;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
@@ -12,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import tech.thatgravyboat.skyblockapi.helpers.McLevel;
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer;
 
-@Mixin(GuiGraphics.class)
+@Mixin(GuiGraphicsExtractor.class)
 public class GuiGraphicsMixin {
 
     @WrapOperation(

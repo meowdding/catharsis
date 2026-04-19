@@ -13,6 +13,8 @@ import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 @Mixin(EnderDragonRenderer.class)
 public class EnderDragonRendererMixin {
 
+    //? < 26.1 {
+    /*
     @ModifyArgs(
         at = @At(
             value = "INVOKE",
@@ -50,4 +52,5 @@ public class EnderDragonRendererMixin {
             RenderTypes.entityDecal(customEntityModel.getTexture())
         );
     }
+    *///?}
 }

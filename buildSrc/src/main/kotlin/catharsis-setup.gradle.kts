@@ -12,6 +12,7 @@ plugins {
     kotlin("jvm")
     id("com.google.devtools.ksp")
     id("versioned-catalogues")
+    id("me.owdding.auto-mixins")
 }
 
 private val stonecutter = project.extensions.getByName("stonecutter") as StonecutterBuildExtension
@@ -215,3 +216,10 @@ fun DependencyHandlerScope.includeImplementation(dep: Any) {
     "include"(dep)
     maybeModImplementation(dep)
 }
+
+autoMixins {
+    mixinPackage = "me.owdding.catharsis.mixins"
+    projectName = "catharsis"
+    mixinExtrasVersion = "0.5.0"
+}
+

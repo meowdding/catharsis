@@ -242,6 +242,7 @@ class PackConfigScreenTab(val title: Component, val contents: Layout) : Tab {
     override fun getTabExtraNarration(): Component = Component.empty()
     override fun visitChildren(consumer: Consumer<AbstractWidget>) = layout.visitWidgets(consumer)
     override fun doLayout(rectangle: ScreenRectangle) {
+        this.contents.arrangeElements()
         this.contents.visitChildren { (it as? Layout)?.arrangeElements() }
         this.layout.setMaxHeight(rectangle.height - 20)
         this.layout.arrangeElements()

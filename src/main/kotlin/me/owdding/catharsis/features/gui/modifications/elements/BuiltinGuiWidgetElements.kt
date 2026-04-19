@@ -4,7 +4,7 @@ import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiWidgetInteraction
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
-import net.minecraft.client.gui.GuiGraphics
+import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.client.renderer.RenderPipelines
 import net.minecraft.resources.Identifier
@@ -30,7 +30,7 @@ data class GuiButtonElement(
         return mouseX >= newX && mouseX <= newX + width && mouseY >= newY && mouseY <= newY + height
     }
 
-    override fun render(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
+    override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         val sprite = if (isHovered(mouseX, mouseY, bounds)) hovered else normal
         graphics.blitSprite(RenderPipelines.GUI_TEXTURED, sprite, bounds.left() + x, bounds.top() + y, width, height)
     }

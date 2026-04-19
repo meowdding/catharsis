@@ -6,8 +6,8 @@ import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.Inline
-import net.minecraft.client.renderer.block.model.BlockModelDefinition
-import net.minecraft.client.renderer.block.model.BlockStateModel
+import net.minecraft.client.renderer.block.dispatch.BlockStateModelDispatcher
+import net.minecraft.client.renderer.block.dispatch.BlockStateModel
 import net.minecraft.client.renderer.chunk.ChunkSectionLayer
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.resources.Identifier
@@ -17,7 +17,7 @@ import tech.thatgravyboat.skyblockapi.platform.identifier
 
 @GenerateCodec
 data class VirtualBlockStateDefinition(
-    @Inline val model: BlockModelDefinition,
+    @Inline val model: BlockStateModelDispatcher,
     val sounds: BlockSoundDefinition?,
     val blend: BlendMode?,
     @FieldName("ignore_original_offset") val ignoreOriginalOffset: Boolean = false,
@@ -40,8 +40,8 @@ data class VirtualBlockStateDefinition(
     }
 }
 
-enum class BlendMode(val sectionLayer: ChunkSectionLayer? = null) {
-    DEFAULT,
+enum class BlendMode(val sectionLayer: ChunkSectionLayer) {
+    DEFAULT(ChunkSectionLayer.CUTOUT),
     SOLID(ChunkSectionLayer.SOLID),
     CUTOUT_MIPPED(/*? > 1.21.10 {*/ChunkSectionLayer.CUTOUT /*?} else {*//*ChunkSectionLayer.CUTOUT_MIPPED*//*?}*/),
     CUTOUT(ChunkSectionLayer.CUTOUT),

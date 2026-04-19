@@ -8,12 +8,12 @@ import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.codecs.IncludedCodecs
 import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.ktcodecs.IncludedCodec
+import net.minecraft.client.renderer.block.BlockAndTintGetter
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.core.BlockPos
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.util.RandomSource
-import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 

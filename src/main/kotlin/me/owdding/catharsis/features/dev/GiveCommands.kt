@@ -6,6 +6,7 @@ import com.mojang.brigadier.arguments.IntegerArgumentType
 import com.mojang.brigadier.arguments.StringArgumentType
 import com.mojang.brigadier.context.CommandContext
 import me.owdding.catharsis.utils.ItemUtils
+import me.owdding.catharsis.utils.extensions.sendSyncWithPrefix
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.extensions.unsafeCast
 import me.owdding.catharsis.utils.types.colors.CatppuccinColors
@@ -15,11 +16,21 @@ import me.owdding.catharsis.utils.types.commands.SkyBlockIdArgument
 import me.owdding.catharsis.utils.types.suggestion.IterableSuggestionProvider
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource
+import net.minecraft.commands.arguments.NbtTagArgument
+import net.minecraft.core.BlockPos
 import net.minecraft.core.component.DataComponents
+import net.minecraft.nbt.CompoundTag
+import net.minecraft.nbt.Tag
 import net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket
 import net.minecraft.world.item.ItemStack
-import net.minecraft.world.item.Items
+import net.minecraft.world.item.component.CustomData
 import net.minecraft.world.item.component.ItemContainerContents
+import net.minecraft.world.level.Level
+import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.block.Blocks
+import net.minecraft.world.level.block.entity.ShulkerBoxBlockEntity
+import net.minecraft.world.level.block.entity.SignBlockEntity
+import net.minecraft.world.level.block.entity.SignText
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
@@ -27,27 +38,24 @@ import tech.thatgravyboat.skyblockapi.api.remote.api.SimpleItemAPI
 import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
+import tech.thatgravyboat.skyblockapi.utils.builders.ItemBuilder
+import tech.thatgravyboat.skyblockapi.utils.extentions.cleanName
 import tech.thatgravyboat.skyblockapi.utils.extentions.getLore
 import tech.thatgravyboat.skyblockapi.utils.extentions.getSkyBlockId
 import tech.thatgravyboat.skyblockapi.utils.extentions.toFormattedString
+import tech.thatgravyboat.skyblockapi.utils.extentions.toTitleCase
 import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toData
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.Text.send
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
-import tech.thatgravyboat.skyblockapi.utils.text.TextProperties.stripped
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.hover
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.italic
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.onClick
 import java.util.concurrent.CompletableFuture
+import kotlin.math.max
 import kotlin.math.min
-import net.minecraft.commands.arguments.NbtTagArgument
-import net.minecraft.nbt.CompoundTag
-import net.minecraft.nbt.Tag
-import net.minecraft.world.item.component.CustomData
-import tech.thatgravyboat.skyblockapi.utils.builders.ItemBuilder
-import tech.thatgravyboat.skyblockapi.utils.extentions.cleanName
 
 @Module
 // TODO: move into package
@@ -121,7 +129,8 @@ object GiveCommands {
 
     fun findBy(flags: Map<FindFlag, Any>, search: String, converter: (SkyBlockId) -> String) {
         val caseInsensitive = !flags.containsKey(FindFlag.MATCH_CASE)
-        val give = flags.containsKey(FindFlag.GIVE)
+        val placeInWorld = flags.containsKey(FindFlag.PLACE_IN_WORLD)
+        val give = flags.containsKey(FindFlag.GIVE) || placeInWorld
         val tag = flags[FindFlag.CUSTOM_DATA] as? Tag
         val searchType: (filter: String, element: String) -> Boolean = when {
             flags.containsKey(FindFlag.REGEX) -> { filter: String, element: String ->
@@ -156,15 +165,20 @@ object GiveCommands {
                     Text.of("Custom data isn't a compound tag, ignoring!", CatppuccinColors.Frappe.red).sendWithPrefix()
                 }
 
-                val limitedItems = items.take(limit).map {
+                val limitedItems = items.distinct().take(limit).map {
                     ItemBuilder().apply {
                         val original = it.toItem()
                         copyFrom(original)
                         val data = original.get(DataComponents.CUSTOM_DATA)
                         val originTag = data?.copyTag() ?: CompoundTag()
-                        set(DataComponents.CUSTOM_DATA, CustomData.of(originTag.apply {
-                            (tag as? CompoundTag)?.forEach { key, value -> this.put(key, value) }
-                        }))
+                        set(
+                            DataComponents.CUSTOM_DATA,
+                            CustomData.of(
+                                originTag.apply {
+                                    (tag as? CompoundTag)?.forEach { key, value -> this.put(key, value) }
+                                },
+                            ),
+                        )
                     }.build()
                 }
                 if (!give) {
@@ -191,7 +205,9 @@ object GiveCommands {
                         }.send("catharsis-find-result-$index")
                     }
                 } else {
-                    if (limitedItems.size > 20) {
+                    if (placeInWorld) {
+                        fillAndPlaceShulkers(limitedItems)
+                    } else if (limitedItems.size > 20) {
                         fillAndGiveShulkers(limitedItems)
                     } else {
                         limitedItems.forEach { tryGive(it) }
@@ -201,32 +217,165 @@ object GiveCommands {
         }
     }
 
+    fun fillAndPlaceShulkers(items: List<ItemStack>) {
+        val itemSize = items.size
+        var offset = 0
+
+        val server = McClient.self.singleplayerServer ?: return Text.of("Not in singleplayer!", CatppuccinColors.Mocha.red).sendWithPrefix("catharsis-dev-give-no-singleplayer")
+        server.submit {
+
+            val overworld = server.getLevel(Level.OVERWORLD) ?: return@submit Text.of("No overworld found!", CatppuccinColors.Mocha.red).sendSyncWithPrefix("catharsis-dev-give-no-overworld")
+            var itemsUsed = 0
+            items.groupBy {
+                it.cleanName.filterNot { it.isWhitespace() }.take(1).lowercase()
+            }.entries.sortedBy { (key) -> key }.forEach { (_, value) ->
+                var max = 0
+
+                var localItemsUsed = 0
+                value.groupBy {
+                    it.cleanName.filterNot { it.isWhitespace() }.take(2).lowercase()
+                }.entries.sortedBy { (key) -> key }.forEachIndexed { index, (key, value) ->
+                    val boxes = value.sortedBy { it.cleanName.filterNot { it.isWhitespace() } }.chunked(27)
+
+                    max = max(boxes.size, max)
+
+                    val sign = BlockPos(offset, 0, index * 4)
+                    overworld.setBlock(sign, Blocks.OAK_SIGN.defaultBlockState(), Block.UPDATE_CLIENTS, 0)
+                    val signEntity = SignBlockEntity(sign, Blocks.OAK_SIGN.defaultBlockState())
+                    overworld.setBlockEntity(signEntity)
+                    SignText().setMessage(
+                        1,
+                        Text.of {
+                            append((itemsUsed + localItemsUsed).toFormattedString())
+                            append(" - ")
+                            append((itemsUsed + localItemsUsed + value.size).toFormattedString())
+                        },
+                    ).setMessage(
+                        2,
+                        Text.of {
+                            append("(")
+                            append(value.size.toFormattedString())
+                            append(")")
+                        },
+                    ).setMessage(0, Text.of(key.toTitleCase())).let {
+                        signEntity.setText(it, true)
+                        signEntity.setText(it, false)
+                    }
+
+                    boxes.forEachIndexed { boxIndex, items ->
+                        val shulker = getShulkerColor(index + boxIndex).defaultBlockState()
+                        val floor = getFloorColor(index + boxIndex).defaultBlockState()
+                        val position = BlockPos(offset - boxIndex - 1, 0, index * 4)
+                        val sign = position.offset(0, 0, -1)
+                        val state = Blocks.OAK_WALL_SIGN.defaultBlockState()
+
+                        overworld.setBlock(sign, state, Block.UPDATE_CLIENTS, 0)
+                        val signEntity = SignBlockEntity(sign, state)
+                        overworld.setBlockEntity(signEntity)
+
+                        SignText().setMessage(
+                            0,
+                            Text.of {
+                                append(items.first().cleanName.filterNot { it.isWhitespace() }.take(3).lowercase().toTitleCase())
+                                append(" - ")
+                                append(items.last().cleanName.filterNot { it.isWhitespace() }.take(3).lowercase().toTitleCase())
+                            },
+                        ).let {
+                            signEntity.setText(it, true)
+                            signEntity.setText(it, false)
+                        }
+
+                        overworld.setBlock(position, shulker, Block.UPDATE_CLIENTS, 0)
+                        val shulkerBox = ShulkerBoxBlockEntity(position, shulker)
+                        shulkerBox.name = Text.of("Items ${itemsUsed + localItemsUsed}-${itemsUsed + localItemsUsed + items.size}")
+                        items.forEachIndexed { index, item ->
+                            shulkerBox.setItem(index, item)
+                        }
+                        overworld.setBlockEntity(shulkerBox)
+
+                        for (x in -1..(if (boxIndex == 0) 1 else 0)) {
+                            for (y in -1..1) {
+                                overworld.setBlock(position.offset(x, -1, y), floor, Block.UPDATE_CLIENTS, 0)
+                            }
+                        }
+
+                        Text.of("Placed ") {
+                            append("Items ${itemsUsed + localItemsUsed}-${itemsUsed + localItemsUsed + items.size}") {
+                                color = CatppuccinColors.Mocha.peach
+                            }
+                            append(" into the world!")
+                            color = CatppuccinColors.Frappe.green
+                        }.sendSyncWithPrefix("catharsis-dev-give-placed")
+                        localItemsUsed += items.size
+                    }
+                }
+
+                itemsUsed += value.size
+                offset -= max + 4
+            }
+
+            Text.of("Placed a total of $itemSize items!") {
+                color = CatppuccinColors.Frappe.green
+            }.sendSyncWithPrefix("catharsis-dev-give-placed-total")
+        }
+    }
+
+
+    fun getFloorColor(index: Int): Block {
+        return when ((index + 10) % 16) {
+            0 -> Blocks.WHITE_WOOL
+            1 -> Blocks.ORANGE_WOOL
+            2 -> Blocks.MAGENTA_WOOL
+            3 -> Blocks.LIGHT_BLUE_WOOL
+            4 -> Blocks.YELLOW_WOOL
+            5 -> Blocks.LIME_WOOL
+            6 -> Blocks.PINK_WOOL
+            7 -> Blocks.GRAY_WOOL
+            8 -> Blocks.LIGHT_GRAY_WOOL
+            9 -> Blocks.CYAN_WOOL
+            10 -> Blocks.PURPLE_WOOL
+            11 -> Blocks.BLUE_WOOL
+            12 -> Blocks.BROWN_WOOL
+            13 -> Blocks.GREEN_WOOL
+            14 -> Blocks.RED_WOOL
+            15 -> Blocks.BLACK_WOOL
+            else -> TODO("no.")
+        }
+    }
+
+    fun getShulkerColor(index: Int): Block {
+        return when ((index + 10) % 16) {
+            0 -> Blocks.WHITE_SHULKER_BOX
+            1 -> Blocks.ORANGE_SHULKER_BOX
+            2 -> Blocks.MAGENTA_SHULKER_BOX
+            3 -> Blocks.LIGHT_BLUE_SHULKER_BOX
+            4 -> Blocks.YELLOW_SHULKER_BOX
+            5 -> Blocks.LIME_SHULKER_BOX
+            6 -> Blocks.PINK_SHULKER_BOX
+            7 -> Blocks.GRAY_SHULKER_BOX
+            8 -> Blocks.LIGHT_GRAY_SHULKER_BOX
+            9 -> Blocks.CYAN_SHULKER_BOX
+            10 -> Blocks.PURPLE_SHULKER_BOX
+            11 -> Blocks.BLUE_SHULKER_BOX
+            12 -> Blocks.BROWN_SHULKER_BOX
+            13 -> Blocks.GREEN_SHULKER_BOX
+            14 -> Blocks.RED_SHULKER_BOX
+            15 -> Blocks.BLACK_SHULKER_BOX
+            else -> TODO("no.")
+        }
+    }
+
     fun fillAndGiveShulkers(items: List<ItemStack>) {
         val maxAmount = items.size
-        items.chunked(28).mapIndexed { index, items ->
-            when ((index + 10) % 16) {
-                0 -> Items.WHITE_SHULKER_BOX
-                1 -> Items.ORANGE_SHULKER_BOX
-                2 -> Items.MAGENTA_SHULKER_BOX
-                3 -> Items.LIGHT_BLUE_SHULKER_BOX
-                4 -> Items.YELLOW_SHULKER_BOX
-                5 -> Items.LIME_SHULKER_BOX
-                6 -> Items.PINK_SHULKER_BOX
-                7 -> Items.GRAY_SHULKER_BOX
-                8 -> Items.LIGHT_GRAY_SHULKER_BOX
-                9 -> Items.CYAN_SHULKER_BOX
-                10 -> Items.PURPLE_SHULKER_BOX
-                11 -> Items.BLUE_SHULKER_BOX
-                12 -> Items.BROWN_SHULKER_BOX
-                13 -> Items.GREEN_SHULKER_BOX
-                14 -> Items.RED_SHULKER_BOX
-                15 -> Items.BLACK_SHULKER_BOX
-                else -> TODO("no.")
-            }.defaultInstance.apply {
+        items.chunked(27).mapIndexed { index, items ->
+            getShulkerColor(index).asItem().defaultInstance.apply {
                 set(DataComponents.CONTAINER, ItemContainerContents.fromItems(items))
-                set(DataComponents.CUSTOM_NAME, Text.of("Items ${index * 27}-${min((index + 1) * 27, maxAmount)}") {
-                    italic = false
-                })
+                set(
+                    DataComponents.CUSTOM_NAME,
+                    Text.of("Items ${index * 27}-${min((index + 1) * 27, maxAmount)}") {
+                        italic = false
+                    },
+                )
             }
         }.forEach(::tryGive)
     }
@@ -247,8 +396,9 @@ object GiveCommands {
         MATCH_CASE('m', group = null),
         LIMIT('l', IntegerArgumentType.integer(0), LIMIT_GROUP),
         ALL('a', group = LIMIT_GROUP),
-        GIVE('g', group = null),
-        CUSTOM_DATA('d', NbtTagArgument.nbtTag(), group = null)
+        GIVE('g', group = "GIVE"),
+        CUSTOM_DATA('d', NbtTagArgument.nbtTag(), group = null),
+        PLACE_IN_WORLD('p', group = "GIVE")
         ;
 
         override val longName = (longName ?: name).lowercase()

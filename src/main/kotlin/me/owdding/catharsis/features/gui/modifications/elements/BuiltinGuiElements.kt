@@ -3,10 +3,11 @@ package me.owdding.catharsis.features.gui.modifications.elements
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
-import net.minecraft.client.gui.GuiGraphics
+import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.client.gui.screens.inventory.InventoryScreen
-import net.minecraft.client.renderer.LightTexture
+//~ if >= 26.1 'client.renderer.LightTexture as LightCoordsUtil' -> 'util.LightCoordsUtil'
+import net.minecraft.util.LightCoordsUtil
 import net.minecraft.client.renderer.RenderPipelines
 import net.minecraft.network.chat.Component
 import net.minecraft.resources.Identifier
@@ -29,14 +30,16 @@ data class GuiPlayerElement(
     override val codec: MapCodec<GuiPlayerElement> = CatharsisCodecs.getMapCodec<GuiPlayerElement>()
     override val layer: GuiElementRenderLayer = GuiElementRenderLayer.BACKGROUND
 
-    override fun render(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
+    override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         val newX = bounds.left() + x
         val newY = bounds.top() + y
 
         val player = McPlayer.self ?: return
 
         if (rotation == null) {
-            InventoryScreen.renderEntityInInventoryFollowsMouse(
+
+            //~ if >= 26.1 'renderEntityInInventoryFollowsMouse' -> 'extractEntityInInventoryFollowsMouse'
+            InventoryScreen.extractEntityInInventoryFollowsMouse(
                 graphics,
                 newX, newY, newX + width, newY + height,
                 30, 0.0625f,
@@ -46,13 +49,15 @@ data class GuiPlayerElement(
         } else {
             val offset = Vector3f(0.0F, player.bbHeight / 2.0f + 0.0625f * player.scale, 0.0F)
             val state = McClient.self.entityRenderDispatcher.getRenderer(player).createRenderState(player, 1f)
-            state.lightCoords = LightTexture.FULL_BRIGHT
+            state.lightCoords = LightCoordsUtil.FULL_BRIGHT
             state.shadowPieces.clear()
             state.outlineColor = 0
 
             //? if < 1.21.11
             /*state.hitboxesRenderState = null*/
-            graphics.submitEntityRenderState(state, 25.0F, offset, rotation, null, newX, newY, newX + width, newY + height)
+
+            //~ if >= 26.1 'submitEntityRenderState(' -> 'entity('
+            graphics.entity(state, 25.0F, offset, rotation, null, newX, newY, newX + width, newY + height)
         }
     }
 }
@@ -69,7 +74,7 @@ data class GuiSpriteElement(
 
     override val codec: MapCodec<GuiSpriteElement> = CatharsisCodecs.getMapCodec<GuiSpriteElement>()
 
-    override fun render(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
+    override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         graphics.blitSprite(
             RenderPipelines.GUI_TEXTURED, sprite,
             bounds.left() + (x ?: 0), bounds.top() + (y ?: 0),
@@ -91,10 +96,11 @@ data class GuiTextElement(
 
     override val codec: MapCodec<GuiSpriteElement> = CatharsisCodecs.getMapCodec<GuiSpriteElement>()
 
-    override fun render(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
+    override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         val x = bounds.left() + this.x
         val y = bounds.top() + this.y
-        graphics.drawString(McFont.self, text, (x - McFont.width(text) * alignment).toInt(), y, this.color)
+        //~ if >= 26.1 'drawString(' -> 'text('
+        graphics.text(McFont.self, text, (x - McFont.width(text) * alignment).toInt(), y, this.color)
     }
 
 }

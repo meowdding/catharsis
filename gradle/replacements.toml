@@ -60,3 +60,46 @@ regex = "import net.minecraft.client.renderer.RenderTypes(?!;)"
 to = "import net.minecraft.client.renderer.RenderType as RenderTypes"
 reverseRegex = "import net.minecraft.client.renderer.RenderType as RenderTypes"
 reverse = "import net.minecraft.client.renderer.RenderTypes"
+
+[block_model_dispatcher]
+type = "regex"
+condition = "< 26.1"
+regex = "import net.minecraft.client.renderer.block.dispatch.BlockStateModelDispatcher(?!;)"
+to = "import net.minecraft.client.renderer.block.model.BlockModelDefinition as BlockStateModelDispatcher"
+reverseRegex = "import net.minecraft.client.renderer.block.model.BlockModelDefinition as BlockStateModelDispatcher"
+reverse = "import net.minecraft.client.renderer.block.dispatch.BlockStateModelDispatcher"
+
+[block_state_model]
+type = "string"
+condition = "< 26.1"
+from = "import net.minecraft.client.renderer.block.dispatch.BlockStateModel"
+to = "import net.minecraft.client.renderer.block.model.BlockStateModel"
+
+[block_and_tint_getter]
+type = "string"
+condition = "< 26.1"
+from = "import net.minecraft.client.renderer.block.BlockAndTintGetter"
+to = "import net.minecraft.world.level.BlockAndTintGetter"
+
+[fabric_rendering]
+type = "string"
+named = "true"
+condition = "< 26.1"
+from = "net.fabricmc.fabric.api.client.renderer.v1."
+to = "net.fabricmc.fabric.api.renderer.v1."
+
+[block_state_model_part]
+type = "regex"
+condition = "< 26.1"
+regex = "import net.minecraft.client.renderer.block.dispatch.BlockStateModelPart(?!;)"
+to = "import net.minecraft.client.renderer.block.model.BlockModelPart as BlockStateModelPart"
+reverseRegex = "import net.minecraft.client.renderer.block.model.BlockModelPart as BlockStateModelPart"
+reverse = "import net.minecraft.client.renderer.block.dispatch.BlockStateModelPart"
+
+[gui_graphics_unnamed]
+type = "regex"
+condition = "< 26.1"
+regex = "import net.minecraft.client.gui.GuiGraphicsExtractor(?!;)"
+to = "import net.minecraft.client.gui.GuiGraphics as GuiGraphicsExtractor"
+reverseRegex = "import net.minecraft.client.gui.GuiGraphics as GuiGraphicsExtractor"
+reverse = "import net.minecraft.client.gui.GuiGraphicsExtractor"

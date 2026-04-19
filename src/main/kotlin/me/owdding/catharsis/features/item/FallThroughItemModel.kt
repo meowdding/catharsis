@@ -11,6 +11,7 @@ import net.minecraft.client.resources.model.ResolvableModel
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemDisplayContext
 import net.minecraft.world.item.ItemStack
+import org.joml.Matrix4fc
 
 object FallThroughItemModel: ItemModel {
 
@@ -28,7 +29,7 @@ object FallThroughItemModel: ItemModel {
         val CODEC: MapCodec<Unbaked> = MapCodec.unit(Unbaked)
 
         override fun type(): MapCodec<out ItemModel.Unbaked> = CODEC
-        override fun bake(context: ItemModel.BakingContext): ItemModel = FallThroughItemModel
+        override fun bake(context: ItemModel.BakingContext/*? if >= 26.1 >> ')'*/, transformation: Matrix4fc) = FallThroughItemModel
         override fun resolveDependencies(resolver: ResolvableModel.Resolver) {}
     }
 }

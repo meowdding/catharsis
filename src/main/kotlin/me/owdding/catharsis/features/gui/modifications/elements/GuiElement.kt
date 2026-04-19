@@ -2,7 +2,7 @@ package me.owdding.catharsis.features.gui.modifications.elements
 
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiWidgetInteraction
-import net.minecraft.client.gui.GuiGraphics
+import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.navigation.ScreenRectangle
 
 enum class GuiElementRenderLayer {
@@ -15,7 +15,7 @@ interface GuiElement {
     val codec: MapCodec<out GuiElement>
     val layer: GuiElementRenderLayer get() = GuiElementRenderLayer.FOREGROUND
 
-    fun render(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle)
+    fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle)
 }
 
 interface GuiWidgetElement : GuiElement {

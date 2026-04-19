@@ -13,13 +13,22 @@ import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemDisplayContext
 import net.minecraft.world.item.ItemStack
+import org.joml.Matrix4fc
 
 data class RedirectedItemModel(
     private val slot: EquipmentSlot,
-    private val model: ItemModel
+    private val model: ItemModel,
 ) : ItemModel {
 
-    override fun update(state: ItemStackRenderState, stack: ItemStack, resolver: ItemModelResolver, context: ItemDisplayContext, level: ClientLevel?, owner: ItemOwner?, seed: Int) {
+    override fun update(
+        state: ItemStackRenderState,
+        stack: ItemStack,
+        resolver: ItemModelResolver,
+        context: ItemDisplayContext,
+        level: ClientLevel?,
+        owner: ItemOwner?,
+        seed: Int,
+    ) {
         state.appendModelIdentityElement(this)
         this.model.update(
             state,
@@ -28,26 +37,30 @@ data class RedirectedItemModel(
             context,
             level,
             owner,
-            seed
+            seed,
         )
     }
 
     data class Unbaked(
         private val slot: EquipmentSlot,
-        private val model: ItemModel.Unbaked
+        private val model: ItemModel.Unbaked,
     ) : ItemModel.Unbaked {
 
         override fun type(): MapCodec<out ItemModel.Unbaked> = CODEC
-        override fun bake(context: ItemModel.BakingContext): ItemModel = RedirectedItemModel(this.slot, this.model.bake(context))
+        override fun bake(context: ItemModel.BakingContext/*? if >= 26.1 >> ')'*/, transformation: Matrix4fc): ItemModel =
+            RedirectedItemModel(this.slot, this.model.bake(context/*? if >= 26.1 >> ')'*/, transformation))
+
         override fun resolveDependencies(resolver: ResolvableModel.Resolver) = this.model.resolveDependencies(resolver)
 
         companion object {
 
             val ID = Catharsis.id("redirect")
-            val CODEC: MapCodec<Unbaked> = RecordCodecBuilder.mapCodec { it.group(
-                EquipmentSlot.CODEC.fieldOf("slot").forGetter(Unbaked::slot),
-                ItemModels.CODEC.fieldOf("model").forGetter(Unbaked::model)
-            ).apply(it, ::Unbaked) }
+            val CODEC: MapCodec<Unbaked> = RecordCodecBuilder.mapCodec {
+                it.group(
+                    EquipmentSlot.CODEC.fieldOf("slot").forGetter(Unbaked::slot),
+                    ItemModels.CODEC.fieldOf("model").forGetter(Unbaked::model),
+                ).apply(it, ::Unbaked)
+            }
         }
     }
 }

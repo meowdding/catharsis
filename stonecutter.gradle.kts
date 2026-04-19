@@ -7,7 +7,7 @@ fun <T> Any?.unsafeCast() : T = this as T
 
 
 ext["latest"] = stonecutter.vcsVersion.version
-stonecutter active "1.21.11"
+stonecutter active "26.1"
 
 stonecutter parameters {
     swaps["mod_version"] = "\"" + property("version") + "\";"
@@ -22,8 +22,7 @@ stonecutter parameters {
 
             is RegexReplacement if replacement.named -> replacements.regex(name) {
                 direction = eval(current.version, replacement.condition)
-                replace(replacement.regex, replacement.to)
-                reverse(replacement.reverseRegex, replacement.reverse)
+                replace(replacement.regex, replacement.to, replacement.reverseRegex, replacement.reverse)
             }
 
             is StringReplacement -> replacements.string {
@@ -33,8 +32,7 @@ stonecutter parameters {
 
             is RegexReplacement -> replacements.regex {
                 direction = eval(current.version, replacement.condition)
-                replace(replacement.regex, replacement.to)
-                reverse(replacement.reverseRegex, replacement.reverse)
+                replace(replacement.regex, replacement.to, replacement.reverseRegex, replacement.reverse)
             }
         }*/
     }

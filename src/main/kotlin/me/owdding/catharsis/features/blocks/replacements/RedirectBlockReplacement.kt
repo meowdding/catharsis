@@ -1,20 +1,22 @@
 package me.owdding.catharsis.features.blocks.replacements
 
+//~ fabric_rendering
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.blocks.*
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
-import net.fabricmc.fabric.api.renderer.v1.mesh.QuadTransform
-import net.minecraft.client.renderer.block.model.BlockStateModel
+import net.fabricmc.fabric.api.client.renderer.v1.mesh.QuadTransform
+import net.minecraft.client.renderer.block.BlockAndTintGetter
+import net.minecraft.client.renderer.block.dispatch.BlockStateModel
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.core.BlockPos
 import net.minecraft.resources.Identifier
 import net.minecraft.util.RandomSource
-import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
+//~ !fabric_rendering
 
 data class RedirectBlockReplacement(
     val virtualState: VirtualBlockStateDefinition,
@@ -52,7 +54,7 @@ data class RedirectBlockReplacement(
         override val transform: QuadTransform by lazy {
             if (blend != null) {
                 QuadTransform { quad ->
-                    quad.renderLayer(blend.sectionLayer)
+                    quad.chunkLayer(blend.sectionLayer)
                     true
                 }
             } else {

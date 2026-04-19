@@ -13,7 +13,7 @@ import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.NamedCodec
 import me.owdding.ktcodecs.OptionalBoolean
 import me.owdding.ktcodecs.OptionalIfEmpty
-import net.minecraft.client.gui.GuiGraphics
+import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.resources.Identifier
 import org.joml.Vector2i
@@ -36,11 +36,10 @@ data class GuiModifier(
 
     private val elementsByLayer = (elements + widgets).groupBy { it.layer }
 
-    fun renderElements(layer: GuiElementRenderLayer, graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
+    fun renderElements(layer: GuiElementRenderLayer, graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         val elements = elementsByLayer[layer] ?: return
         for (element in elements) {
             if (element is GuiWidgetElement && element.isHovered(mouseX, mouseY, bounds)) {
-                //? >= 1.21.9
                 graphics.requestCursor(CursorTypes.POINTING_HAND)
             }
             element.render(graphics, mouseX, mouseY, partialTicks, bounds)

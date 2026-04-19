@@ -1,5 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import java.net.URLEncoder
 import kotlin.collections.emptyList
@@ -7,7 +8,7 @@ import kotlin.text.replace
 
 plugins {
     idea
-    kotlin("jvm") version "2.2.20"
+    kotlin("jvm")
 }
 
 layout.buildDirectory = rootProject.layout.buildDirectory.map { it.dir("scripts-build") }
@@ -36,6 +37,7 @@ repositories {
     scopedMaven("https://maven.teamresourceful.com/repository/maven-public/", "tech.thatgravyboat", "me.owdding")
     scopedMaven("https://maven.nucleoid.xyz/", "eu.pb4")
     scopedMaven("https://maven.fabricmc.net/", "net.fabricmc")
+    scopedMaven("https://raw.githubusercontent.com/fishstiz/maven/m2", "io.github.fishstiz")
     maven("https://libraries.minecraft.net")
     maven(file(rootProject.projectDir.resolve(".gradle/loom-cache/minecraftMaven")))
     maven(file(rootProject.projectDir.resolve(".gradle/loom-cache/remapped_mods")))
@@ -43,7 +45,13 @@ repositories {
     mavenLocal()
 }
 
-repositories
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+}
+
+kotlin {
+    jvmToolchain(25)
+}
 
 val latest = rootProject.properties["latest"]!!.toString()
 

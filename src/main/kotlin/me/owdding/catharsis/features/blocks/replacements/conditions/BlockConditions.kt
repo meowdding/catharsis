@@ -6,10 +6,10 @@ import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.codecs.IncludedCodecs
 import me.owdding.ktcodecs.IncludedCodec
+import net.minecraft.client.renderer.block.BlockAndTintGetter
 import net.minecraft.core.BlockPos
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.util.RandomSource
-import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.state.BlockState
 
 interface BlockCondition {

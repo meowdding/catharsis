@@ -14,13 +14,22 @@ import net.minecraft.client.resources.model.ResolvableModel
 import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.item.ItemDisplayContext
 import net.minecraft.world.item.ItemStack
+import org.joml.Matrix4fc
 
 data class GlintItemModel(
     val glint: Boolean,
-    val model: ItemModel
-): ItemModel {
+    val model: ItemModel,
+) : ItemModel {
 
-    override fun update(state: ItemStackRenderState, stack: ItemStack, resolver: ItemModelResolver, context: ItemDisplayContext, level: ClientLevel?, owner: ItemOwner?, seed: Int) {
+    override fun update(
+        state: ItemStackRenderState,
+        stack: ItemStack,
+        resolver: ItemModelResolver,
+        context: ItemDisplayContext,
+        level: ClientLevel?,
+        owner: ItemOwner?,
+        seed: Int,
+    ) {
         val hook = state as? ItemStackRenderStateHook ?: return
         val start = hook.`catharsis$layerCount`()
 
@@ -43,19 +52,23 @@ data class GlintItemModel(
 
     data class Unbaked(
         val glint: Boolean,
-        val model: ItemModel.Unbaked
-    ): ItemModel.Unbaked {
+        val model: ItemModel.Unbaked,
+    ) : ItemModel.Unbaked {
 
         override fun type(): MapCodec<out ItemModel.Unbaked> = CODEC
-        override fun bake(context: ItemModel.BakingContext): ItemModel = GlintItemModel(this.glint, this.model.bake(context))
+        override fun bake(context: ItemModel.BakingContext/*? if >= 26.1 >> ')'*/, transformation: Matrix4fc): ItemModel =
+            GlintItemModel(this.glint, this.model.bake(context/*? if >= 26.1 >> ')'*/, transformation))
+
         override fun resolveDependencies(resolver: ResolvableModel.Resolver) {}
 
         companion object {
             val ID = Catharsis.id("glint")
-            val CODEC: MapCodec<Unbaked> = RecordCodecBuilder.mapCodec { it.group(
-                Codec.BOOL.fieldOf("glint").forGetter(Unbaked::glint),
-                ItemModels.CODEC.fieldOf("model").forGetter(Unbaked::model)
-            ).apply(it, ::Unbaked) }
+            val CODEC: MapCodec<Unbaked> = RecordCodecBuilder.mapCodec {
+                it.group(
+                    Codec.BOOL.fieldOf("glint").forGetter(Unbaked::glint),
+                    ItemModels.CODEC.fieldOf("model").forGetter(Unbaked::model),
+                ).apply(it, ::Unbaked)
+            }
         }
     }
 }

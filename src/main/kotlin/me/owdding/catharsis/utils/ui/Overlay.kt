@@ -22,7 +22,7 @@ open class Overlay : Screen(Component.empty()) {
         this.background?.resize(this.width, this.height)
         //?} else {
         /*this.background?.resize(this.minecraft!!, this.width, this.height)
-        *///}
+        *///?}
         super.repositionElements()
     }
 

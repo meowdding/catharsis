@@ -40,6 +40,7 @@ object BlockConditions {
         ID_MAPPER.put("in_island", CatharsisCodecs.InIslandConditionCodec)
         ID_MAPPER.put("timespan", CatharsisCodecs.TimespanConditionCodec)
         ID_MAPPER.put("dungeon_floor", CatharsisCodecs.DungeonFloorConditionCodec)
+        ID_MAPPER.put("biome", BiomeCondition.CODEC)
     }
 }
 

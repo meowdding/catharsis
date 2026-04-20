@@ -20,9 +20,9 @@ data class BiomeCondition(val biome: Identifier) : BlockCondition {
         pos: BlockPos,
         level: BlockAndTintGetter,
         random: RandomSource,
-    ): Boolean = McLevel.selfOrNull?.getBiome(pos)?.unwrapKey()?.getOrNull() == biome
+    ): Boolean = McLevel.selfOrNull?.getBiome(pos)?.unwrapKey()?.getOrNull()?.identifier() == biome
 
     companion object {
-        val CODEC: MapCodec<out BlockCondition> = CatharsisCodecs.BiomeConditionCodec
+        val CODEC: MapCodec<BiomeCondition> = CatharsisCodecs.BiomeConditionCodec
     }
 }

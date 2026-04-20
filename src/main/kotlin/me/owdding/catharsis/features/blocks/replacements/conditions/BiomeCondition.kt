@@ -9,6 +9,7 @@ import net.minecraft.util.RandomSource
 import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.state.BlockState
 import tech.thatgravyboat.skyblockapi.helpers.McLevel
+import tech.thatgravyboat.skyblockapi.platform.identifier
 import kotlin.jvm.optionals.getOrNull
 
 @GenerateCodec
@@ -20,7 +21,7 @@ data class BiomeCondition(val biome: Identifier) : BlockCondition {
         pos: BlockPos,
         level: BlockAndTintGetter,
         random: RandomSource,
-    ): Boolean = McLevel.selfOrNull?.getBiome(pos)?.unwrapKey()?.getOrNull()?.identifier() == biome
+    ): Boolean = McLevel.selfOrNull?.getBiome(pos)?.unwrapKey()?.getOrNull()?.identifier == biome
 
     companion object {
         val CODEC: MapCodec<BiomeCondition> = CatharsisCodecs.BiomeConditionCodec

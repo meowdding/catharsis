@@ -104,7 +104,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
                 }.sendWithPrefix()
             }
 
-            thenCallback("repo") {
+            then("repo") {
                 thenCallback("reload") {
                     CatharsisRemoteRepo.uninitialize()
                     loadRepo(true)

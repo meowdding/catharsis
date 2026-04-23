@@ -78,12 +78,12 @@ keys:
 `"slot"`: which slot to check
 `"property"`: what BOOLEAN property to check (this can add more keys)
 
-### `"type": "isBaby"`
+### `"type": "is_baby"`
 
 matches the entities baby state
 
 keys:
-`"isBaby"`: what boolean to compare against
+`"is_baby"`: what boolean to compare against
 
 ## Model quirks
 Cannot handle per-face uv. will break. Everything else _should_ work fine

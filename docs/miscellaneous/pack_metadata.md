@@ -70,7 +70,7 @@ Their docs are located [here](https://wiki.fabricmc.net/drafts:resourcecondition
 #### `catharsis:config`
 
 <TreeView>
-  <span><TypeIcon type="object"/> A <b>Fabric Condition Object</b></b> object</span>
+  <span><TypeIcon type="object"/> A <b>Fabric Condition Object</b> object</span>
 
 - <TypeIcon type="string"/> **condition**: `catharsis:config`
 - <TypeIcon type="string"/> **pack**: The ID of the pack containing the config.
@@ -82,7 +82,7 @@ Their docs are located [here](https://wiki.fabricmc.net/drafts:resourcecondition
 #### `catharsis:version`
 
 <TreeView>
-  <span><TypeIcon type="object"/> A <b>Fabric Condition Object</b></b> object</span>
+  <span><TypeIcon type="object"/> A <b>Fabric Condition Object</b> object</span>
 
 - <TypeIcon type="string"/> **condition**: `catharsis:version`
 - <TypeIcon type="string"/> **type**: Either `MINECRAFT` or `PACK_FORMAT`

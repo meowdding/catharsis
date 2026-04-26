@@ -1,5 +1,6 @@
 package me.owdding.catharsis.mixins.gui;
 
+//~ gui_graphics
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
@@ -9,12 +10,13 @@ import me.owdding.catharsis.features.gui.modifications.GuiModifiers;
 import me.owdding.catharsis.features.gui.modifications.modifiers.SlotModifier;
 import me.owdding.catharsis.features.imc.ImcHandler;
 import net.minecraft.Optionull;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ClickType;
+//~ if >= 26.1 'ClickType' -> 'ContainerInput'
+import net.minecraft.world.inventory.ContainerInput;
 import net.minecraft.world.inventory.Slot;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -32,8 +34,9 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
         super(title);
     }
 
-    @Inject(method = "render", at = @At("HEAD"))
-    private void catharsis$onRender(GuiGraphics graphics, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
+    //~ if >= 26.1 'render' -> 'extractRenderState'
+    @Inject(method = "extractRenderState", at = @At("HEAD"))
+    private void catharsis$onRender(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
         var modifier = GuiModifiers.getActiveModifier();
         for (var slot : this.menu.slots) {
             if (ImcHandler.isDisabled(slot.getItem())) {
@@ -64,8 +67,8 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
         return true;
     }
 
-    @WrapMethod(method = "slotClicked")
-    private void catharsis$onSlotClick(Slot slot, int slotId, int mouseButton, ClickType type, Operation<Void> original) {
+    @WrapMethod(method = "slotClicked") //~ if >= 26.1 'ClickType' -> 'ContainerInput'
+    private void catharsis$onSlotClick(Slot slot, int slotId, int mouseButton, ContainerInput type, Operation<Void> original) {
         if (slot != null) {
             if (!ImcHandler.isDisabled(slot.getItem())) {
                 var modifier = GuiModifiers.getActiveModifier();

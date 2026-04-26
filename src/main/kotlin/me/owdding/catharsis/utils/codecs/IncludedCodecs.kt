@@ -13,7 +13,7 @@ import me.owdding.catharsis.utils.types.requireBase64Padding
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.color.item.ItemTintSource
 import net.minecraft.client.color.item.ItemTintSources
-import net.minecraft.client.renderer.block.model.BlockModelDefinition
+import net.minecraft.client.renderer.block.dispatch.BlockStateModelDispatcher
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperties
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperty
 import net.minecraft.core.Holder
@@ -95,7 +95,7 @@ object IncludedCodecs {
     val itemCodec: Codec<Item> = BuiltInRegistries.ITEM.byNameCodec()
 
     @IncludedCodec
-    val blockModelDefinitionCodec: MapCodec<BlockModelDefinition> = MapCodec.assumeMapUnsafe(BlockModelDefinition.CODEC)
+    val blockModelDefinitionCodec: MapCodec<BlockStateModelDispatcher> = MapCodec.assumeMapUnsafe(BlockStateModelDispatcher.CODEC)
 
     @IncludedCodec(named = "block_tag_or_list")
     val tagOrBlocksCodec: Codec<Either<TagKey<Block>, Set<Block>>> = Codec.either(

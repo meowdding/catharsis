@@ -1,6 +1,6 @@
 package me.owdding.catharsis.utils.ui
 
-import net.minecraft.client.gui.GuiGraphics
+import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.components.AbstractButton
 import net.minecraft.client.gui.components.AbstractWidget
 import net.minecraft.client.gui.components.WidgetSprites
@@ -27,7 +27,7 @@ abstract class BaseButtonWidget(x: Int, y: Int, width: Int, height: Int) : Abstr
     }
 
     //? < 1.21.11 {
-    /*override fun renderWidget(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float) {
+    /*override fun renderWidget(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float) {
         this.renderContents(graphics, mouseX, mouseY, partialTicks)
         if (this.isHovered()) {
             graphics.requestCursor(if (this.isActive) com.mojang.blaze3d.platform.cursor.CursorTypes.POINTING_HAND else com.mojang.blaze3d.platform.cursor.CursorTypes.NOT_ALLOWED)
@@ -36,7 +36,7 @@ abstract class BaseButtonWidget(x: Int, y: Int, width: Int, height: Int) : Abstr
     *///?}
 
     //? < 1.21.11 {
-    /*abstract fun renderContents(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float)
+    /*abstract fun renderContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float)
     *///?}
 
     companion object {
@@ -59,7 +59,8 @@ class SelectedTextButton(x: Int, y: Int, width: Int, height: Int, text: Componen
         this.onPress(this)
     }
 
-    override fun renderContents(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTicks: Float) {
+    //~ if >= 26.1 'renderContents' -> 'extractContents'
+    override fun extractContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float) {
         val component = when {
             this.selected && this.isHoveredOrFocused -> this.hoveredSelectedText
             this.selected -> this.normalSelectedText

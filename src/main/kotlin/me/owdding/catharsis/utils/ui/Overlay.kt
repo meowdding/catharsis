@@ -1,6 +1,6 @@
 package me.owdding.catharsis.utils.ui
 
-import net.minecraft.client.gui.GuiGraphics
+import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.screens.Screen
 import net.minecraft.network.chat.Component
 import tech.thatgravyboat.skyblockapi.helpers.McClient
@@ -26,8 +26,10 @@ open class Overlay : Screen(Component.empty()) {
         super.repositionElements()
     }
 
-    override fun renderBackground(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTick: Float) {
-        this.background?.renderWithTooltipAndSubtitles(graphics, -1, -1, partialTick)
+    //~ if >= 26.1 'renderBackground' -> 'extractBackground'
+    override fun extractBackground(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
+        //~ if >= 26.1 'renderWithTooltipAndSubtitles' -> 'extractRenderStateWithTooltipAndSubtitles'
+        this.background?.extractRenderStateWithTooltipAndSubtitles(graphics, -1, -1, partialTick)
         graphics.nextStratum()
     }
 

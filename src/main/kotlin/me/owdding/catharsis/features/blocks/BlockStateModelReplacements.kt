@@ -1,21 +1,22 @@
 package me.owdding.catharsis.features.blocks
 
+//~ fabric_rendering
 import me.owdding.catharsis.features.blocks.replacements.LayeredBlockReplacements
 import me.owdding.catharsis.utils.extensions.identifier
 import me.owdding.catharsis.utils.extensions.mapValuesNotNull
-import net.fabricmc.fabric.api.renderer.v1.mesh.QuadEmitter
-import net.fabricmc.fabric.api.renderer.v1.mesh.QuadTransform
-import net.fabricmc.fabric.api.renderer.v1.model.FabricBlockStateModel
-import net.minecraft.client.renderer.block.model.BlockModelPart
-import net.minecraft.client.renderer.block.model.BlockStateModel
-import net.minecraft.client.renderer.texture.TextureAtlasSprite
+import net.fabricmc.fabric.api.client.renderer.v1.mesh.QuadEmitter
+import net.fabricmc.fabric.api.client.renderer.v1.mesh.QuadTransform
+import net.fabricmc.fabric.api.client.renderer.v1.model.FabricBlockStateModel
+//~ !fabric_rendering
+import net.minecraft.client.renderer.block.BlockAndTintGetter
+import net.minecraft.client.renderer.block.dispatch.BlockStateModel
+import net.minecraft.client.renderer.block.dispatch.BlockStateModelPart
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.client.resources.model.ResolvableModel
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
 import net.minecraft.util.Mth
 import net.minecraft.util.RandomSource
-import net.minecraft.world.level.BlockAndTintGetter
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 import java.util.function.Predicate
@@ -38,7 +39,7 @@ interface BlockReplacementEntry {
 data class BlockStateModelReplacement(
     val original: BlockStateModel,
     val replacementSelector: BlockReplacementSelector<BlockReplacementEntry>,
-    val overrides: Map<Block, BlockReplacementSelector<BlockReplacementEntry>>
+    val overrides: Map<Block, BlockReplacementSelector<BlockReplacementEntry>>,
 ) : FabricBlockStateModel by original as FabricBlockStateModel, BlockStateModel {
     override fun emitQuads(emitter: QuadEmitter, level: BlockAndTintGetter, pos: BlockPos, state: BlockState, random: RandomSource, cullTest: Predicate<Direction?>) {
         val replacement = select(level, state, pos)
@@ -53,7 +54,7 @@ data class BlockStateModelReplacement(
                             i,
                             it.posByIndex(i, 0) - originalOffset.x.toFloat(),
                             it.posByIndex(i, 1) - originalOffset.y.toFloat(),
-                            it.posByIndex(i, 2) - originalOffset.z.toFloat()
+                            it.posByIndex(i, 2) - originalOffset.z.toFloat(),
                         )
                     }
                     true
@@ -71,22 +72,45 @@ data class BlockStateModelReplacement(
         super<BlockStateModel>.emitQuads(emitter, level, pos, state, random, cullTest)
     }
 
-    override fun collectParts(random: RandomSource, output: List<BlockModelPart>) {
+    override fun collectParts(random: RandomSource, output: List<BlockStateModelPart>) {
         original.collectParts(random, output)
     }
 
-    override fun particleSprite(level: BlockAndTintGetter, pos: BlockPos, state: BlockState): TextureAtlasSprite? {
+    //? >= 26.1 {
+    override fun materialFlags(): Int = original.materialFlags()
+    override fun materialFlags(level: BlockAndTintGetter, pos: BlockPos, state: BlockState, random: RandomSource): Int {
         val replacement = select(level, state, pos)
         val model = replacement?.models[state]
         if (model != null) {
-            return model.particleSprite(level, pos, state)
+            return model.materialFlags(level, pos, state, random)
         }
-        return super<FabricBlockStateModel>.particleSprite(level, pos, state)
+        return super<BlockStateModel>.materialFlags(level, pos, state, random)
     }
 
-    override fun particleIcon(): TextureAtlasSprite? {
-        return original.particleIcon()
+    override fun hasMaterialFlag(flag: Int): Boolean = original.hasMaterialFlag(flag)
+    override fun hasMaterialFlag(level: BlockAndTintGetter, pos: BlockPos, state: BlockState, random: RandomSource, flag: Int): Boolean {
+        val replacement = select(level, state, pos)
+        val model = replacement?.models[state]
+        if (model != null) {
+            return model.hasMaterialFlag(level, pos, state, random, flag)
+        }
+        return super<BlockStateModel>.hasMaterialFlag(level, pos, state, random, flag)
     }
+    //? }
+
+    //~ if >= 26.1 'particleSprite(' -> 'particleMaterial(' {
+    override fun particleMaterial(level: BlockAndTintGetter, pos: BlockPos, state: BlockState) = run {
+        val replacement = select(level, state, pos)
+        val model = replacement?.models[state]
+        if (model != null) {
+            return@run model.particleMaterial(level, pos, state)
+        }
+        return@run super<FabricBlockStateModel>.particleMaterial(level, pos, state)
+    }
+    //~ }
+
+    //~ if >= 26.1 'particleIcon(' -> 'particleMaterial('
+    override fun particleMaterial() = original.particleMaterial()
 
     fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos): BlockReplacementEntry? {
         val random = RandomSource.create(Mth.getSeed(pos))
@@ -101,7 +125,7 @@ data class UnbakedBlockStateModelReplacement(
     val block: Block,
     val original: BlockStateModel.UnbakedRoot,
     val entries: LayeredBlockReplacements,
-    val overrides: Map<Block, LayeredBlockReplacements>
+    val overrides: Map<Block, LayeredBlockReplacements>,
 ) : BlockStateModel.UnbakedRoot {
     override fun bake(
         state: BlockState,
@@ -109,7 +133,7 @@ data class UnbakedBlockStateModelReplacement(
     ): BlockStateModel = BlockStateModelReplacement(
         original.bake(state, baker),
         entries.bake { bakeModel(baker, state.block) },
-        overrides.mapValuesNotNull { it.value.bake { bakeModel(baker, state.block) } }
+        overrides.mapValuesNotNull { it.value.bake { bakeModel(baker, state.block) } },
     )
 
     override fun visualEqualityGroup(state: BlockState): Any? = original.visualEqualityGroup(state)

@@ -42,7 +42,7 @@ fun MultiLineTextWidget.withClickHandler(handler: (Style) -> Unit): MultiLineTex
     //? if >=1.21.11 {
     this.setComponentClickHandler(handler)
     //?} else
-     /*this.configureStyleHandling(true, handler)*/
+    // this.configureStyleHandling(true, handler)
     return this
 }
 
@@ -50,5 +50,5 @@ fun <T : Any> CycleButtonBuilder(nameFactory: (T) -> Component, value: () -> T):
     //? if >=1.21.11 {
     return CycleButton.builder(nameFactory, value)
     //?} else
-     /*return CycleButton.builder(nameFactory).withInitialValue(value.invoke())*/
+    // return CycleButton.builder(nameFactory).withInitialValue(value.invoke())
 }

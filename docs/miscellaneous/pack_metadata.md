@@ -5,9 +5,11 @@ lang: en-US
 
 # Defining Catharsis Pack Metadata
 
+Catharsis metadata allows your pack to have a unique ID, declare dependencies, and provide a configuration menu for users.
+
 <Example>
 
-TODO
+Example of a `pack.mcmeta` with a configuration menu and version dependencies.
 
 <<< @/example_pack/pack.mcmeta{json:line-numbers}
 </Example>
@@ -44,14 +46,18 @@ TODO
         - <TypeIcon type="string"/> **pack**: The ID of the pack containing the config.
         - <TypeIcon type="string"/> **id**: The ID of the config option to check.
         - <TypeIcon type="string"/> **value**: (Optional) The specific value to match (used for dropdowns).
+
 </TreeView>
 
 ## Catharsis Metadata Explanation
 
 Catharsis pack metadata is defined within the `catharsis:pack/v1` object inside the `pack.mcmeta` file of your resource pack.
 
-This metadata allows you to specify important information about your Catharsis pack, including its unique identifier, version, dependencies on other mods, and configuration options for users.
+This metadata allows you to specify important information about your Catharsis pack, including its unique identifier, version, dependencies on other mods, and configuration options
+for users.
 
+The config can also be stored in `config.catharsis.json` inside the root of your pack. Using this will override any configurations defined in the `pack.mcmeta` file.
+The Fabric Overlays are still required in the `pack.mcmeta`.
 
 ## Fabric Overlays Explanation
 

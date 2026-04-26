@@ -53,5 +53,6 @@ object BlockStateDefinitions {
         ID_MAPPER.put(Catharsis.id("per_area"), CatharsisCodecs.getMapCodec<PerAreaBlockReplacement.Completable>())
         ID_MAPPER.put(Catharsis.id("random"), CatharsisCodecs.getMapCodec<RandomBlockReplacement.Completable>())
         ID_MAPPER.put(Catharsis.id("conditional"), CatharsisCodecs.getMapCodec<ConditionalBlockReplacement.Completable>())
+        ID_MAPPER.put(Catharsis.id("layered"), CatharsisCodecs.getMapCodec<LayeredBlockReplacements.Completable>())
     }
 }

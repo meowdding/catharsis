@@ -9,5 +9,5 @@ const props = defineProps({
 })
 </script>
 <template>
-    <span><TypeIcon type="string"/> Either the value of <code>mode</code> in <code>/locraw</code> or one of the <a href="https://github.com/SkyblockAPI/SkyblockAPI/blob/2.0/src/common/main/kotlin/tech/thatgravyboat/skyblockapi/api/location/SkyBlockIsland.kt">enum values</a></span>
+    <span><TypeIcon type="string"/> Either the value of <code>mode</code> in <code>/locraw</code> or one of the <a href="https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/location/SkyBlockIsland.kt">enum values</a></span>
 </template>

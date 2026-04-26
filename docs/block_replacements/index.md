@@ -54,6 +54,17 @@ Always replaces the block with gold.
 - <TypeIcon type="string"/> **virtual_state**: A virtual [block state](/block_replacements/virtual_block_states) reference
 </TreeView>
 
+### Layered (`catharsis:layered`)
+
+Layers multiple block replacements on top of each other, applying the first one that matches.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>layered</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:layered`
+- <TypeIcon type="array"/> **definitions**: A list of [block replacement definition](#definition)s
+</TreeView>
+
 ### Random (`catharsis:random`)
 
 Allows for random block replacements. <br>

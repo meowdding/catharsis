@@ -149,3 +149,15 @@ Checks if the player is in a certain dungeon floor.
 - <TypeIcon type="string"/> **type**: `dungeon_floor`
 - <TypeIcon type="string"/> **floor**: One of the <a href="https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/area/dungeon/DungeonFloor.kt">enum values</a>
 </TreeView>
+
+### Biome (`biome`)
+
+Checks if the biome the block is in matches.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>biome</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `biome`
+- <TypeIcon type="string"/> **biome**: The identifier of the biome to check.
+
+</TreeView>

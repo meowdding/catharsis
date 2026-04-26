@@ -56,6 +56,11 @@ export default defineConfig({
                 ]
             },
             {
+                "text": "Text Replacements",
+                "items": [
+                    {text: "Overview", "link": "/text_replacements/index"}        ]
+            },
+            {
                 text: "Miscellaneous",
                 items: [
                     {text: "Pack Metadata", link: "/miscellaneous/pack_metadata"},

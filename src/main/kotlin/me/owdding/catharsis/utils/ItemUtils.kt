@@ -10,6 +10,7 @@ import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.extensions.unsafeCast
 import me.owdding.catharsis.utils.types.colors.CatppuccinColors
 import me.owdding.ktmodules.Module
+import net.minecraft.network.chat.CommonComponents
 import net.minecraft.resources.Identifier
 import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.datatype.DataType
@@ -29,15 +30,25 @@ import tech.thatgravyboat.skyblockapi.utils.json.Json.toJson
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toPrettyString
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
+import tech.thatgravyboat.skyblockapi.utils.text.TextColor
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.hover
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.onClick
 import java.util.function.Function
-import java.util.function.Predicate
 
 typealias PropertyList<T> = List<ItemUtils.DataTypeProperty<T, out Any?>>
+
 @Module
 object ItemUtils {
+
+    val colors = arrayOf(
+        CatppuccinColors.Mocha.red,
+        CatppuccinColors.Mocha.mauve,
+        CatppuccinColors.Mocha.yellow,
+        CatppuccinColors.Mocha.green,
+        CatppuccinColors.Mocha.lavender,
+        CatppuccinColors.Mocha.sapphire,
+    )
 
     @Subscription
     private fun RegisterCommandsEvent.registerCommands() {
@@ -47,25 +58,55 @@ object ItemUtils {
             if (item.isEmpty) {
                 Text.of("Not holding any item!").sendWithPrefix("catharsis-held-item-id-error")
             } else {
-                val id = getCustomLocation(item)
+                val id = resolveModelId(item)?.filterNotNull()
 
-                if (id == null) {
+                if (id.isNullOrEmpty()) {
                     Text.of("Item has no custom id!").sendWithPrefix("catharsis-held-item-no-id")
                 } else {
-                    Text.of("Held item has id ") {
-                        append(id.toString()) {
-                            color = CatppuccinColors.Frappe.red
-                        }
-                        append("! ")
-
-                        append("[COPY]") {
-                            this.color = CatppuccinColors.Latte.lavender
-                            onClick {
-                                Text.of("Copied item id to clipboard!", CatppuccinColors.Frappe.yellow).sendWithPrefix("catharsis-held-item-copied-id")
-                                McClient.clipboard = id.path
+                    if (id.size == 1) {
+                        Text.of("Held item has id ") {
+                            append(id.first().toString()) {
+                                color = CatppuccinColors.Frappe.red
                             }
-                        }
-                    }.sendWithPrefix("catharsis-held-item-id-$id")
+                            append("! ")
+
+                            append("[COPY]") {
+                                this.color = CatppuccinColors.Latte.lavender
+                                onClick {
+                                    Text.of("Copied item id to clipboard!", CatppuccinColors.Frappe.yellow).sendWithPrefix("catharsis-held-item-copied-id")
+                                    McClient.clipboard = id.toString()
+                                }
+                            }
+                        }.sendWithPrefix("catharsis-held-item-id")
+                    } else {
+                        Text.of("Held item has ${id.size} ids!") {
+                            append(" (hover) ", TextColor.DARK_GRAY)
+                            hover = Text.multiline(
+                                id.mapIndexed { index, identifier ->
+                                    Text.of("${index + 1}. ") {
+                                        this.color = colors[index]
+                                        append(identifier.toString(), TextColor.GRAY)
+                                    }
+                                },
+                            )
+
+                            append(
+                                Text.join(
+                                    id.mapIndexed { index, identifier ->
+                                        Text.of("[${index + 1}]") {
+                                            this.color = colors[index]
+                                            onClick {
+                                                Text.of("Copied item id ${index + 1} to clipboard!", CatppuccinColors.Frappe.yellow).sendWithPrefix("catharsis-held-item-copied-id")
+                                                McClient.clipboard = identifier.toString()
+                                            }
+                                        }
+                                    },
+                                    separator = CommonComponents.SPACE,
+                                ),
+                            )
+                        }.sendWithPrefix("catharsis-held-item-ids-${id.size}")
+                    }
+
                 }
             }
         }
@@ -141,11 +182,14 @@ object ItemUtils {
                             append("- ").append(kind.name.toTitleCase()).append(": ").append(value.toPrettyString())
                         }
 
-                        Text.of(value?.toString() ?: "null", when (kind) {
-                            PropertyType.CONDITION -> CatppuccinColors.Mocha.blue
-                            PropertyType.RANGE -> CatppuccinColors.Mocha.peach
-                            PropertyType.SWITCH -> CatppuccinColors.Mocha.green
-                        })
+                        Text.of(
+                            value?.toString() ?: "null",
+                            when (kind) {
+                                PropertyType.CONDITION -> CatppuccinColors.Mocha.blue
+                                PropertyType.RANGE -> CatppuccinColors.Mocha.peach
+                                PropertyType.SWITCH -> CatppuccinColors.Mocha.green
+                            },
+                        )
                     },
                     separator = Text.of("/"),
                 ),
@@ -161,7 +205,9 @@ object ItemUtils {
         CONDITION
     }
 
-    fun <Type, CompareType> createConverter(dataTypeEntry: DataTypeEntry<Type, CompareType>) = DataTypeProperty(dataTypeEntry.type, dataTypeEntry.converter, dataTypeEntry.codec, PropertyType.SWITCH)
+    fun <Type, CompareType> createConverter(dataTypeEntry: DataTypeEntry<Type, CompareType>) =
+        DataTypeProperty(dataTypeEntry.type, dataTypeEntry.converter, dataTypeEntry.codec, PropertyType.SWITCH)
+
     fun <Type, CompareType : Number> createConverter(dataTypeEntry: NumbericalDataTypeEntry<Type, CompareType>) =
         DataTypeProperty(dataTypeEntry.type, dataTypeEntry.converter, dataTypeEntry.codec, PropertyType.RANGE)
 
@@ -190,33 +236,21 @@ object ItemUtils {
     }
 
     @JvmStatic
-    fun resolveModelId(predicate: Predicate<Identifier>, stack: ItemStack): Identifier? {
-        val extraId = stack.getCatharsisId()
-        if (extraId != null) {
-            return extraId
+    fun resolveModelId(stack: ItemStack): Array<Identifier?>? {
+        var array: Array<Identifier?>? = null
+        fun ensureArray(index: Int, id: Identifier?) {
+            if (id == null) return
+            array = array ?: Array(5) { null }
+            array[index] = id
         }
 
-        val itemId = getCustomLocation(stack)
-        if (itemId != null && predicate.test(itemId)) {
-            return itemId
-        }
+        ensureArray(0, stack.getCatharsisId())
+        ensureArray(1, getCustomLocation(stack))
+        ensureArray(2, getHypixelLocation(stack))
+        ensureArray(3, MiscItemModels.getBaseModel(stack))
+        ensureArray(4, MiscItemModels.getExtraModel(stack))
 
-        val hypixelId = getHypixelLocation(stack)
-        if (hypixelId != null) {
-            return hypixelId
-        }
-
-        val baseMiscModel = MiscItemModels.getBaseModel(stack)
-        if (baseMiscModel != null && predicate.test(baseMiscModel)) {
-            return baseMiscModel
-        }
-
-        val extraMiscModel = MiscItemModels.getExtraModel(stack)
-        if (extraMiscModel != null && predicate.test(extraMiscModel)) {
-            return extraMiscModel
-        }
-
-        return null
+        return array
     }
 
     private fun SkyBlockId.cleanOrNull() = this.cleanId.lowercase().takeUnless { it == UNKNOWN }

@@ -67,9 +67,13 @@ public class ItemModelResolverMixin {
             return guiId;
         }
 
-        var itemId = ItemUtils.resolveModelId(manager::catharsis$hasCustomModel, stack);
-        if (itemId != null && manager.catharsis$hasCustomModel(itemId)) {
-            return itemId;
+        var itemIds = ItemUtils.resolveModelId(stack);
+        if (itemIds != null) {
+            for (var identifier : itemIds) {
+                if (manager.catharsis$hasCustomModel(identifier)) {
+                    return identifier;
+                }
+            }
         }
 
         return original;

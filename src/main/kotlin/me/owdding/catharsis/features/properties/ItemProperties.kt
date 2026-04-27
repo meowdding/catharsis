@@ -21,6 +21,7 @@ object ItemProperties {
         register(DataTypeProperties.ID.withPrefix("has"), DataTypeProperties.DataTypePresentItemProperty.CODEC.let { MapCodec.of(it, it) { "HasDataType" } })
         register(GemstoneProperty.ID, GemstoneProperty.CODEC)
         register(HasPetSkinProperty.ID, HasPetSkinProperty.CODEC)
+        register(TimespanProperty.ID, TimespanProperty.CODEC)
     }
 
     @Subscription

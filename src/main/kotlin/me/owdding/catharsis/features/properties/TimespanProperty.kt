@@ -2,7 +2,6 @@ package me.owdding.catharsis.features.properties
 
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
-import me.owdding.catharsis.features.blocks.BlockReplacements
 import me.owdding.catharsis.features.timespan.Timespans
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.FieldName
@@ -28,7 +27,7 @@ data class TimespanProperty(
         Timespans.getLoadedTimespans()[identifier]?.apply {
             markUsed()
         } ?: run {
-            BlockReplacements.warn("Requested unknown timespan $identifier!")
+            ItemProperties.warn("Requested unknown timespan $identifier!")
             null
         }
     }

@@ -1,4 +1,3 @@
-//~ named_identifier
 package me.owdding.catharsis.mixins.items;
 
 import me.owdding.catharsis.hooks.items.ModelManagerHook;

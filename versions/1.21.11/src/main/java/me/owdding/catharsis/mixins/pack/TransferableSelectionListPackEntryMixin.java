@@ -1,4 +1,3 @@
-//~ named_identifier
 package me.owdding.catharsis.mixins.pack;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;

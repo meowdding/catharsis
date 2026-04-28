@@ -1,4 +1,3 @@
-//~ named_identifier
 package me.owdding.catharsis.mixins.armor;
 
 import me.owdding.catharsis.features.armor.BodyPart;

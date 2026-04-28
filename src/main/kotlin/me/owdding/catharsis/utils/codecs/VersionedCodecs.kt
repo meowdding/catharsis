@@ -12,7 +12,7 @@ object VersionedCodecs {
         type: (O) -> DataResult<out I>,
         codec: (I) -> DataResult<MapCodec<out O>>,
     ): MapCodec<O> {
-        //? if =1.21.11 {
+        //? if >=1.21.11 {
         return KeyDispatchCodec(this.fieldOf(key), type, codec)
         //?} else {
         /*return KeyDispatchCodec(key, this, type, codec)

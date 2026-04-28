@@ -1,0 +1,16 @@
+[versions]
+
+minecraft = "26.1"
+minecraft_range = "26.1.x"
+fabric-api = "0.145.1+26.1"
+placeholders = "3.0.0+26.1"
+
+packed_packs = "2.1.2+26.1"
+
+[libraries]
+
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
+placeholders = { module = "eu.pb4:placeholder-api", version.ref = "placeholders" }
+
+packed_packs = { module = "io.github.fishstiz.packed_packs.api:packed_packs_api-fabric", version.ref = "packed_packs" }

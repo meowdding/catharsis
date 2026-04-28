@@ -60,6 +60,7 @@ sealed interface FloatPredicate {
         override fun contains(value: Float) = value in min..max
     }
 
+    @GenerateCodec
     data class Set(val set: FloatSet) : FloatPredicate {
         override fun contains(value: Float) = value in set
     }

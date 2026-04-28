@@ -1,11 +1,12 @@
 package me.owdding.catharsis.mixins.items;
 
+//~ gui_graphics
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import com.llamalad7.mixinextras.sugar.Local;
 import me.owdding.catharsis.features.tooltip.TooltipFeature;
 import me.owdding.catharsis.hooks.items.AbstractContainerScreenHook;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.world.inventory.Slot;
@@ -25,8 +26,13 @@ public class AbstractContainerScreenMixin {
     @Nullable
     protected Slot hoveredSlot;
 
-    @WrapOperation(method = "renderSlot", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;renderItem(Lnet/minecraft/world/item/ItemStack;III)V"))
-    private void catharsis$renderItem(GuiGraphics instance, ItemStack stack, int x, int y, int seed, Operation<Void> original, @Local(argsOnly = true) Slot slot) {
+    @WrapOperation(
+        //~ if >= 26.1 'renderSlot' -> 'extractSlot'
+        method = "extractSlot",
+        //~ if >= 26.1 'renderItem(' -> 'item('
+        at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphicsExtractor;item(Lnet/minecraft/world/item/ItemStack;III)V")
+    )
+    private void catharsis$renderItem(GuiGraphicsExtractor instance, ItemStack stack, int x, int y, int seed, Operation<Void> original, @Local(argsOnly = true) Slot slot) {
         AbstractContainerScreenHook.SLOT.set(slot);
         AbstractContainerScreenHook.HOVERED.set(this.hoveredSlot == slot);
 
@@ -37,7 +43,8 @@ public class AbstractContainerScreenMixin {
     }
 
     @WrapOperation(
-        method = "renderTooltip",
+        //~ if >= 26.1 'renderTooltip' -> 'extractTooltip'
+        method = "extractTooltip",
         at = @At(
             value = "INVOKE",
             target = "Lnet/minecraft/world/item/ItemStack;get(Lnet/minecraft/core/component/DataComponentType;)Ljava/lang/Object;"

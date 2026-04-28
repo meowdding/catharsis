@@ -34,9 +34,16 @@ abstract class TextReplacements<Context>(path: String) : SimplePreparableReloadL
     }
 
     fun replace(context: Context, texts: List<Component>): List<Component> {
-        return when {
-            texts.isEmpty() -> texts
-            else -> tryReplace(context, Text.multiline(texts))?.splitLines() ?: texts
+        when {
+            texts.isEmpty() -> return texts
+            else -> {
+                val original = Text.multiline(texts)
+                val originalSplit = original.splitLines()
+                val modified = tryReplace(context, original) ?: return texts
+                val modifiedSplit = modified.splitLines()
+
+                return modifiedSplit.map { line -> texts.getOrNull(originalSplit.indexOf(line)) ?: line }
+            }
         }
     }
 

@@ -3,7 +3,7 @@ package me.owdding.catharsis.features.pack.config
 import me.owdding.catharsis.utils.HsbColor
 import me.owdding.catharsis.utils.HsbState
 import me.owdding.catharsis.utils.ui.BaseWidget
-import net.minecraft.client.gui.GuiGraphics
+import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.input.MouseButtonEvent
 import net.minecraft.util.CommonColors
 import net.minecraft.util.Mth
@@ -15,7 +15,8 @@ import kotlin.math.round
 
 class SaturationBrightnessSelector(width: Int, height: Int, val state: HsbState) : BaseWidget(0, 0, width, height) {
 
-    override fun renderWidget(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTick: Float) {
+    //~ if >= 26.1 'renderWidget(' -> 'extractWidgetRenderState('
+    override fun extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
         graphics.drawOutline(
             this.x - 1, this.y - 1,
             this.width + 2, this.height + 2,
@@ -75,7 +76,8 @@ class SaturationBrightnessSelector(width: Int, height: Int, val state: HsbState)
 
 class HueSelector(width: Int, height: Int, val state: HsbState) : BaseWidget(0, 0, width, height) {
 
-    override fun renderWidget(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTick: Float) {
+    //~ if >= 26.1 'renderWidget' -> 'extractWidgetRenderState'
+    override fun extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
         graphics.drawOutline(
             this.x - 1, this.y - 1,
             this.width + 2, this.height + 2,
@@ -118,7 +120,8 @@ class HueSelector(width: Int, height: Int, val state: HsbState) : BaseWidget(0, 
 
 class AlphaSelector(width: Int, height: Int, val state: HsbState) : BaseWidget(0, 0, width, height) {
 
-    override fun renderWidget(graphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTick: Float) {
+    //~ if >= 26.1 'renderWidget' -> 'extractWidgetRenderState'
+    override fun extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
         graphics.drawOutline(
             this.x - 1, this.y - 1,
             this.width + 2, this.height + 2,

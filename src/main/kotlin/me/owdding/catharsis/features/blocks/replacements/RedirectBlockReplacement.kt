@@ -42,6 +42,11 @@ data class RedirectBlockReplacement(
         return BlockReplacementSelector.always(if (override != null) override.sounds else virtualState.sounds)
     }
 
+    override fun bakeDisplay(block: Block): BlockReplacementSelector<BlockDisplayDefinition> {
+        val override = virtualState.overrides[block]
+        return BlockReplacementSelector.always(if (override != null) override.display else virtualState.display)
+    }
+
     override fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos, random: RandomSource): VirtualBlockStateDefinition {
         return virtualState.overrides[state.block] ?: virtualState
     }

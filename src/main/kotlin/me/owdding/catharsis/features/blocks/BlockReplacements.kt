@@ -51,14 +51,18 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     val blockDefinitionCodec: Codec<BlockReplacement.Completable> = BlockStateDefinitions.CODEC.codec()
     val virtualBlockStateCodec: Codec<VirtualBlockStateDefinition> = CatharsisCodecs.VirtualBlockStateDefinitionCodec.codec()
 
-    private val map: MutableMap<Block, BakedSoundDefinition> = mutableMapOf()
+    private val sounds: MutableMap<Block, BakedSoundDefinition> = mutableMapOf()
+    private val displays: MutableMap<Block, BakedDisplayDefinition> = mutableMapOf()
 
     val blocksCache: Cache<BlockPos, BlockState> = CacheBuilder.newBuilder().maximumSize(1000).expireAfterWrite(5.minutes.toJavaDuration()).build<BlockPos, BlockState>()
     private val blockToListen: MutableSet<Block> = mutableSetOf()
     private val usedDungeonFloors = mutableSetOf<DungeonFloor>()
 
     @JvmStatic
-    fun getSound(state: BlockState, pos: BlockPos): BlockSoundDefinition = map[state.block]?.select(state, pos) ?: BlockSoundDefinition.DEFAULT
+    fun getSound(state: BlockState, pos: BlockPos): BlockSoundDefinition = sounds[state.block]?.select(state, pos) ?: BlockSoundDefinition.DEFAULT
+
+    @JvmStatic
+    fun getDisplay(state: BlockState, pos: BlockPos): BlockDisplayDefinition? = displays[state.block]?.select(state, pos)
 
     @Subscription
     fun onBlockChange(event: BlockChangeEvent) {
@@ -134,7 +138,7 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
         data: Map<Block, LayeredBlockReplacements>,
         context: ModelLoadingPlugin.Context,
     ) {
-        this.map.clear()
+        this.sounds.clear()
         blockToListen.clear()
         val overrides = data.entries.flatMap { (block, replacement) ->
             replacement.listStates().flatMap { state -> state.overrides.keys.map { it to block } }
@@ -149,9 +153,13 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
             val replacement = data[block]
             val tot = overrides.getOrElse(block) { emptyList() }.associateWith { data[it] }.filterValuesNotNull()
             if (replacement != null || tot.isNotEmpty()) {
-                this.map[block] = BakedSoundDefinition(
+                this.sounds[block] = BakedSoundDefinition(
                     (replacement ?: emptyReplacement).bakeSounds(block),
                     tot.mapValues { (_, value) -> value.bakeSounds(block) },
+                )
+                this.displays[block] = BakedDisplayDefinition(
+                    (replacement ?: emptyReplacement).bakeDisplay(block),
+                    tot.mapValues { (_, value) -> value.bakeDisplay(block) },
                 )
                 return@register UnbakedBlockStateModelReplacement(block, original, replacement ?: emptyReplacement, tot)
             }

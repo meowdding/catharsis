@@ -32,6 +32,7 @@ interface BlockReplacement {
     fun <T : Any> bake(baker: BlockReplacement.() -> BlockReplacementSelector<T>): BlockReplacementSelector<T>
     fun bakeModel(baker: ModelBaker, block: Block): BlockReplacementSelector<BlockReplacementEntry> = bake { bakeModel(baker, block) }
     fun bakeSounds(block: Block): BlockReplacementSelector<BlockSoundDefinition> = bake { bakeSounds(block) }
+    fun bakeDisplay(block: Block): BlockReplacementSelector<BlockDisplayDefinition> = bake { bakeDisplay(block) }
 
     fun select(
         level: BlockAndTintGetter?,

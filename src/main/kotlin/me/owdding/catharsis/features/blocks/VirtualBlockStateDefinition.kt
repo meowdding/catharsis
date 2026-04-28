@@ -43,7 +43,6 @@ data class VirtualBlockStateDefinition(
 enum class BlendMode(val sectionLayer: ChunkSectionLayer) {
     DEFAULT(ChunkSectionLayer.CUTOUT),
     SOLID(ChunkSectionLayer.SOLID),
-    CUTOUT_MIPPED(ChunkSectionLayer.CUTOUT),
     CUTOUT(ChunkSectionLayer.CUTOUT),
     TRANSLUCENT(ChunkSectionLayer.TRANSLUCENT),
 }

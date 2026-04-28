@@ -26,19 +26,6 @@ abstract class BaseButtonWidget(x: Int, y: Int, width: Int, height: Int) : Abstr
     override fun updateWidgetNarration(narrationElementOutput: NarrationElementOutput) {
     }
 
-    //? < 1.21.11 {
-    /*override fun renderWidget(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float) {
-        this.renderContents(graphics, mouseX, mouseY, partialTicks)
-        if (this.isHovered()) {
-            graphics.requestCursor(if (this.isActive) com.mojang.blaze3d.platform.cursor.CursorTypes.POINTING_HAND else com.mojang.blaze3d.platform.cursor.CursorTypes.NOT_ALLOWED)
-        }
-    }
-    *///?}
-
-    //? < 1.21.11 {
-    /*abstract fun renderContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float)
-    *///?}
-
     companion object {
         val SPRITES = WidgetSprites(
             Identifier.withDefaultNamespace("widget/button"),

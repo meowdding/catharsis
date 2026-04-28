@@ -9,7 +9,7 @@ import it.unimi.dsi.fastutil.objects.Object2ObjectMap
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap
 import me.owdding.catharsis.hooks.armor.SelectItemModelPropertyTypeHook
 import me.owdding.catharsis.utils.TypedResourceManager
-import me.owdding.catharsis.utils.codecs.VersionedCodecs.dispatchLenientMap
+import me.owdding.catharsis.utils.extensions.dispatchLenientMap
 import net.minecraft.client.multiplayer.CacheSlot
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperties
@@ -24,7 +24,7 @@ import kotlin.jvm.optionals.getOrNull
 
 typealias UnbakedArmorSelectCase<Type> = Pair<List<Type>, ArmorModel.Unbaked>
 
-@Suppress("UNCHECKED_CAST", "KotlinConstantConditions")
+@Suppress("UNCHECKED_CAST")
 val <Property : SelectItemModelProperty<Type>, Type : Any> SelectItemModelProperty.Type<Property, Type>.hook: SelectItemModelPropertyTypeHook<Property, Type>
     get() = this as Any as SelectItemModelPropertyTypeHook<Property, Type>
 
@@ -110,6 +110,7 @@ class SelectArmorModel<Type : Any>(
             )
 
             @JvmStatic
+            @Suppress("TYPE_MISMATCH_BASED_ON_JAVA_ANNOTATIONS", "UPPER_BOUND_VIOLATED_BASED_ON_JAVA_ANNOTATIONS")
             fun <Type> createCasesFieldCodec(codec: Codec<Type>): MapCodec<List<UnbakedArmorSelectCase<Type>>> {
                 val casesCodec: Codec<List<UnbakedArmorSelectCase<Type>>> = RecordCodecBuilder.create {
                     it.group(

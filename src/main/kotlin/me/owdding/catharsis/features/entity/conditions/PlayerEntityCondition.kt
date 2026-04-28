@@ -48,13 +48,8 @@ sealed interface PlayerEntityConditions : EntityCondition {
     }
 
     fun getSkin(entity: ClientAvatarEntity): String? {
-        //? if > 1.21.8 {
         val bodySkin = entity.skin.body
         if (bodySkin !is ClientAsset.DownloadedTexture) return null
-        val skinUrl = bodySkin.url
-        //?} else {
-        /*val skinUrl = entity.skin.textureUrl
-        *///?}
-        return skinUrl
+        return bodySkin.url
     }
 }

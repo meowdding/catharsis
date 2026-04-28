@@ -1,6 +1,5 @@
 package me.owdding.catharsis.features.gui.modifications
 
-//? >= 1.21.9
 import com.mojang.blaze3d.platform.cursor.CursorTypes
 import com.mojang.serialization.Codec
 import me.owdding.catharsis.features.gui.modifications.conditions.GuiModifierCondition

@@ -1,14 +1,12 @@
-package me.owdding.catharsis.features.pack
+package me.owdding.catharsis.features.pack.resourceconditions
 
 import com.google.gson.JsonPrimitive
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.pack.config.PackConfigHandler
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
-import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.resource.conditions.v1.ResourceCondition
 import net.fabricmc.fabric.api.resource.conditions.v1.ResourceConditionType
-import net.fabricmc.fabric.api.resource.conditions.v1.ResourceConditions
 import net.minecraft.resources.RegistryOps
 
 @GenerateCodec
@@ -25,17 +23,10 @@ data class ConfigResourceCondition(val pack: String, val id: String, val value: 
         }
     }
 
-    @Module
     companion object {
-
         val TYPE: ResourceConditionType<ConfigResourceCondition> = ResourceConditionType.create(
             Catharsis.id("config"),
             CatharsisCodecs.getMapCodec<ConfigResourceCondition>(),
         )
-
-        init {
-            ResourceConditions.register(TYPE)
-        }
     }
-
 }

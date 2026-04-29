@@ -173,13 +173,13 @@
       }
     },
     {
-      "id": "skyblock_gui:stats/combat/bonus_attack_speed/icon",
+      "id": "skyblock_gui:stats/combat/attack_speed/icon",
       "target": {
         "type": "all",
         "conditions": [
           {
             "type": "catharsis:name",
-            "name": "⚔ Bonus Attack Speed.+"
+            "name": "⚔ Attack Speed.+"
           },
           {
             "type": "item",

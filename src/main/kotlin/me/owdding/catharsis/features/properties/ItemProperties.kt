@@ -1,14 +1,17 @@
 package me.owdding.catharsis.features.properties
 
 import com.mojang.serialization.MapCodec
+import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.events.BootstrapConditionalPropertiesEvent
 import me.owdding.catharsis.events.BootstrapNumericPropertiesEvent
 import me.owdding.catharsis.events.BootstrapSelectPropertiesEvent
+import me.owdding.catharsis.utils.CatharsisLogger
+import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
 import me.owdding.ktmodules.Module
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 
 @Module
-object ItemProperties {
+object ItemProperties : CatharsisLogger by Catharsis.featureLogger() {
 
     @Subscription
     private fun BootstrapConditionalPropertiesEvent.onBooleanProperties() {
@@ -21,6 +24,7 @@ object ItemProperties {
         register(DataTypeProperties.ID.withPrefix("has"), DataTypeProperties.DataTypePresentItemProperty.CODEC.let { MapCodec.of(it, it) { "HasDataType" } })
         register(GemstoneProperty.ID, GemstoneProperty.CODEC)
         register(HasPetSkinProperty.ID, HasPetSkinProperty.CODEC)
+        register(TimespanProperty.ID, TimespanProperty.CODEC)
     }
 
     @Subscription

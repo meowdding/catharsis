@@ -70,6 +70,16 @@ Returns `true` if the player is in the specified area.
 - <TypeIcon type="string"/> **area**: The id of the area as defined [here](/block_replacements/areas)
 </TreeView>
 
+#### **Timespan** (`catharsis:timespan`)
+
+Returns `true` if a certain [timespan](../miscellaneous/timespans) is true.
+
+<TreeView>
+<span>additional fields:</span>
+
+- <TypeIcon type="string"/> **timespan**: The identifier of the timespan to check.
+</TreeView>
+
 #### **Is Hovered** (`catharsis:hovered`)
 
 Returns `true` if the item is hovered.

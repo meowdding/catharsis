@@ -26,6 +26,7 @@ import net.minecraft.resources.Identifier
 import net.minecraft.sounds.SoundEvent
 import net.minecraft.tags.TagKey
 import net.minecraft.util.ExtraCodecs
+import net.minecraft.util.InclusiveRange
 import net.minecraft.world.entity.EntityType
 import net.minecraft.world.entity.ai.attributes.Attribute
 import net.minecraft.world.inventory.MenuType
@@ -143,6 +144,9 @@ object IncludedCodecs {
 
     @IncludedCodec
     val conditionalItemPropertyCodec: MapCodec<ConditionalItemModelProperty> = ConditionalItemModelProperties.MAP_CODEC
+
+    @IncludedCodec
+    val inclusiveRangeInt: Codec<InclusiveRange<Int>> = InclusiveRange.INT
 
 //     @IncludedCodec(keyable = true, named = "base64_string")
     val BASE64_STRING_CODEC: Codec<Base64String> = Codec.STRING.xmap(

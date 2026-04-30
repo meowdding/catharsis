@@ -1,6 +1,7 @@
 //~ named_identifier
 package me.owdding.catharsis.mixins.pack;
 
+import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.platform.cursor.CursorTypes;
@@ -22,6 +23,7 @@ import net.minecraft.client.gui.screens.packs.TransferableSelectionList;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
+import net.minecraft.server.packs.repository.PackCompatibility;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -44,7 +46,8 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     private static final Identifier COG_ICON = Identifier.fromNamespaceAndPath("catharsis", "cog");
     @Unique
     private static final Identifier COG_HIGHLIGHTED_ICON = Identifier.fromNamespaceAndPath("catharsis", "cog_highlighted");
-
+    @Unique
+    private static final Identifier COG_ERROR_ICON = Identifier.fromNamespaceAndPath("catharsis", "cog_error");
     @Shadow
     @Final
     protected Minecraft minecraft;
@@ -72,13 +75,23 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
         this.top = this.getContentY();
     }
 
+    @ModifyExpressionValue(
+        method = "renderContent",
+        at = @At(value = "INVOKE", target = "Lnet/minecraft/server/packs/repository/PackCompatibility;isCompatible()Z", ordinal = 0)
+    )
+    private boolean expandIncompatibleCheck(boolean isCompatible) {
+        if (!isCompatible) return false;
+        var meta = catharsis$getMeta();
+        return meta == null || meta.getIncompatibilities().isEmpty();
+    }
+
     @Inject(
         method = "renderContent",
         at = @At(
             value = "INVOKE",
             shift = At.Shift.AFTER,
             ordinal = 1,
-            target = "Lnet/minecraft/client/gui/components/MultiLineTextWidget;setMessage(Lnet/minecraft/network/chat/Component;)V"
+            target = "Lnet/minecraft/client/gui/GuiGraphics;fill(IIIII)V"
         )
     )
     private void renderDescription(
@@ -91,8 +104,11 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
         List<Pair<String, ModContainer>> incompatibilities = meta != null ? meta.getIncompatibilities() : List.of();
         if (!incompatibilities.isEmpty()) {
             this.nameWidget.setMessage(Component.translatable("pack.catharsis.incompatible.title"));
-            this.descriptionWidget.setMessage(Component.translatable("pack.catharsis.incompatible.desc"));
-            graphics.setTooltipForNextFrame(this.minecraft.font, meta.getIncompatibleTooltip(), Optional.empty(), mouseX, mouseY);
+            this.descriptionWidget.setMessage(Component.translatable("pack.catharsis.incompatible.desc").withStyle(ChatFormatting.GRAY));
+            PackCompatibility compatibility = this.pack.getCompatibility();
+            if (compatibility.isCompatible()) {
+                graphics.setTooltipForNextFrame(this.minecraft.font, meta.getIncompatibleTooltip(), Optional.empty(), mouseX, mouseY);
+            }
         }
     }
 
@@ -110,12 +126,12 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
         var config = catharsis$getConfig();
         if (config == null || config.isEmpty()) return;
 
-        int x = this.right - SIZE;
-        int y = this.top;
+        int x = this.right - SIZE + 2;
+        int y = this.top - 2;
         boolean buttonHovered = mouseX >= x && mouseX <= x + SIZE && mouseY >= y && mouseY <= y + SIZE;
         boolean canEdit = this.catharsis$canEditPack();
 
-        var icon = isHovering && buttonHovered && canEdit ? COG_HIGHLIGHTED_ICON : COG_ICON;
+        var icon = isHovering && buttonHovered ? canEdit ? COG_HIGHLIGHTED_ICON : COG_ERROR_ICON : canEdit ? COG_ICON : COG_ERROR_ICON;
         graphics.blitSprite(RenderPipelines.GUI_TEXTURED, icon, x + 1, y + 1, SIZE - 2, SIZE - 2);
 
         if (buttonHovered) {

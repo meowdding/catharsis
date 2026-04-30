@@ -12,11 +12,9 @@ interface PreparingModelLoadingPlugin<T : Any> : PreparableModelLoadingPlugin<T>
         PreparableModelLoadingPlugin.register(::prepare, this)
     }
 
-    //? >= 1.21.9 {
     private fun prepare(sharedState: PreparableReloadListener.SharedState, executor: Executor): CompletableFuture<T> {
         return prepare(sharedState.resourceManager(), executor)
     }
-    //?}
 
     fun prepare(resourceManager: ResourceManager, executor: Executor): CompletableFuture<T>
 }

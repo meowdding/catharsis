@@ -18,11 +18,7 @@ open class Overlay : Screen(Component.empty()) {
     }
 
     override fun repositionElements() {
-        //? >= 1.21.11 {
         this.background?.resize(this.width, this.height)
-        //?} else {
-        /*this.background?.resize(this.minecraft!!, this.width, this.height)
-        *///?}
         super.repositionElements()
     }
 

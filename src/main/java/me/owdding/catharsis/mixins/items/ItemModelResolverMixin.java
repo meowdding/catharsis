@@ -1,4 +1,3 @@
-//~ named_identifier
 package me.owdding.catharsis.mixins.items;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
@@ -43,11 +42,7 @@ public class ItemModelResolverMixin {
     }
 
     @ModifyExpressionValue(
-        //? if >= 1.21.11 {
         method = {"shouldPlaySwapAnimation", "swapAnimationScale"},
-        //?} else {
-        /*method = "shouldPlaySwapAnimation",
-        *///?}
         at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;get(Lnet/minecraft/core/component/DataComponentType;)Ljava/lang/Object;")
     )
     private Object catharsis$modifyDataComponentType(Object original, @Local(argsOnly = true) ItemStack stack) {

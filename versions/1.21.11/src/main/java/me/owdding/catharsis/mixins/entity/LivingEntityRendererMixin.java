@@ -1,4 +1,3 @@
-//~ named_identifier
 package me.owdding.catharsis.mixins.entity;
 
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;

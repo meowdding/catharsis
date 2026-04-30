@@ -53,9 +53,6 @@ data class GuiPlayerElement(
             state.shadowPieces.clear()
             state.outlineColor = 0
 
-            //? if < 1.21.11
-            /*state.hitboxesRenderState = null*/
-
             //~ if >= 26.1 'submitEntityRenderState(' -> 'entity('
             graphics.entity(state, 25.0F, offset, rotation, null, newX, newY, newX + width, newY + height)
         }

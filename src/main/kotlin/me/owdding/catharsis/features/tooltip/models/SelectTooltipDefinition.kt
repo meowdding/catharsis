@@ -11,7 +11,7 @@ import me.owdding.catharsis.features.tooltip.TooltipDefinition
 import me.owdding.catharsis.features.tooltip.TooltipDefinitions
 import me.owdding.catharsis.hooks.armor.SelectItemModelPropertyTypeHook
 import me.owdding.catharsis.utils.TypedResourceManager
-import me.owdding.catharsis.utils.codecs.VersionedCodecs.dispatchLenientMap
+import me.owdding.catharsis.utils.extensions.dispatchLenientMap
 import net.minecraft.client.multiplayer.CacheSlot
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperties
@@ -113,6 +113,7 @@ data class SelectTooltipDefinition<Type : Any>(
             )
 
             @JvmStatic
+            @Suppress("TYPE_MISMATCH_BASED_ON_JAVA_ANNOTATIONS", "UPPER_BOUND_VIOLATED_BASED_ON_JAVA_ANNOTATIONS")
             fun <Type> createCasesFieldCodec(codec: Codec<Type>): MapCodec<List<UnbakedTooltipSelectCase<Type>>> {
                 val casesCodec: Codec<List<UnbakedTooltipSelectCase<Type>>> = RecordCodecBuilder.create {
                     it.group(

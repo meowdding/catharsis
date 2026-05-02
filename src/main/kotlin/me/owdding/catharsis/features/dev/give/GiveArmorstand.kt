@@ -22,10 +22,10 @@ import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.CommandBuilder
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
-import tech.thatgravyboat.skyblockapi.api.remote.RepoItemsAPI
 import tech.thatgravyboat.skyblockapi.api.remote.api.SimpleItemAPI
 import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
 import tech.thatgravyboat.skyblockapi.api.remote.hypixel.museum.MuseumData
+import tech.thatgravyboat.skyblockapi.api.repo.apis.SkyBlockItemsRepo
 import tech.thatgravyboat.skyblockapi.utils.extentions.get
 import tech.thatgravyboat.skyblockapi.utils.extentions.putCompound
 import tech.thatgravyboat.skyblockapi.utils.text.Text
@@ -128,7 +128,7 @@ object GiveArmorstand {
             val id = argument<SkyBlockId>("id")
             val skyBlockId = id.skyblockId
 
-            val items = (MuseumData.museumData.armorSets.entries.find { skyBlockId in it.value }?.value?.map { RepoItemsAPI.getItem(it) } ?: run {
+            val items = (MuseumData.museumData.armorSets.entries.find { skyBlockId in it.value }?.value?.mapNotNull { SkyBlockItemsRepo.getItemStack(it) } ?: run {
                 // If museum data is not found, try to find items by matching stripped IDs
 
                 armorTypes.mapNotNull { SkyBlockId.unknownType(skyBlockId.replace(regex, "$1$it$2"))?.toItem() }

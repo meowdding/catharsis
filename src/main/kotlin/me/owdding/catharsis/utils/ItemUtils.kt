@@ -17,9 +17,9 @@ import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.api.datatype.getDataTypes
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
-import tech.thatgravyboat.skyblockapi.api.remote.api.RepoAttributeAPI
 import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
 import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId.Companion.UNKNOWN
+import tech.thatgravyboat.skyblockapi.api.repo.apis.SkyBlockAttributesRepo
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import tech.thatgravyboat.skyblockapi.utils.builders.TooltipBuilder
@@ -180,6 +180,7 @@ object ItemUtils {
             itemId.isAttribute -> resolveAttribute(itemId)
             itemId.isRune -> resolveRune(itemId)
             itemId.isEnchantment -> resolveEnchantment(itemId)
+            itemId.isPotion -> resolvePotion(itemId)
             else -> null
         }
     }
@@ -241,8 +242,13 @@ object ItemUtils {
 
     fun resolveAttribute(itemId: SkyBlockId): Identifier? {
         val attributeId = itemId.cleanOrNull() ?: return null
-        val data = RepoAttributeAPI.getAttributeDataById(attributeId) ?: return null
+        val data = SkyBlockAttributesRepo.get(attributeId) ?: return null
         return Identifier.tryBuild("skyblock", "attributes/${data.shardId.lowercase()}")
+    }
+
+    fun resolvePotion(itemId: SkyBlockId): Identifier? {
+        val potionId = itemId.cleanOrNull() ?: return null
+        return Identifier.tryBuild("skyblock", "potions/${potionId.substringBefore(":").lowercase()}")
     }
 
 }

@@ -105,6 +105,7 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
         val line = ResizingEqualSpacingLayout.Horizontal(310)
 
         val titleWidget = StringWidget(option.title(null), font).apply {
+            this.active = true
             this.withClickHandler(::handleComponentClick)
         }
         val descWidget = MultiLineTextWidget(Component.empty().append(option.description(null)).withColor(CommonColors.LIGHT_GRAY), font).apply {

@@ -25,17 +25,6 @@ Example of a `pack.mcmeta` with a configuration menu and version dependencies.
       - <TypeIcon type="string"/> The version range (e.g., `>=1.0.0`).
   - <TypeIcon type="boolean"/> **pack_required_for_config**: (Optional) Whether the pack is required for the config menu to show up, defaults to `false`.
   - <TypeIcon type="array"/> **config**: (Optional) A list of config elements for the settings menu.
-    - <TypeIcon type="object"/> **Config Element**:
-      - <TypeIcon type="string"/> **type**: The type of element (`tab`, `dropdown`, `boolean`, `information`, or `separator`).
-      - <TypeIcon type="string"/> **id**: (Required for inputs) The unique key for this config option, needs to be `[a-z0-9_.-]+`.
-      - <TypeIcon type="string"/> **title**: The display name, supporting both string and JSON text component.
-      - <TypeIcon type="string"/> **description**: (Optional) A description for the option, supporting both string and JSON text component.
-      - <TypeIcon type="boolean"/> **default**: (Optional) (For `boolean`) The default toggle state, defaults to `false`.
-      - <TypeIcon type="array"/> **options**: (For `dropdown`) A list of selectable values.
-        - <TypeIcon type="object"/> **Dropdown Option**:
-          - <TypeIcon type="string"/> **value**: The internal ID used for conditions, needs to be `[a-z0-9_.-]+`.
-          - <TypeIcon type="string"/> **text**: The display label for the user.
-          - <TypeIcon type="boolean"/> **default**: (Optional) Whether this option is selected by default, defaults to `false`.
 
 - <TypeIcon type="object"/> **fabric:overlays**: (Optional) A system for conditional resource loading.
   - <TypeIcon type="array"/> **entries**: A list of overlay definitions.
@@ -58,6 +47,109 @@ for users.
 
 The config can also be stored in `config.catharsis.json` inside the root of your pack. Using this will override any configurations defined in the `pack.mcmeta` file.
 The Fabric Overlays are still required in the `pack.mcmeta`.
+
+## Config Element Definitions
+
+Each element in the `config` array must define a `type`. Elements that store values (like `boolean` or `color`) require a unique `id`.
+
+### Tab (`tab`)
+Used to group related configuration options into separate navigation tabs.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `tab`
+- <TypeIcon type="string"/> **title**: The display name of the tab.
+- <TypeIcon type="array"/> **options**: A list of config elements to display within this tab.
+
+</TreeView>
+
+### Boolean (`boolean`)
+A toggle switch for on/off settings.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `boolean`
+- <TypeIcon type="string"/> **id**: The unique key for this option.
+- <TypeIcon type="string"/> **title**: The display name.
+- <TypeIcon type="string"/> **description**: (Optional) A default description.
+- <TypeIcon type="object"/> **descriptions**: (Optional) A map of `"true"` or `"false"` to specific description components.
+- <TypeIcon type="boolean"/> **default**: The default toggle state, defaults to `false`.
+
+</TreeView>
+
+### Dropdown (`dropdown`)
+A menu for selecting a single value from a list of options.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `dropdown`
+- <TypeIcon type="string"/> **id**: The unique key for this option.
+- <TypeIcon type="string"/> **title**: The display name.
+- <TypeIcon type="string"/> **description**: (Optional) A default description.
+- <TypeIcon type="object"/> **descriptions**: (Optional) A map of option values to specific description components.
+- <TypeIcon type="array"/> **options**: A list of selectable values.
+  - <TypeIcon type="object"/> **Dropdown Option**:
+    - <TypeIcon type="string"/> **value**: The internal ID used for conditions.
+    - <TypeIcon type="string"/> **text**: The display label.
+    - <TypeIcon type="boolean"/> **default**: (Optional) Whether this option is selected by default.
+
+</TreeView>
+
+### Select (`select`)
+A list based selection that can support single or multiple choices.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `select`
+- <TypeIcon type="string"/> **id**: The unique key for this option.
+- <TypeIcon type="string"/> **title**: The display name.
+- <TypeIcon type="string"/> **description**: (Optional) A default description.
+- <TypeIcon type="boolean"/> **single**: (Optional) If `true`, only one item can be selected. Defaults to `false`.
+- <TypeIcon type="array"/> **options**: A list of selectable entries.
+  - <TypeIcon type="object"/> **Select Entry**:
+    - <TypeIcon type="string"/> **value**: The internal ID.
+    - <TypeIcon type="string"/> **text**: The label. Can be a string or an object with `selected` and `unselected` variants.
+    - <TypeIcon type="boolean"/> **selected**: (Optional) Whether the entry is checked by default. Defaults to `false`.
+
+</TreeView>
+
+### Color (`color`)
+A color picker tool that stores the value as a decimal integer.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `color`
+- <TypeIcon type="string"/> **id**: The unique key for this option.
+- <TypeIcon type="string"/> **title**: The display name.
+- <TypeIcon type="string"/> **description**: The description for the color picker.
+- <TypeIcon type="int"/> **default**: The default color as an integer.
+- <TypeIcon type="boolean"/> **alpha**: (Optional) Whether to enable transparency (RGBA) support. Defaults to `false`.
+
+</TreeView>
+
+### Information (`information`)
+A text block for text.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `information`
+- <TypeIcon type="string"/> **title**: The header text.
+- <TypeIcon type="string"/> **description**: The body content.
+
+</TreeView>
+
+### Separator (`separator`)
+A visual divider used to organize the menu, same as `information` just with a divider at the bottom.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `separator`
+- <TypeIcon type="string"/> **title**: (Optional) Text displayed on the divider.
+- <TypeIcon type="string"/> **description**: (Optional) A description for the divider.
+
+</TreeView>
+
+---
 
 ## Fabric Overlays Explanation
 

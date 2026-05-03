@@ -18,6 +18,7 @@ Things that happen in this example
 - Changes the blend mode to `translucent`
 
 <<< @/example_pack/assets/your_name_space/catharsis/virtual_block_states/diamond.json{json:line-numbers}
+
 </Example>
 
 <TreeView>
@@ -31,6 +32,11 @@ Things that happen in this example
   - <SoundEvent customText> <b>step</b>: (Optional) The sound that is used when something steps on the block.</SoundEvent>
   - <SoundEvent customText> <b>place</b>: (Optional) The sound that is used when the block is placed.</SoundEvent>
   - <SoundEvent customText> <b>fall</b>: (Optional) The sound that is used when something falls on the block.</SoundEvent>
+- <TypeIcon type="object"/> **display**: (Optional) Changes how the block is displayed in certain mods. ie. Jade
+  - <TypeIcon type="string"/> **model**: (Optional) The item model definition to use for the block when displayed in a mod. e.g. `minecraft:diamond_block`
+  - <TypeIcon/> **name**: (Optional) The name to display for the block when displayed in a mod. As defined [here](https://minecraft.wiki/w/Text_component_format#Java_Edition)
+  - <TypeIcon type="array"/> **lore**: (Optional) The lore to display for the block when displayed in a mod.
+    - <TypeIcon/> A lore entry. As defined [here](https://minecraft.wiki/w/Text_component_format#Java_Edition)
 - <TypeIcon type="object"/> **overrides**: (Optional) A map of block id to vanilla block state definitions.
   - <TypeIcon type="array"/> **&lt;block_id&gt;**: The block id that is replaced e.g. `minecraft:bedrock`.
     - <TypeIcon/> A vanilla block state as defined [here](https://minecraft.wiki/w/Tutorial:Models#Block_states)

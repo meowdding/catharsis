@@ -19,6 +19,7 @@ import tech.thatgravyboat.skyblockapi.platform.identifier
 data class VirtualBlockStateDefinition(
     @Inline val model: BlockStateModelDispatcher,
     val sounds: BlockSoundDefinition?,
+    val display: BlockDisplayDefinition?,
     val blend: BlendMode?,
     @FieldName("ignore_original_offset") val ignoreOriginalOffset: Boolean = false,
     val overrides: Map<Block, VirtualBlockStateDefinition> = emptyMap(),

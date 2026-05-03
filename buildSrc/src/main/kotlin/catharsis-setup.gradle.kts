@@ -206,6 +206,10 @@ dependencies {
     "ksp"(versionedCatalog["meowdding.ktmodules"])
     "ksp"(versionedCatalog["meowdding.ktcodecs"])
 
+    // Jade compat
+    maybeModCompileOnly(versionedCatalog["jade"])
+    maybeModLocalRuntime(versionedCatalog["jade"])
+
     // Packed Packs compat
     maybeModCompileOnly(versionedCatalog["packed_packs"])
     maybeModLocalRuntime(versionedCatalog["packed_packs"])

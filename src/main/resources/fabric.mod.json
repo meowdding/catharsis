@@ -21,6 +21,12 @@
         "adapter": "kotlin",
         "value": "me.owdding.catharsis.compat.PackedPacksCompat"
       }
+    ],
+    "jade": [
+      {
+        "adapter": "kotlin",
+        "value": "me.owdding.catharsis.compat.JadeCompat"
+      }
     ]
   },
   "mixins": [

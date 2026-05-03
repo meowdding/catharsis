@@ -16,6 +16,7 @@ import net.minecraft.client.gui.screens.Screen
 import net.minecraft.network.chat.ClickEvent
 import net.minecraft.network.chat.CommonComponents
 import net.minecraft.network.chat.Component
+import net.minecraft.network.chat.Style
 import net.minecraft.util.CommonColors
 import net.minecraft.util.Util
 import tech.thatgravyboat.skyblockapi.helpers.McClient
@@ -89,24 +90,28 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
         }
     }
 
+    private fun handleComponentClick(handler: Style) {
+        handler.clickEvent?.let { event ->
+            when (event) {
+                is ClickEvent.OpenUrl -> Util.getPlatform().openUri(event.uri)
+                is ClickEvent.CopyToClipboard -> McClient.clipboard = event.value
+                else -> println("Cannot handle click event of type ${event.action()}")
+            }
+        }
+    }
+
     private fun getOptionElement(option: PackConfigOption): LayoutElement {
         val font = Minecraft.getInstance().font
         val line = ResizingEqualSpacingLayout.Horizontal(310)
 
-        val titleWidget = StringWidget(option.title(null), font)
+        val titleWidget = StringWidget(option.title(null), font).apply {
+            this.withClickHandler(::handleComponentClick)
+        }
         val descWidget = MultiLineTextWidget(Component.empty().append(option.description(null)).withColor(CommonColors.LIGHT_GRAY), font).apply {
             this.active = true
             this.setCentered(false)
             this.setMaxWidth(225)
-            this.withClickHandler {
-                it.clickEvent?.let { event ->
-                    when (event) {
-                        is ClickEvent.OpenUrl -> Util.getPlatform().openUri(event.uri)
-                        is ClickEvent.CopyToClipboard -> McClient.clipboard = event.value
-                        else -> println("Cannot handle click event of type ${event.action()}")
-                    }
-                }
-            }
+            this.withClickHandler(::handleComponentClick)
         }
 
         line.addChild(

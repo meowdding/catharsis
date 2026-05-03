@@ -5,6 +5,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer
 import com.mojang.serialization.MapCodec
 import net.minecraft.client.gui.components.CycleButton
 import net.minecraft.client.gui.components.MultiLineTextWidget
+import net.minecraft.client.gui.components.StringWidget
 import net.minecraft.client.multiplayer.CacheSlot
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.ShapeRenderer
@@ -90,6 +91,11 @@ fun RenderWorldEvent.renderLineBox(
         ),
         0.0, 0.0, 0.0, net.minecraft.util.ARGB.colorFromFloat(alpha, red, green, blue), 1f,
     )
+}
+
+fun StringWidget.withClickHandler(handler: (Style) -> Unit) : StringWidget {
+    this.setComponentClickHandler(handler)
+    return this
 }
 
 fun MultiLineTextWidget.withClickHandler(handler: (Style) -> Unit): MultiLineTextWidget {

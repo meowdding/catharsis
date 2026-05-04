@@ -4,6 +4,7 @@ import me.owdding.catharsis.features.armor.models.ArmorModelState
 import me.owdding.catharsis.features.imc.ImcHandler.isDisabled
 import me.owdding.catharsis.hooks.armor.LivingEntityRenderStateHook
 import me.owdding.catharsis.utils.ItemUtils
+import me.owdding.catharsis.utils.SkyBlockIdentifierResolver
 import me.owdding.ktmodules.Module
 import net.minecraft.core.component.DataComponents
 import net.minecraft.world.entity.EquipmentSlot
@@ -56,7 +57,7 @@ object ArmorDefinitionRenderStateHandler {
         if (item.isDisabled()) {
             updater.invoke(this, null)
         } else {
-            val definition = ArmorDefinitions.getDefinition(ItemUtils.resolveModelId(ArmorDefinitions::hasDefinition, item)) ?: ArmorDefinitions.getDefinition(item.get(DataComponents.ITEM_MODEL))
+            val definition = ArmorDefinitions.getDefinition(SkyBlockIdentifierResolver.resolveModelId(ArmorDefinitions::hasDefinition, item)) ?: ArmorDefinitions.getDefinition(item.get(DataComponents.ITEM_MODEL))
             updater.invoke(this, definition?.resolve(item, entity, slot))
 
             definition?.partVisibility?.forEach { (part, state) ->

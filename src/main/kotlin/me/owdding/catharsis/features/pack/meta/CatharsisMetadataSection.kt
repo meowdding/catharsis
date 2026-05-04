@@ -23,6 +23,7 @@ data class CatharsisMetadataSection(
     val dependencies: Map<String, String> = emptyMap(),
     val config: List<PackConfigOption> = emptyList(),
     @FieldName("pack_required_for_config") val packRequiredForConfig: Boolean = false,
+    @FieldName("disable_derived_ids") val disableDerivedIds: Boolean = false,
 ) {
 
     val incompatibilities: List<Pair<String, ModContainer?>> = dependencies.mapNotNull { (mod, range) ->

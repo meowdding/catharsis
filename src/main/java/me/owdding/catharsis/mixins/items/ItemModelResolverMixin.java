@@ -6,6 +6,7 @@ import me.owdding.catharsis.features.gui.definitions.GuiDefinitions;
 import me.owdding.catharsis.features.imc.ImcHandler;
 import me.owdding.catharsis.hooks.items.AbstractContainerScreenHook;
 import me.owdding.catharsis.utils.ItemUtils;
+import me.owdding.catharsis.utils.SkyBlockIdentifierResolver;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.item.ItemModelResolver;
 import net.minecraft.client.renderer.item.ItemStackRenderState;
@@ -62,7 +63,7 @@ public class ItemModelResolverMixin {
             return guiId;
         }
 
-        var itemId = ItemUtils.resolveModelId(manager::catharsis$hasCustomModel, stack);
+        var itemId = SkyBlockIdentifierResolver.resolveModelId(manager::catharsis$hasCustomModel, stack);
         if (itemId != null && manager.catharsis$hasCustomModel(itemId)) {
             return itemId;
         }

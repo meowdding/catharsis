@@ -1,8 +1,6 @@
 package me.owdding.catharsis.utils
 
 import com.mojang.serialization.Codec
-import me.owdding.catharsis.features.imc.ImcHandler.getCatharsisId
-import me.owdding.catharsis.features.item.MiscItemModels
 import me.owdding.catharsis.features.properties.DataTypeEntry
 import me.owdding.catharsis.features.properties.DataTypeProperties
 import me.owdding.catharsis.features.properties.NumbericalDataTypeEntry
@@ -10,16 +8,11 @@ import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.extensions.unsafeCast
 import me.owdding.catharsis.utils.types.colors.CatppuccinColors
 import me.owdding.ktmodules.Module
-import net.minecraft.resources.Identifier
 import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.datatype.DataType
-import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.api.datatype.getDataTypes
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
-import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
-import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId.Companion.UNKNOWN
-import tech.thatgravyboat.skyblockapi.api.repo.apis.SkyBlockAttributesRepo
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import tech.thatgravyboat.skyblockapi.utils.builders.TooltipBuilder
@@ -33,9 +26,9 @@ import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.hover
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.onClick
 import java.util.function.Function
-import java.util.function.Predicate
 
 typealias PropertyList<T> = List<ItemUtils.DataTypeProperty<T, out Any?>>
+
 @Module
 object ItemUtils {
 
@@ -47,7 +40,7 @@ object ItemUtils {
             if (item.isEmpty) {
                 Text.of("Not holding any item!").sendWithPrefix("catharsis-held-item-id-error")
             } else {
-                val id = getCustomLocation(item)
+                val id = SkyBlockIdentifierResolver.getCustomLocation(item)
 
                 if (id == null) {
                     Text.of("Item has no custom id!").sendWithPrefix("catharsis-held-item-no-id")
@@ -122,7 +115,7 @@ object ItemUtils {
         }
     }
 
-    fun <T> TooltipBuilder.append(item: ItemStack, list: PropertyList<T>): String? = buildString {
+    private fun <T> TooltipBuilder.append(item: ItemStack, list: PropertyList<T>): String? = buildString {
         val type = list.first().dataType
         val dataValue = item[type] ?: return null
 
@@ -141,11 +134,14 @@ object ItemUtils {
                             append("- ").append(kind.name.toTitleCase()).append(": ").append(value.toPrettyString())
                         }
 
-                        Text.of(value?.toString() ?: "null", when (kind) {
-                            PropertyType.CONDITION -> CatppuccinColors.Mocha.blue
-                            PropertyType.RANGE -> CatppuccinColors.Mocha.peach
-                            PropertyType.SWITCH -> CatppuccinColors.Mocha.green
-                        })
+                        Text.of(
+                            value?.toString() ?: "null",
+                            when (kind) {
+                                PropertyType.CONDITION -> CatppuccinColors.Mocha.blue
+                                PropertyType.RANGE -> CatppuccinColors.Mocha.peach
+                                PropertyType.SWITCH -> CatppuccinColors.Mocha.green
+                            },
+                        )
                     },
                     separator = Text.of("/"),
                 ),
@@ -158,97 +154,14 @@ object ItemUtils {
     enum class PropertyType {
         SWITCH,
         RANGE,
-        CONDITION
+        CONDITION,
     }
 
-    fun <Type, CompareType> createConverter(dataTypeEntry: DataTypeEntry<Type, CompareType>) = DataTypeProperty(dataTypeEntry.type, dataTypeEntry.converter, dataTypeEntry.codec, PropertyType.SWITCH)
+    fun <Type, CompareType> createConverter(dataTypeEntry: DataTypeEntry<Type, CompareType>) =
+        DataTypeProperty(dataTypeEntry.type, dataTypeEntry.converter, dataTypeEntry.codec, PropertyType.SWITCH)
+
     fun <Type, CompareType : Number> createConverter(dataTypeEntry: NumbericalDataTypeEntry<Type, CompareType>) =
         DataTypeProperty(dataTypeEntry.type, dataTypeEntry.converter, dataTypeEntry.codec, PropertyType.RANGE)
 
     data class DataTypeProperty<Type, CompareType>(val dataType: DataType<Type>, val converter: Function<Type, CompareType>, val codec: Codec<CompareType>, val type: PropertyType)
-
-    fun getCustomLocation(item: ItemStack): Identifier? {
-        val itemId = item[DataTypes.SKYBLOCK_ID] ?: return null
-
-        if (itemId.isItem) {
-            val path = itemId.cleanId.lowercase().takeIf { Identifier.isValidPath(it) } ?: return null
-            return Identifier.tryBuild("skyblock", path)
-        }
-
-        return when {
-            itemId.isPet -> resolvePet(itemId)
-            itemId.isAttribute -> resolveAttribute(itemId)
-            itemId.isRune -> resolveRune(itemId)
-            itemId.isEnchantment -> resolveEnchantment(itemId)
-            itemId.isPotion -> resolvePotion(itemId)
-            else -> null
-        }
-    }
-
-    fun getHypixelLocation(item: ItemStack): Identifier? {
-        val itemId = item[DataTypes.ID]?.lowercase() ?: return null
-        return Identifier.tryBuild("skyblock", itemId)
-    }
-
-    @JvmStatic
-    fun resolveModelId(predicate: Predicate<Identifier>, stack: ItemStack): Identifier? {
-        val extraId = stack.getCatharsisId()
-        if (extraId != null) {
-            return extraId
-        }
-
-        val itemId = getCustomLocation(stack)
-        if (itemId != null && predicate.test(itemId)) {
-            return itemId
-        }
-
-        val hypixelId = getHypixelLocation(stack)
-        if (hypixelId != null) {
-            return hypixelId
-        }
-
-        val baseMiscModel = MiscItemModels.getBaseModel(stack)
-        if (baseMiscModel != null && predicate.test(baseMiscModel)) {
-            return baseMiscModel
-        }
-
-        val extraMiscModel = MiscItemModels.getExtraModel(stack)
-        if (extraMiscModel != null && predicate.test(extraMiscModel)) {
-            return extraMiscModel
-        }
-
-        return null
-    }
-
-    private fun SkyBlockId.cleanOrNull() = this.cleanId.lowercase().takeUnless { it == UNKNOWN }
-
-    fun resolvePet(itemId: SkyBlockId): Identifier? {
-        val cleanId = itemId.cleanOrNull() ?: return null
-
-        return Identifier.tryBuild("skyblock", "pets/${cleanId.substringBefore(":").lowercase()}")
-    }
-
-    fun resolveEnchantment(itemId: SkyBlockId): Identifier? {
-        val cleanId = itemId.cleanOrNull() ?: return null
-
-        return Identifier.tryBuild("skyblock", "enchantments/${cleanId.substringBefore(":").lowercase()}")
-    }
-
-    fun resolveRune(itemId: SkyBlockId): Identifier? {
-        val cleanId = itemId.cleanOrNull() ?: return null
-
-        return Identifier.tryBuild("skyblock", "runes/${cleanId.substringBefore(":").lowercase()}")
-    }
-
-    fun resolveAttribute(itemId: SkyBlockId): Identifier? {
-        val attributeId = itemId.cleanOrNull() ?: return null
-        val data = SkyBlockAttributesRepo.get(attributeId) ?: return null
-        return Identifier.tryBuild("skyblock", "attributes/${data.shardId.lowercase()}")
-    }
-
-    fun resolvePotion(itemId: SkyBlockId): Identifier? {
-        val potionId = itemId.cleanOrNull() ?: return null
-        return Identifier.tryBuild("skyblock", "potions/${potionId.substringBefore(":").lowercase()}")
-    }
-
 }

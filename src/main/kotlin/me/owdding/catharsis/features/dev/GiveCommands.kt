@@ -6,6 +6,7 @@ import com.mojang.brigadier.arguments.IntegerArgumentType
 import com.mojang.brigadier.arguments.StringArgumentType
 import com.mojang.brigadier.context.CommandContext
 import me.owdding.catharsis.utils.ItemUtils
+import me.owdding.catharsis.utils.SkyBlockIdentifierResolver
 import me.owdding.catharsis.utils.extensions.sendSyncWithPrefix
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.extensions.unsafeCast
@@ -193,7 +194,7 @@ object GiveCommands {
                             append(" [id]") {
                                 color = CatppuccinColors.Macchiato.pink
                                 onClick {
-                                    val location = ItemUtils.getCustomLocation(stack)
+                                    val location = SkyBlockIdentifierResolver.getCustomLocation(stack)
                                     if (location == null) {
                                         Text.of("No model id for item!", CatppuccinColors.Frappe.red).sendWithPrefix("catharsis-dev-find-location-not-found")
                                         return@onClick

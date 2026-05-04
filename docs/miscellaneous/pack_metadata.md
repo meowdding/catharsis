@@ -24,6 +24,8 @@ Example of a `pack.mcmeta` with a configuration menu and version dependencies.
     - <TypeIcon type="string"/> **&lt;key&gt;**: The id of the mod.
       - <TypeIcon type="string"/> The version range (e.g., `>=1.0.0`).
   - <TypeIcon type="boolean"/> **pack_required_for_config**: (Optional) Whether the pack is required for the config menu to show up, defaults to `false`.
+  - <TypeIcon type="boolean"/> **disable_derived_ids**: (Optional) Whether to disable derived SkyBlock IDs, defaults to `false`. 
+    Some Items in GUIs don't have an Id while its obvious that they should, we automatically derive them. You can find all derived Ids [here](https://github.com/SkyblockAPI/SkyblockAPI/tree/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/remote/api/resolvers).
   - <TypeIcon type="array"/> **config**: (Optional) A list of config elements for the settings menu.
 
 - <TypeIcon type="object"/> **fabric:overlays**: (Optional) A system for conditional resource loading.

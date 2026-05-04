@@ -1,57 +1,63 @@
 package me.owdding.catharsis.mixins.gui;
 
-import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
-import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import me.owdding.catharsis.features.gui.modifications.GuiModifiers;
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElementRenderLayer;
 import me.owdding.catharsis.hooks.gui.AbstractContainerScreenHook;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.screens.inventory.ContainerScreen;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(Screen.class)
-public abstract class ScreenMixin {
+@Mixin(AbstractContainerScreen.class)
+public abstract class ScreenMixin implements AbstractContainerScreenHook {
+    @Shadow
+    protected int leftPos;
+    @Shadow
+    protected int topPos;
+    @Final
+    @Shadow
+    protected int imageWidth;
+    @Final
+    @Shadow
+    protected int imageHeight;
 
-    @WrapOperation(method = "extractRenderStateWithTooltipAndSubtitles", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screens/Screen;extractBackground(Lnet/minecraft/client/gui/GuiGraphicsExtractor;IIF)V"))
-    public void catharsis$CancelThingy(Screen instance, GuiGraphicsExtractor guiGraphicsExtractor, int x, int y, float f, Operation<Void> original) {
-        original.call(instance, guiGraphicsExtractor, x, y, f);
+    protected void catharsis$modify(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+        var modifier = GuiModifiers.getActiveModifier();
+        var hasModifier = modifier != null && this.catharsis$containerBounds() != null;
+        if (hasModifier && modifier.getOverrideBackground()) {
+            ci.cancel();
+        }
+
+        if (hasModifier) {
+            modifier.renderElements(
+                GuiElementRenderLayer.BACKGROUND,
+                graphics,
+                mouseX, mouseY,
+                delta,
+                this.catharsis$containerBounds().updateOrGet(this.leftPos, this.topPos, this.imageWidth, this.imageHeight)
+            );
+        }
     }
 
 
-    @Mixin(AbstractContainerScreen.class)
-    private abstract static class AbstractContainerScreenElementsMixin extends ScreenMixin implements AbstractContainerScreenHook {
-        @Shadow protected int leftPos;
-        @Shadow protected int topPos;
-        @Shadow protected int imageWidth;
-        @Shadow protected int imageHeight;
-
-        @Override
-        public void catharsis$CancelThingy(
-            Screen instance,
-            GuiGraphicsExtractor guiGraphicsExtractor,
-            int x,
-            int y,
-            float f,
-            Operation<Void> original
-        ) {
-            var modifier = GuiModifiers.getActiveModifier();
-            var hasModifier = modifier != null && this.catharsis$containerBounds() != null;
-            if (!hasModifier || !modifier.getOverrideBackground()) {
-                original.call(instance, guiGraphicsExtractor, x, y, f);
-            }
-
-            if (hasModifier) {
-                modifier.renderElements(
-                    GuiElementRenderLayer.BACKGROUND,
-                    guiGraphicsExtractor,
-                    x, y,
-                    f,
-                    this.catharsis$containerBounds().updateOrGet(this.leftPos, this.topPos, this.imageWidth, this.imageHeight)
-                );
-            }
+    @Mixin(ContainerScreen.class)
+    private abstract static class ContainerScreenMixin extends ScreenMixin {
+        @Inject(
+            method = "extractBackground",
+            at = @At(
+                value = "INVOKE",
+                target = "Lnet/minecraft/client/gui/screens/inventory/AbstractContainerScreen;extractBackground(Lnet/minecraft/client/gui/GuiGraphicsExtractor;IIF)V",
+                shift = At.Shift.AFTER
+            ),
+            cancellable = true
+        )
+        private void elements(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+            catharsis$modify(graphics, mouseX, mouseY, delta, ci);
         }
     }
 }

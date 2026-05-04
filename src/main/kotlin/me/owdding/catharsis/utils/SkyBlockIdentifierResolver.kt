@@ -20,12 +20,12 @@ import kotlin.text.lowercase
 @Module
 object SkyBlockIdentifierResolver : ResourceManagerReloadListener {
 
-    private var loadedPackMetadata = emptyList<CatharsisMetadataSection>()
+    private var shouldDisableDerivedIds = false
 
     fun getCustomLocation(item: ItemStack): Identifier? {
         val itemId = item[DataTypes.SKYBLOCK_ID] ?: return null
 
-        if (itemId.isDerived && loadedPackMetadata.any { it.disableDerivedIds }) {
+        if (itemId.isDerived && shouldDisableDerivedIds) {
             return null
         }
 
@@ -110,9 +110,9 @@ object SkyBlockIdentifierResolver : ResourceManagerReloadListener {
 
 
     override fun onResourceManagerReload(resourceManager: ResourceManager) {
-        loadedPackMetadata = resourceManager.listPacks().toList().mapNotNull { pack ->
+        shouldDisableDerivedIds = resourceManager.listPacks().toList().mapNotNull { pack ->
             pack.getMetadataSection(CatharsisMetadataSection.TYPE) ?: return@mapNotNull null
-        }
+        }.all { it.disableDerivedIds }
     }
 
 

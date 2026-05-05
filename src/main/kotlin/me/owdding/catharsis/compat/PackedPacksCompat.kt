@@ -32,12 +32,12 @@ object PackedPacksCompat : PackedPacksInitializer {
             val config = event.packContext().pack().`catharsis$getConfig`()
             val meta = event.packContext().pack().`catharsis$getMetadata`()
 
-            if (config.isEmpty() && meta == null) return@register
+            if (config.isNullOrEmpty() && meta == null) return@register
 
             val requiresLoaded = event.packContext().pack().`catharsis$requiresPackToOpenConfig`()
             val canEdit = !requiresLoaded || PackConfigHandler.isLoaded(meta.id)
 
-            if (!config.isEmpty()) {
+            if (!config.isNullOrEmpty()) {
                 val configButton = object : ImageButton(
                     0, 0, BUTTON_SIZE, BUTTON_SIZE, canEditConfigSprites,
                     { _ ->

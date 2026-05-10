@@ -49,8 +49,8 @@ To override an entity, you need to provide two JSON files. The first handles the
   <span><TypeIcon type="object"/> An <b>Entity Asset Mapping</b> object (`catharsis/entities/{entity_name}.json`)</span>
 
 - <TypeIcon type="string"/> **texture**: The path to your custom texture image.
+- <TypeIcon type="string"/> **emissive_texture**: (Optional) The path to an emissive texture image, if your model uses emissive textures.
 - <TypeIcon type="string"/> **model**: The path to your Bedrock entity geometry file.
-- <TypeIcon type="boolean"/> **emissive_texture**: (Optional) Whether the texture should be treated as emissive. Defaults to `false`.
 - <TypeIcon type="boolean"/> **translucent**: (Optional) If the model has translucent textures. Defaults to `false`.
 
 </TreeView>

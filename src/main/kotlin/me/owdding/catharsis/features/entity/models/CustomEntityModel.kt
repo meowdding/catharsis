@@ -17,7 +17,8 @@ import net.minecraft.resources.Identifier
 data class CustomEntityModel(
     val texture: Identifier,
     val emissiveTexture: Identifier?,
-    val model: ModelPart?
+    val model: ModelPart?,
+    val isTranslucent: Boolean = false,
 ) {
 
     private var cachedEntityModel: EntityModel<out EntityRenderState>? = null
@@ -56,7 +57,8 @@ data class CustomEntityModel(
     data class Unbaked(
         val texture: Identifier,
         @FieldName("emissive_texture") val emissiveTexture: Identifier?,
-        val model: Identifier?
+        val model: Identifier?,
+        val translucent: Boolean = false,
     ) {
         fun bake(resources: TypedResourceManager): CustomEntityModel {
             val bakedModel = if (model != null) {
@@ -68,7 +70,8 @@ data class CustomEntityModel(
             return CustomEntityModel(
                 texture,
                 emissiveTexture,
-                bakedModel
+                bakedModel,
+                translucent,
             )
         }
     }

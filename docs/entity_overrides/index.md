@@ -50,6 +50,8 @@ To override an entity, you need to provide two JSON files. The first handles the
 
 - <TypeIcon type="string"/> **texture**: The path to your custom texture image.
 - <TypeIcon type="string"/> **model**: The path to your Bedrock entity geometry file.
+- <TypeIcon type="boolean"/> **emissive_texture**: (Optional) Whether the texture should be treated as emissive. Defaults to `false`.
+- <TypeIcon type="boolean"/> **translucent**: (Optional) If the model has translucent textures. Defaults to `false`.
 
 </TreeView>
 

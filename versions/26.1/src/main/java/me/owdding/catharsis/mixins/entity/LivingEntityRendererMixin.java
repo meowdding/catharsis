@@ -103,6 +103,9 @@ public abstract class LivingEntityRendererMixin<S extends LivingEntityRenderStat
         }
 
         if (bodyVisible) {
+            if (customEntityModel.isTranslucent()) {
+                return RenderTypes.entityTranslucent(texture, false);
+            }
             return model.renderType(texture);
         }
 

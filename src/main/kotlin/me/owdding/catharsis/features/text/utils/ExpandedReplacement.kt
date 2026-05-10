@@ -12,12 +12,13 @@ data class ExpandedReplacement(val text: Component) {
     fun resolve(result: ComponentMatchResult): Component = GROUP_REGEX.replace(text) { match ->
         val group = match.getPlain(1)?.drop(1) ?: return@replace match.value()
         val content = if (group.startsWith("{") && group.endsWith("}")) {
-            group.substring(1, group.length - 1).let(result::getPlain)
+            val inner = group.substring(1, group.length - 1)
+            inner.toIntOrNull()?.let(result::getPlain) ?: runCatching { result.getPlain(inner) }.getOrNull()
         } else {
             group.toIntOrNull()?.let(result::getPlain)
         }
 
-        content?.let { Component.literal(content).withStyle(match.value().style) } ?: match.value()
+        content?.let { Component.literal(it).withStyle(match.value().style) } ?: match.value()
     }
 
     companion object {

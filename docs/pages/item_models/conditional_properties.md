@@ -67,7 +67,7 @@ Returns `true` if the player is in the specified area.
 <TreeView>
 <span>additional fields:</span>
 
-- <TypeIcon type="string"/> **area**: The id of the area as defined [here](/pages/block_replacements/areas)
+- <TypeIcon type="string"/> **area**: The id of the area as defined [here](/block_replacements/areas)
 </TreeView>
 
 #### **Timespan** (`catharsis:timespan`)

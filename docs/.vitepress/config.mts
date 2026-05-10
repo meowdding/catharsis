@@ -4,7 +4,7 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     title: "Catharsis",
     description: "Catharsis Documentation",
-    base: "/",
+    base: "/pages/",
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [

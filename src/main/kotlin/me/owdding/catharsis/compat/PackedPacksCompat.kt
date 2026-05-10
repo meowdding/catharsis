@@ -32,41 +32,42 @@ object PackedPacksCompat : PackedPacksInitializer {
             val config = event.packContext().pack().`catharsis$getConfig`()
             val meta = event.packContext().pack().`catharsis$getMetadata`()
 
-            if (config == null && meta == null) return@register
+            if (config.isNullOrEmpty() && meta == null) return@register
 
             val requiresLoaded = event.packContext().pack().`catharsis$requiresPackToOpenConfig`()
             val canEdit = !requiresLoaded || PackConfigHandler.isLoaded(meta.id)
 
-            val configButton = object : ImageButton(
-                0, 0, BUTTON_SIZE, BUTTON_SIZE, canEditConfigSprites,
-                { _ ->
-                    if (!config.isEmpty() && canEdit) {
-                        Minecraft.getInstance().setScreen(PackConfigScreen(event.screenContext().screen(), meta.id, config))
+            if (!config.isNullOrEmpty()) {
+                val configButton = object : ImageButton(
+                    0, 0, BUTTON_SIZE, BUTTON_SIZE, canEditConfigSprites,
+                    { _ ->
+                        if (canEdit) {
+                            Minecraft.getInstance().setScreen(PackConfigScreen(event.screenContext().screen(), meta.id, config))
+                        }
+                    },
+                ) {
+                    //~ if >= 26.1 'renderContents' -> 'extractContents'
+                    override fun extractContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, a: Float) {
+                        if (isHovered) {
+                            graphics.setTooltipForNextFrame(
+                                Minecraft.getInstance().font,
+                                (if (canEdit) Component.literal("Configure Pack") else Component.literal("Requires pack loaded to configure.").withStyle(ChatFormatting.RED)),
+                                mouseX,
+                                mouseY,
+                            )
+                        }
+                        val sprite = (if (canEdit) canEditConfigSprites else cantEditConfigSprites).get(isActive, isHoveredOrFocused)
+                        graphics.blitSprite(RenderPipelines.GUI_TEXTURED, sprite, x, y, width, height)
                     }
-                },
-            ) {
-                //~ if >= 26.1 'renderContents' -> 'extractContents'
-                override fun extractContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, a: Float) {
-                    if (isHovered) {
-                        graphics.setTooltipForNextFrame(
-                            Minecraft.getInstance().font,
-                            (if (canEdit) Component.literal("Configure Pack") else Component.literal("Requires pack loaded to configure.").withStyle(ChatFormatting.RED)),
-                            mouseX,
-                            mouseY,
-                        )
-                    }
-                    val sprite = (if (canEdit) canEditConfigSprites else cantEditConfigSprites).get(isActive, isHoveredOrFocused)
-                    graphics.blitSprite(RenderPipelines.GUI_TEXTURED, sprite, x, y, width, height)
-                }
 
-                override fun handleCursor(graphics: GuiGraphicsExtractor) {
-                    if (isHovered) {
-                        graphics.requestCursor(if (canEdit) CursorTypes.POINTING_HAND else CursorTypes.NOT_ALLOWED)
+                    override fun handleCursor(graphics: GuiGraphicsExtractor) {
+                        if (isHovered) {
+                            graphics.requestCursor(if (canEdit) CursorTypes.POINTING_HAND else CursorTypes.NOT_ALLOWED)
+                        }
                     }
                 }
+                event.anchorTopRight(2, 0, configButton)
             }
-            event.anchorTopRight(2, 0, configButton)
-
             if (meta !== null && !meta.incompatibilities.isEmpty()) {
                 val incompatWidget = object : ImageButton(0, 0, BUTTON_SIZE, BUTTON_SIZE, warningIncompatSprites, {}) {
                     //~ if >= 26.1 'renderContents' -> 'extractContents'

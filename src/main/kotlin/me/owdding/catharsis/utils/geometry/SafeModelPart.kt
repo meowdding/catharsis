@@ -141,7 +141,7 @@ class SafeModelPart(
                     )
                 )
 
-                for (cube in rotatedCubes) {
+                for ((index, cube) in rotatedCubes.withIndex()) {
                     val subCubeBuilder = CubeListBuilder.create()
 
                     val uv = cube.uv?.left()?.getOrNull() ?: continue
@@ -162,7 +162,7 @@ class SafeModelPart(
                         cubePivot.z - pivot.z,
                     )
 
-                    child.addOrReplaceChild("rotate_bone", subCubeBuilder, PartPose.offsetAndRotation(
+                    child.addOrReplaceChild("rotate_bone_$index", subCubeBuilder, PartPose.offsetAndRotation(
                         cubePivotOffset.x, cubePivotOffset.y, cubePivotOffset.z,
                         Math.toRadians(cube.rotation[0].toDouble()).toFloat(),
                         Math.toRadians(cube.rotation[1].toDouble()).toFloat(),

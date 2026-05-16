@@ -7,7 +7,7 @@ lang: en-US
 
 This page lists all custom select item properties that are added ontop of the vanilla ones.
 
-### `catharsis:datatype`
+### `catharsis:data_type`
 
 Returns item specific data like, rarity, reforge, fuel...
 

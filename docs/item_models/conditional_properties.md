@@ -27,7 +27,7 @@ Check if any in list of conditions are true, useful for chaining conditions.
 - <TypeIcon type="array"/> **conditions**: a list of conditions to check through.
 </TreeView>
 
-#### **Data Type** (`catharsis:datatype`)
+#### **Data Type** (`catharsis:data_type`)
 
 Check against a specific boolean data type.
 

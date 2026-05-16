@@ -65,11 +65,12 @@ dialog {
     }
 
     & > .box {
-        min-width: 50vw;
-        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
 
+        min-width: 50vw;
         max-width: 90vw;
-        max-height: 90vh;
+        height: 90vh;
 
         background-color: var(--vp-c-bg);
 
@@ -105,9 +106,8 @@ dialog {
         }
 
         & > .content {
-            width: 100%;
-            height: 100%;
-            padding: 0 1rem 1rem 1rem
+            overflow-y: auto;
+            padding: 0 1rem 1rem 1rem;
         }
     }
 }

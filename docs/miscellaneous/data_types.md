@@ -17,6 +17,12 @@ IDs of Data Types can be found at these locations:
 
 You can use `/catharsis dev hand_data_types` to view all data types of the item in your hand.
 
+### Notice
+
+Around 95% of data types will not work on items held/worn by other players since Hypixel does not share the custom item data and lore for them.
+We can't do anything about that except providing fallbacks for some of them (like `has_skin_fallback` and `has_dye_fallback`), 
+but most of them will simply return null or 0 when used on other player's items, so keep that in mind when using them in conditions or ranges.
+
 ## Data Type Categories and Comparing
 
 | Category | Conditional | Select | Range |

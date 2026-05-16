@@ -25,6 +25,7 @@ object ItemProperties : CatharsisLogger by Catharsis.featureLogger() {
         register(GemstoneProperty.ID, GemstoneProperty.CODEC)
         register(HasPetSkinProperty.ID, HasPetSkinProperty.CODEC)
         register(TimespanProperty.ID, TimespanProperty.CODEC)
+        register(EnchantmentProperty.ID, EnchantmentProperty.CODEC)
     }
 
     @Subscription

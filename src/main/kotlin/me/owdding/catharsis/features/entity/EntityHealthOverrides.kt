@@ -4,6 +4,7 @@ import me.owdding.catharsis.events.FinishRepoLoadEvent
 import me.owdding.catharsis.events.StartRepoLoadEvent
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.types.FloatPredicate
+import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktmodules.Module
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.entity.ai.attributes.Attributes
@@ -63,6 +64,7 @@ object EntityHealthOverrides {
         cache = getAsJson("health_modifiers.json")?.toData(HealthModifiers.CODEC) ?: return
     }
 
+    @GenerateCodec
     private data class HealthModifiers(
         val mayorPerks: Map<MayorPerk, Float>,
         val runic: Float,

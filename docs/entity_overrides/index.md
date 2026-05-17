@@ -118,6 +118,8 @@ Allows you to access the entity's maximum health value.
 - <TypeIcon type="any"/> **max_health**: Matches a specific maximum health value or a range of values.
 - <TypeIcon type="boolean"/> **use_modifiers**: (Optional) Use Health Modifiers like mayor perks etc, see a full list [here](https://github.com/meowdding/catharsis/blob/development/repo/health_modifiers.json).
 
+</TreeView>
+
 ### Island (`island`)
 
 Matches if the entity (or player) is located on a specific Skyblock island.

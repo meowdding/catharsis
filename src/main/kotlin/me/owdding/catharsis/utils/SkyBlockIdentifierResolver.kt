@@ -15,7 +15,6 @@ import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId.Companion.UNKNOW
 import tech.thatgravyboat.skyblockapi.api.repo.apis.SkyBlockAttributesRepo
 import tech.thatgravyboat.skyblockapi.utils.extentions.get
 import java.util.function.Predicate
-import kotlin.text.lowercase
 
 @Module
 object SkyBlockIdentifierResolver : ResourceManagerReloadListener {
@@ -110,9 +109,11 @@ object SkyBlockIdentifierResolver : ResourceManagerReloadListener {
 
 
     override fun onResourceManagerReload(resourceManager: ResourceManager) {
-        shouldDisableDerivedIds = resourceManager.listPacks().toList().mapNotNull { pack ->
+        val metadata = resourceManager.listPacks().toList().mapNotNull { pack ->
             pack.getMetadataSection(CatharsisMetadataSection.TYPE) ?: return@mapNotNull null
-        }.all { it.disableDerivedIds }
+        }
+
+        shouldDisableDerivedIds = metadata.isNotEmpty() && metadata.all { it.disableDerivedIds }
     }
 
 

@@ -65,7 +65,7 @@ object EntityHealthOverrides {
     }
 
     @GenerateCodec
-    private data class HealthModifiers(
+    data class HealthModifiers(
         val mayorPerks: Map<MayorPerk, Float>,
         val runic: Float,
         val healthy: Float,

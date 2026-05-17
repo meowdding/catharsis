@@ -1,0 +1,10 @@
+{
+  "mayorPerks": {
+    "DOUBLE_MOBS_HP": 2.0,
+    "WORK_HARDER": 1.1
+  },
+  "entityModifiers": {
+    "runic": 4.0,
+    "healthy": 1.3
+  }
+}

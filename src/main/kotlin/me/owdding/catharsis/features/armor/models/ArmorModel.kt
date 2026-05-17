@@ -17,7 +17,7 @@ import net.minecraft.world.item.ItemStack
 
 interface ArmorModel {
 
-    fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): ArmorModelState?
+    fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): ArmorModelState
 
     interface Unbaked {
 
@@ -30,6 +30,7 @@ interface ArmorModel {
 sealed interface ArmorModelState {
 
     object Missing : Texture(arrayOf(MissingTextureAtlasSprite.getLocation()), intArrayOf(-1))
+    object Fallthrough : ArmorModelState
 
     open class Texture(val textures: Array<Identifier>, val colors: IntArray) : ArmorModelState {
 

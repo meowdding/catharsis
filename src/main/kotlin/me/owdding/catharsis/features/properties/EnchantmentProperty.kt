@@ -4,7 +4,7 @@ import com.mojang.datafixers.util.Either
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
-import me.owdding.ktcodecs.FieldNames
+import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperty
@@ -18,8 +18,8 @@ import kotlin.jvm.optionals.getOrNull
 
 @GenerateCodec
 data class EnchantmentProperty(
-    @FieldNames("enchantment_name", "enchant_name") val enchantmentName: String,
-    @FieldNames("enchantment_lvl", "enchant_lvl", "enchantment_level", "enchant_level") val enchantmentLevel: Either<Int, InclusiveRange<Int>>,
+    @FieldName("enchant_name") val enchantmentName: String,
+    @FieldName("enchant_lvl") val enchantmentLevel: Either<Int, InclusiveRange<Int>>,
 ) : ConditionalItemModelProperty {
 
     companion object {

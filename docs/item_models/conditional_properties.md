@@ -95,8 +95,8 @@ Returns `true` if the item has the specified enchantment at a matching level or 
 <TreeView>
 <span>additional fields:</span>
 
-- <TypeIcon type="string"/> **enchantment_name** (or `enchant_name`): The identifier of the enchantment to check for.
-- <TypeIcon type="object"/><TypeIcon type="int"/> **enchantment_lvl** (or `enchant_lvl`, `enchantment_level`, `enchant_level`): The level requirement. Can be a single integer or an inclusive range object.
+- <TypeIcon type="string"/> **enchant_name**: The identifier of the enchantment to check for.
+- <TypeIcon type="object"/><TypeIcon type="int"/> **enchant_level**: The level requirement. Can be a single integer or an inclusive range object.
     - An int of the exact enchantment level required.
     - An object with the following fields specifying an inclusive range of enchantment levels required.
         - <TypeIcon type="int"/> **min_inclusive**: The minimum level required (inclusive).

@@ -87,3 +87,18 @@ Returns `true` if the item is hovered.
 #### **Has Pet Skin** (`catharsis:has_pet_skin`)
 
 Returns `true` if the pet has a skin applied.
+
+#### **Enchantment** (`catharsis:enchantment`)
+
+Returns `true` if the item has the specified enchantment at a matching level or within a matching level range.
+
+<TreeView>
+<span>additional fields:</span>
+
+- <TypeIcon type="string"/> **enchant_name**: The identifier of the enchantment to check for.
+- <TypeIcon type="object"/><TypeIcon type="int"/> **enchant_lvl**: The level requirement. Can be a single integer or an inclusive range object.
+    - An int of the exact enchantment level required.
+    - An object with the following fields specifying an inclusive range of enchantment levels required.
+        - <TypeIcon type="int"/> **min_inclusive**: The minimum level required (inclusive).
+        - <TypeIcon type="int"/> **max_inclusive**: The maximum level required (inclusive).
+</TreeView>

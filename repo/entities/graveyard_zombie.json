@@ -3,7 +3,7 @@
     "type": "all",
     "conditions": [
       {
-        "attribute": "max_health",
+        "type": "max_health",
         "max_health": 100
       },
       {

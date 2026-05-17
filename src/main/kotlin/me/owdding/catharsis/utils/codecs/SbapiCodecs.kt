@@ -22,7 +22,7 @@ object SbapiCodecs {
 
     @IncludedCodec(keyable = true)
     val mayorPerkCodec: Codec<MayorPerk> = Codec.STRING.comapFlatMap<MayorPerk>(
-        { id -> MayorPerks.getPerkById(id)?.let { DataResult.success(it) } },
+        { id -> MayorPerks.getPerkById(id)?.let { DataResult.success(it) } ?: DataResult.error { "Perk $id not found" } },
         { perk -> perk.id }
     )
 

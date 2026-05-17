@@ -15,6 +15,7 @@ object DebugEntityDefinition {
 
     @Subscription
     fun onRender(event: RenderEntityEvent) {
+        if (!debug) return
         val entity = event.entity ?: return
         val definition = CustomEntityDefinitions.getFor(entity) ?: return
         Gizmos.billboardTextOverMob(event.entity, 2, "Entity Definition: $definition", ARGB.opaque(TextColor.WHITE), 0.32f)

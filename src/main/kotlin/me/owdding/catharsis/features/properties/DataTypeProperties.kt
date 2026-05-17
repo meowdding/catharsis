@@ -31,6 +31,8 @@ import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
 import tech.thatgravyboat.skyblockapi.impl.DataTypesRegistry
 import tech.thatgravyboat.skyblockapi.utils.extentions.get
 import java.util.function.Function
+import kotlin.reflect.KClass
+import kotlin.reflect.full.isSubclassOf
 import kotlin.reflect.javaType
 import kotlin.reflect.typeOf
 
@@ -62,6 +64,10 @@ object DataTypeProperties {
             register(it, Codec.STRING) { id -> id.skyblockId }
         }
 
+        dataTypes.filterType<Collection<*>>().forEach {
+            register(it, CatharsisCodecs.getCodec()) { collection -> collection.size }
+        }
+
         register(DataTypes.RARITY)
         register(DataTypes.HOOK, Codec.STRING, Pair<*, String>::second)
         register(DataTypes.LINE, Codec.STRING, Pair<*, String>::second)
@@ -78,7 +84,7 @@ object DataTypeProperties {
     private inline fun <reified T : Any> List<DataType<*>>.filterType(): List<DataType<T>> {
         val type = typeOf<T>().javaType
         @Suppress("UNCHECKED_CAST")
-        return filter { it.type?.javaType == type }.unsafeCast<List<DataType<T>>>()
+        return filter { it.type?.javaType == type || (it.type?.classifier as? KClass<*>)?.isSubclassOf(T::class) == true }.unsafeCast<List<DataType<T>>>()
     }
 
     @JvmName("registerEnum")

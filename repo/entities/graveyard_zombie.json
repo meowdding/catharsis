@@ -3,9 +3,8 @@
     "type": "all",
     "conditions": [
       {
-        "type": "attribute",
-        "attribute": "minecraft:max_health",
-        "value": 100
+        "attribute": "max_health",
+        "max_health": 100
       },
       {
         "type": "island",

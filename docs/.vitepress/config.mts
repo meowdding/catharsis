@@ -50,6 +50,14 @@ export default defineConfig({
                 ]
             },
             {
+                "text": "Pack Metadata",
+                "items": [
+                    {text: "Catharsis Pack Metadata", link: "/pack_metadata/index.md"},
+                    {text: "Configuration Options", link: "/pack_metadata/config.md"},
+                    {text: "Fabric Overlays", link: "/pack_metadata/overlays.md"}
+                ]
+            },
+            {
                 "text": "Entities",
                 "items": [
                     {"text": "Entity Overrides", "link": "/entity_overrides/index"},
@@ -58,12 +66,12 @@ export default defineConfig({
             {
                 "text": "Text Replacements",
                 "items": [
-                    {text: "Overview", "link": "/text_replacements/index"}        ]
+                    {text: "Overview", "link": "/text_replacements/index"}
+                ]
             },
             {
                 text: "Miscellaneous",
                 items: [
-                    {text: "Pack Metadata", link: "/miscellaneous/pack_metadata"},
                     {text: "Data Types", link: "/miscellaneous/data_types"},
                     {text: "Timespan", link: "/miscellaneous/timespans"},
                     {text: "Tooltip Background", link: "/miscellaneous/tooltip_background"},

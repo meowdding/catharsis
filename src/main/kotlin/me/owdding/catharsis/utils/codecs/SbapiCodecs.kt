@@ -19,7 +19,7 @@ object SbapiCodecs {
         )
     ).xmap({ Either.unwrap(it) }, { Either.left(it) })
 
-    @IncludedCodec
+    @IncludedCodec(keyable = true)
     val mayorPerkCodec: Codec<MayorPerk> = Codec.STRING.xmap(
         { id -> MayorPerks.getPerkById(id) },
         { perk -> perk.id }

@@ -51,3 +51,8 @@ Returns the skin of a pet, only works on pets in GUIs (probably).
 ### `catharsis:texture`
 
 Returns the texture of the item, only works on items that have custom textures (like heads).
+
+### `catharsis:selected_faction`
+
+Returns the currently selected Crimson Isle faction.
+Values can be `mage` or `barbarian`, in case there is no faction selected it returns null.

@@ -38,6 +38,7 @@ object ItemProperties : CatharsisLogger by Catharsis.featureLogger() {
         register(PetItemProperty.ID, PetItemProperty.TYPE)
         register(PetSkinProperty.ID, PetSkinProperty.TYPE)
         register(TextureProperty.ID, TextureProperty.TYPE)
+        register(SelectedFactionProperty.ID, SelectedFactionProperty.TYPE)
     }
 
     @Subscription
@@ -49,5 +50,6 @@ object ItemProperties : CatharsisLogger by Catharsis.featureLogger() {
         register(RuneLevelProperty.ID, RuneLevelProperty.CODEC)
         register(PetCandyUsedProperty.ID, PetCandyUsedProperty.CODEC)
         register(PetExpProperty.ID, PetExpProperty.CODEC)
+        register(FactionReputationProperty.ID, FactionReputationProperty.CODEC)
     }
 }

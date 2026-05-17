@@ -39,3 +39,7 @@ Returns the amount of pet candy used on a pet item, only works on pets in GUIs (
 ### `catharsis:pet_exp`
 
 Returns the amount of Exp a pet has, only works on pets in GUIs (probably).
+
+### `catharsis:faction_reputation`
+
+Returns the reputation with the currently selected Crimson Isle faction or 0 when no faction is selected.

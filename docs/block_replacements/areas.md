@@ -3,7 +3,7 @@ title: Areas
 lang: en-US
 ---
 
-# Areas
+# <Environment/> Areas
 
 Areas are predefined regions that you can run checks with.
 This allows you to remodel things based on their location, while we also get the benefit of optimizing it.
@@ -80,7 +80,7 @@ An area that always matches any block everywhere.
 
 </TreeView>
 
-### On Island (`catharsis:on_island`)
+### <Environment type="hypixel"/> On Island (`catharsis:on_island`)
 Similar to `catharsis:always`, the only difference is, that it also takes an island predicate.
 
 <Example>
@@ -98,7 +98,7 @@ Matches while any of the specified islands.
 
 </TreeView>
 
-### Per Island (`catharsis:per_island`)
+### <Environment type="hypixel"/> Per Island (`catharsis:per_island`)
 Allows to change the definition based on the current island.
 <Example>
 Changes the definition based on the island, `always` and `on_island` have the exact same function in this case.

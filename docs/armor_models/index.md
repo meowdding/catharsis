@@ -9,7 +9,7 @@ prev:
     link: /item_models
 ---
 
-# Armor Models
+# <Environment/> Armor Models
 
 In Catharsis we support a way to define custom armor models for items.
 This allows you to create dynamic textures for armors that can change based on certain properties.

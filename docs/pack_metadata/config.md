@@ -3,7 +3,7 @@ title: Pack Configuration
 lang: en-US
 ---
 
-# Config Element Definitions
+# <Environment/> Config Element Definitions
 
 Your config can either be defined inside the `pack.mcmeta` file under the `catharsis:pack/v1` object or in a separate `config.catharsis.json` file in the root of your pack. 
 The latter will override any config defined in the `pack.mcmeta`.

@@ -3,7 +3,7 @@ title: Tooltip Background
 lang: en-US
 ---
 
-# Custom Tooltip Background
+# <Environment/> Custom Tooltip Background
 
 Allows replacing the item tooltip background and frame with a custom texture using Item definitions.
 
@@ -25,7 +25,7 @@ Behaves like item texture replacements, but the model is the following instead:
 
 #### **Condition** (`minecraft:condition`)
 
-Render an tooltip model based on a boolean property.
+Render a tooltip model based on a boolean property.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>condition</b> tooltip model object</span>

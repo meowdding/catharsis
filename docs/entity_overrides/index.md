@@ -3,7 +3,7 @@ title: Entity Overrides
 lang: en-US
 ---
 
-# Defining Entity Overrides
+# <Environment/> Defining Entity Overrides
 
 Catharsis allows you to override entity models and textures using Bedrock entity geometry (`.geo.json`) and specific targeting conditions.
 
@@ -120,7 +120,7 @@ Allows you to access the entity's maximum health value.
 
 </TreeView>
 
-### Island (`island`)
+### <Environment type="hypixel"/> Island (`island`)
 
 Matches if the entity (or player) is located on a specific Skyblock island.
 

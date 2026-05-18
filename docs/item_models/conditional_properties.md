@@ -3,7 +3,7 @@ title: Item
 lang: en-US
 ---
 
-# Conditional Item Properties
+# <Environment/> Conditional Item Properties
 
 This page lists all custom conditional item properties that are added ontop of the vanilla ones.
 
@@ -27,7 +27,7 @@ Check if any in list of conditions are true, useful for chaining conditions.
 - <TypeIcon type="array"/> **conditions**: a list of conditions to check through.
 </TreeView>
 
-#### **Data Type** (`catharsis:data_type`)
+#### <Environment type="hypixel"/> **Data Type** (`catharsis:data_type`)
 
 Check against a specific boolean data type.
 
@@ -37,7 +37,7 @@ Check against a specific boolean data type.
 - <TypeIcon type="string"/> **data_type**: defines the data type to use. [all supported types](../miscellaneous/data_types)
 </TreeView>
 
-#### **Has Data Type** (`catharsis:is_data_type_present`)
+#### <Environment type="hypixel"/> **Has Data Type** (`catharsis:is_data_type_present`)
 
 Returns `true` if the item has a specified data type.
 
@@ -47,7 +47,7 @@ Returns `true` if the item has a specified data type.
 - <TypeIcon type="string"/> **data_type**: defines the data type to use. [all supported types](../miscellaneous/data_types)
 </TreeView>
 
-#### **Has Gemstones** (`catharsis:has_gemstones`)
+#### <Environment type="hypixel"/> **Has Gemstones** (`catharsis:has_gemstones`)
 
 Returns `true` if the item has specified amount of gemstones.
 
@@ -60,7 +60,7 @@ Returns `true` if the item has specified amount of gemstones.
 </TreeView>
 
 
-#### **In Area** (`catharsis:in_area`)
+#### <Environment type="hypixel"/> **In Area** (`catharsis:in_area`)
 
 Returns `true` if the player is in the specified area.
 
@@ -84,11 +84,11 @@ Returns `true` if a certain [timespan](../miscellaneous/timespans) is true.
 
 Returns `true` if the item is hovered.
 
-#### **Has Pet Skin** (`catharsis:has_pet_skin`)
+#### <Environment type="hypixel"/> **Has Pet Skin** (`catharsis:has_pet_skin`)
 
 Returns `true` if the pet has a skin applied.
 
-#### **Enchantment** (`catharsis:enchantment`)  <Version>1.0.0-beta.16</Version>
+#### <Environment type="hypixel"/> **Enchantment** (`catharsis:enchantment`)  <Version>1.0.0-beta.16</Version>
 
 Returns `true` if the item has the specified enchantment at a matching level or within a matching level range.
 

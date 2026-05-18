@@ -3,7 +3,7 @@ title: Virtual Block States
 lang: en-US
 ---
 
-# Virtual Block State
+# <Environment/> Virtual Block State
 
 A virtual block state is a modified [vanilla block state file](https://minecraft.wiki/w/Tutorial:Models#Block_states) placed at `<namespace>/catharsis/virtual_block_states/<id>.json`.
 

@@ -95,7 +95,9 @@ export default defineConfig({
         head: [['link', { rel: 'icon', href: '/favicon.png' }]],
 
         footer: {
-            message: 'Tree view icons from the <a href="https://minecraft.wiki" target="_blank">Minecraft.wiki</a>',
+            message: 'Tree view icons from the <a href="https://minecraft.wiki" target="_blank">Minecraft.wiki</a>' +
+                '<br/>Not an official Minecraft product. Not approved by or affiliated with Mojang or Microsoft.' +
+                '<br/>Not approved or affiliated with Hypixel.',
         },
 
         editLink: {

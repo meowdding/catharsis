@@ -108,7 +108,7 @@ Allows access to check entity attributes, such as maximum health or movement spe
 
 </TreeView>
 
-### Max Health (`max_health`)
+### Max Health (`max_health`) <Version>1.0.0-beta.16</Version>
 
 Allows you to access the entity's maximum health value.
 

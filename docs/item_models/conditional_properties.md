@@ -88,7 +88,7 @@ Returns `true` if the item is hovered.
 
 Returns `true` if the pet has a skin applied.
 
-#### **Enchantment** (`catharsis:enchantment`)
+#### **Enchantment** (`catharsis:enchantment`)  <Version>1.0.0-beta.16</Version>
 
 Returns `true` if the item has the specified enchantment at a matching level or within a matching level range.
 

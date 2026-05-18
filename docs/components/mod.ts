@@ -7,6 +7,7 @@ import Example from "./example.vue";
 import SoundEvent from "./schemas/sound_event.vue";
 import RepoAreas from "./repo-areas.vue";
 import RepoTimespans from "./repo-timespans.vue";
+import Version from "./version.vue";
 
 export const CustomComponents: { [name: string]: any } = {
     "TreeView": TreeView,
@@ -18,4 +19,5 @@ export const CustomComponents: { [name: string]: any } = {
     "SoundEvent": SoundEvent,
     "RepoAreas": RepoAreas,
     "RepoTimespans": RepoTimespans,
+    "Version": Version,
 }

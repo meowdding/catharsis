@@ -16,3 +16,13 @@ Catharsis provides a vanilla like system for retexturing and remodeling Skyblock
 - **Text Replacements:** Modify item names and lore using regex or composite replacers.
 - **Entity Overrides:** Replace standard entities with custom Bedrock-style models and textures.
 - **Block Replacements:** Change block texture or sounds based on biome, the block below, and more
+
+## Environment Indication
+
+Specific features can only work on Hypixel/Vanilla Minecraft. These are indicated with an Icon infront of the title.
+
+- <Environment type="hypixel"/> means that this Feature only works on Hypixel SkyBlock.
+- <Environment type="minecraft"/> means that this Feature only works in Vanilla Minecraft.
+- <Environment type="both"/> means that this Feature only works in both vanilla Minecraft and on Hypixel SkyBlock.
+
+Unless specified, subtitles that are under a title that's annotated with one of these mean that they will also only work in that environment, unless else specified.

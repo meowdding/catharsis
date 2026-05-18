@@ -19,10 +19,10 @@ Catharsis provides a vanilla like system for retexturing and remodeling Skyblock
 
 ## Environment Indication
 
-Specific features can only work on Hypixel/Vanilla Minecraft. These are indicated with an Icon infront of the title.
+Certain features are exclusive to either Hypixel SkyBlock or Vanilla Minecraft. These restrictions are indicated by an icon next to the title.
 
-- <Environment type="hypixel"/> means that this Feature only works on Hypixel SkyBlock.
-- <Environment type="minecraft"/> means that this Feature only works in Vanilla Minecraft.
-- <Environment type="both"/> means that this Feature only works in both vanilla Minecraft and on Hypixel SkyBlock.
+- <Environment type="hypixel"/> indicates that this Feature only works on Hypixel SkyBlock.
+- <Environment type="minecraft"/> indicates that this Feature only works in Vanilla Minecraft.
+- <Environment type="both"/> indicates that this Feature only works in both vanilla Minecraft and on Hypixel SkyBlock.
 
-Unless specified, subtitles that are under a title that's annotated with one of these mean that they will also only work in that environment, unless else specified.
+Unless otherwise specified, these restrictions also apply to any subsection beneath the annotated section.

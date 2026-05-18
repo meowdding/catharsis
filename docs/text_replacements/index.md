@@ -3,7 +3,7 @@ title: Text Replacements
 lang: en-US
 ---
 
-# Text Replacements
+# <Environment/> Text Replacements
 
 Text replacements allow you to modify text components in the game, such as item names and lore.
 

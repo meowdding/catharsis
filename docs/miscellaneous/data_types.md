@@ -3,7 +3,7 @@ title: Item
 lang: en-US
 ---
 
-# Data Types
+# <Environment type="hypixel"/> Data Types
 
 This page lists all available data types.
 

@@ -3,7 +3,7 @@ title: Conditions
 lang: en-US
 ---
 
-# Block Conditions
+# <Environment/> Block Conditions
 
 Block conditions can be used together with a [conditional block replacement](index#conditional-catharsis-conditional) to check properties and types of blocks.
 
@@ -116,7 +116,7 @@ Changes the block context for the sub condition.
 - <TypeIcon type="object"/> **condition**: The condition to check with the offset applied.
 </TreeView>
 
-### In Island (`in_island`)
+### <Environment type="hypixel"/> In Island (`in_island`)
 
 Checks if the player in on a certain island.
 
@@ -139,7 +139,7 @@ Checks if a certain [timespan](../miscellaneous/timespans) is true.
 - <TypeIcon type="string"/> **timespan**: The identifier of the timespan to check.
 </TreeView>
 
-### Dungeon Floor (`dungeon_floor`)
+### <Environment type="hypixel"/> Dungeon Floor (`dungeon_floor`)
 
 Checks if the player is in a certain dungeon floor.
 

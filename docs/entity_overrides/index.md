@@ -108,6 +108,19 @@ Allows access to check entity attributes, such as maximum health or movement spe
 
 </TreeView>
 
+### NBT Number (`nbt_number`)
+
+Checks if a specific numeric NBT tag on the entity matches a given value, list of values, or a range. 
+Works for any number as well as booleans (0 or 1, I think at least).
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `nbt_number`
+- <TypeIcon type="string"/> **key**: The NBT key to check.
+- <TypeIcon type="any"/> **value** or **values**: Matches one or multiple specific numeric values, or a range.
+
+</TreeView>
+
 ### Max Health (`max_health`) <Version>1.0.0-beta.16</Version>
 
 Allows you to access the entity's maximum health value.

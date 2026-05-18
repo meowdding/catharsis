@@ -35,6 +35,7 @@ object EntityConditions {
         ID_MAPPER.put(Catharsis.id("equipment"), CatharsisCodecs.getMapCodec<EquipmentEntityCondition>())
         ID_MAPPER.put(Catharsis.id("is_baby"), CatharsisCodecs.getMapCodec<BabyEntityCondition>())
         ID_MAPPER.put(Catharsis.id("max_health"), CatharsisCodecs.getMapCodec<MaxHealthEntityCondition>())
+        ID_MAPPER.put(Catharsis.id("nbt_number"), CatharsisCodecs.getMapCodec<NbtNumberEntityCondition>())
         ID_MAPPER.put(Catharsis.id("any"), CatharsisCodecs.getMapCodec<AnyEntityCondition>())
         ID_MAPPER.put(Catharsis.id("all"), CatharsisCodecs.getMapCodec<AllEntityCondition>())
     }

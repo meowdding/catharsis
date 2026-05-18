@@ -3,7 +3,7 @@ title: Pack Metadata
 lang: en-US
 ---
 
-# Defining Catharsis Pack Metadata
+# <Environment/> Defining Catharsis Pack Metadata
 
 Catharsis metadata allows your pack to have a unique ID, declare dependencies, and provide a configuration menu for users.
 

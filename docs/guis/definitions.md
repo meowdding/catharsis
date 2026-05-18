@@ -3,7 +3,7 @@ title: Gui Definitions
 lang: en-US
 ---
 
-# Gui Definitions
+# <Environment/> Gui Definitions
 
 In Catharsis we support a way to define definitions and ids for specific guis and their slots.
 This allows you to create dynamic guis that can be referenced in other parts of Catharsis or in Item Models.
@@ -48,7 +48,7 @@ Match against a specific gui title.
 
 </TreeView>
 
-### **Islands** (`catharsis:islands`)
+### <Environment type="hypixel"/> **Islands** (`catharsis:islands`)
 
 Match against the Player's current island.
 

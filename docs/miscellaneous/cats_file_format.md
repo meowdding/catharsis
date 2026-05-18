@@ -3,7 +3,7 @@ title: .cats File Format
 lang: en-US
 ---
 
-# .cats File Format
+# <Environment/> .cats File Format
 
 .cats (`(c)atharsis (a)rchive (t)ool (s)tructure`) is our custom file format to store resourcepacks a bit more efficiently than a simple zip file and loading it faster.
 

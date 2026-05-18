@@ -3,7 +3,7 @@ title: Slot Conditions
 lang: en-US
 ---
 
-## Available Slot Conditions Types
+## <Environment/> Available Slot Conditions Types
 
 #### **Is Tooltip Hidden** (`catharsis:is_tooltip_hidden`)
 
@@ -46,7 +46,7 @@ Match against a slot by the item it contains.
 
 </TreeView>
 
-#### **ID** (`catharsis:id`)
+#### <Environment type="hypixel"/> **ID** (`catharsis:id`)
 
 Match against a slot by its SkyBlock ID.
 
@@ -70,7 +70,7 @@ Match against a slot by its index in the GUI.
 
 </TreeView>
 
-### **Current Island** (`catharsis:islands`)
+### <Environment type="hypixel"/> **Current Island** (`catharsis:islands`)
 
 Match against the Player's current island.
 

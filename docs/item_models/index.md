@@ -9,7 +9,7 @@ prev:
     link: /getting_started/skyblock_textures
 ---
 
-# Item Models
+# <Environment/> Item Models
 
 Catharsis extends the vanilla Minecraft item model system by adding custom model conditions. These can be used within your `assets/skyblock/items/<id>.json` files or any
 standard item model definition.

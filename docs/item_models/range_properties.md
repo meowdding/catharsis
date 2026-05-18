@@ -3,7 +3,7 @@ title: Item
 lang: en-US
 ---
 
-# Range Item Properties
+# <Environment type="hypixel"/> Range Item Properties
 
 This page lists all custom range item properties that are added ontop of the vanilla ones.
 

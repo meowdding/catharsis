@@ -7,7 +7,7 @@ next: # we need to hardcode these bc the "next page" button is broken on index p
 ---
 
 
-# Block replacements
+# <Environment/> Block replacements
 
 In Catharsis, we allow for retexturing and remodelling of blocks.
 This allows you to change the look of the same block in different regions of the game.

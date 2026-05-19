@@ -34,7 +34,7 @@ Check against a specific boolean data type.
 <TreeView>
 <span>additional fields:</span>
 
-- <TypeIcon type="string"/> **data_type**: defines the data type to use. [all supported types](../miscellaneous/data_types)
+- <TypeIcon type="string"/> **data_type**: defines the data type to use. [all supported types](/miscellaneous/data_types)
 </TreeView>
 
 #### <Environment type="hypixel"/> **Has Data Type** (`catharsis:is_data_type_present`)
@@ -44,7 +44,7 @@ Returns `true` if the item has a specified data type.
 <TreeView>
 <span>additional fields:</span>
 
-- <TypeIcon type="string"/> **data_type**: defines the data type to use. [all supported types](../miscellaneous/data_types)
+- <TypeIcon type="string"/> **data_type**: defines the data type to use. [all supported types](/miscellaneous/data_types)
 </TreeView>
 
 #### <Environment type="hypixel"/> **Has Gemstones** (`catharsis:has_gemstones`)
@@ -67,12 +67,12 @@ Returns `true` if the player is in the specified area.
 <TreeView>
 <span>additional fields:</span>
 
-- <TypeIcon type="string"/> **area**: The id of the area as defined [here](/block_replacements/areas)
+- <TypeIcon type="string"/> **area**: The id of the area as defined [here](/models_visuals/block_replacements/areas)
 </TreeView>
 
 #### **Timespan** (`catharsis:timespan`)
 
-Returns `true` if a certain [timespan](../miscellaneous/timespans) is true.
+Returns `true` if a certain [timespan](/miscellaneous/timespans) is true.
 
 <TreeView>
 <span>additional fields:</span>

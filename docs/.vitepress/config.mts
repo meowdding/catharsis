@@ -34,24 +34,24 @@ export default defineConfig({
                         text: "Item Models",
                         collapsed: false,
                         items: [
-                            {text: "Overview", link: "/item_models/index"},
-                            {text: "Select Properties", link: "/item_models/select_properties"},
-                            {text: "Range Properties", link: "/item_models/range_properties"},
-                            {text: "Conditional Properties", link: "/item_models/conditional_properties"},
+                            {text: "Overview", link: "/models_visuals/item_models/index"},
+                            {text: "Select Properties", link: "/models_visuals/item_models/select_properties"},
+                            {text: "Range Properties", link: "/models_visuals/item_models/range_properties"},
+                            {text: "Conditional Properties", link: "/models_visuals/item_models/conditional_properties"},
                         ]
                     },
-                    {text: "Armor Models", link: "/armor_models/index"},
+                    {text: "Armor Models", link: "/models_visuals/armor_models"},
                     {
                         text: "Block Replacements",
                         collapsed: false,
                         items: [
-                            {text: "Overview", link: "/block_replacements/index"},
-                            {text: "Conditions", link: "/block_replacements/conditions"},
-                            {text: "Virtual Block States", link: "/block_replacements/virtual_block_states"},
-                            {text: "Areas", link: "/block_replacements/areas"},
+                            {text: "Overview", link: "/models_visuals/block_replacements/index"},
+                            {text: "Conditions", link: "/models_visuals/block_replacements/conditions"},
+                            {text: "Virtual Block States", link: "/models_visuals/block_replacements/virtual_block_states"},
+                            {text: "Areas", link: "/models_visuals/block_replacements/areas"},
                         ]
                     },
-                    {text: "Entity Overrides", link: "/entity_overrides/index"},
+                    {text: "Entity Overrides", link: "/models_visuals/entity_overrides"},
                 ]
             },
             {
@@ -61,12 +61,12 @@ export default defineConfig({
                         text: "GUI Modifications",
                         collapsed: false,
                         items: [
-                            {text: "GUI Definitions", link: "/guis/definitions"},
-                            {text: "Slot Definitions", link: "/guis/slots"},
+                            {text: "GUI Definitions", link: "/ui_text/guis/definitions"},
+                            {text: "Slot Definitions", link: "/ui_text/guis/slots"},
                         ]
                    },
-                    {text: "Text Replacements", link: "/text_replacements/index"},
-                    {text: "Tooltip Backgrounds", link: "/miscellaneous/tooltip_background"},
+                    {text: "Text Replacements", link: "/ui_text/text_replacements"},
+                    {text: "Tooltip Backgrounds", link: "/ui_text/tooltip_background"},
                 ]
             },
             {
@@ -94,7 +94,6 @@ export default defineConfig({
         head: [['link', {rel: 'icon', href: '/favicon.png'}]],
 
         footer: {
-            message: 'Tree view icons from the <a href="https://minecraft.wiki" target="_blank">Minecraft.wiki</a><br/>Not affiliated with Minecraft or Hypixel.',
             message: 'Tree view icons from the <a href="https://minecraft.wiki" target="_blank">Minecraft.wiki</a>' +
                 '<br/>Not an official Minecraft product. Not approved by or affiliated with Mojang or Microsoft.' +
                 '<br/>Not approved or affiliated with Hypixel.',

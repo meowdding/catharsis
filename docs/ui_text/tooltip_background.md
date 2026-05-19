@@ -33,7 +33,7 @@ Render a tooltip model based on a boolean property.
 - <TypeIcon type="string"/> **type**: `minecraft:condition`
 - <TypeIcon type="string"/> **property**: type of boolean property.
   - <TypeIcon/> You can find a list of all available item model boolean properties on the Minecraft wiki at [Item Model Properties](https://minecraft.wiki/w/Items_model_definition#Boolean_property_types). 
-  Additionally, you can find a list of all Catharsis custom item properties in the [Catharsis Conditional Properties](../item_models/conditional_properties) documentation.
+  Additionally, you can find a list of all Catharsis custom item properties in the [Catharsis Conditional Properties](/models_visuals/item_models/conditional_properties) documentation.
 - <TypeIcon type="object"/> **on_true**: The **tooltip model** object when the property is true.
 - <TypeIcon type="object"/> **on_false**: The **tooltip model** object when the property is false.
 
@@ -50,7 +50,7 @@ Will select last entry with a threshold less than or equal to the property value
 - <TypeIcon type="string"/> **type**: `minecraft:range_dispatch`
 - <TypeIcon type="string"/> **property**: type of numeric property.
   - <TypeIcon/> You can find a list of all available item model numeric properties on the Minecraft wiki at [Item Model Properties](https://minecraft.wiki/w/Items_model_definition#Numeric_property_types). 
-  Additionally, you can find a list of all Catharsis custom item properties in the [Catharsis Range Properties](../item_models/range_properties) documentation.
+  Additionally, you can find a list of all Catharsis custom item properties in the [Catharsis Range Properties](/models_visuals/item_models/range_properties) documentation.
 - <TypeIcon/> Additional fields depending on the value of **numeric property type**.
 - <TypeIcon type="float"/> **scale**: Optional. Will be used to scale the property value before comparing it to thresholds. Default is `1.0`.
 - <TypeIcon type="array"/> **entries**:
@@ -72,7 +72,7 @@ Render a tooltip background based on a select property.
 - <TypeIcon type="string"/> **type**: `minecraft:select`
 - <TypeIcon type="string"/> **property**: type of the select property.
   - <TypeIcon/> You can find a list of all available item select properties on the Minecraft wiki at [Property Types](https://minecraft.wiki/w/Items_model_definition#Property_types).
-  Additionally, you can find a list of all Catharsis select item properties in the [Catharsis Select Properties](../item_models/select_properties) documentation
+  Additionally, you can find a list of all Catharsis select item properties in the [Catharsis Select Properties](/models_visuals/item_models/select_properties) documentation
 - <TypeIcon/> Additional fields depending on the value of the **select property type**.
 - <TypeIcon type="object"/> **switch**:
   - <TypeIcon type="array"/> **&lt;value&gt;**: 

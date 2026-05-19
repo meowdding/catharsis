@@ -1,9 +1,6 @@
 ---
 title: Block replacements
 lang: en-US
-next: # we need to hardcode these bc the "next page" button is broken on index pages
-    text: Conditions
-    link: /block_replacements/conditions
 ---
 
 
@@ -51,7 +48,7 @@ Always replaces the block with gold.
 <span><TypeIcon type="object"/> Root <b>redirect</b> object</span>
 
 - <TypeIcon type="string"/> **type**: `catharsis:redirect`
-- <TypeIcon type="string"/> **virtual_state**: A virtual [block state](/block_replacements/virtual_block_states) reference
+- <TypeIcon type="string"/> **virtual_state**: A virtual [block state](./virtual_block_states) reference
 </TreeView>
 
 ### Layered (`catharsis:layered`)
@@ -91,7 +88,7 @@ In this example it's roughly a 3/4 ratio.
 
 ### Per Area (`catharsis:per_area`)
 
-Allows for having a different block per [area](/block_replacements/areas).
+Allows for having a different block per [area](./areas).
 
 <Example>
 

@@ -130,7 +130,7 @@ Checks if the player in on a certain island.
 
 ### Timespan (`timespan`)
 
-Checks if a certain [timespan](../miscellaneous/timespans) is true.
+Checks if a certain [timespan](/miscellaneous/timespans) is true.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>timespan</b> object</span>

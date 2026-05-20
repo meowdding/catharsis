@@ -26,3 +26,16 @@ Certain features are exclusive to either Hypixel SkyBlock or Vanilla Minecraft. 
 - <Environment type="both"/> indicates that this Feature only works in both vanilla Minecraft and on Hypixel SkyBlock.
 
 Unless otherwise specified, these restrictions also apply to any subsection beneath the annotated section.
+
+## Catharsis Texture Packs
+
+Using the [Modrinth](https://modrinth.com/) API, once a day we fetch every Catharsis texture pack to display them on our Website.
+<br>You can see all the wonderful texture packs that creators have made using Catharsis [here](https://meowdd.ing/texturepacks).
+
+::: details My Texture Pack Isn't Showing Up!
+
+Make sure to add Catharsis as a dependency on your Modrinth releases:
+
+<img alt="A Modrinth edit version page" src="/modrinth-catharsis.png">
+
+:::

@@ -12,6 +12,8 @@ export default defineConfig({
             {text: 'Home', link: '/'},
         ],
 
+        search: {provider: 'local'},
+
         sidebar: [
             {
                 text: "Introduction",

@@ -104,7 +104,7 @@ export default defineConfig({
         },
 
         editLink: {
-            pattern: 'https://github.com/meowdding/catharsis/edit/main/docs/:path'
+            pattern: 'https://github.com/meowdding/catharsis/tree/development/docs/:path'
         }
     },
     vite: {

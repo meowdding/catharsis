@@ -1,4 +1,5 @@
 import {defineConfig} from 'vitepress'
+import vuetify from 'vite-plugin-vuetify'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -17,6 +18,7 @@ export default defineConfig({
                 items: [
                     {text: "Getting Started", link: "/getting_started/index"},
                     {text: "SkyBlock Textures", link: "/getting_started/skyblock_textures"},
+                    {text: "Example Pack", link: "/getting_started/example_pack"}
                 ]
             },
             {
@@ -101,6 +103,14 @@ export default defineConfig({
 
         editLink: {
             pattern: 'https://github.com/meowdding/catharsis/edit/main/docs/:path'
+        }
+    },
+    vite: {
+        plugins: [
+            vuetify({ autoImport: true })
+        ],
+        ssr: {
+            noExternal: ['vuetify']
         }
     }
 })

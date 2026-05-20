@@ -9,6 +9,7 @@ import RepoAreas from "./repo-areas.vue";
 import RepoTimespans from "./repo-timespans.vue";
 import Version from "./version.vue";
 import Environment from "./environment.vue";
+import ExamplePack from "./example-pack.vue";
 
 export const CustomComponents: { [name: string]: any } = {
     "TreeView": TreeView,
@@ -22,4 +23,5 @@ export const CustomComponents: { [name: string]: any } = {
     "RepoTimespans": RepoTimespans,
     "Version": Version,
     "Environment": Environment,
+    "ExamplePack": ExamplePack,
 }

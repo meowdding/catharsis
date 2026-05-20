@@ -9,6 +9,9 @@ const props = defineProps({
     }
 })
 
+const openDialog = () => {
+    dialog.value?.show()
+}
 </script>
 
 <template>
@@ -28,7 +31,10 @@ const props = defineProps({
             </div>
         </div>
     </dialog>
-    <button @click="dialog.show()">Click to Show Example</button>
+
+    <slot name="trigger" :open="openDialog">
+        <button @click="openDialog">Click to Show Example</button>
+    </slot>
 </template>
 
 <style scoped>

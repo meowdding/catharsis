@@ -74,6 +74,13 @@ export default defineConfig({
                 ]
             },
             {
+                text: "Mod Compatibility",
+                items: [
+                    {text: "Overview", link: "/mod_compatibility/index"},
+                    {text: "Imc", link: "/mod_compatibility/imc"}
+                ]
+            },
+            {
                 text: "Miscellaneous",
                 items: [
                     {text: "Data Types", link: "/miscellaneous/data_types"},

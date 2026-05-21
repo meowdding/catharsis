@@ -23,7 +23,7 @@ Certain features are exclusive to either Hypixel SkyBlock or Vanilla Minecraft. 
 
 - <Environment type="hypixel"/> indicates that this Feature only works on Hypixel SkyBlock.
 - <Environment type="minecraft"/> indicates that this Feature only works in Vanilla Minecraft.
-- <Environment type="both"/> indicates that this Feature only works in both vanilla Minecraft and on Hypixel SkyBlock.
+- <Environment type="both"/> indicates that this Feature works in both vanilla Minecraft and on Hypixel SkyBlock.
 
 Unless otherwise specified, these restrictions also apply to any subsection beneath the annotated section.
 

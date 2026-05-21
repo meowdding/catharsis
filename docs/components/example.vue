@@ -33,7 +33,7 @@ const openDialog = () => {
     </dialog>
 
     <slot name="trigger" :open="openDialog">
-        <button @click="openDialog">Click to Show Example</button>
+        <button class="trigger" @click="openDialog">Click to Show Example</button>
     </slot>
 </template>
 
@@ -116,5 +116,26 @@ dialog {
             padding: 0 1rem 1rem 1rem;
         }
     }
+}
+
+.trigger {
+    margin: 0.5rem 0;
+    padding: 0.3rem 0.5rem;
+
+    background-color: var(--vp-button-alt-bg, transparent);
+    color: var(--vp-c-text-2);
+    border: 1px solid var(--vp-c-border);
+    border-radius: 6px;
+
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.trigger:hover {
+    background-color: var(--vp-button-alt-hover-bg, transparent);
+    color: var(--vp-c-brand-1);
+    border-color: var(--vp-c-brand-1);
 }
 </style>

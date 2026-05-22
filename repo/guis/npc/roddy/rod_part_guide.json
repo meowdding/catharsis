@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": "skyblock_gui:npc/roddy/rod_part_guide/hooks",
+      "id": "skyblock_gui:npc/roddy/rod_part_guide_hook/icon",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:npc/roddy/rod_part_guide/lines",
+      "id": "skyblock_gui:npc/roddy/rod_part_guide_line/icon",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "id": "skyblock_gui:npc/roddy/rod_part_guide/sinkers",
+      "id": "skyblock_gui:npc/roddy/rod_part_guide_sinker/icon",
       "target": {
         "type": "name",
         "mode": "equals",

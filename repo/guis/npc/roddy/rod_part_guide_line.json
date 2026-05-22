@@ -1,0 +1,16 @@
+{
+  "target": {
+    "title": "Line",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:npc/roddy/rod_part_guide_line/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ꨃ Lines"
+      }
+    }
+  ]
+}

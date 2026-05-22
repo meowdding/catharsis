@@ -1,0 +1,40 @@
+{
+  "target": {
+    "title": "Fishing Rod Parts",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:npc/roddy/roddy/hook",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ථ Hook"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/roddy/roddy/line",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ꨃ Line"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/roddy/roddy/sinker",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "࿉ Sinker"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/roddy/rod_part_guide/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Rod Part Guide"
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "target": {
+    "title": "Rod Part Guide",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:npc/roddy/rod_part_guide/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Rod Part Guide"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/roddy/rod_part_guide/hooks",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ථ Hooks"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/roddy/rod_part_guide/lines",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ꨃ Lines"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/roddy/rod_part_guide/sinkers",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "࿉ Sinkers"
+      }
+    }
+  ]
+}

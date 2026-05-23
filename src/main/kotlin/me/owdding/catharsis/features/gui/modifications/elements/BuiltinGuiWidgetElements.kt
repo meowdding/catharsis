@@ -16,8 +16,8 @@ data class GuiButtonElement(
 
     override val interaction: GuiWidgetInteraction,
 
-    val x: Int,
-    val y: Int,
+    val x: GuiElementPosition,
+    val y: GuiElementPosition,
     val width: Int,
     val height: Int,
 ) : GuiWidgetElement {
@@ -25,14 +25,14 @@ data class GuiButtonElement(
     override val codec: MapCodec<GuiButtonElement> = CatharsisCodecs.getMapCodec<GuiButtonElement>()
 
     override fun isHovered(mouseX: Int, mouseY: Int, bounds: ScreenRectangle): Boolean {
-        val newX = bounds.left() + x
-        val newY = bounds.top() + y
+        val newX = x.calculate(bounds.left(), bounds.width())
+        val newY = y.calculate(bounds.top(), bounds.height())
         return mouseX >= newX && mouseX <= newX + width && mouseY >= newY && mouseY <= newY + height
     }
 
     override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         val sprite = if (isHovered(mouseX, mouseY, bounds)) hovered else normal
-        graphics.blitSprite(RenderPipelines.GUI_TEXTURED, sprite, bounds.left() + x, bounds.top() + y, width, height)
+        graphics.blitSprite(RenderPipelines.GUI_TEXTURED, sprite, x.calculate(bounds.left(), width), y.calculate(bounds.top(), height), width, height)
     }
 
 }

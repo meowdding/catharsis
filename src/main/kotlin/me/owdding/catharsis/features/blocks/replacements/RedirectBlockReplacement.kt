@@ -76,6 +76,6 @@ data class RedirectBlockReplacement(
     ) : BlockReplacement.Completable {
         override fun codec(): MapCodec<Completable> = CatharsisCodecs.getMapCodec()
         override fun virtualStates() = listOf(virtualState)
-        override fun bake(bakery: BlockReplacementBakery): BlockReplacement = RedirectBlockReplacement(bakery.virtualStates[virtualState]!!.copy())
+        override fun bake(bakery: BlockReplacementBakery): BlockReplacement = RedirectBlockReplacement(bakery.virtualStates[virtualState]?.copy() ?: throw NullPointerException("Unknown virtual block state $virtualState, in replacement"))
     }
 }

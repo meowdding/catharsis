@@ -7,11 +7,12 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.mojang.serialization.Codec
 import me.owdding.catharsis.Catharsis
+import me.owdding.catharsis.features.blocks.replacements.ConditionalBlockReplacement
 import me.owdding.catharsis.features.blocks.replacements.LayeredBlockReplacements
+import me.owdding.catharsis.features.blocks.skyblock.SkyBlockBlockRegistry
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
-import me.owdding.catharsis.utils.extensions.mapBothNotNull
 import me.owdding.catharsis.utils.types.fabric.PreparingModelLoadingPlugin
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin
@@ -36,6 +37,7 @@ import java.util.concurrent.Executor
 import kotlin.jvm.optionals.getOrNull
 import kotlin.time.Duration.Companion.minutes
 import kotlin.time.toJavaDuration
+import kotlin.to
 
 @Module
 object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockReplacements>>, CatharsisLogger by Catharsis.featureLogger() {
@@ -46,6 +48,7 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     private val logger: CatharsisLogger = this
     val blockReplacementConverter: FileToIdConverter = FileToIdConverter.json("catharsis/block_replacements")
     val blockStateConverter: FileToIdConverter = FileToIdConverter.json("catharsis/virtual_block_states")
+    val minecraftStateConverter: FileToIdConverter = FileToIdConverter.json("blockstates")
     private val gson = GsonBuilder().create()
 
     val blockDefinitionCodec: Codec<BlockReplacement.Completable> = BlockStateDefinitions.CODEC.codec()
@@ -120,18 +123,45 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     }
 
     fun loadBlockStates(resourceManager: ResourceManager, map: Map<Identifier, LayeredBlockReplacements.Completable>): Map<Block, LayeredBlockReplacements> {
-        val entries = blockStateConverter.listMatchingResources(resourceManager).mapNotNull { (id, resource) ->
-            logger.runCatching("Error loading virtual block state $id") {
-                resource.openAsReader().use { reader ->
-                    blockStateConverter.fileToId(id) to gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(virtualBlockStateCodec)
-                }
+        val entries = buildMap {
+            listOf(minecraftStateConverter, blockStateConverter).forEach { converter ->
+                converter.listMatchingResources(resourceManager).mapNotNull { (id, resource) ->
+                    logger.runCatching("Error loading virtual block state $id") {
+                        resource.openAsReader().use { reader ->
+                            converter.fileToId(id) to gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(virtualBlockStateCodec)
+                        }
+                    }
+                }.toMap(this)
             }
-        }.toMap()
+        }
 
         val bakery = BlockReplacementBakery(entries)
-        return map.mapBothNotNull { (id, value) ->
-            BuiltInRegistries.BLOCK.getOptional(id).getOrNull() to value.complete(bakery, logger).takeUnless { it.definitions.isEmpty() }
+        val blockMap = mutableMapOf<Block, MutableList<BlockReplacement>>()
+
+        map.forEach { (id, completableValue) ->
+            val value = completableValue.complete(bakery, logger).takeUnless { it.definitions.isEmpty() } ?: return@forEach
+
+            if (id.namespace == "skyblock") {
+                val block = SkyBlockBlockRegistry.REGISTRY[id.path]
+                if (block != null) {
+                    val conditionalReplacement = ConditionalBlockReplacement(block, value, null)
+                    block.vanillaBlocks.forEach { vanillaBlock ->
+                        blockMap.getOrPut(vanillaBlock) { mutableListOf() }.add(conditionalReplacement)
+                    }
+                } else {
+                    logger.warn("Unknown SkyBlock block replacement mapping: ${id.path}")
+                }
+            } else {
+                val block = BuiltInRegistries.BLOCK.getOptional(id).getOrNull()
+                if (block != null) {
+                    blockMap.getOrPut(block) { mutableListOf() }.add(value)
+                } else {
+                    logger.warn("Unknown vanilla block in replacements: $id")
+                }
+            }
         }
+
+        return blockMap.mapValues { (_, list) -> LayeredBlockReplacements(list) }
     }
 
     override fun initialize(

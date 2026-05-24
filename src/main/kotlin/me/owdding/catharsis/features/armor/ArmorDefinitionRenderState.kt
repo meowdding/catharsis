@@ -53,7 +53,7 @@ object ArmorDefinitionRenderStateHandler {
 
     private fun ArmorDefinitionRenderState.updateState(entity: LivingEntity, slot: EquipmentSlot, updater: (ArmorDefinitionRenderState, ArmorModelState?) -> Unit) {
         val item = entity.getItemBySlot(slot)
-        if (item.isDisabled()) {
+        if (item.isEmpty || item.isDisabled()) {
             updater.invoke(this, null)
         } else {
             val definition = ArmorDefinitions.getDefinition(SkyBlockIdentifierResolver.resolveModelId(ArmorDefinitions::hasDefinition, item)) ?: ArmorDefinitions.getDefinition(item.get(DataComponents.ITEM_MODEL))

@@ -39,7 +39,7 @@ loom.apply {
     runConfigs["client"].apply {
         ideConfigGenerated(true)
         runDir = "../../run"
-        vmArg("-Dfabric.modsFolder=" + '"' + rootProject.projectDir.resolve("run/${mcVersion}Mods").absolutePath + '"')
+        vmArg("-Dfabric.modsFolder=${rootProject.projectDir.resolve("run/${mcVersion}Mods").absolutePath}")
     }
 
     accessWidenerPath.set(accessWidenerFile)
@@ -227,4 +227,3 @@ autoMixins {
     projectName = "catharsis"
     mixinExtrasVersion = "0.5.0"
 }
-

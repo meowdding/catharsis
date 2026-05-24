@@ -39,3 +39,8 @@ Make sure to add Catharsis as a dependency on your Modrinth releases:
 <img alt="A Modrinth edit version page" src="/modrinth-catharsis.png">
 
 :::
+
+## Missing Documentation
+
+While we are still in beta, some stuff will be missing from the documentation.
+Check out [this GitHub Issue](https://github.com/meowdding/catharsis/issues/120) to see what's missing.

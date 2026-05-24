@@ -3,6 +3,10 @@ package me.owdding.catharsis.utils.geometry
 import com.mojang.blaze3d.vertex.PoseStack
 import com.mojang.blaze3d.vertex.VertexConsumer
 import net.minecraft.client.model.HumanoidModel
+import net.minecraft.client.model.geom.PartPose
+import net.minecraft.client.model.geom.builders.CubeDeformation
+import net.minecraft.client.model.geom.builders.LayerDefinition
+import net.minecraft.client.model.geom.builders.MeshDefinition
 import net.minecraft.core.Direction
 import net.minecraft.util.Mth
 import net.minecraft.world.entity.EquipmentSlot
@@ -20,6 +24,29 @@ private const val RIGHT_LEG_BONE = "right_leg"
 private const val LEFT_LEG_BONE = "left_leg"
 private const val RIGHT_FOOT_BONE = "right_foot"
 private const val LEFT_FOOT_BONE = "left_foot"
+private const val HUMANOID_TEXTURE_WIDTH = 64
+private const val HUMANOID_TEXTURE_HEIGHT = 32
+
+private val NEUTRAL_POSES = run {
+    val armorModels = HumanoidModel.createArmorMeshSet(CubeDeformation.NONE, CubeDeformation.NONE)
+    val headRoot = armorModels.get(EquipmentSlot.HEAD).bakeRoot()
+    val chestRoot = armorModels.get(EquipmentSlot.CHEST).bakeRoot()
+    val legsRoot = armorModels.get(EquipmentSlot.LEGS).bakeRoot()
+    val feetRoot = armorModels.get(EquipmentSlot.FEET).bakeRoot()
+
+    mapOf(
+        HEAD_BONE to headRoot.getChild(HEAD_BONE).initialPose,
+        BODY_BONE to chestRoot.getChild(BODY_BONE).initialPose,
+        RIGHT_ARM_BONE to chestRoot.getChild(RIGHT_ARM_BONE).initialPose,
+        LEFT_ARM_BONE to chestRoot.getChild(LEFT_ARM_BONE).initialPose,
+        RIGHT_LEG_BONE to legsRoot.getChild(RIGHT_LEG_BONE).initialPose,
+        RIGHT_FOOT_BONE to feetRoot.getChild(RIGHT_LEG_BONE).initialPose,
+        LEFT_LEG_BONE to legsRoot.getChild(LEFT_LEG_BONE).initialPose,
+        LEFT_FOOT_BONE to feetRoot.getChild(LEFT_LEG_BONE).initialPose,
+    )
+}
+
+private fun MeshDefinition.bakeRoot() = LayerDefinition.create(this, HUMANOID_TEXTURE_WIDTH, HUMANOID_TEXTURE_HEIGHT).bakeRoot()
 
 object BedrockGeometryRenderer {
 
@@ -38,6 +65,7 @@ object BedrockGeometryRenderer {
                 LEFT_LEG_BONE, LEFT_FOOT_BONE -> model.leftLeg
                 else -> continue
             }
+            val neutralPose = getNeutralPose(bone.name) ?: continue
 
             when (slot) {
                 EquipmentSlot.HEAD if bone.name != HEAD_BONE -> continue
@@ -47,16 +75,21 @@ object BedrockGeometryRenderer {
                 else -> {}
             }
 
-            bone.offset.x = (playerBone.x - playerBone.initialPose.x)
-            bone.offset.y = -(playerBone.y - playerBone.initialPose.y)
-            bone.offset.z = (playerBone.z - playerBone.initialPose.z)
+            bone.offset.x = playerBone.x - neutralPose.x
+            bone.offset.y = -(playerBone.y - neutralPose.y)
+            bone.offset.z = playerBone.z - neutralPose.z
             bone.rotation.x = playerBone.xRot * Mth.RAD_TO_DEG
             bone.rotation.y = playerBone.yRot * Mth.RAD_TO_DEG
             bone.rotation.z = playerBone.zRot * Mth.RAD_TO_DEG
+            bone.scale.x = playerBone.xScale
+            bone.scale.y = playerBone.yScale
+            bone.scale.z = playerBone.zScale
 
             renderBone(bone, pose, consumer, color, light, overlay)
         }
     }
+
+    private fun getNeutralPose(boneName: String): PartPose? = NEUTRAL_POSES[boneName]
 
     private fun renderBone(bone: BakedBedrockBone, pose: PoseStack.Pose, consumer: VertexConsumer, color: Int, light: Int, overlay: Int) {
         val pose = pose.copy()
@@ -64,10 +97,16 @@ object BedrockGeometryRenderer {
         val (rotX, rotY, rotZ) = bone.rotation
         val (pivotX, pivotY, pivotZ) = bone.pivot
         val (posX, posY, posZ) = bone.offset
+        val (scaleX, scaleY, scaleZ) = bone.scale
 
         pose.translate(posX / 16f, posY / 16f, posZ / 16f)
         val quaternion = Quaternionf().rotateZYX(-rotZ * Mth.DEG_TO_RAD, rotY * Mth.DEG_TO_RAD, -rotX * Mth.DEG_TO_RAD)
         pose.rotateAround(quaternion, pivotX / 16f, pivotY / 16f, pivotZ / 16f)
+        if (scaleX != 1f || scaleY != 1f || scaleZ != 1f) {
+            pose.translate(pivotX / 16f, pivotY / 16f, pivotZ / 16f)
+            pose.scale(scaleX, scaleY, scaleZ)
+            pose.translate(-pivotX / 16f, -pivotY / 16f, -pivotZ / 16f)
+        }
 
         for (cube in bone.cubes) {
             renderCube(cube, pose, consumer, color, light, overlay)

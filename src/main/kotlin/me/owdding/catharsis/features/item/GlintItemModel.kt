@@ -59,7 +59,9 @@ data class GlintItemModel(
         override fun bake(context: ItemModel.BakingContext/*? if >= 26.1 >> ')'*/, transformation: Matrix4fc): ItemModel =
             GlintItemModel(this.glint, this.model.bake(context/*? if >= 26.1 >> ')'*/, transformation))
 
-        override fun resolveDependencies(resolver: ResolvableModel.Resolver) {}
+        override fun resolveDependencies(resolver: ResolvableModel.Resolver) {
+            model.resolveDependencies(resolver)
+        }
 
         companion object {
             val ID = Catharsis.id("glint")

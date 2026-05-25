@@ -6,6 +6,9 @@ export default defineConfig({
     title: "Catharsis",
     description: "Catharsis Documentation",
     base: "/",
+
+    head: [['link', {rel: 'icon', href: '/favicon.png'}]],
+
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
@@ -17,6 +20,7 @@ export default defineConfig({
         sidebar: [
             {
                 text: "Introduction",
+                collapsed: false,
                 items: [
                     {text: "Getting Started", link: "/getting_started/index"},
                     {text: "SkyBlock Textures", link: "/getting_started/skyblock_textures"},
@@ -25,6 +29,7 @@ export default defineConfig({
             },
             {
                 text: "Pack Setup",
+                collapsed: false,
                 items: [
                     {text: "Catharsis Pack Metadata", link: "/pack_metadata/index"},
                     {text: "Configuration Options", link: "/pack_metadata/config"},
@@ -33,6 +38,7 @@ export default defineConfig({
             },
             {
                 text: "Models & Visuals",
+                collapsed: false,
                 items: [
                     {
                         text: "Item Models",
@@ -60,6 +66,7 @@ export default defineConfig({
             },
             {
                 text: "UI & Text",
+                collapsed: false,
                 items: [
                     {
                         text: "GUI Modifications",
@@ -75,6 +82,7 @@ export default defineConfig({
             },
             {
                 text: "Mod Compatibility",
+                collapsed: false,
                 items: [
                     {text: "Overview", link: "/mod_compatibility/index"},
                     {text: "Imc", link: "/mod_compatibility/imc"}
@@ -82,6 +90,7 @@ export default defineConfig({
             },
             {
                 text: "Miscellaneous",
+                collapsed: false,
                 items: [
                     {text: "Data Types", link: "/miscellaneous/data_types"},
                     {text: "Timespans", link: "/miscellaneous/timespans"},
@@ -91,6 +100,7 @@ export default defineConfig({
             },
             {
                 text: "Developer Tools",
+                collapsed: false,
                 items: [
                     {text: "Overview", link: "/dev_tools/index"},
                     {text: "Commands", link: "/dev_tools/commands"},
@@ -103,12 +113,10 @@ export default defineConfig({
             {icon: 'github', link: 'https://github.com/meowdding/catharsis'}
         ],
 
-        head: [['link', {rel: 'icon', href: '/favicon.png'}]],
-
         footer: {
             message: 'Tree view icons from the <a href="https://minecraft.wiki" target="_blank">Minecraft.wiki</a>' +
                 '<br/>Not an official Minecraft product. Not approved by or affiliated with Mojang or Microsoft.' +
-                '<br/>Not approved or affiliated with Hypixel.',
+                '<br/>Not approved by or affiliated with Hypixel.',
         },
 
         editLink: {

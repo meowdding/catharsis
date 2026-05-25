@@ -121,7 +121,11 @@ export default defineConfig({
 
         editLink: {
             pattern: 'https://github.com/meowdding/catharsis/tree/development/docs/:path'
-        }
+        },
+
+        lastUpdated: {
+            text: 'Last Updated'
+        },
     },
     vite: {
         plugins: [

@@ -160,3 +160,15 @@ Changes the context of any future models, allowing you to change things based on
   - Will render as a missing texture if fallback is needed but not provided.
 
 </TreeView>
+
+#### **Fallthrough** (`catharsis:fallthrough`)
+
+Allows an armor model to "fall through" to the next available model in the resource pack stack. This is useful for overlay packs that only want to change specific parts of an item's
+rendering without completely replacing the base model.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>fallthrough</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:fallthrough`
+
+</TreeView>

@@ -86,6 +86,7 @@ export default defineConfig({
                     {text: "Data Types", link: "/miscellaneous/data_types"},
                     {text: "Timespans", link: "/miscellaneous/timespans"},
                     {text: ".cats File Format", link: "/miscellaneous/cats_file_format"},
+                    {text: "Miscellaneous Items", link: "/miscellaneous/misc_items"}
                 ]
             },
             {

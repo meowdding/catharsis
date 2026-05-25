@@ -21,7 +21,7 @@ object ItemProperties : CatharsisLogger by Catharsis.featureLogger() {
         register(AllConditionalItemProperty.ID, AllConditionalItemProperty.CODEC)
         register(InAreaProperty.ID, InAreaProperty.CODEC)
         register(DataTypeProperties.ID.withPrefix("is_").withSuffix("_present"), DataTypeProperties.DataTypePresentItemProperty.CODEC)
-        register(DataTypeProperties.ID.withPrefix("has"), DataTypeProperties.DataTypePresentItemProperty.CODEC.let { MapCodec.of(it, it) { "HasDataType" } })
+        register(DataTypeProperties.ID.withPrefix("has_"), DataTypeProperties.DataTypePresentItemProperty.CODEC.let { MapCodec.of(it, it) { "HasDataType" } })
         register(GemstoneProperty.ID, GemstoneProperty.CODEC)
         register(HasPetSkinProperty.ID, HasPetSkinProperty.CODEC)
         register(TimespanProperty.ID, TimespanProperty.CODEC)

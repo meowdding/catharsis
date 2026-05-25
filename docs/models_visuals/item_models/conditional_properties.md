@@ -37,7 +37,7 @@ Check against a specific boolean data type.
 - <TypeIcon type="string"/> **data_type**: defines the data type to use. [all supported types](/miscellaneous/data_types)
 </TreeView>
 
-#### <Environment type="hypixel"/> **Has Data Type** (`catharsis:is_data_type_present`)
+#### <Environment type="hypixel"/> **Has Data Type** (`catharsis:is_data_type_present`, `catharsis:has_data_type`)
 
 Returns `true` if the item has a specified data type.
 

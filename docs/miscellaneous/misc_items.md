@@ -8,6 +8,16 @@ lang: en-US
 Catharsis allows you to define custom SkyBlock IDs based on the texture data of Player Heads. 
 This is useful for assigning specific IDs to custom head items that do not have an ID assigned by Hypixel.
 
+
+::: details Included Misc Items
+
+You can view the remote defined `misc_items.json` on [GitHub](https://github.com/meowdding/catharsis/blob/development/repo/misc_items.json) or below.
+
+<MiscItems />
+
+:::
+
+
 ## Defining
 
 Custom miscellaneous items are defined in `assets/catharsis/misc_items.json` within your resource pack.
@@ -25,8 +35,6 @@ Custom miscellaneous items are defined in `assets/catharsis/misc_items.json` wit
       - <TypeIcon type="string"/> A texture or a list of textures used for the id.
 
 </TreeView>
-
-You can also view the remote defined `misc_items.json` on [GitHub](https://github.com/meowdding/catharsis/blob/development/repo/misc_items.json).
 
 :::tip
 It is highly recommended to use actual SkyBlock IDs whenever possible. 

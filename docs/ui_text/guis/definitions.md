@@ -10,6 +10,13 @@ This allows you to create dynamic guis that can be referenced in other parts of 
 
 You can define a gui definition in `assets/<namespace>/catharsis/guis/<id>.json`.
 
+::: details Included Gui Definitions
+
+<RepoGuis />
+
+:::
+
+
 ## Json format
 
 <TreeView>

@@ -18,6 +18,12 @@ The definition follows the following scheme
 
 </TreeView>
 
+::: details Included Timespans
+
+<RepoTimespans />
+
+:::
+
 ## Supported Types
 
 ### Simple (`catharsis:simple`)
@@ -38,7 +44,3 @@ A simple timespan that only matches nighttime.
 - <TypeIcon type="int" /> **end**: The ending point of the timespan in ticks, relative to the day.
 
 </TreeView>
-
-## Included Timespans
-
-<RepoTimespans />

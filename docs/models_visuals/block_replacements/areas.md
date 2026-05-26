@@ -20,6 +20,14 @@ The definition follows the following scheme
 
 </TreeView>
 
+
+::: details Included Area Definitions
+
+<RepoAreas />
+
+:::
+
+
 ## Supported Types
 
 ### Simple (`catharsis:simple`)
@@ -117,8 +125,3 @@ Changes the definition based on the island, `always` and `on_island` have the ex
     - <TypeIcon/> Additional fields depending on the value of type, see the respective area type documentation for more details.
 
 </TreeView>
-
-
-## Included Areas
-
-<RepoAreas />

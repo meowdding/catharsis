@@ -1,17 +1,17 @@
 {
   "target": {
     "type": "title",
-    "title": "Stats ➜ Trophy Fish Chance"
+    "title": "Stats ➜ Trophy Chance"
   },
   "layout": [
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/icon",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/icon",
       "target": {
         "type": "all",
         "conditions": [
           {
             "type": "catharsis:name",
-            "name": "♔ Trophy Fish Chance.+"
+            "name": "♔ Trophy Chance.+"
           },
           {
             "type": "item",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/flat_bonuses",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/flat_bonuses",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/arrow",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/arrow",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -37,7 +37,7 @@
       }
     },
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/additive_buffs",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/additive_buffs",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -45,7 +45,7 @@
       }
     },
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/multiplicative_buffs",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/multiplicative_buffs",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -53,7 +53,7 @@
       }
     },
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/cap",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/cap",
       "target": {
         "type": "name",
         "mode": "equals",

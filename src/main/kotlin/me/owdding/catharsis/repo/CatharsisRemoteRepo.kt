@@ -66,7 +66,7 @@ object CatharsisRemoteRepo : CatharsisLogger by Catharsis.featureLogger() {
 
     fun isInitialized() = isInitialized
     fun getFileContent(file: String) = cacheDirectory.resolve(file).takeIf { it.exists() }?.readText(Charsets.UTF_8) ?: run {
-        Catharsis.warn("Requested unknown file $file from remote repo!")
+        Catharsis.warn("Requested unknown file $file from remote repo! Version=$version, Force Backup=$forceBackupRepo")
         null
     }
     fun getFileContentAsJson(file: String) = getFileContent("${file.removeSuffix(".json")}.json")?.let { gson.fromJson(it, JsonElement::class.java) }

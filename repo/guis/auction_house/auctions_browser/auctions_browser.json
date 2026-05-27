@@ -464,7 +464,7 @@
           {
             "name": "▶ Rare",
             "mode": "equals",
-            "line": 3,
+            "line": 2,
             "type": "catharsis:lore"
           }
         ],
@@ -483,7 +483,7 @@
           {
             "name": "▶ Epic",
             "mode": "equals",
-            "line": 4,
+            "line": 2,
             "type": "catharsis:lore"
           }
         ],
@@ -502,7 +502,7 @@
           {
             "name": "▶ Legendary",
             "mode": "equals",
-            "line": 5,
+            "line": 3,
             "type": "catharsis:lore"
           }
         ],
@@ -521,7 +521,7 @@
           {
             "name": "▶ Mythic",
             "mode": "equals",
-            "line": 6,
+            "line": 4,
             "type": "catharsis:lore"
           }
         ],
@@ -540,7 +540,7 @@
           {
             "name": "▶ Divine",
             "mode": "equals",
-            "line": 7,
+            "line": 5,
             "type": "catharsis:lore"
           }
         ],
@@ -559,7 +559,7 @@
           {
             "name": "▶ Special",
             "mode": "equals",
-            "line": 8,
+            "line": 6,
             "type": "catharsis:lore"
           }
         ],
@@ -578,7 +578,7 @@
           {
             "name": "▶ Very Special",
             "mode": "equals",
-            "line": 9,
+            "line": 7,
             "type": "catharsis:lore"
           }
         ],
@@ -597,7 +597,7 @@
           {
             "name": "▶ Ultimate",
             "mode": "equals",
-            "line": 10,
+            "line": 8,
             "type": "catharsis:lore"
           }
         ],

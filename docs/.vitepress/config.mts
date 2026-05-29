@@ -74,6 +74,7 @@ export default defineConfig({
                         items: [
                             {text: "GUI Definitions", link: "/ui_text/guis/definitions"},
                             {text: "Slot Definitions", link: "/ui_text/guis/slots"},
+                            {text: "GUI Modifiers", link: "/ui_text/guis/modifiers"},
                         ]
                    },
                     {text: "Text Replacements", link: "/ui_text/text_replacements"},

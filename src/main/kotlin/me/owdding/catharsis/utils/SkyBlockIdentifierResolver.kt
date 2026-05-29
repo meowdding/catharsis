@@ -21,9 +21,8 @@ object SkyBlockIdentifierResolver : ResourceManagerReloadListener {
 
     private var shouldDisableDerivedIds = false
 
-    fun getCustomLocation(item: ItemStack): Identifier? {
-        val itemId = item[DataTypes.SKYBLOCK_ID] ?: return null
-
+    fun getCustomLocation(item: ItemStack) = item[DataTypes.SKYBLOCK_ID]?.let(::getCustomLocation)
+    fun getCustomLocation(itemId: SkyBlockId): Identifier? {
         if (itemId.isDerived && shouldDisableDerivedIds) {
             return null
         }

@@ -150,3 +150,8 @@ Misc flags
 
 Opens an interactive Regex Tester GUI. 
 This allows you to type raw text component JSON in one pane, type a regex pattern in the other, and see how the pattern matches and highlights the text output on the screen.
+
+### <Environment type="hypixel"/> `/catharsis dev untextured_ids [type]`
+
+Copies a list of SkyBlock Ids all active packs have not retextured to the clipboard.
+Types can be ´ALL´, ´ITEMS´, ´ATTRIBUTES´, ´ENCHANTMENTS´, ´RUNES´, ´PETS´, and ´POTIONS´, or `ALL` if nothing specified.

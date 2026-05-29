@@ -43,4 +43,4 @@ Relying on texture data should only be used as a last resort when no other uniqu
 
 ## Usage
 
-Once defined, the custom namespace and location will be used as the item's ID.
+Once defined, the custom namespace and location will be used as the item's ID which then allows you to run item model conditions on it.

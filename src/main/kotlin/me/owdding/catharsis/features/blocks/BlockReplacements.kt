@@ -17,6 +17,7 @@ import me.owdding.catharsis.utils.types.fabric.PreparingModelLoadingPlugin
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin
 import net.minecraft.core.BlockPos
+import net.minecraft.core.SectionPos
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.resources.FileToIdConverter
 import net.minecraft.resources.Identifier
@@ -37,7 +38,6 @@ import java.util.concurrent.Executor
 import kotlin.jvm.optionals.getOrNull
 import kotlin.time.Duration.Companion.minutes
 import kotlin.time.toJavaDuration
-import kotlin.to
 
 @Module
 object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockReplacements>>, CatharsisLogger by Catharsis.featureLogger() {
@@ -144,8 +144,8 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
             if (id.namespace == "skyblock") {
                 val block = SkyBlockBlockRegistry.REGISTRY[id.path]
                 if (block != null) {
-                    val conditionalReplacement = ConditionalBlockReplacement(block, value, null)
                     block.vanillaBlocks.forEach { vanillaBlock ->
+                        val conditionalReplacement = ConditionalBlockReplacement(block, value, null)
                         blockMap.getOrPut(vanillaBlock) { mutableListOf() }.add(conditionalReplacement)
                     }
                 } else {
@@ -195,6 +195,37 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
             }
 
             original
+        }
+    }
+
+    fun markChunkDirty(blockPos: BlockPos) {
+        val level = McLevel.selfOrNull ?: return
+        val chunk = level.chunkSource.getChunk(SectionPos.blockToSectionCoord(blockPos.x), SectionPos.blockToSectionCoord(blockPos.z), false)
+        if (chunk == null || chunk.isEmpty) return
+        val renderer = McClient.self.levelRenderer
+
+        for ((index, section) in chunk.sections.withIndex()) {
+            if (section == null || section.hasOnlyAir()) continue
+            renderer.setSectionDirty(
+                chunk.pos.x,
+                chunk.level.getSectionYFromSectionIndex(index),
+                chunk.pos.z,
+            )
+        }
+    }
+    fun markChunkSectionDirty(blockPos: BlockPos) {
+        val level = McLevel.selfOrNull ?: return
+        val chunk = level.chunkSource.getChunk(SectionPos.blockToSectionCoord(blockPos.x), SectionPos.blockToSectionCoord(blockPos.z), false)
+        if (chunk == null || chunk.isEmpty) return
+        val renderer = McClient.self.levelRenderer
+
+        for ((index, section) in chunk.sections.withIndex()) {
+            if (section == null || section.hasOnlyAir()) continue
+            renderer.setSectionDirty(
+                chunk.pos.x,
+                SectionPos.blockToSectionCoord(blockPos.y),
+                chunk.pos.z,
+            )
         }
     }
 

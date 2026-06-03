@@ -1,0 +1,368 @@
+{
+  "target": {
+    "title": "Kuudra Collection",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:collections/kuudra/unlocked/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 20,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 1",
+              "Kuudra I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/unlocking/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 20,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 1",
+              "Kuudra I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/locked/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 20,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 1",
+              "Kuudra I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 21,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 2",
+              "Kuudra II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 21,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 2",
+              "Kuudra II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 21,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 2",
+              "Kuudra II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 22,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 3",
+              "Kuudra III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 22,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 3",
+              "Kuudra III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 22,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 3",
+              "Kuudra III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 23,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 4",
+              "Kuudra IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 23,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 4",
+              "Kuudra IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 23,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 4",
+              "Kuudra IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/unlocked/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 5",
+              "Kuudra V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/unlocking/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 5",
+              "Kuudra V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/kuudra/locked/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Kuudra 5",
+              "Kuudra V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

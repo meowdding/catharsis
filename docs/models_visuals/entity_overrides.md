@@ -68,7 +68,7 @@ To override an entity, you need to provide two JSON files. The first handles the
   <span><TypeIcon type="object"/> An <b>Entity Asset Mapping</b> object (`catharsis/entities/{entity_name}.json`)</span>
 
 - <TypeIcon type="array"/><TypeIcon type="object"/> Either a list of variants or a single variant can be provided.
-  - <TypeIcon type="array"/> **variants**: A list of variations to apply to the entity to support randomizing models and textures. Selecting is tied deterministically to the entity's UUID.
+  - <TypeIcon type="array"/> **variants**: A list of variations to apply to the entity to support randomizing models and textures. Selecting is based on the entity's UUID. <Version>1.0.0-beta.17</Version>
     - <TypeIcon type="object"/> **variant**: A single entity model/texture variant.
       - <TypeIcon type="number"/> **weight**: (Optional) The chance this variant is selected relative to other variants. Defaults to `1`.
       - <TypeIcon type="string"/> **texture**: The path to your custom texture image.

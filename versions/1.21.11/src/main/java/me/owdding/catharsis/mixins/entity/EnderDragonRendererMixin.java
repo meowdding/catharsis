@@ -22,14 +22,11 @@ public class EnderDragonRendererMixin {
         method = "submit(Lnet/minecraft/client/renderer/entity/state/EnderDragonRenderState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;Lnet/minecraft/client/renderer/state/CameraRenderState;)V"
     )
     public void catharsis$handleDragonTextureReplacement(Args args, @Local(argsOnly = true) EnderDragonRenderState state) {
-        CustomEntityModel customEntityModel = state.catharsis$getCustomEntityModel();
+        var customVariant = state.catharsis$getCustomEntityModelVariant();
 
-        if (customEntityModel == null) return;
+        if (customVariant == null) return;
 
-        args.set(
-            3,
-            RenderTypes.entityCutoutNoCull(customEntityModel.getTexture())
-        );
+        args.set(3, RenderTypes.entityCutoutNoCull(customVariant.getTexture()));
     }
 
     @ModifyArgs(
@@ -41,13 +38,10 @@ public class EnderDragonRendererMixin {
         method = "submit(Lnet/minecraft/client/renderer/entity/state/EnderDragonRenderState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;Lnet/minecraft/client/renderer/state/CameraRenderState;)V"
     )
     public void catharsis$handleDragonTextureReplacementDecal(Args args, @Local(argsOnly = true) EnderDragonRenderState state) {
-        CustomEntityModel customEntityModel = state.catharsis$getCustomEntityModel();
+        var customVariant = state.catharsis$getCustomEntityModelVariant();
 
-        if (customEntityModel == null) return;
+        if (customVariant == null) return;
 
-        args.set(
-            3,
-            RenderTypes.entityDecal(customEntityModel.getTexture())
-        );
+        args.set(3, RenderTypes.entityDecal(customVariant.getTexture()));
     }
 }

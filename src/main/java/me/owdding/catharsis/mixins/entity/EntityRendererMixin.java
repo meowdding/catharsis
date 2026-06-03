@@ -17,7 +17,12 @@ public class EntityRendererMixin<T extends Entity, S extends EntityRenderState> 
         at = @At("TAIL")
     )
     public void extractRenderState(T entity, S reusedState, float partialTick, CallbackInfo ci) {
-        CustomEntityModel customTexture = entity.catharsis$getCustomEntityModel();
-        reusedState.catharsis$setCustomEntityModel(customTexture);
+        CustomEntityModel customModel = entity.catharsis$getCustomEntityModel();
+
+        if (customModel != null) {
+            reusedState.catharsis$setCustomEntityModelVariant(customModel.getVariant(entity));
+        } else {
+            reusedState.catharsis$setCustomEntityModelVariant(null);
+        }
     }
 }

@@ -1,6 +1,6 @@
 {
   "target": {
-    "title": "Lily Pad Collection",
+    "title": "Lotus Collection",
     "type": "catharsis:title"
   },
   "layout": [
@@ -18,8 +18,8 @@
           },
           {
             "name": [
-              "Lily Pad 1",
-              "Lily Pad I"
+              "Lotus 1",
+              "Lotus I"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -42,8 +42,8 @@
           },
           {
             "name": [
-              "Lily Pad 1",
-              "Lily Pad I"
+              "Lotus 1",
+              "Lotus I"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -66,8 +66,8 @@
           },
           {
             "name": [
-              "Lily Pad 1",
-              "Lily Pad I"
+              "Lotus 1",
+              "Lotus I"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -90,8 +90,8 @@
           },
           {
             "name": [
-              "Lily Pad 2",
-              "Lily Pad II"
+              "Lotus 2",
+              "Lotus II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -114,8 +114,8 @@
           },
           {
             "name": [
-              "Lily Pad 2",
-              "Lily Pad II"
+              "Lotus 2",
+              "Lotus II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -138,8 +138,8 @@
           },
           {
             "name": [
-              "Lily Pad 2",
-              "Lily Pad II"
+              "Lotus 2",
+              "Lotus II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -162,8 +162,8 @@
           },
           {
             "name": [
-              "Lily Pad 3",
-              "Lily Pad III"
+              "Lotus 3",
+              "Lotus III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -186,8 +186,8 @@
           },
           {
             "name": [
-              "Lily Pad 3",
-              "Lily Pad III"
+              "Lotus 3",
+              "Lotus III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -210,8 +210,8 @@
           },
           {
             "name": [
-              "Lily Pad 3",
-              "Lily Pad III"
+              "Lotus 3",
+              "Lotus III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -234,8 +234,8 @@
           },
           {
             "name": [
-              "Lily Pad 4",
-              "Lily Pad IV"
+              "Lotus 4",
+              "Lotus IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -258,8 +258,8 @@
           },
           {
             "name": [
-              "Lily Pad 4",
-              "Lily Pad IV"
+              "Lotus 4",
+              "Lotus IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -282,8 +282,8 @@
           },
           {
             "name": [
-              "Lily Pad 4",
-              "Lily Pad IV"
+              "Lotus 4",
+              "Lotus IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -306,8 +306,8 @@
           },
           {
             "name": [
-              "Lily Pad 5",
-              "Lily Pad V"
+              "Lotus 5",
+              "Lotus V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -330,8 +330,8 @@
           },
           {
             "name": [
-              "Lily Pad 5",
-              "Lily Pad V"
+              "Lotus 5",
+              "Lotus V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -354,8 +354,8 @@
           },
           {
             "name": [
-              "Lily Pad 5",
-              "Lily Pad V"
+              "Lotus 5",
+              "Lotus V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -378,8 +378,8 @@
           },
           {
             "name": [
-              "Lily Pad 6",
-              "Lily Pad VI"
+              "Lotus 6",
+              "Lotus VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -402,8 +402,8 @@
           },
           {
             "name": [
-              "Lily Pad 6",
-              "Lily Pad VI"
+              "Lotus 6",
+              "Lotus VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -426,8 +426,8 @@
           },
           {
             "name": [
-              "Lily Pad 6",
-              "Lily Pad VI"
+              "Lotus 6",
+              "Lotus VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -450,8 +450,8 @@
           },
           {
             "name": [
-              "Lily Pad 7",
-              "Lily Pad VII"
+              "Lotus 7",
+              "Lotus VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -474,8 +474,8 @@
           },
           {
             "name": [
-              "Lily Pad 7",
-              "Lily Pad VII"
+              "Lotus 7",
+              "Lotus VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -498,8 +498,8 @@
           },
           {
             "name": [
-              "Lily Pad 7",
-              "Lily Pad VII"
+              "Lotus 7",
+              "Lotus VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -522,8 +522,8 @@
           },
           {
             "name": [
-              "Lily Pad 8",
-              "Lily Pad VIII"
+              "Lotus 8",
+              "Lotus VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -546,8 +546,8 @@
           },
           {
             "name": [
-              "Lily Pad 8",
-              "Lily Pad VIII"
+              "Lotus 8",
+              "Lotus VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -570,8 +570,8 @@
           },
           {
             "name": [
-              "Lily Pad 8",
-              "Lily Pad VIII"
+              "Lotus 8",
+              "Lotus VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -594,8 +594,8 @@
           },
           {
             "name": [
-              "Lily Pad 9",
-              "Lily Pad IX"
+              "Lotus 9",
+              "Lotus IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -618,8 +618,8 @@
           },
           {
             "name": [
-              "Lily Pad 9",
-              "Lily Pad IX"
+              "Lotus 9",
+              "Lotus IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -642,8 +642,8 @@
           },
           {
             "name": [
-              "Lily Pad 9",
-              "Lily Pad IX"
+              "Lotus 9",
+              "Lotus IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -666,8 +666,8 @@
           },
           {
             "name": [
-              "Lily Pad 10",
-              "Lily Pad X"
+              "Lotus 10",
+              "Lotus X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -690,8 +690,8 @@
           },
           {
             "name": [
-              "Lily Pad 10",
-              "Lily Pad X"
+              "Lotus 10",
+              "Lotus X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -714,8 +714,8 @@
           },
           {
             "name": [
-              "Lily Pad 10",
-              "Lily Pad X"
+              "Lotus 10",
+              "Lotus X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -738,8 +738,8 @@
           },
           {
             "name": [
-              "Lily Pad 11",
-              "Lily Pad XI"
+              "Lotus 11",
+              "Lotus XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -762,8 +762,8 @@
           },
           {
             "name": [
-              "Lily Pad 11",
-              "Lily Pad XI"
+              "Lotus 11",
+              "Lotus XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -786,8 +786,8 @@
           },
           {
             "name": [
-              "Lily Pad 11",
-              "Lily Pad XI"
+              "Lotus 11",
+              "Lotus XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"

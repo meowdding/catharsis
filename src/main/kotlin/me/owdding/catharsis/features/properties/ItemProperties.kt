@@ -21,10 +21,11 @@ object ItemProperties : CatharsisLogger by Catharsis.featureLogger() {
         register(AllConditionalItemProperty.ID, AllConditionalItemProperty.CODEC)
         register(InAreaProperty.ID, InAreaProperty.CODEC)
         register(DataTypeProperties.ID.withPrefix("is_").withSuffix("_present"), DataTypeProperties.DataTypePresentItemProperty.CODEC)
-        register(DataTypeProperties.ID.withPrefix("has"), DataTypeProperties.DataTypePresentItemProperty.CODEC.let { MapCodec.of(it, it) { "HasDataType" } })
+        register(DataTypeProperties.ID.withPrefix("has_"), DataTypeProperties.DataTypePresentItemProperty.CODEC.let { MapCodec.of(it, it) { "HasDataType" } })
         register(GemstoneProperty.ID, GemstoneProperty.CODEC)
         register(HasPetSkinProperty.ID, HasPetSkinProperty.CODEC)
         register(TimespanProperty.ID, TimespanProperty.CODEC)
+        register(EnchantmentProperty.ID, EnchantmentProperty.CODEC)
     }
 
     @Subscription
@@ -38,6 +39,7 @@ object ItemProperties : CatharsisLogger by Catharsis.featureLogger() {
         register(PetItemProperty.ID, PetItemProperty.TYPE)
         register(PetSkinProperty.ID, PetSkinProperty.TYPE)
         register(TextureProperty.ID, TextureProperty.TYPE)
+        register(SelectedFactionProperty.ID, SelectedFactionProperty.TYPE)
     }
 
     @Subscription
@@ -49,5 +51,6 @@ object ItemProperties : CatharsisLogger by Catharsis.featureLogger() {
         register(RuneLevelProperty.ID, RuneLevelProperty.CODEC)
         register(PetCandyUsedProperty.ID, PetCandyUsedProperty.CODEC)
         register(PetExpProperty.ID, PetExpProperty.CODEC)
+        register(FactionReputationProperty.ID, FactionReputationProperty.CODEC)
     }
 }

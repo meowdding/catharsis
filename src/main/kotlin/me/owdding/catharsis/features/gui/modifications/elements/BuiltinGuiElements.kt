@@ -21,8 +21,8 @@ import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 @GenerateCodec
 data class GuiPlayerElement(
     val rotation: Quaternionf?,
-    val x: Int,
-    val y: Int,
+    val x: GuiElementPosition,
+    val y: GuiElementPosition,
     val width: Int,
     val height: Int,
 ) : GuiElement {
@@ -31,8 +31,8 @@ data class GuiPlayerElement(
     override val layer: GuiElementRenderLayer = GuiElementRenderLayer.BACKGROUND
 
     override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
-        val newX = bounds.left() + x
-        val newY = bounds.top() + y
+        val newX = x.calculate(bounds.left(), bounds.width())
+        val newY = y.calculate(bounds.top(), bounds.height())
 
         val player = McPlayer.self ?: return
 
@@ -63,8 +63,8 @@ data class GuiPlayerElement(
 data class GuiSpriteElement(
     val sprite: Identifier,
     override val layer: GuiElementRenderLayer = GuiElementRenderLayer.BACKGROUND,
-    val x: Int?,
-    val y: Int?,
+    val x: GuiElementPosition = GuiElementPosition.START,
+    val y: GuiElementPosition = GuiElementPosition.START,
     val width: Int?,
     val height: Int?,
 ) : GuiElement {
@@ -74,8 +74,8 @@ data class GuiSpriteElement(
     override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         graphics.blitSprite(
             RenderPipelines.GUI_TEXTURED, sprite,
-            bounds.left() + (x ?: 0), bounds.top() + (y ?: 0),
-            width ?: bounds.width(), height ?: bounds.height(),
+            x.calculate(bounds.left(), bounds.width()), y.calculate(bounds.top(), bounds.height()),
+            width ?: bounds.width(), height ?: bounds.height()
         )
     }
 
@@ -86,18 +86,18 @@ data class GuiSpriteElement(
 data class GuiTextElement(
     val text: Component,
     val color: Int = CommonColors.DARK_GRAY,
-    val x: Int,
-    val y: Int,
+    val x: GuiElementPosition,
+    val y: GuiElementPosition,
     val alignment: Float = 0f,
 ) : GuiElement {
 
     override val codec: MapCodec<GuiSpriteElement> = CatharsisCodecs.getMapCodec<GuiSpriteElement>()
 
     override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
-        val x = bounds.left() + this.x
-        val y = bounds.top() + this.y
+        val newX = x.calculate(bounds.left(), bounds.width()) - (McFont.width(text) * alignment).toInt()
+        val newY = y.calculate(bounds.top(), bounds.height())
         //~ if >= 26.1 'drawString(' -> 'text('
-        graphics.text(McFont.self, text, (x - McFont.width(text) * alignment).toInt(), y, this.color)
+        graphics.text(McFont.self, text, newX, newY, this.color)
     }
 
 }

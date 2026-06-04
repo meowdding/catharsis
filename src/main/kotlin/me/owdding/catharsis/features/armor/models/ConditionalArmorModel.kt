@@ -19,7 +19,7 @@ class ConditionalArmorModel(
     private val onFalse: ArmorModel,
 ) : ArmorModel {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): ArmorModelState? {
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): ArmorModelState {
         return if (property.get(stack, level, owner?.asLivingEntity(), seed, ItemDisplayContext.NONE)) {
             onTrue.resolve(stack, level, owner, seed)
         } else {

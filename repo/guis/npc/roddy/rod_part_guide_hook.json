@@ -1,0 +1,16 @@
+{
+  "target": {
+    "title": "Hook",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:npc/roddy/rod_part_guide_hook/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "ථ Hooks"
+      }
+    }
+  ]
+}

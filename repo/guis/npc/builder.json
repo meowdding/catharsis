@@ -1,0 +1,40 @@
+{
+  "target": {
+    "title": "Builder",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:npc/builder/woodworking",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Woodworking"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/builder/rocks_bricks",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Rocks & Bricks"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/builder/green_thumb",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Green Thumb"
+      }
+    },
+    {
+      "id": "skyblock_gui:npc/builder/variety",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Variety"
+      }
+    }
+  ]
+}

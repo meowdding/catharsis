@@ -1,0 +1,800 @@
+{
+  "target": {
+    "title": "Lotus Collection",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 18,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 1",
+              "Lotus I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 18,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 1",
+              "Lotus I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 18,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 1",
+              "Lotus I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 19,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 2",
+              "Lotus II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 19,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 2",
+              "Lotus II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 19,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 2",
+              "Lotus II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 20,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 3",
+              "Lotus III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 20,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 3",
+              "Lotus III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 20,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 3",
+              "Lotus III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 21,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 4",
+              "Lotus IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 21,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 4",
+              "Lotus IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 21,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 4",
+              "Lotus IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 22,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 5",
+              "Lotus V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 22,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 5",
+              "Lotus V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 22,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 5",
+              "Lotus V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 23,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 6",
+              "Lotus VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 23,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 6",
+              "Lotus VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 23,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 6",
+              "Lotus VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 7",
+              "Lotus VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 7",
+              "Lotus VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 7",
+              "Lotus VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 25,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 8",
+              "Lotus VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 25,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 8",
+              "Lotus VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 25,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 8",
+              "Lotus VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 26,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 9",
+              "Lotus IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 26,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 9",
+              "Lotus IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 26,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 9",
+              "Lotus IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 27,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 10",
+              "Lotus X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 27,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 10",
+              "Lotus X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 27,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 10",
+              "Lotus X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 28,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 11",
+              "Lotus XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 28,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 11",
+              "Lotus XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 28,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lotus 11",
+              "Lotus XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

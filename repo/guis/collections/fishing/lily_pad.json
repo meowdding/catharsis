@@ -651,6 +651,150 @@
         ],
         "type": "catharsis:all"
       }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 27,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lily Pad 10",
+              "Lily Pad X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 27,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lily Pad 10",
+              "Lily Pad X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 27,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lily Pad 10",
+              "Lily Pad X"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 28,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lily Pad 11",
+              "Lily Pad XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 28,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lily Pad 11",
+              "Lily Pad XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 28,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Lily Pad 11",
+              "Lily Pad XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
     }
   ]
 }

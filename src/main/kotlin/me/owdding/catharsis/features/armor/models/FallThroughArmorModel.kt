@@ -13,7 +13,7 @@ object FallThroughArmorModel : ArmorModel, ArmorModel.Unbaked {
         level: ClientLevel?,
         owner: ItemOwner?,
         seed: Int,
-    ): ArmorModelState? = null
+    ): ArmorModelState = ArmorModelState.Fallthrough
 
     override val codec: MapCodec<out ArmorModel.Unbaked> = MapCodec.unit(this)
     override fun bake(swapper: RegistryContextSwapper?, resources: TypedResourceManager): ArmorModel = this

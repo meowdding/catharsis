@@ -37,11 +37,11 @@ public abstract class LivingEntityRendererMixin<S extends LivingEntityRenderStat
     private void catharsis$swapOutModel(S renderState, PoseStack poseStack, SubmitNodeCollector nodeCollector, CameraRenderState cameraRenderState, Operation<Void> original) {
         M originalModel = this.model;
 
-        var customModel = renderState.catharsis$getCustomEntityModel();
+        var customVariant = renderState.catharsis$getCustomEntityModelVariant();
 
-        if (customModel != null && customModel.getModel() != null && model instanceof EntityModel<? super S> entityModel) {
+        if (customVariant != null && customVariant.getModel() != null && model instanceof EntityModel<? super S> entityModel) {
             //noinspection unchecked
-            this.model = (M) customModel.replaceModel(entityModel);
+            this.model = (M) customVariant.replaceModel(entityModel);
         }
 
         original.call(renderState, poseStack, nodeCollector, cameraRenderState);
@@ -55,10 +55,10 @@ public abstract class LivingEntityRendererMixin<S extends LivingEntityRenderStat
         index = 3
     )
     private RenderType catharsis$modifyEntityTexture(RenderType renderType, @Local(argsOnly = true) S renderState) {
-        var customModel = renderState.catharsis$getCustomEntityModel();
+        var customVariant = renderState.catharsis$getCustomEntityModelVariant();
 
-        if (customModel != null) {
-            return catharsis$createEntityTextureRenderType(renderState, customModel);
+        if (customVariant != null) {
+            return catharsis$createEntityTextureRenderType(renderState, customVariant);
         }
 
         return renderType;
@@ -77,17 +77,16 @@ public abstract class LivingEntityRendererMixin<S extends LivingEntityRenderStat
         float yRot,
         float xRot
     ) {
-        var customModel = entityRenderState.catharsis$getCustomEntityModel();
-
-        return customModel == null;
+        var customVariant = entityRenderState.catharsis$getCustomEntityModelVariant();
+        return customVariant == null;
     }
 
     @Unique
-    private RenderType catharsis$createEntityTextureRenderType(S renderState, CustomEntityModel customEntityModel) {
+    private RenderType catharsis$createEntityTextureRenderType(S renderState, CustomEntityModel.Variant customVariant) {
         boolean bodyVisible = isBodyVisible(renderState);
         boolean spectatorVisible = !bodyVisible && !renderState.isInvisibleToPlayer;
         boolean isArmorStandMarker = renderState instanceof ArmorStandRenderState armorStandRenderState && armorStandRenderState.isMarker;
-        var texture = customEntityModel.getTexture();
+        var texture = customVariant.getTexture();
 
         if (isArmorStandMarker) {
             if (spectatorVisible) {
@@ -103,7 +102,7 @@ public abstract class LivingEntityRendererMixin<S extends LivingEntityRenderStat
         }
 
         if (bodyVisible) {
-            if (customEntityModel.isTranslucent()) {
+            if (customVariant.isTranslucent()) {
                 return RenderTypes.entityTranslucent(texture, false);
             }
             return model.renderType(texture);

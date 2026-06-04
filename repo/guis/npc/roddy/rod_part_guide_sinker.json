@@ -1,0 +1,16 @@
+{
+  "target": {
+    "title": "Sinker",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:npc/roddy/rod_part_guide_sinker/icon",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "࿉ Sinkers"
+      }
+    }
+  ]
+}

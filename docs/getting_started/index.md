@@ -1,9 +1,6 @@
 ---
 title: Getting Started
 lang: en-US
-next: # we need to hardcode these bc the "next page" button is broken on index pages
-    text: Skyblock Textures
-    link: /getting_started/skyblock_textures
 ---
 
 # Getting Started

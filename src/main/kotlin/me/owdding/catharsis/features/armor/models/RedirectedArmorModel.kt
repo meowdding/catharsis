@@ -15,7 +15,7 @@ class RedirectedArmorModel(
     private val model: ArmorModel,
 ) : ArmorModel {
 
-    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): ArmorModelState? {
+    override fun resolve(stack: ItemStack, level: ClientLevel?, owner: ItemOwner?, seed: Int): ArmorModelState {
         val newStack = owner?.asLivingEntity()?.getItemBySlot(this.slot) ?: ItemStack.EMPTY
         return this.model.resolve(newStack, level, owner, seed)
     }

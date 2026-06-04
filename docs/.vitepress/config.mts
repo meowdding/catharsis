@@ -1,97 +1,142 @@
 import {defineConfig} from 'vitepress'
+import vuetify from 'vite-plugin-vuetify'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "Catharsis",
     description: "Catharsis Documentation",
     base: "/",
+
+    head: [['link', {rel: 'icon', href: '/favicon.png'}]],
+
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             {text: 'Home', link: '/'},
         ],
 
+        search: {provider: 'local'},
 
         sidebar: [
             {
-                text: "Getting started",
-                link: "/getting_started/index",
+                text: "Introduction",
+                collapsed: false,
                 items: [
+                    {text: "Getting Started", link: "/getting_started/index"},
                     {text: "SkyBlock Textures", link: "/getting_started/skyblock_textures"},
+                    {text: "Example Pack", link: "/getting_started/example_pack"}
                 ]
             },
             {
-                text: "Item Models",
-                link: "/item_models/index",
+                text: "Pack Setup",
+                collapsed: false,
                 items: [
-                    {text: "Select properties", link: "/item_models/select_properties"},
-                    {text: "Range properties", link: "/item_models/range_properties"},
-                    {text: "Conditional properties", link: "/item_models/conditional_properties"},
+                    {text: "Catharsis Pack Metadata", link: "/pack_metadata/index"},
+                    {text: "Configuration Options", link: "/pack_metadata/config"},
+                    {text: "Fabric Overlays", link: "/pack_metadata/overlays"}
                 ]
             },
             {
-                text: "Armor Models",
-                link: "/armor_models/index",
-            },
-            {
-                text: "Gui Modifications",
+                text: "Models & Visuals",
+                collapsed: false,
                 items: [
-                    {text: "Gui Definitions", link: "/guis/definitions"},
-                    {text: "Slot Definitions", link: "/guis/slots"},
+                    {
+                        text: "Item Models",
+                        collapsed: false,
+                        items: [
+                            {text: "Overview", link: "/models_visuals/item_models/index"},
+                            {text: "Select Properties", link: "/models_visuals/item_models/select_properties"},
+                            {text: "Range Properties", link: "/models_visuals/item_models/range_properties"},
+                            {text: "Conditional Properties", link: "/models_visuals/item_models/conditional_properties"},
+                        ]
+                    },
+                    {text: "Armor Models", link: "/models_visuals/armor_models"},
+                    {
+                        text: "Block Replacements",
+                        collapsed: false,
+                        items: [
+                            {text: "Overview", link: "/models_visuals/block_replacements/index"},
+                            {text: "Conditions", link: "/models_visuals/block_replacements/conditions"},
+                            {text: "Virtual Block States", link: "/models_visuals/block_replacements/virtual_block_states"},
+                            {text: "Areas", link: "/models_visuals/block_replacements/areas"},
+                        ]
+                    },
+                    {text: "Entity Overrides", link: "/models_visuals/entity_overrides"},
+                    {text: "Bedrock Geometry", link: "/models_visuals/bedrock_geometry"},
                 ]
             },
             {
-                text: "Block replacements",
-                link: "/block_replacements/",
+                text: "UI & Text",
+                collapsed: false,
                 items: [
-                    {text: "Conditions", link: "/block_replacements/conditions"},
-                    {text: "Virtual Block States", link: "/block_replacements/virtual_block_states"},
-                    {text: "Area", link: "/block_replacements/areas"},
+                    {
+                        text: "GUI Modifications",
+                        collapsed: false,
+                        items: [
+                            {text: "GUI Definitions", link: "/ui_text/guis/definitions"},
+                            {text: "Slot Definitions", link: "/ui_text/guis/slots"},
+                            {text: "GUI Modifiers", link: "/ui_text/guis/modifiers"},
+                        ]
+                   },
+                    {text: "Text Replacements", link: "/ui_text/text_replacements"},
+                    {text: "Tooltip Backgrounds", link: "/ui_text/tooltip_background"},
                 ]
             },
             {
-                "text": "Entities",
-                "items": [
-                    {"text": "Entity Overrides", "link": "/entity_overrides/index"},
+                text: "Mod Compatibility",
+                collapsed: false,
+                items: [
+                    {text: "Overview", link: "/mod_compatibility/index"},
+                    {text: "Imc", link: "/mod_compatibility/imc"}
                 ]
-            },
-            {
-                "text": "Text Replacements",
-                "items": [
-                    {text: "Overview", "link": "/text_replacements/index"}        ]
             },
             {
                 text: "Miscellaneous",
+                collapsed: false,
                 items: [
-                    {text: "Pack Metadata", link: "/miscellaneous/pack_metadata"},
                     {text: "Data Types", link: "/miscellaneous/data_types"},
-                    {text: "Timespan", link: "/miscellaneous/timespans"},
-                    {text: "Tooltip Background", link: "/miscellaneous/tooltip_background"},
-                    {text: ".cats file format", link: "/miscellaneous/cats_file_format"},
+                    {text: "Timespans", link: "/miscellaneous/timespans"},
+                    {text: ".cats File Format", link: "/miscellaneous/cats_file_format"},
+                    {text: "Miscellaneous Items", link: "/miscellaneous/misc_items"}
                 ]
             },
             {
-                "text": "Dev Tools",
-                "link": "/dev_tools/index",
-                "items": [
-                    {"text": "Commands", "link": "/dev_tools/commands"},
-                    {"text": "Area selection", "link": "/dev_tools/area_selection"},
+                text: "Developer Tools",
+                collapsed: false,
+                items: [
+                    {text: "Overview", link: "/dev_tools/index"},
+                    {text: "Commands", link: "/dev_tools/commands"},
+                    {text: "Area Selection", link: "/dev_tools/area_selection"},
                 ]
-            }
+           }
         ],
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/meowdding/catharsis'}
+            {icon: 'github', link: 'https://github.com/meowdding/catharsis'},
+            {icon: 'discord', link: 'https://meowdd.ing/discord'},
+            {icon: 'matrix', link: 'https://matrix.to/#/#meowdding:mona.cat'},
         ],
 
-        head: [['link', { rel: 'icon', href: '/favicon.png' }]],
-
         footer: {
-            message: 'Tree view icons from the <a href="https://minecraft.wiki" target="_blank">Minecraft.wiki</a>',
+            message: 'Tree view icons from the <a href="https://minecraft.wiki" target="_blank">Minecraft.wiki</a>' +
+                '<br/>Not an official Minecraft product. Not approved by or affiliated with Mojang or Microsoft.' +
+                '<br/>Not approved by or affiliated with Hypixel.',
         },
 
         editLink: {
-            pattern: 'https://github.com/meowdding/catharsis/edit/main/docs/:path'
+            pattern: 'https://github.com/meowdding/catharsis/tree/development/docs/:path'
+        },
+
+        lastUpdated: {
+            text: 'Last Updated'
+        },
+    },
+    vite: {
+        plugins: [
+            vuetify({ autoImport: true })
+        ],
+        ssr: {
+            noExternal: ['vuetify']
         }
     }
 })

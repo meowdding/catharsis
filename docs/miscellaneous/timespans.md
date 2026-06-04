@@ -4,7 +4,7 @@ lang: en-US
 ---
 
 
-# Timespans
+# <Environment/> Timespans
 
 Timespans can be used to change things based on the time of day.
 
@@ -17,6 +17,12 @@ The definition follows the following scheme
 - <TypeIcon/> Additional fields depending on the value of type, see the respective timespan type documentation for more details.
 
 </TreeView>
+
+::: details Included Timespans
+
+<RepoTimespans />
+
+:::
 
 ## Supported Types
 
@@ -38,7 +44,3 @@ A simple timespan that only matches nighttime.
 - <TypeIcon type="int" /> **end**: The ending point of the timespan in ticks, relative to the day.
 
 </TreeView>
-
-## Included Timespans
-
-<RepoTimespans />

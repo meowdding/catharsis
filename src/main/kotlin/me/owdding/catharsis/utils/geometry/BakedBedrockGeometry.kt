@@ -40,6 +40,7 @@ data class BakedBedrockBone(
 ) {
 
     var offset: Vector3f = Vector3f()
+    var scale: Vector3f = Vector3f(1f, 1f, 1f)
 }
 
 data class BakedBedrockGeometry(

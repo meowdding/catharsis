@@ -813,13 +813,13 @@
       }
     },
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/icon",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/icon",
       "target": {
         "type": "all",
         "conditions": [
           {
             "type": "catharsis:name",
-            "name": "♔ Trophy Fish Chance.+"
+            "name": "♔ Trophy Chance.+"
           },
           {
             "type": "item",

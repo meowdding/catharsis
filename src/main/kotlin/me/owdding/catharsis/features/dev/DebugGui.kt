@@ -8,6 +8,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
 import net.minecraft.network.chat.Component
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.render.RenderScreenForegroundEvent
+import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.platform.drawFilledBox
 import tech.thatgravyboat.skyblockapi.platform.drawString
 import tech.thatgravyboat.skyblockapi.utils.extentions.getHoveredSlot
@@ -20,15 +21,16 @@ import tech.thatgravyboat.skyblockapi.utils.text.TextColor
 object DebugGui {
 
     private val debugGui by debugToggle("gui", "Show debug information for GUI definitions")
+    private val debugMousePos by debugToggle("mouse_pos", "Shows your mouse x,y in the current container")
     private val debugSlots by debugSelect("slots", "Show missing slot definitions in GUIs", SlotMode.NONE, SlotMode.entries)
 
     @Subscription
     fun onScreenRender(event: RenderScreenForegroundEvent) {
         val container = event.screen as? AbstractContainerScreen<*> ?: return
+
+        val lines = mutableListOf<Component>()
+
         if (debugGui) {
-
-            val lines = mutableListOf<Component>()
-
             val guis = GuiDefinitions.getGuis()
             val slot = container.getHoveredSlot()?.let { GuiDefinitions.getSlot(it.index) }
 
@@ -39,11 +41,27 @@ object DebugGui {
             guis.forEachIndexed { index, gui ->
                 lines.add(Text.of(" - $gui", if (index == 0) TextColor.YELLOW else TextColor.WHITE))
             }
+        }
 
-            val height = lines.size * 10
-            val startY = (event.screen.height / 2) - (height / 2)
+        if (debugMousePos) {
+            val (x, y) = McClient.mouse
+            val relativeX = (x.toInt() - container.left)
+            val relativeY = (y.toInt() - container.top)
+
+            if (lines.isNotEmpty()) lines.add(Text.of())
+
+            lines.add(Text.of("Mouse Tracking:", TextColor.AQUA))
+            lines.add(Text.of(" - Absolute: ${x.toInt()}, ${y.toInt()}"))
+            lines.add(Text.of(" - Relative: $relativeX, $relativeY"))
+        }
+
+        if (lines.isNotEmpty()) {
+            val lineSpacing = 10
+            val totalHeight = lines.size * lineSpacing
+            val startY = (event.screen.height / 2) - (totalHeight / 2)
+
             lines.forEachIndexed { index, line ->
-                event.graphics.drawString(line, 5, startY + index * 10)
+                event.graphics.drawString(line, 5, startY + index * lineSpacing)
             }
         }
 

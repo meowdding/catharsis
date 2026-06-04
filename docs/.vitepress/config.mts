@@ -111,7 +111,9 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/meowdding/catharsis'}
+            {icon: 'github', link: 'https://github.com/meowdding/catharsis'},
+            {icon: 'discord', link: 'https://meowdd.ing/discord'},
+            {icon: 'matrix', link: 'https://matrix.to/#/#meowdding:mona.cat'},
         ],
 
         footer: {

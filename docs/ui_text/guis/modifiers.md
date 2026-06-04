@@ -132,8 +132,8 @@ Render a button on the screen.
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>GUI widget</b> object</span>
 
-- <TypeIcon type="string"/> **normal**: The Identifier of the button to render.
-- <TypeIcon type="string"/> **hovered**: The Identifier of the button to render when hovered.
+- <TypeIcon type="string"/> **normal**: The Identifier of the texture to render.
+- <TypeIcon type="string"/> **hovered**: The Identifier of the texture to render when the button is hovered.
 - <TypeIcon type="object"/> **interaction**: The interaction when clicked, view [here](#gui-widget-interaction).
 - <TypeIcon type="object"/> **x**: (Optional) The x coordinate & alignment of the button. Defaults to `0, START`. **Can only be one of the entries below.**
     - <TypeIcon type="int"/> The x coordinate based from the `START`.

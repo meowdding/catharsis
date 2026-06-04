@@ -56,7 +56,6 @@ private fun getSlotTooltip(slotIndex: Int): List<Component>? {
     if (itemStack.isEmpty) return null
     val player = McPlayer.self ?: return null
 
-    //~ if >= 26.1 'TooltipContext.of(' -> 'Item.TooltipContext.of('
     return itemStack.getTooltipLines(Item.TooltipContext.of(player.level()), player, TooltipFlag.Default.NORMAL)
 }
 

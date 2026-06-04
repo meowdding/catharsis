@@ -120,4 +120,24 @@ public abstract class AbstractContainerScreenElementsMixin<T extends AbstractCon
             this.catharsis$bounds.updateOrGet(this.leftPos, this.topPos, this.imageWidth, this.imageHeight)
         );
     }
+
+    @Inject(
+        //~ if >= 26.1 'renderTooltip' -> 'extractTooltip'
+        method = "extractTooltip",
+        at = @At("HEAD"),
+        cancellable = true
+    )
+    private void catharsis$extractWidgetTooltips(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, CallbackInfo ci) {
+        var modifier = GuiModifiers.getActiveModifier();
+        if (modifier == null || this.catharsis$bounds == null) return;
+
+        boolean renderedTooltip = modifier.renderTooltips(
+            guiGraphics, mouseX, mouseY,
+            this.catharsis$bounds.updateOrGet(this.leftPos, this.topPos, this.imageWidth, this.imageHeight)
+        );
+
+        if (renderedTooltip) {
+            ci.cancel();
+        }
+    }
 }

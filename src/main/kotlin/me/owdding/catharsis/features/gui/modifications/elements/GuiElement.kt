@@ -9,6 +9,7 @@ import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.navigation.ScreenRectangle
+import net.minecraft.network.chat.Component
 
 enum class GuiElementRenderLayer {
     BACKGROUND,
@@ -64,8 +65,10 @@ interface GuiElement {
 interface GuiWidgetElement : GuiElement {
 
     val interaction: GuiWidgetInteraction
+    val tooltip: GuiWidgetTooltip?
     override val codec: MapCodec<out GuiWidgetElement>
 
     fun isHovered(mouseX: Int, mouseY: Int, bounds: ScreenRectangle): Boolean
     fun onClick(button: Int) = interaction.click(button)
+    fun getTooltip(): List<Component>? = tooltip?.getTooltip(this)
 }

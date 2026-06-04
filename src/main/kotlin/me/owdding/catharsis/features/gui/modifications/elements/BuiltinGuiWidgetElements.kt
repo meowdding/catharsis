@@ -15,6 +15,7 @@ data class GuiButtonElement(
     val hovered: Identifier,
 
     override val interaction: GuiWidgetInteraction,
+    override val tooltip: GuiWidgetTooltip?,
 
     val x: GuiElementPosition,
     val y: GuiElementPosition,

@@ -16,6 +16,7 @@ import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.resources.Identifier
 import org.joml.Vector2i
+import tech.thatgravyboat.skyblockapi.helpers.McFont
 
 @GenerateCodec
 data class GuiModifier(
@@ -52,6 +53,19 @@ data class GuiModifier(
                     element.onClick(button)
                 }
                 return true
+            }
+        }
+        return false
+    }
+
+    fun renderTooltips(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, bounds: ScreenRectangle): Boolean {
+        for (widget in widgets) {
+            if (widget.isHovered(mouseX, mouseY, bounds)) {
+                val tooltip = widget.getTooltip()
+                if (!tooltip.isNullOrEmpty()) {
+                    graphics.setComponentTooltipForNextFrame(McFont.self, tooltip, mouseX, mouseY)
+                    return true
+                }
             }
         }
         return false

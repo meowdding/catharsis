@@ -76,7 +76,7 @@ Render the Player itself on the screen.
     - <TypeIcon type="object"/> Coordinate & Alignment object.
         - <TypeIcon type="int"/> **offset**: The offset from the screen bounds (main container size).
         - <TypeIcon type="string"/> **alignment**: The alignment of the player, can be `START`, `CENTER` or `END`.
-<TypeIcon type="string"/> **rotation**: (Optional) The players rotation, will follow the mouse if undefined. **Can only be one of the entries below.**
+- <TypeIcon type="string"/> **rotation**: (Optional) The players rotation, will follow the mouse if undefined. **Can only be one of the entries below.**
     - <TypeIcon type="array"/> A list of 4 floats: first, second, and the third component of the imaginary part, and the real part.
     - <TypeIcon type="object"/> An AxisAngle definition.
         - <TypeIcon type="float"/> **angle**: The angle in radians.
@@ -145,6 +145,7 @@ Render a button on the screen.
 - <TypeIcon type="string"/> **normal**: The Identifier of the texture to render.
 - <TypeIcon type="string"/> **hovered**: The Identifier of the texture to render when the button is hovered.
 - <TypeIcon type="object"/> **interaction**: The interaction when clicked, view [here](#gui-widget-interaction).
+- <TypeIcon type="object"/> **tooltip**: The tooltip when hovered, view [here](#gui-widget-tooltip).
 - <TypeIcon type="object"/> **x**: The x coordinate & alignment of the button. **Can only be one of the entries below.**
     - <TypeIcon type="int"/> The x coordinate based from the `START`.
     - <TypeIcon type="object"/> Coordinate & Alignment object.
@@ -199,5 +200,43 @@ This is currently disabled due to security concerns, please join the Discord to 
 
 - <TypeIcon type="string"/> **type**: `catharsis:command`
 - <TypeIcon type="string"/> **command**: The command to send.
+
+</TreeView>
+
+## GUI Widget Tooltip
+
+### **Text** (`catharsis:text`)
+
+Renders a custom defined text.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <bold>widget tooltip</bold> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:text`
+- <TypeIcon type="object"/><TypeIcon type="array"/> **text**: A list of or a single [component in JSON format.](https://minecraft.wiki/w/Text_component_format)
+
+</TreeView>
+
+### **Slot Index** (`catharsis:slot`)
+
+Steals the tooltip from an existing slot.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <bold>widget tooltip</bold> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:slot`
+- <TypeIcon type="int"/> **slot**: The slot to steal the tooltip from.
+
+</TreeView>
+
+### **Widget Interaction** (`catharsis:interaction`)
+
+Steals the tooltip from the defined widget interaction.
+Only works if the interaction is [`catharsis:slot`](#slot-clicking-catharsis-slot).
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <bold>widget tooltip</bold> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:interaction`
 
 </TreeView>

@@ -62,6 +62,7 @@ export default defineConfig({
                         ]
                     },
                     {text: "Entity Overrides", link: "/models_visuals/entity_overrides"},
+                    {text: "Bedrock Geometry", link: "/models_visuals/bedrock_geometry"},
                 ]
             },
             {

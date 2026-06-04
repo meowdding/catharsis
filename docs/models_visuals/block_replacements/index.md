@@ -31,6 +31,16 @@ The definition follows the following scheme
 
 </TreeView>
 
+## Block Namespaces
+
+Supports both `minecraft` & custom mods namespaces.
+
+Also supplies a `skyblock` namespace for the following blocks:
+
+| Block ID           | Description                                                      |
+|--------------------|------------------------------------------------------------------|
+| `glowing_mushroom` | The glowing mushroom blocks inside of the Glowing Mushroom Cave. |
+
 ## Supported Types
 
 ### Redirect (`catharsis:redirect`)

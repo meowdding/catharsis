@@ -15,7 +15,7 @@ GUI Modifiers allow Texture Packs to modify containers based on a [GUI Definitio
 - <TypeIcon type="object"/> **target**: [A GUI Definition Target](#gui-definition-target)
 - <TypeIcon type="boolean"/> **overrideLabels**: (Optional) Disables rendering the Container Title, defaults to `false`.
 - <TypeIcon type="boolean"/> **overrideBackground**: (Optional) Disables rendering the Container Background Texture, defaults to `false`.
-- <TypeIcon type="object"/> **bounds**: Determines if you clicked outside the container
+- <TypeIcon type="object"/> **bounds**: (Optional) Determines if you clicked outside the container, uses the default container bounds if not specified.
     - <TypeIcon type="int"/> **width**: The width, should be 100 when using the default size.
     - <TypeIcon type="int"/> **height**: The height, should be 100 when using the default size.
 - <TypeIcon type="object"/> **slots**: (Optional) A map of slots to modify.

@@ -126,6 +126,14 @@ public abstract class PackMixin implements PackMetadataHook {
         return McClient.INSTANCE.getSelf().getResourceManager().listPacks().anyMatch(p -> p.packId().equals(this.getId()));
     }
 
+    /**
+     * Taken from https://github.com/TheMysterys/Server-Pack-Unlocker under Unlicense License
+     */
+    @ModifyReturnValue(method = "isFixedPosition", at = @At("RETURN"))
+    private boolean isFixedPosition(boolean original) {
+        return false;
+    }
+
     @Mixin(Pack.Metadata.class)
     public static class MetadataMixin implements PackMetadataHook {
 

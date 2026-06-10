@@ -26,6 +26,8 @@ Example of a `pack.mcmeta` with a configuration menu and version dependencies.
   - <TypeIcon type="boolean"/> **pack_required_for_config**: (Optional) Whether the pack is required for the config menu to show up, defaults to `false`.
   - <TypeIcon type="boolean"/> **disable_derived_ids**: (Optional) Whether to disable derived SkyBlock IDs, defaults to `false`. 
     Read more [here](/getting_started/skyblock_textures#derived-ids)
+  - <TypeIcon type="string"/><TypeIcon type="object"/> **selected_title**: (Optional) A custom title to use when the Pack is enabled. Can be a string or a text component.
+  - <TypeIcon type="string"/><TypeIcon type="object"/> **selected_description**: (Optional) A custom description to use when the Pack is enabled. Can be a string or a text component.
   - <TypeIcon type="array"/> **config**: (Optional) A list of config elements for the settings menu, see more [here](/pack_metadata/config.md).
 
 - <TypeIcon type="object"/> **fabric:overlays**: (Optional) A system for conditional resource loading.

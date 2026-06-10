@@ -8,7 +8,6 @@ import me.owdding.catharsis.features.pack.config.PackConfigHandler;
 import me.owdding.catharsis.features.pack.config.PackConfigOption;
 import me.owdding.catharsis.features.pack.meta.CatharsisMetadataSection;
 import me.owdding.catharsis.hooks.pack.PackMetadataHook;
-import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.packs.PackLocationInfo;
 import net.minecraft.server.packs.PackType;
@@ -107,7 +106,7 @@ public abstract class PackMixin implements PackMetadataHook {
     @ModifyReturnValue(method = "getTitle", at = @At("RETURN"))
     private Component catharsis$modifyTitle(Component originalTitle) {
         CatharsisMetadataSection meta = this.catharsis$getMetadata();
-        if (meta != null && meta.getSelectedTitle() != null && this.catharsis$isSelected()) {
+        if (meta != null && meta.getSelectedTitle() != null && this.catharsis$isLoaded()) {
             return meta.getSelectedTitle();
         }
         return originalTitle;
@@ -116,15 +115,15 @@ public abstract class PackMixin implements PackMetadataHook {
     @ModifyReturnValue(method = "getDescription", at = @At("RETURN"))
     private Component catharsis$modifyDescription(Component originalDescription) {
         CatharsisMetadataSection meta = this.catharsis$getMetadata();
-        if (meta != null && meta.getSelectedDescription() != null && this.catharsis$isSelected()) {
+        if (meta != null && meta.getSelectedDescription() != null && this.catharsis$isLoaded()) {
             return meta.getSelectedDescription();
         }
         return originalDescription;
     }
 
     @Unique
-    private boolean catharsis$isSelected() {
-        return McClient.INSTANCE.getSelf().getResourcePackRepository().getSelectedIds().contains(this.getId());
+    private boolean catharsis$isLoaded() {
+        return McClient.INSTANCE.getSelf().getResourceManager().listPacks().anyMatch(p -> p.packId().equals(this.getId()));
     }
 
     @Mixin(Pack.Metadata.class)

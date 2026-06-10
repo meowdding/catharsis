@@ -76,7 +76,7 @@ object SkyBlockIdentifierResolver : ResourceManagerReloadListener {
     private fun SkyBlockId.cleanOrNull() = this.cleanId.lowercase().takeUnless { it == UNKNOWN }
 
     private fun resolveItem(itemId: SkyBlockId): Identifier? {
-        val path = itemId.cleanId.lowercase().takeIf { Identifier.isValidPath(it) } ?: return null
+        val path = itemId.cleanId.lowercase().replace(":", ".").takeIf { Identifier.isValidPath(it) } ?: return null
         return Identifier.tryBuild("skyblock", path)
     }
 

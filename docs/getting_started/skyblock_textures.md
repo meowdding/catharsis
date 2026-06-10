@@ -3,9 +3,10 @@ title: SkyBlock Textures
 lang: en-US
 ---
 
-# Replacing SkyBlock Textures
+# <Environment type="hypixel"/> Replacing SkyBlock Textures
 
 To replace a SkyBlock item texture, you need to create a JSON file in the `assets/skyblock/items/` folder with the ID of the SkyBlock item you want to replace.<br>
+ID's containing a `:` have been replaced with `.` to allow for retexturing items like Rose Bushes (`DOUBLE_PLANT:4` -> `double_plant.4.json`)
 
 ::: tip
 Some items like runes, attributes, enchantments, pets, potions get special sub identifiers.

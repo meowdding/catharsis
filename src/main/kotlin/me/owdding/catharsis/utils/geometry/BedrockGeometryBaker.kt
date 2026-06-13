@@ -73,18 +73,18 @@ object BedrockGeometryBaker {
         return BakedBedrockCube(
             pivot,
             rotation,
-            listOf(down, up, north, south, west, east)
+            listOfNotNull(down, up, north, south, west, east)
         )
     }
 
     private fun bakeQuad(
         p1: Vector3f, p2: Vector3f, p3: Vector3f, p4: Vector3f,
         uvs: Map<Direction, UvFace>, mirror: Boolean, direction: Direction, description: BedrockGeometryDescription
-    ): BakedBedrockQuad {
+    ): BakedBedrockQuad? {
         val direction = if (!mirror && direction.axis == Direction.Axis.X) direction.opposite else direction
 
         val uvOffset = if (direction.axisDirection == Direction.AxisDirection.POSITIVE) 1 else 0
-        val uvs = requireNotNull(uvs[direction]) { "UVs for direction $direction are missing." }
+        val uvs = uvs[direction] ?: return null // ignore missing faces
         val v1 = BakedBedrockVertex(p1, bakeUv(uvs, 0 + uvOffset, description))
         val v2 = BakedBedrockVertex(p2, bakeUv(uvs, 1 - uvOffset, description))
         val v3 = BakedBedrockVertex(p3, bakeUv(uvs, 2 + uvOffset, description))

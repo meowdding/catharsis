@@ -1,5 +1,6 @@
 {
   "target": {
+    "type": "catharsis:all",
     "conditions": [
       { "type": "title", "title": ".+ ➜ .+" },
       {
@@ -8,6 +9,16 @@
           {
             "type": "catharsis:slot",
             "index": 30,
+            "condition": {
+              "name": "To .+",
+              "mode": "regex",
+              "line": 0,
+              "type": "catharsis:lore"
+            }
+          },
+          {
+            "type": "catharsis:slot",
+            "index": 31,
             "condition": {
               "name": "To Bazaar",
               "mode": "equals",
@@ -29,16 +40,15 @@
             "type": "catharsis:slot",
             "index": 48,
             "condition": {
-              "name": "To Bazaar",
-              "mode": "equals",
+              "name": "To .+",
+              "mode": "regex",
               "line": 0,
               "type": "catharsis:lore"
             }
           }
         ]
       }
-    ],
-    "type": "catharsis:all"
+    ]
   },
   "layout": [
     {

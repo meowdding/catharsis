@@ -1,35 +1,35 @@
 {
   "target": {
     "type": "title",
-    "title": "Stats ➜ Vitality"
+    "title": "Stats ➜ Overbloom"
   },
   "layout": [
     {
-      "id": "skyblock_gui:stats/combat/vitality/icon",
+      "id": "skyblock_gui:stats/farming/overbloom/icon",
       "target": {
         "type": "all",
         "conditions": [
           {
             "type": "catharsis:name",
-            "name": "♨ Vitality.+"
+            "name": "☀ Overbloom.+"
           },
           {
             "type": "item",
-            "items": "minecraft:glistering_melon_slice"
+            "items": "minecraft:cactus_flower"
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:stats/combat/vitality/flat_bonuses",
+      "id": "skyblock_gui:stats/farming/overbloom/flat_bonuses",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♨ Flat Bonuses"
+        "name": "☀ Flat Bonuses"
       }
     },
     {
-      "id": "skyblock_gui:stats/combat/vitality/arrow",
+      "id": "skyblock_gui:stats/farming/overbloom/arrow",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -37,27 +37,27 @@
       }
     },
     {
-      "id": "skyblock_gui:stats/combat/vitality/additive_buffs",
+      "id": "skyblock_gui:stats/farming/overbloom/additive_buffs",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♨ Additive Buffs"
+        "name": "☀ Additive Buffs"
       }
     },
     {
-      "id": "skyblock_gui:stats/combat/vitality/multiplicative_buffs",
+      "id": "skyblock_gui:stats/farming/overbloom/multiplicative_buffs",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♨ Multiplicative Buffs"
+        "name": "☀ Multiplicative Buffs"
       }
     },
     {
-      "id": "skyblock_gui:stats/combat/vitality/cap",
+      "id": "skyblock_gui:stats/farming/overbloom/cap",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♨ Cap"
+        "name": "☀ Cap"
       }
     }
   ]

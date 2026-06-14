@@ -477,6 +477,22 @@
       }
     },
     {
+      "id": "skyblock_gui:stats/farming/overbloom/icon",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:name",
+            "name": "☀ Overbloom.+"
+          },
+          {
+            "type": "item",
+            "items": "minecraft:cactus_flower"
+          }
+        ]
+      }
+    },
+    {
       "id": "skyblock_gui:stats/farming/farming_fortune/icon",
       "target": {
         "type": "all",

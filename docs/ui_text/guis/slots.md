@@ -46,6 +46,18 @@ Match against a slot by the item it contains.
 
 </TreeView>
 
+#### **Item** (`catharsis:item`) <Version>1.0.0-beta.17</Version>
+
+Match against a slot by the item it contains.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>item</b> slot condition object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:item`
+- <TypeIcon type="array"/> **items**: An array or a singular entry of item IDs to match against the slot's item.
+
+</TreeView>
+
 #### <Environment type="hypixel"/> **ID** (`catharsis:id`)
 
 Match against a slot by its SkyBlock ID.

@@ -43,7 +43,7 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
                 slot.catharsis$setPosition(null);
                 slot.catharsis$setHighlightable(true);
                 slot.catharsis$setHidden(false);
-                return;
+                continue;
             }
             var id = GuiDefinitions.getSlot(slot.index);
             var slotModifier = modifier != null && id != null ? modifier.getSlots().get(id) : null;

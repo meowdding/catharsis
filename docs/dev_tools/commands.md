@@ -35,6 +35,10 @@ Prints the id used to modify the item into chat. Also adds a copy button.
 
 Adds a copy button in chat to copy all the data types ids with their values for the item in your hand in the chat. Hover to view what condition you can match the data type with.
 
+### `/catharsis dev summon <id>`
+
+Summons an entity based on the entity definitions. Does not support a few conditions like Island, sends chat feedback if something fails.
+
 ### `/catharsis dev areas`
 
 #### `/catharsis dev areas toggle <id>`

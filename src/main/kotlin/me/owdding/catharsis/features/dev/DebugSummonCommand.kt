@@ -40,13 +40,13 @@ object DebugSummonCommand {
                 val id = Identifier.tryParse(idString)
 
                 if (id == null) {
-                    Text.of("Invalid identifier: $idString", CatppuccinColors.Mocha.red).sendWithPrefix()
+                    Text.of("Invalid identifier: $idString", CatppuccinColors.Mocha.red).sendWithPrefix("cath-sumon-invalid-id")
                     return@thenCallback
                 }
 
                 val definition = CustomEntityDefinitions.getDefinition(id)
                 if (definition == null) {
-                    Text.of("No entity definition found for $id", CatppuccinColors.Mocha.red).sendWithPrefix()
+                    Text.of("No entity definition found for $id", CatppuccinColors.Mocha.red).sendWithPrefix("cath-summon-unfound-id")
                     return@thenCallback
                 }
 
@@ -63,7 +63,7 @@ object DebugSummonCommand {
                 }
 
                 if (entity == null) {
-                    Text.of("Failed to create entity type ${definition.type}", CatppuccinColors.Mocha.red).sendWithPrefix()
+                    Text.of("Failed to create entity type ${definition.type}", CatppuccinColors.Mocha.red).sendWithPrefix("cath-summon-entity-not-found")
                     return@thenCallback
                 }
 
@@ -77,7 +77,7 @@ object DebugSummonCommand {
 
                 Text.of("Summoned debug entity for ") {
                     append(id.toString(), CatppuccinColors.Mocha.peach)
-                }.sendWithPrefix()
+                }.sendWithPrefix("cath-entity-summoned")
             }
         }
     }
@@ -138,19 +138,20 @@ object DebugSummonCommand {
             }
 
             is PlayerEntityConditions.NpcSkin -> {
-                Text.of("NPC Skin cannot be set on entities without a full profile so this is not implemented.").sendWithPrefix()
+                Text.of("NPC Skin cannot be set on entities without a full profile so this is not implemented.").sendWithPrefix("cath-npc-skin")
             }
 
             is PlayerEntityConditions.PlayerSkin -> {
-                Text.of("Player Skin cannot be set on entities without a full profile so this is not implemented.").sendWithPrefix()
+                Text.of("Player Skin cannot be set on entities without a full profile so this is not implemented.").sendWithPrefix("cath-player-skin")
             }
 
             is IslandEntityCondition -> {
-                Text.of("Island Property cannot be set on entity directly, use \"/sbapi toggle force_island\" instead", CatppuccinColors.Mocha.maroon).sendWithPrefix()
+                Text.of("Island Property cannot be set on entity directly, use \"/sbapi toggle force_island\" instead", CatppuccinColors.Mocha.maroon).sendWithPrefix("cath-island")
             }
 
             is EquipmentEntityCondition -> {
-                Text.of("Too lazy to implement a Item model Condition to ItemStack parser, manually set the item yourself", CatppuccinColors.Mocha.maroon).sendWithPrefix()
+                Text.of("Too lazy to implement a Item model Condition to ItemStack parser, manually set the item yourself", CatppuccinColors.Mocha.maroon)
+                    .sendWithPrefix("cath-stack")
             }
         }
     }

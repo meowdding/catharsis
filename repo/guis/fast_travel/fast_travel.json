@@ -204,6 +204,13 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/lotus_atoll/spawn_unlocked",
+      "target": {
+        "name": "Lotus Atoll(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/jerrys_workshop/spawn_unlocked",
       "target": {
         "name": "Warp to: Jerry\u0027s Workshop",

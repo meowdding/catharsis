@@ -1,7 +1,110 @@
 {
   "target": {
-    "type": "title",
-    "title": ".+ ➜ .+"
+    "type": "catharsis:all",
+    "conditions": [
+      { "type": "title", "title": ".+ ➜ .+" },
+      {
+        "type": "catharsis:any",
+        "conditions": [
+          {
+            "type": "catharsis:all",
+            "conditions": [
+              {
+                "type": "catharsis:slot",
+                "index": 30,
+                "condition": {
+                  "name": "To .+",
+                  "mode": "regex",
+                  "line": 0,
+                  "type": "catharsis:lore"
+                }
+              },
+              {
+                "type": "catharsis:slot",
+                "index": 32,
+                "condition": {
+                  "name": "Manage Orders",
+                  "mode": "equals",
+                  "type": "catharsis:name"
+                }
+              }
+            ]
+          },
+          {
+            "type": "catharsis:all",
+            "conditions": [
+              {
+                "type": "catharsis:slot",
+                "index": 31,
+                "condition": {
+                  "name": "To Bazaar",
+                  "mode": "equals",
+                  "line": 0,
+                  "type": "catharsis:lore"
+                }
+              },
+              {
+                "type": "catharsis:slot",
+                "index": 32,
+                "condition": {
+                  "name": "Manage Orders",
+                  "mode": "equals",
+                  "type": "catharsis:name"
+                }
+              }
+            ]
+          },
+          {
+            "type": "catharsis:all",
+            "conditions": [
+              {
+                "type": "catharsis:slot",
+                "index": 39,
+                "condition": {
+                  "name": "To Bazaar",
+                  "mode": "equals",
+                  "line": 0,
+                  "type": "catharsis:lore"
+                }
+              },
+              {
+                "type": "catharsis:slot",
+                "index": 41,
+                "condition": {
+                  "name": "Manage Orders",
+                  "mode": "equals",
+                  "type": "catharsis:name"
+                }
+              }
+            ]
+          },
+          {
+            "type": "catharsis:all",
+            "conditions": [
+              {
+                "type": "catharsis:slot",
+                "index": 48,
+                "condition": {
+                  "name": "To Bazaar",
+                  "mode": "equals",
+                  "line": 0,
+                  "type": "catharsis:lore"
+                }
+              },
+              {
+                "type": "catharsis:slot",
+                "index": 50,
+                "condition": {
+                  "name": "Manage Orders",
+                  "mode": "equals",
+                  "type": "catharsis:name"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "layout": [
     {

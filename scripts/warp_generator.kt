@@ -145,6 +145,7 @@ fun warps() {
         "garden/spawn" to EqualsTextMatcher("The Garden"),
         "rift/wizard_tower" to RegexTextMatcher("The Rift(?: - Wizard Tower)?"),
         "backwater_bayou/spawn" to RegexTextMatcher("Backwater Bayou(?: - Spawn)?"),
+        "lotus_atoll/spawn" to RegexTextMatcher("Lotus Atoll(?: - Spawn)?"),
         "jerrys_workshop/spawn" to EqualsTextMatcher("Warp to: Jerry's Workshop"),
     )
 

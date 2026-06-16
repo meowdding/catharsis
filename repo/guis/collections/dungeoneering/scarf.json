@@ -1,0 +1,440 @@
+{
+  "target": {
+    "title": "Scarf Collection",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocked/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 19,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 1",
+              "Scarf I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocking/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 19,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 1",
+              "Scarf I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/locked/start",
+      "target": {
+        "conditions": [
+          {
+            "slot": 19,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 1",
+              "Scarf I"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 20,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 2",
+              "Scarf II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 20,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 2",
+              "Scarf II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 20,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 2",
+              "Scarf II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocked/connector_skip",
+      "target": {
+        "conditions": [
+          {
+            "slot": 21,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 3",
+              "Scarf III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocking/connector_skip",
+      "target": {
+        "conditions": [
+          {
+            "slot": 21,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 3",
+              "Scarf III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/locked/connector_skip",
+      "target": {
+        "conditions": [
+          {
+            "slot": 21,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 3",
+              "Scarf III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocked/skip_connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 23,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 4",
+              "Scarf IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocking/skip_connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 23,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 4",
+              "Scarf IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/locked/skip_connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 23,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 4",
+              "Scarf IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 5",
+              "Scarf V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 5",
+              "Scarf V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 5",
+              "Scarf V"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocked/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 25,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 6",
+              "Scarf VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/unlocking/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 25,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 6",
+              "Scarf VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/dungeoneering/locked/end",
+      "target": {
+        "conditions": [
+          {
+            "slot": 25,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Scarf 6",
+              "Scarf VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

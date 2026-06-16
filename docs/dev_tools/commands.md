@@ -16,16 +16,19 @@ Overrides the remote repository branch and saves it for future boots.
 #### `/catharsis repo branch reset`
 Resets the repository branch back to the default branch specified in the mods build info.
 
-### `/catharsis debug`
+### `/catharsis dev toggle <feature> [mode]`
 
-#### <Environment type="hypixel" /> `/catharsis debug gui`
+#### Gui Definition (`catharsis:gui`)
 Toggles an overlay that displays the currently hovered slot ID and all active GUI definitions.
 
-#### <Environment type="hypixel" /> `/catharsis debug slots <NONE|MISSING|PRESENT>`
+#### Gui Slot Definition (`catharsis:slots`) <NONE|MISSING|PRESENT>
 Highlights slots in the current GUI based on the selected mode to help identify which slots have definitions or are missing definitions.
 
-### `/catharsis debug entity`
+### Entity Definition (`catharsis:entity`)
 Adds a text above the head of entities that have an Entity ID attached.
+
+### Mouse Position (`catharsis:mouse_pos`)
+Toggles an overlay that displays the current (relative to the top left of the gui) mouse position.
 
 ### <Environment type="hypixel" /> `/catharsis dev hand_id`
 
@@ -154,3 +157,8 @@ Misc flags
 
 Opens an interactive Regex Tester GUI. 
 This allows you to type raw text component JSON in one pane, type a regex pattern in the other, and see how the pattern matches and highlights the text output on the screen.
+
+### <Environment type="hypixel"/> `/catharsis dev untextured_ids [type]`
+
+Copies a list of SkyBlock Ids all active packs have not retextured to the clipboard.
+Types can be ´ALL´, ´ITEMS´, ´ATTRIBUTES´, ´ENCHANTMENTS´, ´RUNES´, ´PETS´, and ´POTIONS´, or `ALL` if nothing specified.

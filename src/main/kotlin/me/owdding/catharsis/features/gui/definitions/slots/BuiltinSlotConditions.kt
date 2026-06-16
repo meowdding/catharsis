@@ -23,6 +23,7 @@ import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.api.datatype.getData
 import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
 import tech.thatgravyboat.skyblockapi.utils.extentions.cleanName
+import tech.thatgravyboat.skyblockapi.utils.extentions.getItemModel
 import tech.thatgravyboat.skyblockapi.utils.extentions.getRawLore
 import kotlin.math.max
 import kotlin.math.min
@@ -97,6 +98,16 @@ data class SlotItemCondition(
 
     override val codec = CatharsisCodecs.getMapCodec<SlotItemCondition>()
     override fun matches(slots: List<Slot>, slot: Int, stack: ItemStack): Boolean = stack.item in this.items
+}
+
+@GenerateCodec
+data class SlotItemModelCondition(
+    @Compact val items: Set<Item>,
+) : SlotCondition {
+    constructor(vararg item: Item) : this(setOf(*item))
+
+    override val codec = CatharsisCodecs.getMapCodec<SlotItemCondition>()
+    override fun matches(slots: List<Slot>, slot: Int, stack: ItemStack): Boolean = stack.getItemModel() in this.items
 }
 
 @GenerateCodec

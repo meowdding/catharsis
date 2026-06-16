@@ -24,6 +24,8 @@ data class CatharsisMetadataSection(
     val config: List<PackConfigOption> = emptyList(),
     @FieldName("pack_required_for_config") val packRequiredForConfig: Boolean = false,
     @FieldName("disable_derived_ids") val disableDerivedIds: Boolean = false,
+    @FieldName("selected_title") val selectedTitle: Component?,
+    @FieldName("selected_description") val selectedDescription: Component?,
 ) {
 
     val incompatibilities: List<Pair<String, ModContainer?>> = dependencies.mapNotNull { (mod, range) ->

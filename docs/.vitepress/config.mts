@@ -62,6 +62,7 @@ export default defineConfig({
                         ]
                     },
                     {text: "Entity Overrides", link: "/models_visuals/entity_overrides"},
+                    {text: "Bedrock Geometry", link: "/models_visuals/bedrock_geometry"},
                 ]
             },
             {
@@ -74,6 +75,7 @@ export default defineConfig({
                         items: [
                             {text: "GUI Definitions", link: "/ui_text/guis/definitions"},
                             {text: "Slot Definitions", link: "/ui_text/guis/slots"},
+                            {text: "GUI Modifiers", link: "/ui_text/guis/modifiers"},
                         ]
                    },
                     {text: "Text Replacements", link: "/ui_text/text_replacements"},
@@ -110,7 +112,9 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/meowdding/catharsis'}
+            {icon: 'github', link: 'https://github.com/meowdding/catharsis'},
+            {icon: 'discord', link: 'https://meowdd.ing/discord'},
+            {icon: 'matrix', link: 'https://matrix.to/#/#meowdding:mona.cat'},
         ],
 
         footer: {

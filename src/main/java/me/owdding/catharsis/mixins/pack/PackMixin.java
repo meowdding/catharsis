@@ -1,5 +1,6 @@
 package me.owdding.catharsis.mixins.pack;
 
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import me.owdding.catharsis.Catharsis;
@@ -7,6 +8,7 @@ import me.owdding.catharsis.features.pack.config.PackConfigHandler;
 import me.owdding.catharsis.features.pack.config.PackConfigOption;
 import me.owdding.catharsis.features.pack.meta.CatharsisMetadataSection;
 import me.owdding.catharsis.hooks.pack.PackMetadataHook;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.packs.PackLocationInfo;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.metadata.pack.PackFormat;
@@ -17,16 +19,20 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
+import tech.thatgravyboat.skyblockapi.helpers.McClient;
 
 import java.util.List;
 import java.util.Objects;
 
 @Mixin(Pack.class)
-public class PackMixin implements PackMetadataHook {
+public abstract class PackMixin implements PackMetadataHook {
 
     @Shadow
     @Final
     private Pack.Metadata metadata;
+
+    @Shadow
+    public abstract String getId();
 
     @WrapOperation(
         method = "readMetaAndCreate",
@@ -95,6 +101,37 @@ public class PackMixin implements PackMetadataHook {
         } catch (Exception ignored) {
         }
         return null;
+    }
+
+    @ModifyReturnValue(method = "getTitle", at = @At("RETURN"))
+    private Component catharsis$modifyTitle(Component originalTitle) {
+        CatharsisMetadataSection meta = this.catharsis$getMetadata();
+        if (meta != null && meta.getSelectedTitle() != null && this.catharsis$isLoaded()) {
+            return meta.getSelectedTitle();
+        }
+        return originalTitle;
+    }
+
+    @ModifyReturnValue(method = "getDescription", at = @At("RETURN"))
+    private Component catharsis$modifyDescription(Component originalDescription) {
+        CatharsisMetadataSection meta = this.catharsis$getMetadata();
+        if (meta != null && meta.getSelectedDescription() != null && this.catharsis$isLoaded()) {
+            return meta.getSelectedDescription();
+        }
+        return originalDescription;
+    }
+
+    @Unique
+    private boolean catharsis$isLoaded() {
+        return McClient.INSTANCE.getSelf().getResourceManager().listPacks().anyMatch(p -> p.packId().equals(this.getId()));
+    }
+
+    /**
+     * Taken from https://github.com/TheMysterys/Server-Pack-Unlocker under Unlicense License
+     */
+    @ModifyReturnValue(method = "isFixedPosition", at = @At("RETURN"))
+    private boolean isFixedPosition(boolean original) {
+        return false;
     }
 
     @Mixin(Pack.Metadata.class)

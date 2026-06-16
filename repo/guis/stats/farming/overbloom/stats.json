@@ -1,35 +1,35 @@
 {
   "target": {
     "type": "title",
-    "title": "Stats ➜ Trophy Fish Chance"
+    "title": "Stats ➜ Overbloom"
   },
   "layout": [
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/icon",
+      "id": "skyblock_gui:stats/farming/overbloom/icon",
       "target": {
         "type": "all",
         "conditions": [
           {
             "type": "catharsis:name",
-            "name": "♔ Trophy Fish Chance.+"
+            "name": "☀ Overbloom.+"
           },
           {
             "type": "item",
-            "items": "minecraft:player_head"
+            "items": "minecraft:cactus_flower"
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/flat_bonuses",
+      "id": "skyblock_gui:stats/farming/overbloom/flat_bonuses",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♔ Flat Bonuses"
+        "name": "☀ Flat Bonuses"
       }
     },
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/arrow",
+      "id": "skyblock_gui:stats/farming/overbloom/arrow",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -37,27 +37,27 @@
       }
     },
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/additive_buffs",
+      "id": "skyblock_gui:stats/farming/overbloom/additive_buffs",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♔ Additive Buffs"
+        "name": "☀ Additive Buffs"
       }
     },
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/multiplicative_buffs",
+      "id": "skyblock_gui:stats/farming/overbloom/multiplicative_buffs",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♔ Multiplicative Buffs"
+        "name": "☀ Multiplicative Buffs"
       }
     },
     {
-      "id": "skyblock_gui:stats/fishing/trophy_fish_chance/cap",
+      "id": "skyblock_gui:stats/farming/overbloom/cap",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♔ Cap"
+        "name": "☀ Cap"
       }
     }
   ]

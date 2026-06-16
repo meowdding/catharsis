@@ -1,35 +1,35 @@
 {
   "target": {
     "type": "title",
-    "title": "Stats ➜ Mangrove Fortune"
+    "title": "Stats ➜ Trophy Chance"
   },
   "layout": [
     {
-      "id": "skyblock_gui:stats/foraging/mangrove_fortune/icon",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/icon",
       "target": {
         "type": "all",
         "conditions": [
           {
             "type": "catharsis:name",
-            "name": "☘ Mangrove Fortune.+"
+            "name": "♔ Trophy Chance.+"
           },
           {
             "type": "item",
-            "items": "minecraft:paper"
+            "items": "minecraft:player_head"
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:stats/foraging/mangrove_fortune/flat_bonuses",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/flat_bonuses",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Flat Bonuses"
+        "name": "♔ Flat Bonuses"
       }
     },
     {
-      "id": "skyblock_gui:stats/foraging/mangrove_fortune/arrow",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/arrow",
       "target": {
         "type": "name",
         "mode": "equals",
@@ -37,27 +37,27 @@
       }
     },
     {
-      "id": "skyblock_gui:stats/foraging/mangrove_fortune/additive_buffs",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/additive_buffs",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Additive Buffs"
+        "name": "♔ Additive Buffs"
       }
     },
     {
-      "id": "skyblock_gui:stats/foraging/mangrove_fortune/multiplicative_buffs",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/multiplicative_buffs",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Multiplicative Buffs"
+        "name": "♔ Multiplicative Buffs"
       }
     },
     {
-      "id": "skyblock_gui:stats/foraging/mangrove_fortune/cap",
+      "id": "skyblock_gui:stats/fishing/trophy_chance/cap",
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Cap"
+        "name": "♔ Cap"
       }
     }
   ]

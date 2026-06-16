@@ -5,11 +5,11 @@ import org.jetbrains.annotations.Nullable;
 
 public interface EntityRenderStateHook {
 
-    default void catharsis$setCustomEntityModel(@Nullable CustomEntityModel textureLocation) {
+    default void catharsis$setCustomEntityModelVariant(@Nullable CustomEntityModel.Variant variant) {
         throw new UnsupportedOperationException();
     }
-    
-    default @Nullable CustomEntityModel catharsis$getCustomEntityModel() {
+
+    default @Nullable CustomEntityModel.Variant catharsis$getCustomEntityModelVariant() {
         throw new UnsupportedOperationException();
     }
 }

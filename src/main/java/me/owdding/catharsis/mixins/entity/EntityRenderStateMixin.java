@@ -9,15 +9,15 @@ import org.spongepowered.asm.mixin.Unique;
 @Mixin(EntityRenderState.class)
 public class EntityRenderStateMixin implements EntityRenderStateHook {
     @Unique
-    private CustomEntityModel catharsis$customTexture = null;
+    private CustomEntityModel.Variant catharsis$customModelVariant = null;
 
     @Override
-    public void catharsis$setCustomEntityModel(CustomEntityModel textureLocation) {
-        catharsis$customTexture = textureLocation;
+    public void catharsis$setCustomEntityModelVariant(CustomEntityModel.Variant variant) {
+        catharsis$customModelVariant = variant;
     }
 
     @Override
-    public CustomEntityModel catharsis$getCustomEntityModel() {
-        return catharsis$customTexture;
+    public CustomEntityModel.Variant catharsis$getCustomEntityModelVariant() {
+        return catharsis$customModelVariant;
     }
 }

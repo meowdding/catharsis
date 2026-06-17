@@ -12,7 +12,7 @@ plugins {
 }
 rootProject.name = "catharsis"
 
-val versions = listOf("26.1")
+val versions = listOf("26.2", "26.1")
 
 stonecutter {
     create(rootProject) {

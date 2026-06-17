@@ -7,9 +7,15 @@ import me.owdding.catharsis.utils.HsbState
 import me.owdding.catharsis.utils.ui.BaseButtonWidget
 import me.owdding.catharsis.utils.ui.Overlay
 import net.minecraft.client.gui.GuiGraphicsExtractor
+import net.minecraft.client.gui.components.TabButton
 import net.minecraft.client.gui.components.tabs.Tab
 import net.minecraft.client.gui.components.tabs.TabManager
-import net.minecraft.client.gui.components.tabs.TabNavigationBar
+//? >= 26.2 {
+import com.google.common.collect.ImmutableList
+import net.minecraft.client.gui.components.tabs.MenuTabBar
+//?} else {
+/*import net.minecraft.client.gui.components.tabs.TabNavigationBar*/
+//?}
 import net.minecraft.client.gui.layouts.GridLayout
 import net.minecraft.client.gui.narration.NarrationElementOutput
 import net.minecraft.client.gui.navigation.ScreenRectangle
@@ -34,7 +40,40 @@ import kotlin.math.min
 
 private const val TAB_PADDING = 5
 
-class MinSizedTabNavigation(private var _width: Int, manager: TabManager, tabs: List<Tab>) : TabNavigationBar(_width, manager, tabs) {
+//? >= 26.2 {
+class MinSizedTabNavigation(
+    private var _width: Int,
+    manager: TabManager,
+    buttons: ImmutableList<TabButton>,
+    tabs: ImmutableList<Tab>
+) : MenuTabBar(0, 0, _width, 24, manager, buttons, tabs) {
+
+    constructor(width: Int, manager: TabManager, tabs: List<Tab>) : this(
+        width,
+        manager,
+        ImmutableList.copyOf(tabs.map { MenuTabButton(manager, it, 0, 24) }),
+        ImmutableList.copyOf(tabs)
+    )
+
+    override fun arrangeElements(width: Int) {
+        this._width = width
+        super.arrangeElements(width)
+
+        val minTabWidth = this.tabButtons.maxOf { it.message.width + TAB_PADDING * 2 }
+        val tabsWidth = min(max(minTabWidth * this.tabButtons.size, 400), this._width) - 28
+        val tabWidth = Mth.roundToward(tabsWidth / this.tabs.size, 2)
+
+        for (button in this.tabButtons) {
+            button.setWidth(tabWidth)
+        }
+
+        this.layout.arrangeElements()
+        this.layout.x = Mth.roundToward((this._width - tabsWidth) / 2, 2)
+        this.layout.y = 0
+    }
+}
+//?} else {
+/*class MinSizedTabNavigation(private var _width: Int, manager: TabManager, tabs: List<Tab>) : TabNavigationBar(_width, manager, tabs) {
 
     override fun updateWidth(width: Int) {
         this._width = width
@@ -55,6 +94,7 @@ class MinSizedTabNavigation(private var _width: Int, manager: TabManager, tabs: 
         this.layout.y = 0
     }
 }
+*///?}
 
 private const val COLOR_PADDING = 7
 private const val COLOR_SPACING = 3
@@ -82,7 +122,7 @@ class ColorPickerButton(width: Int, height: Int, color: Int, val opaque: Boolean
             this.x + this.width - size - padding,
             this.y + padding,
             size, size,
-            if (this.opaque) ARGB.opaque(this.state.rgba) else this.state.rgba
+            if (this.opaque) ARGB.opaque(this.state.rgba) else this.state.rgba,
         )
 
         graphics.drawSprite(
@@ -114,7 +154,7 @@ class ColorPickerButton(width: Int, height: Int, color: Int, val opaque: Boolean
 
             layout.setPosition(
                 this.button.x + this.button.width - layout.width - COLOR_PADDING,
-                y + COLOR_PADDING
+                y + COLOR_PADDING,
             )
             layout.visitWidgets(this::addRenderableWidget)
 
@@ -122,7 +162,7 @@ class ColorPickerButton(width: Int, height: Int, color: Int, val opaque: Boolean
                 layout.x - COLOR_PADDING,
                 layout.y - COLOR_PADDING,
                 layout.width + COLOR_PADDING * 2,
-                layout.height + COLOR_PADDING * 2
+                layout.height + COLOR_PADDING * 2,
             )
         }
 
@@ -138,7 +178,7 @@ class ColorPickerButton(width: Int, height: Int, color: Int, val opaque: Boolean
             graphics.drawSprite(
                 Catharsis.id("color_background"),
                 bounds.left(), bounds.top(),
-                bounds.width, bounds.height
+                bounds.width, bounds.height,
             )
         }
 
@@ -208,7 +248,7 @@ class SelectButton<T>(width: Int, height: Int) : BaseButtonWidget(0, 0, width, h
         val value: T,
         val selectedText: Component,
         val unselectedText: Component,
-        var selected: Boolean
+        var selected: Boolean,
     )
 
     private class SelectOverlay<T>(private val button: SelectButton<T>) : Overlay() {
@@ -230,7 +270,7 @@ class SelectButton<T>(width: Int, height: Int) : BaseButtonWidget(0, 0, width, h
 
             val height = min(
                 this.button.entries.size * SELECT_BUTTON_HEIGHT + (this.button.entries.size - 1) * SELECT_BUTTON_SPACING + SELECT_BUTTON_PADDING * 2,
-                SELECT_BUTTON_MAX_HEIGHT
+                SELECT_BUTTON_MAX_HEIGHT,
             )
             graphics.drawFilledBox(x, y, button.width, height, -1072689136)
             graphics.drawOutline(x, y, button.width, height, CommonColors.WHITE)

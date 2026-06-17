@@ -1,16 +1,17 @@
 package me.owdding.catharsis.utils.extensions
 
 import com.mojang.blaze3d.vertex.PoseStack
-import com.mojang.blaze3d.vertex.VertexConsumer
 import com.mojang.serialization.MapCodec
 import net.minecraft.client.gui.components.CycleButton
 import net.minecraft.client.gui.components.MultiLineTextWidget
 import net.minecraft.client.gui.components.StringWidget
 import net.minecraft.client.multiplayer.CacheSlot
 import net.minecraft.client.multiplayer.ClientLevel
-import net.minecraft.client.renderer.ShapeRenderer
+import net.minecraft.gizmos.GizmoStyle
+import net.minecraft.gizmos.Gizmos
 import net.minecraft.network.chat.Component
 import net.minecraft.network.chat.Style
+import net.minecraft.util.ARGB
 import net.minecraft.util.RegistryContextSwapper
 import net.minecraft.world.phys.AABB
 import tech.thatgravyboat.skyblockapi.api.events.render.RenderWorldEvent
@@ -80,17 +81,8 @@ fun RenderWorldEvent.renderLineBox(
     red: Float = 1f, green: Float = 1f, blue: Float = 1f, alpha: Float = 1f,
     secondary: Boolean = false,
 ) {
-    val vertexConsumer: VertexConsumer = this.buffer.getBuffer(
-        if (secondary) net.minecraft.client.renderer.rendertype.RenderTypes.SECONDARY_BLOCK_OUTLINE else net.minecraft.client.renderer.rendertype.RenderTypes.lines(),
-    )
-    ShapeRenderer.renderShape(
-        this.poseStack, vertexConsumer,
-        net.minecraft.world.phys.shapes.Shapes.create(
-            box.minX - 0.005, box.minY - 0.005, box.minZ - 0.005,
-            box.maxX + 0.005, box.maxY + 0.005, box.maxZ + 0.005,
-        ),
-        0.0, 0.0, 0.0, net.minecraft.util.ARGB.colorFromFloat(alpha, red, green, blue), 1f,
-    )
+    // TODO: what does secondary mean
+    Gizmos.cuboid(box.inflate(0.005, 0.005, 0.005), GizmoStyle(ARGB.colorFromFloat(alpha, red, green, blue), 1f, -1))
 }
 
 fun StringWidget.withClickHandler(handler: (Style) -> Unit) : StringWidget {

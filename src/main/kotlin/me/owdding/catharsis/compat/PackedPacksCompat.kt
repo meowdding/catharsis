@@ -15,6 +15,7 @@ import net.minecraft.client.gui.components.ImageButton
 import net.minecraft.client.gui.components.WidgetSprites
 import net.minecraft.client.renderer.RenderPipelines
 import net.minecraft.network.chat.Component
+import tech.thatgravyboat.skyblockapi.helpers.McClient
 
 import java.util.Optional
 
@@ -42,7 +43,7 @@ object PackedPacksCompat : PackedPacksInitializer {
                     0, 0, BUTTON_SIZE, BUTTON_SIZE, canEditConfigSprites,
                     { _ ->
                         if (canEdit) {
-                            Minecraft.getInstance().setScreen(PackConfigScreen(event.screenContext().screen(), meta.id, config))
+                            McClient.setScreen(PackConfigScreen(event.screenContext().screen(), meta.id, config))
                         }
                     },
                 ) {

@@ -5,7 +5,6 @@ import com.mojang.brigadier.arguments.ArgumentType
 import com.mojang.brigadier.arguments.IntegerArgumentType
 import com.mojang.brigadier.arguments.StringArgumentType
 import com.mojang.brigadier.context.CommandContext
-import me.owdding.catharsis.utils.ItemUtils
 import me.owdding.catharsis.utils.SkyBlockIdentifierResolver
 import me.owdding.catharsis.utils.extensions.sendSyncWithPrefix
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
@@ -39,6 +38,7 @@ import tech.thatgravyboat.skyblockapi.api.remote.api.SimpleItemAPI
 import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
+import tech.thatgravyboat.skyblockapi.impl.ColoredBlocks
 import tech.thatgravyboat.skyblockapi.utils.builders.ItemBuilder
 import tech.thatgravyboat.skyblockapi.utils.extentions.cleanName
 import tech.thatgravyboat.skyblockapi.utils.extentions.getLore
@@ -324,44 +324,44 @@ object GiveCommands {
 
     fun getFloorColor(index: Int): Block {
         return when ((index + 10) % 16) {
-            0 -> Blocks.WHITE_WOOL
-            1 -> Blocks.ORANGE_WOOL
-            2 -> Blocks.MAGENTA_WOOL
-            3 -> Blocks.LIGHT_BLUE_WOOL
-            4 -> Blocks.YELLOW_WOOL
-            5 -> Blocks.LIME_WOOL
-            6 -> Blocks.PINK_WOOL
-            7 -> Blocks.GRAY_WOOL
-            8 -> Blocks.LIGHT_GRAY_WOOL
-            9 -> Blocks.CYAN_WOOL
-            10 -> Blocks.PURPLE_WOOL
-            11 -> Blocks.BLUE_WOOL
-            12 -> Blocks.BROWN_WOOL
-            13 -> Blocks.GREEN_WOOL
-            14 -> Blocks.RED_WOOL
-            15 -> Blocks.BLACK_WOOL
+            0 -> ColoredBlocks.WHITE_WOOL
+            1 -> ColoredBlocks.ORANGE_WOOL
+            2 -> ColoredBlocks.MAGENTA_WOOL
+            3 -> ColoredBlocks.LIGHT_BLUE_WOOL
+            4 -> ColoredBlocks.YELLOW_WOOL
+            5 -> ColoredBlocks.LIME_WOOL
+            6 -> ColoredBlocks.PINK_WOOL
+            7 -> ColoredBlocks.GRAY_WOOL
+            8 -> ColoredBlocks.LIGHT_GRAY_WOOL
+            9 -> ColoredBlocks.CYAN_WOOL
+            10 -> ColoredBlocks.PURPLE_WOOL
+            11 -> ColoredBlocks.BLUE_WOOL
+            12 -> ColoredBlocks.BROWN_WOOL
+            13 -> ColoredBlocks.GREEN_WOOL
+            14 -> ColoredBlocks.RED_WOOL
+            15 -> ColoredBlocks.BLACK_WOOL
             else -> TODO("no.")
         }
     }
 
     fun getShulkerColor(index: Int): Block {
         return when ((index + 10) % 16) {
-            0 -> Blocks.WHITE_SHULKER_BOX
-            1 -> Blocks.ORANGE_SHULKER_BOX
-            2 -> Blocks.MAGENTA_SHULKER_BOX
-            3 -> Blocks.LIGHT_BLUE_SHULKER_BOX
-            4 -> Blocks.YELLOW_SHULKER_BOX
-            5 -> Blocks.LIME_SHULKER_BOX
-            6 -> Blocks.PINK_SHULKER_BOX
-            7 -> Blocks.GRAY_SHULKER_BOX
-            8 -> Blocks.LIGHT_GRAY_SHULKER_BOX
-            9 -> Blocks.CYAN_SHULKER_BOX
-            10 -> Blocks.PURPLE_SHULKER_BOX
-            11 -> Blocks.BLUE_SHULKER_BOX
-            12 -> Blocks.BROWN_SHULKER_BOX
-            13 -> Blocks.GREEN_SHULKER_BOX
-            14 -> Blocks.RED_SHULKER_BOX
-            15 -> Blocks.BLACK_SHULKER_BOX
+            0 -> ColoredBlocks.WHITE_SHULKER_BOX
+            1 -> ColoredBlocks.ORANGE_SHULKER_BOX
+            2 -> ColoredBlocks.MAGENTA_SHULKER_BOX
+            3 -> ColoredBlocks.LIGHT_BLUE_SHULKER_BOX
+            4 -> ColoredBlocks.YELLOW_SHULKER_BOX
+            5 -> ColoredBlocks.LIME_SHULKER_BOX
+            6 -> ColoredBlocks.PINK_SHULKER_BOX
+            7 -> ColoredBlocks.GRAY_SHULKER_BOX
+            8 -> ColoredBlocks.LIGHT_GRAY_SHULKER_BOX
+            9 -> ColoredBlocks.CYAN_SHULKER_BOX
+            10 -> ColoredBlocks.PURPLE_SHULKER_BOX
+            11 -> ColoredBlocks.BLUE_SHULKER_BOX
+            12 -> ColoredBlocks.BROWN_SHULKER_BOX
+            13 -> ColoredBlocks.GREEN_SHULKER_BOX
+            14 -> ColoredBlocks.RED_SHULKER_BOX
+            15 -> ColoredBlocks.BLACK_SHULKER_BOX
             else -> TODO("no.")
         }
     }
@@ -409,7 +409,11 @@ object GiveCommands {
 
     fun tryGive(itemStack: ItemStack) {
         val item = itemStack.copyWithCount(1)
-        if (McPlayer.self?.gameMode()?.isCreative != true || !McClient.self.isSingleplayer) {
+        //? >= 26.2 {
+        val isSinglePlayer = !McClient.self.isMultiplayerServer
+        //?} else
+        //val isSinglePlayer = McClient.self.isSingleplayer
+        if (McPlayer.self?.gameMode()?.isCreative != true || !isSinglePlayer) {
             Text.of("Not in singleplayer and creative!", CatppuccinColors.Mocha.red).sendWithPrefix("catharsis-dev-give-singleplayer")
             return
         }

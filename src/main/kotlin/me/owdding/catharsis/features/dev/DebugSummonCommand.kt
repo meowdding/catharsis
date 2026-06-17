@@ -57,7 +57,11 @@ object DebugSummonCommand {
                 entityTag.putString("id", BuiltInRegistries.ENTITY_TYPE.getKey(definition.type).toString())
                 applyNbtConditions(definition.target, entityTag)
 
-                val entity = EntityType.loadEntityRecursive(entityTag, level, EntitySpawnReason.COMMAND) { entity ->
+                //? >= 26.2 {
+                val thing = EntitySpawnRequest(EntitySpawnReason.COMMAND, true)
+                //?} else
+                //val thing = EntitySpawnReason.COMMAND
+                val entity = EntityType.loadEntityRecursive(entityTag, level, thing) { entity ->
                     entity.setPos(player.x, player.y, player.z)
                     entity
                 }

@@ -38,5 +38,7 @@ object EntityConditions {
         ID_MAPPER.put(Catharsis.id("nbt_number"), CatharsisCodecs.getMapCodec<NbtNumberEntityCondition>())
         ID_MAPPER.put(Catharsis.id("any"), CatharsisCodecs.getMapCodec<AnyEntityCondition>())
         ID_MAPPER.put(Catharsis.id("all"), CatharsisCodecs.getMapCodec<AllEntityCondition>())
+        ID_MAPPER.put(Catharsis.id("has_passenger"), HasPassengerEntityCondition.codec)
+        ID_MAPPER.put(Catharsis.id("passenger"), CatharsisCodecs.getMapCodec<PassengerEntityCondition>())
     }
 }

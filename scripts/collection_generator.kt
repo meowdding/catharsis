@@ -35,9 +35,9 @@ fun fetch(): JsonObject {
 
 fun createEntries(level: Int, index: Int, key: String, direction: String, name: String): List<GuiSlotDefinition> {
     return listOf(
-        "unlocked" to Items.LIME_STAINED_GLASS_PANE,
-        "unlocking" to Items.YELLOW_STAINED_GLASS_PANE,
-        "locked" to Items.RED_STAINED_GLASS_PANE,
+        "unlocked" to Items.STAINED_GLASS_PANE.lime,
+        "unlocking" to Items.STAINED_GLASS_PANE.yellow,
+        "locked" to Items.STAINED_GLASS_PANE.red,
     ).map { (status, item) ->
         GuiSlotDefinition(
             id = Identifiers.of("skyblock_gui", "collections/$key/$status/$direction"),

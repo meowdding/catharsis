@@ -97,6 +97,16 @@ object CustomEntityDefinitions : SimplePreparableReloadListener<Map<Identifier, 
         return definitions[type]?.entries?.firstOrNull { it.value.matches(entity) }?.key
     }
 
+    @JvmStatic
+    fun getDefinition(id: Identifier): CustomEntityDefinition? {
+        return definitions.values.firstNotNullOfOrNull { it[id] }
+    }
+
+    @JvmStatic
+    fun getAllIds(): Iterable<Identifier> {
+        return definitions.values.flatMap { it.keys }
+    }
+
     init {
         McClient.registerClientReloadListener(Catharsis.id("entity_definitions"), this)
     }

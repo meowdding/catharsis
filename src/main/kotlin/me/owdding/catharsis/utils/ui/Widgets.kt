@@ -46,7 +46,6 @@ class SelectedTextButton(x: Int, y: Int, width: Int, height: Int, text: Componen
         this.onPress(this)
     }
 
-    //~ if >= 26.1 'renderContents' -> 'extractContents'
     override fun extractContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float) {
         val component = when {
             this.selected && this.isHoveredOrFocused -> this.hoveredSelectedText

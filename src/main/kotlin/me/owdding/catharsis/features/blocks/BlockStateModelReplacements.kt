@@ -76,7 +76,6 @@ data class BlockStateModelReplacement(
         original.collectParts(random, output)
     }
 
-    //? >= 26.1 {
     override fun materialFlags(): Int = original.materialFlags()
     override fun materialFlags(level: BlockAndTintGetter, pos: BlockPos, state: BlockState, random: RandomSource): Int {
         val replacement = select(level, state, pos)
@@ -96,9 +95,7 @@ data class BlockStateModelReplacement(
         }
         return super<BlockStateModel>.hasMaterialFlag(level, pos, state, random, flag)
     }
-    //? }
 
-    //~ if >= 26.1 'particleSprite(' -> 'particleMaterial(' {
     override fun particleMaterial(level: BlockAndTintGetter, pos: BlockPos, state: BlockState) = run {
         val replacement = select(level, state, pos)
         val model = replacement?.models[state]
@@ -107,9 +104,7 @@ data class BlockStateModelReplacement(
         }
         return@run super<FabricBlockStateModel>.particleMaterial(level, pos, state)
     }
-    //~ }
 
-    //~ if >= 26.1 'particleIcon(' -> 'particleMaterial('
     override fun particleMaterial() = original.particleMaterial()
 
     fun select(level: BlockAndTintGetter?, state: BlockState, pos: BlockPos): BlockReplacementEntry? {

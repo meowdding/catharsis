@@ -71,7 +71,6 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
 
     override fun repositionElements() {
         val nav = this.navigation ?: return
-        //~ if >= 26.1 'setWidth' -> 'updateWidth'
         nav.updateWidth(this.width)
         nav.arrangeElements()
 

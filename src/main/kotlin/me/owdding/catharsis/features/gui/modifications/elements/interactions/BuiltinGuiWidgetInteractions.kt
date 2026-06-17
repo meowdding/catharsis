@@ -3,7 +3,6 @@ package me.owdding.catharsis.features.gui.modifications.elements.interactions
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.gui.screens.ConfirmLinkScreen
-//~ if >= 26.1 'ClickType as ContainerInput' -> 'ContainerInput'
 import net.minecraft.world.inventory.ContainerInput
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
@@ -33,7 +32,6 @@ data class GuiSlotClickWidgetInteraction(
         // This simulates a "pick block" action on the slot, this is ONLY possible when using the pick key as a keyboard bind, not by mouse.
         // Every update we need to check if this is still possible as to not send invalid packets.
         // TODO maybe add ability to remotely disable this if hypixel does a patch that breaks it, but doubtful since its possible in vanilla.
-        //~ if >= 26.1 'handleInventoryMouseClick' -> 'handleContainerInput'
         McClient.self.gameMode?.handleContainerInput(menu.containerId, slotId, 0, ContainerInput.CLONE, player)
     }
 }

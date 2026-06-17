@@ -76,9 +76,7 @@ object JadeCompat : IWailaPlugin, JadeRayTraceCallback, JadeItemModNameCallback 
 
         val stack = this.display.createItemStack(this.parent.block, this.parent.serversideRep)
 
-        //? if >= 1.21.11 {
         override fun <T : BlockEntity> typedBlockEntity(): T = parent.typedBlockEntity()
-        //?}
         override fun getAccessorType(): Class<out Accessor<*>> = parent.accessorType
         override fun isServersideContent(): Boolean = true
         override fun getServersideRep(): ItemStack = stack

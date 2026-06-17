@@ -15,7 +15,6 @@ import kotlin.math.round
 
 class SaturationBrightnessSelector(width: Int, height: Int, val state: HsbState) : BaseWidget(0, 0, width, height) {
 
-    //~ if >= 26.1 'renderWidget(' -> 'extractWidgetRenderState('
     override fun extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
         graphics.drawOutline(
             this.x - 1, this.y - 1,
@@ -76,7 +75,6 @@ class SaturationBrightnessSelector(width: Int, height: Int, val state: HsbState)
 
 class HueSelector(width: Int, height: Int, val state: HsbState) : BaseWidget(0, 0, width, height) {
 
-    //~ if >= 26.1 'renderWidget' -> 'extractWidgetRenderState'
     override fun extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
         graphics.drawOutline(
             this.x - 1, this.y - 1,
@@ -120,7 +118,6 @@ class HueSelector(width: Int, height: Int, val state: HsbState) : BaseWidget(0, 
 
 class AlphaSelector(width: Int, height: Int, val state: HsbState) : BaseWidget(0, 0, width, height) {
 
-    //~ if >= 26.1 'renderWidget' -> 'extractWidgetRenderState'
     override fun extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
         graphics.drawOutline(
             this.x - 1, this.y - 1,

@@ -15,7 +15,6 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-//~ if >= 26.1 'ClickType' -> 'ContainerInput'
 import net.minecraft.world.inventory.ContainerInput;
 import net.minecraft.world.inventory.Slot;
 import org.spongepowered.asm.mixin.Final;
@@ -34,7 +33,6 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
         super(title);
     }
 
-    //~ if >= 26.1 'render' -> 'extractRenderState'
     @Inject(method = "extractRenderState", at = @At("HEAD"))
     private void catharsis$onRender(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
         var modifier = GuiModifiers.getActiveModifier();
@@ -67,7 +65,7 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
         return true;
     }
 
-    @WrapMethod(method = "slotClicked") //~ if >= 26.1 'ClickType' -> 'ContainerInput'
+    @WrapMethod(method = "slotClicked")
     private void catharsis$onSlotClick(Slot slot, int slotId, int mouseButton, ContainerInput type, Operation<Void> original) {
         if (slot != null) {
             if (!ImcHandler.isDisabled(slot.getItem())) {

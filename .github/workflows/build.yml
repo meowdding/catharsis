@@ -27,5 +27,9 @@ jobs:
                     path: build/libs/*-26.1.jar
             -   uses: actions/upload-artifact@v7.0.0
                 with:
+                    archive: false
+                    path: build/libs/*-26.2.jar
+            -   uses: actions/upload-artifact@v7.0.0
+                with:
                     name: "All Artifacts"
                     path: build/libs/*.jar

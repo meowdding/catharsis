@@ -7,6 +7,7 @@ placeholders = "3.1.0-beta.1+26.2"
 
 packed_packs = "2.2.2+26.2"
 jade = "26.2.1+fabric"
+skyblock-item-list = "0.0.4+26.1.2-SNAPSHOT"
 
 [libraries]
 
@@ -16,3 +17,4 @@ placeholders = { module = "eu.pb4:placeholder-api", version.ref = "placeholders"
 
 packed_packs = { module = "io.github.fishstiz.packed_packs.api:packed_packs_api-fabric", version.ref = "packed_packs" }
 jade = { module = "maven.modrinth:jade", version.ref = "jade" }
+skyblock-item-list = { module = "com.operationpotato:skyblock-item-list-api", version.ref = "skyblock-item-list" }

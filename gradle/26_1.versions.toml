@@ -7,12 +7,14 @@ placeholders = "3.0.0+26.1"
 
 packed_packs = "2.1.2+26.1"
 jade = "26.0.8+fabric"
+skyblock-item-list = "0.0.4+26.1.2-SNAPSHOT"
 
 [libraries]
 
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
 placeholders = { module = "eu.pb4:placeholder-api", version.ref = "placeholders" }
+skyblock-item-list = { module = "com.operationpotato:skyblock-item-list-api", version.ref = "skyblock-item-list" }
 
 packed_packs = { module = "io.github.fishstiz.packed_packs.api:packed_packs_api-fabric", version.ref = "packed_packs" }
 jade = { module = "maven.modrinth:jade", version.ref = "jade" }

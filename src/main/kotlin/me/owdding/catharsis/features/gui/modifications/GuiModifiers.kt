@@ -15,7 +15,6 @@ import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.profiling.ProfilerFiller
 import org.joml.Vector2i
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
-import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 
 @Module
@@ -88,13 +87,17 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
             this.selected = GuiModifier(
                 target = modifiers.first().target, // Target is not relevant for combined modifier
                 overrideLabels = modifiers.any { it.overrideLabels },
-                overrideBackground =  modifiers.any { it.overrideBackground },
+                overrideBackground = modifiers.any { it.overrideBackground },
+                disableItemList = modifiers.any { it.disableItemList },
                 bounds = modifiers.mapNotNull { it.bounds }.let { sizes ->
-                    if (sizes.isEmpty()) null else { Vector2i(sizes.maxOf { it.x }, sizes.maxOf { it.y }) }
+                    if (sizes.isEmpty()) null else {
+                        Vector2i(sizes.maxOf { it.x }, sizes.maxOf { it.y })
+                    }
                 },
+                itemListExclusionZones = modifiers.flatMap { it.itemListExclusionZones },
                 slots = slots,
                 elements = modifiers.flatMap { it.elements },
-                widgets = modifiers.flatMap { it.widgets }
+                widgets = modifiers.flatMap { it.widgets },
             )
         }
     }

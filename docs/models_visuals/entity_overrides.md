@@ -195,6 +195,29 @@ Matches an entity based on whether it is a baby or an adult.
 
 </TreeView>
 
+### Has Passengers (`has_passengers`)
+
+Matches if an entity has passengers.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `has_passenger`
+
+</TreeView>
+
+### Passenger Conditions (`passengers`)
+
+Runs matches on a specific passenger, or false if none.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `passenger`
+- <TypeIcon type="int"/> **index**: (Optional) The index of the passenger, defaults to `0`. (0 is first, 1 is second, etc.)
+- <TypeIcon type="string"/> **entityType**: (Optional) The entity type of the passenger, defaults to `null`. (Null means entity type does not matter)
+- <TypeIcon type="object"/> **condition**: The conditions to run on the passenger.
+
+</TreeView>
+
 ## Model Quirks
 
 When creating your Bedrock `.geo.json` models, please keep the following in mind:

@@ -25,6 +25,8 @@ import net.minecraft.resources.Identifier
 import net.minecraft.world.entity.AgeableMob
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EntitySpawnReason
+//? >= 26.2
+import net.minecraft.world.entity.EntitySpawnRequest
 import net.minecraft.world.entity.EntityType
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.entity.ai.attributes.Attributes
@@ -35,7 +37,6 @@ import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Comp
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import tech.thatgravyboat.skyblockapi.utils.text.Text
-import tech.thatgravyboat.skyblockapi.utils.text.Text.send
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.command
@@ -67,7 +68,7 @@ object DebugSummonCommand {
 
                 val player = McClient.self.player ?: return@thenCallback
 
-                if (McPlayer.self?.gameMode()?.isCreative != true || !McClient.self.isSingleplayer) {
+                if (McPlayer.self?.gameMode()?.isCreative != true || !McClient.isSingleplayer) {
                     Text.of("Not in singleplayer and creative!", CatppuccinColors.Mocha.red).sendWithPrefix("cath-summon-singleplayer")
                     return@thenCallback
                 }

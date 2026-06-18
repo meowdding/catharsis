@@ -5,8 +5,10 @@ lang: en-US
 
 # <Environment/> Item Models
 
-Catharsis extends the vanilla Minecraft item model system by adding custom model conditions. These can be used within your `assets/skyblock/items/<id>.json` files or any
-standard item model definition.
+Catharsis extends the vanilla Minecraft [`Item Model Definitions`](https://minecraft.wiki/w/Items_model_definition#select) system by adding custom model conditions.
+These can be used within your `assets/skyblock/items/<id>.json` files or any standard item model definition.
+Please try to understand the vanilla system before asking Catharsis specific questions.
+You can join the Discord and ask in `#catharsis` about Minecraft's System or Catharsis' extensions.
 
 ## Custom Model Types
 

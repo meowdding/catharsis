@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "island",
+        "island": "crimson_isle"
+      },
+      {
+        "type": "max_health",
+        "max_health": 5000000
+      }
+    ]
+  },
+  "type": "minecraft:blaze"
+}

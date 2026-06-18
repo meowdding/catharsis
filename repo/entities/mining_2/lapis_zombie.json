@@ -1,0 +1,22 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      { "type": "island", "island": "mining_2" },
+      {
+        "type": "max_health",
+        "max_health": 200
+      },
+      {
+        "type": "equipment",
+        "slot": "feet",
+        "property": {
+          "property": "component",
+          "predicate": "id",
+          "value": { "id": "LAPIS_ARMOR_BOOTS" }
+        }
+      }
+    ]
+  },
+  "type": "minecraft:zombie"
+}

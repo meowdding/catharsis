@@ -3,12 +3,12 @@
     "type": "all",
     "conditions": [
       {
-        "type": "max_health",
-        "max_health": 100
-      },
-      {
         "type": "island",
         "island": "hub"
+      },
+      {
+        "type": "max_health",
+        "max_health": 100
       }
     ]
   },

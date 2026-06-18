@@ -1,0 +1,18 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      { "type": "island", "island": "combat_1" },
+      {
+        "type": "max_health",
+        "max_health": { "min": 375, "max": 750 }
+      },
+      {
+        "type": "nbt_number",
+        "key": "Size",
+        "values": { "min": 7, "max": 14 }
+      }
+    ]
+  },
+  "type": "minecraft:slime"
+}

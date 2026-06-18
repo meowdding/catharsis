@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "island",
+        "island": "combat_3"
+      },
+      {
+        "type": "max_health",
+        "max_health": 750000
+      }
+    ]
+  },
+  "type": "minecraft:enderman"
+}

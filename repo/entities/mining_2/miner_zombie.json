@@ -1,0 +1,13 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      { "type": "island", "island": "mining_2" },
+      {
+        "type": "max_health",
+        "max_health": [250, 300]
+      }
+    ]
+  },
+  "type": "minecraft:zombie"
+}

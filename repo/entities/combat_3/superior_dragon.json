@@ -1,0 +1,13 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "island",
+        "island": "combat_3"
+      },
+      { "type": "identity", "name": "Superior Dragon" }
+    ]
+  },
+  "type": "minecraft:ender_dragon"
+}

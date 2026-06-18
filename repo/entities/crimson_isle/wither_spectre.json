@@ -1,0 +1,21 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "island",
+        "island": "crimson_isle"
+      },
+      {
+        "type": "max_health",
+        "max_health": 300000
+      },
+      {
+        "type": "attribute",
+        "attribute": "minecraft:movement_speed",
+        "value": 0.36000001430511475
+      }
+    ]
+  },
+  "type": "minecraft:wither_skeleton"
+}

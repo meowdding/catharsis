@@ -5,10 +5,14 @@ import me.owdding.catharsis.features.entity.models.CustomEntityModel;
 import me.owdding.catharsis.features.entity.models.CustomEntityModels;
 import me.owdding.catharsis.hooks.entity.EntityHook;
 import net.minecraft.client.entity.ClientAvatarEntity;
+import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.PlayerSkin;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Entity.class)
 public class EntityMixin implements EntityHook {
@@ -30,7 +34,7 @@ public class EntityMixin implements EntityHook {
         if (this instanceof ClientAvatarEntity car) {
             PlayerSkin currentSkin = car.getSkin();
             if (currentSkin != catharsis$lastRenderedPlayerSkin) {
-                catharsis$hasComputedModel = false;
+                catharsis$resetCustomModel();
                 catharsis$lastRenderedPlayerSkin = currentSkin;
             }
         }
@@ -49,9 +53,16 @@ public class EntityMixin implements EntityHook {
             customModel = CustomEntityModels.getModel(customEntity);
         }
 
-
         catharsis$computedReplacement = customModel;
 
         return customModel;
+    }
+
+    @Inject(
+        method = "onSyncedDataUpdated(Lnet/minecraft/network/syncher/EntityDataAccessor;)V",
+        at = @At("TAIL")
+    )
+    private void onSyncedDataUpdate(EntityDataAccessor<?> accessor, CallbackInfo ci) {
+        catharsis$resetCustomModel();
     }
 }

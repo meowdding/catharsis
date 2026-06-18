@@ -195,7 +195,7 @@ Matches an entity based on whether it is a baby or an adult.
 
 </TreeView>
 
-### Has Passengers (`has_passengers`)
+### Has Passengers (`has_passengers`) <Version>1.0.0-beta.18</Version>
 
 Matches if an entity has passengers.
 
@@ -205,7 +205,7 @@ Matches if an entity has passengers.
 
 </TreeView>
 
-### Passenger Conditions (`passengers`)
+### Passenger Conditions (`passengers`) <Version>1.0.0-beta.18</Version>
 
 Runs matches on a specific passenger, or false if none.
 

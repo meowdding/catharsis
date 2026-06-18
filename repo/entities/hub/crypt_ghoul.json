@@ -1,0 +1,16 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "island",
+        "island": "hub"
+      },
+      {
+        "type": "max_health",
+        "max_health": 2000
+      }
+    ]
+  },
+  "type": "minecraft:zombie"
+}

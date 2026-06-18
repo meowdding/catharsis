@@ -1,0 +1,13 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      { "type": "island", "island": "combat_1" },
+      {
+        "type": "max_health",
+        "max_health": 3000
+      }
+    ]
+  },
+  "type": "minecraft:spider"
+}

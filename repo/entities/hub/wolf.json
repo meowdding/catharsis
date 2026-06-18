@@ -1,0 +1,13 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      { "type": "island", "island": "hub" },
+      {
+        "type": "max_health",
+        "max_health": 250
+      }
+    ]
+  },
+  "type": "minecraft:wolf"
+}

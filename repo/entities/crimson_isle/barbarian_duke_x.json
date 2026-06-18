@@ -1,0 +1,20 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "island",
+        "island": "crimson_isle"
+      },
+      {
+        "type": "max_health",
+        "max_health": 70000000
+      },
+      {
+        "type": "npc_skin",
+        "skin": "http://textures.minecraft.net/texture/3116896d7d0a1531e4419e38d8e0c28ac84c3a05f812e809ba4503ed718eb36d"
+      }
+    ]
+  },
+  "type": "minecraft:player"
+}

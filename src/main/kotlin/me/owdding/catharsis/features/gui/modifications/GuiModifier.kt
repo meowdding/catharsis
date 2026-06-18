@@ -19,14 +19,19 @@ import org.joml.Vector2i
 import tech.thatgravyboat.skyblockapi.helpers.McFont
 
 @GenerateCodec
+data class GuiModifierExclusionZone(val x: Int, val y: Int, val width: Int, val height: Int)
+
+@GenerateCodec
 data class GuiModifier(
     val target: GuiModifierCondition,
 
     @OptionalBoolean(false) val overrideLabels: Boolean = false,
     @OptionalBoolean(false) val overrideBackground: Boolean = false,
+    @OptionalBoolean(false) val disableItemList: Boolean = false,
 
     @NamedCodec("size") val bounds: Vector2i?,
 
+    @OptionalIfEmpty val itemListExclusionZones: List<GuiModifierExclusionZone> = emptyList(),
     @OptionalIfEmpty val slots: Map<Identifier, SlotModifier> = emptyMap(),
     @OptionalIfEmpty val elements: List<GuiElement> = emptyList(),
     @OptionalIfEmpty val widgets: List<GuiWidgetElement> = emptyList(),

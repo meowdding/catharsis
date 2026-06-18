@@ -1,9 +1,9 @@
 @file:Suppress("UnstableApiUsage")
 
 import dev.kikugie.stonecutter.build.StonecutterBuildExtension
+import net.fabricmc.loom.api.LoomGradleExtensionAPI
 import net.fabricmc.loom.task.ValidateAccessWidenerTask
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import net.fabricmc.loom.api.LoomGradleExtensionAPI
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import java.io.ByteArrayOutputStream
 
@@ -28,6 +28,8 @@ repositories {
     scopedMaven("https://maven.teamresourceful.com/repository/maven-public/", "tech.thatgravyboat", "me.owdding")
     scopedMaven("https://maven.nucleoid.xyz/", "eu.pb4")
     scopedMaven("https://raw.githubusercontent.com/fishstiz/maven/m2", "io.github.fishstiz")
+    scopedMaven("https://maven.operationpotato.com/snapshots", "com.operationpotato")
+    scopedMaven("https://maven.operationpotato.com/releases", "com.operationpotato")
     mavenCentral()
     mavenLocal()
 }
@@ -213,6 +215,12 @@ dependencies {
     // Packed Packs compat
     maybeModCompileOnly(versionedCatalog["packed_packs"])
     maybeModLocalRuntime(versionedCatalog["packed_packs"])
+
+    // SkyBlockItemList compat
+    if (versionedCatalog.versions.has("skyblock-item-list")) { // 26.1+
+        maybeModCompileOnly(versionedCatalog["skyblock-item-list"])
+        maybeModLocalRuntime(versionedCatalog["skyblock-item-list"])
+    }
 
     maybeModRuntimeOnly(versionedCatalog["devauth"])
 }

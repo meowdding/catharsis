@@ -2,28 +2,43 @@ package me.owdding.catharsis.features.dev
 
 import com.mojang.brigadier.arguments.StringArgumentType
 import me.owdding.catharsis.features.entity.CustomEntityDefinitions
-import me.owdding.catharsis.features.entity.conditions.*
+import me.owdding.catharsis.features.entity.conditions.AllEntityCondition
+import me.owdding.catharsis.features.entity.conditions.AnyEntityCondition
+import me.owdding.catharsis.features.entity.conditions.AttributeEntityCondition
+import me.owdding.catharsis.features.entity.conditions.BabyEntityCondition
+import me.owdding.catharsis.features.entity.conditions.EntityCondition
+import me.owdding.catharsis.features.entity.conditions.EquipmentEntityCondition
+import me.owdding.catharsis.features.entity.conditions.IdentityEntityCondition
+import me.owdding.catharsis.features.entity.conditions.IslandEntityCondition
+import me.owdding.catharsis.features.entity.conditions.MaxHealthEntityCondition
+import me.owdding.catharsis.features.entity.conditions.NbtNumberEntityCondition
+import me.owdding.catharsis.features.entity.conditions.PlayerEntityConditions
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.types.FloatPredicate
 import me.owdding.catharsis.utils.types.colors.CatppuccinColors
 import me.owdding.catharsis.utils.types.suggestion.IterableSuggestionProvider
 import me.owdding.ktmodules.Module
-import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.Component
 import net.minecraft.resources.Identifier
-import net.minecraft.world.entity.*
+import net.minecraft.world.entity.AgeableMob
+import net.minecraft.world.entity.Entity
+import net.minecraft.world.entity.EntitySpawnReason
+import net.minecraft.world.entity.EntityType
+import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.entity.ai.attributes.Attributes
 import net.minecraft.world.entity.monster.zombie.Zombie
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
 import tech.thatgravyboat.skyblockapi.helpers.McClient
+import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import tech.thatgravyboat.skyblockapi.utils.text.Text
+import tech.thatgravyboat.skyblockapi.utils.text.Text.send
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
-import java.util.*
-import kotlin.random.Random
+import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
+import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.command
 
 @Module
 object DebugSummonCommand {
@@ -51,33 +66,46 @@ object DebugSummonCommand {
                 }
 
                 val player = McClient.self.player ?: return@thenCallback
-                val level = player.level() as? ClientLevel ?: return@thenCallback
 
-                val entityTag = CompoundTag()
-                entityTag.putString("id", BuiltInRegistries.ENTITY_TYPE.getKey(definition.type).toString())
-                applyNbtConditions(definition.target, entityTag)
-
-                val entity = EntityType.loadEntityRecursive(entityTag, level, EntitySpawnReason.COMMAND) { entity ->
-                    entity.setPos(player.x, player.y, player.z)
-                    entity
-                }
-
-                if (entity == null) {
-                    Text.of("Failed to create entity type ${definition.type}", CatppuccinColors.Mocha.red).sendWithPrefix("cath-summon-entity-not-found")
+                if (McPlayer.self?.gameMode()?.isCreative != true || !McClient.self.isSingleplayer) {
+                    Text.of("Not in singleplayer and creative!", CatppuccinColors.Mocha.red).sendWithPrefix("cath-summon-singleplayer")
                     return@thenCallback
                 }
 
-                applyEntityProperties(definition.target, entity)
+                val server = McClient.self.singleplayerServer ?: return@thenCallback
 
-                // Praying this doesn't fail
-                entity.uuid = UUID.randomUUID()
-                entity.id = -Random.nextInt(1000, 1000000)
+                server.submit {
+                    val serverLevel = server.getLevel(player.level().dimension()) ?: return@submit
 
-                level.addEntity(entity)
+                    val entityTag = CompoundTag()
+                    entityTag.putString("id", BuiltInRegistries.ENTITY_TYPE.getKey(definition.type).toString())
+                    entityTag.putBoolean("NoAI", true)
+                    entityTag.putBoolean("Invulnerable", true)
+                    entityTag.putBoolean("Silent", true)
+                    applyNbtConditions(definition.target, entityTag)
 
-                Text.of("Summoned debug entity for ") {
-                    append(id.toString(), CatppuccinColors.Mocha.peach)
-                }.sendWithPrefix("cath-entity-summoned")
+                    val entity = EntityType.loadEntityRecursive(entityTag, serverLevel, EntitySpawnReason.COMMAND) { entity ->
+                        entity.absSnapTo(player.x, player.y, player.z, player.yRot, player.xRot)
+                        entity.yHeadRot = player.yHeadRot
+                        if (entity is LivingEntity) {
+                            entity.yBodyRot = player.yBodyRot
+                        }
+                        entity
+                    }
+
+                    if (entity == null) {
+                        Text.of("Failed to create entity type ${definition.type}", CatppuccinColors.Mocha.red).sendNextTick("cath-summon-entity-not-found")
+                        return@submit
+                    }
+
+                    applyEntityProperties(definition.target, entity)
+
+                    serverLevel.addFreshEntity(entity)
+
+                    Text.of("Summoned debug entity for ") {
+                        append(id.toString(), CatppuccinColors.Mocha.peach)
+                    }.sendNextTick("cath-entity-summoned")
+                }
             }
         }
     }
@@ -138,21 +166,28 @@ object DebugSummonCommand {
             }
 
             is PlayerEntityConditions.NpcSkin -> {
-                Text.of("NPC Skin cannot be set on entities without a full profile so this is not implemented.").sendWithPrefix("cath-npc-skin")
+                Text.of("NPC Skin cannot be set on entities without a full profile so this is not implemented.").sendNextTick("cath-npc-skin")
             }
 
             is PlayerEntityConditions.PlayerSkin -> {
-                Text.of("Player Skin cannot be set on entities without a full profile so this is not implemented.").sendWithPrefix("cath-player-skin")
+                Text.of("Player Skin cannot be set on entities without a full profile so this is not implemented.").sendNextTick("cath-player-skin")
             }
 
             is IslandEntityCondition -> {
-                Text.of("Island Property cannot be set on entity directly, use \"/sbapi toggle force_island\" instead", CatppuccinColors.Mocha.maroon).sendWithPrefix("cath-island")
+                Text.of("Island Property cannot be set on entity directly, click to set the Island!") {
+                    color = CatppuccinColors.Mocha.maroon
+                    command = "sbapi toggle force_island ${condition.islands.first().displayName}"
+                }.sendNextTick("cath-island")
             }
 
             is EquipmentEntityCondition -> {
                 Text.of("Too lazy to implement a Item model Condition to ItemStack parser, manually set the item yourself", CatppuccinColors.Mocha.maroon)
-                    .sendWithPrefix("cath-stack")
+                    .sendNextTick("cath-stack")
             }
         }
+    }
+
+    private fun Component.sendNextTick(id: String) = McClient.runNextTick {
+        this.sendWithPrefix(id)
     }
 }

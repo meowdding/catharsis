@@ -10,7 +10,7 @@ Allows replacing the item tooltip background and frame with a custom texture usi
 <Example>
 A tooltip background replacement example:
 
-<<< @/example_pack/assets/catharsis/tooltip.json{json:line-numbers}
+<<< @/example_packs/custom_tooltip_background/assets/catharsis/tooltip.json{json:line-numbers}
 </Example>
 
 Behaves like item texture replacements, but the model is the following instead:

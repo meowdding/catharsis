@@ -11,7 +11,7 @@ Catharsis metadata allows your pack to have a unique ID, declare dependencies, a
 
 Example of a `pack.mcmeta` with a configuration menu and version dependencies.
 
-<<< @/example_pack/pack.mcmeta{json:line-numbers}
+<<< @/example_packs/TODO/pack.mcmeta{json:line-numbers}
 </Example>
 
 <TreeView>

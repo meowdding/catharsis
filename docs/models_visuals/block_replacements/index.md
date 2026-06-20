@@ -41,7 +41,7 @@ A simple redirect, replacing one block state with another one.
 
 Always replaces the block with gold.
 
-<<< @/example_pack/assets/minecraft/catharsis/block_replacements/oak_leaves.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/minecraft/catharsis/block_replacements/oak_leaves.json{json:line-numbers}
 </Example>
 
 <TreeView>
@@ -72,7 +72,7 @@ The random is seeded based on the blocks position, meaning, while it's random it
 Replaces the block based on a random noice with either gold or diamond. <br>
 In this example it's roughly a 3/4 ratio.
 
-<<< @/example_pack/assets/minecraft/catharsis/block_replacements/oak_log.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/minecraft/catharsis/block_replacements/oak_log.json{json:line-numbers}
 </Example>
 
 <TreeView>
@@ -94,7 +94,7 @@ Allows for having a different block per [area](./areas).
 
 Replaces the block with diamond if it is inside the area.
 
-<<< @/example_pack/assets/minecraft/catharsis/block_replacements/dirt.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/minecraft/catharsis/block_replacements/dirt.json{json:line-numbers}
 </Example>
 
 <TreeView>
@@ -114,7 +114,7 @@ Allows you to change a block based on some conditions, you can find a list of co
 
 Replaces the block with gold if the block under it is equal to grass or dirt.
 
-<<< @/example_pack/assets/minecraft/catharsis/block_replacements/cyan_terracotta.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/minecraft/catharsis/block_replacements/cyan_terracotta.json{json:line-numbers}
 </Example>
 
 <TreeView>
@@ -134,7 +134,7 @@ Allows you to have multiple block replacements for the same block, and uses the 
 
 Replaces the block with gold if the block under it is netherrack, or replaces it with emerald if its deepslate. 
 
-<<< @/example_pack/assets/minecraft/catharsis/block_replacements/redstone_block.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/minecraft/catharsis/block_replacements/redstone_block.json{json:line-numbers}
 </Example>
 
 <TreeView>

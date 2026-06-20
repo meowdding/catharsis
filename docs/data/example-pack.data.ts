@@ -2,16 +2,26 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 export default {
-    watch: ["../example_pack/**/*"],
+    watch: ["../example_packs/**/*"],
     load() {
-        const packDir = path.resolve(__dirname, '../example_pack')
-        return buildFileTree(packDir)
+        const packsDir = path.resolve(__dirname, '../example_packs')
+        const packs = {}
+        const entries = fs.readdirSync(packsDir, { withFileTypes: true })
+
+        for (const entry of entries) {
+            if (entry.isDirectory()) {
+                packs[entry.name] = buildFileTree(path.join(packsDir, entry.name))
+            }
+        }
+        return packs
     }
 }
 
 function buildFileTree(dirPath: string, basePath = '') {
     const entries = fs.readdirSync(dirPath, { withFileTypes: true })
     const result = []
+
+    const viewableExts = ['.json', '.jsonc', '.json5', '.mcmeta', '.txt', '.md']
 
     for (const entry of entries) {
         const fullPath = path.join(dirPath, entry.name)
@@ -25,15 +35,22 @@ function buildFileTree(dirPath: string, basePath = '') {
                 children: buildFileTree(fullPath, currentPath)
             })
         } else {
-            const isViewable = ['.json', '.jsonc', '.json5', '.mcmeta'].includes(path.extname(entry.name))
+            const ext = path.extname(entry.name).toLowerCase()
+            const isViewable = viewableExts.includes(ext)
 
             let content = ""
-            if (isViewable) {
-                try {
+            let isBase64 = false
+
+            try {
+                if (isViewable) {
                     content = fs.readFileSync(fullPath, 'utf-8')
-                } catch (e) {
-                    content = "Unable to read file content."
+                } else {
+                    content = fs.readFileSync(fullPath, 'base64')
+                    isBase64 = true
                 }
+            } catch (e) {
+                content = isViewable ? "Unable to read file content." : ""
+                console.error(`Failed to read file: ${fullPath}`, e)
             }
 
             result.push({
@@ -41,6 +58,7 @@ function buildFileTree(dirPath: string, basePath = '') {
                 name: entry.name,
                 isDirectory: false,
                 isViewable: isViewable,
+                isBase64: isBase64,
                 content: content
             })
         }

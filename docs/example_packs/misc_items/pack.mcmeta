@@ -1,0 +1,16 @@
+{
+    "pack": {
+        "pack_format": 15,
+        "supported_formats": [15, 255],
+        "min_format": 15,
+        "max_format": 255,
+        "description": "Catharsis example pack about Miscellaneous Items"
+    },
+    "catharsis:pack/v1": {
+        "id": "misc_items_example_pack",
+        "version": "1.0.0",
+        "dependencies": {
+            "catharsis": ">=1.0.0-beta.17"
+        }
+    }
+}

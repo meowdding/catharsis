@@ -1,0 +1,17 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "island",
+        "island": "private_island"
+      },
+      {
+        "type": "nbt_number",
+        "key": "Size",
+        "value": 3
+      }
+    ]
+  },
+  "type": "minecraft:slime"
+}

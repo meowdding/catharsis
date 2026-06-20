@@ -97,6 +97,9 @@ Menu Type names are located [here](https://github.com/misode/mcmeta/blob/registr
 Match against external mod config values.
 This allows you to ensure compatability with mods that override some guis.
 
+Returns `false` if the mod isn't installed, the config file cannot be found or the path to the config option doesn't exist.
+Returns `true` if the value in the path matches the specified value.
+
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>external_mod_config</b> gui definition target object</span>
 

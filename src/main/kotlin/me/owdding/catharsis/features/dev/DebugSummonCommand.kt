@@ -6,13 +6,15 @@ import me.owdding.catharsis.features.entity.conditions.AllEntityCondition
 import me.owdding.catharsis.features.entity.conditions.AnyEntityCondition
 import me.owdding.catharsis.features.entity.conditions.AttributeEntityCondition
 import me.owdding.catharsis.features.entity.conditions.BabyEntityCondition
+import me.owdding.catharsis.features.entity.conditions.ConditionalEquipmentEntityCondition
 import me.owdding.catharsis.features.entity.conditions.EntityCondition
-import me.owdding.catharsis.features.entity.conditions.EquipmentEntityCondition
 import me.owdding.catharsis.features.entity.conditions.IdentityEntityCondition
 import me.owdding.catharsis.features.entity.conditions.IslandEntityCondition
 import me.owdding.catharsis.features.entity.conditions.MaxHealthEntityCondition
 import me.owdding.catharsis.features.entity.conditions.NbtNumberEntityCondition
 import me.owdding.catharsis.features.entity.conditions.PlayerEntityConditions
+import me.owdding.catharsis.features.entity.conditions.RangeSelectEquipmentEntityCondition
+import me.owdding.catharsis.features.entity.conditions.SelectEquipmentEntityCondition
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.types.FloatPredicate
 import me.owdding.catharsis.utils.types.colors.CatppuccinColors
@@ -180,7 +182,7 @@ object DebugSummonCommand {
                 }.sendNextTick("cath-island")
             }
 
-            is EquipmentEntityCondition -> {
+            is ConditionalEquipmentEntityCondition, SelectEquipmentEntityCondition, RangeSelectEquipmentEntityCondition -> {
                 Text.of("Too lazy to implement a Item model Condition to ItemStack parser, manually set the item yourself", CatppuccinColors.Mocha.maroon)
                     .sendNextTick("cath-stack")
             }

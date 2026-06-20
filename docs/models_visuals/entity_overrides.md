@@ -172,15 +172,50 @@ Matches if the entity (or player) is located on a specific Skyblock island.
 
 </TreeView>
 
-### Equipment (`equipment`)
+### Equipment Conditional (`equipment_conditional`) <Version>1.0.0-beta.18</Version>
 
-Matches based on the items currently equipped by the entity.
+Matches based on a boolean item model property evaluated on the item currently equipped by the entity.
 
 <TreeView>
 
-- <TypeIcon type="string"/> **type**: `equipment`
+- <TypeIcon type="string"/> **type**: `equipment_conditional`
 - <TypeIcon type="string"/> **slot**: Which equipment slot to check (e.g., `head`, `chest`, `mainhand`).
-- <TypeIcon type="boolean"/> **property**: What boolean property to check (declaring this can add more required keys depending on the property).
+- <TypeIcon type="object"/> **property**: The conditional item model property to check.
+
+</TreeView>
+
+### Equipment Select (`equipment_select`) <Version>1.0.0-beta.18</Version>
+
+Evaluates a select item model property on the equipped item against a set of values.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `equipment_select`
+- <TypeIcon type="string"/> **slot**: Which equipment slot to check.
+- <TypeIcon type="object"/> **property**: The select item model property to check.
+- <TypeIcon type="array"/> **cases**: A list of match cases.
+  - <TypeIcon type="object"/> **case**
+    - <TypeIcon type="array"/> **when**: A list of valid values to match.
+    - <TypeIcon type="boolean"/> **result**: The boolean result if matched.
+- <TypeIcon type="boolean"/> **fallback**: (Optional) The result if no cases match. Defaults to `false`.
+
+</TreeView>
+
+### Equipment Range Dispatch (`equipment_range_dispatch`) <Version>1.0.0-beta.18</Version>
+
+Evaluates a numeric item model property on the equipped item using threshold entries.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `equipment_range_dispatch`
+- <TypeIcon type="string"/> **slot**: Which equipment slot to check.
+- <TypeIcon type="object"/> **property**: The numeric item model property to check.
+- <TypeIcon type="number"/> **scale**: (Optional) Multiplier applied to the property's value. Defaults to `1.0`.
+- <TypeIcon type="array"/> **entries**: A list of threshold entries.
+  - <TypeIcon type="object"/> **entry**
+    - <TypeIcon type="number"/> **threshold**: The numeric threshold.
+    - <TypeIcon type="boolean"/> **result**: The boolean result applied when the property value is matched.
+- <TypeIcon type="boolean"/> **fallback**: (Optional) The result if the value falls outside thresholds or is invalid. Defaults to `false`.
 
 </TreeView>
 

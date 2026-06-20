@@ -24,7 +24,7 @@ Custom miscellaneous items are defined in `assets/catharsis/misc_items.json` wit
 
 <Example>
 
-<<< @/example_pack/assets/catharsis/misc_items.json{json:line-numbers}
+<<< @/example_packs/misc_items/assets/catharsis/misc_items.json{json:line-numbers}
 </Example>
 
 <TreeView>

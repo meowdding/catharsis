@@ -1,0 +1,14 @@
+{
+  "variants": [
+    {
+      "texture": "your_namespace:textures/rain_slime/rain_slime.png",
+      "model": "your_namespace:models/rain_slime/rain_slime.geo.json",
+      "translucent": true
+    },
+    {
+      "texture": "your_namespace:textures/rain_slime/rain_slime2.png",
+      "model": "your_namespace:models/rain_slime/rain_slime.geo.json",
+      "translucent": true
+    }
+  ]
+}

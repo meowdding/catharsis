@@ -48,8 +48,9 @@ Render a specific texture for the armor.
 <Example>
 
 A simple armor replacement with a texture
+TODO: Incorrect example
 
-<<< @/example_pack/assets/skyblock/catharsis/armors/texture.json{json:line-numbers}
+<<< @/example_packs/armor_models/assets/skyblock/catharsis/armors/wither_chestplate.json{json:line-numbers}
 </Example>
 
 <TreeView>
@@ -72,7 +73,7 @@ Render a specific bedrock armor geometry for the armor.
 
 Replaces the armor with a custom model.
 
-<<< @/example_pack/assets/skyblock/catharsis/armors/model.json{json:line-numbers}
+<<< @/example_packs/armor_models/assets/skyblock/catharsis/armors/wither_chestplate.json{json:line-numbers}
 </Example>
 
 <TreeView>

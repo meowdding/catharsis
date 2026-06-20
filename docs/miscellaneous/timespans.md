@@ -33,7 +33,7 @@ A timespan with a fixed start and end.
 
 A simple timespan that only matches nighttime.
 
-<<< @/example_pack/assets/your_name_space/catharsis/timespans/is_day.json{json:line-numbers}
+<<< @/example_packs/TODO/assets/your_name_space/catharsis/timespans/is_day.json{json:line-numbers}
 </Example>
 
 <TreeView>

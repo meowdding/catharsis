@@ -17,7 +17,7 @@ Things that happen in this example
 - Changes the `place_sound` to `minecraft:block.chorus_flower.grow`
 - Changes the blend mode to `translucent`
 
-<<< @/example_pack/assets/your_name_space/catharsis/virtual_block_states/diamond.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/your_name_space/catharsis/virtual_block_states/diamond.json{json:line-numbers}
 
 </Example>
 

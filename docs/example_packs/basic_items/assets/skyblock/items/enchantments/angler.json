@@ -1,0 +1,43 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "catharsis:enchanted_book_level",
+    "entries": [
+      {
+        "threshold": 1,
+        "model": {
+          "type": "minecraft:model",
+          "model": "your_namespace:item/angler_1"
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/acacia_door"
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/oak_door"
+        }
+      },
+      {
+        "threshold": 4,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/spruce_door"
+        }
+      },
+      {
+        "threshold": 5,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/dark_oak_door"
+        }
+      }
+    ]
+  }
+}

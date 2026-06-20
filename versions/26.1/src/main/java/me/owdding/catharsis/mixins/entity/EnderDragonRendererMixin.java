@@ -20,7 +20,7 @@ public class EnderDragonRendererMixin {
             target = "Lnet/minecraft/client/renderer/SubmitNodeCollector;submitModel(Lnet/minecraft/client/model/Model;Ljava/lang/Object;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/resources/Identifier;IIILnet/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay;)V"
         )
     )
-    public void catharsis$handleDragonTextureReplacement(Args args, @Local(argsOnly = true, name = "state") EnderDragonRenderState state) {
+    public void catharsis$handleDragonTextureReplacement(Args args, @Local(argsOnly = true) EnderDragonRenderState state) {
         var customVariant = state.catharsis$getCustomEntityModelVariant();
 
         if (customVariant == null) return;
@@ -35,7 +35,7 @@ public class EnderDragonRendererMixin {
             target = "Lnet/minecraft/client/renderer/SubmitNodeCollector;submitModel(Lnet/minecraft/client/model/Model;Ljava/lang/Object;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/rendertype/RenderType;IIILnet/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay;)V"
         )
     )
-    public void catharsis$handleDragonTextureReplacementDecal(Args args, @Local(argsOnly = true, name = "state") EnderDragonRenderState state) {
+    public void catharsis$handleDragonTextureReplacementDecal(Args args, @Local(argsOnly = true) EnderDragonRenderState state) {
         var customVariant = state.catharsis$getCustomEntityModelVariant();
 
         if (customVariant == null) return;

@@ -1,0 +1,13 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      { "type": "island", "island": "crystal_hollows" },
+      {
+        "type": "max_health",
+        "max_health": [15000, 20000]
+      }
+    ]
+  },
+  "type": "minecraft:iron_golem"
+}

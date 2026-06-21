@@ -1,0 +1,17 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      { "type": "island", "island": "crystal_hollows" },
+      {
+        "type": "max_health",
+        "max_health": 1000000000
+      },
+      {
+        "type": "npc_skin",
+        "skin": "http://textures.minecraft.net/texture/5f5b3926d8e6571ac5006259469aba8ea326d50f970e24829c3463b3c20b118a"
+      }
+    ]
+  },
+  "type": "minecraft:player"
+}

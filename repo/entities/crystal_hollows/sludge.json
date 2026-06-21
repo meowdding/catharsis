@@ -1,0 +1,13 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      { "type": "island", "island": "crystal_hollows" },
+      {
+        "type": "max_health",
+        "max_health": [5000, 10000, 25000]
+      }
+    ]
+  },
+  "type": "minecraft:slime"
+}

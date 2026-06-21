@@ -1,0 +1,13 @@
+{
+  "target": {
+    "type": "all",
+    "conditions": [
+      { "type": "island", "island": "fishing_1" },
+      {
+        "type": "max_health",
+        "max_health": [5000, 20000]
+      }
+    ]
+  },
+  "type": "minecraft:slime"
+}

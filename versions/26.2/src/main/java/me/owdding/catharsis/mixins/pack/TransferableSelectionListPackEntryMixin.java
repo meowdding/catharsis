@@ -13,7 +13,7 @@ import me.owdding.catharsis.hooks.pack.PackEntryHook;
 import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.MultiLineTextWidget;
 import net.minecraft.client.gui.components.ObjectSelectionList;
 import net.minecraft.client.gui.components.StringWidget;
@@ -47,6 +47,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     private static final Identifier COG_HIGHLIGHTED_ICON = Identifier.fromNamespaceAndPath("catharsis", "cog_highlighted");
     @Unique
     private static final Identifier COG_ERROR_ICON = Identifier.fromNamespaceAndPath("catharsis", "cog_error");
+
     @Shadow
     @Final
     protected Minecraft minecraft;
@@ -66,7 +67,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     private int top = 0;
 
     @Inject(
-        method = "renderContent",
+        method = "extractContent",
         at = @At("HEAD")
     )
     private void renderConfigButton(CallbackInfo ci) {
@@ -75,7 +76,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     }
 
     @ModifyExpressionValue(
-        method = "renderContent",
+        method = "extractContent",
         at = @At(value = "INVOKE", target = "Lnet/minecraft/server/packs/repository/PackCompatibility;isCompatible()Z", ordinal = 0)
     )
     private boolean expandIncompatibleCheck(boolean isCompatible) {
@@ -85,17 +86,17 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     }
 
     @Inject(
-        method = "renderContent",
+        method = "extractContent",
         at = @At(
             value = "INVOKE",
             shift = At.Shift.AFTER,
             ordinal = 1,
-            target = "Lnet/minecraft/client/gui/GuiGraphics;fill(IIIII)V"
+            target = "Lnet/minecraft/client/gui/GuiGraphicsExtractor;fill(IIIII)V"
         )
     )
     private void renderDescription(
         CallbackInfo ci,
-        @Local(ordinal = 0, argsOnly = true) GuiGraphics graphics,
+        @Local(ordinal = 0, argsOnly = true) GuiGraphicsExtractor graphics,
         @Local(ordinal = 0, argsOnly = true) int mouseX,
         @Local(ordinal = 1, argsOnly = true) int mouseY
     ) {
@@ -112,12 +113,12 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
     }
 
     @Inject(
-        method = "renderContent",
+        method = "extractContent",
         at = @At("TAIL")
     )
     private void renderConfigButton(
         CallbackInfo ci,
-        @Local(ordinal = 0, argsOnly = true) GuiGraphics graphics,
+        @Local(ordinal = 0, argsOnly = true) GuiGraphicsExtractor graphics,
         @Local(ordinal = 0, argsOnly = true) int mouseX,
         @Local(ordinal = 1, argsOnly = true) int mouseY,
         @Local(ordinal = 0, argsOnly = true) boolean isHovering
@@ -156,7 +157,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
             return;
         }
         if (event.input() == InputConstants.MOUSE_BUTTON_LEFT && !config.isEmpty()) {
-            this.minecraft.setScreen(new PackConfigScreen(this.minecraft.screen, meta.getId(), config));
+            this.minecraft.gui.setScreen(new PackConfigScreen(this.minecraft.gui.screen(), meta.getId(), config));
             cir.setReturnValue(true);
         }
     }

@@ -59,7 +59,6 @@ data class RedirectBlockReplacement(
         override val transform: QuadTransform by lazy {
             if (blend != null) {
                 QuadTransform { quad ->
-                    //~ if >= 26.1 'renderLayer' -> 'chunkLayer'
                     quad.chunkLayer(blend.sectionLayer)
                     true
                 }

@@ -44,6 +44,9 @@ object ResizingEqualSpacingLayout {
             }
         }
 
+        //? >= 26.2
+        override fun removeChildren() { this.children.clear() }
+
         fun <T : LayoutElement> addChild(child: T): T {
             this.children.add(child)
             return child

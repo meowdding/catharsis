@@ -71,9 +71,12 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
 
     override fun repositionElements() {
         val nav = this.navigation ?: return
-        //~ if >= 26.1 'setWidth' -> 'updateWidth'
-        nav.updateWidth(this.width)
+        //? >= 26.2 {
+        nav.arrangeElements(this.width)
+        //?} else {
+        /*nav.updateWidth(this.width)
         nav.arrangeElements()
+         *///?}
 
         val navBottom = nav.rectangle.bottom()
 
@@ -83,7 +86,7 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
     }
 
     override fun onClose() {
-        this.minecraft!!.setScreen(this.parent)
+        McClient.setScreen(this.parent)
         PackConfigHandler.save()
         if (this.config.current != this.originalConfigData) {
             this.minecraft!!.reloadResourcePacks()
@@ -243,6 +246,9 @@ class PackConfigScreenTab(val title: Component, val contents: Layout) : Tab {
         it.setMinWidth(310)
         it.setMaxHeight(130)
     }
+
+    //? >= 26.2
+    override fun getLayout(): Layout = layout
 
     override fun getTabTitle(): Component = title
     override fun getTabExtraNarration(): Component = Component.empty()

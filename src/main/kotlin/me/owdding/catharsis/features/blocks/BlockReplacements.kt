@@ -171,7 +171,8 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     fun markAllDirty() {
         val level = McLevel.selfOrNull ?: return
         val chunks = level.chunkSource.storage.chunks
-        val renderer = McClient.self.levelRenderer
+        //~ if >= 26.2 '.levelRenderer' -> '.levelExtractor'
+        val renderer = McClient.self.levelExtractor
         for (i in 0 until chunks.length()) {
             val chunk = level.chunkSource.storage.chunks.get(i)
             if (chunk == null || chunk.isEmpty) continue

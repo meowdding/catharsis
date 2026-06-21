@@ -11,7 +11,8 @@ import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource
 import net.minecraft.core.component.DataComponents
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.nbt.NbtOps
-import net.minecraft.world.entity.EntityType
+//~ if >= 26.2 'EntityType' -> 'EntityTypes'
+import net.minecraft.world.entity.EntityTypes
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.Items
@@ -69,13 +70,14 @@ object GiveArmorstand {
 
     private val regex = "(?i)([\\s\\S]+?_)(?:${armorTypes.joinToString("|")})(_[\\s\\S]*)?$".toRegex()
 
+    //~ if >= 26.2 'EntityType.' -> 'EntityTypes.' {
     @Subscription
     private fun RegisterCommandsEvent.onRegister() {
         register("catharsis dev give") {
             then("armorstand") {
                 createGive { tag, skyBlockId ->
                     Items.ARMOR_STAND.defaultInstance.apply {
-                        set(DataComponents.ENTITY_DATA, TypedEntityData.of(EntityType.ARMOR_STAND, tag))
+                        set(DataComponents.ENTITY_DATA, TypedEntityData.of(EntityTypes.ARMOR_STAND, tag))
                         set(DataComponents.CUSTOM_NAME, Text.of(skyBlockId) { italic = false })
                     }
                 }
@@ -93,7 +95,7 @@ object GiveArmorstand {
                     }
                     tag.putBoolean("immovable", MannequinFlag.IMMOVALBE in flags)
                     if (MannequinFlag.LEFT_HANDED in flags) tag.putString("main_hand", "left")
-                    set(DataComponents.ENTITY_DATA, TypedEntityData.of(EntityType.MANNEQUIN, tag))
+                    set(DataComponents.ENTITY_DATA, TypedEntityData.of(EntityTypes.MANNEQUIN, tag))
                     set(
                         DataComponents.CUSTOM_NAME,
                         Text.of(skyBlockId) {
@@ -114,6 +116,7 @@ object GiveArmorstand {
             }
         }
     }
+    //~}
 
     private val ignoredCategories = mutableSetOf(
         "necklace",

@@ -91,7 +91,7 @@ fun mainMenu(
                     of("skyblock_gui", "fast_travel/advanced_mode/enabled"),
                     SlotAllCondition(
                         SlotNameCondition(EqualsTextMatcher("Advanced Mode")),
-                        SlotItemCondition(Items.LIME_DYE),
+                        SlotItemCondition(Items.DYE.lime),
                     ),
                 ),
             )
@@ -100,7 +100,7 @@ fun mainMenu(
                     of("skyblock_gui", "fast_travel/advanced_mode/disabled"),
                     SlotAllCondition(
                         SlotNameCondition(EqualsTextMatcher("Advanced Mode")),
-                        SlotItemCondition(Items.GRAY_DYE),
+                        SlotItemCondition(Items.DYE.gray),
                     ),
                 ),
             )

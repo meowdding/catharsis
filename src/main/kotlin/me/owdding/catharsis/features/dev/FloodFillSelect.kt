@@ -457,7 +457,6 @@ object FloodFillSelect {
     @Subscription
     private fun RenderHudEvent.render() {
         val job = job ?: return
-        //~ if >= 26.1 'drawCenteredString' -> 'centeredText'
         this.graphics.centeredText(
             McFont.self,
             Text.of {

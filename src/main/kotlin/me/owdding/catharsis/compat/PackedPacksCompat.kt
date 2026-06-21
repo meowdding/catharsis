@@ -15,6 +15,7 @@ import net.minecraft.client.gui.components.ImageButton
 import net.minecraft.client.gui.components.WidgetSprites
 import net.minecraft.client.renderer.RenderPipelines
 import net.minecraft.network.chat.Component
+import tech.thatgravyboat.skyblockapi.helpers.McClient
 
 import java.util.Optional
 
@@ -42,11 +43,10 @@ object PackedPacksCompat : PackedPacksInitializer {
                     0, 0, BUTTON_SIZE, BUTTON_SIZE, canEditConfigSprites,
                     { _ ->
                         if (canEdit) {
-                            Minecraft.getInstance().setScreen(PackConfigScreen(event.screenContext().screen(), meta.id, config))
+                            McClient.setScreen(PackConfigScreen(event.screenContext().screen(), meta.id, config))
                         }
                     },
                 ) {
-                    //~ if >= 26.1 'renderContents' -> 'extractContents'
                     override fun extractContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, a: Float) {
                         if (isHovered) {
                             graphics.setTooltipForNextFrame(
@@ -70,7 +70,6 @@ object PackedPacksCompat : PackedPacksInitializer {
             }
             if (meta !== null && !meta.incompatibilities.isEmpty()) {
                 val incompatWidget = object : ImageButton(0, 0, BUTTON_SIZE, BUTTON_SIZE, warningIncompatSprites, {}) {
-                    //~ if >= 26.1 'renderContents' -> 'extractContents'
                     override fun extractContents(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, a: Float) {
                         val sprite = warningIncompatSprites.get(isActive, isHoveredOrFocused)
                         graphics.blitSprite(RenderPipelines.GUI_TEXTURED, sprite, x, y, width, height)

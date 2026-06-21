@@ -1,6 +1,5 @@
 package me.owdding.catharsis.mixins.items;
 
-//~ gui_graphics
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import com.llamalad7.mixinextras.sugar.Local;
@@ -27,9 +26,7 @@ public class AbstractContainerScreenMixin {
     protected Slot hoveredSlot;
 
     @WrapOperation(
-        //~ if >= 26.1 'renderSlot' -> 'extractSlot'
         method = "extractSlot",
-        //~ if >= 26.1 'renderItem(' -> 'item('
         at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphicsExtractor;item(Lnet/minecraft/world/item/ItemStack;III)V")
     )
     private void catharsis$renderItem(GuiGraphicsExtractor instance, ItemStack stack, int x, int y, int seed, Operation<Void> original, @Local(argsOnly = true) Slot slot) {
@@ -43,7 +40,6 @@ public class AbstractContainerScreenMixin {
     }
 
     @WrapOperation(
-        //~ if >= 26.1 'renderTooltip' -> 'extractTooltip'
         method = "extractTooltip",
         at = @At(
             value = "INVOKE",

@@ -43,7 +43,6 @@ data class SimpleTimespan(
 
     override fun tick() {
         val level = McLevel.selfOrNull ?: return
-        //~ if >= 26.1 'dayTime' -> 'defaultClockTime'
         val time = level.defaultClockTime % 24_000
 
         lastState = time in begin..end

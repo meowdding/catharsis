@@ -56,8 +56,8 @@ data class GlintItemModel(
     ) : ItemModel.Unbaked {
 
         override fun type(): MapCodec<out ItemModel.Unbaked> = CODEC
-        override fun bake(context: ItemModel.BakingContext/*? if >= 26.1 >> ')'*/, transformation: Matrix4fc): ItemModel =
-            GlintItemModel(this.glint, this.model.bake(context/*? if >= 26.1 >> ')'*/, transformation))
+        override fun bake(context: ItemModel.BakingContext, transformation: Matrix4fc): ItemModel =
+            GlintItemModel(this.glint, this.model.bake(context, transformation))
 
         override fun resolveDependencies(resolver: ResolvableModel.Resolver) {
             model.resolveDependencies(resolver)

@@ -46,7 +46,7 @@ public abstract class TextureManagerMixin {
     }
 
     @WrapOperation(
-        method = "method_65880",
+        method = "lambda$reload$2",
         at = @At(
             value = "INVOKE",
             target = "Lnet/minecraft/client/renderer/texture/ReloadableTexture;apply(Lnet/minecraft/client/renderer/texture/TextureContents;)V"

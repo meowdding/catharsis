@@ -6,7 +6,6 @@ import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.client.gui.screens.inventory.InventoryScreen
-//~ if >= 26.1 'client.renderer.LightTexture as LightCoordsUtil' -> 'util.LightCoordsUtil'
 import net.minecraft.util.LightCoordsUtil
 import net.minecraft.client.renderer.RenderPipelines
 import net.minecraft.network.chat.Component
@@ -37,8 +36,6 @@ data class GuiPlayerElement(
         val player = McPlayer.self ?: return
 
         if (rotation == null) {
-
-            //~ if >= 26.1 'renderEntityInInventoryFollowsMouse' -> 'extractEntityInInventoryFollowsMouse'
             InventoryScreen.extractEntityInInventoryFollowsMouse(
                 graphics,
                 newX, newY, newX + width, newY + height,
@@ -52,8 +49,6 @@ data class GuiPlayerElement(
             state.lightCoords = LightCoordsUtil.FULL_BRIGHT
             state.shadowPieces.clear()
             state.outlineColor = 0
-
-            //~ if >= 26.1 'submitEntityRenderState(' -> 'entity('
             graphics.entity(state, 25.0F, offset, rotation, null, newX, newY, newX + width, newY + height)
         }
     }
@@ -96,7 +91,6 @@ data class GuiTextElement(
     override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         val newX = x.calculate(bounds.left(), bounds.width()) - (McFont.width(text) * alignment).toInt()
         val newY = y.calculate(bounds.top(), bounds.height())
-        //~ if >= 26.1 'drawString(' -> 'text('
         graphics.text(McFont.self, text, newX, newY, this.color)
     }
 

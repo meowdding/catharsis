@@ -68,7 +68,7 @@ To override an entity, you need to provide two JSON files. The first handles the
   <span><TypeIcon type="object"/> An <b>Entity Asset Mapping</b> object (`catharsis/entities/{entity_name}.json`)</span>
 
 - <TypeIcon type="array"/><TypeIcon type="object"/> Either a list of variants or a single variant can be provided.
-  - <TypeIcon type="array"/> **variants**: A list of variations to apply to the entity to support randomizing models and textures. Selecting is based on the entity's UUID. <Version>1.0.0-beta.17</Version>
+  - <TypeIcon type="array"/> **variants**: A list of variations to apply to the entity to support randomizing models and textures. Selecting is based on the entity's UUID. <VersionTag>1.0.0-beta.17</VersionTag>
     - <TypeIcon type="object"/> **variant**: A single entity model/texture variant.
       - <TypeIcon type="number"/> **weight**: (Optional) The chance this variant is selected relative to other variants. Defaults to `1`.
       - <TypeIcon type="string"/> **texture**: The path to your custom texture image.
@@ -149,7 +149,7 @@ Works for any number as well as booleans (0 or 1, I think at least).
 
 </TreeView>
 
-### Max Health (`max_health`) <Version>1.0.0-beta.16</Version>
+### Max Health (`max_health`) <VersionTag>1.0.0-beta.16</VersionTag>
 
 Allows you to access the entity's maximum health value.
 
@@ -172,7 +172,7 @@ Matches if the entity (or player) is located on a specific Skyblock island.
 
 </TreeView>
 
-### Equipment Conditional (`equipment_conditional`) <Version>1.0.0-beta.18</Version>
+### Equipment Conditional (`equipment_conditional`) <VersionTag>1.0.0-beta.18</VersionTag>
 
 Matches based on a boolean item model property evaluated on the item currently equipped by the entity.
 
@@ -184,7 +184,7 @@ Matches based on a boolean item model property evaluated on the item currently e
 
 </TreeView>
 
-### Equipment Select (`equipment_select`) <Version>1.0.0-beta.18</Version>
+### Equipment Select (`equipment_select`) <VersionTag>1.0.0-beta.18</VersionTag>
 
 Evaluates a select item model property on the equipped item against a set of values.
 
@@ -201,7 +201,7 @@ Evaluates a select item model property on the equipped item against a set of val
 
 </TreeView>
 
-### Equipment Range Dispatch (`equipment_range_dispatch`) <Version>1.0.0-beta.18</Version>
+### Equipment Range Dispatch (`equipment_range_dispatch`) <VersionTag>1.0.0-beta.18</VersionTag>
 
 Evaluates a numeric item model property on the equipped item using threshold entries.
 
@@ -230,7 +230,7 @@ Matches an entity based on whether it is a baby or an adult.
 
 </TreeView>
 
-### Has Passengers (`has_passengers`) <Version>1.0.0-beta.18</Version>
+### Has Passengers (`has_passengers`) <VersionTag>1.0.0-beta.18</VersionTag>
 
 Matches if an entity has passengers.
 
@@ -240,7 +240,7 @@ Matches if an entity has passengers.
 
 </TreeView>
 
-### Passenger Conditions (`passengers`) <Version>1.0.0-beta.18</Version>
+### Passenger Conditions (`passengers`) <VersionTag>1.0.0-beta.18</VersionTag>
 
 Runs matches on a specific passenger, or false if none.
 

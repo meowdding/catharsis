@@ -7,7 +7,7 @@ import Example from "./example.vue";
 import SoundEvent from "./schemas/sound_event.vue";
 import RepoAreas from "./repo-areas.vue";
 import RepoTimespans from "./repo-timespans.vue";
-import Version from "./version.vue";
+import VersionTag from "./version-tag.vue";
 import Environment from "./environment.vue";
 import ExamplePack from "./example-pack.vue";
 import RepoGuis from "./repo-guis.vue";
@@ -21,7 +21,7 @@ export const CustomComponents: { [name: string]: any } = {
     "Island": Island,
     "Example": Example,
     "SoundEvent": SoundEvent,
-    "Version": Version,
+    "VersionTag": VersionTag,
     "Environment": Environment,
     "ExamplePack": ExamplePack,
     "RepoAreas": RepoAreas,

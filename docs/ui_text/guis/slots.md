@@ -46,7 +46,7 @@ Match against a slot by the item it contains.
 
 </TreeView>
 
-#### **Item** (`catharsis:item`) <Version>1.0.0-beta.17</Version>
+#### **Item** (`catharsis:item`) <VersionTag>1.0.0-beta.17</VersionTag>
 
 Match against a slot by the item it contains.
 

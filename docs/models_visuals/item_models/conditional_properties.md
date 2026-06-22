@@ -88,7 +88,7 @@ Returns `true` if the item is hovered.
 
 Returns `true` if the pet has a skin applied.
 
-#### <Environment type="hypixel"/> **Enchantment** (`catharsis:enchantment`)  <Version>1.0.0-beta.16</Version>
+#### <Environment type="hypixel"/> **Enchantment** (`catharsis:enchantment`)  <VersionTag>1.0.0-beta.16</VersionTag>
 
 Returns `true` if the item has the specified enchantment at a matching level or within a matching level range.
 

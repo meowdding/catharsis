@@ -73,12 +73,12 @@ To override an entity, you need to provide two JSON files. The first handles the
     - <TypeIcon type="object"/> **variant**: A single entity model/texture variant.
       - <TypeIcon type="number"/> **weight**: (Optional) The chance this variant is selected relative to other variants. Defaults to `1`.
       - <TypeIcon type="string"/> **texture**: The path to your custom texture image.
-      - <TypeIcon type="string"/> **emissive_texture**: (Optional) The path to an emissive texture image, if your model uses emissive textures. Defaults to `false`.
+      - <TypeIcon type="string"/> **emissive_texture**: (Optional) The path to an emissive texture image, if your model uses emissive textures. Defaults to none.
       - <TypeIcon type="string"/> **model**: The path to your Bedrock entity geometry file.
       - <TypeIcon type="boolean"/> **translucent**: (Optional) If the model has translucent textures. Defaults to `false`.
   - <TypeIcon type="object"/> The singular variant.
     - <TypeIcon type="string"/> **texture**: The path to your custom texture image.
-    - <TypeIcon type="string"/> **emissive_texture**: (Optional) The path to an emissive texture image, if your model uses emissive textures. Defaults to `false`.
+    - <TypeIcon type="string"/> **emissive_texture**: (Optional) The path to an emissive texture image, if your model uses emissive textures. Defaults to none.
     - <TypeIcon type="string"/> **model**: The path to your Bedrock entity geometry file.
     - <TypeIcon type="boolean"/> **translucent**: (Optional) If the model has translucent textures. Defaults to `false`.
 

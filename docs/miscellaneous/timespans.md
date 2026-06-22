@@ -44,3 +44,17 @@ A simple timespan that only matches nighttime.
 - <TypeIcon type="int" /> **end**: The ending point of the timespan in ticks, relative to the day.
 
 </TreeView>
+
+
+### <Environment type="skyblock"/> Season (`catharsis:season`)
+
+A timespan about SkyBlock Seasons.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>season</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:season`
+- <TypeIcon type="string" /><TypeIcon type="array" /> **season**/**seasons**: The SkyBlock Season, can be `EARLY_SPRING`, `SPRING`, `LATE_SPRING`, etc. 
+    for `SPRING`, `SUMMER`, `AUTUMN`, `WINTER`.
+
+</TreeView>

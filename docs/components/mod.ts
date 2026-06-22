@@ -8,6 +8,7 @@ import SoundEvent from "./schemas/sound_event.vue";
 import RepoAreas from "./repo-areas.vue";
 import RepoTimespans from "./repo-timespans.vue";
 import VersionTag from "./version-tag.vue";
+import Version from "./version.vue";
 import Environment from "./environment.vue";
 import ExamplePack from "./example-pack.vue";
 import RepoGuis from "./repo-guis.vue";
@@ -27,5 +28,6 @@ export const CustomComponents: { [name: string]: any } = {
     "RepoAreas": RepoAreas,
     "RepoTimespans": RepoTimespans,
     "RepoGuis": RepoGuis,
-    "MiscItems": MiscItems
+    "MiscItems": MiscItems,
+    "Version": Version,
 }

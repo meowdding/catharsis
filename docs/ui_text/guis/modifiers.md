@@ -11,26 +11,40 @@ GUI Modifiers allow Texture Packs to modify containers based on a [GUI Definitio
 
 <TreeView>
 <span><TypeIcon type="object"/> Root object</span>
+<ul>
 
 - <TypeIcon type="object"/> **target**: [A GUI Definition Target](#gui-definition-target)
 - <TypeIcon type="boolean"/> **overrideLabels**: (Optional) Disables rendering the Container Title, defaults to `false`.
 - <TypeIcon type="boolean"/> **overrideBackground**: (Optional) Disables rendering the Container Background Texture, defaults to `false`.
-- <TypeIcon type="boolean"/> **disableItemList**: (Optional) Disables the rendering of item list mods, defaults to `false`. <VersionTag>1.0.0-beta.18</VersionTag>
+
+<Version type="1.0.0-beta.18">
+
+- <TypeIcon type="boolean"/> **disableItemList**: (Optional) Disables the rendering of item list mods, defaults to `false`.
+
+</Version>
+
 - <TypeIcon type="object"/> **bounds**: (Optional) Determines if you clicked outside the container, uses the default container bounds if not specified.
     - <TypeIcon type="int"/> **width**: The width, should be 100 when using the default size.
     - <TypeIcon type="int"/> **height**: The height, should be 100 when using the default size.
-- <TypeIcon type="array"/> **itemListExclusionZones** (Optional) Specific exclusion zones for item list mods to exclude. <VersionTag>1.0.0-beta.18</VersionTag>
+
+<Version type="1.0.0-beta.18">
+
+- <TypeIcon type="array"/> **itemListExclusionZones** (Optional) Specific exclusion zones for item list mods to exclude.
     - <TypeIcon type="object"/> An Exclusion Zone object.
         - <TypeIcon type="int"/> **x**: The x coordinate where the exclusion zone starts.
         - <TypeIcon type="int"/> **y**: The y coordinate where the exclusion zone starts.
         - <TypeIcon type="int"/> **width**: The width of the exclusion zone.
         - <TypeIcon type="int"/> **height**: The height of the exclusion zone.
+
+</Version>
+
 - <TypeIcon type="object"/> **slots**: (Optional) A map of slots to modify.
     - <TypeIcon type="string"/> **&lt;key&gt;**: The id of slot you want to modify
       - <TypeIcon type="object"/> [A slot modifier](#slot-modifier).
 - <TypeIcon type="array"/> **elements**: (Optional) A list of [GUI elements](#gui-elements).
 - <TypeIcon type="array"/> **widgets**: (Optional) A list of [GUI widgets](#gui-widgets).
 
+</ul>
 </TreeView>
 
 ## GUI Definition Target

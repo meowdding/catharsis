@@ -46,7 +46,9 @@ A simple timespan that only matches nighttime.
 </TreeView>
 
 
-### <Environment type="hypixel"/> Season (`catharsis:season`) <VersionTag>1.0.0-Beta.18</VersionTag>
+<Version type="1.0.0-beta.18">
+
+### <Environment type="hypixel"/> Season (`catharsis:season`)
 
 A timespan about SkyBlock Seasons.
 
@@ -58,3 +60,4 @@ A timespan about SkyBlock Seasons.
     for `SPRING`, `SUMMER`, `AUTUMN`, `WINTER`.
 
 </TreeView>
+</Version>

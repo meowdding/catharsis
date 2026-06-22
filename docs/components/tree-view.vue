@@ -29,10 +29,6 @@ const props = defineProps({
         list-style: none;
     }
 
-    ul ul {
-        margin-top: 0;
-    }
-
     li, li + li {
         margin-top: 0;
         list-style: none;
@@ -57,6 +53,26 @@ const props = defineProps({
         height: 12px;
         border-bottom: 1px solid var(--vp-c-text-1);
         left: -1px;
+    }
+
+    ul > ul {
+        margin-left: 10px;
+        &:not(:last-child) {
+            border-left: 1px solid var(--vp-c-text-1);
+        }
+
+        & > li {
+            margin-left: -1px;
+        }
+
+        &:last-child {
+            border-left: 1px solid transparent;
+        }
+    }
+
+    ul > ul:last-child:before {
+        border-left: 1px solid var(--vp-c-text-1);
+        background: purple;
     }
 
     li:last-child:before {

@@ -46,17 +46,20 @@ Match against a slot by the item it contains.
 
 </TreeView>
 
-#### **Item** (`catharsis:item`) <VersionTag>1.0.0-beta.17</VersionTag>
+<Version type="1.0.0-beta.17">
 
-Match against a slot by the item it contains.
+#### **Item** (`catharsis:item_model`)
+
+Match against a slot by the item model override it contains
 
 <TreeView>
-<span><TypeIcon type="object"/> Root <b>item</b> slot condition object</span>
+<span><TypeIcon type="object"/> Root <b>item_model</b> slot condition object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:item`
-- <TypeIcon type="array"/> **items**: An array or a singular entry of item IDs to match against the slot's item.
+- <TypeIcon type="string"/> **type**: `catharsis:item_model`
+- <TypeIcon type="array"/> **items**: An array or a singular entry of item IDs to match against the slot's item model.
 
 </TreeView>
+</Version>
 
 #### <Environment type="hypixel"/> **ID** (`catharsis:id`)
 

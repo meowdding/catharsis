@@ -64,11 +64,12 @@ To override an entity, you need to provide two JSON files. The first handles the
 
 <br/>
 
+<Version type="1.0.0-beta.17">
 <TreeView>
   <span><TypeIcon type="object"/> An <b>Entity Asset Mapping</b> object (`catharsis/entities/{entity_name}.json`)</span>
 
 - <TypeIcon type="array"/><TypeIcon type="object"/> Either a list of variants or a single variant can be provided.
-  - <TypeIcon type="array"/> **variants**: A list of variations to apply to the entity to support randomizing models and textures. Selecting is based on the entity's UUID. <VersionTag>1.0.0-beta.17</VersionTag>
+  - <TypeIcon type="array"/> **variants**: A list of variations to apply to the entity to support randomizing models and textures. Selecting is based on the entity's UUID.
     - <TypeIcon type="object"/> **variant**: A single entity model/texture variant.
       - <TypeIcon type="number"/> **weight**: (Optional) The chance this variant is selected relative to other variants. Defaults to `1`.
       - <TypeIcon type="string"/> **texture**: The path to your custom texture image.
@@ -82,6 +83,7 @@ To override an entity, you need to provide two JSON files. The first handles the
     - <TypeIcon type="boolean"/> **translucent**: (Optional) If the model has translucent textures. Defaults to `false`.
 
 </TreeView>
+</Version>
 
 > **Note:** Ensure you place the actual `.png` texture and `.geo.json` model in the specific paths you declare. If you use vanilla names for the bones in your model, the entity
 > will automatically use vanilla animations. If a bone has the wrong name, the mod will send an error to the log.
@@ -149,7 +151,9 @@ Works for any number as well as booleans (0 or 1, I think at least).
 
 </TreeView>
 
-### Max Health (`max_health`) <VersionTag>1.0.0-beta.16</VersionTag>
+<Version type="1.0.0-beta.16">
+
+### Max Health (`max_health`)
 
 Allows you to access the entity's maximum health value.
 
@@ -160,6 +164,7 @@ Allows you to access the entity's maximum health value.
 - <TypeIcon type="boolean"/> **use_modifiers**: (Optional) Use Health Modifiers like mayor perks etc, see a full list [here](https://github.com/meowdding/catharsis/blob/development/repo/health_modifiers.json).
 
 </TreeView>
+</Version>
 
 ### <Environment type="hypixel"/> Island (`island`)
 
@@ -172,7 +177,21 @@ Matches if the entity (or player) is located on a specific Skyblock island.
 
 </TreeView>
 
-### Equipment Conditional (`equipment_conditional`) <VersionTag>1.0.0-beta.18</VersionTag>
+### Baby State (`is_baby`)
+
+Matches an entity based on whether it is a baby or an adult.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `is_baby`
+- <TypeIcon type="boolean"/> **is_baby**: The boolean value to compare against (`true` for baby, `false` for adult).
+
+</TreeView>
+
+
+<Version type="1.0.0-beta.18">
+
+### Equipment Conditional (`equipment_conditional`)
 
 Matches based on a boolean item model property evaluated on the item currently equipped by the entity.
 
@@ -184,7 +203,7 @@ Matches based on a boolean item model property evaluated on the item currently e
 
 </TreeView>
 
-### Equipment Select (`equipment_select`) <VersionTag>1.0.0-beta.18</VersionTag>
+### Equipment Select (`equipment_select`)
 
 Evaluates a select item model property on the equipped item against a set of values.
 
@@ -201,7 +220,7 @@ Evaluates a select item model property on the equipped item against a set of val
 
 </TreeView>
 
-### Equipment Range Dispatch (`equipment_range_dispatch`) <VersionTag>1.0.0-beta.18</VersionTag>
+### Equipment Range Dispatch (`equipment_range_dispatch`)
 
 Evaluates a numeric item model property on the equipped item using threshold entries.
 
@@ -219,18 +238,7 @@ Evaluates a numeric item model property on the equipped item using threshold ent
 
 </TreeView>
 
-### Baby State (`is_baby`)
-
-Matches an entity based on whether it is a baby or an adult.
-
-<TreeView>
-
-- <TypeIcon type="string"/> **type**: `is_baby`
-- <TypeIcon type="boolean"/> **is_baby**: The boolean value to compare against (`true` for baby, `false` for adult).
-
-</TreeView>
-
-### Has Passengers (`has_passengers`) <VersionTag>1.0.0-beta.18</VersionTag>
+### Has Passengers (`has_passengers`)
 
 Matches if an entity has passengers.
 
@@ -240,7 +248,7 @@ Matches if an entity has passengers.
 
 </TreeView>
 
-### Passenger Conditions (`passengers`) <VersionTag>1.0.0-beta.18</VersionTag>
+### Passenger Conditions (`passengers`)
 
 Runs matches on a specific passenger, or false if none.
 
@@ -252,6 +260,8 @@ Runs matches on a specific passenger, or false if none.
 - <TypeIcon type="object"/> **condition**: The conditions to run on the passenger.
 
 </TreeView>
+
+</Version>
 
 ## Model Quirks
 

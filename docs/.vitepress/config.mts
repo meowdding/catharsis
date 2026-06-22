@@ -13,6 +13,23 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             {text: 'Home', link: '/'},
+            {
+                "text": "Mod Version",
+                "items": [
+                    {
+                        text: "1.0.0-beta.18",
+                        link: "?1.0.0-beta.18"
+                    },
+                    {
+                        text: "1.0.0-beta.17 (Latest Release)",
+                        link: "?1.0.0-beta.17"
+                    },
+                    {
+                        text: "1.0.0-beta.16",
+                        link: "?1.0.0-beta.16"
+                    }
+                ]
+            }
         ],
 
         search: {provider: 'local'},
@@ -77,7 +94,7 @@ export default defineConfig({
                             {text: "Slot Definitions", link: "/ui_text/guis/slots"},
                             {text: "GUI Modifiers", link: "/ui_text/guis/modifiers"},
                         ]
-                   },
+                    },
                     {text: "Text Replacements", link: "/ui_text/text_replacements"},
                     {text: "Tooltip Backgrounds", link: "/ui_text/tooltip_background"},
                 ]
@@ -108,7 +125,7 @@ export default defineConfig({
                     {text: "Commands", link: "/dev_tools/commands"},
                     {text: "Area Selection", link: "/dev_tools/area_selection"},
                 ]
-           }
+            }
         ],
 
         socialLinks: [
@@ -133,7 +150,7 @@ export default defineConfig({
     },
     vite: {
         plugins: [
-            vuetify({ autoImport: true })
+            vuetify({autoImport: true})
         ],
         ssr: {
             noExternal: ['vuetify']

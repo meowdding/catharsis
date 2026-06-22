@@ -52,7 +52,10 @@ Returns the skin of a pet, only works on pets in GUIs (probably).
 
 Returns the texture of the item, only works on items that have custom textures (like heads).
 
-### <Environment type="hypixel"/> `catharsis:selected_faction`  <VersionTag>1.0.0-beta.16</VersionTag>
+<Version type="1.0.0-beta.16">
+
+### <Environment type="hypixel"/> `catharsis:selected_faction`
 
 Returns the currently selected Crimson Isle faction.
 Values can be `mage` or `barbarian`, in case there is no faction selected it returns null.
+</Version>

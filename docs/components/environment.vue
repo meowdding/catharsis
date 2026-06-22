@@ -9,6 +9,7 @@ let hover
 let icon
 switch (props.type) {
     case "hypixel":
+    case "skyblock":
         hover = "This Feature only works on Hypixel";
         icon = "hypixel"
         break;

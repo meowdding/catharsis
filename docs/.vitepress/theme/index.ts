@@ -21,7 +21,7 @@ const vuetify = createVuetify({
 })
 
 export const store = reactive({
-    version: ""
+    version: modVersionData
 });
 
 
@@ -33,16 +33,18 @@ export default {
     enhanceApp({app, router, siteData}) {
         app.use(vuetify)
         router.onAfterRouteChange = (to) => {
-            let version = router.route.query.substring(1)
-            if (version.length !== 0) {
-                store.version = version
-            } else if (store.version.length === 0) {
-                store.version = modVersionData
-            }
+            if (typeof window !== 'undefined') {
+                let version = window.location.search.substring(1)
+                if (version.length !== 0) {
+                    store.version = version
+                } else if (store.version.length === 0) {
+                    store.version = modVersionData
+                }
 
-            let location = window.location.toString()
-            let last = location.lastIndexOf("?")
-            window.history.replaceState({}, true, location.substring(0, last <= 0 ? location.length : last) + "?" + store.version)
+                let location = window.location.toString()
+                let last = location.lastIndexOf("?")
+                window.history.replaceState({}, true, location.substring(0, last <= 0 ? location.length : last) + "?" + store.version)
+            }
         }
         Object.entries(CustomComponents).forEach(([key, value]) => {
             app.component(key, value)

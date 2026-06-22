@@ -54,7 +54,7 @@ A timespan about SkyBlock Seasons.
 <span><TypeIcon type="object"/> Root <b>season</b> object</span>
 
 - <TypeIcon type="string"/> **type**: `catharsis:season`
-- <TypeIcon type="string" /><TypeIcon type="array" /> **season**/**seasons**: The SkyBlock Season, can be `EARLY_SPRING`, `SPRING`, `LATE_SPRING`, etc. 
+- <TypeIcon type="string" /><TypeIcon type="array" /> **season**/**seasons**: A singular or a list of SkyBlock Seasons, can be `EARLY_SPRING`, `SPRING`, `LATE_SPRING`, etc. 
     for `SPRING`, `SUMMER`, `AUTUMN`, `WINTER`.
 
 </TreeView>

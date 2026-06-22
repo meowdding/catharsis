@@ -29,6 +29,8 @@ Example of an entity definition and its corresponding model and texture mapping.
 }
 ```
 
+<Version type="1.0.0-beta.17">
+
 **`{your_namespace}:catharsis/entities/{entity_name}.json`** (Weighted Randomization)
 
 ```json
@@ -47,6 +49,7 @@ Example of an entity definition and its corresponding model and texture mapping.
     ]
 }
 ```
+</Version>
 
 ## Entity Definition Explanation
 

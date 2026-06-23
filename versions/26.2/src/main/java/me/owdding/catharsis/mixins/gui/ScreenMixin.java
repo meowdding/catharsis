@@ -6,6 +6,7 @@ import me.owdding.catharsis.hooks.gui.AbstractContainerScreenHook;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.screens.inventory.ContainerScreen;
+import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -52,6 +53,22 @@ public abstract class ScreenMixin implements AbstractContainerScreenHook {
             at = @At(
                 value = "INVOKE",
                 target = "Lnet/minecraft/client/gui/screens/inventory/AbstractContainerScreen;extractBackground(Lnet/minecraft/client/gui/GuiGraphicsExtractor;IIF)V",
+                shift = At.Shift.AFTER
+            ),
+            cancellable = true
+        )
+        private void elements(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+            catharsis$modify(graphics, mouseX, mouseY, delta, ci);
+        }
+    }
+
+    @Mixin(InventoryScreen.class)
+    private abstract static class InventoryScreenMixin  extends ScreenMixin {
+        @Inject(
+            method = "extractBackground",
+            at = @At(
+                value = "INVOKE",
+                target = "Lnet/minecraft/client/gui/screens/inventory/AbstractRecipeBookScreen;extractBackground(Lnet/minecraft/client/gui/GuiGraphicsExtractor;IIF)V",
                 shift = At.Shift.AFTER
             ),
             cancellable = true

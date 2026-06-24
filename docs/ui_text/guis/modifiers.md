@@ -97,6 +97,8 @@ Render the Player itself on the screen.
     - <TypeIcon type="object"/> Coordinate & Alignment object.
         - <TypeIcon type="int"/> **offset**: The offset from the screen bounds (main container size).
         - <TypeIcon type="string"/> **alignment**: The alignment of the player, can be `START`, `CENTER` or `END`.
+- <TypeIcon type="int"/> **width**: The width of the player.
+- <TypeIcon type="int"/> **height**: The height of the player.
 - <TypeIcon type="string"/> **rotation**: (Optional) The players rotation, will follow the mouse if undefined. **Can only be one of the entries below.**
     - <TypeIcon type="array"/> A list of 4 floats: first, second, and the third component of the imaginary part, and the real part.
     - <TypeIcon type="object"/> An AxisAngle definition.

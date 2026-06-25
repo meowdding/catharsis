@@ -157,17 +157,19 @@ class SafeModelPart(
                     subCubeBuilder.addBedrockCube(cubePivot, from, size, uv, cube.inflate, cube.mirror)
 
                     val cubePivotOffset = Vector3f(
-                        pivot.x - cubePivot.x,
+                        cubePivot.x - pivot.x,
                         pivot.y - cubePivot.y,
                         cubePivot.z - pivot.z,
                     )
 
-                    child.addOrReplaceChild("rotate_bone_$index", subCubeBuilder, PartPose.offsetAndRotation(
+                    val subPartPose = PartPose.offsetAndRotation(
                         cubePivotOffset.x, cubePivotOffset.y, cubePivotOffset.z,
                         Math.toRadians(cube.rotation[0].toDouble()).toFloat(),
                         Math.toRadians(cube.rotation[1].toDouble()).toFloat(),
                         Math.toRadians(cube.rotation[2].toDouble()).toFloat()
-                    ))
+                    )
+
+                    child.addOrReplaceChild("rotate_bone_$index", subCubeBuilder, subPartPose)
                 }
 
                 knownBones[bone.name] = child

@@ -117,5 +117,5 @@ data class BoundingBox(
 
     fun toMinecraftBox() = MinecraftBox(min.x, min.y, min.z, max.x, max.y, max.z)
     fun toMinecraftAABB(): AABB = AABB.of(toMinecraftBox())
-    override fun render(event: RenderWorldEvent) = event.atCamera { event.renderLineBox(toMinecraftAABB()) }
+    override fun render(event: RenderWorldEvent) = event.renderLineBox(toMinecraftAABB())
 }

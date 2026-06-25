@@ -469,18 +469,18 @@ object FloodFillSelect {
     }
 
     @Subscription
-    private fun RenderWorldEvent.AfterTranslucent.render() = atCamera {
+    private fun RenderWorldEvent.AfterTranslucent.render() {
         val job = job
         job?.lastBlock?.get()?.let {
-            this@render.renderLineBox(AABB(it), secondary = true)
+            this@render.renderLineBox(AABB(it))
         }
 
         finishedRegions.values.filterNot { it.highlightType == HighlightType.NONE }.forEach {
             if (it.highlightType == HighlightType.REGION) {
-                this@render.renderLineBox(it.aabb.toMinecraftAABB(), secondary = true)
+                this@render.renderLineBox(it.aabb.toMinecraftAABB())
             } else {
                 it.blocks.forEach {
-                    this@render.renderLineBox(AABB(it.toBlockPos()), secondary = true)
+                    this@render.renderLineBox(AABB(it.toBlockPos()))
                 }
             }
         }

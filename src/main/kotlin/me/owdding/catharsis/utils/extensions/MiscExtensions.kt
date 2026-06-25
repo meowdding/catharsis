@@ -79,10 +79,8 @@ fun PoseStack.pose(): PoseStack.Pose = this.last()
 fun RenderWorldEvent.renderLineBox(
     box: AABB,
     red: Float = 1f, green: Float = 1f, blue: Float = 1f, alpha: Float = 1f,
-    secondary: Boolean = false,
 ) {
-    // TODO: what does secondary mean
-    Gizmos.cuboid(box.inflate(0.005, 0.005, 0.005), GizmoStyle(ARGB.colorFromFloat(alpha, red, green, blue), 1f, -1))
+    Gizmos.cuboid(box, GizmoStyle.stroke(ARGB.colorFromFloat(alpha, red, green, blue), 2f))
 }
 
 fun StringWidget.withClickHandler(handler: (Style) -> Unit) : StringWidget {

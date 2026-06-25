@@ -12,7 +12,7 @@ import net.minecraft.network.chat.TextColor as MCTextColor
 
 val PREFIX = Text.of {
     append("«")
-    append(Text.of("Catharsis").gradient(TextColor.DARK_PURPLE, 0x730373))
+    append(Text.of("Catharsis").gradient(0xAA01AA, 0x730373))
     append("»")
     this.color = TextColor.GRAY
 }

@@ -14,6 +14,7 @@ import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.extensions.sendWithPrefixIf
 import me.owdding.catharsis.utils.types.colors.CatharsisColors
+import me.owdding.catharsis.utils.types.colors.CatppuccinColors
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktmodules.AutoCollect
 import me.owdding.ktmodules.Module
@@ -102,6 +103,11 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
                     append("/catharsis config <>", CatharsisColors.slateblue)
                     append("' instead.")
                 }.sendWithPrefix()
+            }
+
+            thenCallback("catpack") {
+                McClient.openUri("https://meowdd.ing/catpack")
+                Text.of("Opening Catsquash Website...", CatppuccinColors.Mocha.pink).sendWithPrefix()
             }
 
             then("repo") {

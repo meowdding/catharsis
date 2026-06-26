@@ -153,6 +153,30 @@
       }
     },
     {
+      "id": "skyblock_gui:generic/navigation/scroll_left",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Scroll Left"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/re-center",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Re-Center"
+      }
+    },
+    {
+      "id": "skyblock_gui:generic/navigation/scroll_right",
+      "target": {
+        "type": "name",
+        "mode": "equals",
+        "name": "Scroll Right"
+      }
+    },
+    {
       "id": "skyblock_gui:generic/navigation/previous_page",
       "target": {
         "type": "name",

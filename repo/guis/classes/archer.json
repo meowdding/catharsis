@@ -14,7 +14,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 0,
+            "slot": 27,
             "type": "catharsis:slot"
           }
         ],
@@ -22,7 +22,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocked/start_down",
+      "id": "skyblock_gui:classes/archer/unlocked/start_right",
       "target": {
         "conditions": [
           {
@@ -42,7 +42,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocking/start_down",
+      "id": "skyblock_gui:classes/archer/unlocking/start_right",
       "target": {
         "conditions": [
           {
@@ -62,7 +62,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/locked/start_down",
+      "id": "skyblock_gui:classes/archer/locked/start_right",
       "target": {
         "conditions": [
           {
@@ -73,186 +73,6 @@
             "name": [
               "Archer Level 1",
               "Archer Level I"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 2",
-              "Archer Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 2",
-              "Archer Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 2",
-              "Archer Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 3",
-              "Archer Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 3",
-              "Archer Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 3",
-              "Archer Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 4",
-              "Archer Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 4",
-              "Archer Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 4",
-              "Archer Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -263,6 +83,186 @@
     },
     {
       "id": "skyblock_gui:classes/archer/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 2",
+              "Archer Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 2",
+              "Archer Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 2",
+              "Archer Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 3",
+              "Archer Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 3",
+              "Archer Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 3",
+              "Archer Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 4",
+              "Archer Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 4",
+              "Archer Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 4",
+              "Archer Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/down_right",
       "target": {
         "conditions": [
           {
@@ -285,7 +285,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocking/left_up",
+      "id": "skyblock_gui:classes/archer/unlocking/down_right",
       "target": {
         "conditions": [
           {
@@ -305,7 +305,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/locked/left_up",
+      "id": "skyblock_gui:classes/archer/locked/down_right",
       "target": {
         "conditions": [
           {
@@ -325,186 +325,6 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 6",
-              "Archer Level VI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 6",
-              "Archer Level VI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 6",
-              "Archer Level VI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 7",
-              "Archer Level VII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 7",
-              "Archer Level VII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 7",
-              "Archer Level VII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 8",
-              "Archer Level VIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 8",
-              "Archer Level VIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 8",
-              "Archer Level VIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
       "id": "skyblock_gui:classes/archer/unlocked/left_right",
       "target": {
         "conditions": [
@@ -514,8 +334,8 @@
           },
           {
             "name": [
-              "Archer Level 9",
-              "Archer Level IX"
+              "Archer Level 6",
+              "Archer Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -534,6 +354,166 @@
           },
           {
             "name": [
+              "Archer Level 6",
+              "Archer Level VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 6",
+              "Archer Level VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 7",
+              "Archer Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 7",
+              "Archer Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 7",
+              "Archer Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 8",
+              "Archer Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 8",
+              "Archer Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 8",
+              "Archer Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
               "Archer Level 9",
               "Archer Level IX"
             ],
@@ -545,7 +525,27 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/locked/left_right",
+      "id": "skyblock_gui:classes/archer/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 9",
+              "Archer Level IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -565,7 +565,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocked/left_down",
+      "id": "skyblock_gui:classes/archer/unlocked/up_right",
       "target": {
         "conditions": [
           {
@@ -588,7 +588,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocking/left_down",
+      "id": "skyblock_gui:classes/archer/unlocking/up_right",
       "target": {
         "conditions": [
           {
@@ -608,7 +608,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/locked/left_down",
+      "id": "skyblock_gui:classes/archer/locked/up_right",
       "target": {
         "conditions": [
           {
@@ -628,186 +628,6 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 11",
-              "Archer Level XI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 11",
-              "Archer Level XI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 11",
-              "Archer Level XI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 12",
-              "Archer Level XII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 12",
-              "Archer Level XII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 12",
-              "Archer Level XII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 13",
-              "Archer Level XIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 13",
-              "Archer Level XIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 13",
-              "Archer Level XIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
       "id": "skyblock_gui:classes/archer/unlocked/left_right",
       "target": {
         "conditions": [
@@ -817,8 +637,8 @@
           },
           {
             "name": [
-              "Archer Level 14",
-              "Archer Level XIV"
+              "Archer Level 11",
+              "Archer Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -837,6 +657,166 @@
           },
           {
             "name": [
+              "Archer Level 11",
+              "Archer Level XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 11",
+              "Archer Level XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 12",
+              "Archer Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 12",
+              "Archer Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 12",
+              "Archer Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 13",
+              "Archer Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 13",
+              "Archer Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 13",
+              "Archer Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
               "Archer Level 14",
               "Archer Level XIV"
             ],
@@ -848,7 +828,27 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/locked/left_right",
+      "id": "skyblock_gui:classes/archer/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 14",
+              "Archer Level XIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -868,7 +868,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocked/left_up",
+      "id": "skyblock_gui:classes/archer/unlocked/down_right",
       "target": {
         "conditions": [
           {
@@ -891,7 +891,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocking/left_up",
+      "id": "skyblock_gui:classes/archer/unlocking/down_right",
       "target": {
         "conditions": [
           {
@@ -911,7 +911,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/locked/left_up",
+      "id": "skyblock_gui:classes/archer/locked/down_right",
       "target": {
         "conditions": [
           {
@@ -931,186 +931,6 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 16",
-              "Archer Level XVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 16",
-              "Archer Level XVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 16",
-              "Archer Level XVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 17",
-              "Archer Level XVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 17",
-              "Archer Level XVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 17",
-              "Archer Level XVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 18",
-              "Archer Level XVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 18",
-              "Archer Level XVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 18",
-              "Archer Level XVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
       "id": "skyblock_gui:classes/archer/unlocked/left_right",
       "target": {
         "conditions": [
@@ -1120,8 +940,8 @@
           },
           {
             "name": [
-              "Archer Level 19",
-              "Archer Level XIX"
+              "Archer Level 16",
+              "Archer Level XVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1140,8 +960,8 @@
           },
           {
             "name": [
-              "Archer Level 19",
-              "Archer Level XIX"
+              "Archer Level 16",
+              "Archer Level XVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1160,8 +980,8 @@
           },
           {
             "name": [
-              "Archer Level 19",
-              "Archer Level XIX"
+              "Archer Level 16",
+              "Archer Level XVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1175,16 +995,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:bow"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Archer Level 20",
-              "Archer Level XX"
+              "Archer Level 17",
+              "Archer Level XVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1203,8 +1020,8 @@
           },
           {
             "name": [
-              "Archer Level 20",
-              "Archer Level XX"
+              "Archer Level 17",
+              "Archer Level XVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1223,8 +1040,8 @@
           },
           {
             "name": [
-              "Archer Level 20",
-              "Archer Level XX"
+              "Archer Level 17",
+              "Archer Level XVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1243,8 +1060,8 @@
           },
           {
             "name": [
-              "Archer Level 21",
-              "Archer Level XXI"
+              "Archer Level 18",
+              "Archer Level XVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1263,8 +1080,8 @@
           },
           {
             "name": [
-              "Archer Level 21",
-              "Archer Level XXI"
+              "Archer Level 18",
+              "Archer Level XVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1283,8 +1100,8 @@
           },
           {
             "name": [
-              "Archer Level 21",
-              "Archer Level XXI"
+              "Archer Level 18",
+              "Archer Level XVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1303,8 +1120,8 @@
           },
           {
             "name": [
-              "Archer Level 22",
-              "Archer Level XXII"
+              "Archer Level 19",
+              "Archer Level XIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1323,8 +1140,8 @@
           },
           {
             "name": [
-              "Archer Level 22",
-              "Archer Level XXII"
+              "Archer Level 19",
+              "Archer Level XIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1343,311 +1160,8 @@
           },
           {
             "name": [
-              "Archer Level 22",
-              "Archer Level XXII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 23",
-              "Archer Level XXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 23",
-              "Archer Level XXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 23",
-              "Archer Level XXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 24",
-              "Archer Level XXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 24",
-              "Archer Level XXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 24",
-              "Archer Level XXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:bow"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 25",
-              "Archer Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 25",
-              "Archer Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 25",
-              "Archer Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 26",
-              "Archer Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 26",
-              "Archer Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 26",
-              "Archer Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 27",
-              "Archer Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 27",
-              "Archer Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:classes/archer/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Archer Level 27",
-              "Archer Level XXVII"
+              "Archer Level 19",
+              "Archer Level XIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1661,13 +1175,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:bow"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Archer Level 28",
-              "Archer Level XXVIII"
+              "Archer Level 20",
+              "Archer Level XX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1686,8 +1203,8 @@
           },
           {
             "name": [
-              "Archer Level 28",
-              "Archer Level XXVIII"
+              "Archer Level 20",
+              "Archer Level XX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1706,8 +1223,8 @@
           },
           {
             "name": [
-              "Archer Level 28",
-              "Archer Level XXVIII"
+              "Archer Level 20",
+              "Archer Level XX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1726,8 +1243,8 @@
           },
           {
             "name": [
-              "Archer Level 29",
-              "Archer Level XXIX"
+              "Archer Level 21",
+              "Archer Level XXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1746,8 +1263,8 @@
           },
           {
             "name": [
-              "Archer Level 29",
-              "Archer Level XXIX"
+              "Archer Level 21",
+              "Archer Level XXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1766,8 +1283,8 @@
           },
           {
             "name": [
-              "Archer Level 29",
-              "Archer Level XXIX"
+              "Archer Level 21",
+              "Archer Level XXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1781,16 +1298,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:bow"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Archer Level 30",
-              "Archer Level XXX"
+              "Archer Level 22",
+              "Archer Level XXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1809,8 +1323,8 @@
           },
           {
             "name": [
-              "Archer Level 30",
-              "Archer Level XXX"
+              "Archer Level 22",
+              "Archer Level XXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1829,8 +1343,8 @@
           },
           {
             "name": [
-              "Archer Level 30",
-              "Archer Level XXX"
+              "Archer Level 22",
+              "Archer Level XXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1849,8 +1363,8 @@
           },
           {
             "name": [
-              "Archer Level 31",
-              "Archer Level XXXI"
+              "Archer Level 23",
+              "Archer Level XXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1869,8 +1383,8 @@
           },
           {
             "name": [
-              "Archer Level 31",
-              "Archer Level XXXI"
+              "Archer Level 23",
+              "Archer Level XXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1889,8 +1403,8 @@
           },
           {
             "name": [
-              "Archer Level 31",
-              "Archer Level XXXI"
+              "Archer Level 23",
+              "Archer Level XXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1909,8 +1423,8 @@
           },
           {
             "name": [
-              "Archer Level 32",
-              "Archer Level XXXII"
+              "Archer Level 24",
+              "Archer Level XXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1929,8 +1443,8 @@
           },
           {
             "name": [
-              "Archer Level 32",
-              "Archer Level XXXII"
+              "Archer Level 24",
+              "Archer Level XXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1949,8 +1463,8 @@
           },
           {
             "name": [
-              "Archer Level 32",
-              "Archer Level XXXII"
+              "Archer Level 24",
+              "Archer Level XXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1964,13 +1478,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:bow"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Archer Level 33",
-              "Archer Level XXXIII"
+              "Archer Level 25",
+              "Archer Level XXV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1989,8 +1506,8 @@
           },
           {
             "name": [
-              "Archer Level 33",
-              "Archer Level XXXIII"
+              "Archer Level 25",
+              "Archer Level XXV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2009,8 +1526,8 @@
           },
           {
             "name": [
-              "Archer Level 33",
-              "Archer Level XXXIII"
+              "Archer Level 25",
+              "Archer Level XXV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2029,8 +1546,8 @@
           },
           {
             "name": [
-              "Archer Level 34",
-              "Archer Level XXXIV"
+              "Archer Level 26",
+              "Archer Level XXVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2049,8 +1566,8 @@
           },
           {
             "name": [
-              "Archer Level 34",
-              "Archer Level XXXIV"
+              "Archer Level 26",
+              "Archer Level XXVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2069,8 +1586,8 @@
           },
           {
             "name": [
-              "Archer Level 34",
-              "Archer Level XXXIV"
+              "Archer Level 26",
+              "Archer Level XXVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2084,16 +1601,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:bow"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Archer Level 35",
-              "Archer Level XXXV"
+              "Archer Level 27",
+              "Archer Level XXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2112,8 +1626,8 @@
           },
           {
             "name": [
-              "Archer Level 35",
-              "Archer Level XXXV"
+              "Archer Level 27",
+              "Archer Level XXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2132,8 +1646,8 @@
           },
           {
             "name": [
-              "Archer Level 35",
-              "Archer Level XXXV"
+              "Archer Level 27",
+              "Archer Level XXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2152,8 +1666,8 @@
           },
           {
             "name": [
-              "Archer Level 36",
-              "Archer Level XXXVI"
+              "Archer Level 28",
+              "Archer Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2172,8 +1686,8 @@
           },
           {
             "name": [
-              "Archer Level 36",
-              "Archer Level XXXVI"
+              "Archer Level 28",
+              "Archer Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2192,8 +1706,8 @@
           },
           {
             "name": [
-              "Archer Level 36",
-              "Archer Level XXXVI"
+              "Archer Level 28",
+              "Archer Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2212,8 +1726,8 @@
           },
           {
             "name": [
-              "Archer Level 37",
-              "Archer Level XXXVII"
+              "Archer Level 29",
+              "Archer Level XXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2232,8 +1746,8 @@
           },
           {
             "name": [
-              "Archer Level 37",
-              "Archer Level XXXVII"
+              "Archer Level 29",
+              "Archer Level XXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2252,8 +1766,8 @@
           },
           {
             "name": [
-              "Archer Level 37",
-              "Archer Level XXXVII"
+              "Archer Level 29",
+              "Archer Level XXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2267,13 +1781,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:bow"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Archer Level 38",
-              "Archer Level XXXVIII"
+              "Archer Level 30",
+              "Archer Level XXX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2292,8 +1809,8 @@
           },
           {
             "name": [
-              "Archer Level 38",
-              "Archer Level XXXVIII"
+              "Archer Level 30",
+              "Archer Level XXX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2312,8 +1829,8 @@
           },
           {
             "name": [
-              "Archer Level 38",
-              "Archer Level XXXVIII"
+              "Archer Level 30",
+              "Archer Level XXX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2332,8 +1849,8 @@
           },
           {
             "name": [
-              "Archer Level 39",
-              "Archer Level XXXIX"
+              "Archer Level 31",
+              "Archer Level XXXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2352,8 +1869,8 @@
           },
           {
             "name": [
-              "Archer Level 39",
-              "Archer Level XXXIX"
+              "Archer Level 31",
+              "Archer Level XXXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2372,8 +1889,8 @@
           },
           {
             "name": [
-              "Archer Level 39",
-              "Archer Level XXXIX"
+              "Archer Level 31",
+              "Archer Level XXXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2387,16 +1904,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:bow"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Archer Level 40",
-              "Archer Level XL"
+              "Archer Level 32",
+              "Archer Level XXXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2415,8 +1929,8 @@
           },
           {
             "name": [
-              "Archer Level 40",
-              "Archer Level XL"
+              "Archer Level 32",
+              "Archer Level XXXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2435,8 +1949,8 @@
           },
           {
             "name": [
-              "Archer Level 40",
-              "Archer Level XL"
+              "Archer Level 32",
+              "Archer Level XXXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2455,8 +1969,8 @@
           },
           {
             "name": [
-              "Archer Level 41",
-              "Archer Level XLI"
+              "Archer Level 33",
+              "Archer Level XXXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2475,8 +1989,8 @@
           },
           {
             "name": [
-              "Archer Level 41",
-              "Archer Level XLI"
+              "Archer Level 33",
+              "Archer Level XXXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2495,8 +2009,8 @@
           },
           {
             "name": [
-              "Archer Level 41",
-              "Archer Level XLI"
+              "Archer Level 33",
+              "Archer Level XXXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2515,8 +2029,8 @@
           },
           {
             "name": [
-              "Archer Level 42",
-              "Archer Level XLII"
+              "Archer Level 34",
+              "Archer Level XXXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2535,8 +2049,8 @@
           },
           {
             "name": [
-              "Archer Level 42",
-              "Archer Level XLII"
+              "Archer Level 34",
+              "Archer Level XXXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2555,8 +2069,8 @@
           },
           {
             "name": [
-              "Archer Level 42",
-              "Archer Level XLII"
+              "Archer Level 34",
+              "Archer Level XXXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2570,13 +2084,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:bow"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Archer Level 43",
-              "Archer Level XLIII"
+              "Archer Level 35",
+              "Archer Level XXXV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2595,6 +2112,469 @@
           },
           {
             "name": [
+              "Archer Level 35",
+              "Archer Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 35",
+              "Archer Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 36",
+              "Archer Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 36",
+              "Archer Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 36",
+              "Archer Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 37",
+              "Archer Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 37",
+              "Archer Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 37",
+              "Archer Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 38",
+              "Archer Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 38",
+              "Archer Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 38",
+              "Archer Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 39",
+              "Archer Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 39",
+              "Archer Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 39",
+              "Archer Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:bow"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 40",
+              "Archer Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 40",
+              "Archer Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 40",
+              "Archer Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 41",
+              "Archer Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 41",
+              "Archer Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 41",
+              "Archer Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 42",
+              "Archer Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 42",
+              "Archer Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 42",
+              "Archer Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
               "Archer Level 43",
               "Archer Level XLIII"
             ],
@@ -2606,7 +2586,27 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/locked/down_right",
+      "id": "skyblock_gui:classes/archer/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Archer Level 43",
+              "Archer Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -2626,7 +2626,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocked/left_right",
+      "id": "skyblock_gui:classes/archer/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -2646,7 +2646,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocking/left_right",
+      "id": "skyblock_gui:classes/archer/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -2666,7 +2666,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/locked/left_right",
+      "id": "skyblock_gui:classes/archer/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -2686,7 +2686,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocked/left_down",
+      "id": "skyblock_gui:classes/archer/unlocked/down_right",
       "target": {
         "conditions": [
           {
@@ -2709,7 +2709,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocking/left_down",
+      "id": "skyblock_gui:classes/archer/unlocking/down_right",
       "target": {
         "conditions": [
           {
@@ -2729,7 +2729,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/locked/left_down",
+      "id": "skyblock_gui:classes/archer/locked/down_right",
       "target": {
         "conditions": [
           {
@@ -2749,7 +2749,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocked/up_down",
+      "id": "skyblock_gui:classes/archer/unlocked/left_right",
       "target": {
         "conditions": [
           {
@@ -2769,7 +2769,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocking/up_down",
+      "id": "skyblock_gui:classes/archer/unlocking/left_right",
       "target": {
         "conditions": [
           {
@@ -2789,7 +2789,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/locked/up_down",
+      "id": "skyblock_gui:classes/archer/locked/left_right",
       "target": {
         "conditions": [
           {
@@ -2809,7 +2809,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocked/up_down",
+      "id": "skyblock_gui:classes/archer/unlocked/left_down",
       "target": {
         "conditions": [
           {
@@ -2829,7 +2829,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/unlocking/up_down",
+      "id": "skyblock_gui:classes/archer/unlocking/left_down",
       "target": {
         "conditions": [
           {
@@ -2849,7 +2849,7 @@
       }
     },
     {
-      "id": "skyblock_gui:classes/archer/locked/up_down",
+      "id": "skyblock_gui:classes/archer/locked/left_down",
       "target": {
         "conditions": [
           {
@@ -3044,6 +3044,75 @@
               "Archer Level 50",
               "Archer Level L"
             ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/class_pasives",
+      "target": {
+        "conditions": [
+          {
+            "slot": 39,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": [
+              "minecraft:splash_potion",
+              "minecraft:blaze_rod",
+              "minecraft:iron_sword",
+              "minecraft:bow",
+              "minecraft:leather_chestplate"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": "Class Passives",
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/dungeon_orb_abilities",
+      "target": {
+        "conditions": [
+          {
+            "slot": 40,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:player_head",
+            "type": "catharsis:item"
+          },
+          {
+            "name": "Dungeon Orb Abilities",
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:classes/archer/ghost_abilities",
+      "target": {
+        "conditions": [
+          {
+            "slot": 41,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:player_head",
+            "type": "catharsis:item"
+          },
+          {
+            "name": "Ghost Abilities",
             "mode": "equals",
             "type": "catharsis:name"
           }

@@ -14,7 +14,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 0,
+            "slot": 27,
             "type": "catharsis:slot"
           }
         ],
@@ -22,7 +22,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/start_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/start_right",
       "target": {
         "conditions": [
           {
@@ -42,7 +42,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/start_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/start_right",
       "target": {
         "conditions": [
           {
@@ -62,7 +62,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/locked/start_down",
+      "id": "skyblock_gui:skills/runecrafting/locked/start_right",
       "target": {
         "conditions": [
           {
@@ -73,186 +73,6 @@
             "name": [
               "Runecrafting Level 1",
               "Runecrafting Level I"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Runecrafting Level 2",
-              "Runecrafting Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Runecrafting Level 2",
-              "Runecrafting Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Runecrafting Level 2",
-              "Runecrafting Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Runecrafting Level 3",
-              "Runecrafting Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Runecrafting Level 3",
-              "Runecrafting Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/runecrafting/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Runecrafting Level 3",
-              "Runecrafting Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Runecrafting Level 4",
-              "Runecrafting Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Runecrafting Level 4",
-              "Runecrafting Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Runecrafting Level 4",
-              "Runecrafting Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -266,16 +86,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:end_portal_frame"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Runecrafting Level 5",
-              "Runecrafting Level V"
+              "Runecrafting Level 2",
+              "Runecrafting Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -294,8 +111,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 5",
-              "Runecrafting Level V"
+              "Runecrafting Level 2",
+              "Runecrafting Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -314,8 +131,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 5",
-              "Runecrafting Level V"
+              "Runecrafting Level 2",
+              "Runecrafting Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -334,8 +151,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 6",
-              "Runecrafting Level VI"
+              "Runecrafting Level 3",
+              "Runecrafting Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -354,8 +171,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 6",
-              "Runecrafting Level VI"
+              "Runecrafting Level 3",
+              "Runecrafting Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -374,8 +191,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 6",
-              "Runecrafting Level VI"
+              "Runecrafting Level 3",
+              "Runecrafting Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -394,8 +211,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 7",
-              "Runecrafting Level VII"
+              "Runecrafting Level 4",
+              "Runecrafting Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -414,8 +231,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 7",
-              "Runecrafting Level VII"
+              "Runecrafting Level 4",
+              "Runecrafting Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -434,8 +251,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 7",
-              "Runecrafting Level VII"
+              "Runecrafting Level 4",
+              "Runecrafting Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -449,13 +266,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:end_portal_frame"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Runecrafting Level 8",
-              "Runecrafting Level VIII"
+              "Runecrafting Level 5",
+              "Runecrafting Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -474,8 +294,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 8",
-              "Runecrafting Level VIII"
+              "Runecrafting Level 5",
+              "Runecrafting Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -494,8 +314,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 8",
-              "Runecrafting Level VIII"
+              "Runecrafting Level 5",
+              "Runecrafting Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -514,8 +334,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 9",
-              "Runecrafting Level IX"
+              "Runecrafting Level 6",
+              "Runecrafting Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -534,8 +354,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 9",
-              "Runecrafting Level IX"
+              "Runecrafting Level 6",
+              "Runecrafting Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -554,8 +374,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 9",
-              "Runecrafting Level IX"
+              "Runecrafting Level 6",
+              "Runecrafting Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -569,16 +389,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:end_portal_frame"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Runecrafting Level 10",
-              "Runecrafting Level X"
+              "Runecrafting Level 7",
+              "Runecrafting Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -597,8 +414,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 10",
-              "Runecrafting Level X"
+              "Runecrafting Level 7",
+              "Runecrafting Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -617,8 +434,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 10",
-              "Runecrafting Level X"
+              "Runecrafting Level 7",
+              "Runecrafting Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -637,8 +454,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 11",
-              "Runecrafting Level XI"
+              "Runecrafting Level 8",
+              "Runecrafting Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -657,8 +474,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 11",
-              "Runecrafting Level XI"
+              "Runecrafting Level 8",
+              "Runecrafting Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -677,8 +494,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 11",
-              "Runecrafting Level XI"
+              "Runecrafting Level 8",
+              "Runecrafting Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -697,8 +514,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 12",
-              "Runecrafting Level XII"
+              "Runecrafting Level 9",
+              "Runecrafting Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -717,8 +534,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 12",
-              "Runecrafting Level XII"
+              "Runecrafting Level 9",
+              "Runecrafting Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -737,8 +554,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 12",
-              "Runecrafting Level XII"
+              "Runecrafting Level 9",
+              "Runecrafting Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -752,13 +569,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:end_portal_frame"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Runecrafting Level 13",
-              "Runecrafting Level XIII"
+              "Runecrafting Level 10",
+              "Runecrafting Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -777,8 +597,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 13",
-              "Runecrafting Level XIII"
+              "Runecrafting Level 10",
+              "Runecrafting Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -797,8 +617,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 13",
-              "Runecrafting Level XIII"
+              "Runecrafting Level 10",
+              "Runecrafting Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -817,8 +637,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 14",
-              "Runecrafting Level XIV"
+              "Runecrafting Level 11",
+              "Runecrafting Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -837,8 +657,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 14",
-              "Runecrafting Level XIV"
+              "Runecrafting Level 11",
+              "Runecrafting Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -857,8 +677,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 14",
-              "Runecrafting Level XIV"
+              "Runecrafting Level 11",
+              "Runecrafting Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -872,16 +692,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:end_portal_frame"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Runecrafting Level 15",
-              "Runecrafting Level XV"
+              "Runecrafting Level 12",
+              "Runecrafting Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -900,8 +717,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 15",
-              "Runecrafting Level XV"
+              "Runecrafting Level 12",
+              "Runecrafting Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -920,8 +737,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 15",
-              "Runecrafting Level XV"
+              "Runecrafting Level 12",
+              "Runecrafting Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -940,8 +757,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 16",
-              "Runecrafting Level XVI"
+              "Runecrafting Level 13",
+              "Runecrafting Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -960,8 +777,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 16",
-              "Runecrafting Level XVI"
+              "Runecrafting Level 13",
+              "Runecrafting Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -980,8 +797,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 16",
-              "Runecrafting Level XVI"
+              "Runecrafting Level 13",
+              "Runecrafting Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1000,8 +817,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 17",
-              "Runecrafting Level XVII"
+              "Runecrafting Level 14",
+              "Runecrafting Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1020,8 +837,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 17",
-              "Runecrafting Level XVII"
+              "Runecrafting Level 14",
+              "Runecrafting Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1040,8 +857,8 @@
           },
           {
             "name": [
-              "Runecrafting Level 17",
-              "Runecrafting Level XVII"
+              "Runecrafting Level 14",
+              "Runecrafting Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1055,13 +872,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:end_portal_frame"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Runecrafting Level 18",
-              "Runecrafting Level XVIII"
+              "Runecrafting Level 15",
+              "Runecrafting Level XV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1080,6 +900,166 @@
           },
           {
             "name": [
+              "Runecrafting Level 15",
+              "Runecrafting Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Runecrafting Level 15",
+              "Runecrafting Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Runecrafting Level 16",
+              "Runecrafting Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Runecrafting Level 16",
+              "Runecrafting Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Runecrafting Level 16",
+              "Runecrafting Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Runecrafting Level 17",
+              "Runecrafting Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Runecrafting Level 17",
+              "Runecrafting Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Runecrafting Level 17",
+              "Runecrafting Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
               "Runecrafting Level 18",
               "Runecrafting Level XVIII"
             ],
@@ -1091,7 +1071,27 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/locked/down_right",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Runecrafting Level 18",
+              "Runecrafting Level XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -1111,7 +1111,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
       "target": {
         "conditions": [
           {
@@ -1131,7 +1131,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
       "target": {
         "conditions": [
           {
@@ -1151,7 +1151,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -1171,7 +1171,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/left_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/up_right",
       "target": {
         "conditions": [
           {
@@ -1194,7 +1194,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/left_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/up_right",
       "target": {
         "conditions": [
           {
@@ -1214,7 +1214,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/locked/left_down",
+      "id": "skyblock_gui:skills/runecrafting/locked/up_right",
       "target": {
         "conditions": [
           {
@@ -1234,7 +1234,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_right",
       "target": {
         "conditions": [
           {
@@ -1254,7 +1254,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_right",
       "target": {
         "conditions": [
           {
@@ -1274,7 +1274,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "id": "skyblock_gui:skills/runecrafting/locked/left_right",
       "target": {
         "conditions": [
           {
@@ -1294,7 +1294,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/left_up",
       "target": {
         "conditions": [
           {
@@ -1314,7 +1314,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/left_up",
       "target": {
         "conditions": [
           {
@@ -1334,7 +1334,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "id": "skyblock_gui:skills/runecrafting/locked/left_up",
       "target": {
         "conditions": [
           {
@@ -1354,7 +1354,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -1374,7 +1374,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -1394,7 +1394,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "id": "skyblock_gui:skills/runecrafting/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -1414,7 +1414,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/up_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -1434,7 +1434,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/up_down",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -1454,7 +1454,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/locked/up_down",
+      "id": "skyblock_gui:skills/runecrafting/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -1474,7 +1474,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocked/up_end",
+      "id": "skyblock_gui:skills/runecrafting/unlocked/down_end",
       "target": {
         "conditions": [
           {
@@ -1497,7 +1497,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/unlocking/up_end",
+      "id": "skyblock_gui:skills/runecrafting/unlocking/down_end",
       "target": {
         "conditions": [
           {
@@ -1517,7 +1517,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/runecrafting/locked/up_end",
+      "id": "skyblock_gui:skills/runecrafting/locked/down_end",
       "target": {
         "conditions": [
           {

@@ -17,11 +17,11 @@ export default defineConfig({
                 "text": "Mod Version",
                 "items": [
                     {
-                        text: "1.0.0-beta.18",
+                        text: "1.0.0-beta.18 (Latest Release)",
                         link: "?1.0.0-beta.18"
                     },
                     {
-                        text: "1.0.0-beta.17 (Latest Release)",
+                        text: "1.0.0-beta.17",
                         link: "?1.0.0-beta.17"
                     },
                     {

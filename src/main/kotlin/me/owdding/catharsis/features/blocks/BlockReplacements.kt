@@ -46,6 +46,7 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     private val logger: CatharsisLogger = this
     val blockReplacementConverter: FileToIdConverter = FileToIdConverter.json("catharsis/block_replacements")
     val blockStateConverter: FileToIdConverter = FileToIdConverter.json("catharsis/virtual_block_states")
+    val vanillaBlockStateConverter: FileToIdConverter = FileToIdConverter.json("blockstates")
     private val gson = GsonBuilder().create()
 
     val blockDefinitionCodec: Codec<BlockReplacement.Completable> = BlockStateDefinitions.CODEC.codec()
@@ -120,13 +121,23 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     }
 
     fun loadBlockStates(resourceManager: ResourceManager, map: Map<Identifier, LayeredBlockReplacements.Completable>): Map<Block, LayeredBlockReplacements> {
-        val entries = blockStateConverter.listMatchingResources(resourceManager).mapNotNull { (id, resource) ->
-            logger.runCatching("Error loading virtual block state $id") {
-                resource.openAsReader().use { reader ->
-                    blockStateConverter.fileToId(id) to gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(virtualBlockStateCodec)
-                }
+        val entries = buildMap {
+            listOf(vanillaBlockStateConverter, blockStateConverter).forEach { converter ->
+                putAll(
+                    converter.listMatchingResources(resourceManager).mapNotNull { (id, resource) ->
+                        logger.runCatching("Error loading virtual block state $id") {
+                            resource.openAsReader().use { reader ->
+                                converter.fileToId(id) to gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(virtualBlockStateCodec)
+                            }
+                        }
+                    }.toMap(),
+                )
             }
-        }.toMap()
+        }
+
+        info("Loaded ${entries.size} block states")
+
+        vanillaBlockStateConverter.listMatchingResources(resourceManager)
 
         val bakery = BlockReplacementBakery(entries)
         return map.mapBothNotNull { (id, value) ->

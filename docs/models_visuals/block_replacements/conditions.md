@@ -41,28 +41,27 @@ Never passes.
 - <TypeIcon type="string"/> **type**: `never`
 </TreeView>
 
-### And (`and`)
+### And (`and`<Version type="1.0.0-beta.18">, `all`</Version>)
 
 Only passes if all the sub conditions pass.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>and</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `and`
+- <TypeIcon type="string"/> **type**: `and` <Version type="1.0.0-beta.18">or `all`</Version>
 - <TypeIcon type="array"/> **conditions**: A list of block conditions
 </TreeView>
 
-### Or (`or`)
+### Or (`or`<Version type="1.0.0-beta.18">, `any`</Version>)
 
 Passes if any one of the sub conditions pass.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>or</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `or`
+- <TypeIcon type="string"/> **type**: `or` <Version type="1.0.0-beta.18">or `any`</Version>
 - <TypeIcon type="array"/> **conditions**: A list of block conditions
 </TreeView>
-
 ### Not (`not`)
 
 Inverts the result of the sub condition.

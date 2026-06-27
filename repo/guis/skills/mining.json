@@ -14,7 +14,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 0,
+            "slot": 27,
             "type": "catharsis:slot"
           }
         ],
@@ -22,7 +22,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/mining/unlocked/start_down",
+      "id": "skyblock_gui:skills/mining/unlocked/start_right",
       "target": {
         "conditions": [
           {
@@ -42,7 +42,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/mining/unlocking/start_down",
+      "id": "skyblock_gui:skills/mining/unlocking/start_right",
       "target": {
         "conditions": [
           {
@@ -62,7 +62,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/mining/locked/start_down",
+      "id": "skyblock_gui:skills/mining/locked/start_right",
       "target": {
         "conditions": [
           {
@@ -73,186 +73,6 @@
             "name": [
               "Mining Level 1",
               "Mining Level I"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 2",
-              "Mining Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 2",
-              "Mining Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 2",
-              "Mining Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 3",
-              "Mining Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 3",
-              "Mining Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 3",
-              "Mining Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 4",
-              "Mining Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 4",
-              "Mining Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 4",
-              "Mining Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -266,16 +86,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:iron_block"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Mining Level 5",
-              "Mining Level V"
+              "Mining Level 2",
+              "Mining Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -294,8 +111,8 @@
           },
           {
             "name": [
-              "Mining Level 5",
-              "Mining Level V"
+              "Mining Level 2",
+              "Mining Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -314,8 +131,8 @@
           },
           {
             "name": [
-              "Mining Level 5",
-              "Mining Level V"
+              "Mining Level 2",
+              "Mining Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -334,8 +151,8 @@
           },
           {
             "name": [
-              "Mining Level 6",
-              "Mining Level VI"
+              "Mining Level 3",
+              "Mining Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -354,8 +171,8 @@
           },
           {
             "name": [
-              "Mining Level 6",
-              "Mining Level VI"
+              "Mining Level 3",
+              "Mining Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -374,8 +191,8 @@
           },
           {
             "name": [
-              "Mining Level 6",
-              "Mining Level VI"
+              "Mining Level 3",
+              "Mining Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -394,8 +211,8 @@
           },
           {
             "name": [
-              "Mining Level 7",
-              "Mining Level VII"
+              "Mining Level 4",
+              "Mining Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -414,8 +231,8 @@
           },
           {
             "name": [
-              "Mining Level 7",
-              "Mining Level VII"
+              "Mining Level 4",
+              "Mining Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -434,8 +251,8 @@
           },
           {
             "name": [
-              "Mining Level 7",
-              "Mining Level VII"
+              "Mining Level 4",
+              "Mining Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -449,13 +266,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:iron_block"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Mining Level 8",
-              "Mining Level VIII"
+              "Mining Level 5",
+              "Mining Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -474,8 +294,8 @@
           },
           {
             "name": [
-              "Mining Level 8",
-              "Mining Level VIII"
+              "Mining Level 5",
+              "Mining Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -494,8 +314,8 @@
           },
           {
             "name": [
-              "Mining Level 8",
-              "Mining Level VIII"
+              "Mining Level 5",
+              "Mining Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -514,8 +334,8 @@
           },
           {
             "name": [
-              "Mining Level 9",
-              "Mining Level IX"
+              "Mining Level 6",
+              "Mining Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -534,8 +354,8 @@
           },
           {
             "name": [
-              "Mining Level 9",
-              "Mining Level IX"
+              "Mining Level 6",
+              "Mining Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -554,8 +374,8 @@
           },
           {
             "name": [
-              "Mining Level 9",
-              "Mining Level IX"
+              "Mining Level 6",
+              "Mining Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -569,16 +389,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:iron_block"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Mining Level 10",
-              "Mining Level X"
+              "Mining Level 7",
+              "Mining Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -597,8 +414,8 @@
           },
           {
             "name": [
-              "Mining Level 10",
-              "Mining Level X"
+              "Mining Level 7",
+              "Mining Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -617,8 +434,8 @@
           },
           {
             "name": [
-              "Mining Level 10",
-              "Mining Level X"
+              "Mining Level 7",
+              "Mining Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -637,8 +454,8 @@
           },
           {
             "name": [
-              "Mining Level 11",
-              "Mining Level XI"
+              "Mining Level 8",
+              "Mining Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -657,8 +474,8 @@
           },
           {
             "name": [
-              "Mining Level 11",
-              "Mining Level XI"
+              "Mining Level 8",
+              "Mining Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -677,8 +494,8 @@
           },
           {
             "name": [
-              "Mining Level 11",
-              "Mining Level XI"
+              "Mining Level 8",
+              "Mining Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -697,8 +514,8 @@
           },
           {
             "name": [
-              "Mining Level 12",
-              "Mining Level XII"
+              "Mining Level 9",
+              "Mining Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -717,8 +534,8 @@
           },
           {
             "name": [
-              "Mining Level 12",
-              "Mining Level XII"
+              "Mining Level 9",
+              "Mining Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -737,8 +554,8 @@
           },
           {
             "name": [
-              "Mining Level 12",
-              "Mining Level XII"
+              "Mining Level 9",
+              "Mining Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -752,13 +569,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:iron_block"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Mining Level 13",
-              "Mining Level XIII"
+              "Mining Level 10",
+              "Mining Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -777,8 +597,8 @@
           },
           {
             "name": [
-              "Mining Level 13",
-              "Mining Level XIII"
+              "Mining Level 10",
+              "Mining Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -797,8 +617,8 @@
           },
           {
             "name": [
-              "Mining Level 13",
-              "Mining Level XIII"
+              "Mining Level 10",
+              "Mining Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -817,8 +637,8 @@
           },
           {
             "name": [
-              "Mining Level 14",
-              "Mining Level XIV"
+              "Mining Level 11",
+              "Mining Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -837,8 +657,8 @@
           },
           {
             "name": [
-              "Mining Level 14",
-              "Mining Level XIV"
+              "Mining Level 11",
+              "Mining Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -857,8 +677,8 @@
           },
           {
             "name": [
-              "Mining Level 14",
-              "Mining Level XIV"
+              "Mining Level 11",
+              "Mining Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -872,16 +692,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:iron_block"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Mining Level 15",
-              "Mining Level XV"
+              "Mining Level 12",
+              "Mining Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -900,8 +717,8 @@
           },
           {
             "name": [
-              "Mining Level 15",
-              "Mining Level XV"
+              "Mining Level 12",
+              "Mining Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -920,8 +737,8 @@
           },
           {
             "name": [
-              "Mining Level 15",
-              "Mining Level XV"
+              "Mining Level 12",
+              "Mining Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -940,8 +757,8 @@
           },
           {
             "name": [
-              "Mining Level 16",
-              "Mining Level XVI"
+              "Mining Level 13",
+              "Mining Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -960,8 +777,8 @@
           },
           {
             "name": [
-              "Mining Level 16",
-              "Mining Level XVI"
+              "Mining Level 13",
+              "Mining Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -980,8 +797,8 @@
           },
           {
             "name": [
-              "Mining Level 16",
-              "Mining Level XVI"
+              "Mining Level 13",
+              "Mining Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1000,8 +817,8 @@
           },
           {
             "name": [
-              "Mining Level 17",
-              "Mining Level XVII"
+              "Mining Level 14",
+              "Mining Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1020,8 +837,8 @@
           },
           {
             "name": [
-              "Mining Level 17",
-              "Mining Level XVII"
+              "Mining Level 14",
+              "Mining Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1040,8 +857,8 @@
           },
           {
             "name": [
-              "Mining Level 17",
-              "Mining Level XVII"
+              "Mining Level 14",
+              "Mining Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1055,13 +872,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:iron_block"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Mining Level 18",
-              "Mining Level XVIII"
+              "Mining Level 15",
+              "Mining Level XV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1080,6 +900,166 @@
           },
           {
             "name": [
+              "Mining Level 15",
+              "Mining Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 15",
+              "Mining Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 16",
+              "Mining Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 16",
+              "Mining Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 16",
+              "Mining Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 17",
+              "Mining Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 17",
+              "Mining Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 17",
+              "Mining Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
               "Mining Level 18",
               "Mining Level XVIII"
             ],
@@ -1091,7 +1071,27 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/mining/locked/down_right",
+      "id": "skyblock_gui:skills/mining/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 18",
+              "Mining Level XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -1111,7 +1111,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/mining/unlocked/left_right",
+      "id": "skyblock_gui:skills/mining/unlocked/up_down",
       "target": {
         "conditions": [
           {
@@ -1131,7 +1131,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/mining/unlocking/left_right",
+      "id": "skyblock_gui:skills/mining/unlocking/up_down",
       "target": {
         "conditions": [
           {
@@ -1151,7 +1151,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/mining/locked/left_right",
+      "id": "skyblock_gui:skills/mining/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -1171,7 +1171,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/mining/unlocked/left_down",
+      "id": "skyblock_gui:skills/mining/unlocked/up_right",
       "target": {
         "conditions": [
           {
@@ -1194,7 +1194,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/mining/unlocking/left_down",
+      "id": "skyblock_gui:skills/mining/unlocking/up_right",
       "target": {
         "conditions": [
           {
@@ -1205,6 +1205,429 @@
             "name": [
               "Mining Level 20",
               "Mining Level XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 20",
+              "Mining Level XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 21",
+              "Mining Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 21",
+              "Mining Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 21",
+              "Mining Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 22",
+              "Mining Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 22",
+              "Mining Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 22",
+              "Mining Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 23",
+              "Mining Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 23",
+              "Mining Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 23",
+              "Mining Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 24",
+              "Mining Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 24",
+              "Mining Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 24",
+              "Mining Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:iron_block"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 25",
+              "Mining Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 25",
+              "Mining Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 25",
+              "Mining Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 26",
+              "Mining Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 26",
+              "Mining Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 26",
+              "Mining Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 27",
+              "Mining Level XXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 27",
+              "Mining Level XXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1223,8 +1646,8 @@
           },
           {
             "name": [
-              "Mining Level 20",
-              "Mining Level XX"
+              "Mining Level 27",
+              "Mining Level XXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1243,8 +1666,8 @@
           },
           {
             "name": [
-              "Mining Level 21",
-              "Mining Level XXI"
+              "Mining Level 28",
+              "Mining Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1263,8 +1686,8 @@
           },
           {
             "name": [
-              "Mining Level 21",
-              "Mining Level XXI"
+              "Mining Level 28",
+              "Mining Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1283,8 +1706,8 @@
           },
           {
             "name": [
-              "Mining Level 21",
-              "Mining Level XXI"
+              "Mining Level 28",
+              "Mining Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1303,8 +1726,8 @@
           },
           {
             "name": [
-              "Mining Level 22",
-              "Mining Level XXII"
+              "Mining Level 29",
+              "Mining Level XXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1323,8 +1746,8 @@
           },
           {
             "name": [
-              "Mining Level 22",
-              "Mining Level XXII"
+              "Mining Level 29",
+              "Mining Level XXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1343,8 +1766,494 @@
           },
           {
             "name": [
-              "Mining Level 22",
-              "Mining Level XXII"
+              "Mining Level 29",
+              "Mining Level XXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:iron_block"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 30",
+              "Mining Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 30",
+              "Mining Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 30",
+              "Mining Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 31",
+              "Mining Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 31",
+              "Mining Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 31",
+              "Mining Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 32",
+              "Mining Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 32",
+              "Mining Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 32",
+              "Mining Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 33",
+              "Mining Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 33",
+              "Mining Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 33",
+              "Mining Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 34",
+              "Mining Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 34",
+              "Mining Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 34",
+              "Mining Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:iron_block"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 35",
+              "Mining Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 35",
+              "Mining Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 35",
+              "Mining Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 36",
+              "Mining Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 36",
+              "Mining Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 36",
+              "Mining Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 37",
+              "Mining Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 37",
+              "Mining Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 37",
+              "Mining Level XXXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1363,8 +2272,8 @@
           },
           {
             "name": [
-              "Mining Level 23",
-              "Mining Level XXIII"
+              "Mining Level 38",
+              "Mining Level XXXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1383,8 +2292,8 @@
           },
           {
             "name": [
-              "Mining Level 23",
-              "Mining Level XXIII"
+              "Mining Level 38",
+              "Mining Level XXXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1403,8 +2312,8 @@
           },
           {
             "name": [
-              "Mining Level 23",
-              "Mining Level XXIII"
+              "Mining Level 38",
+              "Mining Level XXXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1423,8 +2332,8 @@
           },
           {
             "name": [
-              "Mining Level 24",
-              "Mining Level XXIV"
+              "Mining Level 39",
+              "Mining Level XXXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1443,8 +2352,8 @@
           },
           {
             "name": [
-              "Mining Level 24",
-              "Mining Level XXIV"
+              "Mining Level 39",
+              "Mining Level XXXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1463,8 +2372,1220 @@
           },
           {
             "name": [
-              "Mining Level 24",
-              "Mining Level XXIV"
+              "Mining Level 39",
+              "Mining Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:iron_block"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 40",
+              "Mining Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 40",
+              "Mining Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 40",
+              "Mining Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 41",
+              "Mining Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 41",
+              "Mining Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 41",
+              "Mining Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 42",
+              "Mining Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 42",
+              "Mining Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 42",
+              "Mining Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 43",
+              "Mining Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 43",
+              "Mining Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 43",
+              "Mining Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 44",
+              "Mining Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 44",
+              "Mining Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 44",
+              "Mining Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:iron_block"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 45",
+              "Mining Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 45",
+              "Mining Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 45",
+              "Mining Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 46",
+              "Mining Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 46",
+              "Mining Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 46",
+              "Mining Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 47",
+              "Mining Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 47",
+              "Mining Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 47",
+              "Mining Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 48",
+              "Mining Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 48",
+              "Mining Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 48",
+              "Mining Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 49",
+              "Mining Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 49",
+              "Mining Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 49",
+              "Mining Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:iron_block"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 50",
+              "Mining Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 50",
+              "Mining Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 50",
+              "Mining Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 51",
+              "Mining Level LI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 51",
+              "Mining Level LI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 51",
+              "Mining Level LI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 52",
+              "Mining Level LII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 52",
+              "Mining Level LII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 52",
+              "Mining Level LII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 53",
+              "Mining Level LIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 53",
+              "Mining Level LIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 53",
+              "Mining Level LIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 54",
+              "Mining Level LIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 54",
+              "Mining Level LIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 54",
+              "Mining Level LIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:iron_block"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 55",
+              "Mining Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 55",
+              "Mining Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 55",
+              "Mining Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 56",
+              "Mining Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 56",
+              "Mining Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 56",
+              "Mining Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 57",
+              "Mining Level LVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 57",
+              "Mining Level LVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 57",
+              "Mining Level LVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 58",
+              "Mining Level LVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 58",
+              "Mining Level LVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 58",
+              "Mining Level LVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 59",
+              "Mining Level LIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 59",
+              "Mining Level LIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/mining/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Mining Level 59",
+              "Mining Level LIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1475,2127 +3596,6 @@
     },
     {
       "id": "skyblock_gui:skills/mining/unlocked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:iron_block"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 25",
-              "Mining Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 25",
-              "Mining Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 25",
-              "Mining Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 26",
-              "Mining Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 26",
-              "Mining Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 26",
-              "Mining Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 27",
-              "Mining Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 27",
-              "Mining Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 27",
-              "Mining Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 28",
-              "Mining Level XXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 28",
-              "Mining Level XXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 28",
-              "Mining Level XXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 29",
-              "Mining Level XXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 29",
-              "Mining Level XXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 29",
-              "Mining Level XXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:iron_block"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 30",
-              "Mining Level XXX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 30",
-              "Mining Level XXX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 30",
-              "Mining Level XXX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 31",
-              "Mining Level XXXI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 31",
-              "Mining Level XXXI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 31",
-              "Mining Level XXXI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 32",
-              "Mining Level XXXII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 32",
-              "Mining Level XXXII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 32",
-              "Mining Level XXXII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 33",
-              "Mining Level XXXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 33",
-              "Mining Level XXXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 33",
-              "Mining Level XXXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 34",
-              "Mining Level XXXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 34",
-              "Mining Level XXXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 34",
-              "Mining Level XXXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:iron_block"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 35",
-              "Mining Level XXXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 35",
-              "Mining Level XXXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 35",
-              "Mining Level XXXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 36",
-              "Mining Level XXXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 36",
-              "Mining Level XXXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 36",
-              "Mining Level XXXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 37",
-              "Mining Level XXXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 37",
-              "Mining Level XXXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 37",
-              "Mining Level XXXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 38",
-              "Mining Level XXXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 38",
-              "Mining Level XXXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 38",
-              "Mining Level XXXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 39",
-              "Mining Level XXXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 39",
-              "Mining Level XXXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 39",
-              "Mining Level XXXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:iron_block"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 40",
-              "Mining Level XL"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 40",
-              "Mining Level XL"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 40",
-              "Mining Level XL"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 41",
-              "Mining Level XLI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 41",
-              "Mining Level XLI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 41",
-              "Mining Level XLI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 42",
-              "Mining Level XLII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 42",
-              "Mining Level XLII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 42",
-              "Mining Level XLII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 43",
-              "Mining Level XLIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 43",
-              "Mining Level XLIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 43",
-              "Mining Level XLIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 44",
-              "Mining Level XLIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 44",
-              "Mining Level XLIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 44",
-              "Mining Level XLIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:iron_block"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 45",
-              "Mining Level XLV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 45",
-              "Mining Level XLV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 45",
-              "Mining Level XLV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 46",
-              "Mining Level XLVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 46",
-              "Mining Level XLVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 46",
-              "Mining Level XLVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 47",
-              "Mining Level XLVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 47",
-              "Mining Level XLVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 47",
-              "Mining Level XLVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 48",
-              "Mining Level XLVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 48",
-              "Mining Level XLVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 48",
-              "Mining Level XLVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 49",
-              "Mining Level XLIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 49",
-              "Mining Level XLIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 49",
-              "Mining Level XLIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:iron_block"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 50",
-              "Mining Level L"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 50",
-              "Mining Level L"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 50",
-              "Mining Level L"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 51",
-              "Mining Level LI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 51",
-              "Mining Level LI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 51",
-              "Mining Level LI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 52",
-              "Mining Level LII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 52",
-              "Mining Level LII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 52",
-              "Mining Level LII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 53",
-              "Mining Level LIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 53",
-              "Mining Level LIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 53",
-              "Mining Level LIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 54",
-              "Mining Level LIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 54",
-              "Mining Level LIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 54",
-              "Mining Level LIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:iron_block"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 55",
-              "Mining Level LV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 55",
-              "Mining Level LV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 55",
-              "Mining Level LV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 56",
-              "Mining Level LVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 56",
-              "Mining Level LVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 56",
-              "Mining Level LVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 57",
-              "Mining Level LVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 57",
-              "Mining Level LVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 57",
-              "Mining Level LVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 58",
-              "Mining Level LVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 58",
-              "Mining Level LVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 58",
-              "Mining Level LVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 59",
-              "Mining Level LIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 59",
-              "Mining Level LIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Mining Level 59",
-              "Mining Level LIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/mining/unlocked/left_end",
       "target": {
         "conditions": [
           {
@@ -3618,7 +3618,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/mining/unlocking/left_end",
+      "id": "skyblock_gui:skills/mining/unlocking/up_end",
       "target": {
         "conditions": [
           {
@@ -3638,7 +3638,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/mining/locked/left_end",
+      "id": "skyblock_gui:skills/mining/locked/up_end",
       "target": {
         "conditions": [
           {

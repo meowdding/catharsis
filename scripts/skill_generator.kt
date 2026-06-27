@@ -1,11 +1,6 @@
 import me.owdding.catharsis.features.gui.definitions.GuiDefinition
 import me.owdding.catharsis.features.gui.definitions.conditions.GuiDefinitionTitleCondition
-import me.owdding.catharsis.features.gui.definitions.slots.GuiSlotDefinition
-import me.owdding.catharsis.features.gui.definitions.slots.SlotAllCondition
-import me.owdding.catharsis.features.gui.definitions.slots.SlotAnyCondition
-import me.owdding.catharsis.features.gui.definitions.slots.SlotIndexCondition
-import me.owdding.catharsis.features.gui.definitions.slots.SlotItemCondition
-import me.owdding.catharsis.features.gui.definitions.slots.SlotNameCondition
+import me.owdding.catharsis.features.gui.definitions.slots.*
 import me.owdding.catharsis.features.gui.matchers.EqualsTextMatcher
 import me.owdding.catharsis.features.gui.matchers.RegexTextMatcher
 import net.minecraft.world.item.Item
@@ -30,20 +25,16 @@ fun createSkill(
     extraSlots: () -> List<GuiSlotDefinition> = ::emptyList,
 ) {
     val nodes = (1..maxLevel).flatMap { level ->
-        val evalLevel = level % 25
 
-        var direction = when {
-            level % 25 >= 23 -> "up_down"
-            level % 25 == 0 -> "up_end"
-            level % 25 == 1 -> "start_down"
-
-            evalLevel % 10 == 0 -> "left_down"
-            evalLevel % 10 <= 2 -> "up_down"
-            evalLevel % 10 == 3 -> "up_right"
-            evalLevel % 10 == 4 || evalLevel % 10 == 9 -> "left_right"
-            evalLevel % 10 == 5 -> "left_up"
-            evalLevel % 10 <= 7 -> "down_up"
-            else -> "down_right"
+        var direction = if (level == 1) "start_right" else when ((level - 2) % 10) {
+            0 -> "left_up"
+            1, 2 -> "down_up"
+            3 -> "down_right"
+            4 -> "left_right"
+            5 -> "left_down"
+            6, 7 -> "up_down"
+            8 -> "up_right"
+            else -> "left_right" // 9
         }
 
         if (maxLevel == level) {
@@ -87,7 +78,7 @@ fun createSkill(
                     id = Identifiers.of("skyblock_gui", "${pluralDataType}/${extra}${skillName.lowercase()}/icon"),
                     target = SlotAllCondition(
                         SlotNameCondition(EqualsTextMatcher(setOf(icon))),
-                        SlotIndexCondition(0),
+                        SlotIndexCondition(27),
                     ),
                 ),
             )
@@ -126,7 +117,7 @@ fun farming(): List<GuiSlotDefinition> = listOf(
             SlotItemCondition(setOf(Items.SUNFLOWER)),
             SlotAnyCondition(
                 SlotNameCondition(RegexTextMatcher("Garden Level \\d+")),
-                SlotNameCondition(RegexTextMatcher("Garden Level [XIV]+"))
+                SlotNameCondition(RegexTextMatcher("Garden Level [XIV]+")),
             ),
         ),
     ),
@@ -257,7 +248,7 @@ fun catacombs(): List<GuiSlotDefinition> = listOf(
     GuiSlotDefinition(
         id = Identifiers.of("skyblock_gui", "skills/dungeoneering/catacombs/catacombs_profile"),
         target = SlotAllCondition(
-            SlotIndexCondition(45),
+            SlotIndexCondition(41),
             SlotItemCondition(setOf(Items.OAK_SIGN)),
             SlotNameCondition(EqualsTextMatcher("Catacombs Profile")),
         ),
@@ -265,9 +256,37 @@ fun catacombs(): List<GuiSlotDefinition> = listOf(
     GuiSlotDefinition(
         id = Identifiers.of("skyblock_gui", "skills/dungeoneering/catacombs/catacombs_rng_meter"),
         target = SlotAllCondition(
-            SlotIndexCondition(40),
+            SlotIndexCondition(39),
             SlotItemCondition(setOf(Items.PLAYER_HEAD)),
             SlotNameCondition(EqualsTextMatcher("Catacombs RNG Meters")),
+        ),
+    ),
+)
+
+fun catacombsClasses(classType: String): List<GuiSlotDefinition> = listOf(
+    GuiSlotDefinition(
+        id = Identifiers.of("skyblock_gui", "classes/${classType}/class_pasives"),
+        target = SlotAllCondition(
+            SlotIndexCondition(39),
+            SlotItemCondition(setOf(Items.SPLASH_POTION, Items.BLAZE_ROD, Items.IRON_SWORD, Items.BOW, Items.LEATHER_CHESTPLATE)),
+            SlotNameCondition(EqualsTextMatcher("Class Passives")),
+        ),
+    ),
+    GuiSlotDefinition(
+        id = Identifiers.of("skyblock_gui", "classes/${classType}/dungeon_orb_abilities"),
+        target = SlotAllCondition(
+            SlotIndexCondition(40),
+            SlotItemCondition(setOf(Items.PLAYER_HEAD)),
+            SlotNameCondition(EqualsTextMatcher("Dungeon Orb Abilities")),
+        ),
+    ),
+
+    GuiSlotDefinition(
+        id = Identifiers.of("skyblock_gui", "classes/${classType}/ghost_abilities"),
+        target = SlotAllCondition(
+            SlotIndexCondition(41),
+            SlotItemCondition(setOf(Items.PLAYER_HEAD)),
+            SlotNameCondition(EqualsTextMatcher("Ghost Abilities")),
         ),
     ),
 )
@@ -282,7 +301,7 @@ fun skills() {
     createSkill("Alchemy", 50, Items.BLAZE_ROD)
     createSkill("Carpentry", 50, Items.ARMOR_STAND)
     createSkill("Taming", 60, Items.GOLDEN_CARROT)
-    createSkill("Hunting", 60, null, extraSlots = ::hunting)
+    createSkill("Hunting", 25, Items.PRISMARINE_SHARD, extraSlots = ::hunting)
     createSkill(
         "Catacombs",
         50,
@@ -298,9 +317,54 @@ fun skills() {
     createSkill("Runecrafting", 25, Items.END_PORTAL_FRAME, extraSlots = ::runecrafting)
     createSkill("Social", 25, Items.BLAZE_POWDER)
 
-    createSkill("Healer", 50, Items.SPLASH_POTION, title = "Healer Class Perks", icon = "Healer Class", dataType = "class", pluralDataType = "classes")
-    createSkill("Mage", 50, Items.BLAZE_ROD, title = "Mage Class Perks", icon = "Mage Class", dataType = "class", pluralDataType = "classes")
-    createSkill("Berserk", 50, Items.IRON_SWORD, title = "Berserk Class Perks", icon = "Berserk Class", dataType = "class", pluralDataType = "classes")
-    createSkill("Archer", 50, Items.BOW, title = "Archer Class Perks", icon = "Archer Class", dataType = "class", pluralDataType = "classes")
-    createSkill("Tank", 50, Items.LEATHER_CHESTPLATE, title = "Tank Class Perks", icon = "Tank Class", dataType = "class", pluralDataType = "classes")
+    createSkill(
+        "Healer",
+        50,
+        Items.SPLASH_POTION,
+        title = "Healer Class Perks",
+        icon = "Healer Class",
+        dataType = "class",
+        pluralDataType = "classes",
+        extraSlots = { catacombsClasses("healer") },
+    )
+    createSkill(
+        "Mage",
+        50,
+        Items.BLAZE_ROD,
+        title = "Mage Class Perks",
+        icon = "Mage Class",
+        dataType = "class",
+        pluralDataType = "classes",
+        extraSlots = { catacombsClasses("mage") },
+    )
+    createSkill(
+        "Berserk",
+        50,
+        Items.IRON_SWORD,
+        title = "Berserk Class Perks",
+        icon = "Berserk Class",
+        dataType = "class",
+        pluralDataType = "classes",
+        extraSlots = { catacombsClasses("berserk") },
+    )
+    createSkill(
+        "Archer",
+        50,
+        Items.BOW,
+        title = "Archer Class Perks",
+        icon = "Archer Class",
+        dataType = "class",
+        pluralDataType = "classes",
+        extraSlots = { catacombsClasses("archer") },
+    )
+    createSkill(
+        "Tank",
+        50,
+        Items.LEATHER_CHESTPLATE,
+        title = "Tank Class Perks",
+        icon = "Tank Class",
+        dataType = "class",
+        pluralDataType = "classes",
+        extraSlots = { catacombsClasses("tank") },
+    )
 }

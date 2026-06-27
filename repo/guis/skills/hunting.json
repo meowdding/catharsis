@@ -14,7 +14,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 0,
+            "slot": 27,
             "type": "catharsis:slot"
           }
         ],
@@ -22,7 +22,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/start_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/start_right",
       "target": {
         "conditions": [
           {
@@ -42,7 +42,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/start_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/start_right",
       "target": {
         "conditions": [
           {
@@ -62,7 +62,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/start_down",
+      "id": "skyblock_gui:skills/hunting/locked/start_right",
       "target": {
         "conditions": [
           {
@@ -82,7 +82,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
       "target": {
         "conditions": [
           {
@@ -102,7 +102,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
       "target": {
         "conditions": [
           {
@@ -122,7 +122,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
+      "id": "skyblock_gui:skills/hunting/locked/left_up",
       "target": {
         "conditions": [
           {
@@ -142,7 +142,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -162,7 +162,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -182,7 +182,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_right",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -202,7 +202,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -222,7 +222,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -242,7 +242,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/left_right",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -262,11 +262,14 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:prismarine_shard"
+            ],
             "type": "catharsis:item"
           },
           {
@@ -282,7 +285,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
       "target": {
         "conditions": [
           {
@@ -302,7 +305,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/left_up",
+      "id": "skyblock_gui:skills/hunting/locked/down_right",
       "target": {
         "conditions": [
           {
@@ -322,7 +325,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "conditions": [
           {
@@ -342,7 +345,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "conditions": [
           {
@@ -362,7 +365,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/down_up",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "conditions": [
           {
@@ -382,7 +385,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_down",
       "target": {
         "conditions": [
           {
@@ -402,7 +405,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_down",
       "target": {
         "conditions": [
           {
@@ -422,7 +425,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/down_up",
+      "id": "skyblock_gui:skills/hunting/locked/left_down",
       "target": {
         "conditions": [
           {
@@ -442,7 +445,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "conditions": [
           {
@@ -462,7 +465,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "conditions": [
           {
@@ -482,7 +485,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/down_right",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -502,7 +505,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "conditions": [
           {
@@ -522,7 +525,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "conditions": [
           {
@@ -542,7 +545,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/left_right",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -562,11 +565,14 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:prismarine_shard"
+            ],
             "type": "catharsis:item"
           },
           {
@@ -582,7 +588,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
       "target": {
         "conditions": [
           {
@@ -602,7 +608,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/left_down",
+      "id": "skyblock_gui:skills/hunting/locked/up_right",
       "target": {
         "conditions": [
           {
@@ -622,7 +628,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "conditions": [
           {
@@ -642,7 +648,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "conditions": [
           {
@@ -662,7 +668,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "conditions": [
           {
@@ -682,7 +688,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
       "target": {
         "conditions": [
           {
@@ -702,7 +708,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
       "target": {
         "conditions": [
           {
@@ -722,7 +728,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
+      "id": "skyblock_gui:skills/hunting/locked/left_up",
       "target": {
         "conditions": [
           {
@@ -742,7 +748,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -762,7 +768,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -782,7 +788,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_right",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -802,7 +808,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -822,7 +828,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -842,7 +848,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/left_right",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -862,11 +868,14 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:prismarine_shard"
+            ],
             "type": "catharsis:item"
           },
           {
@@ -882,7 +891,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
       "target": {
         "conditions": [
           {
@@ -902,7 +911,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/left_up",
+      "id": "skyblock_gui:skills/hunting/locked/down_right",
       "target": {
         "conditions": [
           {
@@ -922,7 +931,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "conditions": [
           {
@@ -942,7 +951,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "conditions": [
           {
@@ -962,7 +971,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/down_up",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "conditions": [
           {
@@ -982,7 +991,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_down",
       "target": {
         "conditions": [
           {
@@ -1002,7 +1011,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_down",
       "target": {
         "conditions": [
           {
@@ -1022,7 +1031,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/down_up",
+      "id": "skyblock_gui:skills/hunting/locked/left_down",
       "target": {
         "conditions": [
           {
@@ -1042,7 +1051,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "conditions": [
           {
@@ -1062,7 +1071,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "conditions": [
           {
@@ -1082,7 +1091,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/down_right",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -1102,7 +1111,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
       "target": {
         "conditions": [
           {
@@ -1122,7 +1131,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
       "target": {
         "conditions": [
           {
@@ -1142,7 +1151,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/left_right",
+      "id": "skyblock_gui:skills/hunting/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -1162,11 +1171,14 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:prismarine_shard"
+            ],
             "type": "catharsis:item"
           },
           {
@@ -1182,7 +1194,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
       "target": {
         "conditions": [
           {
@@ -1202,7 +1214,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/left_down",
+      "id": "skyblock_gui:skills/hunting/locked/up_right",
       "target": {
         "conditions": [
           {
@@ -1222,7 +1234,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
       "target": {
         "conditions": [
           {
@@ -1242,7 +1254,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
       "target": {
         "conditions": [
           {
@@ -1262,7 +1274,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
+      "id": "skyblock_gui:skills/hunting/locked/left_right",
       "target": {
         "conditions": [
           {
@@ -1282,7 +1294,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
       "target": {
         "conditions": [
           {
@@ -1302,7 +1314,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
       "target": {
         "conditions": [
           {
@@ -1322,7 +1334,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
+      "id": "skyblock_gui:skills/hunting/locked/left_up",
       "target": {
         "conditions": [
           {
@@ -1342,7 +1354,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -1362,7 +1374,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -1382,7 +1394,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -1402,7 +1414,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -1422,7 +1434,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -1442,7 +1454,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
+      "id": "skyblock_gui:skills/hunting/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -1462,11 +1474,14 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_end",
+      "id": "skyblock_gui:skills/hunting/unlocked/down_end",
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:prismarine_shard"
+            ],
             "type": "catharsis:item"
           },
           {
@@ -1482,7 +1497,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_end",
+      "id": "skyblock_gui:skills/hunting/unlocking/down_end",
       "target": {
         "conditions": [
           {
@@ -1502,7 +1517,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/hunting/locked/up_end",
+      "id": "skyblock_gui:skills/hunting/locked/down_end",
       "target": {
         "conditions": [
           {
@@ -1513,2106 +1528,6 @@
             "name": [
               "Hunting Level 25",
               "Hunting Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 26",
-              "Hunting Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 26",
-              "Hunting Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 26",
-              "Hunting Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 27",
-              "Hunting Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 27",
-              "Hunting Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 27",
-              "Hunting Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 28",
-              "Hunting Level XXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 28",
-              "Hunting Level XXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 28",
-              "Hunting Level XXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 29",
-              "Hunting Level XXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 29",
-              "Hunting Level XXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 29",
-              "Hunting Level XXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 30",
-              "Hunting Level XXX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 30",
-              "Hunting Level XXX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 30",
-              "Hunting Level XXX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 31",
-              "Hunting Level XXXI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 31",
-              "Hunting Level XXXI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 31",
-              "Hunting Level XXXI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 32",
-              "Hunting Level XXXII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 32",
-              "Hunting Level XXXII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 32",
-              "Hunting Level XXXII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 33",
-              "Hunting Level XXXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 33",
-              "Hunting Level XXXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 33",
-              "Hunting Level XXXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 34",
-              "Hunting Level XXXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 34",
-              "Hunting Level XXXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 34",
-              "Hunting Level XXXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 35",
-              "Hunting Level XXXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 35",
-              "Hunting Level XXXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 35",
-              "Hunting Level XXXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 36",
-              "Hunting Level XXXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 36",
-              "Hunting Level XXXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 36",
-              "Hunting Level XXXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 37",
-              "Hunting Level XXXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 37",
-              "Hunting Level XXXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 37",
-              "Hunting Level XXXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 38",
-              "Hunting Level XXXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 38",
-              "Hunting Level XXXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 38",
-              "Hunting Level XXXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 39",
-              "Hunting Level XXXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 39",
-              "Hunting Level XXXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 39",
-              "Hunting Level XXXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 40",
-              "Hunting Level XL"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 40",
-              "Hunting Level XL"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 40",
-              "Hunting Level XL"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 41",
-              "Hunting Level XLI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 41",
-              "Hunting Level XLI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 41",
-              "Hunting Level XLI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 42",
-              "Hunting Level XLII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 42",
-              "Hunting Level XLII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 42",
-              "Hunting Level XLII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 43",
-              "Hunting Level XLIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 43",
-              "Hunting Level XLIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 43",
-              "Hunting Level XLIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 44",
-              "Hunting Level XLIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 44",
-              "Hunting Level XLIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 44",
-              "Hunting Level XLIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 45",
-              "Hunting Level XLV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 45",
-              "Hunting Level XLV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 45",
-              "Hunting Level XLV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 46",
-              "Hunting Level XLVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 46",
-              "Hunting Level XLVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 46",
-              "Hunting Level XLVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 47",
-              "Hunting Level XLVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 47",
-              "Hunting Level XLVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 47",
-              "Hunting Level XLVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 48",
-              "Hunting Level XLVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 48",
-              "Hunting Level XLVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 48",
-              "Hunting Level XLVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 49",
-              "Hunting Level XLIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 49",
-              "Hunting Level XLIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 49",
-              "Hunting Level XLIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 50",
-              "Hunting Level L"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 50",
-              "Hunting Level L"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 50",
-              "Hunting Level L"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 51",
-              "Hunting Level LI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 51",
-              "Hunting Level LI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 51",
-              "Hunting Level LI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 52",
-              "Hunting Level LII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 52",
-              "Hunting Level LII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 52",
-              "Hunting Level LII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 53",
-              "Hunting Level LIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 53",
-              "Hunting Level LIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 53",
-              "Hunting Level LIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 54",
-              "Hunting Level LIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 54",
-              "Hunting Level LIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 54",
-              "Hunting Level LIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 55",
-              "Hunting Level LV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 55",
-              "Hunting Level LV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 55",
-              "Hunting Level LV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 56",
-              "Hunting Level LVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 56",
-              "Hunting Level LVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 56",
-              "Hunting Level LVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 57",
-              "Hunting Level LVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 57",
-              "Hunting Level LVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 57",
-              "Hunting Level LVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 58",
-              "Hunting Level LVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 58",
-              "Hunting Level LVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 58",
-              "Hunting Level LVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 59",
-              "Hunting Level LIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 59",
-              "Hunting Level LIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 59",
-              "Hunting Level LIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocked/left_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 60",
-              "Hunting Level LX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/unlocking/left_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 60",
-              "Hunting Level LX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/hunting/locked/left_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Hunting Level 60",
-              "Hunting Level LX"
             ],
             "mode": "equals",
             "type": "catharsis:name"

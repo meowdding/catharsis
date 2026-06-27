@@ -14,7 +14,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 0,
+            "slot": 27,
             "type": "catharsis:slot"
           }
         ],
@@ -22,7 +22,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/unlocked/start_down",
+      "id": "skyblock_gui:skills/combat/unlocked/start_right",
       "target": {
         "conditions": [
           {
@@ -42,7 +42,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/unlocking/start_down",
+      "id": "skyblock_gui:skills/combat/unlocking/start_right",
       "target": {
         "conditions": [
           {
@@ -62,7 +62,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/locked/start_down",
+      "id": "skyblock_gui:skills/combat/locked/start_right",
       "target": {
         "conditions": [
           {
@@ -73,186 +73,6 @@
             "name": [
               "Combat Level 1",
               "Combat Level I"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 2",
-              "Combat Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 2",
-              "Combat Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 2",
-              "Combat Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 3",
-              "Combat Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 3",
-              "Combat Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 3",
-              "Combat Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 4",
-              "Combat Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 4",
-              "Combat Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 4",
-              "Combat Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -266,16 +86,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:diamond_helmet"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Combat Level 5",
-              "Combat Level V"
+              "Combat Level 2",
+              "Combat Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -294,8 +111,8 @@
           },
           {
             "name": [
-              "Combat Level 5",
-              "Combat Level V"
+              "Combat Level 2",
+              "Combat Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -314,8 +131,8 @@
           },
           {
             "name": [
-              "Combat Level 5",
-              "Combat Level V"
+              "Combat Level 2",
+              "Combat Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -334,8 +151,8 @@
           },
           {
             "name": [
-              "Combat Level 6",
-              "Combat Level VI"
+              "Combat Level 3",
+              "Combat Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -354,8 +171,8 @@
           },
           {
             "name": [
-              "Combat Level 6",
-              "Combat Level VI"
+              "Combat Level 3",
+              "Combat Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -374,8 +191,8 @@
           },
           {
             "name": [
-              "Combat Level 6",
-              "Combat Level VI"
+              "Combat Level 3",
+              "Combat Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -394,8 +211,8 @@
           },
           {
             "name": [
-              "Combat Level 7",
-              "Combat Level VII"
+              "Combat Level 4",
+              "Combat Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -414,8 +231,8 @@
           },
           {
             "name": [
-              "Combat Level 7",
-              "Combat Level VII"
+              "Combat Level 4",
+              "Combat Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -434,8 +251,8 @@
           },
           {
             "name": [
-              "Combat Level 7",
-              "Combat Level VII"
+              "Combat Level 4",
+              "Combat Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -449,13 +266,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:diamond_helmet"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Combat Level 8",
-              "Combat Level VIII"
+              "Combat Level 5",
+              "Combat Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -474,8 +294,8 @@
           },
           {
             "name": [
-              "Combat Level 8",
-              "Combat Level VIII"
+              "Combat Level 5",
+              "Combat Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -494,8 +314,8 @@
           },
           {
             "name": [
-              "Combat Level 8",
-              "Combat Level VIII"
+              "Combat Level 5",
+              "Combat Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -514,8 +334,8 @@
           },
           {
             "name": [
-              "Combat Level 9",
-              "Combat Level IX"
+              "Combat Level 6",
+              "Combat Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -534,8 +354,8 @@
           },
           {
             "name": [
-              "Combat Level 9",
-              "Combat Level IX"
+              "Combat Level 6",
+              "Combat Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -554,8 +374,8 @@
           },
           {
             "name": [
-              "Combat Level 9",
-              "Combat Level IX"
+              "Combat Level 6",
+              "Combat Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -569,16 +389,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:diamond_helmet"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Combat Level 10",
-              "Combat Level X"
+              "Combat Level 7",
+              "Combat Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -597,8 +414,8 @@
           },
           {
             "name": [
-              "Combat Level 10",
-              "Combat Level X"
+              "Combat Level 7",
+              "Combat Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -617,8 +434,8 @@
           },
           {
             "name": [
-              "Combat Level 10",
-              "Combat Level X"
+              "Combat Level 7",
+              "Combat Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -637,8 +454,8 @@
           },
           {
             "name": [
-              "Combat Level 11",
-              "Combat Level XI"
+              "Combat Level 8",
+              "Combat Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -657,8 +474,8 @@
           },
           {
             "name": [
-              "Combat Level 11",
-              "Combat Level XI"
+              "Combat Level 8",
+              "Combat Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -677,8 +494,8 @@
           },
           {
             "name": [
-              "Combat Level 11",
-              "Combat Level XI"
+              "Combat Level 8",
+              "Combat Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -697,8 +514,8 @@
           },
           {
             "name": [
-              "Combat Level 12",
-              "Combat Level XII"
+              "Combat Level 9",
+              "Combat Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -717,8 +534,8 @@
           },
           {
             "name": [
-              "Combat Level 12",
-              "Combat Level XII"
+              "Combat Level 9",
+              "Combat Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -737,8 +554,8 @@
           },
           {
             "name": [
-              "Combat Level 12",
-              "Combat Level XII"
+              "Combat Level 9",
+              "Combat Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -752,13 +569,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:diamond_helmet"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Combat Level 13",
-              "Combat Level XIII"
+              "Combat Level 10",
+              "Combat Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -777,8 +597,8 @@
           },
           {
             "name": [
-              "Combat Level 13",
-              "Combat Level XIII"
+              "Combat Level 10",
+              "Combat Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -797,8 +617,8 @@
           },
           {
             "name": [
-              "Combat Level 13",
-              "Combat Level XIII"
+              "Combat Level 10",
+              "Combat Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -817,8 +637,8 @@
           },
           {
             "name": [
-              "Combat Level 14",
-              "Combat Level XIV"
+              "Combat Level 11",
+              "Combat Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -837,8 +657,8 @@
           },
           {
             "name": [
-              "Combat Level 14",
-              "Combat Level XIV"
+              "Combat Level 11",
+              "Combat Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -857,8 +677,8 @@
           },
           {
             "name": [
-              "Combat Level 14",
-              "Combat Level XIV"
+              "Combat Level 11",
+              "Combat Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -872,16 +692,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:diamond_helmet"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Combat Level 15",
-              "Combat Level XV"
+              "Combat Level 12",
+              "Combat Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -900,8 +717,8 @@
           },
           {
             "name": [
-              "Combat Level 15",
-              "Combat Level XV"
+              "Combat Level 12",
+              "Combat Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -920,8 +737,8 @@
           },
           {
             "name": [
-              "Combat Level 15",
-              "Combat Level XV"
+              "Combat Level 12",
+              "Combat Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -940,8 +757,8 @@
           },
           {
             "name": [
-              "Combat Level 16",
-              "Combat Level XVI"
+              "Combat Level 13",
+              "Combat Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -960,8 +777,8 @@
           },
           {
             "name": [
-              "Combat Level 16",
-              "Combat Level XVI"
+              "Combat Level 13",
+              "Combat Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -980,8 +797,8 @@
           },
           {
             "name": [
-              "Combat Level 16",
-              "Combat Level XVI"
+              "Combat Level 13",
+              "Combat Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1000,8 +817,8 @@
           },
           {
             "name": [
-              "Combat Level 17",
-              "Combat Level XVII"
+              "Combat Level 14",
+              "Combat Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1020,8 +837,8 @@
           },
           {
             "name": [
-              "Combat Level 17",
-              "Combat Level XVII"
+              "Combat Level 14",
+              "Combat Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1040,8 +857,8 @@
           },
           {
             "name": [
-              "Combat Level 17",
-              "Combat Level XVII"
+              "Combat Level 14",
+              "Combat Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1055,13 +872,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:diamond_helmet"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Combat Level 18",
-              "Combat Level XVIII"
+              "Combat Level 15",
+              "Combat Level XV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1080,6 +900,166 @@
           },
           {
             "name": [
+              "Combat Level 15",
+              "Combat Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 15",
+              "Combat Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 16",
+              "Combat Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 16",
+              "Combat Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 16",
+              "Combat Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 17",
+              "Combat Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 17",
+              "Combat Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 17",
+              "Combat Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
               "Combat Level 18",
               "Combat Level XVIII"
             ],
@@ -1091,7 +1071,27 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/locked/down_right",
+      "id": "skyblock_gui:skills/combat/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 18",
+              "Combat Level XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -1111,7 +1111,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/unlocked/left_right",
+      "id": "skyblock_gui:skills/combat/unlocked/up_down",
       "target": {
         "conditions": [
           {
@@ -1131,7 +1131,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/unlocking/left_right",
+      "id": "skyblock_gui:skills/combat/unlocking/up_down",
       "target": {
         "conditions": [
           {
@@ -1151,7 +1151,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/locked/left_right",
+      "id": "skyblock_gui:skills/combat/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -1171,7 +1171,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/unlocked/left_down",
+      "id": "skyblock_gui:skills/combat/unlocked/up_right",
       "target": {
         "conditions": [
           {
@@ -1194,7 +1194,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/unlocking/left_down",
+      "id": "skyblock_gui:skills/combat/unlocking/up_right",
       "target": {
         "conditions": [
           {
@@ -1205,6 +1205,429 @@
             "name": [
               "Combat Level 20",
               "Combat Level XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 20",
+              "Combat Level XX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 21",
+              "Combat Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 21",
+              "Combat Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 21",
+              "Combat Level XXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 22",
+              "Combat Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 22",
+              "Combat Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 22",
+              "Combat Level XXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 23",
+              "Combat Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 23",
+              "Combat Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 23",
+              "Combat Level XXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 24",
+              "Combat Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 24",
+              "Combat Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 24",
+              "Combat Level XXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:diamond_helmet"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 25",
+              "Combat Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 25",
+              "Combat Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 25",
+              "Combat Level XXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 26",
+              "Combat Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 26",
+              "Combat Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 26",
+              "Combat Level XXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 27",
+              "Combat Level XXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 27",
+              "Combat Level XXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1223,8 +1646,8 @@
           },
           {
             "name": [
-              "Combat Level 20",
-              "Combat Level XX"
+              "Combat Level 27",
+              "Combat Level XXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1243,8 +1666,8 @@
           },
           {
             "name": [
-              "Combat Level 21",
-              "Combat Level XXI"
+              "Combat Level 28",
+              "Combat Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1263,8 +1686,8 @@
           },
           {
             "name": [
-              "Combat Level 21",
-              "Combat Level XXI"
+              "Combat Level 28",
+              "Combat Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1283,8 +1706,8 @@
           },
           {
             "name": [
-              "Combat Level 21",
-              "Combat Level XXI"
+              "Combat Level 28",
+              "Combat Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1303,8 +1726,8 @@
           },
           {
             "name": [
-              "Combat Level 22",
-              "Combat Level XXII"
+              "Combat Level 29",
+              "Combat Level XXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1323,8 +1746,8 @@
           },
           {
             "name": [
-              "Combat Level 22",
-              "Combat Level XXII"
+              "Combat Level 29",
+              "Combat Level XXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1343,8 +1766,494 @@
           },
           {
             "name": [
-              "Combat Level 22",
-              "Combat Level XXII"
+              "Combat Level 29",
+              "Combat Level XXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:diamond_helmet"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 30",
+              "Combat Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 30",
+              "Combat Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 30",
+              "Combat Level XXX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 31",
+              "Combat Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 31",
+              "Combat Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 31",
+              "Combat Level XXXI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 32",
+              "Combat Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 32",
+              "Combat Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 32",
+              "Combat Level XXXII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 33",
+              "Combat Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 33",
+              "Combat Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 33",
+              "Combat Level XXXIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 34",
+              "Combat Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 34",
+              "Combat Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 34",
+              "Combat Level XXXIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:diamond_helmet"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 35",
+              "Combat Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 35",
+              "Combat Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 35",
+              "Combat Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 36",
+              "Combat Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 36",
+              "Combat Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 36",
+              "Combat Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 37",
+              "Combat Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 37",
+              "Combat Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 37",
+              "Combat Level XXXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1363,8 +2272,8 @@
           },
           {
             "name": [
-              "Combat Level 23",
-              "Combat Level XXIII"
+              "Combat Level 38",
+              "Combat Level XXXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1383,8 +2292,8 @@
           },
           {
             "name": [
-              "Combat Level 23",
-              "Combat Level XXIII"
+              "Combat Level 38",
+              "Combat Level XXXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1403,8 +2312,8 @@
           },
           {
             "name": [
-              "Combat Level 23",
-              "Combat Level XXIII"
+              "Combat Level 38",
+              "Combat Level XXXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1423,8 +2332,8 @@
           },
           {
             "name": [
-              "Combat Level 24",
-              "Combat Level XXIV"
+              "Combat Level 39",
+              "Combat Level XXXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1443,8 +2352,8 @@
           },
           {
             "name": [
-              "Combat Level 24",
-              "Combat Level XXIV"
+              "Combat Level 39",
+              "Combat Level XXXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1463,8 +2372,1220 @@
           },
           {
             "name": [
-              "Combat Level 24",
-              "Combat Level XXIV"
+              "Combat Level 39",
+              "Combat Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:diamond_helmet"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 40",
+              "Combat Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 40",
+              "Combat Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 40",
+              "Combat Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 41",
+              "Combat Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 41",
+              "Combat Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 41",
+              "Combat Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 42",
+              "Combat Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 42",
+              "Combat Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 42",
+              "Combat Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 43",
+              "Combat Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 43",
+              "Combat Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 43",
+              "Combat Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 44",
+              "Combat Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 44",
+              "Combat Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 44",
+              "Combat Level XLIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:diamond_helmet"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 45",
+              "Combat Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 45",
+              "Combat Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 45",
+              "Combat Level XLV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 46",
+              "Combat Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 46",
+              "Combat Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 46",
+              "Combat Level XLVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 47",
+              "Combat Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 47",
+              "Combat Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 47",
+              "Combat Level XLVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 48",
+              "Combat Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 48",
+              "Combat Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 48",
+              "Combat Level XLVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 49",
+              "Combat Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 49",
+              "Combat Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 49",
+              "Combat Level XLIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:diamond_helmet"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 50",
+              "Combat Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 50",
+              "Combat Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 50",
+              "Combat Level L"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 51",
+              "Combat Level LI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 51",
+              "Combat Level LI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 51",
+              "Combat Level LI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 52",
+              "Combat Level LII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 52",
+              "Combat Level LII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 52",
+              "Combat Level LII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 53",
+              "Combat Level LIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 53",
+              "Combat Level LIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 53",
+              "Combat Level LIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 54",
+              "Combat Level LIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 54",
+              "Combat Level LIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 54",
+              "Combat Level LIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:diamond_helmet"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 55",
+              "Combat Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 55",
+              "Combat Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 55",
+              "Combat Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 56",
+              "Combat Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 56",
+              "Combat Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 56",
+              "Combat Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 57",
+              "Combat Level LVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 57",
+              "Combat Level LVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 57",
+              "Combat Level LVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 58",
+              "Combat Level LVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 58",
+              "Combat Level LVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 58",
+              "Combat Level LVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 59",
+              "Combat Level LIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 59",
+              "Combat Level LIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/combat/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Combat Level 59",
+              "Combat Level LIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1475,2127 +3596,6 @@
     },
     {
       "id": "skyblock_gui:skills/combat/unlocked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:diamond_helmet"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 25",
-              "Combat Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 25",
-              "Combat Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 25",
-              "Combat Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 26",
-              "Combat Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 26",
-              "Combat Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 26",
-              "Combat Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 27",
-              "Combat Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 27",
-              "Combat Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 27",
-              "Combat Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 28",
-              "Combat Level XXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 28",
-              "Combat Level XXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 28",
-              "Combat Level XXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 29",
-              "Combat Level XXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 29",
-              "Combat Level XXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 29",
-              "Combat Level XXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:diamond_helmet"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 30",
-              "Combat Level XXX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 30",
-              "Combat Level XXX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 30",
-              "Combat Level XXX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 31",
-              "Combat Level XXXI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 31",
-              "Combat Level XXXI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 31",
-              "Combat Level XXXI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 32",
-              "Combat Level XXXII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 32",
-              "Combat Level XXXII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 32",
-              "Combat Level XXXII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 33",
-              "Combat Level XXXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 33",
-              "Combat Level XXXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 33",
-              "Combat Level XXXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 34",
-              "Combat Level XXXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 34",
-              "Combat Level XXXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 34",
-              "Combat Level XXXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:diamond_helmet"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 35",
-              "Combat Level XXXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 35",
-              "Combat Level XXXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 35",
-              "Combat Level XXXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 36",
-              "Combat Level XXXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 36",
-              "Combat Level XXXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 36",
-              "Combat Level XXXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 37",
-              "Combat Level XXXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 37",
-              "Combat Level XXXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 37",
-              "Combat Level XXXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 38",
-              "Combat Level XXXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 38",
-              "Combat Level XXXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 38",
-              "Combat Level XXXVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 39",
-              "Combat Level XXXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 39",
-              "Combat Level XXXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 39",
-              "Combat Level XXXIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:diamond_helmet"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 40",
-              "Combat Level XL"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 40",
-              "Combat Level XL"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 40",
-              "Combat Level XL"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 41",
-              "Combat Level XLI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 41",
-              "Combat Level XLI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 41",
-              "Combat Level XLI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 42",
-              "Combat Level XLII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 42",
-              "Combat Level XLII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 42",
-              "Combat Level XLII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 43",
-              "Combat Level XLIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 43",
-              "Combat Level XLIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 43",
-              "Combat Level XLIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 44",
-              "Combat Level XLIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 44",
-              "Combat Level XLIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 44",
-              "Combat Level XLIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:diamond_helmet"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 45",
-              "Combat Level XLV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 45",
-              "Combat Level XLV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 45",
-              "Combat Level XLV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 46",
-              "Combat Level XLVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 46",
-              "Combat Level XLVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 46",
-              "Combat Level XLVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 47",
-              "Combat Level XLVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 47",
-              "Combat Level XLVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 47",
-              "Combat Level XLVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 48",
-              "Combat Level XLVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 48",
-              "Combat Level XLVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 48",
-              "Combat Level XLVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 49",
-              "Combat Level XLIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 49",
-              "Combat Level XLIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 49",
-              "Combat Level XLIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:diamond_helmet"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 50",
-              "Combat Level L"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 50",
-              "Combat Level L"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 50",
-              "Combat Level L"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 51",
-              "Combat Level LI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 51",
-              "Combat Level LI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 51",
-              "Combat Level LI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 52",
-              "Combat Level LII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 52",
-              "Combat Level LII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 52",
-              "Combat Level LII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 53",
-              "Combat Level LIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 53",
-              "Combat Level LIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 53",
-              "Combat Level LIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 54",
-              "Combat Level LIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 54",
-              "Combat Level LIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 54",
-              "Combat Level LIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:diamond_helmet"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 55",
-              "Combat Level LV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 55",
-              "Combat Level LV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 55",
-              "Combat Level LV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 56",
-              "Combat Level LVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 56",
-              "Combat Level LVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 56",
-              "Combat Level LVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 57",
-              "Combat Level LVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 57",
-              "Combat Level LVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 57",
-              "Combat Level LVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 58",
-              "Combat Level LVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 58",
-              "Combat Level LVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 58",
-              "Combat Level LVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 59",
-              "Combat Level LIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 59",
-              "Combat Level LIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Combat Level 59",
-              "Combat Level LIX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/combat/unlocked/left_end",
       "target": {
         "conditions": [
           {
@@ -3618,7 +3618,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/unlocking/left_end",
+      "id": "skyblock_gui:skills/combat/unlocking/up_end",
       "target": {
         "conditions": [
           {
@@ -3638,7 +3638,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/combat/locked/left_end",
+      "id": "skyblock_gui:skills/combat/locked/up_end",
       "target": {
         "conditions": [
           {

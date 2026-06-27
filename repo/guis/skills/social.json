@@ -14,7 +14,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 0,
+            "slot": 27,
             "type": "catharsis:slot"
           }
         ],
@@ -22,7 +22,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocked/start_down",
+      "id": "skyblock_gui:skills/social/unlocked/start_right",
       "target": {
         "conditions": [
           {
@@ -42,7 +42,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocking/start_down",
+      "id": "skyblock_gui:skills/social/unlocking/start_right",
       "target": {
         "conditions": [
           {
@@ -62,7 +62,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/locked/start_down",
+      "id": "skyblock_gui:skills/social/locked/start_right",
       "target": {
         "conditions": [
           {
@@ -73,186 +73,6 @@
             "name": [
               "Social Level 1",
               "Social Level I"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/social/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Social Level 2",
-              "Social Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/social/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Social Level 2",
-              "Social Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/social/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Social Level 2",
-              "Social Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/social/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Social Level 3",
-              "Social Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/social/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Social Level 3",
-              "Social Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/social/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Social Level 3",
-              "Social Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/social/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Social Level 4",
-              "Social Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/social/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Social Level 4",
-              "Social Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/social/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Social Level 4",
-              "Social Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -266,16 +86,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:blaze_powder"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Social Level 5",
-              "Social Level V"
+              "Social Level 2",
+              "Social Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -294,8 +111,8 @@
           },
           {
             "name": [
-              "Social Level 5",
-              "Social Level V"
+              "Social Level 2",
+              "Social Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -314,8 +131,8 @@
           },
           {
             "name": [
-              "Social Level 5",
-              "Social Level V"
+              "Social Level 2",
+              "Social Level II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -334,8 +151,8 @@
           },
           {
             "name": [
-              "Social Level 6",
-              "Social Level VI"
+              "Social Level 3",
+              "Social Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -354,8 +171,8 @@
           },
           {
             "name": [
-              "Social Level 6",
-              "Social Level VI"
+              "Social Level 3",
+              "Social Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -374,8 +191,8 @@
           },
           {
             "name": [
-              "Social Level 6",
-              "Social Level VI"
+              "Social Level 3",
+              "Social Level III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -394,8 +211,8 @@
           },
           {
             "name": [
-              "Social Level 7",
-              "Social Level VII"
+              "Social Level 4",
+              "Social Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -414,8 +231,8 @@
           },
           {
             "name": [
-              "Social Level 7",
-              "Social Level VII"
+              "Social Level 4",
+              "Social Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -434,8 +251,8 @@
           },
           {
             "name": [
-              "Social Level 7",
-              "Social Level VII"
+              "Social Level 4",
+              "Social Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -449,13 +266,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:blaze_powder"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Social Level 8",
-              "Social Level VIII"
+              "Social Level 5",
+              "Social Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -474,8 +294,8 @@
           },
           {
             "name": [
-              "Social Level 8",
-              "Social Level VIII"
+              "Social Level 5",
+              "Social Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -494,8 +314,8 @@
           },
           {
             "name": [
-              "Social Level 8",
-              "Social Level VIII"
+              "Social Level 5",
+              "Social Level V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -514,8 +334,8 @@
           },
           {
             "name": [
-              "Social Level 9",
-              "Social Level IX"
+              "Social Level 6",
+              "Social Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -534,8 +354,8 @@
           },
           {
             "name": [
-              "Social Level 9",
-              "Social Level IX"
+              "Social Level 6",
+              "Social Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -554,8 +374,8 @@
           },
           {
             "name": [
-              "Social Level 9",
-              "Social Level IX"
+              "Social Level 6",
+              "Social Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -569,16 +389,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:blaze_powder"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Social Level 10",
-              "Social Level X"
+              "Social Level 7",
+              "Social Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -597,8 +414,8 @@
           },
           {
             "name": [
-              "Social Level 10",
-              "Social Level X"
+              "Social Level 7",
+              "Social Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -617,8 +434,8 @@
           },
           {
             "name": [
-              "Social Level 10",
-              "Social Level X"
+              "Social Level 7",
+              "Social Level VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -637,8 +454,8 @@
           },
           {
             "name": [
-              "Social Level 11",
-              "Social Level XI"
+              "Social Level 8",
+              "Social Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -657,8 +474,8 @@
           },
           {
             "name": [
-              "Social Level 11",
-              "Social Level XI"
+              "Social Level 8",
+              "Social Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -677,8 +494,8 @@
           },
           {
             "name": [
-              "Social Level 11",
-              "Social Level XI"
+              "Social Level 8",
+              "Social Level VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -697,8 +514,8 @@
           },
           {
             "name": [
-              "Social Level 12",
-              "Social Level XII"
+              "Social Level 9",
+              "Social Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -717,8 +534,8 @@
           },
           {
             "name": [
-              "Social Level 12",
-              "Social Level XII"
+              "Social Level 9",
+              "Social Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -737,8 +554,8 @@
           },
           {
             "name": [
-              "Social Level 12",
-              "Social Level XII"
+              "Social Level 9",
+              "Social Level IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -752,13 +569,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:blaze_powder"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Social Level 13",
-              "Social Level XIII"
+              "Social Level 10",
+              "Social Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -777,8 +597,8 @@
           },
           {
             "name": [
-              "Social Level 13",
-              "Social Level XIII"
+              "Social Level 10",
+              "Social Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -797,8 +617,8 @@
           },
           {
             "name": [
-              "Social Level 13",
-              "Social Level XIII"
+              "Social Level 10",
+              "Social Level X"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -817,8 +637,8 @@
           },
           {
             "name": [
-              "Social Level 14",
-              "Social Level XIV"
+              "Social Level 11",
+              "Social Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -837,8 +657,8 @@
           },
           {
             "name": [
-              "Social Level 14",
-              "Social Level XIV"
+              "Social Level 11",
+              "Social Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -857,8 +677,8 @@
           },
           {
             "name": [
-              "Social Level 14",
-              "Social Level XIV"
+              "Social Level 11",
+              "Social Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -872,16 +692,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:blaze_powder"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Social Level 15",
-              "Social Level XV"
+              "Social Level 12",
+              "Social Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -900,8 +717,8 @@
           },
           {
             "name": [
-              "Social Level 15",
-              "Social Level XV"
+              "Social Level 12",
+              "Social Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -920,8 +737,8 @@
           },
           {
             "name": [
-              "Social Level 15",
-              "Social Level XV"
+              "Social Level 12",
+              "Social Level XII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -940,8 +757,8 @@
           },
           {
             "name": [
-              "Social Level 16",
-              "Social Level XVI"
+              "Social Level 13",
+              "Social Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -960,8 +777,8 @@
           },
           {
             "name": [
-              "Social Level 16",
-              "Social Level XVI"
+              "Social Level 13",
+              "Social Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -980,8 +797,8 @@
           },
           {
             "name": [
-              "Social Level 16",
-              "Social Level XVI"
+              "Social Level 13",
+              "Social Level XIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1000,8 +817,8 @@
           },
           {
             "name": [
-              "Social Level 17",
-              "Social Level XVII"
+              "Social Level 14",
+              "Social Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1020,8 +837,8 @@
           },
           {
             "name": [
-              "Social Level 17",
-              "Social Level XVII"
+              "Social Level 14",
+              "Social Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1040,8 +857,8 @@
           },
           {
             "name": [
-              "Social Level 17",
-              "Social Level XVII"
+              "Social Level 14",
+              "Social Level XIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1055,13 +872,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:blaze_powder"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Social Level 18",
-              "Social Level XVIII"
+              "Social Level 15",
+              "Social Level XV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1080,6 +900,166 @@
           },
           {
             "name": [
+              "Social Level 15",
+              "Social Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/social/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Social Level 15",
+              "Social Level XV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/social/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Social Level 16",
+              "Social Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/social/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Social Level 16",
+              "Social Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/social/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Social Level 16",
+              "Social Level XVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/social/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Social Level 17",
+              "Social Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/social/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Social Level 17",
+              "Social Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/social/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Social Level 17",
+              "Social Level XVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/social/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
               "Social Level 18",
               "Social Level XVIII"
             ],
@@ -1091,7 +1071,27 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/locked/down_right",
+      "id": "skyblock_gui:skills/social/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Social Level 18",
+              "Social Level XVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/social/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -1111,7 +1111,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocked/left_right",
+      "id": "skyblock_gui:skills/social/unlocked/up_down",
       "target": {
         "conditions": [
           {
@@ -1131,7 +1131,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocking/left_right",
+      "id": "skyblock_gui:skills/social/unlocking/up_down",
       "target": {
         "conditions": [
           {
@@ -1151,7 +1151,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/locked/left_right",
+      "id": "skyblock_gui:skills/social/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -1171,7 +1171,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocked/left_down",
+      "id": "skyblock_gui:skills/social/unlocked/up_right",
       "target": {
         "conditions": [
           {
@@ -1194,7 +1194,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocking/left_down",
+      "id": "skyblock_gui:skills/social/unlocking/up_right",
       "target": {
         "conditions": [
           {
@@ -1214,7 +1214,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/locked/left_down",
+      "id": "skyblock_gui:skills/social/locked/up_right",
       "target": {
         "conditions": [
           {
@@ -1234,7 +1234,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocked/up_down",
+      "id": "skyblock_gui:skills/social/unlocked/left_right",
       "target": {
         "conditions": [
           {
@@ -1254,7 +1254,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocking/up_down",
+      "id": "skyblock_gui:skills/social/unlocking/left_right",
       "target": {
         "conditions": [
           {
@@ -1274,7 +1274,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/locked/up_down",
+      "id": "skyblock_gui:skills/social/locked/left_right",
       "target": {
         "conditions": [
           {
@@ -1294,7 +1294,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocked/up_down",
+      "id": "skyblock_gui:skills/social/unlocked/left_up",
       "target": {
         "conditions": [
           {
@@ -1314,7 +1314,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocking/up_down",
+      "id": "skyblock_gui:skills/social/unlocking/left_up",
       "target": {
         "conditions": [
           {
@@ -1334,7 +1334,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/locked/up_down",
+      "id": "skyblock_gui:skills/social/locked/left_up",
       "target": {
         "conditions": [
           {
@@ -1354,7 +1354,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocked/up_down",
+      "id": "skyblock_gui:skills/social/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -1374,7 +1374,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocking/up_down",
+      "id": "skyblock_gui:skills/social/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -1394,7 +1394,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/locked/up_down",
+      "id": "skyblock_gui:skills/social/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -1414,7 +1414,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocked/up_down",
+      "id": "skyblock_gui:skills/social/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -1434,7 +1434,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocking/up_down",
+      "id": "skyblock_gui:skills/social/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -1454,7 +1454,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/locked/up_down",
+      "id": "skyblock_gui:skills/social/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -1474,7 +1474,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocked/up_end",
+      "id": "skyblock_gui:skills/social/unlocked/down_end",
       "target": {
         "conditions": [
           {
@@ -1497,7 +1497,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/unlocking/up_end",
+      "id": "skyblock_gui:skills/social/unlocking/down_end",
       "target": {
         "conditions": [
           {
@@ -1517,7 +1517,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/social/locked/up_end",
+      "id": "skyblock_gui:skills/social/locked/down_end",
       "target": {
         "conditions": [
           {

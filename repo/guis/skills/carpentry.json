@@ -14,7 +14,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 0,
+            "slot": 27,
             "type": "catharsis:slot"
           }
         ],
@@ -22,7 +22,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocked/start_down",
+      "id": "skyblock_gui:skills/carpentry/unlocked/start_right",
       "target": {
         "conditions": [
           {
@@ -42,7 +42,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocking/start_down",
+      "id": "skyblock_gui:skills/carpentry/unlocking/start_right",
       "target": {
         "conditions": [
           {
@@ -62,7 +62,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/locked/start_down",
+      "id": "skyblock_gui:skills/carpentry/locked/start_right",
       "target": {
         "conditions": [
           {
@@ -73,186 +73,6 @@
             "name": [
               "Carpentry Level 1",
               "Carpentry Level I"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 2",
-              "Carpentry Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 2",
-              "Carpentry Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 2",
-              "Carpentry Level II"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 3",
-              "Carpentry Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 3",
-              "Carpentry Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 3",
-              "Carpentry Level III"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 4",
-              "Carpentry Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 4",
-              "Carpentry Level IV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/left_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 4",
-              "Carpentry Level IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -263,6 +83,186 @@
     },
     {
       "id": "skyblock_gui:skills/carpentry/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 2",
+              "Carpentry Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 2",
+              "Carpentry Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 2",
+              "Carpentry Level II"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 3",
+              "Carpentry Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 3",
+              "Carpentry Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 3",
+              "Carpentry Level III"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 4",
+              "Carpentry Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 4",
+              "Carpentry Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 4",
+              "Carpentry Level IV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/down_right",
       "target": {
         "conditions": [
           {
@@ -285,7 +285,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocking/left_up",
+      "id": "skyblock_gui:skills/carpentry/unlocking/down_right",
       "target": {
         "conditions": [
           {
@@ -305,7 +305,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/locked/left_up",
+      "id": "skyblock_gui:skills/carpentry/locked/down_right",
       "target": {
         "conditions": [
           {
@@ -325,186 +325,6 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 6",
-              "Carpentry Level VI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 6",
-              "Carpentry Level VI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 6",
-              "Carpentry Level VI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 7",
-              "Carpentry Level VII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 7",
-              "Carpentry Level VII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 7",
-              "Carpentry Level VII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 8",
-              "Carpentry Level VIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 8",
-              "Carpentry Level VIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 8",
-              "Carpentry Level VIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
       "id": "skyblock_gui:skills/carpentry/unlocked/left_right",
       "target": {
         "conditions": [
@@ -514,8 +334,8 @@
           },
           {
             "name": [
-              "Carpentry Level 9",
-              "Carpentry Level IX"
+              "Carpentry Level 6",
+              "Carpentry Level VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -534,6 +354,166 @@
           },
           {
             "name": [
+              "Carpentry Level 6",
+              "Carpentry Level VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 6",
+              "Carpentry Level VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 7",
+              "Carpentry Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 7",
+              "Carpentry Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 7",
+              "Carpentry Level VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 8",
+              "Carpentry Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 8",
+              "Carpentry Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 8",
+              "Carpentry Level VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
               "Carpentry Level 9",
               "Carpentry Level IX"
             ],
@@ -545,7 +525,27 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/locked/left_right",
+      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 9",
+              "Carpentry Level IX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/up_down",
       "target": {
         "conditions": [
           {
@@ -565,7 +565,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocked/left_down",
+      "id": "skyblock_gui:skills/carpentry/unlocked/up_right",
       "target": {
         "conditions": [
           {
@@ -588,7 +588,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocking/left_down",
+      "id": "skyblock_gui:skills/carpentry/unlocking/up_right",
       "target": {
         "conditions": [
           {
@@ -608,7 +608,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/locked/left_down",
+      "id": "skyblock_gui:skills/carpentry/locked/up_right",
       "target": {
         "conditions": [
           {
@@ -628,186 +628,6 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 11",
-              "Carpentry Level XI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 11",
-              "Carpentry Level XI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 11",
-              "Carpentry Level XI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 12",
-              "Carpentry Level XII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 12",
-              "Carpentry Level XII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 12",
-              "Carpentry Level XII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 13",
-              "Carpentry Level XIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 13",
-              "Carpentry Level XIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/up_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 13",
-              "Carpentry Level XIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
       "id": "skyblock_gui:skills/carpentry/unlocked/left_right",
       "target": {
         "conditions": [
@@ -817,8 +637,8 @@
           },
           {
             "name": [
-              "Carpentry Level 14",
-              "Carpentry Level XIV"
+              "Carpentry Level 11",
+              "Carpentry Level XI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -837,6 +657,166 @@
           },
           {
             "name": [
+              "Carpentry Level 11",
+              "Carpentry Level XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 11",
+              "Carpentry Level XI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 12",
+              "Carpentry Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 12",
+              "Carpentry Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 12",
+              "Carpentry Level XII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 13",
+              "Carpentry Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 13",
+              "Carpentry Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 13",
+              "Carpentry Level XIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
               "Carpentry Level 14",
               "Carpentry Level XIV"
             ],
@@ -848,7 +828,27 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/locked/left_right",
+      "id": "skyblock_gui:skills/carpentry/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 14",
+              "Carpentry Level XIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -868,7 +868,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocked/left_up",
+      "id": "skyblock_gui:skills/carpentry/unlocked/down_right",
       "target": {
         "conditions": [
           {
@@ -891,7 +891,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocking/left_up",
+      "id": "skyblock_gui:skills/carpentry/unlocking/down_right",
       "target": {
         "conditions": [
           {
@@ -911,7 +911,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/locked/left_up",
+      "id": "skyblock_gui:skills/carpentry/locked/down_right",
       "target": {
         "conditions": [
           {
@@ -931,186 +931,6 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 16",
-              "Carpentry Level XVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 16",
-              "Carpentry Level XVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 16",
-              "Carpentry Level XVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 17",
-              "Carpentry Level XVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 17",
-              "Carpentry Level XVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/down_up",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 17",
-              "Carpentry Level XVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 18",
-              "Carpentry Level XVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 18",
-              "Carpentry Level XVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/down_right",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 18",
-              "Carpentry Level XVIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
       "id": "skyblock_gui:skills/carpentry/unlocked/left_right",
       "target": {
         "conditions": [
@@ -1120,8 +940,8 @@
           },
           {
             "name": [
-              "Carpentry Level 19",
-              "Carpentry Level XIX"
+              "Carpentry Level 16",
+              "Carpentry Level XVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1140,8 +960,8 @@
           },
           {
             "name": [
-              "Carpentry Level 19",
-              "Carpentry Level XIX"
+              "Carpentry Level 16",
+              "Carpentry Level XVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1160,8 +980,8 @@
           },
           {
             "name": [
-              "Carpentry Level 19",
-              "Carpentry Level XIX"
+              "Carpentry Level 16",
+              "Carpentry Level XVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1175,16 +995,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:armor_stand"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Carpentry Level 20",
-              "Carpentry Level XX"
+              "Carpentry Level 17",
+              "Carpentry Level XVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1203,8 +1020,8 @@
           },
           {
             "name": [
-              "Carpentry Level 20",
-              "Carpentry Level XX"
+              "Carpentry Level 17",
+              "Carpentry Level XVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1223,8 +1040,8 @@
           },
           {
             "name": [
-              "Carpentry Level 20",
-              "Carpentry Level XX"
+              "Carpentry Level 17",
+              "Carpentry Level XVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1243,8 +1060,8 @@
           },
           {
             "name": [
-              "Carpentry Level 21",
-              "Carpentry Level XXI"
+              "Carpentry Level 18",
+              "Carpentry Level XVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1263,8 +1080,8 @@
           },
           {
             "name": [
-              "Carpentry Level 21",
-              "Carpentry Level XXI"
+              "Carpentry Level 18",
+              "Carpentry Level XVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1283,8 +1100,8 @@
           },
           {
             "name": [
-              "Carpentry Level 21",
-              "Carpentry Level XXI"
+              "Carpentry Level 18",
+              "Carpentry Level XVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1303,8 +1120,8 @@
           },
           {
             "name": [
-              "Carpentry Level 22",
-              "Carpentry Level XXII"
+              "Carpentry Level 19",
+              "Carpentry Level XIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1323,8 +1140,8 @@
           },
           {
             "name": [
-              "Carpentry Level 22",
-              "Carpentry Level XXII"
+              "Carpentry Level 19",
+              "Carpentry Level XIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1343,311 +1160,8 @@
           },
           {
             "name": [
-              "Carpentry Level 22",
-              "Carpentry Level XXII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 23",
-              "Carpentry Level XXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 23",
-              "Carpentry Level XXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 23",
-              "Carpentry Level XXIII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 24",
-              "Carpentry Level XXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 24",
-              "Carpentry Level XXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 24",
-              "Carpentry Level XXIV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:armor_stand"
-            ],
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 25",
-              "Carpentry Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 25",
-              "Carpentry Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/up_end",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 25",
-              "Carpentry Level XXV"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 26",
-              "Carpentry Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 26",
-              "Carpentry Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/start_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 26",
-              "Carpentry Level XXVI"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 27",
-              "Carpentry Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 27",
-              "Carpentry Level XXVII"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skills/carpentry/locked/up_down",
-      "target": {
-        "conditions": [
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Carpentry Level 27",
-              "Carpentry Level XXVII"
+              "Carpentry Level 19",
+              "Carpentry Level XIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1661,13 +1175,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:armor_stand"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Carpentry Level 28",
-              "Carpentry Level XXVIII"
+              "Carpentry Level 20",
+              "Carpentry Level XX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1686,8 +1203,8 @@
           },
           {
             "name": [
-              "Carpentry Level 28",
-              "Carpentry Level XXVIII"
+              "Carpentry Level 20",
+              "Carpentry Level XX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1706,8 +1223,8 @@
           },
           {
             "name": [
-              "Carpentry Level 28",
-              "Carpentry Level XXVIII"
+              "Carpentry Level 20",
+              "Carpentry Level XX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1726,8 +1243,8 @@
           },
           {
             "name": [
-              "Carpentry Level 29",
-              "Carpentry Level XXIX"
+              "Carpentry Level 21",
+              "Carpentry Level XXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1746,8 +1263,8 @@
           },
           {
             "name": [
-              "Carpentry Level 29",
-              "Carpentry Level XXIX"
+              "Carpentry Level 21",
+              "Carpentry Level XXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1766,8 +1283,8 @@
           },
           {
             "name": [
-              "Carpentry Level 29",
-              "Carpentry Level XXIX"
+              "Carpentry Level 21",
+              "Carpentry Level XXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1781,16 +1298,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:armor_stand"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Carpentry Level 30",
-              "Carpentry Level XXX"
+              "Carpentry Level 22",
+              "Carpentry Level XXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1809,8 +1323,8 @@
           },
           {
             "name": [
-              "Carpentry Level 30",
-              "Carpentry Level XXX"
+              "Carpentry Level 22",
+              "Carpentry Level XXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1829,8 +1343,8 @@
           },
           {
             "name": [
-              "Carpentry Level 30",
-              "Carpentry Level XXX"
+              "Carpentry Level 22",
+              "Carpentry Level XXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1849,8 +1363,8 @@
           },
           {
             "name": [
-              "Carpentry Level 31",
-              "Carpentry Level XXXI"
+              "Carpentry Level 23",
+              "Carpentry Level XXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1869,8 +1383,8 @@
           },
           {
             "name": [
-              "Carpentry Level 31",
-              "Carpentry Level XXXI"
+              "Carpentry Level 23",
+              "Carpentry Level XXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1889,8 +1403,8 @@
           },
           {
             "name": [
-              "Carpentry Level 31",
-              "Carpentry Level XXXI"
+              "Carpentry Level 23",
+              "Carpentry Level XXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1909,8 +1423,8 @@
           },
           {
             "name": [
-              "Carpentry Level 32",
-              "Carpentry Level XXXII"
+              "Carpentry Level 24",
+              "Carpentry Level XXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1929,8 +1443,8 @@
           },
           {
             "name": [
-              "Carpentry Level 32",
-              "Carpentry Level XXXII"
+              "Carpentry Level 24",
+              "Carpentry Level XXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1949,8 +1463,8 @@
           },
           {
             "name": [
-              "Carpentry Level 32",
-              "Carpentry Level XXXII"
+              "Carpentry Level 24",
+              "Carpentry Level XXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1964,13 +1478,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:armor_stand"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Carpentry Level 33",
-              "Carpentry Level XXXIII"
+              "Carpentry Level 25",
+              "Carpentry Level XXV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -1989,8 +1506,8 @@
           },
           {
             "name": [
-              "Carpentry Level 33",
-              "Carpentry Level XXXIII"
+              "Carpentry Level 25",
+              "Carpentry Level XXV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2009,8 +1526,8 @@
           },
           {
             "name": [
-              "Carpentry Level 33",
-              "Carpentry Level XXXIII"
+              "Carpentry Level 25",
+              "Carpentry Level XXV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2029,8 +1546,8 @@
           },
           {
             "name": [
-              "Carpentry Level 34",
-              "Carpentry Level XXXIV"
+              "Carpentry Level 26",
+              "Carpentry Level XXVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2049,8 +1566,8 @@
           },
           {
             "name": [
-              "Carpentry Level 34",
-              "Carpentry Level XXXIV"
+              "Carpentry Level 26",
+              "Carpentry Level XXVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2069,8 +1586,8 @@
           },
           {
             "name": [
-              "Carpentry Level 34",
-              "Carpentry Level XXXIV"
+              "Carpentry Level 26",
+              "Carpentry Level XXVI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2084,16 +1601,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:armor_stand"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Carpentry Level 35",
-              "Carpentry Level XXXV"
+              "Carpentry Level 27",
+              "Carpentry Level XXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2112,8 +1626,8 @@
           },
           {
             "name": [
-              "Carpentry Level 35",
-              "Carpentry Level XXXV"
+              "Carpentry Level 27",
+              "Carpentry Level XXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2132,8 +1646,8 @@
           },
           {
             "name": [
-              "Carpentry Level 35",
-              "Carpentry Level XXXV"
+              "Carpentry Level 27",
+              "Carpentry Level XXVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2152,8 +1666,8 @@
           },
           {
             "name": [
-              "Carpentry Level 36",
-              "Carpentry Level XXXVI"
+              "Carpentry Level 28",
+              "Carpentry Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2172,8 +1686,8 @@
           },
           {
             "name": [
-              "Carpentry Level 36",
-              "Carpentry Level XXXVI"
+              "Carpentry Level 28",
+              "Carpentry Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2192,8 +1706,8 @@
           },
           {
             "name": [
-              "Carpentry Level 36",
-              "Carpentry Level XXXVI"
+              "Carpentry Level 28",
+              "Carpentry Level XXVIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2212,8 +1726,8 @@
           },
           {
             "name": [
-              "Carpentry Level 37",
-              "Carpentry Level XXXVII"
+              "Carpentry Level 29",
+              "Carpentry Level XXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2232,8 +1746,8 @@
           },
           {
             "name": [
-              "Carpentry Level 37",
-              "Carpentry Level XXXVII"
+              "Carpentry Level 29",
+              "Carpentry Level XXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2252,8 +1766,8 @@
           },
           {
             "name": [
-              "Carpentry Level 37",
-              "Carpentry Level XXXVII"
+              "Carpentry Level 29",
+              "Carpentry Level XXIX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2267,13 +1781,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:armor_stand"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Carpentry Level 38",
-              "Carpentry Level XXXVIII"
+              "Carpentry Level 30",
+              "Carpentry Level XXX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2292,8 +1809,8 @@
           },
           {
             "name": [
-              "Carpentry Level 38",
-              "Carpentry Level XXXVIII"
+              "Carpentry Level 30",
+              "Carpentry Level XXX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2312,8 +1829,8 @@
           },
           {
             "name": [
-              "Carpentry Level 38",
-              "Carpentry Level XXXVIII"
+              "Carpentry Level 30",
+              "Carpentry Level XXX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2332,8 +1849,8 @@
           },
           {
             "name": [
-              "Carpentry Level 39",
-              "Carpentry Level XXXIX"
+              "Carpentry Level 31",
+              "Carpentry Level XXXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2352,8 +1869,8 @@
           },
           {
             "name": [
-              "Carpentry Level 39",
-              "Carpentry Level XXXIX"
+              "Carpentry Level 31",
+              "Carpentry Level XXXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2372,8 +1889,8 @@
           },
           {
             "name": [
-              "Carpentry Level 39",
-              "Carpentry Level XXXIX"
+              "Carpentry Level 31",
+              "Carpentry Level XXXI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2387,16 +1904,13 @@
       "target": {
         "conditions": [
           {
-            "items": [
-              "minecraft:lime_stained_glass_pane",
-              "minecraft:armor_stand"
-            ],
+            "items": "minecraft:lime_stained_glass_pane",
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Carpentry Level 40",
-              "Carpentry Level XL"
+              "Carpentry Level 32",
+              "Carpentry Level XXXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2415,8 +1929,8 @@
           },
           {
             "name": [
-              "Carpentry Level 40",
-              "Carpentry Level XL"
+              "Carpentry Level 32",
+              "Carpentry Level XXXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2435,8 +1949,8 @@
           },
           {
             "name": [
-              "Carpentry Level 40",
-              "Carpentry Level XL"
+              "Carpentry Level 32",
+              "Carpentry Level XXXII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2455,8 +1969,8 @@
           },
           {
             "name": [
-              "Carpentry Level 41",
-              "Carpentry Level XLI"
+              "Carpentry Level 33",
+              "Carpentry Level XXXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2475,8 +1989,8 @@
           },
           {
             "name": [
-              "Carpentry Level 41",
-              "Carpentry Level XLI"
+              "Carpentry Level 33",
+              "Carpentry Level XXXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2495,8 +2009,8 @@
           },
           {
             "name": [
-              "Carpentry Level 41",
-              "Carpentry Level XLI"
+              "Carpentry Level 33",
+              "Carpentry Level XXXIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2515,8 +2029,8 @@
           },
           {
             "name": [
-              "Carpentry Level 42",
-              "Carpentry Level XLII"
+              "Carpentry Level 34",
+              "Carpentry Level XXXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2535,8 +2049,8 @@
           },
           {
             "name": [
-              "Carpentry Level 42",
-              "Carpentry Level XLII"
+              "Carpentry Level 34",
+              "Carpentry Level XXXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2555,8 +2069,8 @@
           },
           {
             "name": [
-              "Carpentry Level 42",
-              "Carpentry Level XLII"
+              "Carpentry Level 34",
+              "Carpentry Level XXXIV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2570,13 +2084,16 @@
       "target": {
         "conditions": [
           {
-            "items": "minecraft:lime_stained_glass_pane",
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:armor_stand"
+            ],
             "type": "catharsis:item"
           },
           {
             "name": [
-              "Carpentry Level 43",
-              "Carpentry Level XLIII"
+              "Carpentry Level 35",
+              "Carpentry Level XXXV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -2595,6 +2112,469 @@
           },
           {
             "name": [
+              "Carpentry Level 35",
+              "Carpentry Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 35",
+              "Carpentry Level XXXV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 36",
+              "Carpentry Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 36",
+              "Carpentry Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 36",
+              "Carpentry Level XXXVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 37",
+              "Carpentry Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 37",
+              "Carpentry Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/left_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 37",
+              "Carpentry Level XXXVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 38",
+              "Carpentry Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 38",
+              "Carpentry Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 38",
+              "Carpentry Level XXXVIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 39",
+              "Carpentry Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 39",
+              "Carpentry Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/up_down",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 39",
+              "Carpentry Level XXXIX"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:armor_stand"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 40",
+              "Carpentry Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 40",
+              "Carpentry Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/up_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 40",
+              "Carpentry Level XL"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 41",
+              "Carpentry Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 41",
+              "Carpentry Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 41",
+              "Carpentry Level XLI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 42",
+              "Carpentry Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocking/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 42",
+              "Carpentry Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/left_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 42",
+              "Carpentry Level XLII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/unlocked/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
               "Carpentry Level 43",
               "Carpentry Level XLIII"
             ],
@@ -2606,7 +2586,27 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/locked/down_right",
+      "id": "skyblock_gui:skills/carpentry/unlocking/down_up",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Carpentry Level 43",
+              "Carpentry Level XLIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/carpentry/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -2626,7 +2626,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocked/left_right",
+      "id": "skyblock_gui:skills/carpentry/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -2646,7 +2646,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocking/left_right",
+      "id": "skyblock_gui:skills/carpentry/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -2666,7 +2666,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/locked/left_right",
+      "id": "skyblock_gui:skills/carpentry/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -2686,7 +2686,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocked/left_down",
+      "id": "skyblock_gui:skills/carpentry/unlocked/down_right",
       "target": {
         "conditions": [
           {
@@ -2709,7 +2709,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocking/left_down",
+      "id": "skyblock_gui:skills/carpentry/unlocking/down_right",
       "target": {
         "conditions": [
           {
@@ -2729,7 +2729,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/locked/left_down",
+      "id": "skyblock_gui:skills/carpentry/locked/down_right",
       "target": {
         "conditions": [
           {
@@ -2749,7 +2749,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
+      "id": "skyblock_gui:skills/carpentry/unlocked/left_right",
       "target": {
         "conditions": [
           {
@@ -2769,7 +2769,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
+      "id": "skyblock_gui:skills/carpentry/unlocking/left_right",
       "target": {
         "conditions": [
           {
@@ -2789,7 +2789,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/locked/up_down",
+      "id": "skyblock_gui:skills/carpentry/locked/left_right",
       "target": {
         "conditions": [
           {
@@ -2809,7 +2809,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocked/up_down",
+      "id": "skyblock_gui:skills/carpentry/unlocked/left_down",
       "target": {
         "conditions": [
           {
@@ -2829,7 +2829,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/unlocking/up_down",
+      "id": "skyblock_gui:skills/carpentry/unlocking/left_down",
       "target": {
         "conditions": [
           {
@@ -2849,7 +2849,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/carpentry/locked/up_down",
+      "id": "skyblock_gui:skills/carpentry/locked/left_down",
       "target": {
         "conditions": [
           {

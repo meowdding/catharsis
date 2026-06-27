@@ -101,6 +101,13 @@
         "type": "catharsis:slot",
         "slot": 34
       }
+    },
+    {
+      "id": "skyblock_gui:skills/show_skill_rankings/icon",
+      "target": {
+        "type": "catharsis:slot",
+        "slot": 53
+      }
     }
   ]
 }

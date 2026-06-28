@@ -1,5 +1,13 @@
 {
   "whitelist": [
+    "accessorybag",
+    "ah",
+    "ahs",
+    "auctionhouse",
+    "bank",
+    "bazaar",
+    "bz",
+    "bzs",
     "catharsis",
     "calendar",
     "call",
@@ -8,6 +16,8 @@
     "gfs",
     "hotm",
     "hotf",
+    "pets",
+    "sacks",
     "skill",
     "sbmenu",
     "settings",

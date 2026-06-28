@@ -37,9 +37,7 @@ data class SlotAllCondition(
     override val codec = CatharsisCodecs.getMapCodec<SlotAllCondition>()
     override val cost: Int = this.conditions.sumOf(SlotCondition::cost) + 1
 
-    override fun optimize(): SlotCondition = SlotAllCondition(
-        this.conditions.map(SlotCondition::optimize).sortedBy(SlotCondition::cost)
-    )
+    override fun optimize(): SlotCondition = SlotAllCondition(this.conditions.map(SlotCondition::optimize))
     override fun matches(slots: List<Slot>, slot: Int, stack: ItemStack): Boolean = this.conditions.all { it.matches(slots, slot, stack) }
 }
 

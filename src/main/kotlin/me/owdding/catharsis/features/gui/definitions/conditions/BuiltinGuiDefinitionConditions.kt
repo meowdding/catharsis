@@ -36,9 +36,7 @@ data class GuiDefinitionAllCondition(
     override val codec = CatharsisCodecs.getMapCodec<GuiDefinitionAllCondition>()
     override val cost: Int = this.conditions.sumOf { it.cost } + 1
 
-    override fun optimize(): GuiDefinitionCondition = GuiDefinitionAllCondition(
-        this.conditions.map(GuiDefinitionCondition::optimize).sortedBy(GuiDefinitionCondition::cost)
-    )
+    override fun optimize(): GuiDefinitionCondition = GuiDefinitionAllCondition(this.conditions.map(GuiDefinitionCondition::optimize))
     override fun matches(slots: List<Slot>, screen: AbstractContainerScreen<*>): Boolean = this.conditions.all { it.matches(slots, screen) }
 }
 

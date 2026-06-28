@@ -39,7 +39,7 @@ Things that happen in this example
     - <TypeIcon/> A lore entry. As defined [here](https://minecraft.wiki/w/Text_component_format#Java_Edition)
 - <TypeIcon type="object"/> **overrides**: (Optional) A map of block id to vanilla block state definitions.
   - <TypeIcon type="array"/> **&lt;block_id&gt;**: The block id that is replaced e.g. `minecraft:bedrock`.
-    - <TypeIcon/> A vanilla block state as defined [here](https://minecraft.wiki/w/Tutorial:Models#Block_states)
+    - <TypeIcon/> Another Virtual Block State.
 - <TypeIcon type="boolean"/> **ignore_original_offset**: (Optional) Whether to reverse the vanilla block offset, used for things like sunflowers.
 - <TypeIcon/> A vanilla block state as defined [here](https://minecraft.wiki/w/Tutorial:Models#Block_states)
 </TreeView>

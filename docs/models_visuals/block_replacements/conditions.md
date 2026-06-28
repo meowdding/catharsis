@@ -62,6 +62,8 @@ Passes if any one of the sub conditions pass.
 - <TypeIcon type="string"/> **type**: `or` <Version type="1.0.0-beta.18">or `any`</Version>
 - <TypeIcon type="array"/> **conditions**: A list of block conditions
 </TreeView>
+
+
 ### Not (`not`)
 
 Inverts the result of the sub condition.

@@ -11,7 +11,7 @@ This is useful for assigning specific IDs to custom head items that do not have 
 
 ::: details Included Misc Items
 
-You can view the remote defined `misc_items.json` on [GitHub](https://github.com/meowdding/catharsis/blob/development/repo/misc_items.json) or below.
+You can view the remote defined `misc_items.json` on [GitHub](https://github.com/meowdding/catharsis/blob/stable/repo/misc_items.json) or below.
 
 <MiscItems />
 

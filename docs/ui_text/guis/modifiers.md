@@ -210,12 +210,14 @@ Click a slot on the screen.
 
 </TreeView>
 
+<Version type=1.0.0-beta.19>
+
 ### **Sending a command** (`catharsis:command`)
 
 Send a command in the chat.
 
 ::: warning
-This is currently disabled due to security concerns, please join the Discord to provide feedback.
+The commands are based on a [whitelist](https://github.com/meowdding/catharsis/blob/main/repo/commands.json), if you need more, ask in the Discord. 
 :::
 
 <TreeView>
@@ -225,6 +227,8 @@ This is currently disabled due to security concerns, please join the Discord to 
 - <TypeIcon type="string"/> **command**: The command to send.
 
 </TreeView>
+
+</Version>
 
 ## GUI Widget Tooltip
 

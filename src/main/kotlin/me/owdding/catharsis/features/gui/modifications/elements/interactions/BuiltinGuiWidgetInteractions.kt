@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.gui.modifications.elements.interactions
 
+import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.gui.screens.ConfirmLinkScreen
@@ -43,6 +44,10 @@ data class GuiCommandWidgetInteraction(
 ): GuiWidgetInteraction {
     override val codec = CatharsisCodecs.getMapCodec<GuiCommandWidgetInteraction>()
     override fun click(button: Int) {
-        McClient.sendCommand(command)
+        if (CommandWhiteList.isWhitelisted(command)) {
+            McClient.sendCommand(command)
+        } else {
+            Catharsis.warn("Command '$command' is not whitelisted")
+        }
     }
 }

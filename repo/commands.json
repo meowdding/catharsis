@@ -1,0 +1,18 @@
+{
+  "whitelist": [
+    "catharsis",
+    "calendar",
+    "call",
+    "collections",
+    "equipment",
+    "gfs",
+    "hotm",
+    "hotf",
+    "skill",
+    "sbmenu",
+    "settings",
+    "quiver",
+    "wardrobe",
+    "warp"
+  ]
+}

@@ -38,7 +38,7 @@ sealed interface PackConfigOption {
     fun description(value: String?): Component
 
     @GenerateCodec
-    data class Separator(val title: Component, val description: Component) : PackConfigOption {
+    data class Separator(val title: Component = Component.empty(), val description: Component = Component.empty()) : PackConfigOption {
         override val type: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Separator>()
         override val id: String? = null
         override fun title(value: String?): Component = title

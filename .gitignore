@@ -53,3 +53,5 @@ bin/
 ### Minecraft ###
 run
 logs
+
+.direnv

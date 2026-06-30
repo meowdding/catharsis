@@ -49,8 +49,8 @@ object ResourcePackStealer {
 
 @GenerateCodec
 data class ResourcePackSteal(
-    @FieldName("pack_url") val packUrl: String,
-    @FieldName("pack_hash") val packHash: String,
-    @FieldName("pack_id") val packId: UUID,
+    val packUrl: String,
+    val packHash: String,
+    val packId: UUID,
     val alpha: Boolean,
 )

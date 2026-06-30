@@ -17,7 +17,6 @@ import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EntityType
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.helpers.McClient
-import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import java.io.Reader
 import kotlin.io.path.reader
 
@@ -32,7 +31,14 @@ object CustomEntityDefinitions : SimplePreparableReloadListener<Map<Identifier, 
     private val definitions = mutableMapOf<EntityType<*>, MutableMap<Identifier, CustomEntityDefinition>>()
     private val repoDefinitions = mutableMapOf<EntityType<*>, MutableMap<Identifier, CustomEntityDefinition>>()
 
-    private fun Reader.parse() = gson.fromJson(this, JsonElement::class.java).toDataOrThrow(codec)
+    private fun Reader.parse(name: String): CustomEntityDefinition? {
+        val element = gson.fromJson(this, JsonElement::class.java)
+        val parsed = codec.parse(com.mojang.serialization.JsonOps.INSTANCE, element)
+        parsed.error().ifPresent {
+            logger.error("Failed to load entity definition $name\nContext: ${it.message()}")
+        }
+        return parsed.resultOrPartial().orElse(null)
+    }
 
     override fun prepare(
         resourceManager: ResourceManager,
@@ -43,7 +49,7 @@ object CustomEntityDefinitions : SimplePreparableReloadListener<Map<Identifier, 
                 logger.runCatching("Error loading entity definition $file") {
                     resource.openAsReader().use { reader ->
                         val id = converter.fileToId(file)
-                        id to reader.parse()
+                        reader.parse(file.toString())?.let { id to it }
                     }
                 }
             }
@@ -65,8 +71,10 @@ object CustomEntityDefinitions : SimplePreparableReloadListener<Map<Identifier, 
         CatharsisRemoteRepo.listFilesInDirectory("entities").forEach { (name, path) ->
             logger.runCatching("Error loading remote entity definition $name") {
                 val id = Catharsis.id(name.removeSuffix(".json"))
-                val definition = path.reader().use { it.parse() }
-                repoDefinitions.computeIfAbsent(definition.type) { mutableMapOf() }[id] = definition
+                val definition = path.reader().use { it.parse(name) }
+                if (definition != null) {
+                    repoDefinitions.computeIfAbsent(definition.type) { mutableMapOf() }[id] = definition
+                }
             }
         }
 

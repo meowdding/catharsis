@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.gui.definitions
 
+import com.google.gson.JsonElement
 import com.mojang.serialization.JsonOps
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap
 import me.owdding.catharsis.Catharsis
@@ -13,7 +14,6 @@ import me.owdding.catharsis.repo.CatharsisRemoteRepo
 import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
 import me.owdding.catharsis.utils.extensions.mapBothNotNull
-import me.owdding.catharsis.utils.extensions.readWithCodec
 import me.owdding.ktmodules.Module
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
 import net.minecraft.resources.FileToIdConverter
@@ -22,7 +22,6 @@ import net.minecraft.server.packs.resources.ResourceManager
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener
 import net.minecraft.util.profiling.ProfilerFiller
 import net.minecraft.world.entity.player.Inventory
-import net.minecraft.world.inventory.InventoryMenu
 import net.minecraft.world.inventory.Slot
 import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI
@@ -36,7 +35,6 @@ import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
 import java.util.concurrent.atomic.AtomicBoolean
 import kotlin.collections.sortedBy
 import kotlin.io.path.readText
-
 
 @Module
 object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefinition>>(), CatharsisLogger by Catharsis.featureLogger() {
@@ -91,8 +89,15 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
                 return@mapBothNotNull null
             }
 
-            runCatching("Loading gui definition $key") {
-                uiDefinitionConverter.fileToId(key) to value.readWithCodec(GuiDefinition.CODEC)
+            runCatching("Error loading gui definition $key") {
+                val element = value.openAsReader().use { it.readText().readJson<JsonElement>() }
+                val parsed = GuiDefinition.CODEC.parse(JsonOps.INSTANCE, element)
+
+                parsed.error().ifPresent {
+                    GuiDefinitions.error("Failed to load gui definition $key\nMessage: ${it.message()}")
+                }
+
+                parsed.resultOrPartial().map { uiDefinitionConverter.fileToId(key) to it }.orElse(null)
             }
         }
     }
@@ -114,13 +119,16 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
     @Subscription
     private fun FinishRepoLoadEvent.finish() {
         CatharsisRemoteRepo.listFilesInDirectory("guis").forEach { (name, path) ->
-            val parsed = GuiDefinition.STRICT_CODEC.parse(JsonOps.INSTANCE, path.readText().readJson())
-            val definition = parsed.resultOrPartial()
+            runCatching("Error loading remote gui definition $name") {
+                val parsed = GuiDefinition.STRICT_CODEC.parse(JsonOps.INSTANCE, path.readText().readJson())
 
-            if (McClient.isDev && parsed.isError) {
-                GuiDefinitions.error("Failed to load gui definition from repo: $name", parsed.error().get().message())
-            } else if (definition.isPresent) {
-                repoDefinitions.add(DefinitionEntry(Catharsis.id(name.removeSuffix(".json")), definition.get()))
+                parsed.error().ifPresent {
+                    GuiDefinitions.error("Failed to load gui definition from repo: $name\nMessage: ${it.message()}")
+                }
+
+                parsed.resultOrPartial().ifPresent { definition ->
+                    repoDefinitions.add(DefinitionEntry(Catharsis.id(name.removeSuffix(".json")), definition))
+                }
             }
         }
         sortDefinitions()

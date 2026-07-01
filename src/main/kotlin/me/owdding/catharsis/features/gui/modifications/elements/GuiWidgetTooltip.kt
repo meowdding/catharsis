@@ -15,6 +15,7 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.item.TooltipFlag
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import tech.thatgravyboat.skyblockapi.helpers.McScreen
+import tech.thatgravyboat.skyblockapi.utils.text.TextUtils.splitLines
 
 interface GuiWidgetTooltip {
     val codec: MapCodec<out GuiWidgetTooltip>
@@ -24,9 +25,10 @@ interface GuiWidgetTooltip {
 
 @GenerateCodec
 data class TextWidgetTooltip(@Compact val text: List<Component>) : GuiWidgetTooltip {
+    private val splitText = text.flatMap { it.splitLines() }
     override val codec = CatharsisCodecs.getMapCodec<TextWidgetTooltip>()
 
-    override fun getTooltip(element: GuiWidgetElement): List<Component> = text
+    override fun getTooltip(element: GuiWidgetElement): List<Component> = splitText
 }
 
 @GenerateCodec

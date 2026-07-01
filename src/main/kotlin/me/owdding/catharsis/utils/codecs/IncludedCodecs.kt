@@ -35,6 +35,7 @@ import net.minecraft.world.level.block.Block
 import org.joml.Quaternionf
 import org.joml.Vector2i
 import org.joml.Vector2ic
+import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
 import tech.thatgravyboat.skyblockapi.utils.regex.component.ComponentRegex
 import java.net.URI
 import java.util.function.UnaryOperator
@@ -147,6 +148,9 @@ object IncludedCodecs {
 
     @IncludedCodec
     val inclusiveRangeInt: Codec<InclusiveRange<Int>> = InclusiveRange.INT
+
+    @IncludedCodec
+    val skyBlockIdCodec: Codec<SkyBlockId> = SkyBlockId.CODEC
 
 //     @IncludedCodec(keyable = true, named = "base64_string")
     val BASE64_STRING_CODEC: Codec<Base64String> = Codec.STRING.xmap(

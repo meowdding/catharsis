@@ -267,3 +267,30 @@ Only works if the interaction is [`catharsis:slot`](#slot-clicking-catharsis-slo
 - <TypeIcon type="string"/> **type**: `catharsis:interaction`
 
 </TreeView>
+
+<Version type="1.0.0-beta.20">
+
+### **SkyBlock Id** (`catharsis:id`)
+
+Steals the tooltip from an SkyBlock Item.
+
+Id Format: `<prefix>:<id>` or `<prefix>:<id>:<suffix>`
+
+| Prefix        | Id                      | Suffix        |
+|---------------|-------------------------|---------------|
+| `item`        | The normal id           | No Suffix     |
+| `attribute`   | The Attribute id        | No Suffix     |
+| `enchantment` | The enchant id          | Enchant Level |
+| `pet`         | The Pet Id from petInfo | Pet Rarity    |
+| `potion`      | The Potion Id           | Potion Lebvel |
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <bold>widget tooltip</bold> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:id`
+- <TypeIcon type="int"/> **id**: The SkyBlock Id as formatted above.
+- <TypeIcon type="boolean"/> **withName**: (Optional) If the name should be included, defaults to `true`.
+- <TypeIcon type="boolean"/> **withLore**: (Optional) If the lore should be included, defaults to `true`.
+
+</TreeView>
+</Version>

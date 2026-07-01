@@ -13,8 +13,10 @@ import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.TooltipFlag
+import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import tech.thatgravyboat.skyblockapi.helpers.McScreen
+import tech.thatgravyboat.skyblockapi.utils.extentions.getLore
 import tech.thatgravyboat.skyblockapi.utils.text.TextUtils.splitLines
 
 interface GuiWidgetTooltip {
@@ -37,6 +39,17 @@ data class SlotWidgetTooltip(val slot: Int) : GuiWidgetTooltip {
 
     override fun getTooltip(element: GuiWidgetElement): List<Component>? {
         return getSlotTooltip(slot)
+    }
+}
+
+@GenerateCodec
+data class SkyBlockIdWidgetTooltip(val id: SkyBlockId, val withName: Boolean = true, val withLore: Boolean = true) : GuiWidgetTooltip {
+    override val codec = CatharsisCodecs.getMapCodec<SkyBlockIdWidgetTooltip>()
+
+    override fun getTooltip(element: GuiWidgetElement) = buildList {
+        val item = id.toItem()
+        if (withName) add(item.hoverName)
+        if (withLore) addAll(item.getLore())
     }
 }
 
@@ -71,6 +84,7 @@ object WidgetTooltips {
     init {
         ID_MAPPER.put(Catharsis.id("text"), CatharsisCodecs.getMapCodec<TextWidgetTooltip>())
         ID_MAPPER.put(Catharsis.id("slot"), CatharsisCodecs.getMapCodec<SlotWidgetTooltip>())
+        ID_MAPPER.put(Catharsis.id("id"), CatharsisCodecs.getMapCodec<SkyBlockIdWidgetTooltip>())
         ID_MAPPER.put(Catharsis.id("interaction"), InteractionWidgetTooltip.codec)
     }
 }

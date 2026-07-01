@@ -165,10 +165,24 @@ Render a button on the screen.
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>GUI widget</b> object</span>
 
+<ul>
+
 - <TypeIcon type="string"/> **normal**: The Identifier of the texture to render.
 - <TypeIcon type="string"/> **hovered**: The Identifier of the texture to render when the button is hovered.
 - <TypeIcon type="object"/> **interaction**: The interaction when clicked, view [here](#gui-widget-interaction).
-- <TypeIcon type="object"/> **tooltip**: The tooltip when hovered, view [here](#gui-widget-tooltip).
+
+<Version type="1.0.0-beta.20">
+
+- <TypeIcon type="object"/><TypeIcon type="list"/> **tooltip**: (Optional) The tooltip when hovered, view [here](#gui-widget-tooltip). Defaults to no tooltip.
+    - <TypeIcon type="object"/> A singular tooltip object.
+    - <TypeIcon type="list"/> A list of tooltip objects
+</Version>
+
+<VersionNot type="1.0.0-beta.20">
+
+- <TypeIcon type="object"/> **tooltip**: (Optional) The tooltip when hovered, view [here](#gui-widget-tooltip). Defaults to no tooltip.
+</VersionNot>
+
 - <TypeIcon type="object"/> **x**: The x coordinate & alignment of the button. **Can only be one of the entries below.**
     - <TypeIcon type="int"/> The x coordinate based from the `START`.
     - <TypeIcon type="object"/> Coordinate & Alignment object.
@@ -181,6 +195,7 @@ Render a button on the screen.
         - <TypeIcon type="string"/> **alignment**: The alignment of the button, can be `START`, `CENTER` or `END`.
 - <TypeIcon type="int"/> **width**: The width of the button.
 - <TypeIcon type="int"/> **height**: The height of the button.
+</ul>
 
 </TreeView>
 

@@ -3,6 +3,7 @@ package me.owdding.catharsis.features.gui.modifications.elements
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiWidgetInteraction
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.navigation.ScreenRectangle
@@ -15,7 +16,7 @@ data class GuiButtonElement(
     val hovered: Identifier,
 
     override val interaction: GuiWidgetInteraction,
-    override val tooltip: GuiWidgetTooltip?,
+    @Compact override val tooltip: List<GuiWidgetTooltip>?,
 
     val x: GuiElementPosition,
     val y: GuiElementPosition,

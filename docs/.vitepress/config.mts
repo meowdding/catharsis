@@ -17,7 +17,7 @@ export default defineConfig({
                 "text": "Mod Version",
                 "items": [
                     {
-                        text: "1.0.0-beta.20",
+                        text: "1.0.0-beta.20 (Dev Build)",
                         link: "?1.0.0-beta.20"
                     },
                     {

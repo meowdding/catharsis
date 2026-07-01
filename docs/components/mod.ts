@@ -9,6 +9,7 @@ import RepoAreas from "./repo-areas.vue";
 import RepoTimespans from "./repo-timespans.vue";
 import VersionTag from "./version-tag.vue";
 import Version from "./version.vue";
+import VersionNot from "./version-not.vue";
 import Environment from "./environment.vue";
 import ExamplePack from "./example-pack.vue";
 import RepoGuis from "./repo-guis.vue";
@@ -30,4 +31,5 @@ export const CustomComponents: { [name: string]: any } = {
     "RepoGuis": RepoGuis,
     "MiscItems": MiscItems,
     "Version": Version,
+    "VersionNot": VersionNot,
 }

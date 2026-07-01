@@ -65,10 +65,10 @@ interface GuiElement {
 interface GuiWidgetElement : GuiElement {
 
     val interaction: GuiWidgetInteraction
-    val tooltip: GuiWidgetTooltip?
+    val tooltip: List<GuiWidgetTooltip>?
     override val codec: MapCodec<out GuiWidgetElement>
 
     fun isHovered(mouseX: Int, mouseY: Int, bounds: ScreenRectangle): Boolean
     fun onClick(button: Int) = interaction.click(button)
-    fun getTooltip(): List<Component>? = tooltip?.getTooltip(this)
+    fun getTooltip(): List<Component>? = tooltip?.mapNotNull { it.getTooltip(this) }?.flatten()
 }

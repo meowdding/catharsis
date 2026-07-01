@@ -66,7 +66,7 @@ data class GuiModifier(
     fun renderTooltips(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, bounds: ScreenRectangle): Boolean {
         for (widget in widgets) {
             if (widget.isHovered(mouseX, mouseY, bounds)) {
-                val tooltip = widget.getTooltip()
+                val tooltip = widget.getParsedTooltip()
                 if (!tooltip.isNullOrEmpty()) {
                     graphics.setComponentTooltipForNextFrame(McFont.self, tooltip, mouseX, mouseY)
                     return true

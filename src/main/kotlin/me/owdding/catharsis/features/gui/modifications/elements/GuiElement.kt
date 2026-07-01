@@ -70,5 +70,5 @@ interface GuiWidgetElement : GuiElement {
 
     fun isHovered(mouseX: Int, mouseY: Int, bounds: ScreenRectangle): Boolean
     fun onClick(button: Int) = interaction.click(button)
-    fun getTooltip(): List<Component>? = tooltip?.mapNotNull { it.getTooltip(this) }?.flatten()
+    fun getParsedTooltip(): List<Component>? = tooltip?.mapNotNull { it.getTooltip(this) }?.flatten()
 }

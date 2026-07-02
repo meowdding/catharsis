@@ -32,7 +32,7 @@ object CatharsisRemoteRepo : CatharsisLogger by Catharsis.featureLogger() {
 
     fun initialize(version: String, callback: () -> Unit) {
         if (isInitialized) return
-        CatharsisRemoteRepo.version = version.takeUnless { it == "stable" }
+        CatharsisRemoteRepo.version = version.takeUnless { it == "main" }
         val httpClient = HttpClient.newBuilder().followRedirects(HttpClient.Redirect.ALWAYS).build()
 
         val currentRepoHash = cacheDirectory.resolve("index.json.sha").takeIf { it.exists() }?.readText(Charsets.UTF_8)

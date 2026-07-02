@@ -39,13 +39,17 @@ import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
+import tech.thatgravyboat.skyblockapi.utils.text.TextColor
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
+import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.hover
+import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.url
 import java.util.concurrent.CompletableFuture
 import kotlin.io.path.readText
 import kotlin.time.Instant
 
 @Module
 object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.autoResolve() {
+    const val DISCORD = "https://meowdd.ing/discord"
     val buildInfo: BuildInfo by lazy {
         val self = FabricLoader.getInstance().getModContainer(MOD_ID).get()
         self.findPath("catharsis.json").get().readText().readJson<JsonObject>().toDataOrThrow(CatharsisCodecs.getCodec())
@@ -91,6 +95,10 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
                     Text.of("Finished loading repo!").sendWithPrefixIf { McLevel.hasLevel }
                 }
             }
+        }.exceptionally { throwable ->
+            error("Failed to load remote repo!", throwable)
+            Text.of("Failed to load repo! Please report this on the Discord").sendWithPrefixIf { McLevel.hasLevel }
+            null
         }
     }
 
@@ -108,6 +116,14 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
             thenCallback("catpack") {
                 McClient.openUri("https://meowdd.ing/catpack")
                 Text.of("Opening Catsquash Website...", CatppuccinColors.Mocha.pink).sendWithPrefix()
+            }
+
+            thenCallback("discord") {
+                Text.of("Join the Meowdding Discord!").apply {
+                    this.url = DISCORD
+                    this.color = CatppuccinColors.Mocha.pink
+                    this.hover = Text.of(DISCORD).withColor(TextColor.GRAY)
+                }.sendWithPrefix()
             }
 
             then("repo") {
@@ -144,7 +160,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
         val branch: String,
         val timestamp: Instant,
     ) {
-        val isStable = ref == "stable"
+        val isMain = ref == "main"
     }
 
 }

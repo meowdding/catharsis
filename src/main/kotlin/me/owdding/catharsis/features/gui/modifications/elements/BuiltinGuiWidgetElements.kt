@@ -36,7 +36,7 @@ data class GuiButtonElement(
 
     override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         val sprite = if (isHovered(mouseX, mouseY, bounds)) hovered else normal
-        graphics.blitSprite(RenderPipelines.GUI_TEXTURED, sprite, x.calculate(bounds.left(), width), y.calculate(bounds.top(), height), width, height)
+        graphics.blitSprite(RenderPipelines.GUI_TEXTURED, sprite, x.calculate(bounds.left(), bounds.width()), y.calculate(bounds.top(), bounds.height()), width, height)
     }
 
 }

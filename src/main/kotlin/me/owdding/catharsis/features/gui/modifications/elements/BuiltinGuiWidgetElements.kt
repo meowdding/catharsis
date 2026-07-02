@@ -14,7 +14,7 @@ import net.minecraft.resources.Identifier
 @GenerateCodec
 data class GuiButtonElement(
     val normal: Identifier,
-    val hovered: Identifier,
+    val hovered: Identifier = normal,
 
     override val interaction: GuiWidgetInteraction,
     @Compact override val tooltip: List<GuiWidgetTooltip>?,

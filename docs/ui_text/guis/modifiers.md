@@ -195,7 +195,7 @@ Render a button on the screen.
 <ul>
 
 - <TypeIcon type="string"/> **normal**: The Identifier of the texture to render.
-- <TypeIcon type="string"/> **hovered**: The Identifier of the texture to render when the button is hovered.
+- <TypeIcon type="string"/> **hovered**: (Optional) The Identifier of the texture to render when the button is hovered, defaults to the normal texture.
 
 <Version type="1.0.0-beta.20">
 

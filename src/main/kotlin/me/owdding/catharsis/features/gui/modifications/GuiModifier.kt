@@ -44,6 +44,7 @@ data class GuiModifier(
     fun renderElements(layer: GuiElementRenderLayer, graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         val elements = elementsByLayer[layer] ?: return
         for (element in elements) {
+            if (element.condition?.check() == false) continue
             if (element is GuiWidgetElement && element.isHovered(mouseX, mouseY, bounds)) {
                 graphics.requestCursor(CursorTypes.POINTING_HAND)
             }
@@ -53,6 +54,7 @@ data class GuiModifier(
 
     fun handleInteraction(x: Double, y: Double, button: Int, mouseDown: Boolean, bounds: ScreenRectangle): Boolean {
         for (element in widgets) {
+            if (element.condition?.check() == false) continue
             if (element.isHovered(x.toInt(), y.toInt(), bounds)) {
                 if (mouseDown) {
                     element.onClick(button)
@@ -65,6 +67,7 @@ data class GuiModifier(
 
     fun renderTooltips(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, bounds: ScreenRectangle): Boolean {
         for (widget in widgets) {
+            if (widget.condition?.check() == false) continue
             if (widget.isHovered(mouseX, mouseY, bounds)) {
                 val tooltip = widget.getParsedTooltip()
                 if (!tooltip.isNullOrEmpty()) {

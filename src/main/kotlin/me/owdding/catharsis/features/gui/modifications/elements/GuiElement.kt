@@ -4,6 +4,7 @@ import com.mojang.datafixers.util.Either
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
+import me.owdding.catharsis.features.gui.modifications.elements.conditions.GuiElementCondition
 import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiWidgetInteraction
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.IncludedCodec
@@ -58,6 +59,7 @@ interface GuiElement {
 
     val codec: MapCodec<out GuiElement>
     val layer: GuiElementRenderLayer get() = GuiElementRenderLayer.FOREGROUND
+    val condition: GuiElementCondition?
 
     fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle)
 }

@@ -1,6 +1,7 @@
 package me.owdding.catharsis.features.gui.modifications.elements
 
 import com.mojang.serialization.MapCodec
+import me.owdding.catharsis.features.gui.modifications.elements.conditions.GuiElementCondition
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.gui.GuiGraphicsExtractor
@@ -24,6 +25,7 @@ data class GuiPlayerElement(
     val y: GuiElementPosition,
     val width: Int,
     val height: Int,
+    override val condition: GuiElementCondition?,
 ) : GuiElement {
 
     override val codec: MapCodec<GuiPlayerElement> = CatharsisCodecs.getMapCodec<GuiPlayerElement>()
@@ -62,6 +64,7 @@ data class GuiSpriteElement(
     val y: GuiElementPosition = GuiElementPosition.START,
     val width: Int?,
     val height: Int?,
+    override val condition: GuiElementCondition?,
 ) : GuiElement {
 
     override val codec: MapCodec<GuiSpriteElement> = CatharsisCodecs.getMapCodec<GuiSpriteElement>()
@@ -84,6 +87,7 @@ data class GuiTextElement(
     val x: GuiElementPosition,
     val y: GuiElementPosition,
     val alignment: Float = 0f,
+    override val condition: GuiElementCondition?,
 ) : GuiElement {
 
     override val codec: MapCodec<GuiSpriteElement> = CatharsisCodecs.getMapCodec<GuiSpriteElement>()

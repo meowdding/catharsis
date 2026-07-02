@@ -1,6 +1,7 @@
 package me.owdding.catharsis.features.gui.modifications.elements
 
 import com.mojang.serialization.MapCodec
+import me.owdding.catharsis.features.gui.modifications.elements.conditions.GuiElementCondition
 import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiWidgetInteraction
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.Compact
@@ -22,6 +23,7 @@ data class GuiButtonElement(
     val y: GuiElementPosition,
     val width: Int,
     val height: Int,
+    override val condition: GuiElementCondition?,
 ) : GuiWidgetElement {
 
     override val codec: MapCodec<GuiButtonElement> = CatharsisCodecs.getMapCodec<GuiButtonElement>()

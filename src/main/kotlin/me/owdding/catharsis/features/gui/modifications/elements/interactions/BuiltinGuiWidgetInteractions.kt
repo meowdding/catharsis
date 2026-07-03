@@ -49,7 +49,7 @@ data class GuiSlotIdClickWidgetInteraction(
 
     override fun click(button: Int) {
         val slot = getSlot() ?: return
-        GuiSlotClickWidgetInteraction(slot.index).slot
+        GuiSlotClickWidgetInteraction(slot.index).click(button)
     }
 }
 

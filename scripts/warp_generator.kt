@@ -35,11 +35,12 @@ val mainMenuSlotIndexes = mapOf(
     "rift/wizard_tower" to SlotIndexCondition(29),
     "fishing_1/spawn" to SlotIndexCondition(30),
     "lotus_atoll/spawn" to SlotIndexCondition(32),
-    "winter/spawn" to SlotIndexCondition(33)
+    "winter/spawn" to SlotIndexCondition(33),
 )
 
+val unlockedCondition = SlotLoreCondition(EqualsTextMatcher("Warp not unlocked!"), Either.left(-1))
+
 fun warp(name: String, island: String, id: String): List<GuiSlotDefinition> {
-    val unlockedCondition = SlotLoreCondition(EqualsTextMatcher("Warp not unlocked!"), Either.left(-1))
     return listOf(
         GuiSlotDefinition(
             of("skyblock_gui", "fast_travel/$island/${id}_locked"),
@@ -80,7 +81,6 @@ fun warpMenu(
 fun mainMenu(
     vararg entries: Pair<String, TextMatcher>,
 ) {
-    val unlockedCondition = SlotLoreCondition(EqualsTextMatcher("Warp not unlocked!"), Either.left(-1))
     val definition = GuiDefinition(
         target = GuiDefinitionTitleCondition(Regex("Fast Travel")),
         layout = buildList {
@@ -117,7 +117,7 @@ fun mainMenu(
                         of("skyblock_gui", "fast_travel/${id}/undiscovered"),
                         SlotAllCondition(
                             SlotNameCondition(EqualsTextMatcher("Undiscovered Island")),
-                            mainMenuSlotIndexes [id]?: error("meow $id"),
+                            mainMenuSlotIndexes[id] ?: error("meow $id"),
                         ),
                     ),
                 )
@@ -125,7 +125,7 @@ fun mainMenu(
                 add(
                     GuiSlotDefinition(
                         of("skyblock_gui", "fast_travel/${id}/locked"),
-                            SlotAllCondition(
+                        SlotAllCondition(
                             SlotNameCondition(name),
                             unlockedCondition,
                         ),
@@ -254,7 +254,7 @@ fun warps() {
         listOf(
             "The End - Spawn" to "spawn",
             "The End - Dragon's Nest" to "nest",
-            "The End - Void Sepulture" to "sepulture"
+            "The End - Void Sepulture" to "sepulture",
         ),
     )
 
@@ -267,7 +267,7 @@ fun warps() {
             "Crimson Isle - The Wasteland" to "wasteland",
             "Crimson Isle - Dragontail" to "dragontail",
             "Crimson Isle - Scarleton" to "scarleton",
-            "Crimson Isle - Smoldering Tomb" to "smoldering_tomb"
-        )
+            "Crimson Isle - Smoldering Tomb" to "smoldering_tomb",
+        ),
     )
 }

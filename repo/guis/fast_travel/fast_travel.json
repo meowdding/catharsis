@@ -64,10 +64,44 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/hub/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "SkyBlock Hub",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/hub/spawn/unlocked",
       "target": {
-        "name": "Sky[bB]lock Hub",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "SkyBlock Hub",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -88,11 +122,44 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/dynamic/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Private Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/dynamic/spawn/unlocked",
       "target": {
-        "name": "Private Island",
-        "mode": "equals",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Private Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -113,10 +180,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/dungeon_hub/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Dungeon Hub(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/dungeon_hub/spawn/unlocked",
       "target": {
-        "name": "Dungeon Hub(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Dungeon Hub(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -137,10 +236,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/farming_1/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Barn(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/farming_1/spawn/unlocked",
       "target": {
-        "name": "The Barn(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "The Barn(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -161,10 +292,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/foraging_1/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/foraging_1/spawn/unlocked",
       "target": {
-        "name": "The Park(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "The Park(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -185,10 +348,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/foraging_2/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Galatea(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/foraging_2/spawn/unlocked",
       "target": {
-        "name": "Galatea(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Galatea(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -209,10 +404,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/mining_1/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Gold Mine(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/mining_1/spawn/unlocked",
       "target": {
-        "name": "Gold Mine(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Gold Mine(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -233,10 +460,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/mining_2/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Deep Caverns(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/mining_2/spawn/unlocked",
       "target": {
-        "name": "Deep Caverns(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Deep Caverns(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -257,10 +516,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/mining_3/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Dwarven Mines(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/mining_3/spawn/unlocked",
       "target": {
-        "name": "Dwarven Mines(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Dwarven Mines(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -281,10 +572,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/crystal_hollows/entrance/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Crystal Hollows(?: - Entrance)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/crystal_hollows/entrance/unlocked",
       "target": {
-        "name": "Crystal Hollows(?: - Entrance)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Crystal Hollows(?: - Entrance)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -305,10 +628,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/combat_1/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/combat_1/spawn/unlocked",
       "target": {
-        "name": "Spider\u0027s Den(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -329,10 +684,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/combat_3/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The End(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/combat_3/spawn/unlocked",
       "target": {
-        "name": "The End(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "The End(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -353,10 +740,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/crimson_isle/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Crimson Isle(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/crimson_isle/spawn/unlocked",
       "target": {
-        "name": "Crimson Isle(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Crimson Isle(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -377,11 +796,44 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/garden/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Garden",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/garden/spawn/unlocked",
       "target": {
-        "name": "The Garden",
-        "mode": "equals",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "The Garden",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -402,10 +854,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/rift/wizard_tower/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Rift(?: - Wizard Tower)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/rift/wizard_tower/unlocked",
       "target": {
-        "name": "The Rift(?: - Wizard Tower)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "The Rift(?: - Wizard Tower)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -426,10 +910,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/fishing_1/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Backwater Bayou(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/fishing_1/spawn/unlocked",
       "target": {
-        "name": "Backwater Bayou(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Backwater Bayou(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -450,10 +966,42 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/lotus_atoll/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Lotus Atoll(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/lotus_atoll/spawn/unlocked",
       "target": {
-        "name": "Lotus Atoll(?: - Spawn)?",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Lotus Atoll(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     },
     {
@@ -474,11 +1022,44 @@
       }
     },
     {
+      "id": "skyblock_gui:fast_travel/winter/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Warp to: Jerry\u0027s Workshop",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
       "id": "skyblock_gui:fast_travel/winter/spawn/unlocked",
       "target": {
-        "name": "Warp to: Jerry\u0027s Workshop",
-        "mode": "equals",
-        "type": "catharsis:name"
+        "conditions": [
+          {
+            "name": "Warp to: Jerry\u0027s Workshop",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
       }
     }
   ]

@@ -80,6 +80,7 @@ fun warpMenu(
 fun mainMenu(
     vararg entries: Pair<String, TextMatcher>,
 ) {
+    val unlockedCondition = SlotLoreCondition(EqualsTextMatcher("Warp not unlocked!"), Either.left(-1))
     val definition = GuiDefinition(
         target = GuiDefinitionTitleCondition(Regex("Fast Travel")),
         layout = buildList {
@@ -117,14 +118,27 @@ fun mainMenu(
                         SlotAllCondition(
                             SlotNameCondition(EqualsTextMatcher("Undiscovered Island")),
                             mainMenuSlotIndexes [id]?: error("meow $id"),
+                        ),
                     ),
+                )
+
+                add(
+                    GuiSlotDefinition(
+                        of("skyblock_gui", "fast_travel/${id}/locked"),
+                            SlotAllCondition(
+                            SlotNameCondition(name),
+                            unlockedCondition,
+                        ),
                     ),
                 )
 
                 add(
                     GuiSlotDefinition(
                         of("skyblock_gui", "fast_travel/${id}/unlocked"),
-                        SlotNameCondition(name),
+                        SlotAllCondition(
+                            SlotNameCondition(name),
+                            SlotNotCondition(unlockedCondition),
+                        ),
                     ),
                 )
             }
@@ -138,7 +152,7 @@ fun mainMenu(
 
 fun warps() {
     mainMenu(
-        "hub/spawn" to RegexTextMatcher("Sky[bB]lock Hub"),
+        "hub/spawn" to EqualsTextMatcher("SkyBlock Hub"),
         "dynamic/spawn" to EqualsTextMatcher("Private Island"),
         "dungeon_hub/spawn" to RegexTextMatcher("Dungeon Hub(?: - Spawn)?"),
         "farming_1/spawn" to RegexTextMatcher("The Barn(?: - Spawn)?"),
@@ -170,7 +184,7 @@ fun warps() {
             "SkyBlock Hub - Museum" to "museum",
             "SkyBlock Hub - Taylor's Shop" to "taylor",
             "SkyBlock Hub - Wizard Tower" to "wizard",
-            "SkyBlock Hub - Carnival" to "carnival",
+            "Skyblock Hub - Carnival" to "carnival",
             "SkyBlock Hub - Trading Center" to "trading",
         ),
     )

@@ -1,15 +1,15 @@
 {
   "target": {
-    "title": "Crimson Isle Warps",
+    "title": "The Farming Islands Warps",
     "type": "catharsis:title"
   },
   "layout": [
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/spawn_locked",
+      "id": "skyblock_gui:fast_travel/farming_1/spawn_locked",
       "target": {
         "conditions": [
           {
-            "name": "Crimson Isle - Spawn",
+            "name": "The Barn - Spawn",
             "mode": "equals",
             "type": "catharsis:name"
           },
@@ -24,11 +24,11 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/spawn_unlocked",
+      "id": "skyblock_gui:fast_travel/farming_1/spawn_unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Crimson Isle - Spawn",
+            "name": "The Barn - Spawn",
             "mode": "equals",
             "type": "catharsis:name"
           },
@@ -46,11 +46,11 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/forgotten_skull_locked",
+      "id": "skyblock_gui:fast_travel/farming_1/desert_locked",
       "target": {
         "conditions": [
           {
-            "name": "Crimson Isle - Forgotten Skull",
+            "name": "Mushroom Desert - Spawn",
             "mode": "equals",
             "type": "catharsis:name"
           },
@@ -65,11 +65,11 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/forgotten_skull_unlocked",
+      "id": "skyblock_gui:fast_travel/farming_1/desert_unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Crimson Isle - Forgotten Skull",
+            "name": "Mushroom Desert - Spawn",
             "mode": "equals",
             "type": "catharsis:name"
           },
@@ -87,11 +87,11 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/wasteland_locked",
+      "id": "skyblock_gui:fast_travel/farming_1/trappers_locked",
       "target": {
         "conditions": [
           {
-            "name": "Crimson Isle - The Wasteland",
+            "name": "Mushroom Desert - Trapper\u0027s Den",
             "mode": "equals",
             "type": "catharsis:name"
           },
@@ -106,11 +106,11 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/wasteland_unlocked",
+      "id": "skyblock_gui:fast_travel/farming_1/trappers_unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Crimson Isle - The Wasteland",
+            "name": "Mushroom Desert - Trapper\u0027s Den",
             "mode": "equals",
             "type": "catharsis:name"
           },
@@ -128,11 +128,11 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/dragontail_locked",
+      "id": "skyblock_gui:fast_travel/farming_1/glowing_mushroom_cave_locked",
       "target": {
         "conditions": [
           {
-            "name": "Crimson Isle - Dragontail",
+            "name": "Mushroom Desert - Glowing Mushroom Cave",
             "mode": "equals",
             "type": "catharsis:name"
           },
@@ -147,93 +147,11 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/dragontail_unlocked",
+      "id": "skyblock_gui:fast_travel/farming_1/glowing_mushroom_cave_unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Crimson Isle - Dragontail",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "condition": {
-              "name": "Warp not unlocked!",
-              "mode": "equals",
-              "line": -1,
-              "type": "catharsis:lore"
-            },
-            "type": "catharsis:not"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:fast_travel/crimson_isle/scarleton_locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Crimson Isle - Scarleton",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "name": "Warp not unlocked!",
-            "mode": "equals",
-            "line": -1,
-            "type": "catharsis:lore"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:fast_travel/crimson_isle/scarleton_unlocked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Crimson Isle - Scarleton",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "condition": {
-              "name": "Warp not unlocked!",
-              "mode": "equals",
-              "line": -1,
-              "type": "catharsis:lore"
-            },
-            "type": "catharsis:not"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:fast_travel/crimson_isle/smoldering_tomb_locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Crimson Isle - Smoldering Tomb",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "name": "Warp not unlocked!",
-            "mode": "equals",
-            "line": -1,
-            "type": "catharsis:lore"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:fast_travel/crimson_isle/smoldering_tomb_unlocked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Crimson Isle - Smoldering Tomb",
+            "name": "Mushroom Desert - Glowing Mushroom Cave",
             "mode": "equals",
             "type": "catharsis:name"
           },

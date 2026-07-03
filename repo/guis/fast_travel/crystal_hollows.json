@@ -14,19 +14,10 @@
             "type": "catharsis:name"
           },
           {
-            "conditions": [
-              {
-                "items": "minecraft:bedrock",
-                "type": "catharsis:item"
-              },
-              {
-                "name": "Warp not unlocked!",
-                "mode": "equals",
-                "line": -1,
-                "type": "catharsis:lore"
-              }
-            ],
-            "type": "catharsis:any"
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
           }
         ],
         "type": "catharsis:all"
@@ -43,8 +34,10 @@
           },
           {
             "condition": {
-              "items": "minecraft:bedrock",
-              "type": "catharsis:item"
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
             },
             "type": "catharsis:not"
           }
@@ -62,19 +55,10 @@
             "type": "catharsis:name"
           },
           {
-            "conditions": [
-              {
-                "items": "minecraft:bedrock",
-                "type": "catharsis:item"
-              },
-              {
-                "name": "Warp not unlocked!",
-                "mode": "equals",
-                "line": -1,
-                "type": "catharsis:lore"
-              }
-            ],
-            "type": "catharsis:any"
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
           }
         ],
         "type": "catharsis:all"
@@ -91,8 +75,10 @@
           },
           {
             "condition": {
-              "items": "minecraft:bedrock",
-              "type": "catharsis:item"
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
             },
             "type": "catharsis:not"
           }

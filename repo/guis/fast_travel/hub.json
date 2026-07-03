@@ -292,7 +292,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/wizard/locked",
+      "id": "skyblock_gui:fast_travel/hub/wizard_tower/locked",
       "target": {
         "conditions": [
           {
@@ -311,7 +311,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/wizard/unlocked",
+      "id": "skyblock_gui:fast_travel/hub/wizard_tower/unlocked",
       "target": {
         "conditions": [
           {

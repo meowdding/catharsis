@@ -183,7 +183,7 @@ fun warps() {
             "SkyBlock Hub - Crypts" to "crypts",
             "SkyBlock Hub - Museum" to "museum",
             "SkyBlock Hub - Taylor's Shop" to "taylor",
-            "SkyBlock Hub - Wizard Tower" to "wizard",
+            "SkyBlock Hub - Wizard Tower" to "wizard_tower",
             "Skyblock Hub - Carnival" to "carnival",
             "SkyBlock Hub - Trading Center" to "trading",
         ),

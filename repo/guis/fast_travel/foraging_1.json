@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:fast_travel/foraging_1/spawn_locked",
+      "id": "skyblock_gui:fast_travel/foraging_1/spawn/locked",
       "target": {
         "conditions": [
           {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/foraging_1/spawn_unlocked",
+      "id": "skyblock_gui:fast_travel/foraging_1/spawn/unlocked",
       "target": {
         "conditions": [
           {
@@ -46,7 +46,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/foraging_1/jungle_locked",
+      "id": "skyblock_gui:fast_travel/foraging_1/jungle/locked",
       "target": {
         "conditions": [
           {
@@ -65,7 +65,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/foraging_1/jungle_unlocked",
+      "id": "skyblock_gui:fast_travel/foraging_1/jungle/unlocked",
       "target": {
         "conditions": [
           {
@@ -87,7 +87,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/foraging_1/howling_cave_locked",
+      "id": "skyblock_gui:fast_travel/foraging_1/howling_cave/locked",
       "target": {
         "conditions": [
           {
@@ -106,7 +106,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/foraging_1/howling_cave_unlocked",
+      "id": "skyblock_gui:fast_travel/foraging_1/howling_cave/unlocked",
       "target": {
         "conditions": [
           {

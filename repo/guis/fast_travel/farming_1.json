@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:fast_travel/farming_1/spawn_locked",
+      "id": "skyblock_gui:fast_travel/farming_1/spawn/locked",
       "target": {
         "conditions": [
           {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/farming_1/spawn_unlocked",
+      "id": "skyblock_gui:fast_travel/farming_1/spawn/unlocked",
       "target": {
         "conditions": [
           {
@@ -46,7 +46,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/farming_1/desert_locked",
+      "id": "skyblock_gui:fast_travel/farming_1/desert/locked",
       "target": {
         "conditions": [
           {
@@ -65,7 +65,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/farming_1/desert_unlocked",
+      "id": "skyblock_gui:fast_travel/farming_1/desert/unlocked",
       "target": {
         "conditions": [
           {
@@ -87,7 +87,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/farming_1/trappers_locked",
+      "id": "skyblock_gui:fast_travel/farming_1/trappers/locked",
       "target": {
         "conditions": [
           {
@@ -106,7 +106,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/farming_1/trappers_unlocked",
+      "id": "skyblock_gui:fast_travel/farming_1/trappers/unlocked",
       "target": {
         "conditions": [
           {
@@ -128,7 +128,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/farming_1/glowing_mushroom_cave_locked",
+      "id": "skyblock_gui:fast_travel/farming_1/glowing_mushroom_cave/locked",
       "target": {
         "conditions": [
           {
@@ -147,7 +147,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/farming_1/glowing_mushroom_cave_unlocked",
+      "id": "skyblock_gui:fast_travel/farming_1/glowing_mushroom_cave/unlocked",
       "target": {
         "conditions": [
           {

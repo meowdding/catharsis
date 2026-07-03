@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:fast_travel/crystal_hollows/entrance_locked",
+      "id": "skyblock_gui:fast_travel/crystal_hollows/entrance/locked",
       "target": {
         "conditions": [
           {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crystal_hollows/entrance_unlocked",
+      "id": "skyblock_gui:fast_travel/crystal_hollows/entrance/unlocked",
       "target": {
         "conditions": [
           {
@@ -46,7 +46,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crystal_hollows/crystal_nucleus_locked",
+      "id": "skyblock_gui:fast_travel/crystal_hollows/crystal_nucleus/locked",
       "target": {
         "conditions": [
           {
@@ -65,7 +65,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crystal_hollows/crystal_nucleus_unlocked",
+      "id": "skyblock_gui:fast_travel/crystal_hollows/crystal_nucleus/unlocked",
       "target": {
         "conditions": [
           {

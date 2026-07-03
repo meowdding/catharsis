@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:fast_travel/hub/spawn_locked",
+      "id": "skyblock_gui:fast_travel/hub/spawn/locked",
       "target": {
         "conditions": [
           {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/spawn_unlocked",
+      "id": "skyblock_gui:fast_travel/hub/spawn/unlocked",
       "target": {
         "conditions": [
           {
@@ -46,7 +46,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/castle_locked",
+      "id": "skyblock_gui:fast_travel/hub/castle/locked",
       "target": {
         "conditions": [
           {
@@ -65,7 +65,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/castle_unlocked",
+      "id": "skyblock_gui:fast_travel/hub/castle/unlocked",
       "target": {
         "conditions": [
           {
@@ -87,7 +87,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/elizabeth_locked",
+      "id": "skyblock_gui:fast_travel/hub/elizabeth/locked",
       "target": {
         "conditions": [
           {
@@ -106,7 +106,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/elizabeth_unlocked",
+      "id": "skyblock_gui:fast_travel/hub/elizabeth/unlocked",
       "target": {
         "conditions": [
           {
@@ -128,7 +128,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/sirius_locked",
+      "id": "skyblock_gui:fast_travel/hub/sirius/locked",
       "target": {
         "conditions": [
           {
@@ -147,7 +147,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/sirius_unlocked",
+      "id": "skyblock_gui:fast_travel/hub/sirius/unlocked",
       "target": {
         "conditions": [
           {
@@ -169,7 +169,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/crypts_locked",
+      "id": "skyblock_gui:fast_travel/hub/crypts/locked",
       "target": {
         "conditions": [
           {
@@ -188,7 +188,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/crypts_unlocked",
+      "id": "skyblock_gui:fast_travel/hub/crypts/unlocked",
       "target": {
         "conditions": [
           {
@@ -210,7 +210,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/museum_locked",
+      "id": "skyblock_gui:fast_travel/hub/museum/locked",
       "target": {
         "conditions": [
           {
@@ -229,7 +229,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/museum_unlocked",
+      "id": "skyblock_gui:fast_travel/hub/museum/unlocked",
       "target": {
         "conditions": [
           {
@@ -251,7 +251,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/taylor_locked",
+      "id": "skyblock_gui:fast_travel/hub/taylor/locked",
       "target": {
         "conditions": [
           {
@@ -270,7 +270,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/taylor_unlocked",
+      "id": "skyblock_gui:fast_travel/hub/taylor/unlocked",
       "target": {
         "conditions": [
           {
@@ -292,7 +292,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/wizard_locked",
+      "id": "skyblock_gui:fast_travel/hub/wizard/locked",
       "target": {
         "conditions": [
           {
@@ -311,7 +311,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/wizard_unlocked",
+      "id": "skyblock_gui:fast_travel/hub/wizard/unlocked",
       "target": {
         "conditions": [
           {
@@ -333,7 +333,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/carnival_locked",
+      "id": "skyblock_gui:fast_travel/hub/carnival/locked",
       "target": {
         "conditions": [
           {
@@ -352,7 +352,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/carnival_unlocked",
+      "id": "skyblock_gui:fast_travel/hub/carnival/unlocked",
       "target": {
         "conditions": [
           {
@@ -374,7 +374,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/trading_locked",
+      "id": "skyblock_gui:fast_travel/hub/trading/locked",
       "target": {
         "conditions": [
           {
@@ -393,7 +393,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/hub/trading_unlocked",
+      "id": "skyblock_gui:fast_travel/hub/trading/unlocked",
       "target": {
         "conditions": [
           {

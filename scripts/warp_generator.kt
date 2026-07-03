@@ -43,14 +43,14 @@ val unlockedCondition = SlotLoreCondition(EqualsTextMatcher("Warp not unlocked!"
 fun warp(name: String, island: String, id: String): List<GuiSlotDefinition> {
     return listOf(
         GuiSlotDefinition(
-            of("skyblock_gui", "fast_travel/$island/${id}_locked"),
+            of("skyblock_gui", "fast_travel/$island/${id}/locked"),
             SlotAllCondition(
                 SlotNameCondition(EqualsTextMatcher(name)),
                 unlockedCondition,
             ),
         ),
         GuiSlotDefinition(
-            of("skyblock_gui", "fast_travel/$island/${id}_unlocked"),
+            of("skyblock_gui", "fast_travel/$island/${id}/unlocked"),
             SlotAllCondition(
                 SlotNameCondition(EqualsTextMatcher(name)),
                 SlotNotCondition(unlockedCondition),

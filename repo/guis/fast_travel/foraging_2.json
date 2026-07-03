@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:fast_travel/foraging_2/spawn_locked",
+      "id": "skyblock_gui:fast_travel/foraging_2/spawn/locked",
       "target": {
         "conditions": [
           {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/foraging_2/spawn_unlocked",
+      "id": "skyblock_gui:fast_travel/foraging_2/spawn/unlocked",
       "target": {
         "conditions": [
           {
@@ -46,7 +46,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/foraging_2/murkwater_locked",
+      "id": "skyblock_gui:fast_travel/foraging_2/murkwater/locked",
       "target": {
         "conditions": [
           {
@@ -65,7 +65,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/foraging_2/murkwater_unlocked",
+      "id": "skyblock_gui:fast_travel/foraging_2/murkwater/unlocked",
       "target": {
         "conditions": [
           {

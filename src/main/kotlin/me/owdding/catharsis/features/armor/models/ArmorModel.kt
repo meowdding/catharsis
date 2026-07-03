@@ -32,7 +32,7 @@ sealed interface ArmorModelState {
     object Missing : Texture(arrayOf(MissingTextureAtlasSprite.getLocation()), intArrayOf(-1))
     object Fallthrough : ArmorModelState
 
-    open class Texture(val textures: Array<Identifier>, val colors: IntArray) : ArmorModelState {
+    open class Texture(val textures: Array<Identifier>, val colors: IntArray, val isTranslucent: Boolean = false) : ArmorModelState {
 
         val layers: Int = this.textures.size
 
@@ -41,7 +41,7 @@ sealed interface ArmorModelState {
         }
     }
 
-    open class Bedrock(val geometry: BakedBedrockGeometry, val textures: Array<Identifier>, val colors: IntArray) : ArmorModelState {
+    open class Bedrock(val geometry: BakedBedrockGeometry, val textures: Array<Identifier>, val colors: IntArray, val isTranslucent: Boolean = false) : ArmorModelState {
 
         val layers: Int = this.textures.size
 

@@ -40,12 +40,15 @@ public abstract class HumanoidArmorModelMixin<S extends HumanoidRenderState, A e
 
         var textures = renderer.getTextures();
         var colors = renderer.getColors();
+        var isTranslucent = renderer.isTranslucent();
 
         for (int i = 0; i < renderer.getLayers(); i++) {
             var texture = textures[i];
             var color = colors[i];
 
-            nodes.order(i + 1).submitCustomGeometry(stack, RenderTypes.entityCutout(texture), (pose, consumer) -> {
+            var renderType = isTranslucent ? RenderTypes.entityTranslucent(texture) : RenderTypes.entityCutout(texture);
+
+            nodes.order(i + 1).submitCustomGeometry(stack, renderType, (pose, consumer) -> {
                 model.setupAnim(state);
                 BedrockGeometryRenderer.render(renderer.getGeometry(), slot, model, pose, consumer, color, light, OverlayTexture.NO_OVERLAY);
             });

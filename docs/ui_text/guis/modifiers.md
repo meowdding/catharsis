@@ -258,6 +258,21 @@ Click a slot on the screen.
 
 </TreeView>
 
+<Version type=1.0.0-beta.20>
+
+### **Gui Id Slot Clicking** (`catharsis:slot_id`)
+
+Click a slot on the screen based the Gui Id.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <bold>widget interaction</bold> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:slot_id`
+- <TypeIcon type="string"/> **slot**: The identifier of the slot.
+
+</TreeView>
+</Version>
+
 <Version type=1.0.0-beta.19>
 
 ### **Sending a command** (`catharsis:command`)

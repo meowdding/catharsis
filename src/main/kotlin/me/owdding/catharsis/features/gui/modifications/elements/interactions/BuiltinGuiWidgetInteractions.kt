@@ -1,9 +1,11 @@
 package me.owdding.catharsis.features.gui.modifications.elements.interactions
 
 import me.owdding.catharsis.Catharsis
+import me.owdding.catharsis.features.gui.definitions.GuiDefinitions
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.gui.screens.ConfirmLinkScreen
+import net.minecraft.resources.Identifier
 import net.minecraft.world.inventory.ContainerInput
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
@@ -34,6 +36,20 @@ data class GuiSlotClickWidgetInteraction(
         // Every update we need to check if this is still possible as to not send invalid packets.
         // TODO maybe add ability to remotely disable this if hypixel does a patch that breaks it, but doubtful since its possible in vanilla.
         McClient.self.gameMode?.handleContainerInput(menu.containerId, slotId, 0, ContainerInput.CLONE, player)
+    }
+}
+
+@GenerateCodec
+data class GuiSlotIdClickWidgetInteraction(
+    val slot: Identifier
+): GuiWidgetInteraction {
+    override val codec = CatharsisCodecs.getMapCodec<GuiSlotIdClickWidgetInteraction>()
+
+    fun getSlot() = McScreen.asMenu?.menu?.slots?.firstOrNull { GuiDefinitions.getSlot(it.index) == slot }
+
+    override fun click(button: Int) {
+        val slot = getSlot() ?: return
+        GuiSlotClickWidgetInteraction(slot.index).slot
     }
 }
 

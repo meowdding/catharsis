@@ -4,6 +4,7 @@ import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiSlotClickWidgetInteraction
+import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiSlotIdClickWidgetInteraction
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.GenerateCodec
@@ -60,6 +61,11 @@ object InteractionWidgetTooltip : GuiWidgetTooltip {
         val interaction = element.interaction
         if (interaction is GuiSlotClickWidgetInteraction) {
             return getSlotTooltip(interaction.slot)
+        }
+        if (interaction is GuiSlotIdClickWidgetInteraction) {
+            interaction.getSlot()?.index?.let {
+                return getSlotTooltip(it)
+            }
         }
         return null
     }

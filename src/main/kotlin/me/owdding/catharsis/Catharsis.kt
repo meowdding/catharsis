@@ -2,7 +2,13 @@ package me.owdding.catharsis
 
 import com.google.gson.JsonObject
 import com.mojang.brigadier.arguments.StringArgumentType
-import me.owdding.catharsis.events.*
+import me.owdding.catharsis.events.BootstrapConditionalPropertiesEvent
+import me.owdding.catharsis.events.BootstrapItemModelsEvent
+import me.owdding.catharsis.events.BootstrapItemTintSourceEvent
+import me.owdding.catharsis.events.BootstrapNumericPropertiesEvent
+import me.owdding.catharsis.events.BootstrapSelectPropertiesEvent
+import me.owdding.catharsis.events.FinishRepoLoadEvent
+import me.owdding.catharsis.events.StartRepoLoadEvent
 import me.owdding.catharsis.features.imc.ImcHandler
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.generated.CatharsisModules
@@ -76,12 +82,10 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
         ImcHandler.setup()
     }
 
-    fun loadRepo(notify: Boolean = CatharsisDevUtils.getBoolean("repo_notify")) {
+    fun loadRepo() {
         val branch = CatharsisDevUtils.properties[REPO_BRANCH_PROPERTY] ?: buildInfo.branch.replace("/", "-")
-        if (notify) {
-            info("Loading repo on branch $branch")
-            Text.of("Loading repo on branch $branch").sendWithPrefixIf { McLevel.hasLevel }
-        }
+        info("Loading repo on branch $branch")
+        Text.of("Loading repo on branch $branch").sendWithPrefixIf { McLevel.hasLevel }
         CompletableFuture.runAsync {
             StartRepoLoadEvent.post(SkyBlockAPI.eventBus)
             CatharsisRemoteRepo.initialize(branch) {
@@ -129,7 +133,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
             then("repo") {
                 thenCallback("reload") {
                     CatharsisRemoteRepo.uninitialize()
-                    loadRepo(true)
+                    loadRepo()
                 }
                 thenCallback("branch branch", StringArgumentType.greedyString()) {
                     val branch = argument<String>("branch")

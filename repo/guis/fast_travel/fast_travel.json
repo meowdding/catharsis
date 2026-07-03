@@ -1,0 +1,485 @@
+{
+  "target": {
+    "title": "Fast Travel",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/island_browser",
+      "target": {
+        "name": "Island Browser",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/advanced_mode/enabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Advanced Mode",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_dye",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/advanced_mode/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Advanced Mode",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:gray_dye",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/hub/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 11,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/hub/spawn/unlocked",
+      "target": {
+        "name": "Sky[bB]lock Hub",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/dynamic/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 10,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/dynamic/spawn/unlocked",
+      "target": {
+        "name": "Private Island",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/dungeon_hub/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 12,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/dungeon_hub/spawn/unlocked",
+      "target": {
+        "name": "Dungeon Hub(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_1/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 13,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_1/spawn/unlocked",
+      "target": {
+        "name": "The Barn(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_1/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 14,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_1/spawn/unlocked",
+      "target": {
+        "name": "The Park(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_2/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 15,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_2/spawn/unlocked",
+      "target": {
+        "name": "Galatea(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_1/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 16,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_1/spawn/unlocked",
+      "target": {
+        "name": "Gold Mine(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_2/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 19,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_2/spawn/unlocked",
+      "target": {
+        "name": "Deep Caverns(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_3/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 20,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_3/spawn/unlocked",
+      "target": {
+        "name": "Dwarven Mines(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/crystal_hollows/entrance/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 21,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/crystal_hollows/entrance/unlocked",
+      "target": {
+        "name": "Crystal Hollows(?: - Entrance)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/combat_1/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 22,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/combat_1/spawn/unlocked",
+      "target": {
+        "name": "Spider\u0027s Den(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/combat_3/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 23,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/combat_3/spawn/unlocked",
+      "target": {
+        "name": "The End(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/crimson_isle/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/crimson_isle/spawn/unlocked",
+      "target": {
+        "name": "Crimson Isle(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/garden/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 25,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/garden/spawn/unlocked",
+      "target": {
+        "name": "The Garden",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/rift/wizard_tower/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 29,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/rift/wizard_tower/unlocked",
+      "target": {
+        "name": "The Rift(?: - Wizard Tower)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/fishing_1/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 30,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/fishing_1/spawn/unlocked",
+      "target": {
+        "name": "Backwater Bayou(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/lotus_atoll/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 32,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/lotus_atoll/spawn/unlocked",
+      "target": {
+        "name": "Lotus Atoll(?: - Spawn)?",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/winter/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 33,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/winter/spawn/unlocked",
+      "target": {
+        "name": "Warp to: Jerry\u0027s Workshop",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    }
+  ]
+}

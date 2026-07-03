@@ -1,0 +1,131 @@
+{
+  "target": {
+    "title": "Spider\u0027s Den Warps",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/combat_1/spawn_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/combat_1/spawn_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/combat_1/top_of_nest_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Top of Nest",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/combat_1/top_of_nest_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Top of Nest",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/combat_1/arachne_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Arachne\u0027s Sanctuary",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/combat_1/arachne_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Spider\u0027s Den - Arachne\u0027s Sanctuary",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

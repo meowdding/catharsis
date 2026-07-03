@@ -1,0 +1,131 @@
+{
+  "target": {
+    "title": "The Park Warps",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/foraging_1/spawn_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_1/spawn_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_1/jungle_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Jungle",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_1/jungle_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Jungle",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_1/howling_cave_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Howling Cave",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_1/howling_cave_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Park - Howling Cave",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

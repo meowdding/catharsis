@@ -1,0 +1,131 @@
+{
+  "target": {
+    "title": "Dwarven Mines Warps",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/mining_3/spawn_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Dwarven Mines - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_3/spawn_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Dwarven Mines - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_3/forge_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Dwarven Mines - Forge",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_3/forge_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Dwarven Mines - Forge",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_3/base_camp_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Dwarven Mines - Base Camp",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_3/base_camp_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Dwarven Mines - Base Camp",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

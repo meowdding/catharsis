@@ -1,0 +1,172 @@
+{
+  "target": {
+    "title": "The Farming Islands Warps",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/farming_1/spawn_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Barn - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_1/spawn_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "The Barn - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_1/desert_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mushroom Desert - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_1/desert_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mushroom Desert - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_1/trappers_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mushroom Desert - Trapper\u0027s Den",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_1/trappers_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mushroom Desert - Trapper\u0027s Den",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_1/glowing_mushroom_cave_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mushroom Desert - Glowing Mushroom Cave",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/farming_1/glowing_mushroom_cave_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Mushroom Desert - Glowing Mushroom Cave",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

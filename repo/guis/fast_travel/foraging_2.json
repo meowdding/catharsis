@@ -1,0 +1,90 @@
+{
+  "target": {
+    "title": "Galatea Warps",
+    "type": "catharsis:title"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:fast_travel/foraging_2/spawn_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Galatea - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_2/spawn_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Galatea - Spawn",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_2/murkwater_locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Galatea - Murkwater Loch",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_2/murkwater_unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Galatea - Murkwater Loch",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    }
+  ]
+}

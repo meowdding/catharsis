@@ -1,6 +1,5 @@
 package me.owdding.catharsis.features.imc
 
-import me.owdding.catharsis.features.gui.definitions.GuiDefinition
 import me.owdding.catharsis.features.gui.definitions.GuiDefinitions
 import me.owdding.catharsis.features.gui.modifications.GuiModifiers
 import me.owdding.catharsis.hooks.items.CustomDataHook
@@ -12,12 +11,17 @@ import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.platform.Identifiers
 import java.util.function.BiConsumer
 import java.util.function.Consumer
+import java.util.function.Predicate
 
 object ImcHandler {
 
     fun setup() {
         this.setup<Identifier>("item_id") { stack, id -> stack.withCatharsisId(id) }
         this.setup<Boolean>("disabled") { stack, disabled -> stack.withDisabled(disabled) }
+
+        this.setup<Predicate<String>>("hidden_gui_elements", Predicate { element ->
+            GuiModifiers.getActiveModifier()?.hiddenModElements?.contains(element) == true
+        })
     }
 
     private fun <Data> setup(path: String, consumer: BiConsumer<ItemStack, Data>) {
@@ -27,7 +31,23 @@ object ImcHandler {
 
         for (invoker in invokers) {
             try {
+                @Suppress("UNCHECKED_CAST")
                 (invoker as Consumer<BiConsumer<ItemStack, Data>>).accept(consumer)
+            } catch (e: Throwable) {
+                e.printStackTrace()
+            }
+        }
+    }
+
+    private inline fun <reified T> setup(path: String, provider: T) {
+        val invokers = runCatching { FabricLoader.getInstance().getEntrypoints("catharsis:imc/$path", Consumer::class.java) }
+            .onFailure(Throwable::printStackTrace)
+            .getOrDefault(emptyList())
+
+        for (invoker in invokers) {
+            try {
+                @Suppress("UNCHECKED_CAST")
+                (invoker as Consumer<T>).accept(provider)
             } catch (e: Throwable) {
                 e.printStackTrace()
             }

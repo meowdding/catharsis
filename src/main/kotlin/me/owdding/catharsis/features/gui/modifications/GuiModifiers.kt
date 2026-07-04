@@ -98,6 +98,7 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
                 slots = slots,
                 elements = modifiers.flatMap { it.elements },
                 widgets = modifiers.flatMap { it.widgets },
+                hiddenModElements = modifiers.flatMap { it.hiddenModElements }.distinct(),
             )
         }
     }

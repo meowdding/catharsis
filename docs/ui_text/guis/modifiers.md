@@ -44,6 +44,12 @@ GUI Modifiers allow Texture Packs to modify containers based on a [GUI Definitio
 - <TypeIcon type="array"/> **elements**: (Optional) A list of [GUI elements](#gui-elements).
 - <TypeIcon type="array"/> **widgets**: (Optional) A list of [GUI widgets](#gui-widgets).
 
+<Version type="1.0.0-beta.21">
+
+- <TypeIcon type="array"/> **hiddenModElements**: (Optional) A list of specific Mod UI elements to hide (supported by compatible mods).
+
+</Version>
+
 </ul>
 </TreeView>
 

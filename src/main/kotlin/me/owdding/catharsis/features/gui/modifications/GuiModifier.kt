@@ -35,6 +35,8 @@ data class GuiModifier(
     @OptionalIfEmpty val slots: Map<Identifier, SlotModifier> = emptyMap(),
     @OptionalIfEmpty val elements: List<GuiElement> = emptyList(),
     @OptionalIfEmpty val widgets: List<GuiWidgetElement> = emptyList(),
+
+    @OptionalIfEmpty val hiddenModElements: List<String> = emptyList(),
 ) : SavableData<GuiModifier> {
     override val codec: Codec<GuiModifier> get() = GuiModifiers.codec
     override fun toFileName(identifier: Identifier): Identifier = GuiModifiers.converter.idToFile(identifier)

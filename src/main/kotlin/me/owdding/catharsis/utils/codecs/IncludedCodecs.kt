@@ -20,6 +20,10 @@ import net.minecraft.core.Holder
 import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries
+import net.minecraft.nbt.CompoundTag
+import net.minecraft.nbt.NbtIo
+import net.minecraft.nbt.NbtUtils
+import net.minecraft.nbt.TagParser
 import net.minecraft.network.chat.Component
 import net.minecraft.network.chat.ComponentSerialization
 import net.minecraft.resources.Identifier
@@ -151,6 +155,12 @@ object IncludedCodecs {
 
     @IncludedCodec
     val skyBlockIdCodec: Codec<SkyBlockId> = SkyBlockId.CODEC
+
+    @IncludedCodec
+    val compoundCodec: Codec<CompoundTag> = Codec.either(CompoundTag.CODEC, Codec.STRING.xmap({ TagParser.parseCompoundFully(it) }, { TODO("not implemented") })).xmap(
+        Either<CompoundTag, CompoundTag>::unwrap,
+        Either<CompoundTag, CompoundTag>::left,
+    )
 
 //     @IncludedCodec(keyable = true, named = "base64_string")
     val BASE64_STRING_CODEC: Codec<Base64String> = Codec.STRING.xmap(

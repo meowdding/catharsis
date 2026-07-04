@@ -9,51 +9,102 @@ import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.client.gui.screens.inventory.InventoryScreen
 import net.minecraft.util.LightCoordsUtil
 import net.minecraft.client.renderer.RenderPipelines
+import net.minecraft.core.registries.BuiltInRegistries
+import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.Component
 import net.minecraft.resources.Identifier
 import net.minecraft.util.CommonColors
+import net.minecraft.world.entity.Entity
+import net.minecraft.world.entity.EntitySpawnReason
+import net.minecraft.world.entity.EntitySpawnRequest
+import net.minecraft.world.entity.EntityType
+import net.minecraft.world.entity.LivingEntity
+import net.minecraft.world.item.enchantment.Enchantment.definition
 import org.joml.Quaternionf
 import org.joml.Vector3f
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McFont
+import tech.thatgravyboat.skyblockapi.helpers.McLevel
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 
-@GenerateCodec
-data class GuiPlayerElement(
-    val rotation: Quaternionf?,
-    val x: GuiElementPosition,
-    val y: GuiElementPosition,
-    val width: Int,
-    val height: Int,
-    override val condition: GuiElementCondition?,
-) : GuiElement {
+abstract class AbstractGuiEntityElement() : GuiElement {
+    abstract val rotation: Quaternionf?
+    abstract val x: GuiElementPosition
+    abstract val y: GuiElementPosition
+    abstract val width: Int
+    abstract val height: Int
 
-    override val codec: MapCodec<GuiPlayerElement> = CatharsisCodecs.getMapCodec<GuiPlayerElement>()
     override val layer: GuiElementRenderLayer = GuiElementRenderLayer.BACKGROUND
+
+    abstract fun getEntity(): Entity?
 
     override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         val newX = x.calculate(bounds.left(), bounds.width())
         val newY = y.calculate(bounds.top(), bounds.height())
 
-        val player = McPlayer.self ?: return
+        val entity = getEntity() ?: return
+        val isLiving = entity is LivingEntity
 
-        if (rotation == null) {
+        if (rotation == null && isLiving) {
             InventoryScreen.extractEntityInInventoryFollowsMouse(
                 graphics,
                 newX, newY, newX + width, newY + height,
                 30, 0.0625f,
                 mouseX.toFloat(), mouseY.toFloat(),
-                player
+                entity
             )
         } else {
-            val offset = Vector3f(0.0F, player.bbHeight / 2.0f + 0.0625f * player.scale, 0.0F)
-            val state = McClient.self.entityRenderDispatcher.getRenderer(player).createRenderState(player, 1f)
+            val scale = if (isLiving) entity.scale else 1f
+            val offset = Vector3f(0.0F, entity.bbHeight / 2.0f + 0.0625f * scale, 0.0F)
+            val state = McClient.self.entityRenderDispatcher.getRenderer(entity).createRenderState(entity, 1f)
             state.lightCoords = LightCoordsUtil.FULL_BRIGHT
             state.shadowPieces.clear()
             state.outlineColor = 0
             graphics.entity(state, 25.0F, offset, rotation, null, newX, newY, newX + width, newY + height)
         }
     }
+}
+
+@GenerateCodec
+data class GuiPlayerElement(
+    override val rotation: Quaternionf?,
+    override val x: GuiElementPosition,
+    override val y: GuiElementPosition,
+    override val width: Int,
+    override val height: Int,
+    override val condition: GuiElementCondition?,
+) : AbstractGuiEntityElement() {
+    override val codec: MapCodec<GuiPlayerElement> = CatharsisCodecs.getMapCodec<GuiPlayerElement>()
+
+    override fun getEntity(): LivingEntity? = McPlayer.self
+}
+
+@GenerateCodec
+data class GuiEntityElement(
+    override val rotation: Quaternionf?,
+    override val x: GuiElementPosition,
+    override val y: GuiElementPosition,
+    override val width: Int,
+    override val height: Int,
+    override val condition: GuiElementCondition?,
+    val entityType: EntityType<*>,
+    val tag: CompoundTag = CompoundTag(),
+) : AbstractGuiEntityElement() {
+    override val codec: MapCodec<GuiEntityElement> = CatharsisCodecs.getMapCodec<GuiEntityElement>()
+
+    private val parsedEntity: Entity? by lazy {
+        //? >= 26.2 {
+        val thing = EntitySpawnRequest(EntitySpawnReason.COMMAND, true)
+        //?} else
+        //val thing = EntitySpawnReason.COMMAND
+        tag.putString("id", BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
+        EntityType.loadEntityRecursive(tag, McLevel.self!!, thing) {
+            it.id = -1
+            it
+        }
+    }
+
+    override fun getEntity() = parsedEntity
 }
 
 @GenerateCodec

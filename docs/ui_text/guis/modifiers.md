@@ -122,6 +122,43 @@ Render the Player itself on the screen.
 </ul>
 </TreeView>
 
+<Version type="1.0.0-beta.21">
+
+### **Entity** (`catharsis:entity`)
+
+Render a custom Entity on the screen.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>GUI element</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:entity`
+- <TypeIcon type="object"/> **condition**: (Optional) A [GUI element condition](#gui-element-conditions) to determine if this element should render.
+- <TypeIcon type="object"/> **x**: The x coordinate & alignment of the entity. **Can only be one of the entries below.**
+    - <TypeIcon type="int"/> The x coordinate based from the `START`.
+    - <TypeIcon type="object"/> Coordinate & Alignment object.
+        - <TypeIcon type="int"/> **offset**: The offset from the screen bounds (main container size).
+        - <TypeIcon type="string"/> **alignment**: The alignment of the entity, can be `START`, `CENTER` or `END`.
+- <TypeIcon type="object"/> **y**: The y coordinate & alignment of the entity. **Can only be one of the entries below.**
+    - <TypeIcon type="int"/> The y coordinate based from the `START`.
+    - <TypeIcon type="object"/> Coordinate & Alignment object.
+        - <TypeIcon type="int"/> **offset**: The offset from the screen bounds (main container size).
+        - <TypeIcon type="string"/> **alignment**: The alignment of the entity, can be `START`, `CENTER` or `END`.
+- <TypeIcon type="int"/> **width**: The width of the entity.
+- <TypeIcon type="int"/> **height**: The height of the entity.
+- <TypeIcon type="string"/> **rotation**: (Optional) The entity rotation, will follow the mouse if undefined, cannot follow the mouse if it's a boat or similar. 
+    **Can only be one of the entries below.**
+    - <TypeIcon type="array"/> A list of 4 floats: first, second, and the third component of the imaginary part, and the real part.
+    - <TypeIcon type="object"/> An AxisAngle definition.
+        - <TypeIcon type="float"/> **angle**: The angle in radians.
+        - <TypeIcon type="array"/> **axis**: A list of 4 floats: The value of x, y, and z.
+- <TypeIcon type="string"/> **entityType**: The vanilla entity registry name to target (e.g., `minecraft:zombie`).
+- <TypeIcon type="string"/><TypeIcon type="object"/> **tag**: (Optional) Custom entity data.
+    - <TypeIcon type="string"/> Snbt inside a string, can be copied from [McStacker](https://mcstacker.net/?cmd=summon) directly.
+    - <TypeIcon type="object"/> A JSON Object of the data.
+
+</TreeView>
+</Version>
+
 ### **Sprite** (`catharsis:sprite`)
 
 Render a sprite on the screen.

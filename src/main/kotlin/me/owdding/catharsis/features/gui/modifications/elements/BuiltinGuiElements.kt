@@ -16,10 +16,10 @@ import net.minecraft.resources.Identifier
 import net.minecraft.util.CommonColors
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EntitySpawnReason
+//? > 26.1
 import net.minecraft.world.entity.EntitySpawnRequest
 import net.minecraft.world.entity.EntityType
 import net.minecraft.world.entity.LivingEntity
-import net.minecraft.world.item.enchantment.Enchantment.definition
 import org.joml.Quaternionf
 import org.joml.Vector3f
 import tech.thatgravyboat.skyblockapi.helpers.McClient

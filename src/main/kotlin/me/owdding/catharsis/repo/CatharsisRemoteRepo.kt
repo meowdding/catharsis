@@ -47,6 +47,7 @@ object CatharsisRemoteRepo : CatharsisLogger by Catharsis.featureLogger() {
                 warn("Deleting ${oldFiles.size} outdated files!")
                 oldFiles.forEach { (_, value) ->
                     debug("Deleting ${value.absolutePathString()}")
+                    value.deleteIfExists()
                 }
             }
         }

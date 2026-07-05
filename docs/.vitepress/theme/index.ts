@@ -41,6 +41,14 @@ export default {
                     store.version = modVersionData
                 }
 
+                const modVersions = siteData.value.themeConfig.modVersions;
+
+                if (store.version === "latest") {
+                    store.version = modVersions.find((x: any) => x.isLatest)?.version;
+                } else if (store.version === "beta") {
+                    store.version = modVersions.find((x: any) => x.isBeta)?.version;
+                }
+
                 let location = window.location.toString()
                 let last = location.lastIndexOf("?")
                 window.history.replaceState({}, true, location.substring(0, last <= 0 ? location.length : last) + "?" + store.version)

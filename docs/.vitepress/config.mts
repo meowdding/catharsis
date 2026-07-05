@@ -1,5 +1,38 @@
 import {defineConfig} from 'vitepress'
 import vuetify from 'vite-plugin-vuetify'
+import * as semver from "semver";
+import modVersion from "../data/mod-version.data"
+
+const modVersionData = modVersion.load()
+export const modVersions = [
+    { text: "1.0.0-beta.21" },
+    { text: "1.0.0-beta.20" },
+    { text: "1.0.0-beta.19" },
+    { text: "1.0.0-beta.18" },
+    { text: "1.0.0-beta.17" },
+    { text: "1.0.0-beta.16" }
+].map((x) => {
+    const version = x.text;
+    let text = x.text;
+    let isBeta = false;
+    let isLatest = false;
+
+    if (semver.gt(version, modVersionData)) {
+        text = `${version} (Beta Release)`;
+        isBeta = true;
+    } else if (semver.eq(version, modVersionData)) {
+        text = `${version} (Latest Release)`;
+        isLatest = true;
+    }
+
+    return {
+        version: version,
+        text: text,
+        link: "?" + version,
+        isBeta,
+        isLatest
+    };
+});
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,37 +43,15 @@ export default defineConfig({
     head: [['link', {rel: 'icon', href: '/favicon.png'}]],
 
     themeConfig: {
+        // Passing ModVersions through here into other modules
+        modVersions,
+
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             {text: 'Home', link: '/'},
             {
                 "text": "Mod Version",
-                "items": [
-                    {
-                        text: "1.0.0-beta.21 (Dev Build)",
-                        link: "?1.0.0-beta.21"
-                    },
-                    {
-                        text: "1.0.0-beta.20 (Latest Release)",
-                        link: "?1.0.0-beta.20"
-                    },
-                    {
-                        text: "1.0.0-beta.19",
-                        link: "?1.0.0-beta.19"
-                    },
-                    {
-                        text: "1.0.0-beta.18",
-                        link: "?1.0.0-beta.18"
-                    },
-                    {
-                        text: "1.0.0-beta.17",
-                        link: "?1.0.0-beta.17"
-                    },
-                    {
-                        text: "1.0.0-beta.16",
-                        link: "?1.0.0-beta.16"
-                    }
-                ]
+                "items": modVersions
             }
         ],
 

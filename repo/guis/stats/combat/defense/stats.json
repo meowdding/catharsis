@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/combat/defense/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "❈ Defense.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:iron_chestplate"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE008 Defense [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❈ Flat Bonuses"
+        "name": "\uE008 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❈ Additive Buffs"
+        "name": "\uE008 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❈ Multiplicative Buffs"
+        "name": "\uE008 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❈ Cap"
+        "name": "\uE008 Cap"
       }
     }
   ]

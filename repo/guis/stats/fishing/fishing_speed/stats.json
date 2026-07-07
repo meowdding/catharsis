@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/fishing/fishing_speed/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☂ Fishing Speed.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:fishing_rod"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE00C Fishing Speed [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☂ Flat Bonuses"
+        "name": "\uE00C Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☂ Additive Buffs"
+        "name": "\uE00C Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☂ Multiplicative Buffs"
+        "name": "\uE00C Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☂ Cap"
+        "name": "\uE00C Cap"
       }
     }
   ]

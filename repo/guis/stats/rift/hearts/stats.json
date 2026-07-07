@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/rift/hearts/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "❤ Hearts.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:apple"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE01F Hearts [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❤ Flat Bonuses"
+        "name": "\uE01F Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❤ Additive Buffs"
+        "name": "\uE01F Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❤ Multiplicative Buffs"
+        "name": "\uE01F Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❤ Cap"
+        "name": "\uE01F Cap"
       }
     }
   ]

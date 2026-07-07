@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/farming/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Farming Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:golden_hoe"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Farming Wisdom [\\d,.]+"
       }
     },
     {

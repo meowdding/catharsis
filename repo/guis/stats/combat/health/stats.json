@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/combat/health/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "❤ Health.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:golden_apple"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE010 Health [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❤ Flat Bonuses"
+        "name": "\uE010 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❤ Additive Buffs"
+        "name": "\uE010 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❤ Multiplicative Buffs"
+        "name": "\uE010 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❤ Cap"
+        "name": "\uE010 Cap"
       }
     }
   ]

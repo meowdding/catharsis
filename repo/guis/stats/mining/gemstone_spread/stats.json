@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/mining/gemstone_spread/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "▚ Gemstone Spread.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:golden_pickaxe"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE00F Gemstone Spread [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "▚ Flat Bonuses"
+        "name": "\uE00F Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "▚ Additive Buffs"
+        "name": "\uE00F Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "▚ Multiplicative Buffs"
+        "name": "\uE00F Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "▚ Cap"
+        "name": "\uE00F Cap"
       }
     }
   ]

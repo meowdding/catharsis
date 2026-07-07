@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/combat/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Combat Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:stone_sword"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Combat Wisdom [\\d,.]+"
       }
     },
     {

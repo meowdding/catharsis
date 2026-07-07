@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/mining/breaking_power/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "Ⓟ Breaking Power.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:emerald"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE005 Breaking Power [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "Ⓟ Flat Bonuses"
+        "name": "\uE005 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "Ⓟ Additive Buffs"
+        "name": "\uE005 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "Ⓟ Multiplicative Buffs"
+        "name": "\uE005 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "Ⓟ Cap"
+        "name": "\uE005 Cap"
       }
     }
   ]

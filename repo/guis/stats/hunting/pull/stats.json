@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/hunting/pull/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "ᛷ Pull.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:cobweb"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE02D Pull [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ᛷ Flat Bonuses"
+        "name": "\uE02D Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ᛷ Additive Buffs"
+        "name": "\uE02D Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ᛷ Multiplicative Buffs"
+        "name": "\uE02D Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ᛷ Cap"
+        "name": "\uE02D Cap"
       }
     }
   ]

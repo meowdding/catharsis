@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/combat/vitality/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "♨ Vitality.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:glistering_melon_slice"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE028 Vitality [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♨ Flat Bonuses"
+        "name": "\uE028 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♨ Additive Buffs"
+        "name": "\uE028 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♨ Multiplicative Buffs"
+        "name": "\uE028 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "♨ Cap"
+        "name": "\uE028 Cap"
       }
     }
   ]

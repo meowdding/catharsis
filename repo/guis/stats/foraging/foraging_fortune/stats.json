@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/foraging/foraging_fortune/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☘ Foraging Fortune.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:player_head"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE054 Foraging Fortune [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Flat Bonuses"
+        "name": "\uE054 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Additive Buffs"
+        "name": "\uE054 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Multiplicative Buffs"
+        "name": "\uE054 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Cap"
+        "name": "\uE054 Cap"
       }
     }
   ]

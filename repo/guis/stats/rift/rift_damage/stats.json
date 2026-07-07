@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/rift/rift_damage/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "❁ Rift Damage.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:diamond_sword"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE01E Rift Damage [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❁ Flat Bonuses"
+        "name": "\uE01E Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❁ Additive Buffs"
+        "name": "\uE01E Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❁ Multiplicative Buffs"
+        "name": "\uE01E Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❁ Cap"
+        "name": "\uE01E Cap"
       }
     }
   ]

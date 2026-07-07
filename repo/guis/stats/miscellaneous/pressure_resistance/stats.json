@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/miscellaneous/pressure_resistance/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "❍ Pressure Resistance.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:glass_bottle"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE01B Pressure Resistance [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❍ Flat Bonuses"
+        "name": "\uE01B Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❍ Additive Buffs"
+        "name": "\uE01B Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❍ Multiplicative Buffs"
+        "name": "\uE01B Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❍ Cap"
+        "name": "\uE01B Cap"
       }
     }
   ]

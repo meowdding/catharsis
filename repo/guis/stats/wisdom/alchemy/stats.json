@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/alchemy/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Alchemy Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:brewing_stand"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Alchemy Wisdom [\\d,.]+"
       }
     },
     {

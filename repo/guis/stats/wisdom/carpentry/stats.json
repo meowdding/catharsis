@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/carpentry/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Carpentry Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:crafting_table"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Carpentry Wisdom [\\d,.]+"
       }
     },
     {

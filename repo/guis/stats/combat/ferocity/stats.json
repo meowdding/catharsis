@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/combat/ferocity/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "⫽ Ferocity.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:red_dye"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE00B Ferocity [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⫽ Flat Bonuses"
+        "name": "\uE00B Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⫽ Additive Buffs"
+        "name": "\uE00B Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⫽ Multiplicative Buffs"
+        "name": "\uE00B Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⫽ Cap"
+        "name": "\uE00B Cap"
       }
     }
   ]

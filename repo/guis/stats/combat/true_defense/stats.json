@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/combat/true_defense/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "❂ True Defense.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:bone_meal"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE027 True Defense [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❂ Flat Bonuses"
+        "name": "\uE027 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❂ Additive Buffs"
+        "name": "\uE027 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❂ Multiplicative Buffs"
+        "name": "\uE027 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❂ Cap"
+        "name": "\uE027 Cap"
       }
     }
   ]

@@ -1,7 +1,9 @@
 package me.owdding.catharsis.mixins.text;
 
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
+import me.owdding.catharsis.features.text.targets.ItemTextReplacements;
 import net.minecraft.core.component.DataComponentGetter;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
@@ -30,5 +32,10 @@ public class ItemStackMixin {
         } else {
             original.call(instance, context, adder, flag, components);
         }
+    }
+
+    @ModifyReturnValue(method = "getHoverName", at = @At("RETURN"))
+    private Component catharsis$modifyItemName(Component original) {
+        return ItemTextReplacements.INSTANCE.replace((ItemStack) (Object) this, original);
     }
 }

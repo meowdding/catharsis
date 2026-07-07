@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/combat/attack_speed/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "⚔ Attack Speed.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:golden_axe"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE001 Attack Speed [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⚔ Flat Bonuses"
+        "name": "\uE001 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⚔ Additive Buffs"
+        "name": "\uE001 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⚔ Multiplicative Buffs"
+        "name": "\uE001 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⚔ Cap"
+        "name": "\uE001 Cap"
       }
     }
   ]

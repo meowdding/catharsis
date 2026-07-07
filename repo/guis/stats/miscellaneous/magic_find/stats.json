@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/miscellaneous/magic_find/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "✯ Magic Find.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:stick"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE01A Magic Find [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "✯ Flat Bonuses"
+        "name": "\uE01A Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "✯ Additive Buffs"
+        "name": "\uE01A Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "✯ Multiplicative Buffs"
+        "name": "\uE01A Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "✯ Cap"
+        "name": "\uE01A Cap"
       }
     }
   ]

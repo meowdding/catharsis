@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/miscellaneous/respiration/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "⚶ Respiration.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:glass_bottle"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE01D Respiration [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⚶ Flat Bonuses"
+        "name": "\uE01D Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⚶ Additive Buffs"
+        "name": "\uE01D Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⚶ Multiplicative Buffs"
+        "name": "\uE01D Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⚶ Cap"
+        "name": "\uE01D Cap"
       }
     }
   ]

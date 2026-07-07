@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/taming/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Taming Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:polar_bear_spawn_egg"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Taming Wisdom [\\d,.]+"
       }
     },
     {

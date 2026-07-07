@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/combat/health_regen/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "❣ Health Regen.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:potion"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE011 Health Regen [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❣ Flat Bonuses"
+        "name": "\uE011 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❣ Additive Buffs"
+        "name": "\uE011 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❣ Multiplicative Buffs"
+        "name": "\uE011 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❣ Cap"
+        "name": "\uE011 Cap"
       }
     }
   ]

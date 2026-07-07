@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/combat/swing_range/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "Ⓢ Swing Range.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:stone_sword"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE024 Swing Range [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "Ⓢ Flat Bonuses"
+        "name": "\uE024 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "Ⓢ Additive Buffs"
+        "name": "\uE024 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "Ⓢ Multiplicative Buffs"
+        "name": "\uE024 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "Ⓢ Cap"
+        "name": "\uE024 Cap"
       }
     }
   ]

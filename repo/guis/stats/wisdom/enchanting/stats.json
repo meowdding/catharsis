@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/enchanting/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Enchanting Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:enchanting_table"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Enchanting Wisdom [\\d,.]+"
       }
     },
     {

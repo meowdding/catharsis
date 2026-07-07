@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/hunting/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Hunting Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:crafting_table"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Hunting Wisdom [\\d,.]+"
       }
     },
     {

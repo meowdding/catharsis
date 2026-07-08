@@ -5,12 +5,18 @@ lang: en-US
 
 # <Environment/> Text Replacements
 
-Text replacements allow you to modify text components in the game, such as item names and lore.
+Text replacements allow you to modify text components in the game, such as item names, lore and nametags.
 
 ## Definition
 
-Definitions should be placed in:
-`assets/<namespace>/catharsis/text_replacements/item/<id>.json`.
+Definitions should be placed in: `assets/<namespace>/catharsis/text_replacements/<type>/<id>.json`.
+
+Existing Types:
+
+| Type    | Desc                   |
+|---------|------------------------|
+| item    | For Item Name and Lore |
+| nametag | For entity nametags    |
 
 <TreeView>
 <span><TypeIcon type="object"/> A <b>text replacement</b> object</span>

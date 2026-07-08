@@ -7,6 +7,8 @@ lang: en-US
 
 GUI Modifiers allow Texture Packs to modify containers based on a [GUI Definition](./definitions.md).
 
+You can define a gui modifiers in `assets/<namespace>/catharsis/gui_modifiers/<id>.json`.
+
 ## Json format
 
 <TreeView>

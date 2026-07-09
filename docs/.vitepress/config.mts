@@ -127,7 +127,8 @@ export default defineConfig({
                 collapsed: false,
                 items: [
                     {text: "Overview", link: "/mod_compatibility/index"},
-                    {text: "Imc", link: "/mod_compatibility/imc"}
+                    {text: "Imc", link: "/mod_compatibility/imc"},
+                    {text: "Other Compats", link: "/mod_compatibility/other_compats"}
                 ]
             },
             {

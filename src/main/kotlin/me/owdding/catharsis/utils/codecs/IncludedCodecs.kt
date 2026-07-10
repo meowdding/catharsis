@@ -21,8 +21,6 @@ import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries
 import net.minecraft.nbt.CompoundTag
-import net.minecraft.nbt.NbtIo
-import net.minecraft.nbt.NbtUtils
 import net.minecraft.nbt.TagParser
 import net.minecraft.network.chat.Component
 import net.minecraft.network.chat.ComponentSerialization
@@ -143,7 +141,7 @@ object IncludedCodecs {
 
     @IncludedCodec
     val entityType: Codec<EntityType<*>> = BuiltInRegistries.ENTITY_TYPE.byNameCodec()
-    
+
     @IncludedCodec
     val dataComponentCodec: Codec<DataComponentType<*>> = BuiltInRegistries.DATA_COMPONENT_TYPE.byNameCodec()
 
@@ -162,7 +160,7 @@ object IncludedCodecs {
         Either<CompoundTag, CompoundTag>::left,
     )
 
-//     @IncludedCodec(keyable = true, named = "base64_string")
+    //     @IncludedCodec(keyable = true, named = "base64_string")
     val BASE64_STRING_CODEC: Codec<Base64String> = Codec.STRING.xmap(
         { it.requireBase64Padding() },
         { it },

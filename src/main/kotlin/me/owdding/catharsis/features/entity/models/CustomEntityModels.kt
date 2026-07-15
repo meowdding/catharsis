@@ -16,7 +16,6 @@ import tech.thatgravyboat.skyblockapi.api.events.entity.EntityAttributesUpdateEv
 import tech.thatgravyboat.skyblockapi.api.events.entity.EntityEquipmentUpdateEvent
 import tech.thatgravyboat.skyblockapi.api.events.screen.PlayerEquipmentChangeEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
-import tech.thatgravyboat.skyblockapi.helpers.McLevel
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 
 @Module
@@ -28,6 +27,10 @@ object CustomEntityModels : SimplePreparableReloadListener<Map<Identifier, Custo
     private val codec = CatharsisCodecs.getCodec<CustomEntityModel.Unbaked>()
 
     private val definitions = mutableMapOf<Identifier, CustomEntityModel>()
+
+    @JvmStatic
+    var revision: Int = 0
+        private set
 
     override fun prepare(
         resourceManager: ResourceManager,
@@ -56,13 +59,8 @@ object CustomEntityModels : SimplePreparableReloadListener<Map<Identifier, Custo
         profiler: ProfilerFiller,
     ) {
         this.definitions.clear()
+        revision += 1
         this.definitions.putAll(definitions)
-
-        McLevel.selfOrNull?.let {
-            for (entity in it.entitiesForRendering()) {
-                entity.`catharsis$resetCustomModel`()
-            }
-        }
     }
 
     @Subscription

@@ -3629,7 +3629,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/ioadout",
+      "id": "skyblock_gui:skill_tree/hotm/loadout",
       "target": {
         "type": "all",
         "conditions": [

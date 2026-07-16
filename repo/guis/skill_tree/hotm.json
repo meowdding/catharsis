@@ -3629,6 +3629,19 @@
       }
     },
     {
+      "id": "skyblock_gui:skill_tree/hotm/ioadout",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "name",
+            "mode": "equals",
+            "name": "Heart of the Mountain Slot"
+          }
+        ]
+      }
+    },
+    {
       "id": "skyblock_gui:skill_tree/hotm/icon",
       "target": {
         "type": "all",

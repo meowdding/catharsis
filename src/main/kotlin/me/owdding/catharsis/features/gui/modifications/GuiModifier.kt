@@ -6,6 +6,7 @@ import me.owdding.catharsis.features.gui.modifications.conditions.GuiModifierCon
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElement
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElementRenderLayer
 import me.owdding.catharsis.features.gui.modifications.elements.GuiWidgetElement
+import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiNoOpWidgetInteraction
 import me.owdding.catharsis.features.gui.modifications.modifiers.SlotModifier
 import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.ktcodecs.GenerateCodec
@@ -47,7 +48,7 @@ data class GuiModifier(
         val elements = elementsByLayer[layer] ?: return
         for (element in elements) {
             if (element.condition?.check() == false) continue
-            if (element is GuiWidgetElement && element.isHovered(mouseX, mouseY, bounds)) {
+            if (element is GuiWidgetElement && element.isHovered(mouseX, mouseY, bounds) && element.interaction !is GuiNoOpWidgetInteraction) {
                 graphics.requestCursor(CursorTypes.POINTING_HAND)
             }
             element.render(graphics, mouseX, mouseY, partialTicks, bounds)

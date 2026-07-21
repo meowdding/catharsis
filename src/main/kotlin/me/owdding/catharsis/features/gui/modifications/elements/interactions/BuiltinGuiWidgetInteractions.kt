@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.gui.modifications.elements.interactions
 
+import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.gui.definitions.GuiDefinitions
 import me.owdding.catharsis.generated.CatharsisCodecs
@@ -66,4 +67,9 @@ data class GuiCommandWidgetInteraction(
             Catharsis.warn("Command '$command' is not whitelisted")
         }
     }
+}
+
+data object GuiNoOpWidgetInteraction : GuiWidgetInteraction {
+    override val codec: MapCodec<out GuiWidgetInteraction> get() = MapCodec.unit { GuiNoOpWidgetInteraction }
+    override fun click(button: Int) = Unit
 }

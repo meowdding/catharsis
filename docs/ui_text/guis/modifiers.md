@@ -247,7 +247,17 @@ Render a button on the screen.
 - <TypeIcon type="object"/> **condition**: (Optional) A [GUI element condition](#gui-element-conditions) to determine if this widget should render and be interactable.
 </Version>
 
+<Version type="1.0.0-beta.21">
+
+- <TypeIcon type="object"/> **interaction**: (Optional) The interaction when clicked, view [here](#gui-widget-interaction).
+
+</Version>
+
+<VersionNot type="1.0.0-beta.21">
+
 - <TypeIcon type="object"/> **interaction**: The interaction when clicked, view [here](#gui-widget-interaction).
+
+</VersionNot>
 
 <Version type="1.0.0-beta.20">
 

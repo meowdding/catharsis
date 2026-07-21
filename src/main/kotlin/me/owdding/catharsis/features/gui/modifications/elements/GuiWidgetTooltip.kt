@@ -103,7 +103,7 @@ object WidgetTooltips {
     init {
         ID_MAPPER.put(Catharsis.id("text"), CatharsisCodecs.getMapCodec<TextWidgetTooltip>())
         ID_MAPPER.put(Catharsis.id("slot"), CatharsisCodecs.getMapCodec<SlotWidgetTooltip>())
-        ID_MAPPER.put(Catharsis.id("slot_id"), CatharsisCodecs.getMapCodec<SlotWidgetTooltip>())
+        ID_MAPPER.put(Catharsis.id("slot_id"), CatharsisCodecs.getMapCodec<SlotIdWidgetTooltip>())
         ID_MAPPER.put(Catharsis.id("id"), CatharsisCodecs.getMapCodec<SkyBlockIdWidgetTooltip>())
         ID_MAPPER.put(Catharsis.id("interaction"), InteractionWidgetTooltip.codec)
     }

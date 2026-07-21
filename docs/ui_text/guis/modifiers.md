@@ -374,6 +374,21 @@ Steals the tooltip from an existing slot.
 
 </TreeView>
 
+<Version type=1.0.0-beta.21>
+
+### **Gui Id Slot** (`catharsis:slot_id`)
+
+Steals the tooltip from an existing slot using a slot id, uses the first item found it multiple.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <bold>widget tooltip</bold> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:slot_id`
+- <TypeIcon type="string"/> **slot**: The identifier of the slot.
+
+</TreeView>
+</Version>
+
 ### **Widget Interaction** (`catharsis:interaction`)
 
 Steals the tooltip from the defined widget interaction.

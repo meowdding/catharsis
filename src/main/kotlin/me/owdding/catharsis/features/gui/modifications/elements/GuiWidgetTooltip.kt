@@ -3,6 +3,7 @@ package me.owdding.catharsis.features.gui.modifications.elements
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
+import me.owdding.catharsis.features.gui.definitions.GuiDefinitions
 import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiSlotClickWidgetInteraction
 import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiSlotIdClickWidgetInteraction
 import me.owdding.catharsis.generated.CatharsisCodecs
@@ -40,6 +41,18 @@ data class SlotWidgetTooltip(val slot: Int) : GuiWidgetTooltip {
 
     override fun getTooltip(element: GuiWidgetElement): List<Component>? {
         return getSlotTooltip(slot)
+    }
+}
+
+@GenerateCodec
+data class SlotIdWidgetTooltip(val slot: Identifier) : GuiWidgetTooltip {
+    override val codec = CatharsisCodecs.getMapCodec<SlotIdWidgetTooltip>()
+
+    fun getSlot() = McScreen.asMenu?.menu?.slots?.firstOrNull { GuiDefinitions.getSlot(it.index) == slot }
+
+    override fun getTooltip(element: GuiWidgetElement): List<Component>? {
+        val slot = getSlot() ?: return null
+        return getSlotTooltip(slot.index)
     }
 }
 
@@ -90,6 +103,7 @@ object WidgetTooltips {
     init {
         ID_MAPPER.put(Catharsis.id("text"), CatharsisCodecs.getMapCodec<TextWidgetTooltip>())
         ID_MAPPER.put(Catharsis.id("slot"), CatharsisCodecs.getMapCodec<SlotWidgetTooltip>())
+        ID_MAPPER.put(Catharsis.id("slot_id"), CatharsisCodecs.getMapCodec<SlotWidgetTooltip>())
         ID_MAPPER.put(Catharsis.id("id"), CatharsisCodecs.getMapCodec<SkyBlockIdWidgetTooltip>())
         ID_MAPPER.put(Catharsis.id("interaction"), InteractionWidgetTooltip.codec)
     }

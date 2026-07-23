@@ -31,6 +31,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import tech.thatgravyboat.skyblockapi.helpers.McClient;
+import tech.thatgravyboat.skyblockapi.helpers.McScreen;
 
 import java.util.List;
 import java.util.Optional;
@@ -157,10 +159,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
             return;
         }
         if (event.input() == InputConstants.MOUSE_BUTTON_LEFT && !config.isEmpty()) {
-            //~ if >=26.2 '.minecraft' -> '.minecraft.gui'  {
-            //~ if >=26.2 '.screen' -> '.screen()'
-            this.minecraft.gui.setScreen(new PackConfigScreen(this.minecraft.gui.screen(), meta.getId(), config));
-            //~}
+            McClient.INSTANCE.setScreen(new PackConfigScreen(McScreen.INSTANCE.getSelf(), meta.getId(), config));
             cir.setReturnValue(true);
         }
     }

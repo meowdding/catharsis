@@ -106,7 +106,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
             this.nameWidget.setMessage(Component.translatable("pack.catharsis.incompatible.title"));
             this.descriptionWidget.setMessage(Component.translatable("pack.catharsis.incompatible.desc").withStyle(ChatFormatting.GRAY));
             PackCompatibility compatibility = this.pack.getCompatibility();
-            if (compatibility.isCompatible()) {
+            if (compatibility.isCompatible() && this.descriptionWidget.isHovered()) {
                 graphics.setTooltipForNextFrame(this.minecraft.font, meta.getIncompatibleTooltip(), Optional.empty(), mouseX, mouseY);
             }
         }
@@ -157,7 +157,10 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
             return;
         }
         if (event.input() == InputConstants.MOUSE_BUTTON_LEFT && !config.isEmpty()) {
-            this.minecraft.setScreen(new PackConfigScreen(this.minecraft.screen, meta.getId(), config));
+            //~ if >=26.2 '.minecraft' -> '.minecraft.gui'  {
+            //~ if >=26.2 '.screen' -> '.screen()'
+            this.minecraft.gui.setScreen(new PackConfigScreen(this.minecraft.gui.screen(), meta.getId(), config));
+            //~}
             cir.setReturnValue(true);
         }
     }

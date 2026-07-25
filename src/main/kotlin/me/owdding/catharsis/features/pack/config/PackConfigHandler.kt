@@ -117,15 +117,28 @@ object PackConfigHandler : ResourceManagerReloadListener {
     @Subscription
     fun onCommand(event: RegisterCommandsEvent) {
         event.register("catharsis config") {
-            thenCallback("id", StringArgumentType.string(), IterableSuggestionProvider(catharsisPackOptions.keys)) {
-                val id = argument<String>("id")
-                val options = getConfig(id).options() ?: run {
-                    Text.of("No config found for $id").sendWithPrefix()
-                    return@thenCallback
+            then("id", StringArgumentType.string(), IterableSuggestionProvider(catharsisPackOptions.keys)) {
+                callback {
+                    val id = argument<String>("id")
+                    openPackConfigScreen(id)
                 }
-                McClient.setScreenAsync { PackConfigScreen(McScreen.self, id, options) }
+                then("search", StringArgumentType.string()) {
+                    callback {
+                        val id = argument<String>("id")
+                        val search = argument<String>("search")
+                        openPackConfigScreen(id, search)
+                    }
+                }
             }
         }
+    }
+
+    fun openPackConfigScreen(id: String, search: String = "") {
+        val options = getConfig(id).options() ?: run {
+            Text.of("No config found for $id").sendWithPrefix()
+            return
+        }
+        McClient.setScreenAsync { PackConfigScreen(McScreen.self, id, options, search) }
     }
 
     override fun onResourceManagerReload(resourceManager: ResourceManager) {

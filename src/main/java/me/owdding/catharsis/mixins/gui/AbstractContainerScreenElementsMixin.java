@@ -1,6 +1,7 @@
 package me.owdding.catharsis.mixins.gui;
 
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
+import me.owdding.catharsis.features.gui.definitions.GuiDefinitions;
 import me.owdding.catharsis.features.gui.modifications.GuiModifiers;
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElementRenderLayer;
 import me.owdding.catharsis.hooks.gui.AbstractContainerScreenHook;
@@ -35,8 +36,13 @@ public abstract class AbstractContainerScreenElementsMixin<T extends AbstractCon
         super(title);
     }
 
+    @Inject(method = "init", at = @At("HEAD"))
+    private void catharsis$onInitHead(CallbackInfo ci) {
+        GuiDefinitions.INSTANCE.forceUpdateInstantly((AbstractContainerScreen<T>) (Object) this);
+    }
+
     @Inject(method = "init", at = @At("TAIL"))
-    private void catharsis$onInit(CallbackInfo ci) {
+    private void catharsis$onInitTail(CallbackInfo ci) {
         this.catharsis$bounds = new CatharsisScreenBounds(this.leftPos, this.topPos, this.imageWidth, this.imageHeight);
     }
 

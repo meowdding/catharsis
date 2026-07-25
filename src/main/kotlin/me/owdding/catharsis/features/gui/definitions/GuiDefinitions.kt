@@ -49,8 +49,10 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
 
     internal fun enqueueUpdate() {
         if (updating.compareAndSet(false, true)) {
-            McScreen.asMenu?.let(this::update)
-            updating.set(false)
+            McClient.runNextTick {
+                McScreen.asMenu?.let(this::update)
+                updating.set(false)
+            }
         }
     }
 

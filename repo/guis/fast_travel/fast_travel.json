@@ -1,7 +1,7 @@
 {
   "target": {
     "title": "Fast Travel",
-    "type": "catharsis:title"
+    "type": "katharsis:title"
   },
   "layout": [
     {
@@ -9,7 +9,7 @@
       "target": {
         "name": "Island Browser",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -19,14 +19,14 @@
           {
             "name": "Advanced Mode",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "items": "minecraft:lime_dye",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -36,14 +36,14 @@
           {
             "name": "Advanced Mode",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "items": "minecraft:gray_dye",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -53,14 +53,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 11,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -70,16 +70,16 @@
           {
             "name": "SkyBlock Hub",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -89,19 +89,19 @@
           {
             "name": "SkyBlock Hub",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -111,14 +111,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 10,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -128,16 +128,16 @@
           {
             "name": "Private Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -147,19 +147,19 @@
           {
             "name": "Private Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -169,14 +169,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 12,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -185,16 +185,16 @@
         "conditions": [
           {
             "name": "Dungeon Hub(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -203,19 +203,19 @@
         "conditions": [
           {
             "name": "Dungeon Hub(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -225,14 +225,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 13,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -241,16 +241,16 @@
         "conditions": [
           {
             "name": "The Barn(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -259,19 +259,19 @@
         "conditions": [
           {
             "name": "The Barn(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -281,14 +281,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 14,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -297,16 +297,16 @@
         "conditions": [
           {
             "name": "The Park(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -315,19 +315,19 @@
         "conditions": [
           {
             "name": "The Park(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -337,14 +337,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 15,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -353,16 +353,16 @@
         "conditions": [
           {
             "name": "Galatea(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -371,19 +371,19 @@
         "conditions": [
           {
             "name": "Galatea(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -393,14 +393,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 16,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -409,16 +409,16 @@
         "conditions": [
           {
             "name": "Gold Mine(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -427,19 +427,19 @@
         "conditions": [
           {
             "name": "Gold Mine(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -449,14 +449,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 19,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -465,16 +465,16 @@
         "conditions": [
           {
             "name": "Deep Caverns(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -483,19 +483,19 @@
         "conditions": [
           {
             "name": "Deep Caverns(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -505,14 +505,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 20,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -521,16 +521,16 @@
         "conditions": [
           {
             "name": "Dwarven Mines(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -539,19 +539,19 @@
         "conditions": [
           {
             "name": "Dwarven Mines(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -561,14 +561,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 21,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -577,16 +577,16 @@
         "conditions": [
           {
             "name": "Crystal Hollows(?: - Entrance)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -595,19 +595,19 @@
         "conditions": [
           {
             "name": "Crystal Hollows(?: - Entrance)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -617,14 +617,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 22,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -633,16 +633,16 @@
         "conditions": [
           {
             "name": "Spider\u0027s Den(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -651,19 +651,19 @@
         "conditions": [
           {
             "name": "Spider\u0027s Den(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -673,14 +673,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 23,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -689,16 +689,16 @@
         "conditions": [
           {
             "name": "The End(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -707,19 +707,19 @@
         "conditions": [
           {
             "name": "The End(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -729,14 +729,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 24,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -745,16 +745,16 @@
         "conditions": [
           {
             "name": "Crimson Isle(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -763,19 +763,19 @@
         "conditions": [
           {
             "name": "Crimson Isle(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -785,14 +785,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 25,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -802,16 +802,16 @@
           {
             "name": "The Garden",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -821,19 +821,19 @@
           {
             "name": "The Garden",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -843,14 +843,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 29,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -859,16 +859,16 @@
         "conditions": [
           {
             "name": "The Rift(?: - Wizard Tower)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -877,19 +877,19 @@
         "conditions": [
           {
             "name": "The Rift(?: - Wizard Tower)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -899,14 +899,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 30,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -915,16 +915,16 @@
         "conditions": [
           {
             "name": "Backwater Bayou(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -933,19 +933,19 @@
         "conditions": [
           {
             "name": "Backwater Bayou(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -955,14 +955,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 32,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -971,16 +971,16 @@
         "conditions": [
           {
             "name": "Lotus Atoll(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -989,19 +989,19 @@
         "conditions": [
           {
             "name": "Lotus Atoll(?: - Spawn)?",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1011,14 +1011,14 @@
           {
             "name": "Undiscovered Island",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 33,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1028,16 +1028,16 @@
           {
             "name": "Warp to: Jerry\u0027s Workshop",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1047,19 +1047,19 @@
           {
             "name": "Warp to: Jerry\u0027s Workshop",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     }
   ]

@@ -1,6 +1,0 @@
-{
-  "pack.catharsis.incompatible.title": "模組不相容",
-  "pack.catharsis.incompatible.desc": "偵測到不相容的模組，懸停滑鼠以查看詳細資訊。",
-  "pack.catharsis.incompatible.tooltip.missing": "缺少的模組：",
-  "pack.catharsis.incompatible.tooltip.conflicting": "過時的模組版本："
-}

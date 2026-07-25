@@ -7,7 +7,7 @@ lang: en-US
 
 GUI Modifiers allow Texture Packs to modify containers based on a [GUI Definition](./definitions.md).
 
-You can define a gui modifiers in `assets/<namespace>/catharsis/gui_modifiers/<id>.json`.
+You can define a gui modifiers in `assets/<namespace>/katharsis/gui_modifiers/<id>.json`.
 
 ## Json format
 
@@ -57,14 +57,14 @@ You can define a gui modifiers in `assets/<namespace>/catharsis/gui_modifiers/<i
 
 ## GUI Definition Target
 
-### **Existing GUI Definition** (`catharsis:definition`)
+### **Existing GUI Definition** (`katharsis:definition`)
 
 Target to an existing GUI Definition
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>definition</b> gui modifier target object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:definition`
+- <TypeIcon type="string"/> **type**: `katharsis:definition`
 - <TypeIcon type="string"/> **definition**: An existing GUI definition's identifier.
 
 </TreeView>
@@ -87,7 +87,7 @@ Modify a slot by moving it, disabling it, etc.
 
 ## GUI Elements
 
-### **Player** (`catharsis:player`)
+### **Player** (`katharsis:player`)
 
 Render the Player itself on the screen.
 
@@ -96,7 +96,7 @@ Render the Player itself on the screen.
 
 <ul>
 
-- <TypeIcon type="string"/> **type**: `catharsis:player`
+- <TypeIcon type="string"/> **type**: `katharsis:player`
 
 <Version type="1.0.0-beta.20">
 
@@ -126,14 +126,14 @@ Render the Player itself on the screen.
 
 <Version type="1.0.0-beta.21">
 
-### **Entity** (`catharsis:entity`)
+### **Entity** (`katharsis:entity`)
 
 Render a custom Entity on the screen.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>GUI element</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:entity`
+- <TypeIcon type="string"/> **type**: `katharsis:entity`
 - <TypeIcon type="object"/> **condition**: (Optional) A [GUI element condition](#gui-element-conditions) to determine if this element should render.
 - <TypeIcon type="object"/> **x**: The x coordinate & alignment of the entity. **Can only be one of the entries below.**
     - <TypeIcon type="int"/> The x coordinate based from the `START`.
@@ -161,7 +161,7 @@ Render a custom Entity on the screen.
 </TreeView>
 </Version>
 
-### **Sprite** (`catharsis:sprite`)
+### **Sprite** (`katharsis:sprite`)
 
 Render a sprite on the screen.
 
@@ -170,7 +170,7 @@ Render a sprite on the screen.
 
 <ul>
 
-- <TypeIcon type="string"/> **type**: `catharsis:sprite`
+- <TypeIcon type="string"/> **type**: `katharsis:sprite`
 
 <Version type="1.0.0-beta.20">
 
@@ -195,7 +195,7 @@ Render a sprite on the screen.
 </ul>
 </TreeView>
 
-### **Text** (`catharsis:text`)
+### **Text** (`katharsis:text`)
 
 Render text on the screen.
 
@@ -204,7 +204,7 @@ Render text on the screen.
 
 <ul>
 
-- <TypeIcon type="string"/> **type**: `catharsis:text`
+- <TypeIcon type="string"/> **type**: `katharsis:text`
 
 <Version type="1.0.0-beta.20">
 
@@ -230,7 +230,7 @@ Render text on the screen.
 
 ## GUI Widget
 
-### Button (`catharsis:button`)
+### Button (`katharsis:button`)
 
 Render a button on the screen.
 
@@ -290,14 +290,14 @@ Render a button on the screen.
 
 <Version type="1.0.0-beta.21">
 
-### Item Stack (`catharsis:item_stack`)
+### Item Stack (`katharsis:item_stack`)
 Render an item stack on the screen. 
 It automatically displays the item's tooltip when hovered, which can be overridden with custom tooltips.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>GUI widget</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:item_stack`
+- <TypeIcon type="string"/> **type**: `katharsis:item_stack`
 - <TypeIcon type="object"/> **condition**: (Optional) A [GUI element condition](#gui-element-conditions) to determine if this element should render.
 - <TypeIcon type="object"/> **item**: An [Item Stack Provider](#item-stack-providers) to determine what item to render.
 - <TypeIcon type="string"/> **layer**: (Optional) The layer to render the item on, defaults to `FOREGROUND`. Can be `BACKGROUND` & `FOREGROUND`.
@@ -321,17 +321,17 @@ It automatically displays the item's tooltip when hovered, which can be overridd
 
 Item Stack Providers allow you to define the source of an `ItemStack`.
 
-##### **JSON** (`catharsis:json`)
+##### **JSON** (`katharsis:json`)
 Loads an item stack from Minecraft Item NBT JSON.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>json</b> item stack provider object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:json`
+- <TypeIcon type="string"/> **type**: `katharsis:json`
 - <TypeIcon type="object"/> **stack**: Standard Minecraft ItemStack JSON definition.
 </TreeView>
 
-#### **SkyBlock ID** (`catharsis:sbid`)
+#### **SkyBlock ID** (`katharsis:sbid`)
 Loads an item stack using a SkyBlock ID.
 
 Id Format: `<prefix>:<id>` or `<prefix>:<id>:<suffix>`
@@ -347,7 +347,7 @@ Id Format: `<prefix>:<id>` or `<prefix>:<id>:<suffix>`
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>sbid</b> item stack provider object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:sbid`
+- <TypeIcon type="string"/> **type**: `katharsis:sbid`
 - <TypeIcon type="string"/> **id**: The SkyBlock Id as formatted above.
 </TreeView>
 </Version>
@@ -355,40 +355,40 @@ Id Format: `<prefix>:<id>` or `<prefix>:<id>:<suffix>`
 
 ## GUI Widget Interaction
 
-### **Link** (`catharsis:link`)
+### **Link** (`katharsis:link`)
 
 Open a link in the default browser.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget interaction</bold> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:link`
+- <TypeIcon type="string"/> **type**: `katharsis:link`
 - <TypeIcon type="string"/> **url**: A link to the Site.
 
 </TreeView>
 
-### **Slot Clicking** (`catharsis:slot`)
+### **Slot Clicking** (`katharsis:slot`)
 
 Click a slot on the screen.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget interaction</bold> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:slot`
+- <TypeIcon type="string"/> **type**: `katharsis:slot`
 - <TypeIcon type="int"/> **slot**: The slot to click.
 
 </TreeView>
 
 <Version type=1.0.0-beta.20>
 
-### **Gui Id Slot Clicking** (`catharsis:slot_id`)
+### **Gui Id Slot Clicking** (`katharsis:slot_id`)
 
 Click a slot on the screen based the Gui Id.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget interaction</bold> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:slot_id`
+- <TypeIcon type="string"/> **type**: `katharsis:slot_id`
 - <TypeIcon type="string"/> **slot**: The identifier of the slot.
 
 </TreeView>
@@ -396,18 +396,18 @@ Click a slot on the screen based the Gui Id.
 
 <Version type=1.0.0-beta.19>
 
-### **Sending a command** (`catharsis:command`)
+### **Sending a command** (`katharsis:command`)
 
 Send a command in the chat.
 
 ::: warning
-The commands are based on a [whitelist](https://github.com/meowdding/catharsis/blob/main/repo/commands.json), if you need more, ask in the Discord. 
+The commands are based on a [whitelist](https://github.com/meowdding/katharsis/blob/main/repo/commands.json), if you need more, ask in the Discord. 
 :::
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget interaction</bold> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:command`
+- <TypeIcon type="string"/> **type**: `katharsis:command`
 - <TypeIcon type="string"/> **command**: The command to send.
 
 </TreeView>
@@ -416,60 +416,60 @@ The commands are based on a [whitelist](https://github.com/meowdding/catharsis/b
 
 ## GUI Widget Tooltip
 
-### **Text** (`catharsis:text`)
+### **Text** (`katharsis:text`)
 
 Renders a custom defined text.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget tooltip</bold> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:text`
+- <TypeIcon type="string"/> **type**: `katharsis:text`
 - <TypeIcon type="object"/><TypeIcon type="array"/> **text**: A list of or a single [component in JSON format.](https://minecraft.wiki/w/Text_component_format)
 
 </TreeView>
 
-### **Slot Index** (`catharsis:slot`)
+### **Slot Index** (`katharsis:slot`)
 
 Steals the tooltip from an existing slot.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget tooltip</bold> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:slot`
+- <TypeIcon type="string"/> **type**: `katharsis:slot`
 - <TypeIcon type="int"/> **slot**: The slot to steal the tooltip from.
 
 </TreeView>
 
 <Version type=1.0.0-beta.21>
 
-### **Gui Id Slot** (`catharsis:slot_id`)
+### **Gui Id Slot** (`katharsis:slot_id`)
 
 Steals the tooltip from an existing slot using a slot id, uses the first item found it multiple.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget tooltip</bold> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:slot_id`
+- <TypeIcon type="string"/> **type**: `katharsis:slot_id`
 - <TypeIcon type="string"/> **slot**: The identifier of the slot.
 
 </TreeView>
 </Version>
 
-### **Widget Interaction** (`catharsis:interaction`)
+### **Widget Interaction** (`katharsis:interaction`)
 
 Steals the tooltip from the defined widget interaction.
-Only works if the interaction is [`catharsis:slot`](#slot-clicking-catharsis-slot).
+Only works if the interaction is [`katharsis:slot`](#slot-clicking-katharsis-slot).
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget tooltip</bold> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:interaction`
+- <TypeIcon type="string"/> **type**: `katharsis:interaction`
 
 </TreeView>
 
 <Version type="1.0.0-beta.20">
 
-### **SkyBlock Id** (`catharsis:id`)
+### **SkyBlock Id** (`katharsis:id`)
 
 Steals the tooltip from an SkyBlock Item.
 
@@ -486,7 +486,7 @@ Id Format: `<prefix>:<id>` or `<prefix>:<id>:<suffix>`
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget tooltip</bold> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:id`
+- <TypeIcon type="string"/> **type**: `katharsis:id`
 - <TypeIcon type="int"/> **id**: The SkyBlock Id as formatted above.
 - <TypeIcon type="boolean"/> **withName**: (Optional) If the name should be included, defaults to `true`.
 - <TypeIcon type="boolean"/> **withLore**: (Optional) If the lore should be included, defaults to `true`.
@@ -500,57 +500,57 @@ Id Format: `<prefix>:<id>` or `<prefix>:<id>:<suffix>`
 
 GUI Element Conditions allow you to conditionally render GUI elements and widgets based on different conditions.
 
-### **Has Slot** (`catharsis:has_slot`)
+### **Has Slot** (`katharsis:has_slot`)
 Checks if a specific slot definition exists in the current GUI.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>has_slot</bold> element condition object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:has_slot`
+- <TypeIcon type="string"/> **type**: `katharsis:has_slot`
 - <TypeIcon type="string"/> **slot**: The ID of the slot definition to check for.
 
 </TreeView>
 
-### **All/And** (`catharsis:and`)
+### **All/And** (`katharsis:and`)
 Checks if all listed conditions are true.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>and</bold> element condition object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:and`
+- <TypeIcon type="string"/> **type**: `katharsis:and`
 - <TypeIcon type="array"/> **conditions**: A list of GUI element conditions to check.
 
 </TreeView>
 
-### **Any/Or** (`catharsis:or`)
+### **Any/Or** (`katharsis:or`)
 Checks if any of the listed conditions are true.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>or</bold> element condition object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:or`
+- <TypeIcon type="string"/> **type**: `katharsis:or`
 - <TypeIcon type="array"/> **conditions**: A list of GUI element conditions to check.
 
 </TreeView>
 
-### **Exclusive Or** (`catharsis:xor`)
+### **Exclusive Or** (`katharsis:xor`)
 Checks if exactly one of the listed conditions is true.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>xor</bold> element condition object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:xor`
+- <TypeIcon type="string"/> **type**: `katharsis:xor`
 - <TypeIcon type="array"/> **conditions**: A list of GUI element conditions to check.
 
 </TreeView>
 
-### **Not** (`catharsis:not`)
+### **Not** (`katharsis:not`)
 Inverts the result of a condition.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>not</bold> element condition object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:not`
+- <TypeIcon type="string"/> **type**: `katharsis:not`
 - <TypeIcon type="object"/> **condition**: The GUI element condition to invert.
 
 </TreeView>

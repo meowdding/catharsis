@@ -3,9 +3,9 @@ title: Pack Metadata
 lang: en-US
 ---
 
-# <Environment/> Defining Catharsis Pack Metadata
+# <Environment/> Defining Katharsis Pack Metadata
 
-Catharsis metadata allows your pack to have a unique ID, declare dependencies, and provide a configuration menu for users.
+Katharsis metadata allows your pack to have a unique ID, declare dependencies, and provide a configuration menu for users.
 
 <Example>
 
@@ -17,7 +17,7 @@ Example of a `pack.mcmeta` with a configuration menu and version dependencies.
 <TreeView>
   <span><TypeIcon type="object"/> A <b>.mcmeta ResourcePack</b> object</span>
 
-- <TypeIcon type="object"/> **catharsis:pack/v1**: The Catharsis pack metadata.
+- <TypeIcon type="object"/> **katharsis:pack/v1**: The Katharsis pack metadata.
   - <TypeIcon type="string"/> **id**: A unique id for the pack, needs to be `[a-z0-9_.-]+`.
   - <TypeIcon type="string"/> **version**: The version of the pack.
   - <TypeIcon type="object"/> **dependencies**: (Optional) A map of required mods.
@@ -34,16 +34,16 @@ Example of a `pack.mcmeta` with a configuration menu and version dependencies.
   - <TypeIcon type="array"/> **entries**: A list of overlay definitions.
     - <TypeIcon type="object"/> **Overlay Entry**:
       - <TypeIcon type="string"/> **directory**: The sub-folder within the pack to apply if conditions are met, needs to be `[a-z0-9_.-]+`.
-      - <TypeIcon type="object"/> **condition**: A Fabric or Catharsis Overlay Condition, see more [here](/pack_metadata/overlays.md).
+      - <TypeIcon type="object"/> **condition**: A Fabric or Katharsis Overlay Condition, see more [here](/pack_metadata/overlays.md).
 
 </TreeView>
 
-## Catharsis Metadata Explanation
+## Katharsis Metadata Explanation
 
-Catharsis pack metadata is defined within the `catharsis:pack/v1` object inside the `pack.mcmeta` file of your resource pack.
+Katharsis pack metadata is defined within the `katharsis:pack/v1` object inside the `pack.mcmeta` file of your resource pack.
 
-This metadata allows you to specify important information about your Catharsis pack, including its unique identifier, version, dependencies on other mods, and configuration options
+This metadata allows you to specify important information about your Katharsis pack, including its unique identifier, version, dependencies on other mods, and configuration options
 for users.
 
-The config can also be stored in `config.catharsis.json` inside the root of your pack. Using this will override any configurations defined in the `pack.mcmeta` file.
+The config can also be stored in `config.katharsis.json` inside the root of your pack. Using this will override any configurations defined in the `pack.mcmeta` file.
 The Fabric Overlays are still required in the `pack.mcmeta`.

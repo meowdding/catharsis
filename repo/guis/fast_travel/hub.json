@@ -1,7 +1,7 @@
 {
   "target": {
     "title": "Hub Warps",
-    "type": "catharsis:title"
+    "type": "katharsis:title"
   },
   "layout": [
     {
@@ -11,16 +11,16 @@
           {
             "name": "SkyBlock Hub",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -30,19 +30,19 @@
           {
             "name": "SkyBlock Hub",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -52,16 +52,16 @@
           {
             "name": "Hub - Castle",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -71,19 +71,19 @@
           {
             "name": "Hub - Castle",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -93,16 +93,16 @@
           {
             "name": "SkyBlock Hub - Elizabeth",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -112,19 +112,19 @@
           {
             "name": "SkyBlock Hub - Elizabeth",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -134,16 +134,16 @@
           {
             "name": "SkyBlock Hub - Sirius\u0027 Shack",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -153,19 +153,19 @@
           {
             "name": "SkyBlock Hub - Sirius\u0027 Shack",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -175,16 +175,16 @@
           {
             "name": "SkyBlock Hub - Crypts",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -194,19 +194,19 @@
           {
             "name": "SkyBlock Hub - Crypts",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -216,16 +216,16 @@
           {
             "name": "SkyBlock Hub - Museum",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -235,19 +235,19 @@
           {
             "name": "SkyBlock Hub - Museum",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -257,16 +257,16 @@
           {
             "name": "SkyBlock Hub - Taylor\u0027s Shop",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -276,19 +276,19 @@
           {
             "name": "SkyBlock Hub - Taylor\u0027s Shop",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -298,16 +298,16 @@
           {
             "name": "SkyBlock Hub - Wizard Tower",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -317,19 +317,19 @@
           {
             "name": "SkyBlock Hub - Wizard Tower",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -339,16 +339,16 @@
           {
             "name": "Skyblock Hub - Carnival",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -358,19 +358,19 @@
           {
             "name": "Skyblock Hub - Carnival",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -380,16 +380,16 @@
           {
             "name": "SkyBlock Hub - Trading Center",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -399,19 +399,19 @@
           {
             "name": "SkyBlock Hub - Trading Center",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     }
   ]

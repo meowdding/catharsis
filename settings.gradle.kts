@@ -10,7 +10,7 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
     id("dev.kikugie.stonecutter") version "0.9"
 }
-rootProject.name = "catharsis"
+rootProject.name = "katharsis"
 
 val versions = listOf("26.2", "26.1")
 

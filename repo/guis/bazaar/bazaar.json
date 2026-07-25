@@ -33,16 +33,16 @@
           {
             "name": "Farming",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Currently viewing!",
             "mode": "equals",
             "line": 2,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -52,16 +52,16 @@
           {
             "name": "Farming",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Click to view!",
             "mode": "equals",
             "line": 2,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -71,16 +71,16 @@
           {
             "name": "Mining",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Currently viewing!",
             "mode": "equals",
             "line": 2,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -90,16 +90,16 @@
           {
             "name": "Mining",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Click to view!",
             "mode": "equals",
             "line": 2,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -109,16 +109,16 @@
           {
             "name": "Combat",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Currently viewing!",
             "mode": "equals",
             "line": 2,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -128,16 +128,16 @@
           {
             "name": "Combat",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Click to view!",
             "mode": "equals",
             "line": 2,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -147,16 +147,16 @@
           {
             "name": "Woods & Fishes",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Currently viewing!",
             "mode": "equals",
             "line": 2,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -166,16 +166,16 @@
           {
             "name": "Woods & Fishes",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Click to view!",
             "mode": "equals",
             "line": 2,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -185,16 +185,16 @@
           {
             "name": "Oddities",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Currently viewing!",
             "mode": "equals",
             "line": 2,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -204,16 +204,16 @@
           {
             "name": "Oddities",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Click to view!",
             "mode": "equals",
             "line": 2,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -253,7 +253,7 @@
       "target": {
         "name": "Manage Orders",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -261,7 +261,7 @@
       "target": {
         "name": "Bazaar History",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -269,7 +269,7 @@
       "target": {
         "name": "Bazaar Settings",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -279,16 +279,16 @@
           {
             "name": "Go Back",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "To Bazaar",
             "mode": "equals",
             "line": 0,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     }
   ]

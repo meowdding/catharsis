@@ -7,7 +7,7 @@ export default {
             const description = JSON.parse(fs.readFileSync(file, "utf-8"))["_comment"]
 
             return {
-                name: "catharsis:" +file.slice(file.indexOf("repo/areas") + 11, -5),
+                name: "katharsis:" +file.slice(file.indexOf("repo/areas") + 11, -5),
                 description: description
             }
         })

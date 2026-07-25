@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/foraging/sweep/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE023 Sweep [\\d,.]+"
       }
     },

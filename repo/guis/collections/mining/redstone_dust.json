@@ -1,7 +1,7 @@
 {
   "target": {
     "title": "Redstone Dust Collection",
-    "type": "catharsis:title"
+    "type": "katharsis:title"
   },
   "layout": [
     {
@@ -10,11 +10,11 @@
         "conditions": [
           {
             "slot": 18,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -22,10 +22,10 @@
               "Redstone Dust I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -34,11 +34,11 @@
         "conditions": [
           {
             "slot": 18,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -46,10 +46,10 @@
               "Redstone Dust I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -58,11 +58,11 @@
         "conditions": [
           {
             "slot": 18,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -70,10 +70,10 @@
               "Redstone Dust I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -82,11 +82,11 @@
         "conditions": [
           {
             "slot": 19,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -94,10 +94,10 @@
               "Redstone Dust II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -106,11 +106,11 @@
         "conditions": [
           {
             "slot": 19,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -118,10 +118,10 @@
               "Redstone Dust II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -130,11 +130,11 @@
         "conditions": [
           {
             "slot": 19,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -142,10 +142,10 @@
               "Redstone Dust II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -154,11 +154,11 @@
         "conditions": [
           {
             "slot": 20,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -166,10 +166,10 @@
               "Redstone Dust III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -178,11 +178,11 @@
         "conditions": [
           {
             "slot": 20,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -190,10 +190,10 @@
               "Redstone Dust III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -202,11 +202,11 @@
         "conditions": [
           {
             "slot": 20,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -214,10 +214,10 @@
               "Redstone Dust III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -226,11 +226,11 @@
         "conditions": [
           {
             "slot": 21,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -238,10 +238,10 @@
               "Redstone Dust IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -250,11 +250,11 @@
         "conditions": [
           {
             "slot": 21,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -262,10 +262,10 @@
               "Redstone Dust IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -274,11 +274,11 @@
         "conditions": [
           {
             "slot": 21,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -286,10 +286,10 @@
               "Redstone Dust IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -298,11 +298,11 @@
         "conditions": [
           {
             "slot": 22,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -310,10 +310,10 @@
               "Redstone Dust V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -322,11 +322,11 @@
         "conditions": [
           {
             "slot": 22,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -334,10 +334,10 @@
               "Redstone Dust V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -346,11 +346,11 @@
         "conditions": [
           {
             "slot": 22,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -358,10 +358,10 @@
               "Redstone Dust V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -370,11 +370,11 @@
         "conditions": [
           {
             "slot": 23,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -382,10 +382,10 @@
               "Redstone Dust VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -394,11 +394,11 @@
         "conditions": [
           {
             "slot": 23,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -406,10 +406,10 @@
               "Redstone Dust VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -418,11 +418,11 @@
         "conditions": [
           {
             "slot": 23,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -430,10 +430,10 @@
               "Redstone Dust VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -442,11 +442,11 @@
         "conditions": [
           {
             "slot": 24,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -454,10 +454,10 @@
               "Redstone Dust VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -466,11 +466,11 @@
         "conditions": [
           {
             "slot": 24,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -478,10 +478,10 @@
               "Redstone Dust VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -490,11 +490,11 @@
         "conditions": [
           {
             "slot": 24,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -502,10 +502,10 @@
               "Redstone Dust VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -514,11 +514,11 @@
         "conditions": [
           {
             "slot": 25,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -526,10 +526,10 @@
               "Redstone Dust VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -538,11 +538,11 @@
         "conditions": [
           {
             "slot": 25,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -550,10 +550,10 @@
               "Redstone Dust VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -562,11 +562,11 @@
         "conditions": [
           {
             "slot": 25,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -574,10 +574,10 @@
               "Redstone Dust VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -586,11 +586,11 @@
         "conditions": [
           {
             "slot": 26,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -598,10 +598,10 @@
               "Redstone Dust IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -610,11 +610,11 @@
         "conditions": [
           {
             "slot": 26,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -622,10 +622,10 @@
               "Redstone Dust IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -634,11 +634,11 @@
         "conditions": [
           {
             "slot": 26,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -646,10 +646,10 @@
               "Redstone Dust IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -658,11 +658,11 @@
         "conditions": [
           {
             "slot": 27,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -670,10 +670,10 @@
               "Redstone Dust X"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -682,11 +682,11 @@
         "conditions": [
           {
             "slot": 27,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -694,10 +694,10 @@
               "Redstone Dust X"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -706,11 +706,11 @@
         "conditions": [
           {
             "slot": 27,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -718,10 +718,10 @@
               "Redstone Dust X"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -730,11 +730,11 @@
         "conditions": [
           {
             "slot": 28,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -742,10 +742,10 @@
               "Redstone Dust XI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -754,11 +754,11 @@
         "conditions": [
           {
             "slot": 28,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -766,10 +766,10 @@
               "Redstone Dust XI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -778,11 +778,11 @@
         "conditions": [
           {
             "slot": 28,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -790,10 +790,10 @@
               "Redstone Dust XI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -802,11 +802,11 @@
         "conditions": [
           {
             "slot": 29,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -814,10 +814,10 @@
               "Redstone Dust XII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -826,11 +826,11 @@
         "conditions": [
           {
             "slot": 29,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -838,10 +838,10 @@
               "Redstone Dust XII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -850,11 +850,11 @@
         "conditions": [
           {
             "slot": 29,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -862,10 +862,10 @@
               "Redstone Dust XII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -874,11 +874,11 @@
         "conditions": [
           {
             "slot": 30,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -886,10 +886,10 @@
               "Redstone Dust XIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -898,11 +898,11 @@
         "conditions": [
           {
             "slot": 30,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -910,10 +910,10 @@
               "Redstone Dust XIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -922,11 +922,11 @@
         "conditions": [
           {
             "slot": 30,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -934,10 +934,10 @@
               "Redstone Dust XIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -946,11 +946,11 @@
         "conditions": [
           {
             "slot": 31,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -958,10 +958,10 @@
               "Redstone Dust XIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -970,11 +970,11 @@
         "conditions": [
           {
             "slot": 31,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -982,10 +982,10 @@
               "Redstone Dust XIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -994,11 +994,11 @@
         "conditions": [
           {
             "slot": 31,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1006,10 +1006,10 @@
               "Redstone Dust XIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1018,11 +1018,11 @@
         "conditions": [
           {
             "slot": 32,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1030,10 +1030,10 @@
               "Redstone Dust XV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1042,11 +1042,11 @@
         "conditions": [
           {
             "slot": 32,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1054,10 +1054,10 @@
               "Redstone Dust XV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1066,11 +1066,11 @@
         "conditions": [
           {
             "slot": 32,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1078,10 +1078,10 @@
               "Redstone Dust XV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1090,11 +1090,11 @@
         "conditions": [
           {
             "slot": 33,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1102,10 +1102,10 @@
               "Redstone Dust XVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1114,11 +1114,11 @@
         "conditions": [
           {
             "slot": 33,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1126,10 +1126,10 @@
               "Redstone Dust XVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1138,11 +1138,11 @@
         "conditions": [
           {
             "slot": 33,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1150,10 +1150,10 @@
               "Redstone Dust XVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     }
   ]

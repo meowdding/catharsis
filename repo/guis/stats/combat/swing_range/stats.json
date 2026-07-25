@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/combat/swing_range/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE024 Swing Range [\\d,.]+"
       }
     },

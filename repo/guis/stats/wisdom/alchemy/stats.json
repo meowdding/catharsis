@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/wisdom/alchemy/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Alchemy Wisdom [\\d,.]+"
       }
     },

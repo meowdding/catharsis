@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/combat/attack_speed/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE001 Attack Speed [\\d,.]+"
       }
     },

@@ -1,0 +1,90 @@
+package me.owdding.katharsis.features.pack.meta
+
+import me.owdding.katharsis.Katharsis
+import me.owdding.katharsis.features.pack.config.PackConfigOption
+import me.owdding.katharsis.generated.KatharsisCodecs
+import me.owdding.ktcodecs.FieldName
+import me.owdding.ktcodecs.GenerateCodec
+import net.fabricmc.loader.api.FabricLoader
+import net.fabricmc.loader.api.ModContainer
+import net.fabricmc.loader.api.Version
+import net.fabricmc.loader.api.metadata.version.VersionPredicate
+import net.minecraft.network.chat.Component
+import net.minecraft.server.packs.metadata.MetadataSectionType
+import tech.thatgravyboat.skyblockapi.helpers.McClient
+import tech.thatgravyboat.skyblockapi.utils.text.Text
+import kotlin.jvm.optionals.getOrNull
+
+@GenerateCodec
+data class KatharsisMetadataSection(
+    val id: String,
+    val version: String,
+    @FieldName("update_url") val updateUrl: String?,
+    val dependencies: Map<String, String> = emptyMap(),
+    val config: List<PackConfigOption> = emptyList(),
+    @FieldName("pack_required_for_config") val packRequiredForConfig: Boolean = false,
+    @FieldName("disable_derived_ids") val disableDerivedIds: Boolean = false,
+    @FieldName("selected_title") val selectedTitle: Component?,
+    @FieldName("selected_description") val selectedDescription: Component?,
+) {
+
+    val incompatibilities: List<Pair<String, ModContainer?>> = dependencies.mapNotNull { (mod, range) ->
+        runCatching {
+            val predicate = VersionPredicate.parse(range)
+            val modContainer = FabricLoader.getInstance().getModContainer(mod).getOrNull()
+
+            when {
+                modContainer == null -> mod to null
+                predicate.test(modContainer.metadata.version) -> null
+                else -> mod to modContainer
+            }
+        }.getOrNull()
+    }
+
+    val incompatibleTooltip: List<Component> = run {
+        if (incompatibilities.isEmpty()) {
+            emptyList()
+        } else {
+            val missing = incompatibilities.mapNotNull { (id, container) ->
+                if (container == null) id else null
+            }
+            val conflicting = incompatibilities.mapNotNull { (id, container) ->
+                container?.metadata?.let { "${it.name} (Current: ${it.version}, Required: ${dependencies[id]})" }
+            }
+
+            buildList {
+                if (missing.isNotEmpty()) add(Text.translatable("pack.katharsis.incompatible.tooltip.missing"))
+                for (mod in missing) add(Text.of(" - $mod"))
+
+                if (conflicting.isNotEmpty()) {
+                    if (missing.isNotEmpty()) add(Component.empty())
+                    add(Text.translatable("pack.katharsis.incompatible.tooltip.conflicting"))
+                    for (mod in conflicting) add(Text.of(" - $mod"))
+                }
+            }
+        }
+    }
+
+    private var _isUpdateAvailable: Boolean? = null
+    val isUpdateAvailable: Boolean
+        get() {
+            if (updateUrl == null) return false
+            if (_isUpdateAvailable == null) {
+                val info = PackUpdateChecker.getUpdateInfo(updateUrl) ?: return false
+                val latestVersion = runCatching { Version.parse(info.versions[McClient.version]) }.getOrNull()
+                val currentVersion = runCatching { Version.parse(version) }.getOrNull()
+                _isUpdateAvailable = latestVersion != null && currentVersion != null && latestVersion > currentVersion
+            }
+            return _isUpdateAvailable!!
+        }
+
+    init {
+        this.updateUrl?.let(PackUpdateChecker::requestUpdateInfo)
+    }
+
+    companion object {
+
+        @JvmField
+        val TYPE = MetadataSectionType(Katharsis.id("pack/v1").toString(), KatharsisCodecs.getCodec<KatharsisMetadataSection>())
+    }
+}

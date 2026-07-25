@@ -7,13 +7,13 @@
             "min_inclusive": 46,
             "max_inclusive": 69
         },
-        "description": "Catharsis example pack"
+        "description": "Katharsis example pack"
     },
-    "catharsis:pack/v1": {
+    "katharsis:pack/v1": {
         "id": "example_pack",
         "version": "1.0.0",
         "dependencies": {
-            "catharsis": ">=1.0.0-beta.5"
+            "katharsis": ">=1.0.0-beta.5"
         },
         "config": [
             {
@@ -73,7 +73,7 @@
             {
                 "directory": "example_boolean_overlay",
                 "condition": {
-                    "condition": "catharsis:config",
+                    "condition": "katharsis:config",
                     "pack": "example_pack",
                     "id": "boolean_example"
                 }
@@ -83,7 +83,7 @@
                 "condition": {
                     "condition": "fabric:not",
                     "value": {
-                        "condition": "catharsis:config",
+                        "condition": "katharsis:config",
                         "pack": "example_pack",
                         "id": "dropdown_example",
                         "value": "a"
@@ -93,7 +93,7 @@
             {
                 "directory": "example_dropdown_b_overlay",
                 "condition": {
-                    "condition": "catharsis:config",
+                    "condition": "katharsis:config",
                     "pack": "example_pack",
                     "id": "dropdown_example",
                     "value": "b"
@@ -102,7 +102,7 @@
             {
                 "directory": "example_dropdown_c_overlay",
                 "condition": {
-                    "condition": "catharsis:config",
+                    "condition": "katharsis:config",
                     "pack": "example_pack",
                     "id": "dropdown_example",
                     "value": "c"

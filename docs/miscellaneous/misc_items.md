@@ -5,13 +5,13 @@ lang: en-US
 
 # <Environment/> Miscellaneous Items
 
-Catharsis allows you to define custom SkyBlock IDs based on the texture data of Player Heads. 
+Katharsis allows you to define custom SkyBlock IDs based on the texture data of Player Heads. 
 This is useful for assigning specific IDs to custom head items that do not have an ID assigned by Hypixel.
 
 
 ::: details Included Misc Items
 
-You can view the remote defined `misc_items.json` on [GitHub](https://github.com/meowdding/catharsis/blob/stable/repo/misc_items.json) or below.
+You can view the remote defined `misc_items.json` on [GitHub](https://github.com/meowdding/katharsis/blob/stable/repo/misc_items.json) or below.
 
 <MiscItems />
 
@@ -20,11 +20,11 @@ You can view the remote defined `misc_items.json` on [GitHub](https://github.com
 
 ## Defining
 
-Custom miscellaneous items are defined in `assets/catharsis/misc_items.json` within your resource pack.
+Custom miscellaneous items are defined in `assets/katharsis/misc_items.json` within your resource pack.
 
 <Example>
 
-<<< @/example_packs/misc_items/assets/catharsis/misc_items.json{json:line-numbers}
+<<< @/example_packs/misc_items/assets/katharsis/misc_items.json{json:line-numbers}
 </Example>
 
 <TreeView>

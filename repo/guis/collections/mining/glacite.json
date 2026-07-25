@@ -1,7 +1,7 @@
 {
   "target": {
     "title": "Glacite Collection",
-    "type": "catharsis:title"
+    "type": "katharsis:title"
   },
   "layout": [
     {
@@ -10,11 +10,11 @@
         "conditions": [
           {
             "slot": 18,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -22,10 +22,10 @@
               "Glacite I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -34,11 +34,11 @@
         "conditions": [
           {
             "slot": 18,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -46,10 +46,10 @@
               "Glacite I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -58,11 +58,11 @@
         "conditions": [
           {
             "slot": 18,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -70,10 +70,10 @@
               "Glacite I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -82,11 +82,11 @@
         "conditions": [
           {
             "slot": 19,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -94,10 +94,10 @@
               "Glacite II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -106,11 +106,11 @@
         "conditions": [
           {
             "slot": 19,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -118,10 +118,10 @@
               "Glacite II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -130,11 +130,11 @@
         "conditions": [
           {
             "slot": 19,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -142,10 +142,10 @@
               "Glacite II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -154,11 +154,11 @@
         "conditions": [
           {
             "slot": 20,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -166,10 +166,10 @@
               "Glacite III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -178,11 +178,11 @@
         "conditions": [
           {
             "slot": 20,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -190,10 +190,10 @@
               "Glacite III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -202,11 +202,11 @@
         "conditions": [
           {
             "slot": 20,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -214,10 +214,10 @@
               "Glacite III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -226,11 +226,11 @@
         "conditions": [
           {
             "slot": 21,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -238,10 +238,10 @@
               "Glacite IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -250,11 +250,11 @@
         "conditions": [
           {
             "slot": 21,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -262,10 +262,10 @@
               "Glacite IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -274,11 +274,11 @@
         "conditions": [
           {
             "slot": 21,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -286,10 +286,10 @@
               "Glacite IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -298,11 +298,11 @@
         "conditions": [
           {
             "slot": 22,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -310,10 +310,10 @@
               "Glacite V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -322,11 +322,11 @@
         "conditions": [
           {
             "slot": 22,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -334,10 +334,10 @@
               "Glacite V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -346,11 +346,11 @@
         "conditions": [
           {
             "slot": 22,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -358,10 +358,10 @@
               "Glacite V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -370,11 +370,11 @@
         "conditions": [
           {
             "slot": 23,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -382,10 +382,10 @@
               "Glacite VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -394,11 +394,11 @@
         "conditions": [
           {
             "slot": 23,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -406,10 +406,10 @@
               "Glacite VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -418,11 +418,11 @@
         "conditions": [
           {
             "slot": 23,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -430,10 +430,10 @@
               "Glacite VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -442,11 +442,11 @@
         "conditions": [
           {
             "slot": 24,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -454,10 +454,10 @@
               "Glacite VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -466,11 +466,11 @@
         "conditions": [
           {
             "slot": 24,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -478,10 +478,10 @@
               "Glacite VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -490,11 +490,11 @@
         "conditions": [
           {
             "slot": 24,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -502,10 +502,10 @@
               "Glacite VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -514,11 +514,11 @@
         "conditions": [
           {
             "slot": 25,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -526,10 +526,10 @@
               "Glacite VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -538,11 +538,11 @@
         "conditions": [
           {
             "slot": 25,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -550,10 +550,10 @@
               "Glacite VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -562,11 +562,11 @@
         "conditions": [
           {
             "slot": 25,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -574,10 +574,10 @@
               "Glacite VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -586,11 +586,11 @@
         "conditions": [
           {
             "slot": 26,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -598,10 +598,10 @@
               "Glacite IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -610,11 +610,11 @@
         "conditions": [
           {
             "slot": 26,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -622,10 +622,10 @@
               "Glacite IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -634,11 +634,11 @@
         "conditions": [
           {
             "slot": 26,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -646,10 +646,10 @@
               "Glacite IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     }
   ]

@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/farming/overbloom/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE02B Overbloom [\\d,.]+"
       }
     },

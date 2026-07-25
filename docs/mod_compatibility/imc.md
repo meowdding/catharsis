@@ -5,17 +5,17 @@ lang: en-US
 
 # <Environment /> Inter Mod Communication (IMC)
 
-Catharsis provides Fabric entrypoints that other mods can invoke during initialization.
+Katharsis provides Fabric entrypoints that other mods can invoke during initialization.
 
 ## Entrypoint Registry
 
-Catharsis exposes three entrypoints under its IMC setup:
+Katharsis exposes three entrypoints under its IMC setup:
 
 | Entrypoint Path                     | Purpose                                                                        | Expected Value Type                                    |
 |:------------------------------------|:-------------------------------------------------------------------------------|:-------------------------------------------------------|
-| `catharsis:imc/item_id`             | Applies a specific Catharsis ID to an `ItemStack` directly.                    | `java.util.function.BiConsumer<ItemStack, Identifier>` |
-| `catharsis:imc/disabled`            | Disables Catharsis retexturing and GUI behaviors for an item stack completely. | `java.util.function.BiConsumer<ItemStack, Boolean>`    |
-| `catharsis:imc/hidden_mod_elements` | Checks if a named UI element is hidden by the currently active GUI modifier.   | `java.util.function.Predicate<String>`                 |
+| `katharsis:imc/item_id`             | Applies a specific Katharsis ID to an `ItemStack` directly.                    | `java.util.function.BiConsumer<ItemStack, Identifier>` |
+| `katharsis:imc/disabled`            | Disables Katharsis retexturing and GUI behaviors for an item stack completely. | `java.util.function.BiConsumer<ItemStack, Boolean>`    |
+| `katharsis:imc/hidden_mod_elements` | Checks if a named UI element is hidden by the currently active GUI modifier.   | `java.util.function.Predicate<String>`                 |
 
 ## Registering Entrypoints
 
@@ -23,14 +23,14 @@ To link your mods compatibility handlers, register static method handles or cons
 
 ```json
 "entrypoints": {
-  "catharsis:imc/item_id": [
-    "your.package.CatharsisSupport::id"
+  "katharsis:imc/item_id": [
+    "your.package.KatharsisSupport::id"
   ],
-  "catharsis:imc/disabled": [
-    "your.package.CatharsisSupport::disabled"
+  "katharsis:imc/disabled": [
+    "your.package.KatharsisSupport::disabled"
   ],
-  "catharsis:imc/hidden_mod_elements": [
-    "your.package.CatharsisSupport::hiddenModElements"
+  "katharsis:imc/hidden_mod_elements": [
+    "your.package.KatharsisSupport::hiddenModElements"
   ]
 }
 ```
@@ -48,7 +48,7 @@ import net.minecraft.world.item.ItemStack
 import java.util.function.BiConsumer
 import java.util.function.Predicate
 
-object CatharsisSupport {
+object KatharsisSupport {
 
     private var idConsumer: BiConsumer<ItemStack, Identifier> = BiConsumer { _, _ -> }
     private var disabledConsumer: BiConsumer<ItemStack, Boolean> = BiConsumer { _, _ -> }
@@ -73,15 +73,15 @@ object CatharsisSupport {
         return hiddenModElementsProvider.test(element)
     }
 
-    fun ItemStack.disableCatharsisModifications() = apply {
+    fun ItemStack.disableKatharsisModifications() = apply {
         disabledConsumer.accept(this, true)
     }
 
-    fun ItemStack.withCatharsisId(identifier: Identifier): ItemStack = apply {
+    fun ItemStack.withKatharsisId(identifier: Identifier): ItemStack = apply {
         idConsumer.accept(this, identifier)
     }
 
-    fun Item.withCatharsisId(identifier: Identifier): ItemStack = defaultInstance.apply {
+    fun Item.withKatharsisId(identifier: Identifier): ItemStack = defaultInstance.apply {
         idConsumer.accept(this, identifier)
     }
 }
@@ -101,7 +101,7 @@ import net.minecraft.world.item.ItemStack;
 import java.util.function.BiConsumer;
 import java.util.function.Predicate;
 
-public class CatharsisSupport {
+public class KatharsisSupport {
 
     private static BiConsumer<ItemStack, Identifier> idConsumer = (stack, id) -> {};
     private static BiConsumer<ItemStack, Boolean> disabledConsumer = (stack, disabled) -> {};
@@ -123,17 +123,17 @@ public class CatharsisSupport {
         return hiddenModElementsProvider.test(element);
     }
 
-    public static ItemStack disableCatharsisModifications(ItemStack stack) {
+    public static ItemStack disableKatharsisModifications(ItemStack stack) {
         disabledConsumer.accept(stack, true);
         return stack;
     }
 
-    public static ItemStack withCatharsisId(ItemStack stack, Identifier identifier) {
+    public static ItemStack withKatharsisId(ItemStack stack, Identifier identifier) {
         idConsumer.accept(stack, identifier);
         return stack;
     }
 
-    public static ItemStack withCatharsisId(Item item, Identifier identifier) {
+    public static ItemStack withKatharsisId(Item item, Identifier identifier) {
         ItemStack stack = item.getDefaultInstance();
         idConsumer.accept(stack, identifier);
         return stack;

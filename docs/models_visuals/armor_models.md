@@ -5,14 +5,14 @@ lang: en-US
 
 # <Environment/> Armor Models
 
-In Catharsis we support a way to define custom armor models for items.
+In Katharsis we support a way to define custom armor models for items.
 This allows you to create dynamic textures for armors that can change based on certain properties.
 
-You can define armor models in an armor definition file in `assets/<namespace>/catharsis/armors/<id>.json`.
-Similarly to item models you can also declare it for skyblock ids i.e. `assets/skyblock/catharsis/armors/<id>.json`.
+You can define armor models in an armor definition file in `assets/<namespace>/katharsis/armors/<id>.json`.
+Similarly to item models you can also declare it for skyblock ids i.e. `assets/skyblock/katharsis/armors/<id>.json`.
 
 Armor models support some of the same model types as item models such as `minecraft:condition` and `minecraft:range_dispatch`
-as well as armor specific ones such as `catharsis:texture` or `catharsis:model`.
+as well as armor specific ones such as `katharsis:texture` or `katharsis:model`.
 
 ## Json format
 
@@ -41,7 +41,7 @@ as well as armor specific ones such as `catharsis:texture` or `catharsis:model`.
 
 ## Available Armor Model Types
 
-#### **Texture** (`catharsis:texture`)
+#### **Texture** (`katharsis:texture`)
 
 Render a specific texture for the armor.
 
@@ -50,14 +50,14 @@ Render a specific texture for the armor.
 A simple armor replacement with a texture
 TODO: Incorrect example
 
-<<< @/example_packs/armor_models/assets/skyblock/catharsis/armors/wither_chestplate.json{json:line-numbers}
+<<< @/example_packs/armor_models/assets/skyblock/katharsis/armors/wither_chestplate.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>texture</b> armor model object</span>
 <ul>
 
-- <TypeIcon type="string"/> **type**: `catharsis:texture`
+- <TypeIcon type="string"/> **type**: `katharsis:texture`
 - <TypeIcon type="array"/> **layers**: The layers of the armor, each layer is rendered on top of the previous one.
     - <TypeIcon type="string"/> The texture to use for the armor. This should be a resource location pointing to a PNG file.
 - <TypeIcon type="array"/> **tints**: Optional. The color tints to apply to each layer of the armor.
@@ -72,7 +72,7 @@ TODO: Incorrect example
 </ul>
 </TreeView>
 
-#### **Model** (`catharsis:model`)
+#### **Model** (`katharsis:model`)
 
 Render a specific bedrock armor geometry for the armor.
 
@@ -80,14 +80,14 @@ Render a specific bedrock armor geometry for the armor.
 
 Replaces the armor with a custom model.
 
-<<< @/example_packs/armor_models/assets/skyblock/catharsis/armors/wither_chestplate.json{json:line-numbers}
+<<< @/example_packs/armor_models/assets/skyblock/katharsis/armors/wither_chestplate.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>model</b> armor model object</span>
 <ul>
 
-- <TypeIcon type="string"/> **type**: `catharsis:model`
+- <TypeIcon type="string"/> **type**: `katharsis:model`
 - <TypeIcon type="string"/> **model**: The geo model to use for the armor. This should be a resource location pointing to a GEO JSON file.
 - <TypeIcon type="array"/> **layers**: The layers of the armor, each layer is rendered on top of the previous one.
     - <TypeIcon type="string"/> The texture to use for the armor. This should be a resource location pointing to a PNG file.
@@ -113,7 +113,7 @@ Render an armor model based on a boolean property.
 - <TypeIcon type="string"/> **type**: `minecraft:condition`
 - <TypeIcon type="string"/> **property**: type of boolean property.
   - <TypeIcon/> You can find a list of all available item model boolean properties on the Minecraft wiki at [Item Model Properties](https://minecraft.wiki/w/Items_model_definition#Boolean_property_types). 
-  Additionally, you can find a list of all Catharsis custom item properties in the [Catharsis Conditional Properties](./item_models/conditional_properties) documentation.
+  Additionally, you can find a list of all Katharsis custom item properties in the [Katharsis Conditional Properties](./item_models/conditional_properties) documentation.
 - <TypeIcon type="object"/> **on_true**: The **armor model** object when the property is true.
 - <TypeIcon type="object"/> **on_false**: The **armor model** object when the property is false.
 
@@ -130,7 +130,7 @@ Will select last entry with a threshold less than or equal to the property value
 - <TypeIcon type="string"/> **type**: `minecraft:range_dispatch`
 - <TypeIcon type="string"/> **property**: type of numeric property.
   - <TypeIcon/> You can find a list of all available item model numeric properties on the Minecraft wiki at [Item Model Properties](https://minecraft.wiki/w/Items_model_definition#Numeric_property_types). 
-  Additionally, you can find a list of all Catharsis custom item properties in the [Catharsis Range Properties](./item_models/range_properties) documentation.
+  Additionally, you can find a list of all Katharsis custom item properties in the [Katharsis Range Properties](./item_models/range_properties) documentation.
 - <TypeIcon/> Additional fields depending on the value of **numeric property type**.
 - <TypeIcon type="float"/> **scale**: Optional. Will be used to scale the property value before comparing it to thresholds. Default is `1.0`.
 - <TypeIcon type="array"/> **entries**:
@@ -152,7 +152,7 @@ Render an armor model based on a select property.
 - <TypeIcon type="string"/> **type**: `minecraft:select`
 - <TypeIcon type="string"/> **property**: type of the select property.
   - <TypeIcon/> You can find a list of all available item select properties on the Minecraft wiki at [Property Types](https://minecraft.wiki/w/Items_model_definition#Property_types).
-  Additionally, you can find a list of all Catharsis select item properties in the [Catharsis Select Properties](./item_models/select_properties) documentation
+  Additionally, you can find a list of all Katharsis select item properties in the [Katharsis Select Properties](./item_models/select_properties) documentation
 - <TypeIcon/> Additional fields depending on the value of the **select property type**.
 - <TypeIcon type="object"/> **switch**:
   - <TypeIcon type="array"/> **&lt;value&gt;**: 
@@ -161,21 +161,21 @@ Render an armor model based on a select property.
 
 </TreeView>
 
-#### **Redirect** (`catharsis:redirect`)
+#### **Redirect** (`katharsis:redirect`)
 
 Changes the context of any future models, allowing you to change things based on other item slots.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>redirect</b> armor model object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:redirect`
+- <TypeIcon type="string"/> **type**: `katharsis:redirect`
 - <TypeIcon type="string"/> **slot**: one of `MAINHAND`, `OFFHAND`, `FEET`, `LEGS`, `CHEST`, `HEAD`, `BODY` or `SADDLE`
 - <TypeIcon type="object"/> **model**: The **armor model** object to use if no thresholds are met.
   - Will render as a missing texture if fallback is needed but not provided.
 
 </TreeView>
 
-#### **Fallthrough** (`catharsis:fallthrough`)
+#### **Fallthrough** (`katharsis:fallthrough`)
 
 Allows an armor model to "fall through" to the next available model in the resource pack stack. This is useful for overlay packs that only want to change specific parts of an item's
 rendering without completely replacing the base model.
@@ -183,6 +183,6 @@ rendering without completely replacing the base model.
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>fallthrough</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:fallthrough`
+- <TypeIcon type="string"/> **type**: `katharsis:fallthrough`
 
 </TreeView>

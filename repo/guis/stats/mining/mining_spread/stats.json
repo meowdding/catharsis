@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/mining/mining_spread/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE016 Mining Spread [\\d,.]+"
       }
     },

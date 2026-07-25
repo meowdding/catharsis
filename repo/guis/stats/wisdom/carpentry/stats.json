@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/wisdom/carpentry/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Carpentry Wisdom [\\d,.]+"
       }
     },

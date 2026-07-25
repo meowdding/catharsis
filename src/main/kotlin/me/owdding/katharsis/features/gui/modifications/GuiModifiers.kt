@@ -1,0 +1,109 @@
+package me.owdding.katharsis.features.gui.modifications
+
+import com.google.gson.GsonBuilder
+import com.google.gson.JsonElement
+import me.owdding.katharsis.Katharsis
+import me.owdding.katharsis.events.GuiDefinitionsApplied
+import me.owdding.katharsis.features.gui.modifications.conditions.GuiModifierDefinitionCondition
+import me.owdding.katharsis.features.gui.modifications.modifiers.SlotModifier
+import me.owdding.katharsis.generated.KatharsisCodecs
+import me.owdding.ktmodules.Module
+import net.minecraft.resources.FileToIdConverter
+import net.minecraft.resources.Identifier
+import net.minecraft.server.packs.resources.ResourceManager
+import net.minecraft.server.packs.resources.SimplePreparableReloadListener
+import net.minecraft.util.profiling.ProfilerFiller
+import org.joml.Vector2i
+import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
+import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
+
+@Module
+object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
+
+    private val logger = Katharsis.featureLogger("GuiModifiers")
+    val converter: FileToIdConverter = FileToIdConverter.json("katharsis/gui_modifiers")
+    private val gson = GsonBuilder().create()
+    val codec = KatharsisCodecs.getCodec<GuiModifier>()
+
+    private val definitionModifiers: MutableMap<Identifier, MutableList<GuiModifier>> = mutableMapOf()
+
+    private var selected: GuiModifier? = null
+
+    override fun prepare(manager: ResourceManager, profiler: ProfilerFiller): List<GuiModifier> {
+        return converter.listMatchingResources(manager)
+            .mapNotNull { (id, resource) ->
+                logger.runCatching("Error loading gui modifier $id") {
+                    resource.openAsReader().use { reader ->
+                        gson.fromJson(reader, JsonElement::class.java).toDataOrThrow(codec)
+                    }
+                }
+            }
+    }
+
+    override fun apply(modifiers: List<GuiModifier>, manager: ResourceManager, profiler: ProfilerFiller) {
+        definitionModifiers.clear()
+        for (modifier in modifiers) {
+            when (modifier.target) {
+                is GuiModifierDefinitionCondition -> {
+                    val definition = modifier.target.definition
+                    val modifiers = definitionModifiers.getOrPut(definition) { mutableListOf() }
+                    modifiers.add(modifier)
+                }
+            }
+        }
+    }
+
+    @JvmStatic
+    fun getActiveModifier(): GuiModifier? {
+        return this.selected
+    }
+
+    @Subscription
+    fun onGuiDefinitionsApplied(event: GuiDefinitionsApplied) {
+        val modifiers = event.definitions
+            .mapNotNull(definitionModifiers::get)
+            .flatten()
+
+        if (modifiers.isEmpty()) {
+            this.selected = null
+        } else {
+            val slots = mutableMapOf<Identifier, SlotModifier>()
+            for (modifier in modifiers) {
+                modifier.slots.forEach { (identifier, modifier) ->
+                    val existing = slots[identifier]
+                    if (existing != null) {
+                        slots[identifier] = SlotModifier(
+                            hidden = existing.hidden || modifier.hidden,
+                            highlightable = existing.highlightable && modifier.highlightable,
+                            position = modifier.position ?: existing.position,
+                            clickable = modifier.clickable && existing.clickable
+                        )
+                    } else {
+                        slots[identifier] = modifier
+                    }
+                }
+            }
+
+            this.selected = GuiModifier(
+                target = modifiers.first().target, // Target is not relevant for combined modifier
+                overrideLabels = modifiers.any { it.overrideLabels },
+                overrideBackground = modifiers.any { it.overrideBackground },
+                disableItemList = modifiers.any { it.disableItemList },
+                bounds = modifiers.mapNotNull { it.bounds }.let { sizes ->
+                    if (sizes.isEmpty()) null else {
+                        Vector2i(sizes.maxOf { it.x }, sizes.maxOf { it.y })
+                    }
+                },
+                itemListExclusionZones = modifiers.flatMap { it.itemListExclusionZones },
+                slots = slots,
+                elements = modifiers.flatMap { it.elements },
+                widgets = modifiers.flatMap { it.widgets },
+                hiddenModElements = modifiers.flatMap { it.hiddenModElements }.distinct(),
+            )
+        }
+    }
+
+    init {
+        Katharsis.registerClientReloadListener(Katharsis.id("gui_modifiers"), this)
+    }
+}

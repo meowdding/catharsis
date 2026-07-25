@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/combat/vitality/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE028 Vitality [\\d,.]+"
       }
     },

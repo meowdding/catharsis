@@ -1,7 +1,7 @@
 {
   "target": {
     "title": "Crimson Isle Warps",
-    "type": "catharsis:title"
+    "type": "katharsis:title"
   },
   "layout": [
     {
@@ -11,16 +11,16 @@
           {
             "name": "Crimson Isle - Spawn",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -30,19 +30,19 @@
           {
             "name": "Crimson Isle - Spawn",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -52,16 +52,16 @@
           {
             "name": "Crimson Isle - Forgotten Skull",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -71,19 +71,19 @@
           {
             "name": "Crimson Isle - Forgotten Skull",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -93,16 +93,16 @@
           {
             "name": "Crimson Isle - The Wasteland",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -112,19 +112,19 @@
           {
             "name": "Crimson Isle - The Wasteland",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -134,16 +134,16 @@
           {
             "name": "Crimson Isle - Dragontail",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -153,19 +153,19 @@
           {
             "name": "Crimson Isle - Dragontail",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -175,16 +175,16 @@
           {
             "name": "Crimson Isle - Scarleton",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -194,19 +194,19 @@
           {
             "name": "Crimson Isle - Scarleton",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -216,16 +216,16 @@
           {
             "name": "Crimson Isle - Smoldering Tomb",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -235,19 +235,19 @@
           {
             "name": "Crimson Isle - Smoldering Tomb",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     }
   ]

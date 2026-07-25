@@ -5,7 +5,7 @@ lang: en-US
 
 # <Environment/> Virtual Block State
 
-A virtual block state is a modified [vanilla block state file](https://minecraft.wiki/w/Tutorial:Models#Block_states) placed at `<namespace>/catharsis/virtual_block_states/<id>.json`.
+A virtual block state is a modified [vanilla block state file](https://minecraft.wiki/w/Tutorial:Models#Block_states) placed at `<namespace>/katharsis/virtual_block_states/<id>.json`.
 
 A virtual block state is used in combination with a block replacement to replace all properties of a block, and allowing changes based on the blocks state.
 
@@ -17,7 +17,7 @@ Things that happen in this example
 - Changes the `place_sound` to `minecraft:block.chorus_flower.grow`
 - Changes the blend mode to `translucent`
 
-<<< @/example_packs/block_replacements/assets/your_name_space/catharsis/virtual_block_states/diamond.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/your_name_space/katharsis/virtual_block_states/diamond.json{json:line-numbers}
 
 </Example>
 

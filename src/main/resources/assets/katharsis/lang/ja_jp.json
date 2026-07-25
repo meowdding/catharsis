@@ -1,0 +1,6 @@
+{
+  "pack.katharsis.incompatible.title": "Modの互換性エラー",
+  "pack.katharsis.incompatible.desc": "Modの互換性の問題が検出されました。詳細はホバーして確認してください。",
+  "pack.katharsis.incompatible.tooltip.missing": "不足しているMod：",
+  "pack.katharsis.incompatible.tooltip.conflicting": "古いModバージョン："
+}

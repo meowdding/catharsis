@@ -7,7 +7,7 @@ lang: en-US
 
 This page lists all custom range item properties that are added ontop of the vanilla ones.
 
-### `catharsis:data_type`
+### `katharsis:data_type`
 
 Returns item specific data like, rarity, reforge, fuel...
 
@@ -16,33 +16,33 @@ Returns item specific data like, rarity, reforge, fuel...
 - `data_type`, defines the data type to use. [all supported types](../../miscellaneous/data_types.md)
 
 
-### `catharsis:skyblock_day`
+### `katharsis:skyblock_day`
 
 Returns the current skyblock day
 
-### `catharsis:skyblock_hour`
+### `katharsis:skyblock_hour`
 
 Returns the current skyblock hour.
 
-### `catharsis:enchanted_book_level`
+### `katharsis:enchanted_book_level`
 
 Returns the level of the primary enchantment.
 
-### `catharsis:rune_level`
+### `katharsis:rune_level`
 
 Returns the level of the rune.
 
-### `catharsis:pet_candy_used`
+### `katharsis:pet_candy_used`
 
 Returns the amount of pet candy used on a pet item, only works on pets in GUIs (probably).
 
-### `catharsis:pet_exp`
+### `katharsis:pet_exp`
 
 Returns the amount of Exp a pet has, only works on pets in GUIs (probably).
 
 <Version type="1.0.0-beta.16">
 
-### `catharsis:faction_reputation`
+### `katharsis:faction_reputation`
 
 Returns the reputation with the currently selected Crimson Isle faction or 0 when no faction is selected.
 </Version>

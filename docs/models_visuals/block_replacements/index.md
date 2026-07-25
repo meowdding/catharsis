@@ -6,7 +6,7 @@ lang: en-US
 
 # <Environment/> Block replacements
 
-In Catharsis, we allow for retexturing and remodelling of blocks.
+In Katharsis, we allow for retexturing and remodelling of blocks.
 This allows you to change the look of the same block in different regions of the game.
 
 
@@ -16,10 +16,10 @@ Definitions can be placed at two locations
 
 Simple:
 (not really recommended due to possible conflicts in overlay packs)
-`assets/<block namespace>/catharsis/block_replacements/<block id>.json`
+`assets/<block namespace>/katharsis/block_replacements/<block id>.json`
 
 Complex:
-`assets/<your_name_space>/catharsis/block_replacements/<block namespace>/<block id>.json`
+`assets/<your_name_space>/katharsis/block_replacements/<block namespace>/<block id>.json`
 
 The definition follows the following scheme
 
@@ -33,7 +33,7 @@ The definition follows the following scheme
 
 ## Supported Types
 
-### Redirect (`catharsis:redirect`)
+### Redirect (`katharsis:redirect`)
 
 A simple redirect, replacing one block state with another one.
 
@@ -41,28 +41,28 @@ A simple redirect, replacing one block state with another one.
 
 Always replaces the block with gold.
 
-<<< @/example_packs/block_replacements/assets/minecraft/catharsis/block_replacements/oak_leaves.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/minecraft/katharsis/block_replacements/oak_leaves.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>redirect</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:redirect`
+- <TypeIcon type="string"/> **type**: `katharsis:redirect`
 - <TypeIcon type="string"/> **virtual_state**: A virtual [block state](./virtual_block_states) reference
 </TreeView>
 
-### Layered (`catharsis:layered`)
+### Layered (`katharsis:layered`)
 
 Layers multiple block replacements on top of each other, applying the first one that matches.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>layered</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:layered`
+- <TypeIcon type="string"/> **type**: `katharsis:layered`
 - <TypeIcon type="array"/> **definitions**: A list of [block replacement definition](#definition)s
 </TreeView>
 
-### Random (`catharsis:random`)
+### Random (`katharsis:random`)
 
 Allows for random block replacements. <br>
 The random is seeded based on the blocks position, meaning, while it's random it is consistent for each block. *Resource pack ordering may affect the result!*
@@ -72,13 +72,13 @@ The random is seeded based on the blocks position, meaning, while it's random it
 Replaces the block based on a random noice with either gold or diamond. <br>
 In this example it's roughly a 3/4 ratio.
 
-<<< @/example_packs/block_replacements/assets/minecraft/catharsis/block_replacements/oak_log.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/minecraft/katharsis/block_replacements/oak_log.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>random</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:random`
+- <TypeIcon type="string"/> **type**: `katharsis:random`
 - <TypeIcon type="float"/> **min**: The min value of the random
 - <TypeIcon type="float"/> **min**: The max value of the random
 - <TypeIcon type="float"/> **threshold**: The min amount to reach to pass the check
@@ -86,7 +86,7 @@ In this example it's roughly a 3/4 ratio.
 - <TypeIcon type="object"/> **fallback**: (Optional) The [block replacement definition](#definition) to use if the check fails.
 </TreeView>
 
-### Per Area (`catharsis:per_area`)
+### Per Area (`katharsis:per_area`)
 
 Allows for having a different block per [area](./areas).
 
@@ -94,19 +94,19 @@ Allows for having a different block per [area](./areas).
 
 Replaces the block with diamond if it is inside the area.
 
-<<< @/example_packs/block_replacements/assets/minecraft/catharsis/block_replacements/dirt.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/minecraft/katharsis/block_replacements/dirt.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>per area</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:per_area`
+- <TypeIcon type="string"/> **type**: `katharsis:per_area`
 - <TypeIcon type="object"/> **entries**: An object of area to block replacement definition.
     - <TypeIcon type="array"/> **&lt;area id&gt;**: The area to test
         - <TypeIcon type="object"/> A [block replacement definition](#definition)
 </TreeView>
 
-### Conditional (`catharsis:conditional`)
+### Conditional (`katharsis:conditional`)
 
 Allows you to change a block based on some conditions, you can find a list of conditions [here](conditions).
 
@@ -114,19 +114,19 @@ Allows you to change a block based on some conditions, you can find a list of co
 
 Replaces the block with gold if the block under it is equal to grass or dirt.
 
-<<< @/example_packs/block_replacements/assets/minecraft/catharsis/block_replacements/cyan_terracotta.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/minecraft/katharsis/block_replacements/cyan_terracotta.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>conditional</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:conditional`
+- <TypeIcon type="string"/> **type**: `katharsis:conditional`
 - <TypeIcon type="object"/> **condition**: The [condition](conditions) that should be checked.
 - <TypeIcon type="object"/> **definition**: The [block replacement definition](#definition) to use if the check passes.
 - <TypeIcon type="object"/> **fallback**: (Optional) The [block replacement definition](#definition) to use if the check fails.
 </TreeView>
 
-### Select (`catharsis:select`)
+### Select (`katharsis:select`)
 
 Allows you to have multiple block replacements for the same block, and uses the first one that replaces the block.
 
@@ -134,13 +134,13 @@ Allows you to have multiple block replacements for the same block, and uses the 
 
 Replaces the block with gold if the block under it is netherrack, or replaces it with emerald if its deepslate. 
 
-<<< @/example_packs/block_replacements/assets/minecraft/catharsis/block_replacements/redstone_block.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/minecraft/katharsis/block_replacements/redstone_block.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>select</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:select`
+- <TypeIcon type="string"/> **type**: `katharsis:select`
 - <TypeIcon type="array"/> **definitions**: The definitions that will try to replace the block.
     - <TypeIcon type="object"/> **definition**: The [block replacement definition](#definition).
 - <TypeIcon type="object"/> **fallback**: (Optional) The [block replacement definition](#definition) to use if all the checks fail.

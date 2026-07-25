@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/farming/bonus_pest_chance/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE019 Bonus Pest Chance [\\d,.]+"
       }
     },

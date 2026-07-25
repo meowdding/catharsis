@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/wisdom/taming/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Taming Wisdom [\\d,.]+"
       }
     },

@@ -7,7 +7,7 @@ lang: en-US
 
 This page lists all custom conditional item properties that are added ontop of the vanilla ones.
 
-#### **All/And** (`catharsis:all`)
+#### **All/And** (`katharsis:all`)
 
 Check if a list of conditions are true, useful for chaining conditions.
 
@@ -17,7 +17,7 @@ Check if a list of conditions are true, useful for chaining conditions.
 - <TypeIcon type="array"/> **conditions**: a list of conditions to check through.
 </TreeView>
 
-#### **Any/Or** (`catharsis:any`)
+#### **Any/Or** (`katharsis:any`)
 
 Check if any in list of conditions are true, useful for chaining conditions.
 
@@ -27,7 +27,7 @@ Check if any in list of conditions are true, useful for chaining conditions.
 - <TypeIcon type="array"/> **conditions**: a list of conditions to check through.
 </TreeView>
 
-#### <Environment type="hypixel"/> **Data Type** (`catharsis:data_type`)
+#### <Environment type="hypixel"/> **Data Type** (`katharsis:data_type`)
 
 Check against a specific boolean data type.
 
@@ -37,7 +37,7 @@ Check against a specific boolean data type.
 - <TypeIcon type="string"/> **data_type**: defines the data type to use. [all supported types](/miscellaneous/data_types)
 </TreeView>
 
-#### <Environment type="hypixel"/> **Has Data Type** (`catharsis:is_data_type_present`, `catharsis:has_data_type`)
+#### <Environment type="hypixel"/> **Has Data Type** (`katharsis:is_data_type_present`, `katharsis:has_data_type`)
 
 Returns `true` if the item has a specified data type.
 
@@ -47,7 +47,7 @@ Returns `true` if the item has a specified data type.
 - <TypeIcon type="string"/> **data_type**: defines the data type to use. [all supported types](/miscellaneous/data_types)
 </TreeView>
 
-#### <Environment type="hypixel"/> **Has Gemstones** (`catharsis:has_gemstones`)
+#### <Environment type="hypixel"/> **Has Gemstones** (`katharsis:has_gemstones`)
 
 Returns `true` if the item has specified amount of gemstones.
 
@@ -60,7 +60,7 @@ Returns `true` if the item has specified amount of gemstones.
 </TreeView>
 
 
-#### <Environment type="hypixel"/> **In Area** (`catharsis:in_area`)
+#### <Environment type="hypixel"/> **In Area** (`katharsis:in_area`)
 
 Returns `true` if the player is in the specified area.
 
@@ -70,7 +70,7 @@ Returns `true` if the player is in the specified area.
 - <TypeIcon type="string"/> **area**: The id of the area as defined [here](/models_visuals/block_replacements/areas)
 </TreeView>
 
-#### **Timespan** (`catharsis:timespan`)
+#### **Timespan** (`katharsis:timespan`)
 
 Returns `true` if a certain [timespan](/miscellaneous/timespans) is true.
 
@@ -80,17 +80,17 @@ Returns `true` if a certain [timespan](/miscellaneous/timespans) is true.
 - <TypeIcon type="string"/> **timespan**: The identifier of the timespan to check.
 </TreeView>
 
-#### **Is Hovered** (`catharsis:hovered`)
+#### **Is Hovered** (`katharsis:hovered`)
 
 Returns `true` if the item is hovered.
 
-#### <Environment type="hypixel"/> **Has Pet Skin** (`catharsis:has_pet_skin`)
+#### <Environment type="hypixel"/> **Has Pet Skin** (`katharsis:has_pet_skin`)
 
 Returns `true` if the pet has a skin applied.
 
 <Version type="1.0.0-beta.16">
 
-#### <Environment type="hypixel"/> **Enchantment** (`catharsis:enchantment`)
+#### <Environment type="hypixel"/> **Enchantment** (`katharsis:enchantment`)
 
 Returns `true` if the item has the specified enchantment at a matching level or within a matching level range.
 

@@ -79,531 +79,531 @@
     {
       "id": "skyblock_gui:stats/combat/health/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE010 Health [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/defense/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE008 Defense [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/true_defense/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE027 True Defense [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/strength/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE00D Strength [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/crit_chance/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE02C Crit Chance [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/crit_damage/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE007 Crit Damage [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/attack_speed/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE001 Attack Speed [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/ferocity/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE00B Ferocity [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/swing_range/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE024 Swing Range [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/intelligence/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE003 Intelligence [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/ability_damage/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE002 Ability Damage [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/health_regen/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE011 Health Regen [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/vitality/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE028 Vitality [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/combat/mending/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE014 Mending [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/mining/breaking_power/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE005 Breaking Power [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/mining/mining_speed/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE015 Mining Speed [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/mining/mining_spread/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE016 Mining Spread [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/mining/gemstone_spread/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE00F Gemstone Spread [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/mining/pristine/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE01C Pristine [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/mining/mining_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE053 Mining Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/mining/ore_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE053 Ore Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/mining/block_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE053 Block Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/mining/dwarven_metal_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE053 Dwarven Metal Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/mining/gemstone_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE053 Gemstone Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/bonus_pest_chance/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE019 Bonus Pest Chance [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/overbloom/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE02B Overbloom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/farming_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Farming Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/wheat_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Wheat Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/carrot_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Carrot Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/potato_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Potato Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/pumpkin_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Pumpkin Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/sugar_cane_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Sugar Cane Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/melon_slice_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Melon Slice Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/cactus_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Cactus Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/cocoa_beans_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Cocoa Beans Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/mushroom_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Mushroom Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/nether_wart_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Nether Wart Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/sunflower_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Sunflower Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/moonflower_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Moonflower Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/farming/wild_rose_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Wild Rose Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/foraging/sweep/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE023 Sweep [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/foraging/foraging_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE054 Foraging Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/foraging/fig_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE054 Fig Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/foraging/mangrove_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE054 Mangrove Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/fishing/fishing_speed/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE00C Fishing Speed [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/fishing/sea_creature_chance/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE021 Sea Creature Chance [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/fishing/double_hook_chance/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE009 Double Hook Chance [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/fishing/trophy_chance/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE02A Trophy Chance [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/fishing/treasure_chance/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE025 Treasure Chance [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/miscellaneous/speed/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE022 Speed [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/miscellaneous/magic_find/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE01A Magic Find [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/miscellaneous/pet_luck/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE013 Pet Luck [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/miscellaneous/heat_resistance/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE012 Heat Resistance [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/miscellaneous/cold_resistance/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE006 Cold Resistance [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/miscellaneous/respiration/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE01D Respiration [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/miscellaneous/pressure_resistance/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE01B Pressure Resistance [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/miscellaneous/fear/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE00A Fear [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/miscellaneous/tracking/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE077 Tracking [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/hunting/pull/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE02D Pull [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/hunting/hunter_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE05B Hunter Fortune [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/combat/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Combat Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/farming/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Farming Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/fishing/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Fishing Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/mining/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Mining Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/foraging/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Foraging Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/enchanting/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Enchanting Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/alchemy/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Alchemy Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/carpentry/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Carpentry Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/runecrafting/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Runecrafting Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/taming/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Taming Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/social/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Social Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/wisdom/hunting/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Hunting Wisdom [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/rift/rift_time/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE020 Rift Time [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/rift/rift_damage/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE01E Rift Damage [\\d,.]+"}
     },
     {
       "id": "skyblock_gui:stats/rift/mana_regen/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE004 Mana Regen [\\d,.]+"
       }
     },
     {
       "id": "skyblock_gui:stats/rift/hearts/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE01F Hearts [\\d,.]+"
       }
     }

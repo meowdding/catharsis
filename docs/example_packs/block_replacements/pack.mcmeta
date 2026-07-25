@@ -4,13 +4,13 @@
         "supported_formats": [15, 255],
         "min_format": 15,
         "max_format": 255,
-        "description": "Catharsis example pack about Block Replacements"
+        "description": "Katharsis example pack about Block Replacements"
     },
-    "catharsis:pack/v1": {
+    "katharsis:pack/v1": {
         "id": "block_replacements_example_pack",
         "version": "1.0.0",
         "dependencies": {
-            "catharsis": ">=1.0.0-beta.17"
+            "katharsis": ">=1.0.0-beta.17"
         }
     }
 }

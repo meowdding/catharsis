@@ -14,16 +14,16 @@ lang: en-US
 ## Publishing to Modrinth
 
 Since Modrinth only allows .zip files to be uploaded, you can put the .cats file inside a .zip file and naming the zip `<>.cats.zip`when publishing to Modrinth.
-You can also add pack.mcmeta and the icon alongside the .cats in the zip which appear when catharsis isn't installed, 
+You can also add pack.mcmeta and the icon alongside the .cats in the zip which appear when katharsis isn't installed, 
 the pack.mcmeta and the icon inside the .cats get prioritized.
 
 ````
 YourPack.cats.zip
 ├── YourPack.cats
-│   ├── pack.png      # Shows when catharsis is installed
-│   └── pack.mcmeta   # Shows when catharsis is installed
-├── pack.png          # Shows when catharsis is NOT installed, shows in the Modrinth/Prism Launcher
-└── pack.mcmeta       # Shows when catharsis is NOT installed, shows in the Modrinth/Prism Launcher
+│   ├── pack.png      # Shows when katharsis is installed
+│   └── pack.mcmeta   # Shows when katharsis is installed
+├── pack.png          # Shows when katharsis is NOT installed, shows in the Modrinth/Prism Launcher
+└── pack.mcmeta       # Shows when katharsis is NOT installed, shows in the Modrinth/Prism Launcher
 
 ````
 

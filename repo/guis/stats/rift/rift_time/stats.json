@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/rift/rift_time/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE020 Rift Time [\\d,.]+"
       }
     },

@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/miscellaneous/tracking/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE077 Tracking [\\d,.]+"
       }
     },

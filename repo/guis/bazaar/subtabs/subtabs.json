@@ -1,103 +1,103 @@
 {
   "target": {
-    "type": "catharsis:all",
+    "type": "katharsis:all",
     "conditions": [
       { "type": "title", "title": ".+ ➜ .+" },
       {
-        "type": "catharsis:any",
+        "type": "katharsis:any",
         "conditions": [
           {
-            "type": "catharsis:all",
+            "type": "katharsis:all",
             "conditions": [
               {
-                "type": "catharsis:slot",
+                "type": "katharsis:slot",
                 "index": 30,
                 "condition": {
                   "name": "To .+",
                   "mode": "regex",
                   "line": 0,
-                  "type": "catharsis:lore"
+                  "type": "katharsis:lore"
                 }
               },
               {
-                "type": "catharsis:slot",
+                "type": "katharsis:slot",
                 "index": 32,
                 "condition": {
                   "name": "Manage Orders",
                   "mode": "equals",
-                  "type": "catharsis:name"
+                  "type": "katharsis:name"
                 }
               }
             ]
           },
           {
-            "type": "catharsis:all",
+            "type": "katharsis:all",
             "conditions": [
               {
-                "type": "catharsis:slot",
+                "type": "katharsis:slot",
                 "index": 31,
                 "condition": {
                   "name": "To Bazaar",
                   "mode": "equals",
                   "line": 0,
-                  "type": "catharsis:lore"
+                  "type": "katharsis:lore"
                 }
               },
               {
-                "type": "catharsis:slot",
+                "type": "katharsis:slot",
                 "index": 32,
                 "condition": {
                   "name": "Manage Orders",
                   "mode": "equals",
-                  "type": "catharsis:name"
+                  "type": "katharsis:name"
                 }
               }
             ]
           },
           {
-            "type": "catharsis:all",
+            "type": "katharsis:all",
             "conditions": [
               {
-                "type": "catharsis:slot",
+                "type": "katharsis:slot",
                 "index": 39,
                 "condition": {
                   "name": "To Bazaar",
                   "mode": "equals",
                   "line": 0,
-                  "type": "catharsis:lore"
+                  "type": "katharsis:lore"
                 }
               },
               {
-                "type": "catharsis:slot",
+                "type": "katharsis:slot",
                 "index": 41,
                 "condition": {
                   "name": "Manage Orders",
                   "mode": "equals",
-                  "type": "catharsis:name"
+                  "type": "katharsis:name"
                 }
               }
             ]
           },
           {
-            "type": "catharsis:all",
+            "type": "katharsis:all",
             "conditions": [
               {
-                "type": "catharsis:slot",
+                "type": "katharsis:slot",
                 "index": 48,
                 "condition": {
                   "name": "To Bazaar",
                   "mode": "equals",
                   "line": 0,
-                  "type": "catharsis:lore"
+                  "type": "katharsis:lore"
                 }
               },
               {
-                "type": "catharsis:slot",
+                "type": "katharsis:slot",
                 "index": 50,
                 "condition": {
                   "name": "Manage Orders",
                   "mode": "equals",
-                  "type": "catharsis:name"
+                  "type": "katharsis:name"
                 }
               }
             ]
@@ -114,16 +114,16 @@
           {
             "name": "Go Back",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "To Bazaar",
             "mode": "equals",
             "line": 0,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -131,7 +131,7 @@
       "target": {
         "name": "Buy Instantly",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -139,7 +139,7 @@
       "target": {
         "name": "Sell Instantly",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -147,7 +147,7 @@
       "target": {
         "name": "Create Buy Order",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -155,7 +155,7 @@
       "target": {
         "name": "Create Sell Offer",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -163,7 +163,7 @@
       "target": {
         "name": "Fill my inventory!",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -171,7 +171,7 @@
       "target": {
         "name": "Manage Orders",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -181,14 +181,14 @@
           {
             "name": "Custom Amount",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "type": "item",
             "items": "oak_sign"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -198,14 +198,14 @@
           {
             "name": "Custom Amount",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "type": "item",
             "items": "redstone_block"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -213,7 +213,7 @@
       "target": {
         "name": "Direct Mode",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -221,7 +221,7 @@
       "target": {
         "name": "Advanced Mode",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -229,7 +229,7 @@
       "target": {
         "name": "View Graphs",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -237,7 +237,7 @@
       "target": {
         "name": "Instasell Ignore List",
         "mode": "equals",
-        "type": "catharsis:name"
+        "type": "katharsis:name"
       }
     },
     {
@@ -247,16 +247,16 @@
           {
             "name": "Instasell Ignore",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Bulk Instasell: Allowed!",
             "mode": "equals",
             "line": 4,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -266,16 +266,16 @@
           {
             "name": "Instasell Ignore",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Bulk Instasell: Ignored!",
             "mode": "equals",
             "line": 4,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     }
   ]

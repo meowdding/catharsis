@@ -17,7 +17,7 @@ which you can't override as off now.
 
 ### Applying a Gui Definition based on Mod Configs
 
-When defining a [Gui Definition](../ui_text/guis/definitions.md), you can use `catharsis:external_mod_config` to (not) apply
+When defining a [Gui Definition](../ui_text/guis/definitions.md), you can use `katharsis:external_mod_config` to (not) apply
 specific Gui Definitions if a different mod has a specific config toggle set to specific value.
 
 ::: warning

@@ -1,7 +1,7 @@
 {
   "target": {
     "title": "Runecrafting Skill",
-    "type": "catharsis:title"
+    "type": "katharsis:title"
   },
   "layout": [
     {
@@ -11,14 +11,14 @@
           {
             "name": "Runecrafting Skill",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 27,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -27,7 +27,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -35,10 +35,10 @@
               "Runecrafting Level I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -47,7 +47,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -55,10 +55,10 @@
               "Runecrafting Level I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -67,7 +67,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -75,10 +75,10 @@
               "Runecrafting Level I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -87,7 +87,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -95,10 +95,10 @@
               "Runecrafting Level II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -107,7 +107,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -115,10 +115,10 @@
               "Runecrafting Level II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -127,7 +127,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -135,10 +135,10 @@
               "Runecrafting Level II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -147,7 +147,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -155,10 +155,10 @@
               "Runecrafting Level III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -167,7 +167,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -175,10 +175,10 @@
               "Runecrafting Level III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -187,7 +187,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -195,10 +195,10 @@
               "Runecrafting Level III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -207,7 +207,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -215,10 +215,10 @@
               "Runecrafting Level IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -227,7 +227,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -235,10 +235,10 @@
               "Runecrafting Level IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -247,7 +247,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -255,10 +255,10 @@
               "Runecrafting Level IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -270,7 +270,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:end_portal_frame"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -278,10 +278,10 @@
               "Runecrafting Level V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -290,7 +290,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -298,10 +298,10 @@
               "Runecrafting Level V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -310,7 +310,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -318,10 +318,10 @@
               "Runecrafting Level V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -330,7 +330,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -338,10 +338,10 @@
               "Runecrafting Level VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -350,7 +350,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -358,10 +358,10 @@
               "Runecrafting Level VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -370,7 +370,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -378,10 +378,10 @@
               "Runecrafting Level VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -390,7 +390,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -398,10 +398,10 @@
               "Runecrafting Level VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -410,7 +410,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -418,10 +418,10 @@
               "Runecrafting Level VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -430,7 +430,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -438,10 +438,10 @@
               "Runecrafting Level VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -450,7 +450,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -458,10 +458,10 @@
               "Runecrafting Level VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -470,7 +470,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -478,10 +478,10 @@
               "Runecrafting Level VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -490,7 +490,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -498,10 +498,10 @@
               "Runecrafting Level VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -510,7 +510,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -518,10 +518,10 @@
               "Runecrafting Level IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -530,7 +530,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -538,10 +538,10 @@
               "Runecrafting Level IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -550,7 +550,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -558,10 +558,10 @@
               "Runecrafting Level IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -573,7 +573,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:end_portal_frame"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -581,10 +581,10 @@
               "Runecrafting Level X"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -593,7 +593,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -601,10 +601,10 @@
               "Runecrafting Level X"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -613,7 +613,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -621,10 +621,10 @@
               "Runecrafting Level X"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -633,7 +633,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -641,10 +641,10 @@
               "Runecrafting Level XI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -653,7 +653,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -661,10 +661,10 @@
               "Runecrafting Level XI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -673,7 +673,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -681,10 +681,10 @@
               "Runecrafting Level XI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -693,7 +693,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -701,10 +701,10 @@
               "Runecrafting Level XII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -713,7 +713,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -721,10 +721,10 @@
               "Runecrafting Level XII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -733,7 +733,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -741,10 +741,10 @@
               "Runecrafting Level XII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -753,7 +753,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -761,10 +761,10 @@
               "Runecrafting Level XIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -773,7 +773,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -781,10 +781,10 @@
               "Runecrafting Level XIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -793,7 +793,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -801,10 +801,10 @@
               "Runecrafting Level XIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -813,7 +813,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -821,10 +821,10 @@
               "Runecrafting Level XIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -833,7 +833,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -841,10 +841,10 @@
               "Runecrafting Level XIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -853,7 +853,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -861,10 +861,10 @@
               "Runecrafting Level XIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -876,7 +876,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:end_portal_frame"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -884,10 +884,10 @@
               "Runecrafting Level XV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -896,7 +896,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -904,10 +904,10 @@
               "Runecrafting Level XV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -916,7 +916,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -924,10 +924,10 @@
               "Runecrafting Level XV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -936,7 +936,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -944,10 +944,10 @@
               "Runecrafting Level XVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -956,7 +956,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -964,10 +964,10 @@
               "Runecrafting Level XVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -976,7 +976,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -984,10 +984,10 @@
               "Runecrafting Level XVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -996,7 +996,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1004,10 +1004,10 @@
               "Runecrafting Level XVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1016,7 +1016,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1024,10 +1024,10 @@
               "Runecrafting Level XVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1036,7 +1036,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1044,10 +1044,10 @@
               "Runecrafting Level XVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1056,7 +1056,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1064,10 +1064,10 @@
               "Runecrafting Level XVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1076,7 +1076,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1084,10 +1084,10 @@
               "Runecrafting Level XVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1096,7 +1096,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1104,10 +1104,10 @@
               "Runecrafting Level XVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1116,7 +1116,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1124,10 +1124,10 @@
               "Runecrafting Level XIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1136,7 +1136,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1144,10 +1144,10 @@
               "Runecrafting Level XIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1156,7 +1156,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1164,10 +1164,10 @@
               "Runecrafting Level XIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1179,7 +1179,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:end_portal_frame"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1187,10 +1187,10 @@
               "Runecrafting Level XX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1199,7 +1199,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1207,10 +1207,10 @@
               "Runecrafting Level XX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1219,7 +1219,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1227,10 +1227,10 @@
               "Runecrafting Level XX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1239,7 +1239,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1247,10 +1247,10 @@
               "Runecrafting Level XXI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1259,7 +1259,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1267,10 +1267,10 @@
               "Runecrafting Level XXI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1279,7 +1279,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1287,10 +1287,10 @@
               "Runecrafting Level XXI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1299,7 +1299,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1307,10 +1307,10 @@
               "Runecrafting Level XXII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1319,7 +1319,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1327,10 +1327,10 @@
               "Runecrafting Level XXII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1339,7 +1339,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1347,10 +1347,10 @@
               "Runecrafting Level XXII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1359,7 +1359,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1367,10 +1367,10 @@
               "Runecrafting Level XXIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1379,7 +1379,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1387,10 +1387,10 @@
               "Runecrafting Level XXIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1399,7 +1399,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1407,10 +1407,10 @@
               "Runecrafting Level XXIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1419,7 +1419,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1427,10 +1427,10 @@
               "Runecrafting Level XXIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1439,7 +1439,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1447,10 +1447,10 @@
               "Runecrafting Level XXIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1459,7 +1459,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1467,10 +1467,10 @@
               "Runecrafting Level XXIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1482,7 +1482,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:end_portal_frame"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1490,10 +1490,10 @@
               "Runecrafting Level XXV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1502,7 +1502,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1510,10 +1510,10 @@
               "Runecrafting Level XXV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1522,7 +1522,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1530,10 +1530,10 @@
               "Runecrafting Level XXV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1542,19 +1542,19 @@
         "conditions": [
           {
             "slot": 45,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": "Runecrafting: XP Multiplier",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     }
   ]

@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/wisdom/social/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Social Wisdom [\\d,.]+"
       }
     },

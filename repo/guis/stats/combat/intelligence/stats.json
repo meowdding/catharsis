@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/combat/intelligence/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE003 Intelligence [\\d,.]+"
       }
     },

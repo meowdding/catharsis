@@ -8,7 +8,7 @@
       "id": "skyblock_gui:stats/farming/nether_wart_fortune/icon",
       "target":
       {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE051 Nether Wart Fortune [\\d,.]+"
       }
     },

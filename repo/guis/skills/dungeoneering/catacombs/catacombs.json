@@ -1,7 +1,7 @@
 {
   "target": {
     "title": "Catacombs Rewards",
-    "type": "catharsis:title"
+    "type": "katharsis:title"
   },
   "layout": [
     {
@@ -11,14 +11,14 @@
           {
             "name": "Catacombs",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "slot": 27,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -27,7 +27,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -35,10 +35,10 @@
               "Catacombs Mastery I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -47,7 +47,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -55,10 +55,10 @@
               "Catacombs Mastery I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -67,7 +67,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -75,10 +75,10 @@
               "Catacombs Mastery I"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -87,7 +87,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -95,10 +95,10 @@
               "Catacombs Mastery II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -107,7 +107,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -115,10 +115,10 @@
               "Catacombs Mastery II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -127,7 +127,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -135,10 +135,10 @@
               "Catacombs Mastery II"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -147,7 +147,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -155,10 +155,10 @@
               "Catacombs Mastery III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -167,7 +167,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -175,10 +175,10 @@
               "Catacombs Mastery III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -187,7 +187,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -195,10 +195,10 @@
               "Catacombs Mastery III"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -207,7 +207,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -215,10 +215,10 @@
               "Catacombs Mastery IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -227,7 +227,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -235,10 +235,10 @@
               "Catacombs Mastery IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -247,7 +247,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -255,10 +255,10 @@
               "Catacombs Mastery IV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -270,7 +270,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:player_head"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -278,10 +278,10 @@
               "Catacombs Mastery V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -290,7 +290,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -298,10 +298,10 @@
               "Catacombs Mastery V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -310,7 +310,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -318,10 +318,10 @@
               "Catacombs Mastery V"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -330,7 +330,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -338,10 +338,10 @@
               "Catacombs Mastery VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -350,7 +350,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -358,10 +358,10 @@
               "Catacombs Mastery VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -370,7 +370,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -378,10 +378,10 @@
               "Catacombs Mastery VI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -390,7 +390,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -398,10 +398,10 @@
               "Catacombs Mastery VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -410,7 +410,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -418,10 +418,10 @@
               "Catacombs Mastery VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -430,7 +430,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -438,10 +438,10 @@
               "Catacombs Mastery VII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -450,7 +450,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -458,10 +458,10 @@
               "Catacombs Mastery VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -470,7 +470,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -478,10 +478,10 @@
               "Catacombs Mastery VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -490,7 +490,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -498,10 +498,10 @@
               "Catacombs Mastery VIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -510,7 +510,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -518,10 +518,10 @@
               "Catacombs Mastery IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -530,7 +530,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -538,10 +538,10 @@
               "Catacombs Mastery IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -550,7 +550,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -558,10 +558,10 @@
               "Catacombs Mastery IX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -573,7 +573,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:player_head"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -581,10 +581,10 @@
               "Catacombs Mastery X"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -593,7 +593,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -601,10 +601,10 @@
               "Catacombs Mastery X"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -613,7 +613,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -621,10 +621,10 @@
               "Catacombs Mastery X"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -633,7 +633,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -641,10 +641,10 @@
               "Catacombs Mastery XI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -653,7 +653,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -661,10 +661,10 @@
               "Catacombs Mastery XI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -673,7 +673,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -681,10 +681,10 @@
               "Catacombs Mastery XI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -693,7 +693,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -701,10 +701,10 @@
               "Catacombs Mastery XII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -713,7 +713,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -721,10 +721,10 @@
               "Catacombs Mastery XII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -733,7 +733,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -741,10 +741,10 @@
               "Catacombs Mastery XII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -753,7 +753,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -761,10 +761,10 @@
               "Catacombs Mastery XIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -773,7 +773,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -781,10 +781,10 @@
               "Catacombs Mastery XIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -793,7 +793,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -801,10 +801,10 @@
               "Catacombs Mastery XIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -813,7 +813,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -821,10 +821,10 @@
               "Catacombs Mastery XIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -833,7 +833,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -841,10 +841,10 @@
               "Catacombs Mastery XIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -853,7 +853,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -861,10 +861,10 @@
               "Catacombs Mastery XIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -876,7 +876,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:player_head"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -884,10 +884,10 @@
               "Catacombs Mastery XV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -896,7 +896,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -904,10 +904,10 @@
               "Catacombs Mastery XV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -916,7 +916,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -924,10 +924,10 @@
               "Catacombs Mastery XV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -936,7 +936,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -944,10 +944,10 @@
               "Catacombs Mastery XVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -956,7 +956,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -964,10 +964,10 @@
               "Catacombs Mastery XVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -976,7 +976,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -984,10 +984,10 @@
               "Catacombs Mastery XVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -996,7 +996,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1004,10 +1004,10 @@
               "Catacombs Mastery XVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1016,7 +1016,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1024,10 +1024,10 @@
               "Catacombs Mastery XVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1036,7 +1036,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1044,10 +1044,10 @@
               "Catacombs Mastery XVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1056,7 +1056,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1064,10 +1064,10 @@
               "Catacombs Mastery XVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1076,7 +1076,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1084,10 +1084,10 @@
               "Catacombs Mastery XVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1096,7 +1096,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1104,10 +1104,10 @@
               "Catacombs Mastery XVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1116,7 +1116,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1124,10 +1124,10 @@
               "Catacombs Mastery XIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1136,7 +1136,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1144,10 +1144,10 @@
               "Catacombs Mastery XIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1156,7 +1156,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1164,10 +1164,10 @@
               "Catacombs Mastery XIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1179,7 +1179,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:player_head"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1187,10 +1187,10 @@
               "Catacombs Mastery XX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1199,7 +1199,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1207,10 +1207,10 @@
               "Catacombs Mastery XX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1219,7 +1219,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1227,10 +1227,10 @@
               "Catacombs Mastery XX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1239,7 +1239,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1247,10 +1247,10 @@
               "Catacombs Mastery XXI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1259,7 +1259,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1267,10 +1267,10 @@
               "Catacombs Mastery XXI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1279,7 +1279,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1287,10 +1287,10 @@
               "Catacombs Mastery XXI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1299,7 +1299,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1307,10 +1307,10 @@
               "Catacombs Mastery XXII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1319,7 +1319,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1327,10 +1327,10 @@
               "Catacombs Mastery XXII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1339,7 +1339,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1347,10 +1347,10 @@
               "Catacombs Mastery XXII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1359,7 +1359,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1367,10 +1367,10 @@
               "Catacombs Mastery XXIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1379,7 +1379,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1387,10 +1387,10 @@
               "Catacombs Mastery XXIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1399,7 +1399,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1407,10 +1407,10 @@
               "Catacombs Mastery XXIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1419,7 +1419,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1427,10 +1427,10 @@
               "Catacombs Mastery XXIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1439,7 +1439,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1447,10 +1447,10 @@
               "Catacombs Mastery XXIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1459,7 +1459,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1467,10 +1467,10 @@
               "Catacombs Mastery XXIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1482,7 +1482,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:player_head"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1490,10 +1490,10 @@
               "Catacombs Mastery XXV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1502,7 +1502,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1510,10 +1510,10 @@
               "Catacombs Mastery XXV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1522,7 +1522,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1530,10 +1530,10 @@
               "Catacombs Mastery XXV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1542,7 +1542,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1550,10 +1550,10 @@
               "Catacombs Mastery XXVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1562,7 +1562,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1570,10 +1570,10 @@
               "Catacombs Mastery XXVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1582,7 +1582,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1590,10 +1590,10 @@
               "Catacombs Mastery XXVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1602,7 +1602,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1610,10 +1610,10 @@
               "Catacombs Mastery XXVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1622,7 +1622,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1630,10 +1630,10 @@
               "Catacombs Mastery XXVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1642,7 +1642,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1650,10 +1650,10 @@
               "Catacombs Mastery XXVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1662,7 +1662,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1670,10 +1670,10 @@
               "Catacombs Mastery XXVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1682,7 +1682,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1690,10 +1690,10 @@
               "Catacombs Mastery XXVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1702,7 +1702,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1710,10 +1710,10 @@
               "Catacombs Mastery XXVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1722,7 +1722,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1730,10 +1730,10 @@
               "Catacombs Mastery XXIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1742,7 +1742,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1750,10 +1750,10 @@
               "Catacombs Mastery XXIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1762,7 +1762,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1770,10 +1770,10 @@
               "Catacombs Mastery XXIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1785,7 +1785,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:player_head"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1793,10 +1793,10 @@
               "Catacombs Mastery XXX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1805,7 +1805,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1813,10 +1813,10 @@
               "Catacombs Mastery XXX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1825,7 +1825,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1833,10 +1833,10 @@
               "Catacombs Mastery XXX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1845,7 +1845,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1853,10 +1853,10 @@
               "Catacombs Mastery XXXI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1865,7 +1865,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1873,10 +1873,10 @@
               "Catacombs Mastery XXXI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1885,7 +1885,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1893,10 +1893,10 @@
               "Catacombs Mastery XXXI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1905,7 +1905,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1913,10 +1913,10 @@
               "Catacombs Mastery XXXII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1925,7 +1925,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1933,10 +1933,10 @@
               "Catacombs Mastery XXXII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1945,7 +1945,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1953,10 +1953,10 @@
               "Catacombs Mastery XXXII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1965,7 +1965,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1973,10 +1973,10 @@
               "Catacombs Mastery XXXIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -1985,7 +1985,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -1993,10 +1993,10 @@
               "Catacombs Mastery XXXIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2005,7 +2005,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2013,10 +2013,10 @@
               "Catacombs Mastery XXXIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2025,7 +2025,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2033,10 +2033,10 @@
               "Catacombs Mastery XXXIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2045,7 +2045,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2053,10 +2053,10 @@
               "Catacombs Mastery XXXIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2065,7 +2065,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2073,10 +2073,10 @@
               "Catacombs Mastery XXXIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2088,7 +2088,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:player_head"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2096,10 +2096,10 @@
               "Catacombs Mastery XXXV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2108,7 +2108,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2116,10 +2116,10 @@
               "Catacombs Mastery XXXV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2128,7 +2128,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2136,10 +2136,10 @@
               "Catacombs Mastery XXXV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2148,7 +2148,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2156,10 +2156,10 @@
               "Catacombs Mastery XXXVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2168,7 +2168,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2176,10 +2176,10 @@
               "Catacombs Mastery XXXVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2188,7 +2188,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2196,10 +2196,10 @@
               "Catacombs Mastery XXXVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2208,7 +2208,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2216,10 +2216,10 @@
               "Catacombs Mastery XXXVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2228,7 +2228,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2236,10 +2236,10 @@
               "Catacombs Mastery XXXVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2248,7 +2248,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2256,10 +2256,10 @@
               "Catacombs Mastery XXXVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2268,7 +2268,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2276,10 +2276,10 @@
               "Catacombs Mastery XXXVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2288,7 +2288,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2296,10 +2296,10 @@
               "Catacombs Mastery XXXVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2308,7 +2308,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2316,10 +2316,10 @@
               "Catacombs Mastery XXXVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2328,7 +2328,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2336,10 +2336,10 @@
               "Catacombs Mastery XXXIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2348,7 +2348,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2356,10 +2356,10 @@
               "Catacombs Mastery XXXIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2368,7 +2368,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2376,10 +2376,10 @@
               "Catacombs Mastery XXXIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2391,7 +2391,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:player_head"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2399,10 +2399,10 @@
               "Catacombs Mastery XL"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2411,7 +2411,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2419,10 +2419,10 @@
               "Catacombs Mastery XL"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2431,7 +2431,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2439,10 +2439,10 @@
               "Catacombs Mastery XL"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2451,7 +2451,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2459,10 +2459,10 @@
               "Catacombs Mastery XLI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2471,7 +2471,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2479,10 +2479,10 @@
               "Catacombs Mastery XLI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2491,7 +2491,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2499,10 +2499,10 @@
               "Catacombs Mastery XLI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2511,7 +2511,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2519,10 +2519,10 @@
               "Catacombs Mastery XLII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2531,7 +2531,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2539,10 +2539,10 @@
               "Catacombs Mastery XLII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2551,7 +2551,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2559,10 +2559,10 @@
               "Catacombs Mastery XLII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2571,7 +2571,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2579,10 +2579,10 @@
               "Catacombs Mastery XLIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2591,7 +2591,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2599,10 +2599,10 @@
               "Catacombs Mastery XLIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2611,7 +2611,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2619,10 +2619,10 @@
               "Catacombs Mastery XLIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2631,7 +2631,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2639,10 +2639,10 @@
               "Catacombs Mastery XLIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2651,7 +2651,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2659,10 +2659,10 @@
               "Catacombs Mastery XLIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2671,7 +2671,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2679,10 +2679,10 @@
               "Catacombs Mastery XLIV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2694,7 +2694,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:player_head"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2702,10 +2702,10 @@
               "Catacombs Mastery XLV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2714,7 +2714,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2722,10 +2722,10 @@
               "Catacombs Mastery XLV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2734,7 +2734,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2742,10 +2742,10 @@
               "Catacombs Mastery XLV"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2754,7 +2754,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2762,10 +2762,10 @@
               "Catacombs Mastery XLVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2774,7 +2774,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2782,10 +2782,10 @@
               "Catacombs Mastery XLVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2794,7 +2794,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2802,10 +2802,10 @@
               "Catacombs Mastery XLVI"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2814,7 +2814,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2822,10 +2822,10 @@
               "Catacombs Mastery XLVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2834,7 +2834,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2842,10 +2842,10 @@
               "Catacombs Mastery XLVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2854,7 +2854,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2862,10 +2862,10 @@
               "Catacombs Mastery XLVII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2874,7 +2874,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2882,10 +2882,10 @@
               "Catacombs Mastery XLVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2894,7 +2894,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2902,10 +2902,10 @@
               "Catacombs Mastery XLVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2914,7 +2914,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2922,10 +2922,10 @@
               "Catacombs Mastery XLVIII"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2934,7 +2934,7 @@
         "conditions": [
           {
             "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2942,10 +2942,10 @@
               "Catacombs Mastery XLIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2954,7 +2954,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2962,10 +2962,10 @@
               "Catacombs Mastery XLIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2974,7 +2974,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -2982,10 +2982,10 @@
               "Catacombs Mastery XLIX"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -2997,7 +2997,7 @@
               "minecraft:lime_stained_glass_pane",
               "minecraft:player_head"
             ],
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -3005,10 +3005,10 @@
               "Catacombs Mastery L"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -3017,7 +3017,7 @@
         "conditions": [
           {
             "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -3025,10 +3025,10 @@
               "Catacombs Mastery L"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -3037,7 +3037,7 @@
         "conditions": [
           {
             "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": [
@@ -3045,10 +3045,10 @@
               "Catacombs Mastery L"
             ],
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -3057,19 +3057,19 @@
         "conditions": [
           {
             "slot": 41,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:oak_sign",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": "Catacombs Profile",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -3078,19 +3078,19 @@
         "conditions": [
           {
             "slot": 39,
-            "type": "catharsis:slot"
+            "type": "katharsis:slot"
           },
           {
             "items": "minecraft:player_head",
-            "type": "catharsis:item"
+            "type": "katharsis:item"
           },
           {
             "name": "Catacombs RNG Meters",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     }
   ]

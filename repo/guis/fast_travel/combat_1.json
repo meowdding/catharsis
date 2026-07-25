@@ -1,7 +1,7 @@
 {
   "target": {
     "title": "Spider\u0027s Den Warps",
-    "type": "catharsis:title"
+    "type": "katharsis:title"
   },
   "layout": [
     {
@@ -11,16 +11,16 @@
           {
             "name": "Spider\u0027s Den - Spawn",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -30,19 +30,19 @@
           {
             "name": "Spider\u0027s Den - Spawn",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -52,16 +52,16 @@
           {
             "name": "Spider\u0027s Den - Top of Nest",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -71,19 +71,19 @@
           {
             "name": "Spider\u0027s Den - Top of Nest",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -93,16 +93,16 @@
           {
             "name": "Spider\u0027s Den - Arachne\u0027s Sanctuary",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "name": "Warp not unlocked!",
             "mode": "equals",
             "line": -1,
-            "type": "catharsis:lore"
+            "type": "katharsis:lore"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     },
     {
@@ -112,19 +112,19 @@
           {
             "name": "Spider\u0027s Den - Arachne\u0027s Sanctuary",
             "mode": "equals",
-            "type": "catharsis:name"
+            "type": "katharsis:name"
           },
           {
             "condition": {
               "name": "Warp not unlocked!",
               "mode": "equals",
               "line": -1,
-              "type": "catharsis:lore"
+              "type": "katharsis:lore"
             },
-            "type": "catharsis:not"
+            "type": "katharsis:not"
           }
         ],
-        "type": "catharsis:all"
+        "type": "katharsis:all"
       }
     }
   ]

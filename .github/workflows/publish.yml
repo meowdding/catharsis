@@ -39,4 +39,4 @@ jobs:
                     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
                     gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-                    command: pages deploy build/repo --project-name="catharsis-repo" --commit-hash=${{ github.sha }} --branch=${{ github.ref_name }}
+                    command: pages deploy build/repo --project-name="katharsis-repo" --commit-hash=${{ github.sha }} --branch=${{ github.ref_name }}

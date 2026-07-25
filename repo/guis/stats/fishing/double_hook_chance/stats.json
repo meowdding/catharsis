@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/fishing/double_hook_chance/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE009 Double Hook Chance [\\d,.]+"
       }
     },

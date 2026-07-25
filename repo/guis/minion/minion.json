@@ -47,7 +47,7 @@
     {
       "id": "skyblock_gui:minion/upgrade/1",
       "target": {
-        "type": "catharsis:all",
+        "type": "katharsis:all",
         "conditions": [
           {
             "type": "name",
@@ -64,7 +64,7 @@
     {
       "id": "skyblock_gui:minion/upgrade/2",
       "target": {
-        "type": "catharsis:all",
+        "type": "katharsis:all",
         "conditions": [
           {
             "type": "name",
@@ -81,7 +81,7 @@
     {
       "id": "skyblock_gui:minion/quick_upgrade/unaffordable",
       "target": {
-        "type": "catharsis:all",
+        "type": "katharsis:all",
         "conditions": [
           {
             "type": "name",
@@ -100,7 +100,7 @@
     {
       "id": "skyblock_gui:minion/quick_upgrade/affordable",
       "target": {
-        "type": "catharsis:all",
+        "type": "katharsis:all",
         "conditions": [
           {
             "type": "name",
@@ -119,7 +119,7 @@
     {
       "id": "skyblock_gui:minion/quick_upgrade/maxed",
       "target": {
-        "type": "catharsis:all",
+        "type": "katharsis:all",
         "conditions": [
           {
             "type": "name",

@@ -1,8 +1,8 @@
-import me.owdding.catharsis.features.gui.definitions.GuiDefinition
-import me.owdding.catharsis.features.gui.definitions.conditions.GuiDefinitionTitleCondition
-import me.owdding.catharsis.features.gui.definitions.slots.*
-import me.owdding.catharsis.features.gui.matchers.EqualsTextMatcher
-import me.owdding.catharsis.features.gui.matchers.RegexTextMatcher
+import me.owdding.katharsis.features.gui.definitions.GuiDefinition
+import me.owdding.katharsis.features.gui.definitions.conditions.GuiDefinitionTitleCondition
+import me.owdding.katharsis.features.gui.definitions.slots.*
+import me.owdding.katharsis.features.gui.matchers.EqualsTextMatcher
+import me.owdding.katharsis.features.gui.matchers.RegexTextMatcher
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import tech.thatgravyboat.skyblockapi.platform.Identifiers

@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "katharsis:model",
+    "model": "your_namespace:geo_models/iron_armor.geo.json",
+    "layers": [
+      "your_namespace:textures/wither_armor.png"
+    ]
+  }
+}

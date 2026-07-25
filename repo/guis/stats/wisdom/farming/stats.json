@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/wisdom/farming/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Farming Wisdom [\\d,.]+"
       }
     },

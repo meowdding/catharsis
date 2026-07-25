@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/wisdom/mining/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Mining Wisdom [\\d,.]+"
       }
     },

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:select",
+  "property": "katharsis:data_type",
+  "data_type": "rarity",
+  "cases": [
+    {
+      "when": "uncommon",
+      "model": {
+        "type": "katharsis:texture",
+        "texture": "your_namespace:uncommon"
+      }
+    }
+  ]
+}

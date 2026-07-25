@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:range_dispatch",
-    "property": "catharsis:enchanted_book_level",
+    "property": "katharsis:enchanted_book_level",
     "entries": [
       {
         "threshold": 1,

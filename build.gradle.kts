@@ -33,7 +33,7 @@ repositories {
     mavenLocal()
 }
 
-val accessWidenerFile = rootProject.file("src/catharsis.accesswidener")
+val accessWidenerFile = rootProject.file("src/katharsis.accesswidener")
 val mcVersion = stonecutter.current.version.replace(".", "")
 
 loom {
@@ -47,8 +47,8 @@ loom {
 }
 
 ksp {
-    arg("meowdding.project_name", "catharsis")
-    arg("meowdding.package", "me.owdding.catharsis.generated")
+    arg("meowdding.project_name", "katharsis")
+    arg("meowdding.package", "me.owdding.katharsis.generated")
 }
 
 tasks.withType<JavaCompile>().configureEach {
@@ -65,7 +65,7 @@ java {
     withSourcesJar()
 }
 
-val archiveName = "Catharsis"
+val archiveName = "Katharsis"
 
 base {
     archivesName.set("$archiveName-${archivesName.get()}")
@@ -129,7 +129,7 @@ tasks.processResources {
         expand(replacements)
     }
 
-    filesMatching("catharsis.json") {
+    filesMatching("katharsis.json") {
         expand(
             "branch" to gitBranch.map { it.standardOutput.toString().substringBefore("\n") }.get(),
             "ref" to gitRef.map { it.standardOutput.toString().substringBefore("\n") }.get(),
@@ -223,7 +223,7 @@ fun DependencyHandlerScope.includeImplementation(dep: Any) {
 }
 
 autoMixins {
-    mixinPackage = "me.owdding.catharsis.mixins"
-    projectName = "catharsis"
+    mixinPackage = "me.owdding.katharsis.mixins"
+    projectName = "katharsis"
     mixinExtrasVersion = "0.5.0"
 }

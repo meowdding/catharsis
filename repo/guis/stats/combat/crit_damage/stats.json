@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/combat/crit_damage/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE007 Crit Damage [\\d,.]+"
       }
     },

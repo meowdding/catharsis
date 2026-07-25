@@ -26,20 +26,20 @@ The definition follows the following scheme
 
 ## Supported Types
 
-### Simple (`catharsis:simple`)
+### Simple (`katharsis:simple`)
 
 A timespan with a fixed start and end.
 <Example>
 
 A simple timespan that only matches nighttime.
 
-<<< @/example_packs/TODO/assets/your_name_space/catharsis/timespans/is_day.json{json:line-numbers}
+<<< @/example_packs/TODO/assets/your_name_space/katharsis/timespans/is_day.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>simple</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:simple`
+- <TypeIcon type="string"/> **type**: `katharsis:simple`
 - <TypeIcon type="int" /> **begin**: The starting point of the timespan in ticks, relative to the day.
 - <TypeIcon type="int" /> **end**: The ending point of the timespan in ticks, relative to the day.
 
@@ -48,14 +48,14 @@ A simple timespan that only matches nighttime.
 
 <Version type="1.0.0-beta.18">
 
-### <Environment type="hypixel"/> Season (`catharsis:season`)
+### <Environment type="hypixel"/> Season (`katharsis:season`)
 
 A timespan about SkyBlock Seasons.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>season</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:season`
+- <TypeIcon type="string"/> **type**: `katharsis:season`
 - <TypeIcon type="string" /><TypeIcon type="array" /> **season**/**seasons**: A singular or a list of SkyBlock Seasons, can be `EARLY_SPRING`, `SPRING`, `LATE_SPRING`, etc. 
     for `SPRING`, `SUMMER`, `AUTUMN`, `WINTER`.
 

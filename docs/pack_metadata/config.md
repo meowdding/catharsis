@@ -5,7 +5,7 @@ lang: en-US
 
 # <Environment/> Config Element Definitions
 
-Your config can either be defined inside the `pack.mcmeta` file under the `catharsis:pack/v1` object or in a separate `config.catharsis.json` file in the root of your pack. 
+Your config can either be defined inside the `pack.mcmeta` file under the `katharsis:pack/v1` object or in a separate `config.katharsis.json` file in the root of your pack. 
 The latter will override any config defined in the `pack.mcmeta`.
 
 Each element in the `config` array must define a `type`. Elements that store values (like `boolean` or `color`) require a unique `id`.
@@ -92,7 +92,7 @@ Can be used to give tints to items:
 <TreeView>
 <span><TypeIcon type="object"/> List of <b>tints</b> inside an <a href="https://minecraft.wiki/w/Items_model_definition#model">item model definition</a></span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:config`
+- <TypeIcon type="string"/> **type**: `katharsis:config`
 - <TypeIcon type="string"/> **pack**: The id of the pack to check the config entry for.
 - <TypeIcon type="string"/> **id**: The id of the color config entry to check.
 

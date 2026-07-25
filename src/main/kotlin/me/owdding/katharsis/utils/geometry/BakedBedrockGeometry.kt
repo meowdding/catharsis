@@ -1,0 +1,49 @@
+package me.owdding.katharsis.utils.geometry
+
+import net.minecraft.core.Direction
+import org.joml.Vector2f
+import org.joml.Vector3f
+import kotlin.math.abs
+
+data class BakedBedrockVertex(
+    val position: Vector3f,
+    val uv: Vector2f,
+)
+
+data class BakedBedrockQuad(
+    val vertices: List<BakedBedrockVertex>,
+    val direction: Direction,
+) {
+
+    val normalX: Float = abs(direction.stepX.toFloat())
+    val normalY: Float = abs(direction.stepY.toFloat())
+    val normalZ: Float = abs(direction.stepZ.toFloat())
+}
+
+data class BakedBedrockCube(
+    val pivot: Vector3f,
+    val rotation: Vector3f,
+    val quads: List<BakedBedrockQuad>,
+)
+
+data class BakedBedrockBone(
+    val name: String,
+    val parent: String?,
+
+    var pivot: Vector3f,
+    var rotation: Vector3f,
+    val mirror: Boolean,
+    val inflate: Float,
+    val cubes: List<BakedBedrockCube>,
+
+    val children: MutableList<BakedBedrockBone> = mutableListOf(),
+) {
+
+    var offset: Vector3f = Vector3f()
+    var scale: Vector3f = Vector3f(1f, 1f, 1f)
+}
+
+data class BakedBedrockGeometry(
+    val description: BedrockGeometryDescription,
+    val bones: List<BakedBedrockBone>,
+)

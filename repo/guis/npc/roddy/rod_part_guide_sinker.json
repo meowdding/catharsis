@@ -1,7 +1,7 @@
 {
   "target": {
     "title": "Sinker",
-    "type": "catharsis:title"
+    "type": "katharsis:title"
   },
   "layout": [
     {

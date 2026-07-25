@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/combat/true_defense/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE027 True Defense [\\d,.]+"
       }
     },

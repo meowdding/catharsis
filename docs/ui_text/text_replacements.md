@@ -9,7 +9,7 @@ Text replacements allow you to modify text components in the game, such as item 
 
 ## Definition
 
-Definitions should be placed in: `assets/<namespace>/catharsis/text_replacements/<type>/<id>.json`.
+Definitions should be placed in: `assets/<namespace>/katharsis/text_replacements/<type>/<id>.json`.
 
 Existing Types:
 
@@ -28,28 +28,28 @@ Existing Types:
 
 ## Replacer Types
 
-### Regex (`catharsis:regex`)
+### Regex (`katharsis:regex`)
 
 Replaces text using regular expressions.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>regex</b> replacer object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:regex`
+- <TypeIcon type="string"/> **type**: `katharsis:regex`
 - <TypeIcon type="string"/> **regex**: The regular expression pattern to match.
 - <TypeIcon type="string"/> **replacement**: The replacement text. Supports regex groups (e.g. `$1`).
 - <TypeIcon type="boolean"/> **propagate**: Optional. If `false`, stops further replacements in the chain if this one matches. Defaults to `true`.
 
 </TreeView>
 
-### Composite (`catharsis:composite`)
+### Composite (`katharsis:composite`)
 
 Groups multiple replacers together to run them in sequence.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>composite</b> replacer object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:composite`
+- <TypeIcon type="string"/> **type**: `katharsis:composite`
 - <TypeIcon type="array"/> **replacers**: A list of [replacer definitions](#replacer-types).
 - <TypeIcon type="boolean"/> **propagate**: Optional. If `false`, stops the chain if a sub-replacer triggers a break. Defaults to `true`.
 

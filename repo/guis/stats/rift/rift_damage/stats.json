@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/rift/rift_damage/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE01E Rift Damage [\\d,.]+"
       }
     },

@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/wisdom/fishing/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Fishing Wisdom [\\d,.]+"
       }
     },

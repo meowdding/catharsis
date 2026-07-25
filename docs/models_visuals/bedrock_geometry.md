@@ -5,7 +5,7 @@ lang: en-US
 
 # <Environment/> Geo Models (Bedrock Geometry)
 
-Catharsis supports loading Bedrock Entity Geometry (`.geo.json`). 
+Katharsis supports loading Bedrock Entity Geometry (`.geo.json`). 
 This allows resource pack creators to use custom 3D models made in **Blockbench** for custom entities or armor models.
 
 ## Creating Your Model in Blockbench
@@ -39,7 +39,7 @@ See the [Entity Overrides Documentation](./entity_overrides.md) on how to overri
 
 ## Current Limitations & Quirks
 
-Catharsis uses a custom renderer to load Bedrock files into Minecraft. 
+Katharsis uses a custom renderer to load Bedrock files into Minecraft. 
 Because of this, some advanced Bedrock features are ignored or unsupported.
 
 Keep the following limits in mind when creating your models:

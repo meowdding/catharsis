@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/wisdom/foraging/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Foraging Wisdom [\\d,.]+"
       }
     },

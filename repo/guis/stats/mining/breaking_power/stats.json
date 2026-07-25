@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/mining/breaking_power/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE005 Breaking Power [\\d,.]+"
       }
     },

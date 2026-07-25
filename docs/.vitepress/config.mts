@@ -36,8 +36,8 @@ export const modVersions = [
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: "Catharsis",
-    description: "Catharsis Documentation",
+    title: "Katharsis",
+    description: "Katharsis Documentation",
     base: "/",
 
     head: [['link', {rel: 'icon', href: '/favicon.png'}]],
@@ -71,7 +71,7 @@ export default defineConfig({
                 text: "Pack Setup",
                 collapsed: false,
                 items: [
-                    {text: "Catharsis Pack Metadata", link: "/pack_metadata/index"},
+                    {text: "Katharsis Pack Metadata", link: "/pack_metadata/index"},
                     {text: "Configuration Options", link: "/pack_metadata/config"},
                     {text: "Fabric Overlays", link: "/pack_metadata/overlays"}
                 ]
@@ -153,7 +153,7 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/meowdding/catharsis'},
+            {icon: 'github', link: 'https://github.com/meowdding/katharsis'},
             {icon: 'discord', link: 'https://meowdd.ing/discord'},
             {icon: 'matrix', link: 'https://matrix.to/#/#meowdding:mona.cat'},
         ],
@@ -165,7 +165,7 @@ export default defineConfig({
         },
 
         editLink: {
-            pattern: 'https://github.com/meowdding/catharsis/tree/development/docs/:path'
+            pattern: 'https://github.com/meowdding/katharsis/tree/development/docs/:path'
         },
 
         lastUpdated: {

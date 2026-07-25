@@ -1,7 +1,7 @@
 {
   "target": {
     "title": "Catacombs Profile",
-    "type": "catharsis:title"
+    "type": "katharsis:title"
   },
   "layout": [
     {

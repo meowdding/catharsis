@@ -8,7 +8,7 @@ lang: en-US
 Areas are predefined regions that you can run checks with.
 This allows you to remodel things based on their location, while we also get the benefit of optimizing it.
 
-You can define areas under `<namespace>/catharsis/areas/<id>.json`
+You can define areas under `<namespace>/katharsis/areas/<id>.json`
 
 The definition follows the following scheme
 
@@ -30,39 +30,39 @@ The definition follows the following scheme
 
 ## Supported Types
 
-### Simple (`catharsis:simple`)
+### Simple (`katharsis:simple`)
 The most simple type of area.
 <Example> 
 
 A Simple area that only matches positions in the hub that are in the specified box.
 
-<<< @/example_packs/block_replacements/assets/your_name_space/catharsis/areas/simple.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/your_name_space/katharsis/areas/simple.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>simple</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:simple`
+- <TypeIcon type="string"/> **type**: `katharsis:simple`
 - <BoundingBox custom_title><TypeIcon/> <b>box</b>: One single bounding box</BoundingBox>
 - <TypeIcon type="array"/> <b>islands</b> (Optional) A list of skyblock islands
     - <Island/>
 
 </TreeView>
 
-### Multiple (`catharsis:multiple`)
+### Multiple (`katharsis:multiple`)
 Groups multiple boxes into one area.
 <Example>
 
 An area that matches all blocks in the dwarven mines that are in either of the two regions.<br>
 In addition, it also specifies a min branch size of 16, meaning that everything under side length 16 automatically collapses into a leaf.
 
-<<< @/example_packs/block_replacements/assets/your_name_space/catharsis/areas/multiple.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/your_name_space/katharsis/areas/multiple.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>multiple</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:multiple`
+- <TypeIcon type="string"/> **type**: `katharsis:multiple`
 - <TypeIcon type="array"/> <b>boxes</b>: A list of bounding boxes
     - <BoundingBox/>
 - <TypeIcon type="array"/> <b>islands</b>: (Optional) A list of skyblock islands
@@ -71,53 +71,53 @@ In addition, it also specifies a min branch size of 16, meaning that everything 
 
 </TreeView>
 
-### Always (`catharsis:always`)
+### Always (`katharsis:always`)
 Always matches
 
 <Example>
 
 An area that always matches any block everywhere.
 
-<<< @/example_packs/block_replacements/assets/your_name_space/catharsis/areas/always.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/your_name_space/katharsis/areas/always.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>always</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:always`
+- <TypeIcon type="string"/> **type**: `katharsis:always`
 
 </TreeView>
 
-### <Environment type="hypixel"/> On Island (`catharsis:on_island`)
-Similar to `catharsis:always`, the only difference is, that it also takes an island predicate.
+### <Environment type="hypixel"/> On Island (`katharsis:on_island`)
+Similar to `katharsis:always`, the only difference is, that it also takes an island predicate.
 
 <Example>
 Matches while any of the specified islands.
 
-<<< @/example_packs/block_replacements/assets/your_name_space/catharsis/areas/on_island.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/your_name_space/katharsis/areas/on_island.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>On Island</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:on_island`
+- <TypeIcon type="string"/> **type**: `katharsis:on_island`
 - <TypeIcon type="array"/> **islands**: (Optional) A list of skyblock islands
     - <Island/>
 
 </TreeView>
 
-### <Environment type="hypixel"/> Per Island (`catharsis:per_island`)
+### <Environment type="hypixel"/> Per Island (`katharsis:per_island`)
 Allows to change the definition based on the current island.
 <Example>
 Changes the definition based on the island, `always` and `on_island` have the exact same function in this case.
 
-<<< @/example_packs/block_replacements/assets/your_name_space/catharsis/areas/per_island.json{json:line-numbers}
+<<< @/example_packs/block_replacements/assets/your_name_space/katharsis/areas/per_island.json{json:line-numbers}
 </Example>
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>On Island</b> object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:per_island`
+- <TypeIcon type="string"/> **type**: `katharsis:per_island`
 - <TypeIcon type="object"/> **entries**: A list of area definitions
     - <TypeIcon type="array"/> **islands**: A list of skyblock islands
         - <Island/>

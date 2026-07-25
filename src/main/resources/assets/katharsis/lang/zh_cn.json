@@ -1,0 +1,6 @@
+{
+  "pack.katharsis.incompatible.title": "模组不兼容",
+  "pack.katharsis.incompatible.desc": "检测到不兼容的模组，悬停鼠标以查看详情。",
+  "pack.katharsis.incompatible.tooltip.missing": "缺失的模组：",
+  "pack.katharsis.incompatible.tooltip.conflicting": "过时的模组版本："
+}

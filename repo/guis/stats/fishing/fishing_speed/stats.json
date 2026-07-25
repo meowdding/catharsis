@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/fishing/fishing_speed/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE00C Fishing Speed [\\d,.]+"
       }
     },

@@ -1,7 +1,7 @@
 {
   "target": {
     "title": "Dungeon Classes",
-    "type": "catharsis:title"
+    "type": "katharsis:title"
   },
   "layout": [
     {

@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/wisdom/hunting/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "☯ Hunting Wisdom [\\d,.]+"
       }
     },

@@ -5,7 +5,7 @@ lang: en-US
 
 # <Environment/> Block Conditions
 
-Block conditions can be used together with a [conditional block replacement](index#conditional-catharsis-conditional) to check properties and types of blocks.
+Block conditions can be used together with a [conditional block replacement](index#conditional-katharsis-conditional) to check properties and types of blocks.
 
 ## Conditions
 

@@ -15,7 +15,7 @@ IDs of Data Types can be found at these locations:
 [MiningDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/MiningDataTypes.kt),
 [PersonalAccessoryDataTypes](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/datatype/defaults/PersonalAccessoryDataTypes.kt).
 
-You can use `/catharsis dev hand_data_types` to view all data types of the item in your hand.
+You can use `/katharsis dev hand_data_types` to view all data types of the item in your hand.
 
 ### Notice
 

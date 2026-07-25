@@ -5,10 +5,10 @@ lang: en-US
 
 # <Environment/> Gui Definitions
 
-In Catharsis we support a way to define definitions and ids for specific guis and their slots.
-This allows you to create dynamic guis that can be referenced in other parts of Catharsis or in Item Models.
+In Katharsis we support a way to define definitions and ids for specific guis and their slots.
+This allows you to create dynamic guis that can be referenced in other parts of Katharsis or in Item Models.
 
-You can define a gui definition in `assets/<namespace>/catharsis/guis/<id>.json`.
+You can define a gui definition in `assets/<namespace>/katharsis/guis/<id>.json`.
 
 ::: details Included Gui Definitions
 
@@ -43,43 +43,43 @@ You can define a gui definition in `assets/<namespace>/catharsis/guis/<id>.json`
 
 ## Available Gui Definition Target Types
 
-#### **Title** (`catharsis:title`)
+#### **Title** (`katharsis:title`)
 
 Match against a specific gui title.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>title</b> gui definition target object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:title`
+- <TypeIcon type="string"/> **type**: `katharsis:title`
 - <TypeIcon type="string"/> **title**: A regex pattern to match the gui title against.
 
 </TreeView>
 
-### <Environment type="hypixel"/> **Islands** (`catharsis:islands`)
+### <Environment type="hypixel"/> **Islands** (`katharsis:islands`)
 
 Match against the Player's current island.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>islands</b> gui definition target object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:islands`
+- <TypeIcon type="string"/> **type**: `katharsis:islands`
 - <TypeIcon type="array"/> **islands**: A list of island ids to match against, names are equal to the value of `mode` in `/locraw` or the enum name in [SkyBlockIsland](https://github.com/SkyblockAPI/SkyblockAPI/blob/4.0/src/main/kotlin/tech/thatgravyboat/skyblockapi/api/location/SkyBlockIsland.kt).
 </TreeView>
 
-#### **Slot** (`catharsis:slot`)
+#### **Slot** (`katharsis:slot`)
 
 Match against a gui with a specific slot condition.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>slot</b> gui definition target object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:slot`
+- <TypeIcon type="string"/> **type**: `katharsis:slot`
 - <TypeIcon type="integer"/> **index**: The slot index to match against.
 - <TypeIcon type="object"/> **condition**: The slot condition to match against.
 
 </TreeView>
 
-#### **MenuType** (`catharsis:type`)
+#### **MenuType** (`katharsis:type`)
 
 Match against a specific menu type.
 Menu Type names are located [here](https://github.com/misode/mcmeta/blob/registries/menu/data.json), including `inventory` for the player's inventory and `generic` for all chest container sizes.
@@ -87,12 +87,12 @@ Menu Type names are located [here](https://github.com/misode/mcmeta/blob/registr
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>menu</b> gui definition target object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:type`
+- <TypeIcon type="string"/> **type**: `katharsis:type`
 - <TypeIcon type="string"/> **menu**: The menu type to match against.
 
 </TreeView>
 
-### **External Mod Config** (`catharsis:external_mod_config`)
+### **External Mod Config** (`katharsis:external_mod_config`)
 
 Match against external mod config values.
 This allows you to ensure compatability with mods that override some guis.
@@ -103,7 +103,7 @@ Returns `true` if the value in the path matches the specified value.
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>external_mod_config</b> gui definition target object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:external_mod_config`
+- <TypeIcon type="string"/> **type**: `katharsis:external_mod_config`
 - <TypeIcon type="string"/> **modId**: (Optional) The modid of the mod. While its optional, its very recommended.
 - <TypeIcon type="string"/> **file**: The path to the specific config file, starting from the .minecraft/config folder, needs to end in .json, .jsonc or .json5.
 - <TypeIcon type="string"/> **path**: The JsonPath to the value to check, supports basic dot notation.
@@ -111,36 +111,36 @@ Returns `true` if the value in the path matches the specified value.
 
 </TreeView>
 
-#### **All/And** (`catharsis:all`)
+#### **All/And** (`katharsis:all`)
 
 Check if a list of conditions are true, useful for chaining conditions.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>all</b> gui definition target object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:all`
+- <TypeIcon type="string"/> **type**: `katharsis:all`
 - <TypeIcon type="array"/> **conditions**: a list of conditions to check through.
 </TreeView>
 
-#### **Any/Or** (`catharsis:any`)
+#### **Any/Or** (`katharsis:any`)
 
 Check if any in list of conditions are true, useful for chaining conditions.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>any</b> gui definition target object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:any`
+- <TypeIcon type="string"/> **type**: `katharsis:any`
 - <TypeIcon type="array"/> **conditions**: a list of conditions to check through.
 </TreeView>
 
-#### **Not** (`catharsis:not`)
+#### **Not** (`katharsis:not`)
 
 Check if a condition is false, useful for chaining conditions.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>any</b> gui definition target object</span>
 
-- <TypeIcon type="string"/> **type**: `catharsis:not`
+- <TypeIcon type="string"/> **type**: `katharsis:not`
 - <TypeIcon type="object"/> **condition**: a condition to check against.
 
 </TreeView>

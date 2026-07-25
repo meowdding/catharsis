@@ -5,11 +5,11 @@ lang: en-US
 
 # <Environment/> Defining Entity Overrides
 
-Catharsis allows you to override entity models and textures using Bedrock entity geometry (`.geo.json`) and specific targeting conditions.
+Katharsis allows you to override entity models and textures using Bedrock entity geometry (`.geo.json`) and specific targeting conditions.
 
 Example of an entity definition and its corresponding model and texture mapping.
 
-**`{your_namespace}:catharsis/entity_definitions/{entity_name}.json`**
+**`{your_namespace}:katharsis/entity_definitions/{entity_name}.json`**
 
 ```json
 {
@@ -20,7 +20,7 @@ Example of an entity definition and its corresponding model and texture mapping.
 }
 ```
 
-**`{your_namespace}:catharsis/entities/{entity_name}.json`** (Single Variant)
+**`{your_namespace}:katharsis/entities/{entity_name}.json`** (Single Variant)
 
 ```json
 {
@@ -31,7 +31,7 @@ Example of an entity definition and its corresponding model and texture mapping.
 
 <Version type="1.0.0-beta.17">
 
-**`{your_namespace}:catharsis/entities/{entity_name}.json`** (Weighted Randomization)
+**`{your_namespace}:katharsis/entities/{entity_name}.json`** (Weighted Randomization)
 
 ```json
 {
@@ -56,7 +56,7 @@ Example of an entity definition and its corresponding model and texture mapping.
 To override an entity, you need to provide two JSON files. The first handles the targeting and conditions, while the second links the actual model and texture assets.
 
 <TreeView>
-  <span><TypeIcon type="object"/> An <b>Entity Definition</b> object (`catharsis/entity_definitions/{entity_name}.json`)</span>
+  <span><TypeIcon type="object"/> An <b>Entity Definition</b> object (`katharsis/entity_definitions/{entity_name}.json`)</span>
 
 - <TypeIcon type="object"/> **target**: The condition logic required to match the entity.
   - <TypeIcon type="string"/> **type**: The condition type (e.g., `identity`, `is_baby`, `all`, etc.).
@@ -69,7 +69,7 @@ To override an entity, you need to provide two JSON files. The first handles the
 
 <Version type="1.0.0-beta.17">
 <TreeView>
-  <span><TypeIcon type="object"/> An <b>Entity Asset Mapping</b> object (`catharsis/entities/{entity_name}.json`)</span>
+  <span><TypeIcon type="object"/> An <b>Entity Asset Mapping</b> object (`katharsis/entities/{entity_name}.json`)</span>
 
 - <TypeIcon type="array"/><TypeIcon type="object"/> Either a list of variants or a single variant can be provided.
   - <TypeIcon type="array"/> **variants**: A list of variations to apply to the entity to support randomizing models and textures. Selecting is based on the entity's UUID.
@@ -164,7 +164,7 @@ Allows you to access the entity's maximum health value.
 
 - <TypeIcon type="string"/> **type**: `max_health`
 - <TypeIcon type="any"/> **max_health**: Matches a specific maximum health value or a range of values.
-- <TypeIcon type="boolean"/> **use_modifiers**: (Optional) Use Health Modifiers like mayor perks etc, see a full list [here](https://github.com/meowdding/catharsis/blob/stable/repo/health_modifiers.json).
+- <TypeIcon type="boolean"/> **use_modifiers**: (Optional) Use Health Modifiers like mayor perks etc, see a full list [here](https://github.com/meowdding/katharsis/blob/stable/repo/health_modifiers.json).
 
 </TreeView>
 </Version>

@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/hunting/hunting_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE05B Hunting Fortune [\\d,.]+"
       }
     },

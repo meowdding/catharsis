@@ -7,7 +7,7 @@
     {
       "id": "skyblock_gui:stats/foraging/mangrove_fortune/icon",
       "target": {
-        "type": "catharsis:name",
+        "type": "katharsis:name",
         "name": "\uE054 Mangrove Fortune [\\d,.]+"
       }
     },

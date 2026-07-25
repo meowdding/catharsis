@@ -1,11 +1,11 @@
 ---
-title: Catharsis Documentation
+title: Katharsis Documentation
 lang: en-US
 ---
 
-# Catharsis Documentation
+# Katharsis Documentation
 
-Catharsis provides a vanilla like system for retexturing and remodeling Skyblock items, blocks, and entities.
+Katharsis provides a vanilla like system for retexturing and remodeling Skyblock items, blocks, and entities.
 
 ## Main Features
 
@@ -27,20 +27,20 @@ Certain features are exclusive to either Hypixel SkyBlock or Vanilla Minecraft. 
 
 Unless otherwise specified, these restrictions also apply to any subsection beneath the annotated section.
 
-## Catharsis Texture Packs
+## Katharsis Texture Packs
 
-Using the [Modrinth](https://modrinth.com/) API, once a day we fetch every Catharsis texture pack to display them on our Website.
-<br>You can see all the wonderful texture packs that creators have made using Catharsis [here](https://meowdd.ing/texturepacks).
+Using the [Modrinth](https://modrinth.com/) API, once a day we fetch every Katharsis texture pack to display them on our Website.
+<br>You can see all the wonderful texture packs that creators have made using Katharsis [here](https://meowdd.ing/texturepacks).
 
 ::: details My Texture Pack Isn't Showing Up!
 
-Make sure to add Catharsis as a dependency on your Modrinth releases:
+Make sure to add Katharsis as a dependency on your Modrinth releases:
 
-<img alt="A Modrinth edit version page" src="/modrinth-catharsis.png">
+<img alt="A Modrinth edit version page" src="/modrinth-katharsis.png">
 
 :::
 
 ## Missing Documentation
 
 While we are still in beta, some stuff will be missing from the documentation.
-Check out [this GitHub Issue](https://github.com/meowdding/catharsis/issues/120) to see what's missing.
+Check out [this GitHub Issue](https://github.com/meowdding/katharsis/issues/120) to see what's missing.

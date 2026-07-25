@@ -10,13 +10,13 @@ ID's containing a `:` have been replaced with `.` to allow for retexturing items
 
 ::: tip
 Some items like runes, attributes, enchantments, pets, potions get special sub identifiers.
-To quickly find the resolved identifier of any item in your hand, use [`/catharsis dev hand_id`](/dev_tools/commands#catharsis-dev-hand-id).
+To quickly find the resolved identifier of any item in your hand, use [`/katharsis dev hand_id`](/dev_tools/commands#katharsis-dev-hand-id).
 :::
 
 ## Special Sub Identifiers
 
 Because items like attributes, enchantments, pets, potions, and runes share generic base item IDs, 
-Catharsis uses their extra data properties to generate custom sub identifiers:
+Katharsis uses their extra data properties to generate custom sub identifiers:
 
 | Item Type          | Identifier                              | Example Logic                                                     |
 |:-------------------|:----------------------------------------|:------------------------------------------------------------------|
@@ -32,7 +32,7 @@ Catharsis uses their extra data properties to generate custom sub identifiers:
 Some Gui Items sometimes don't have a SkyBlock ID while clearly representing an actual item.
 These **id-less** items get assigned a **Derived ID** based on their context.
 
-Resource packs have the ability to not use these types of IDs. If **every** loaded Catharsis resource pack specifies `"disableDerivedIds": true` in their `pack.mcmeta` file , 
+Resource packs have the ability to not use these types of IDs. If **every** loaded Katharsis resource pack specifies `"disableDerivedIds": true` in their `pack.mcmeta` file , 
 retexturing for all derived IDs will be completely disabled.
 
 ### Derived ID Example

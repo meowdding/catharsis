@@ -29,8 +29,8 @@ import java.util.function.Consumer
 import kotlin.math.max
 
 
-class PackConfigScreen(private val parent: Screen?, pack: String, private val options: List<PackConfigOption>) : Screen(Component.empty()) {
-
+class PackConfigScreen @JvmOverloads constructor(private val parent: Screen?, pack: String, private val options: List<PackConfigOption>, commandSearchQuery: String = "") :
+    Screen(Component.empty()) {
     private val config = PackConfigHandler.getConfig(pack)
     private val originalConfigData = config.current.deepCopy()
 
@@ -38,7 +38,7 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
     private val tabs: TabManager = TabManager({ widget -> this.addRenderableWidget(widget) }, { widget -> this.removeWidget(widget) })
     private var navigation: TabNavigationBar? = null
 
-    private var searchQuery: String = ""
+    private var searchQuery: String = commandSearchQuery
     private var searchBox: EditBox? = null
     private var currentTabTitle: Component? = null
 
@@ -54,6 +54,7 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
                         matchingOptions.map(this::getOptionElement).forEach(layout::addChild)
                     }
                 }
+
                 else -> {
                     if (option.matches(searchQuery)) {
                         val layout = contents.getOrPut(GENERAL_TAB) { LinearLayout.vertical().spacing(8) }

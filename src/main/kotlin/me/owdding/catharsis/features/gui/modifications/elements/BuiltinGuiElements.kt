@@ -1,6 +1,5 @@
 package me.owdding.catharsis.features.gui.modifications.elements
 
-//? > 26.1
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.gui.modifications.elements.conditions.GuiElementCondition
 import me.owdding.catharsis.generated.CatharsisCodecs
@@ -17,6 +16,7 @@ import net.minecraft.util.CommonColors
 import net.minecraft.util.LightCoordsUtil
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EntitySpawnReason
+//? > 26.1
 import net.minecraft.world.entity.EntitySpawnRequest
 import net.minecraft.world.entity.EntityType
 import net.minecraft.world.entity.LivingEntity

@@ -287,6 +287,72 @@ Render a button on the screen.
 
 </TreeView>
 
+
+<Version type="1.0.0-beta.21">
+
+### Item Stack (`catharsis:item_stack`)
+Render an item stack on the screen. 
+It automatically displays the item's tooltip when hovered, which can be overridden with custom tooltips.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>GUI widget</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:item_stack`
+- <TypeIcon type="object"/> **condition**: (Optional) A [GUI element condition](#gui-element-conditions) to determine if this element should render.
+- <TypeIcon type="object"/> **item**: An [Item Stack Provider](#item-stack-providers) to determine what item to render.
+- <TypeIcon type="string"/> **layer**: (Optional) The layer to render the item on, defaults to `FOREGROUND`. Can be `BACKGROUND` & `FOREGROUND`.
+- <TypeIcon type="object"/> **interaction**: (Optional) The interaction when clicked, view [here](#gui-widget-interaction).
+- <TypeIcon type="object"/><TypeIcon type="list"/> **tooltip**: (Optional) Defining this overrides the Item's default tooltips, view [here](#gui-widget-tooltip).
+- <TypeIcon type="object"/> **x**: The x coordinate & alignment of the item. **Can only be one of the entries below.**
+    - <TypeIcon type="int"/> The x coordinate based from the `START`.
+    - <TypeIcon type="object"/> Coordinate & Alignment object.
+        - <TypeIcon type="int"/> **offset**: The offset from the screen bounds (main container size).
+        - <TypeIcon type="string"/> **alignment**: The alignment of the item, can be `START`, `CENTER` or `END`.
+- <TypeIcon type="object"/> **y**: The y coordinate & alignment of the item. **Can only be one of the entries below.**
+    - <TypeIcon type="int"/> The y coordinate based from the `START`.
+    - <TypeIcon type="object"/> Coordinate & Alignment object.
+        - <TypeIcon type="int"/> **offset**: The offset from the screen bounds (main container size).
+        - <TypeIcon type="string"/> **alignment**: The alignment of the item, can be `START`, `CENTER` or `END`.
+- <TypeIcon type="int"/> **width**: (Optional) The width of the item, defaults to 16. 3d items will become pixelated when using a width above 16.
+- <TypeIcon type="int"/> **height**: (Optional) The height of the item, defaults to 16. 3d items will become pixelated when using a height above 16.
+</TreeView>
+
+#### Item Stack Providers
+
+Item Stack Providers allow you to define the source of an `ItemStack`.
+
+##### **JSON** (`catharsis:json`)
+Loads an item stack from Minecraft Item NBT JSON.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>json</b> item stack provider object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:json`
+- <TypeIcon type="object"/> **stack**: Standard Minecraft ItemStack JSON definition.
+</TreeView>
+
+#### **SkyBlock ID** (`catharsis:sbid`)
+Loads an item stack using a SkyBlock ID.
+
+Id Format: `<prefix>:<id>` or `<prefix>:<id>:<suffix>`
+
+| Prefix        | Id                      | Suffix        |
+|---------------|-------------------------|---------------|
+| `item`        | The normal id           | No Suffix     |
+| `attribute`   | The Attribute id        | No Suffix     |
+| `enchantment` | The enchant id          | Enchant Level |
+| `pet`         | The Pet Id from petInfo | Pet Rarity    |
+| `potion`      | The Potion Id           | Potion Level  |
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>sbid</b> item stack provider object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:sbid`
+- <TypeIcon type="string"/> **id**: The SkyBlock Id as formatted above.
+</TreeView>
+</Version>
+
+
 ## GUI Widget Interaction
 
 ### **Link** (`catharsis:link`)
@@ -415,7 +481,7 @@ Id Format: `<prefix>:<id>` or `<prefix>:<id>:<suffix>`
 | `attribute`   | The Attribute id        | No Suffix     |
 | `enchantment` | The enchant id          | Enchant Level |
 | `pet`         | The Pet Id from petInfo | Pet Rarity    |
-| `potion`      | The Potion Id           | Potion Lebvel |
+| `potion`      | The Potion Id           | Potion Level  |
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget tooltip</bold> object</span>

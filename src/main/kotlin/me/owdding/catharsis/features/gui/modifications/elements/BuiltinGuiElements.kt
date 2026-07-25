@@ -7,13 +7,13 @@ import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.client.gui.screens.inventory.InventoryScreen
-import net.minecraft.util.LightCoordsUtil
 import net.minecraft.client.renderer.RenderPipelines
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.Component
 import net.minecraft.resources.Identifier
 import net.minecraft.util.CommonColors
+import net.minecraft.util.LightCoordsUtil
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EntitySpawnReason
 //? > 26.1
@@ -51,7 +51,7 @@ abstract class AbstractGuiEntityElement() : GuiElement {
                 newX, newY, newX + width, newY + height,
                 30, 0.0625f,
                 mouseX.toFloat(), mouseY.toFloat(),
-                entity
+                entity,
             )
         } else {
             val scale = if (isLiving) entity.scale else 1f
@@ -124,7 +124,7 @@ data class GuiSpriteElement(
         graphics.blitSprite(
             RenderPipelines.GUI_TEXTURED, sprite,
             x.calculate(bounds.left(), bounds.width()), y.calculate(bounds.top(), bounds.height()),
-            width ?: bounds.width(), height ?: bounds.height()
+            width ?: bounds.width(), height ?: bounds.height(),
         )
     }
 

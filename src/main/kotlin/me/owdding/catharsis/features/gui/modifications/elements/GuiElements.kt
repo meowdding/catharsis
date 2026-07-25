@@ -32,5 +32,6 @@ object GuiWidgetElements {
 
     init {
         ID_MAPPER.put(Catharsis.id("button"), CatharsisCodecs.getMapCodec<GuiButtonElement>())
+        ID_MAPPER.put(Catharsis.id("item_stack"), CatharsisCodecs.getMapCodec<GuiItemStackElement>())
     }
 }

@@ -52,8 +52,8 @@ data class GuiItemStackElement(
     val width: Int = 16,
     val height: Int = 16,
     override val interaction: GuiWidgetInteraction = GuiNoOpWidgetInteraction,
-    @Compact override val tooltip: List<GuiWidgetTooltip>? = null,
-    override val condition: GuiElementCondition? = null,
+    @Compact override val tooltip: List<GuiWidgetTooltip>?,
+    override val condition: GuiElementCondition?,
 ) : GuiWidgetElement {
     override val codec: MapCodec<GuiItemStackElement> = CatharsisCodecs.getMapCodec<GuiItemStackElement>()
 

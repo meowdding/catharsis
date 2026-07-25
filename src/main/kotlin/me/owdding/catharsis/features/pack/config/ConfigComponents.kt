@@ -14,8 +14,8 @@ import net.minecraft.client.gui.components.tabs.TabManager
 import com.google.common.collect.ImmutableList
 import net.minecraft.client.gui.components.tabs.MenuTabBar
 //?} else {
-/*import net.minecraft.client.gui.components.tabs.TabNavigationBar*/
-//?}
+/*import net.minecraft.client.gui.components.tabs.TabNavigationBar
+*///?}
 import net.minecraft.client.gui.layouts.GridLayout
 import net.minecraft.client.gui.narration.NarrationElementOutput
 import net.minecraft.client.gui.navigation.ScreenRectangle

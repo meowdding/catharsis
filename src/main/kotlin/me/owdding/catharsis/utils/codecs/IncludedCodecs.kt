@@ -33,6 +33,7 @@ import net.minecraft.world.entity.EntityType
 import net.minecraft.world.entity.ai.attributes.Attribute
 import net.minecraft.world.inventory.MenuType
 import net.minecraft.world.item.Item
+import net.minecraft.world.item.ItemStack
 import net.minecraft.world.level.block.Block
 import org.joml.Quaternionf
 import org.joml.Vector2i
@@ -159,6 +160,9 @@ object IncludedCodecs {
         Either<CompoundTag, CompoundTag>::unwrap,
         Either<CompoundTag, CompoundTag>::left,
     )
+
+    @IncludedCodec
+    val itemStackCodec: Codec<ItemStack> = ItemStack.CODEC
 
     //     @IncludedCodec(keyable = true, named = "base64_string")
     val BASE64_STRING_CODEC: Codec<Base64String> = Codec.STRING.xmap(

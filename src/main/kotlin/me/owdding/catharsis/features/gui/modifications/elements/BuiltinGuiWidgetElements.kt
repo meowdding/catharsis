@@ -70,7 +70,10 @@ data class GuiItemStackElement(
         }
 
         val stack = item.getItemStack()
-        val itemTooltip = if (stack.isEmpty) emptyList() else stack.getLore()
+        val itemTooltip = if (stack.isEmpty) emptyList() else buildList {
+            add(stack.hoverName)
+            addAll(stack.getLore())
+        }
         return itemTooltip.ifEmpty { null }
     }
 

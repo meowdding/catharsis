@@ -2,8 +2,7 @@ package me.owdding.catharsis.features.gui.modifications.elements
 
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.gui.modifications.elements.conditions.GuiElementCondition
-import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiNoOpWidgetInteraction
-import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiWidgetInteraction
+import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiWidgetClickInteractions
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.GenerateCodec
@@ -19,7 +18,7 @@ data class GuiButtonElement(
     val normal: Identifier,
     val hovered: Identifier = normal,
 
-    override val interaction: GuiWidgetInteraction = GuiNoOpWidgetInteraction,
+    override val interaction: GuiWidgetClickInteractions = GuiWidgetClickInteractions.NO_OP,
     @Compact override val tooltip: List<GuiWidgetTooltip>?,
 
     val x: GuiElementPosition,
@@ -51,7 +50,7 @@ data class GuiItemStackElement(
     val y: GuiElementPosition = GuiElementPosition.START,
     val width: Int = 16,
     val height: Int = 16,
-    override val interaction: GuiWidgetInteraction = GuiNoOpWidgetInteraction,
+    override val interaction: GuiWidgetClickInteractions = GuiWidgetClickInteractions.NO_OP,
     @Compact override val tooltip: List<GuiWidgetTooltip>?,
     override val condition: GuiElementCondition?,
 ) : GuiWidgetElement {

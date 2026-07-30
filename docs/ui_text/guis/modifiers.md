@@ -249,7 +249,9 @@ Render a button on the screen.
 
 <Version type="1.0.0-beta.21">
 
-- <TypeIcon type="object"/> **interaction**: (Optional) The interaction when clicked, view [here](#gui-widget-interaction).
+- <TypeIcon type="object"/> **interaction**: (Optional) The interaction when clicked. **Can only be one of the entries below.**
+    - <TypeIcon type="object"/> A single widget interaction object (Defaults to Left&Right Click), view [here](#gui-widget-interaction).
+    - <TypeIcon type="object"/> A map of mouse buttons (`left`, `right`, `middle`) to widget interaction objects.
 
 </Version>
 
@@ -301,7 +303,9 @@ It automatically displays the item's tooltip when hovered, which can be overridd
 - <TypeIcon type="object"/> **condition**: (Optional) A [GUI element condition](#gui-element-conditions) to determine if this element should render.
 - <TypeIcon type="object"/> **item**: An [Item Stack Provider](#item-stack-providers) to determine what item to render.
 - <TypeIcon type="string"/> **layer**: (Optional) The layer to render the item on, defaults to `FOREGROUND`. Can be `BACKGROUND` & `FOREGROUND`.
-- <TypeIcon type="object"/> **interaction**: (Optional) The interaction when clicked, view [here](#gui-widget-interaction).
+- <TypeIcon type="object"/> **interaction**: (Optional) The interaction when clicked. **Can only be one of the entries below.**
+    - <TypeIcon type="object"/> A single widget interaction object (Defaults to Left&Right Click), view [here](#gui-widget-interaction).
+    - <TypeIcon type="object"/> A map of mouse buttons (`left`, `right`, `middle`) to widget interaction objects.
 - <TypeIcon type="object"/><TypeIcon type="list"/> **tooltip**: (Optional) Defining this overrides the Item's default tooltips, view [here](#gui-widget-tooltip).
 - <TypeIcon type="object"/> **x**: The x coordinate & alignment of the item. **Can only be one of the entries below.**
     - <TypeIcon type="int"/> The x coordinate based from the `START`.

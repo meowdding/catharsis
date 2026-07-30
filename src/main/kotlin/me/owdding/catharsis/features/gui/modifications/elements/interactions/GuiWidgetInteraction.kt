@@ -2,19 +2,22 @@ package me.owdding.catharsis.features.gui.modifications.elements.interactions
 
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
+import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
+import me.owdding.catharsis.generated.CatharsisCodecs.getCodec
+import me.owdding.catharsis.generated.CodecUtils
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.IncludedCodec
 import me.owdding.ktcodecs.OptionalNullable
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
+import java.util.*
 
-@GenerateCodec
 data class GuiWidgetClickInteractions(
-    @OptionalNullable val left: GuiWidgetInteraction? = null,
-    @OptionalNullable val right: GuiWidgetInteraction? = null,
-    @OptionalNullable val middle: GuiWidgetInteraction? = null,
+    val left: GuiWidgetInteraction? = null,
+    val right: GuiWidgetInteraction? = null,
+    val middle: GuiWidgetInteraction? = null,
 ) {
     fun getForButton(button: Int): GuiWidgetInteraction? = when (button) {
         0 -> left
@@ -26,9 +29,22 @@ data class GuiWidgetClickInteractions(
     companion object {
         val NO_OP = GuiWidgetClickInteractions(left = GuiNoOpWidgetInteraction)
 
+
+        private val GuiWidgetClickInteractionsCodec: MapCodec<GuiWidgetClickInteractions> = CodecUtils.lazyMapCodec {
+            RecordCodecBuilder.mapCodec {
+                it.group(
+                    getCodec<GuiWidgetInteraction>().optionalFieldOf("left").forGetter { getter -> Optional.ofNullable(getter.left) },
+                    getCodec<GuiWidgetInteraction>().optionalFieldOf("right").forGetter { getter -> Optional.ofNullable(getter.right) },
+                    getCodec<GuiWidgetInteraction>().optionalFieldOf("middle").forGetter { getter -> Optional.ofNullable(getter.middle) },
+                ).apply(it) { left, right, middle ->
+                    GuiWidgetClickInteractions(left = left.orElse(null), right = right.orElse(null), middle = middle.orElse(null))
+                }
+            }
+        }
+
         @IncludedCodec
         val CODEC: Codec<GuiWidgetClickInteractions> = Codec.withAlternative(
-            CatharsisCodecs.getCodec<GuiWidgetClickInteractions>(),
+            GuiWidgetClickInteractionsCodec.codec(),
             GuiWidgetInteractions.CODEC,
         ) { legacyInteraction -> GuiWidgetClickInteractions(left = legacyInteraction, right = legacyInteraction) }
     }

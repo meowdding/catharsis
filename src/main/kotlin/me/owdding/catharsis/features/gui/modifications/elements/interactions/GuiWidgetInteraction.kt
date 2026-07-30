@@ -38,6 +38,10 @@ data class GuiWidgetClickInteractions(
                     getCodec<GuiWidgetInteraction>().optionalFieldOf("right").forGetter { getter -> Optional.ofNullable(getter.right) },
                     getCodec<GuiWidgetInteraction>().optionalFieldOf("middle").forGetter { getter -> Optional.ofNullable(getter.middle) },
                 ).apply(it) { left, right, middle ->
+                    if (listOf(left, right, middle).all(Optional<*>::isEmpty)) {
+                        throw IllegalStateException("At least one click action must be specified!")
+                    }
+
                     GuiWidgetClickInteractions(left = left.orElse(null), right = right.orElse(null), middle = middle.orElse(null))
                 }
             }

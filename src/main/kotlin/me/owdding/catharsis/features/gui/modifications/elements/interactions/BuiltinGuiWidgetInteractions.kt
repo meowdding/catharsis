@@ -15,8 +15,8 @@ import java.net.URI
 
 @GenerateCodec
 data class GuiLinkWidgetInteraction(
-    val url: URI
-): GuiWidgetInteraction {
+    val url: URI,
+) : GuiWidgetInteraction {
     override val codec = CatharsisCodecs.getMapCodec<GuiLinkWidgetInteraction>()
     override fun click(button: Int) {
         ConfirmLinkScreen.confirmLinkNow(McScreen.self, url)
@@ -25,40 +25,48 @@ data class GuiLinkWidgetInteraction(
 
 @GenerateCodec
 data class GuiSlotClickWidgetInteraction(
-    val slot: Int
-): GuiWidgetInteraction {
+    val slot: Int,
+    val alwaysMiddleClick: Boolean = true,
+) : GuiWidgetInteraction {
     override val codec = CatharsisCodecs.getMapCodec<GuiSlotClickWidgetInteraction>()
     override fun click(button: Int) {
         val menu = McScreen.asMenu?.menu ?: return
         val slotId = menu.getSlot(slot).takeIf { it != null && it.index == slot }?.index ?: return
         val player = McPlayer.self ?: return
 
-        // This simulates a "pick block" action on the slot, this is ONLY possible when using the pick key as a keyboard bind, not by mouse.
-        // Every update we need to check if this is still possible as to not send invalid packets.
-        // TODO maybe add ability to remotely disable this if hypixel does a patch that breaks it, but doubtful since its possible in vanilla.
-        McClient.self.gameMode?.handleContainerInput(menu.containerId, slotId, 0, ContainerInput.CLONE, player)
+        if (alwaysMiddleClick) {
+            // This simulates a "pick block" action on the slot, this is ONLY possible when using the pick key as a keyboard bind, not by mouse.
+            // Every update we need to check if this is still possible as to not send invalid packets.
+            // TODO maybe add ability to remotely disable this if hypixel does a patch that breaks it, but doubtful since its possible in vanilla.
+            McClient.self.gameMode?.handleContainerInput(menu.containerId, slotId, 0, ContainerInput.CLONE, player)
+        } else {
+            // allow left/right/middle click + with shift modifier
+            val input = if (McScreen.isShiftDown) ContainerInput.QUICK_MOVE else ContainerInput.PICKUP
+            McClient.self.gameMode?.handleContainerInput(menu.containerId, slotId, button, input, player)
+        }
     }
 }
 
 @GenerateCodec
 data class GuiSlotIdClickWidgetInteraction(
-    val slot: Identifier
-): GuiWidgetInteraction {
+    val slot: Identifier,
+    val alwaysMiddleClick: Boolean = true,
+) : GuiWidgetInteraction {
     override val codec = CatharsisCodecs.getMapCodec<GuiSlotIdClickWidgetInteraction>()
 
     fun getSlot() = McScreen.asMenu?.menu?.slots?.firstOrNull { GuiDefinitions.getSlot(it.index) == slot }
 
     override fun click(button: Int) {
         val slot = getSlot() ?: return
-        GuiSlotClickWidgetInteraction(slot.index).click(button)
+        GuiSlotClickWidgetInteraction(slot.index, alwaysMiddleClick).click(button)
     }
 }
 
 
 @GenerateCodec
 data class GuiCommandWidgetInteraction(
-    val command: String
-): GuiWidgetInteraction {
+    val command: String,
+) : GuiWidgetInteraction {
     override val codec = CatharsisCodecs.getMapCodec<GuiCommandWidgetInteraction>()
     override fun click(button: Int) {
         if (CommandWhiteList.isWhitelisted(command)) {

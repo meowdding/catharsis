@@ -373,9 +373,17 @@ Click a slot on the screen.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget interaction</bold> object</span>
+<ul>
 
 - <TypeIcon type="string"/> **type**: `catharsis:slot`
 - <TypeIcon type="int"/> **slot**: The slot to click.
+
+<Version type=1.0.0-beta.21>
+
+- <TypeIcon type="boolean"/> **alwaysMiddleClick**: (Optional) Middle clicks the slot to avoid picking it up, clicks will pass through with shift when disabled. Defaults to `true`.
+
+</Version>
+</ul>
 
 </TreeView>
 
@@ -387,9 +395,17 @@ Click a slot on the screen based the Gui Id.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <bold>widget interaction</bold> object</span>
+<ul>
 
 - <TypeIcon type="string"/> **type**: `catharsis:slot_id`
 - <TypeIcon type="string"/> **slot**: The identifier of the slot.
+
+<Version type=1.0.0-beta.21>
+
+- <TypeIcon type="boolean"/> **alwaysMiddleClick**: (Optional) Middle clicks the slot to avoid picking it up, clicks will pass through with shift when disabled. Defaults to `true`.
+
+</Version>
+</ul>
 
 </TreeView>
 </Version>

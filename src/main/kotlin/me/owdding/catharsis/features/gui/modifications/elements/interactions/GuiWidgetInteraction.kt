@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.gui.modifications.elements.interactions
 
+import com.mojang.datafixers.util.Either
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
@@ -43,10 +44,13 @@ data class GuiWidgetClickInteractions(
         }
 
         @IncludedCodec
-        val CODEC: Codec<GuiWidgetClickInteractions> = Codec.withAlternative(
-            GuiWidgetClickInteractionsCodec.codec(),
+        val CODEC: Codec<GuiWidgetClickInteractions> = Codec.either(
             GuiWidgetInteractions.CODEC,
-        ) { legacyInteraction -> GuiWidgetClickInteractions(left = legacyInteraction, right = legacyInteraction) }
+            GuiWidgetClickInteractionsCodec.codec(),
+        ).xmap(
+            { either -> either.map({ legacyInteraction -> GuiWidgetClickInteractions(left = legacyInteraction, right = legacyInteraction) }, { it }) },
+            Either<*, GuiWidgetClickInteractions>::right,
+        )
     }
 }
 

@@ -15,7 +15,7 @@ Catharsis exposes three entrypoints under its IMC setup:
 |:------------------------------------|:-------------------------------------------------------------------------------|:-------------------------------------------------------|
 | `catharsis:imc/item_id`             | Applies a specific Catharsis ID to an `ItemStack` directly.                    | `java.util.function.BiConsumer<ItemStack, Identifier>` |
 | `catharsis:imc/disabled`            | Disables Catharsis retexturing and GUI behaviors for an item stack completely. | `java.util.function.BiConsumer<ItemStack, Boolean>`    |
-| `catharsis:imc/hidden_mod_elements` | Checks if a named UI element is hidden by the currently active GUI modifier.   | `java.util.function.Predicate<String>`                 |
+| `catharsis:imc/hidden_gui_elements` | Checks if a named UI element is hidden by the currently active GUI modifier.   | `java.util.function.Predicate<String>`                 |
 
 ## Registering Entrypoints
 
@@ -29,7 +29,7 @@ To link your mods compatibility handlers, register static method handles or cons
   "catharsis:imc/disabled": [
     "your.package.CatharsisSupport::disabled"
   ],
-  "catharsis:imc/hidden_mod_elements": [
+  "catharsis:imc/hidden_gui_elements": [
     "your.package.CatharsisSupport::hiddenModElements"
   ]
 }

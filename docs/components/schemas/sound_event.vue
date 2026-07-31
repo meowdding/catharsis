@@ -32,7 +32,8 @@ const props = defineProps({
                         <TypeIcon type="string"/> <b>sound</b>: The identifier of the sound to play. You can find a list of sounds <a href="https://minecraft.wiki/w/Sounds.json#Java_Edition_values">here</a>
                     </li>
                     <li>
-                        <TypeIcon type="float"/> <b>range</b>
+                        <TypeIcon type="float"/>
+                        <b>range</b>: (Optional) The range of how far the sound should be hearable, if not defined uses the `volume * 16`.
                     </li>
                 </ul>
             </li>

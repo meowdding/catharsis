@@ -25,6 +25,7 @@ data class GuiButtonElement(
     val y: GuiElementPosition,
     val width: Int,
     val height: Int,
+    val shape: ButtonShape = ButtonShape.RECTANGLE,
     override val condition: GuiElementCondition?,
 ) : GuiWidgetElement {
 
@@ -33,7 +34,9 @@ data class GuiButtonElement(
     override fun isHovered(mouseX: Int, mouseY: Int, bounds: ScreenRectangle): Boolean {
         val newX = x.calculate(bounds.left(), bounds.width())
         val newY = y.calculate(bounds.top(), bounds.height())
-        return mouseX >= newX && mouseX <= newX + width && mouseY >= newY && mouseY <= newY + height
+        val relativeX = mouseX - newX
+        val relativeY = mouseY - newY
+        return shape.isInside(relativeX, relativeY, width, height)
     }
 
     override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {

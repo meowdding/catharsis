@@ -285,6 +285,13 @@ Render a button on the screen.
         - <TypeIcon type="string"/> **alignment**: The alignment of the button, can be `START`, `CENTER` or `END`.
 - <TypeIcon type="int"/> **width**: The width of the button.
 - <TypeIcon type="int"/> **height**: The height of the button.
+
+<Version type=1.0.0-beta.21>
+
+- <TypeIcon type="string"/> **shape**: (Optional) The shape of the widget used for hovering & clicking, can be `RECTANGLE`, `ELLIPSE`, `DIAMOND`, defaults to `RECTANGLE`.
+
+</Version>
+
 </ul>
 
 </TreeView>

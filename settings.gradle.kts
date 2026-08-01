@@ -25,9 +25,6 @@ stonecutter {
 
 dependencyResolutionManagement {
     versionCatalogs {
-        create("libs") {
-            from(files("gradle/libs.versions.toml"))
-        }
         create("libs262") {
             from(files("gradle/26_2.versions.toml"))
         }

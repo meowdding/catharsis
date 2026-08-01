@@ -4,13 +4,14 @@ import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
 import me.owdding.catharsis.features.gui.definitions.GuiDefinitions;
 import me.owdding.catharsis.features.imc.ImcHandler;
+import me.owdding.catharsis.features.pack.PackConflictManager;
 import me.owdding.catharsis.hooks.items.AbstractContainerScreenHook;
-import me.owdding.catharsis.utils.ItemUtils;
 import me.owdding.catharsis.utils.SkyBlockIdentifierResolver;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.item.ItemModelResolver;
 import net.minecraft.client.renderer.item.ItemStackRenderState;
 import net.minecraft.client.resources.model.ModelManager;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -54,6 +55,10 @@ public class ItemModelResolverMixin {
     private Object catharsis$getCustomModel(Object original, ItemStack stack) {
         if (manager == null) return original;
         if (ImcHandler.isDisabled(stack)) return original;
+
+        if (original instanceof Identifier id && id.getNamespace().equals("hypixel_skyblock") && !PackConflictManager.getOverrideHypixel()) {
+            return original;
+        }
 
         var isCarried = McPlayer.INSTANCE.getSelf() instanceof LocalPlayer player && player.containerMenu.getCarried() == stack;
         var slot = AbstractContainerScreenHook.SLOT.get();

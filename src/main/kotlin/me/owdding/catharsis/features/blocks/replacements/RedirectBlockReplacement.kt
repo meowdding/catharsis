@@ -1,6 +1,5 @@
 package me.owdding.catharsis.features.blocks.replacements
 
-//~ fabric_rendering
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.blocks.*
 import me.owdding.catharsis.generated.CatharsisCodecs
@@ -16,7 +15,6 @@ import net.minecraft.resources.Identifier
 import net.minecraft.util.RandomSource
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
-//~ !fabric_rendering
 
 data class RedirectBlockReplacement(
     val virtualState: VirtualBlockStateDefinition,

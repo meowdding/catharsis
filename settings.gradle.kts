@@ -12,12 +12,12 @@ plugins {
 }
 rootProject.name = "catharsis"
 
-val versions = listOf("26.2", "26.1")
+val versions = listOf("26.2", "26.1") // Also manually update the versionCatalogs at the bottom for depentabot
 
 stonecutter {
     create(rootProject) {
         versions.forEach {
-            version(it).buildscript = "build.gradle.kts"
+            version(it)
         }
         vcsVersion = versions.first()
     }
@@ -25,16 +25,11 @@ stonecutter {
 
 dependencyResolutionManagement {
     versionCatalogs {
-        versions.forEach {
-            val name = it.replace(".", "")
-            println("creating version catalogue libs$name")
-            create("libs$name") {
-                from(
-                    files(
-                        rootProject.projectDir.resolve("gradle/${it.replace(".", "_")}.versions.toml")
-                    )
-                )
-            }
+        create("libs262") {
+            from(files("gradle/26_2.versions.toml"))
+        }
+        create("libs261") {
+            from(files("gradle/26_1.versions.toml"))
         }
     }
 }

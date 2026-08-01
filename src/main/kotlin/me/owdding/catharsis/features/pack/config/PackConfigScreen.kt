@@ -148,6 +148,8 @@ class PackConfigScreen @JvmOverloads constructor(private val parent: Screen?, pa
         val font = Minecraft.getInstance().font
         val line = ResizingEqualSpacingLayout.Horizontal(310)
 
+        val useFullWidth = option is PackConfigOption.Separator || option is PackConfigOption.Information
+
         val titleWidget = StringWidget(option.title(null), font).apply {
             this.active = true
             this.withClickHandler(::handleComponentClick)
@@ -155,7 +157,7 @@ class PackConfigScreen @JvmOverloads constructor(private val parent: Screen?, pa
         val descWidget = MultiLineTextWidget(Component.empty().append(option.description(null)).withColor(CommonColors.LIGHT_GRAY), font).apply {
             this.active = true
             this.setCentered(false)
-            this.setMaxWidth(225)
+            this.setMaxWidth(if (useFullWidth) 310 else 225)
             this.withClickHandler(::handleComponentClick)
         }
 
@@ -167,7 +169,7 @@ class PackConfigScreen @JvmOverloads constructor(private val parent: Screen?, pa
         )
         getOptionWidget(option, titleWidget, descWidget)?.let(line::addChild)
 
-        if (option is PackConfigOption.Separator || option is PackConfigOption.Information) {
+        if (useFullWidth) {
             return LinearLayout.vertical().apply {
                 this.spacing(2)
                 this.addChild(line)

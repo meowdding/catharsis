@@ -17,7 +17,7 @@ dependencies {
     implementation(libs.gson)
     implementation("net.peanuuutz.tomlkt:tomlkt:0.5.0")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.11.0")
     implementation(libs.guava)
     implementation(plugin(libs.plugins.ksp))
     implementation(libs.kotlin.stdlib)

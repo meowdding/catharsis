@@ -5,6 +5,7 @@ import modVersion from "../data/mod-version.data"
 
 const modVersionData = modVersion.load()
 export const modVersions = [
+    { text: "1.0.0-beta.22" },
     { text: "1.0.0-beta.21" },
     { text: "1.0.0-beta.20" },
     { text: "1.0.0-beta.19" },

@@ -71,15 +71,19 @@ object InteractionWidgetTooltip : GuiWidgetTooltip {
     override val codec = MapCodec.unit(this)
 
     override fun getTooltip(element: GuiWidgetElement): List<Component>? {
-        val interaction = element.interaction
-        if (interaction is GuiSlotClickWidgetInteraction) {
-            return getSlotTooltip(interaction.slot)
-        }
-        if (interaction is GuiSlotIdClickWidgetInteraction) {
-            interaction.getSlot()?.index?.let {
-                return getSlotTooltip(it)
+        val interactions = listOfNotNull(element.interaction.left, element.interaction.right, element.interaction.middle)
+
+        for (interaction in interactions) {
+            if (interaction is GuiSlotClickWidgetInteraction) {
+                return getSlotTooltip(interaction.slot)
+            }
+            if (interaction is GuiSlotIdClickWidgetInteraction) {
+                interaction.getSlot()?.index?.let {
+                    return getSlotTooltip(it)
+                }
             }
         }
+
         return null
     }
 }

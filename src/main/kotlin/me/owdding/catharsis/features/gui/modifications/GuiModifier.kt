@@ -48,9 +48,15 @@ data class GuiModifier(
         val elements = elementsByLayer[layer] ?: return
         for (element in elements) {
             if (element.condition?.check() == false) continue
-            if (element is GuiWidgetElement && element.isHovered(mouseX, mouseY, bounds) && element.interaction !is GuiNoOpWidgetInteraction) {
-                graphics.requestCursor(CursorTypes.POINTING_HAND)
+
+            if (element is GuiWidgetElement && element.isHovered(mouseX, mouseY, bounds)) {
+                val interactions = element.interaction
+                val hasClickAction = listOfNotNull(interactions.left, interactions.right, interactions.middle).any { it !is GuiNoOpWidgetInteraction }
+                if (hasClickAction) {
+                    graphics.requestCursor(CursorTypes.POINTING_HAND)
+                }
             }
+
             element.render(graphics, mouseX, mouseY, partialTicks, bounds)
         }
     }

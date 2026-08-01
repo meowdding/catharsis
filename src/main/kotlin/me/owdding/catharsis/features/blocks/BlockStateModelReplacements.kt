@@ -1,13 +1,11 @@
 package me.owdding.catharsis.features.blocks
 
-//~ fabric_rendering
 import me.owdding.catharsis.features.blocks.replacements.LayeredBlockReplacements
 import me.owdding.catharsis.utils.extensions.identifier
 import me.owdding.catharsis.utils.extensions.mapValuesNotNull
 import net.fabricmc.fabric.api.client.renderer.v1.mesh.QuadEmitter
 import net.fabricmc.fabric.api.client.renderer.v1.mesh.QuadTransform
 import net.fabricmc.fabric.api.client.renderer.v1.model.FabricBlockStateModel
-//~ !fabric_rendering
 import net.minecraft.client.renderer.block.BlockAndTintGetter
 import net.minecraft.client.renderer.block.dispatch.BlockStateModel
 import net.minecraft.client.renderer.block.dispatch.BlockStateModelPart

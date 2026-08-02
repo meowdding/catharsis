@@ -8,11 +8,3 @@ updates:
           gradle-updates:
               patterns:
                   - "*"
-
-    # Ignore Docs Updates hopefully
-    - package-ecosystem: "npm"
-      directory: "/docs/"
-      schedule:
-          interval: "weekly"
-      ignore:
-          - dependency-name: "*"

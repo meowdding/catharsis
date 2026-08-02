@@ -31,7 +31,7 @@ Example of a `pack.mcmeta` with a configuration menu and version dependencies.
 
   <Version type=1.0.0-beta.21>
   
-  - <TypeIcon type="boolean"/> **override_hypixel_pack**: (Optional) Disables overriding Hypixel's Pack when it's placed below it, defaults to `false`
+  - <TypeIcon type="boolean"/> **override_hypixel_pack**: (Optional) Disables overriding Hypixel's Pack when it's placed below it, defaults to `true`
   </Version>
 
   - <TypeIcon type="string"/><TypeIcon type="object"/> **selected_title**: (Optional) A custom title to use when the Pack is enabled. Can be a string or a text component.

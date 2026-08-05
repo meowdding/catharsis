@@ -20,6 +20,12 @@ val PREFIX = Text.of {
 fun Component.sendWithPrefix() = Text.join(PREFIX, " ", this).send()
 fun Component.sendSyncWithPrefix() = McClient.runOrNextTick { Text.join(PREFIX, " ", this).send() }
 
+fun Component.sendIf(condition: () -> Boolean): Unit {
+    if (condition()) {
+        this.send()
+    }
+}
+
 fun Component.sendWithPrefixIf(condition: () -> Boolean): Unit {
     if (condition()) {
         Text.join(PREFIX, " ", this).send()

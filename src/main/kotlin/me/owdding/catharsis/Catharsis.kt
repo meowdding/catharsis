@@ -44,10 +44,14 @@ import tech.thatgravyboat.skyblockapi.platform.Identifiers
 import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import tech.thatgravyboat.skyblockapi.utils.text.Text
+import tech.thatgravyboat.skyblockapi.utils.text.Text.send
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
 import tech.thatgravyboat.skyblockapi.utils.text.TextColor
+import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.bold
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.hover
+import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.onClick
+import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.suggest
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.url
 import java.util.concurrent.CompletableFuture
 import kotlin.io.path.readText
@@ -101,7 +105,28 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
             }
         }.exceptionally { throwable ->
             error("Failed to load remote repo!", throwable)
-            Text.of("Failed to load repo! Please report this on the Discord").sendWithPrefixIf { McLevel.hasLevel }
+
+            CompletableFuture.runAsync {
+                while (!McLevel.hasLevel) {
+                    Thread.sleep(5000)
+                }
+                McClient.runNextTick {
+                    Text.of("Failed to load repo! ") {
+                        color = TextColor.RED
+
+                        append("Click here for a way to potentially fix it. ") {
+                            color = CatppuccinColors.Mocha.red
+                            suggest = "catharsis repo failed"
+                            hover = Text.of("Click here!")
+                        }
+                        append("If that doesn't work or doesn't apply to you, report it on the Discord.") {
+                            url = DISCORD
+                            color = CatppuccinColors.Mocha.pink
+                            hover = Text.of(DISCORD).withColor(TextColor.GRAY)
+                        }
+                    }
+                }
+            }
             null
         }
     }
@@ -156,6 +181,47 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
                     CatharsisDevUtils.properties.remove(REPO_BRANCH_PROPERTY)
                     CatharsisDevUtils.saveProperties()
                     Text.of("Reset repo branch!").sendWithPrefix()
+                }
+                thenCallback("failed") {
+                    Text.multiline(
+                        Text.of("--------------------------------------------------", TextColor.GRAY),
+                        Text.of("!!! XFINITY ISP/INTERNET CENSORSHIP !!!") {
+                            color = TextColor.RED
+                            bold = true
+                        },
+                        Text.of("If you live in Russia or any country that (partially) blocks the internet, whitelist these URLs in your VPN."),
+                        Text.of(""),
+                        Text.of("If your ISP is xFinity, whitelist these URLs in the Advanced Security feature (Or just disable it)."),
+                        Text.of(""),
+                        Text.of("URLs:") { bold = true },
+                        Text.of(""),
+                        Text.of("> skyblock-repo.pages.dev/") {
+                            hover = Text.of("Click to copy https://skyblock-repo.pages.dev/")
+                            onClick {
+                                McClient.clipboard = "https://skyblock-repo.pages.dev/"
+                                Text.of("Copied https://skyblock-repo.pages.dev/ to clipboard!", TextColor.GREEN).send()
+                            }
+                        },
+                        Text.of(""),
+                        Text.of("> skyblock-api-repo.thatgravyboat.tech/") {
+                            hover = Text.of("Click to copy https://skyblock-api-repo.thatgravyboat.tech/")
+                            onClick {
+                                McClient.clipboard = "https://skyblock-api-repo.thatgravyboat.tech/"
+                                Text.of("Copied https://skyblock-api-repo.thatgravyboat.tech/ to clipboard!", TextColor.GREEN).send()
+                            }
+                        },
+                        Text.of(""),
+                        Text.of("> catharsis.repo.meowdd.ing/") {
+                            hover = Text.of("Click to copy https://catharsis.repo.meowdd.ing/")
+                            onClick {
+                                McClient.clipboard = "https://catharsis.repo.meowdd.ing/"
+                                Text.of("Copied https://catharsis.repo.meowdd.ing/ to clipboard!", TextColor.GREEN).send()
+                            }
+                        },
+                        Text.of(""),
+                        Text.of("Click them to copy the full URLs!", TextColor.GOLD),
+                        Text.of("--------------------------------------------------", TextColor.GRAY),
+                    ).send()
                 }
             }
         }

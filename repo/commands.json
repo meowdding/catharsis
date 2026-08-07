@@ -26,6 +26,9 @@
     "settings",
     "quiver",
     "wardrobe",
-    "warp"
+    "warp",
+    "craft",
+    "recipebook",
+    "storage"
   ]
 }

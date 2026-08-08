@@ -29,6 +29,8 @@
     "warp",
     "craft",
     "recipebook",
-    "storage"
+    "storage",
+    "chapter",
+    "quests"
   ]
 }

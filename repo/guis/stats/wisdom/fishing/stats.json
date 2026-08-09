@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/fishing/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Fishing Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:fishing_rod"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Fishing Wisdom [\\d,.]+"
       }
     },
     {

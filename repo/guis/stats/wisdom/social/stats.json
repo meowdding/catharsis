@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/social/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Social Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:emerald"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Social Wisdom [\\d,.]+"
       }
     },
     {

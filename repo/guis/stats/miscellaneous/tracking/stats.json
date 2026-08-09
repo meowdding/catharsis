@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/miscellaneous/tracking/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "❃ Tracking.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:compass"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE077 Tracking [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❃ Flat Bonuses"
+        "name": "\uE077 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❃ Additive Buffs"
+        "name": "\uE077 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❃ Multiplicative Buffs"
+        "name": "\uE077 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❃ Cap"
+        "name": "\uE077 Cap"
       }
     }
   ]

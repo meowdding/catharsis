@@ -266,6 +266,25 @@ Runs matches on a specific passenger, or false if none.
 
 </Version>
 
+<Version type="1.0.0-beta.21">
+
+### Entity Position (`position`)
+
+Matches based on an entities position.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `position`
+- <TypeIcon type="int"/> **minX**: The minimum x position.
+- <TypeIcon type="int"/> **minY**: The minimum y position.
+- <TypeIcon type="int"/> **minZ**: The minimum z position.
+- <TypeIcon type="int"/> **maxX**: The maximum x position.
+- <TypeIcon type="int"/> **maxY**: The maximum y position.
+- <TypeIcon type="int"/> **maxZ**: The maximum z position.
+
+</TreeView>
+</Version>
+
 ## Model Quirks
 
 When creating your Bedrock `.geo.json` models, please keep the following in mind:

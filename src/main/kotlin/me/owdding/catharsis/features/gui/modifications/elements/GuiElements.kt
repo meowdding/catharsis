@@ -17,6 +17,7 @@ object GuiElements {
 
     init {
         ID_MAPPER.put(Catharsis.id("player"), CatharsisCodecs.getMapCodec<GuiPlayerElement>())
+        ID_MAPPER.put(Catharsis.id("entity"), CatharsisCodecs.getMapCodec<GuiEntityElement>())
         ID_MAPPER.put(Catharsis.id("sprite"), CatharsisCodecs.getMapCodec<GuiSpriteElement>())
         ID_MAPPER.put(Catharsis.id("text"), CatharsisCodecs.getMapCodec<GuiTextElement>())
     }
@@ -31,5 +32,6 @@ object GuiWidgetElements {
 
     init {
         ID_MAPPER.put(Catharsis.id("button"), CatharsisCodecs.getMapCodec<GuiButtonElement>())
+        ID_MAPPER.put(Catharsis.id("item_stack"), CatharsisCodecs.getMapCodec<GuiItemStackElement>())
     }
 }

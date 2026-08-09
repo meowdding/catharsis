@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/runecrafting/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Runecrafting Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:magma_cream"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Runecrafting Wisdom [\\d,.]+"
       }
     },
     {

@@ -73,10 +73,11 @@ public class EquipmentLayerRendererMixin {
 
             var textures = state.getTextures();
             var colors = state.getColors();
+            var translucent = state.isTranslucent();
             var startIndex = index.get();
 
             for (int i = 0; i < state.getLayers(); i++) {
-                var texture = RenderTypes.armorCutoutNoCull(textures[i]);
+                var texture = translucent ? RenderTypes.armorTranslucent(textures[i]) : RenderTypes.armorCutoutNoCull(textures[i]);
                 var color = ARGB.opaque(colors[i]);
 
                 nodes

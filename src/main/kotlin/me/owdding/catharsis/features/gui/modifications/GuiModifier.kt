@@ -6,6 +6,7 @@ import me.owdding.catharsis.features.gui.modifications.conditions.GuiModifierCon
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElement
 import me.owdding.catharsis.features.gui.modifications.elements.GuiElementRenderLayer
 import me.owdding.catharsis.features.gui.modifications.elements.GuiWidgetElement
+import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiNoOpWidgetInteraction
 import me.owdding.catharsis.features.gui.modifications.modifiers.SlotModifier
 import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.ktcodecs.GenerateCodec
@@ -35,6 +36,8 @@ data class GuiModifier(
     @OptionalIfEmpty val slots: Map<Identifier, SlotModifier> = emptyMap(),
     @OptionalIfEmpty val elements: List<GuiElement> = emptyList(),
     @OptionalIfEmpty val widgets: List<GuiWidgetElement> = emptyList(),
+
+    @OptionalIfEmpty val hiddenModElements: List<String> = emptyList(),
 ) : SavableData<GuiModifier> {
     override val codec: Codec<GuiModifier> get() = GuiModifiers.codec
     override fun toFileName(identifier: Identifier): Identifier = GuiModifiers.converter.idToFile(identifier)
@@ -44,15 +47,23 @@ data class GuiModifier(
     fun renderElements(layer: GuiElementRenderLayer, graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
         val elements = elementsByLayer[layer] ?: return
         for (element in elements) {
+            if (element.condition?.check() == false) continue
+
             if (element is GuiWidgetElement && element.isHovered(mouseX, mouseY, bounds)) {
-                graphics.requestCursor(CursorTypes.POINTING_HAND)
+                val interactions = element.interaction
+                val hasClickAction = listOfNotNull(interactions.left, interactions.right, interactions.middle).any { it !is GuiNoOpWidgetInteraction }
+                if (hasClickAction) {
+                    graphics.requestCursor(CursorTypes.POINTING_HAND)
+                }
             }
+
             element.render(graphics, mouseX, mouseY, partialTicks, bounds)
         }
     }
 
     fun handleInteraction(x: Double, y: Double, button: Int, mouseDown: Boolean, bounds: ScreenRectangle): Boolean {
         for (element in widgets) {
+            if (element.condition?.check() == false) continue
             if (element.isHovered(x.toInt(), y.toInt(), bounds)) {
                 if (mouseDown) {
                     element.onClick(button)
@@ -65,6 +76,7 @@ data class GuiModifier(
 
     fun renderTooltips(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, bounds: ScreenRectangle): Boolean {
         for (widget in widgets) {
+            if (widget.condition?.check() == false) continue
             if (widget.isHovered(mouseX, mouseY, bounds)) {
                 val tooltip = widget.getParsedTooltip()
                 if (!tooltip.isNullOrEmpty()) {

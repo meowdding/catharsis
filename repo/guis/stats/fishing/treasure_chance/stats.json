@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/fishing/treasure_chance/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "⛃ Treasure Chance.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:chest"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE025 Treasure Chance [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⛃ Flat Bonuses"
+        "name": "\uE025 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⛃ Additive Buffs"
+        "name": "\uE025 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⛃ Multiplicative Buffs"
+        "name": "\uE025 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⛃ Cap"
+        "name": "\uE025 Cap"
       }
     }
   ]

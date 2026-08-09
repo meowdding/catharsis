@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/combat/mending/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☄ Mending.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:ghast_tear"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE014 Mending [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☄ Flat Bonuses"
+        "name": "\uE014 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☄ Additive Buffs"
+        "name": "\uE014 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☄ Multiplicative Buffs"
+        "name": "\uE014 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☄ Cap"
+        "name": "\uE014 Cap"
       }
     }
   ]

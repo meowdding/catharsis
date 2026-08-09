@@ -23,6 +23,8 @@ public class EntityMixin implements EntityHook {
     private CustomEntityModel catharsis$computedReplacement = null;
     @Unique
     private PlayerSkin catharsis$lastRenderedPlayerSkin = null;
+    @Unique
+    private int catharsis$modelRevision = -1;
 
     @Override
     public void catharsis$resetCustomModel() {
@@ -39,13 +41,11 @@ public class EntityMixin implements EntityHook {
             }
         }
 
-        if (catharsis$hasComputedModel) {
+        if (catharsis$hasComputedModel && catharsis$modelRevision == CustomEntityModels.getRevision()) {
             return catharsis$computedReplacement;
         }
 
         var customEntity = CustomEntityDefinitions.getFor((Entity) (Object) this);
-
-        catharsis$hasComputedModel = true;
 
         CustomEntityModel customModel = null;
 
@@ -54,6 +54,8 @@ public class EntityMixin implements EntityHook {
         }
 
         catharsis$computedReplacement = customModel;
+        catharsis$hasComputedModel = true;
+        catharsis$modelRevision = CustomEntityModels.getRevision();
 
         return customModel;
     }

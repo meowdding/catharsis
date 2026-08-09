@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/spawn_locked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/spawn/locked",
       "target": {
         "conditions": [
           {
@@ -14,26 +14,17 @@
             "type": "catharsis:name"
           },
           {
-            "conditions": [
-              {
-                "items": "minecraft:bedrock",
-                "type": "catharsis:item"
-              },
-              {
-                "name": "Warp not unlocked!",
-                "mode": "equals",
-                "line": -1,
-                "type": "catharsis:lore"
-              }
-            ],
-            "type": "catharsis:any"
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
           }
         ],
         "type": "catharsis:all"
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/spawn_unlocked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/spawn/unlocked",
       "target": {
         "conditions": [
           {
@@ -43,8 +34,10 @@
           },
           {
             "condition": {
-              "items": "minecraft:bedrock",
-              "type": "catharsis:item"
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
             },
             "type": "catharsis:not"
           }
@@ -53,7 +46,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/forgotten_skull_locked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/forgotten_skull/locked",
       "target": {
         "conditions": [
           {
@@ -62,26 +55,17 @@
             "type": "catharsis:name"
           },
           {
-            "conditions": [
-              {
-                "items": "minecraft:bedrock",
-                "type": "catharsis:item"
-              },
-              {
-                "name": "Warp not unlocked!",
-                "mode": "equals",
-                "line": -1,
-                "type": "catharsis:lore"
-              }
-            ],
-            "type": "catharsis:any"
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
           }
         ],
         "type": "catharsis:all"
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/forgotten_skull_unlocked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/forgotten_skull/unlocked",
       "target": {
         "conditions": [
           {
@@ -91,8 +75,10 @@
           },
           {
             "condition": {
-              "items": "minecraft:bedrock",
-              "type": "catharsis:item"
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
             },
             "type": "catharsis:not"
           }
@@ -101,7 +87,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/wasteland_locked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/wasteland/locked",
       "target": {
         "conditions": [
           {
@@ -110,26 +96,17 @@
             "type": "catharsis:name"
           },
           {
-            "conditions": [
-              {
-                "items": "minecraft:bedrock",
-                "type": "catharsis:item"
-              },
-              {
-                "name": "Warp not unlocked!",
-                "mode": "equals",
-                "line": -1,
-                "type": "catharsis:lore"
-              }
-            ],
-            "type": "catharsis:any"
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
           }
         ],
         "type": "catharsis:all"
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/wasteland_unlocked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/wasteland/unlocked",
       "target": {
         "conditions": [
           {
@@ -139,8 +116,10 @@
           },
           {
             "condition": {
-              "items": "minecraft:bedrock",
-              "type": "catharsis:item"
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
             },
             "type": "catharsis:not"
           }
@@ -149,7 +128,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/dragontail_locked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/dragontail/locked",
       "target": {
         "conditions": [
           {
@@ -158,26 +137,17 @@
             "type": "catharsis:name"
           },
           {
-            "conditions": [
-              {
-                "items": "minecraft:bedrock",
-                "type": "catharsis:item"
-              },
-              {
-                "name": "Warp not unlocked!",
-                "mode": "equals",
-                "line": -1,
-                "type": "catharsis:lore"
-              }
-            ],
-            "type": "catharsis:any"
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
           }
         ],
         "type": "catharsis:all"
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/dragontail_unlocked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/dragontail/unlocked",
       "target": {
         "conditions": [
           {
@@ -187,8 +157,10 @@
           },
           {
             "condition": {
-              "items": "minecraft:bedrock",
-              "type": "catharsis:item"
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
             },
             "type": "catharsis:not"
           }
@@ -197,7 +169,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/scarleton_locked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/scarleton/locked",
       "target": {
         "conditions": [
           {
@@ -206,26 +178,17 @@
             "type": "catharsis:name"
           },
           {
-            "conditions": [
-              {
-                "items": "minecraft:bedrock",
-                "type": "catharsis:item"
-              },
-              {
-                "name": "Warp not unlocked!",
-                "mode": "equals",
-                "line": -1,
-                "type": "catharsis:lore"
-              }
-            ],
-            "type": "catharsis:any"
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
           }
         ],
         "type": "catharsis:all"
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/scarleton_unlocked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/scarleton/unlocked",
       "target": {
         "conditions": [
           {
@@ -235,8 +198,10 @@
           },
           {
             "condition": {
-              "items": "minecraft:bedrock",
-              "type": "catharsis:item"
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
             },
             "type": "catharsis:not"
           }
@@ -245,7 +210,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/smoldering_tomb_locked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/smoldering_tomb/locked",
       "target": {
         "conditions": [
           {
@@ -254,26 +219,17 @@
             "type": "catharsis:name"
           },
           {
-            "conditions": [
-              {
-                "items": "minecraft:bedrock",
-                "type": "catharsis:item"
-              },
-              {
-                "name": "Warp not unlocked!",
-                "mode": "equals",
-                "line": -1,
-                "type": "catharsis:lore"
-              }
-            ],
-            "type": "catharsis:any"
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
           }
         ],
         "type": "catharsis:all"
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/crimson_isle/smoldering_tomb_unlocked",
+      "id": "skyblock_gui:fast_travel/crimson_isle/smoldering_tomb/unlocked",
       "target": {
         "conditions": [
           {
@@ -283,8 +239,10 @@
           },
           {
             "condition": {
-              "items": "minecraft:bedrock",
-              "type": "catharsis:item"
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
             },
             "type": "catharsis:not"
           }

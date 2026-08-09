@@ -27,13 +27,10 @@ import net.minecraft.world.item.ItemStack
 import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerCloseEvent
-import tech.thatgravyboat.skyblockapi.api.events.screen.ContainerInitializedEvent
-import tech.thatgravyboat.skyblockapi.api.events.screen.ScreenInitializedEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McScreen
 import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
 import java.util.concurrent.atomic.AtomicBoolean
-import kotlin.collections.sortedBy
 import kotlin.io.path.readText
 
 @Module
@@ -134,11 +131,11 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
         sortDefinitions()
     }
 
-    @Subscription
-    fun onScreenOpen(event: ScreenInitializedEvent) = enqueueUpdate()
+    //@Subscription
+    //fun onScreenOpen(event: ScreenInitializedEvent) = enqueueUpdate()
 
-    @Subscription
-    fun onInitialized(event: ContainerInitializedEvent) = enqueueUpdate()
+    //@Subscription
+    //fun onInitialized(event: ContainerInitializedEvent) = enqueueUpdate()
 
     @Subscription
     fun onSlotChange(event: SlotChangedEvent) = enqueueUpdate()
@@ -155,6 +152,10 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
 
     @JvmStatic
     fun getSlot(slot: Int): Identifier? = this.slots[slot]?.id
+
+    fun forceUpdateInstantly(screen: AbstractContainerScreen<*>) {
+        this.update(screen)
+    }
 
     private fun sortDefinitions() = McClient.runOrNextTick {
         this.definitions.clear()

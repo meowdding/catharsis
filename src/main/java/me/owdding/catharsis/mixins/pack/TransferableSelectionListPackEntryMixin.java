@@ -31,6 +31,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import tech.thatgravyboat.skyblockapi.helpers.McClient;
+import tech.thatgravyboat.skyblockapi.helpers.McScreen;
 
 import java.util.List;
 import java.util.Optional;
@@ -106,7 +108,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
             this.nameWidget.setMessage(Component.translatable("pack.catharsis.incompatible.title"));
             this.descriptionWidget.setMessage(Component.translatable("pack.catharsis.incompatible.desc").withStyle(ChatFormatting.GRAY));
             PackCompatibility compatibility = this.pack.getCompatibility();
-            if (compatibility.isCompatible()) {
+            if (compatibility.isCompatible() && this.descriptionWidget.isHovered()) {
                 graphics.setTooltipForNextFrame(this.minecraft.font, meta.getIncompatibleTooltip(), Optional.empty(), mouseX, mouseY);
             }
         }
@@ -157,7 +159,7 @@ public abstract class TransferableSelectionListPackEntryMixin extends ObjectSele
             return;
         }
         if (event.input() == InputConstants.MOUSE_BUTTON_LEFT && !config.isEmpty()) {
-            this.minecraft.setScreen(new PackConfigScreen(this.minecraft.screen, meta.getId(), config));
+            McClient.INSTANCE.setScreen(new PackConfigScreen(McScreen.INSTANCE.getSelf(), meta.getId(), config));
             cir.setReturnValue(true);
         }
     }

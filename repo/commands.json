@@ -26,6 +26,13 @@
     "settings",
     "quiver",
     "wardrobe",
-    "warp"
+    "warp",
+    "craft",
+    "recipebook",
+    "storage",
+    "chapter",
+    "quests",
+    "guide",
+    "level"
   ]
 }

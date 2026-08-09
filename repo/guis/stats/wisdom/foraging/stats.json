@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/foraging/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Foraging Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:jungle_sapling"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Foraging Wisdom [\\d,.]+"
       }
     },
     {

@@ -36,11 +36,11 @@ object ResourcePackStealer {
         event.register("catharsis packStealer") {
             thenCallback("url") {
                 McClient.clipboard = stolenData?.packUrl ?: ""
-                Text.of("Copied Pack Url to clipboard", CatppuccinColors.Mocha.base).sendWithPrefix("pack-steal-url")
+                Text.of("Copied Pack Url to clipboard", CatppuccinColors.Mocha.text).sendWithPrefix("pack-steal-url")
             }
             callback {
                 McClient.clipboard = stolenData.toString()
-                Text.of("Copied Pack Data to clipboard", CatppuccinColors.Mocha.base).sendWithPrefix("pack-steal")
+                Text.of("Copied Pack Data to clipboard", CatppuccinColors.Mocha.text).sendWithPrefix("pack-steal")
             }
         }
     }

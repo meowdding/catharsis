@@ -55,6 +55,7 @@ TODO: Incorrect example
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>texture</b> armor model object</span>
+<ul>
 
 - <TypeIcon type="string"/> **type**: `catharsis:texture`
 - <TypeIcon type="array"/> **layers**: The layers of the armor, each layer is rendered on top of the previous one.
@@ -63,6 +64,12 @@ TODO: Incorrect example
     - <TypeIcon type="object"/> Tint Object
         - <TypeIcon type="string"/> **type**: The tint source type.
         - <TypeIcon/> You can find information about what tint sources are available on the Minecraft wiki at [Tint Source Types](https://minecraft.wiki/w/Items_model_definition#Tint_sources_types).
+
+<Version type="1.0.0-beta.20">
+
+- <TypeIcon type="boolean"/> **translucent**: (Optional) If any armor layer has a transparent texture it should render as such, defaults to `false`.
+</Version>
+</ul>
 </TreeView>
 
 #### **Model** (`catharsis:model`)
@@ -78,6 +85,7 @@ Replaces the armor with a custom model.
 
 <TreeView>
 <span><TypeIcon type="object"/> Root <b>model</b> armor model object</span>
+<ul>
 
 - <TypeIcon type="string"/> **type**: `catharsis:model`
 - <TypeIcon type="string"/> **model**: The geo model to use for the armor. This should be a resource location pointing to a GEO JSON file.
@@ -88,6 +96,11 @@ Replaces the armor with a custom model.
         - <TypeIcon type="string"/> **type**: The tint source type.
         - <TypeIcon/> You can find information about what tint sources are available on the Minecraft wiki at [Tint Source Types](https://minecraft.wiki/w/Items_model_definition#Tint_sources_types).
 
+<Version type="1.0.0-beta.20">
+
+- <TypeIcon type="boolean"/> **translucent**: (Optional) If any armor layer has a transparent texture it should render as such, defaults to `false`.
+</Version>
+</ul>
 </TreeView>
 
 #### **Condition** (`minecraft:condition`)

@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/mining/mining_speed/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "⸕ Mining Speed.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:diamond_pickaxe"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE015 Mining Speed [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⸕ Flat Bonuses"
+        "name": "\uE015 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⸕ Additive Buffs"
+        "name": "\uE015 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⸕ Multiplicative Buffs"
+        "name": "\uE015 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "⸕ Cap"
+        "name": "\uE015 Cap"
       }
     }
   ]

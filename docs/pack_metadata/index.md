@@ -18,6 +18,8 @@ Example of a `pack.mcmeta` with a configuration menu and version dependencies.
   <span><TypeIcon type="object"/> A <b>.mcmeta ResourcePack</b> object</span>
 
 - <TypeIcon type="object"/> **catharsis:pack/v1**: The Catharsis pack metadata.
+  <ul>
+  
   - <TypeIcon type="string"/> **id**: A unique id for the pack, needs to be `[a-z0-9_.-]+`.
   - <TypeIcon type="string"/> **version**: The version of the pack.
   - <TypeIcon type="object"/> **dependencies**: (Optional) A map of required mods.
@@ -26,9 +28,16 @@ Example of a `pack.mcmeta` with a configuration menu and version dependencies.
   - <TypeIcon type="boolean"/> **pack_required_for_config**: (Optional) Whether the pack is required for the config menu to show up, defaults to `false`.
   - <TypeIcon type="boolean"/> **disable_derived_ids**: (Optional) Whether to disable derived SkyBlock IDs, defaults to `false`. 
     Read more [here](/getting_started/skyblock_textures#derived-ids)
+
+  <Version type=1.0.0-beta.21>
+  
+  - <TypeIcon type="boolean"/> **override_hypixel_pack**: (Optional) Disables overriding Hypixel's Pack when it's placed below it, defaults to `true`
+  </Version>
+
   - <TypeIcon type="string"/><TypeIcon type="object"/> **selected_title**: (Optional) A custom title to use when the Pack is enabled. Can be a string or a text component.
   - <TypeIcon type="string"/><TypeIcon type="object"/> **selected_description**: (Optional) A custom description to use when the Pack is enabled. Can be a string or a text component.
   - <TypeIcon type="array"/> **config**: (Optional) A list of config elements for the settings menu, see more [here](/pack_metadata/config.md).
+  </ul>
 
 - <TypeIcon type="object"/> **fabric:overlays**: (Optional) A system for conditional resource loading.
   - <TypeIcon type="array"/> **entries**: A list of overlay definitions.

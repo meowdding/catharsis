@@ -20,6 +20,8 @@ import net.minecraft.core.Holder
 import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries
+import net.minecraft.nbt.CompoundTag
+import net.minecraft.nbt.TagParser
 import net.minecraft.network.chat.Component
 import net.minecraft.network.chat.ComponentSerialization
 import net.minecraft.resources.Identifier
@@ -31,6 +33,7 @@ import net.minecraft.world.entity.EntityType
 import net.minecraft.world.entity.ai.attributes.Attribute
 import net.minecraft.world.inventory.MenuType
 import net.minecraft.world.item.Item
+import net.minecraft.world.item.ItemStack
 import net.minecraft.world.level.block.Block
 import org.joml.Quaternionf
 import org.joml.Vector2i
@@ -139,7 +142,7 @@ object IncludedCodecs {
 
     @IncludedCodec
     val entityType: Codec<EntityType<*>> = BuiltInRegistries.ENTITY_TYPE.byNameCodec()
-    
+
     @IncludedCodec
     val dataComponentCodec: Codec<DataComponentType<*>> = BuiltInRegistries.DATA_COMPONENT_TYPE.byNameCodec()
 
@@ -152,7 +155,16 @@ object IncludedCodecs {
     @IncludedCodec
     val skyBlockIdCodec: Codec<SkyBlockId> = SkyBlockId.CODEC
 
-//     @IncludedCodec(keyable = true, named = "base64_string")
+    @IncludedCodec
+    val compoundCodec: Codec<CompoundTag> = Codec.either(CompoundTag.CODEC, Codec.STRING.xmap({ TagParser.parseCompoundFully(it) }, { TODO("not implemented") })).xmap(
+        Either<CompoundTag, CompoundTag>::unwrap,
+        Either<CompoundTag, CompoundTag>::left,
+    )
+
+    @IncludedCodec
+    val itemStackCodec: Codec<ItemStack> = ItemStack.CODEC
+
+    //     @IncludedCodec(keyable = true, named = "base64_string")
     val BASE64_STRING_CODEC: Codec<Base64String> = Codec.STRING.xmap(
         { it.requireBase64Padding() },
         { it },

@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/wisdom/mining/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☯ Mining Wisdom.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:stone_pickaxe"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "☯ Mining Wisdom [\\d,.]+"
       }
     },
     {

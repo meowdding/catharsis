@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/foraging/sweep/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "∮ Sweep.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:diamond_axe"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE023 Sweep [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "∮ Flat Bonuses"
+        "name": "\uE023 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "∮ Additive Buffs"
+        "name": "\uE023 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "∮ Multiplicative Buffs"
+        "name": "\uE023 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "∮ Cap"
+        "name": "\uE023 Cap"
       }
     }
   ]

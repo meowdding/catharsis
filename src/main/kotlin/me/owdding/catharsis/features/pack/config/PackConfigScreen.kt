@@ -29,8 +29,8 @@ import java.util.function.Consumer
 import kotlin.math.max
 
 
-class PackConfigScreen(private val parent: Screen?, pack: String, private val options: List<PackConfigOption>) : Screen(Component.empty()) {
-
+class PackConfigScreen @JvmOverloads constructor(private val parent: Screen?, pack: String, private val options: List<PackConfigOption>, commandSearchQuery: String = "") :
+    Screen(Component.empty()) {
     private val config = PackConfigHandler.getConfig(pack)
     private val originalConfigData = config.current.deepCopy()
 
@@ -38,31 +38,72 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
     private val tabs: TabManager = TabManager({ widget -> this.addRenderableWidget(widget) }, { widget -> this.removeWidget(widget) })
     private var navigation: TabNavigationBar? = null
 
+    private var searchQuery: String = commandSearchQuery
+    private var searchBox: EditBox? = null
+    private var currentTabTitle: Component? = null
+
     override fun init() {
         val contents = mutableMapOf<Component, LinearLayout>()
+
         for (option in options) {
             when (option) {
                 is PackConfigOption.Tab -> {
-                    val layout = contents.getOrPut(option.title(null)) { LinearLayout.vertical().spacing(8) }
-                    option.options.map(this::getOptionElement).forEach(layout::addChild)
+                    val matchingOptions = option.options.filter { it.matches(searchQuery) }
+                    if (matchingOptions.isNotEmpty()) {
+                        val layout = contents.getOrPut(option.title(null)) { LinearLayout.vertical().spacing(8) }
+                        matchingOptions.map(this::getOptionElement).forEach(layout::addChild)
+                    }
                 }
+
                 else -> {
-                    val layout = contents.getOrPut(GENERAL_TAB) { LinearLayout.vertical().spacing(8) }
-                    layout.addChild(this.getOptionElement(option))
+                    if (option.matches(searchQuery)) {
+                        val layout = contents.getOrPut(GENERAL_TAB) { LinearLayout.vertical().spacing(8) }
+                        layout.addChild(this.getOptionElement(option))
+                    }
                 }
             }
         }
 
-        this.navigation = this.addRenderableWidget(
-            MinSizedTabNavigation(
-                this.width,
-                this.tabs,
-                contents.map { (title, layout) -> PackConfigScreenTab(title, layout) }.sortedBy { tab -> if (tab.title == GENERAL_TAB) 0 else 1 }
-            )
-        )
-        this.navigation!!.selectTab(0, false)
+        var sortedTabs = contents.map { (title, layout) -> PackConfigScreenTab(title, layout) }
+            .sortedBy { tab -> if (tab.title == GENERAL_TAB) 0 else 1 }
 
-        val footer = this.layout.addToFooter<LinearLayout>(LinearLayout.horizontal())
+        if (sortedTabs.isEmpty()) {
+            val noResultsLayout = LinearLayout.vertical().spacing(8).apply {
+                addChild(StringWidget(Component.literal("No results found."), font))
+            }
+            sortedTabs = listOf(PackConfigScreenTab(Component.literal("Search"), noResultsLayout))
+        }
+
+        this.navigation = this.addRenderableWidget(
+            MinSizedTabNavigation(this.width, this.tabs, sortedTabs),
+        )
+
+        val tabToSelect = sortedTabs.indexOfFirst { it.title == currentTabTitle }.coerceAtLeast(0)
+        if (sortedTabs.isNotEmpty()) {
+            this.navigation!!.selectTab(tabToSelect, false)
+        }
+
+        this.searchBox = EditBox(McFont.self, 0, 0, 140, 20, Component.literal("Search..."))
+        this.searchBox!!.value = searchQuery
+        this.searchBox!!.setResponder { query ->
+            if (this.searchQuery != query) {
+                this.searchQuery = query
+                this.currentTabTitle = this.tabs.currentTab?.tabTitle
+
+                val wasFocused = this.focused == this.searchBox
+
+                this.clearWidgets()
+                this.init()
+
+                if (wasFocused) {
+                    this.focused = this.searchBox
+                    this.searchBox!!.isFocused = true
+                }
+            }
+        }
+
+        val footer = this.layout.addToFooter<LinearLayout>(LinearLayout.horizontal().spacing(8))
+        footer.addChild(this.searchBox!!)
         footer.addChild(Button.builder(CommonComponents.GUI_DONE) { this.onClose() }.build())
 
         this.layout.visitWidgets(this::addRenderableWidget)
@@ -107,6 +148,8 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
         val font = Minecraft.getInstance().font
         val line = ResizingEqualSpacingLayout.Horizontal(310)
 
+        val useFullWidth = option is PackConfigOption.Separator || option is PackConfigOption.Information
+
         val titleWidget = StringWidget(option.title(null), font).apply {
             this.active = true
             this.withClickHandler(::handleComponentClick)
@@ -114,7 +157,7 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
         val descWidget = MultiLineTextWidget(Component.empty().append(option.description(null)).withColor(CommonColors.LIGHT_GRAY), font).apply {
             this.active = true
             this.setCentered(false)
-            this.setMaxWidth(225)
+            this.setMaxWidth(if (useFullWidth) 310 else 225)
             this.withClickHandler(::handleComponentClick)
         }
 
@@ -126,7 +169,7 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
         )
         getOptionWidget(option, titleWidget, descWidget)?.let(line::addChild)
 
-        if (option is PackConfigOption.Separator || option is PackConfigOption.Information) {
+        if (useFullWidth) {
             return LinearLayout.vertical().apply {
                 this.spacing(2)
                 this.addChild(line)
@@ -233,6 +276,12 @@ class PackConfigScreen(private val parent: Screen?, pack: String, private val op
                 this@PackConfigScreen.repositionElements()
             }
         }
+
+    private fun PackConfigOption.matches(query: String): Boolean {
+        if (query.isBlank()) return true
+        return this.title(null).string.contains(query, true) ||
+            this.description(null).string.contains(query, true)
+    }
 
     companion object {
 

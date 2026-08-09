@@ -5,7 +5,7 @@
   },
   "layout": [
     {
-      "id": "skyblock_gui:fast_travel/the_end/spawn_locked",
+      "id": "skyblock_gui:fast_travel/combat_3/spawn/locked",
       "target": {
         "conditions": [
           {
@@ -14,26 +14,17 @@
             "type": "catharsis:name"
           },
           {
-            "conditions": [
-              {
-                "items": "minecraft:bedrock",
-                "type": "catharsis:item"
-              },
-              {
-                "name": "Warp not unlocked!",
-                "mode": "equals",
-                "line": -1,
-                "type": "catharsis:lore"
-              }
-            ],
-            "type": "catharsis:any"
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
           }
         ],
         "type": "catharsis:all"
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/the_end/spawn_unlocked",
+      "id": "skyblock_gui:fast_travel/combat_3/spawn/unlocked",
       "target": {
         "conditions": [
           {
@@ -43,8 +34,10 @@
           },
           {
             "condition": {
-              "items": "minecraft:bedrock",
-              "type": "catharsis:item"
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
             },
             "type": "catharsis:not"
           }
@@ -53,7 +46,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/the_end/nest_locked",
+      "id": "skyblock_gui:fast_travel/combat_3/nest/locked",
       "target": {
         "conditions": [
           {
@@ -62,26 +55,17 @@
             "type": "catharsis:name"
           },
           {
-            "conditions": [
-              {
-                "items": "minecraft:bedrock",
-                "type": "catharsis:item"
-              },
-              {
-                "name": "Warp not unlocked!",
-                "mode": "equals",
-                "line": -1,
-                "type": "catharsis:lore"
-              }
-            ],
-            "type": "catharsis:any"
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
           }
         ],
         "type": "catharsis:all"
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/the_end/nest_unlocked",
+      "id": "skyblock_gui:fast_travel/combat_3/nest/unlocked",
       "target": {
         "conditions": [
           {
@@ -91,8 +75,10 @@
           },
           {
             "condition": {
-              "items": "minecraft:bedrock",
-              "type": "catharsis:item"
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
             },
             "type": "catharsis:not"
           }
@@ -101,7 +87,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/the_end/sepulture_locked",
+      "id": "skyblock_gui:fast_travel/combat_3/sepulture/locked",
       "target": {
         "conditions": [
           {
@@ -110,26 +96,17 @@
             "type": "catharsis:name"
           },
           {
-            "conditions": [
-              {
-                "items": "minecraft:bedrock",
-                "type": "catharsis:item"
-              },
-              {
-                "name": "Warp not unlocked!",
-                "mode": "equals",
-                "line": -1,
-                "type": "catharsis:lore"
-              }
-            ],
-            "type": "catharsis:any"
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
           }
         ],
         "type": "catharsis:all"
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/the_end/sepulture_unlocked",
+      "id": "skyblock_gui:fast_travel/combat_3/sepulture/unlocked",
       "target": {
         "conditions": [
           {
@@ -139,8 +116,10 @@
           },
           {
             "condition": {
-              "items": "minecraft:bedrock",
-              "type": "catharsis:item"
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
             },
             "type": "catharsis:not"
           }

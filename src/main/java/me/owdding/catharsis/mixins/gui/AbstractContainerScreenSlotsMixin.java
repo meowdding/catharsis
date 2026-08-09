@@ -1,7 +1,5 @@
 package me.owdding.catharsis.mixins.gui;
 
-//~ gui_graphics
-
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;

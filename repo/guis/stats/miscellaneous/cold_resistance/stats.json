@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/miscellaneous/cold_resistance/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "❄ Cold Resistance.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:ice"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE006 Cold Resistance [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❄ Flat Bonuses"
+        "name": "\uE006 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❄ Additive Buffs"
+        "name": "\uE006 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❄ Multiplicative Buffs"
+        "name": "\uE006 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "❄ Cap"
+        "name": "\uE006 Cap"
       }
     }
   ]

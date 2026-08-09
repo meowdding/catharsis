@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/farming/cactus_fortune/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "☘ Cactus Fortune.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:cactus"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE051 Cactus Fortune [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Flat Bonuses"
+        "name": "\uE051 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Additive Buffs"
+        "name": "\uE051 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Multiplicative Buffs"
+        "name": "\uE051 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "☘ Cap"
+        "name": "\uE051 Cap"
       }
     }
   ]

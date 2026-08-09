@@ -3,7 +3,9 @@ package me.owdding.catharsis.features.gui.modifications.elements
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
+import me.owdding.catharsis.features.gui.definitions.GuiDefinitions
 import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiSlotClickWidgetInteraction
+import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiSlotIdClickWidgetInteraction
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.GenerateCodec
@@ -43,6 +45,18 @@ data class SlotWidgetTooltip(val slot: Int) : GuiWidgetTooltip {
 }
 
 @GenerateCodec
+data class SlotIdWidgetTooltip(val slot: Identifier) : GuiWidgetTooltip {
+    override val codec = CatharsisCodecs.getMapCodec<SlotIdWidgetTooltip>()
+
+    fun getSlot() = McScreen.asMenu?.menu?.slots?.firstOrNull { GuiDefinitions.getSlot(it.index) == slot }
+
+    override fun getTooltip(element: GuiWidgetElement): List<Component>? {
+        val slot = getSlot() ?: return null
+        return getSlotTooltip(slot.index)
+    }
+}
+
+@GenerateCodec
 data class SkyBlockIdWidgetTooltip(val id: SkyBlockId, val withName: Boolean = true, val withLore: Boolean = true) : GuiWidgetTooltip {
     override val codec = CatharsisCodecs.getMapCodec<SkyBlockIdWidgetTooltip>()
 
@@ -57,10 +71,19 @@ object InteractionWidgetTooltip : GuiWidgetTooltip {
     override val codec = MapCodec.unit(this)
 
     override fun getTooltip(element: GuiWidgetElement): List<Component>? {
-        val interaction = element.interaction
-        if (interaction is GuiSlotClickWidgetInteraction) {
-            return getSlotTooltip(interaction.slot)
+        val interactions = listOfNotNull(element.interaction.left, element.interaction.right, element.interaction.middle)
+
+        for (interaction in interactions) {
+            if (interaction is GuiSlotClickWidgetInteraction) {
+                return getSlotTooltip(interaction.slot)
+            }
+            if (interaction is GuiSlotIdClickWidgetInteraction) {
+                interaction.getSlot()?.index?.let {
+                    return getSlotTooltip(it)
+                }
+            }
         }
+
         return null
     }
 }
@@ -84,6 +107,7 @@ object WidgetTooltips {
     init {
         ID_MAPPER.put(Catharsis.id("text"), CatharsisCodecs.getMapCodec<TextWidgetTooltip>())
         ID_MAPPER.put(Catharsis.id("slot"), CatharsisCodecs.getMapCodec<SlotWidgetTooltip>())
+        ID_MAPPER.put(Catharsis.id("slot_id"), CatharsisCodecs.getMapCodec<SlotIdWidgetTooltip>())
         ID_MAPPER.put(Catharsis.id("id"), CatharsisCodecs.getMapCodec<SkyBlockIdWidgetTooltip>())
         ID_MAPPER.put(Catharsis.id("interaction"), InteractionWidgetTooltip.codec)
     }

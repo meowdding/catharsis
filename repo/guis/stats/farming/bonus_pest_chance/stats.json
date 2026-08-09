@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/farming/bonus_pest_chance/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "ൠ Bonus Pest Chance.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:dirt"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE019 Bonus Pest Chance [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ൠ Flat Bonuses"
+        "name": "\uE019 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ൠ Additive Buffs"
+        "name": "\uE019 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ൠ Multiplicative Buffs"
+        "name": "\uE019 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ൠ Cap"
+        "name": "\uE019 Cap"
       }
     }
   ]

@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/rift/rift_time/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "ф Rift Time.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:clock"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE020 Rift Time [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ф Flat Bonuses"
+        "name": "\uE020 Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ф Additive Buffs"
+        "name": "\uE020 Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ф Multiplicative Buffs"
+        "name": "\uE020 Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "ф Cap"
+        "name": "\uE020 Cap"
       }
     }
   ]

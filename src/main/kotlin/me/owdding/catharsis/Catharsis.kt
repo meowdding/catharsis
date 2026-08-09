@@ -2,7 +2,13 @@ package me.owdding.catharsis
 
 import com.google.gson.JsonObject
 import com.mojang.brigadier.arguments.StringArgumentType
-import me.owdding.catharsis.events.*
+import me.owdding.catharsis.events.BootstrapConditionalPropertiesEvent
+import me.owdding.catharsis.events.BootstrapItemModelsEvent
+import me.owdding.catharsis.events.BootstrapItemTintSourceEvent
+import me.owdding.catharsis.events.BootstrapNumericPropertiesEvent
+import me.owdding.catharsis.events.BootstrapSelectPropertiesEvent
+import me.owdding.catharsis.events.FinishRepoLoadEvent
+import me.owdding.catharsis.events.StartRepoLoadEvent
 import me.owdding.catharsis.features.imc.ImcHandler
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.generated.CatharsisModules
@@ -38,10 +44,14 @@ import tech.thatgravyboat.skyblockapi.platform.Identifiers
 import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import tech.thatgravyboat.skyblockapi.utils.text.Text
+import tech.thatgravyboat.skyblockapi.utils.text.Text.send
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
 import tech.thatgravyboat.skyblockapi.utils.text.TextColor
+import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.bold
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.hover
+import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.onClick
+import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.suggest
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.url
 import java.util.concurrent.CompletableFuture
 import kotlin.io.path.readText
@@ -76,12 +86,10 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
         ImcHandler.setup()
     }
 
-    fun loadRepo(notify: Boolean = CatharsisDevUtils.getBoolean("repo_notify")) {
+    fun loadRepo() {
         val branch = CatharsisDevUtils.properties[REPO_BRANCH_PROPERTY] ?: buildInfo.branch.replace("/", "-")
-        if (notify) {
-            info("Loading repo on branch $branch")
-            Text.of("Loading repo on branch $branch").sendWithPrefixIf { McLevel.hasLevel }
-        }
+        info("Loading repo on branch $branch")
+        Text.of("Loading repo on branch $branch").sendWithPrefixIf { McLevel.hasLevel }
         CompletableFuture.runAsync {
             StartRepoLoadEvent.post(SkyBlockAPI.eventBus)
             CatharsisRemoteRepo.initialize(branch) {
@@ -97,7 +105,28 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
             }
         }.exceptionally { throwable ->
             error("Failed to load remote repo!", throwable)
-            Text.of("Failed to load repo! Please report this on the Discord").sendWithPrefixIf { McLevel.hasLevel }
+
+            CompletableFuture.runAsync {
+                while (!McLevel.hasLevel) {
+                    Thread.sleep(5000)
+                }
+                McClient.runNextTick {
+                    Text.of("Failed to load repo! ") {
+                        color = TextColor.RED
+
+                        append("Click here for a way to potentially fix it. ") {
+                            color = CatppuccinColors.Mocha.red
+                            suggest = "catharsis repo failed"
+                            hover = Text.of("Click here!")
+                        }
+                        append("If that doesn't work or doesn't apply to you, report it on the Discord.") {
+                            url = DISCORD
+                            color = CatppuccinColors.Mocha.pink
+                            hover = Text.of(DISCORD).withColor(TextColor.GRAY)
+                        }
+                    }
+                }
+            }
             null
         }
     }
@@ -118,6 +147,17 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
                 Text.of("Opening Catsquash Website...", CatppuccinColors.Mocha.pink).sendWithPrefix()
             }
 
+            then("docs") {
+                thenCallback("dev") {
+                    McClient.openUri("https://catharsis.meowdd.ing?dev")
+                    Text.of("Opening Catharsis Development Docs...", CatppuccinColors.Mocha.pink).sendWithPrefix()
+                }
+                callback {
+                    McClient.openUri("https://catharsis.meowdd.ing?latest")
+                    Text.of("Opening Catharsis Docs...", CatppuccinColors.Mocha.pink).sendWithPrefix()
+                }
+            }
+
             thenCallback("discord") {
                 Text.of("Join the Meowdding Discord!").apply {
                     this.url = DISCORD
@@ -129,7 +169,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
             then("repo") {
                 thenCallback("reload") {
                     CatharsisRemoteRepo.uninitialize()
-                    loadRepo(true)
+                    loadRepo()
                 }
                 thenCallback("branch branch", StringArgumentType.greedyString()) {
                     val branch = argument<String>("branch")
@@ -141,6 +181,47 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
                     CatharsisDevUtils.properties.remove(REPO_BRANCH_PROPERTY)
                     CatharsisDevUtils.saveProperties()
                     Text.of("Reset repo branch!").sendWithPrefix()
+                }
+                thenCallback("failed") {
+                    Text.multiline(
+                        Text.of("--------------------------------------------------", TextColor.GRAY),
+                        Text.of("!!! XFINITY ISP/INTERNET CENSORSHIP !!!") {
+                            color = TextColor.RED
+                            bold = true
+                        },
+                        Text.of("If you live in Russia or any country that (partially) blocks the internet, whitelist these URLs in your VPN."),
+                        Text.of(""),
+                        Text.of("If your ISP is xFinity, whitelist these URLs in the Advanced Security feature (Or just disable it)."),
+                        Text.of(""),
+                        Text.of("URLs:") { bold = true },
+                        Text.of(""),
+                        Text.of("> skyblock-repo.pages.dev/") {
+                            hover = Text.of("Click to copy https://skyblock-repo.pages.dev/")
+                            onClick {
+                                McClient.clipboard = "https://skyblock-repo.pages.dev/"
+                                Text.of("Copied https://skyblock-repo.pages.dev/ to clipboard!", TextColor.GREEN).send()
+                            }
+                        },
+                        Text.of(""),
+                        Text.of("> skyblock-api-repo.thatgravyboat.tech/") {
+                            hover = Text.of("Click to copy https://skyblock-api-repo.thatgravyboat.tech/")
+                            onClick {
+                                McClient.clipboard = "https://skyblock-api-repo.thatgravyboat.tech/"
+                                Text.of("Copied https://skyblock-api-repo.thatgravyboat.tech/ to clipboard!", TextColor.GREEN).send()
+                            }
+                        },
+                        Text.of(""),
+                        Text.of("> catharsis.repo.meowdd.ing/") {
+                            hover = Text.of("Click to copy https://catharsis.repo.meowdd.ing/")
+                            onClick {
+                                McClient.clipboard = "https://catharsis.repo.meowdd.ing/"
+                                Text.of("Copied https://catharsis.repo.meowdd.ing/ to clipboard!", TextColor.GREEN).send()
+                            }
+                        },
+                        Text.of(""),
+                        Text.of("Click them to copy the full URLs!", TextColor.GOLD),
+                        Text.of("--------------------------------------------------", TextColor.GRAY),
+                    ).send()
                 }
             }
         }

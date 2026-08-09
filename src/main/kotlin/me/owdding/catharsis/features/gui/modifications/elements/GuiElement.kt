@@ -4,7 +4,8 @@ import com.mojang.datafixers.util.Either
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
-import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiWidgetInteraction
+import me.owdding.catharsis.features.gui.modifications.elements.conditions.GuiElementCondition
+import me.owdding.catharsis.features.gui.modifications.elements.interactions.GuiWidgetClickInteractions
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.client.gui.GuiGraphicsExtractor
@@ -58,17 +59,22 @@ interface GuiElement {
 
     val codec: MapCodec<out GuiElement>
     val layer: GuiElementRenderLayer get() = GuiElementRenderLayer.FOREGROUND
+    val condition: GuiElementCondition?
 
     fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle)
 }
 
 interface GuiWidgetElement : GuiElement {
 
-    val interaction: GuiWidgetInteraction
+    val interaction: GuiWidgetClickInteractions
     val tooltip: List<GuiWidgetTooltip>?
     override val codec: MapCodec<out GuiWidgetElement>
 
     fun isHovered(mouseX: Int, mouseY: Int, bounds: ScreenRectangle): Boolean
-    fun onClick(button: Int) = interaction.click(button)
+
+    fun onClick(button: Int) {
+        interaction.getForButton(button)?.click(button)
+    }
+
     fun getParsedTooltip(): List<Component>? = tooltip?.mapNotNull { it.getTooltip(this) }?.flatten()
 }

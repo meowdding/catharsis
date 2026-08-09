@@ -7,17 +7,8 @@
     {
       "id": "skyblock_gui:stats/mining/pristine/icon",
       "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:name",
-            "name": "✧ Pristine.+"
-          },
-          {
-            "type": "item",
-            "items": "minecraft:player_head"
-          }
-        ]
+        "type": "catharsis:name",
+        "name": "\uE01C Pristine [\\d,.]+"
       }
     },
     {
@@ -25,7 +16,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "✧ Flat Bonuses"
+        "name": "\uE01C Flat Bonuses"
       }
     },
     {
@@ -41,7 +32,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "✧ Additive Buffs"
+        "name": "\uE01C Additive Buffs"
       }
     },
     {
@@ -49,7 +40,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "✧ Multiplicative Buffs"
+        "name": "\uE01C Multiplicative Buffs"
       }
     },
     {
@@ -57,7 +48,7 @@
       "target": {
         "type": "name",
         "mode": "equals",
-        "name": "✧ Cap"
+        "name": "\uE01C Cap"
       }
     }
   ]

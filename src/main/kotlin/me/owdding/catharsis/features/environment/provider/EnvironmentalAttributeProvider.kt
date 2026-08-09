@@ -2,6 +2,7 @@ package me.owdding.catharsis.features.environment.provider
 
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
+import me.owdding.catharsis.utils.codecs.optionalDispatch
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.world.attribute.EnvironmentAttribute
 import net.minecraft.world.attribute.SpatialAttributeInterpolator
@@ -16,10 +17,11 @@ interface EnvironmentalAttributeProvider<Value> {
         fun <Value : Any> createCodec(type: EnvironmentAttribute<Value>): MapCodec<EnvironmentalAttributeProvider<Value>> {
             val mapper = ExtraCodecs.LateBoundIdMapper<String, MapCodec<out EnvironmentalAttributeProvider<Value>>>()
 
+            val modified = ModifiedAttributeProvider.createCodec(type)
             mapper.put("override", OverrideAttributeProvider.createCodec(type.type()))
-            mapper.put("modified", ModifiedAttributeProvider.createCodec(type))
+            mapper.put("modified", modified)
 
-            return mapper.codec(Codec.STRING).dispatchMap(EnvironmentalAttributeProvider<Value>::codec) { it }
+            return mapper.codec(Codec.STRING).optionalDispatch("type", EnvironmentalAttributeProvider<Value>::codec, modified) { it }
         }
     }
 }

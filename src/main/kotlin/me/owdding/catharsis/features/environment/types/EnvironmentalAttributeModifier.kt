@@ -2,9 +2,9 @@ package me.owdding.catharsis.features.environment
 
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
-import me.owdding.catharsis.features.environment.conditions.EnvironmentalAttributeCondition
+import me.owdding.catharsis.features.environment.conditions.ConstantCondition
+import me.owdding.catharsis.features.environment.conditions.EnvironmentalModifierCondition
 import me.owdding.catharsis.features.environment.provider.EnvironmentalAttributeProvider
-import me.owdding.catharsis.utils.extensions.unsafeCast
 import net.minecraft.world.attribute.EnvironmentAttribute
 import net.minecraft.world.attribute.EnvironmentAttributeLayer
 import net.minecraft.world.attribute.SpatialAttributeInterpolator
@@ -12,19 +12,19 @@ import net.minecraft.world.phys.Vec3
 
 data class EnvironmentalAttributeModifier<Value : Any>(
     val attribute: EnvironmentAttribute<Value>,
-    val condition: EnvironmentalAttributeCondition<Value>,
+    override val condition: EnvironmentalModifierCondition<Value>,
     val provider: EnvironmentalAttributeProvider<Value>,
-) : EnvironmentAttributeLayer.Positional<Value>, EnvironmentalModifier {
+) : EnvironmentAttributeLayer.Positional<Value>, EnvironmentalModifier<Value> {
 
     companion object {
-        fun <Value : Any> createCodec(attribute: EnvironmentAttribute<Value>): MapCodec<EnvironmentalAttributeModifier<out Any>> = RecordCodecBuilder.mapCodec {
+        fun <Value : Any> createCodec(attribute: EnvironmentAttribute<Value>): MapCodec<EnvironmentalAttributeModifier<Value>> = RecordCodecBuilder.mapCodec {
             it.group(
-                EnvironmentalAttributeCondition.createCodec(attribute.type().valueCodec).fieldOf("condition").forGetter(EnvironmentalAttributeModifier<Value>::condition),
+                EnvironmentalModifierCondition.createCodec(attribute.type().valueCodec).codec().optionalFieldOf("condition", ConstantCondition.True.asTyped()).forGetter(EnvironmentalAttributeModifier<Value>::condition),
                 EnvironmentalAttributeProvider.createCodec(attribute).fieldOf("provider").forGetter(EnvironmentalAttributeModifier<Value>::provider),
             ).apply(it) { condition, provider ->
                 EnvironmentalAttributeModifier(attribute, condition, provider)
             }
-        }.unsafeCast()
+        }
     }
 
     override fun applyPositional(baseValue: Value, pos: Vec3, biomeInterpolator: SpatialAttributeInterpolator?): Value {
@@ -37,6 +37,10 @@ data class EnvironmentalAttributeModifier<Value : Any>(
         }
     }
 
-    fun codec(): MapCodec<EnvironmentalAttributeModifier<out Any>> = createCodec(attribute)
-    override val codec: MapCodec<out EnvironmentalModifier> get() = TODO()
+    fun codec(): MapCodec<EnvironmentalAttributeModifier<Value>> = createCodec(attribute)
+    override val codec: MapCodec<out EnvironmentalModifier<out Any>> get() = TODO()
+
+    override fun register(environmentalModifierCollector: EnvironmentalModifierCollector) {
+        environmentalModifierCollector.register(this)
+    }
 }

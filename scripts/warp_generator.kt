@@ -157,7 +157,7 @@ fun warps() {
         "dungeon_hub/spawn" to RegexTextMatcher("Dungeon Hub(?: - Spawn)?"),
         "farming_1/spawn" to RegexTextMatcher("The Barn(?: - Spawn)?"),
         "foraging_1/spawn" to RegexTextMatcher("The Park(?: - Spawn)?"),
-        "foraging_2/spawn" to RegexTextMatcher("Galatea(?: - Spawn)?"),
+        "foraging_2/spawn" to RegexTextMatcher("Moonglade Marsh(?: - Spawn)?"),
         "mining_1/spawn" to RegexTextMatcher("Gold Mine(?: - Spawn)?"),
         "mining_2/spawn" to RegexTextMatcher("Deep Caverns(?: - Spawn)?"),
         "mining_3/spawn" to RegexTextMatcher("Dwarven Mines(?: - Spawn)?"),
@@ -211,11 +211,11 @@ fun warps() {
     )
 
     warpMenu(
-        "Galatea Warps",
+        "Moonglade Marsh Warps",
         "foraging_2",
         listOf(
-            "Galatea - Spawn" to "spawn",
-            "Galatea - Murkwater Loch" to "murkwater",
+            "Moonglade - Spawn" to "spawn",
+            "Moonglade - Murkwater Loch" to "murkwater",
         ),
     )
 

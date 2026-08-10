@@ -1,6 +1,6 @@
 {
   "target": {
-    "title": "Sea Lumies Collection",
+    "title": "Helix Log Collection",
     "type": "catharsis:title"
   },
   "layout": [
@@ -18,8 +18,8 @@
           },
           {
             "name": [
-              "Sea Lumies 1",
-              "Sea Lumies I"
+              "Helix Log 1",
+              "Helix Log I"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -42,8 +42,8 @@
           },
           {
             "name": [
-              "Sea Lumies 1",
-              "Sea Lumies I"
+              "Helix Log 1",
+              "Helix Log I"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -66,8 +66,8 @@
           },
           {
             "name": [
-              "Sea Lumies 1",
-              "Sea Lumies I"
+              "Helix Log 1",
+              "Helix Log I"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -90,8 +90,8 @@
           },
           {
             "name": [
-              "Sea Lumies 2",
-              "Sea Lumies II"
+              "Helix Log 2",
+              "Helix Log II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -114,8 +114,8 @@
           },
           {
             "name": [
-              "Sea Lumies 2",
-              "Sea Lumies II"
+              "Helix Log 2",
+              "Helix Log II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -138,8 +138,8 @@
           },
           {
             "name": [
-              "Sea Lumies 2",
-              "Sea Lumies II"
+              "Helix Log 2",
+              "Helix Log II"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -162,8 +162,8 @@
           },
           {
             "name": [
-              "Sea Lumies 3",
-              "Sea Lumies III"
+              "Helix Log 3",
+              "Helix Log III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -186,8 +186,8 @@
           },
           {
             "name": [
-              "Sea Lumies 3",
-              "Sea Lumies III"
+              "Helix Log 3",
+              "Helix Log III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -210,8 +210,8 @@
           },
           {
             "name": [
-              "Sea Lumies 3",
-              "Sea Lumies III"
+              "Helix Log 3",
+              "Helix Log III"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -234,8 +234,8 @@
           },
           {
             "name": [
-              "Sea Lumies 4",
-              "Sea Lumies IV"
+              "Helix Log 4",
+              "Helix Log IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -258,8 +258,8 @@
           },
           {
             "name": [
-              "Sea Lumies 4",
-              "Sea Lumies IV"
+              "Helix Log 4",
+              "Helix Log IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -282,8 +282,8 @@
           },
           {
             "name": [
-              "Sea Lumies 4",
-              "Sea Lumies IV"
+              "Helix Log 4",
+              "Helix Log IV"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -306,8 +306,8 @@
           },
           {
             "name": [
-              "Sea Lumies 5",
-              "Sea Lumies V"
+              "Helix Log 5",
+              "Helix Log V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -330,8 +330,8 @@
           },
           {
             "name": [
-              "Sea Lumies 5",
-              "Sea Lumies V"
+              "Helix Log 5",
+              "Helix Log V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -354,8 +354,8 @@
           },
           {
             "name": [
-              "Sea Lumies 5",
-              "Sea Lumies V"
+              "Helix Log 5",
+              "Helix Log V"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -378,8 +378,8 @@
           },
           {
             "name": [
-              "Sea Lumies 6",
-              "Sea Lumies VI"
+              "Helix Log 6",
+              "Helix Log VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -402,8 +402,8 @@
           },
           {
             "name": [
-              "Sea Lumies 6",
-              "Sea Lumies VI"
+              "Helix Log 6",
+              "Helix Log VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -426,8 +426,8 @@
           },
           {
             "name": [
-              "Sea Lumies 6",
-              "Sea Lumies VI"
+              "Helix Log 6",
+              "Helix Log VI"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -450,8 +450,8 @@
           },
           {
             "name": [
-              "Sea Lumies 7",
-              "Sea Lumies VII"
+              "Helix Log 7",
+              "Helix Log VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -474,8 +474,8 @@
           },
           {
             "name": [
-              "Sea Lumies 7",
-              "Sea Lumies VII"
+              "Helix Log 7",
+              "Helix Log VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -498,8 +498,8 @@
           },
           {
             "name": [
-              "Sea Lumies 7",
-              "Sea Lumies VII"
+              "Helix Log 7",
+              "Helix Log VII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -522,8 +522,8 @@
           },
           {
             "name": [
-              "Sea Lumies 8",
-              "Sea Lumies VIII"
+              "Helix Log 8",
+              "Helix Log VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -546,8 +546,8 @@
           },
           {
             "name": [
-              "Sea Lumies 8",
-              "Sea Lumies VIII"
+              "Helix Log 8",
+              "Helix Log VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -570,8 +570,8 @@
           },
           {
             "name": [
-              "Sea Lumies 8",
-              "Sea Lumies VIII"
+              "Helix Log 8",
+              "Helix Log VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -594,8 +594,8 @@
           },
           {
             "name": [
-              "Sea Lumies 9",
-              "Sea Lumies IX"
+              "Helix Log 9",
+              "Helix Log IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -618,8 +618,8 @@
           },
           {
             "name": [
-              "Sea Lumies 9",
-              "Sea Lumies IX"
+              "Helix Log 9",
+              "Helix Log IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -642,80 +642,8 @@
           },
           {
             "name": [
-              "Sea Lumies 9",
-              "Sea Lumies IX"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:collections/foraging/unlocked/start_end",
-      "target": {
-        "conditions": [
-          {
-            "slot": 27,
-            "type": "catharsis:slot"
-          },
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Sea Lumies 10",
-              "Sea Lumies X"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:collections/foraging/unlocking/start_end",
-      "target": {
-        "conditions": [
-          {
-            "slot": 27,
-            "type": "catharsis:slot"
-          },
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Sea Lumies 10",
-              "Sea Lumies X"
-            ],
-            "mode": "equals",
-            "type": "catharsis:name"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:collections/foraging/locked/start_end",
-      "target": {
-        "conditions": [
-          {
-            "slot": 27,
-            "type": "catharsis:slot"
-          },
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item"
-          },
-          {
-            "name": [
-              "Sea Lumies 10",
-              "Sea Lumies X"
+              "Helix Log 9",
+              "Helix Log IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"

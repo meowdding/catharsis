@@ -1,6 +1,6 @@
 {
   "target": {
-    "title": "Galatea Warps",
+    "title": "Moonglade Marsh Warps",
     "type": "catharsis:title"
   },
   "layout": [
@@ -9,7 +9,7 @@
       "target": {
         "conditions": [
           {
-            "name": "Galatea - Spawn",
+            "name": "Moonglade Marsh - Spawn",
             "mode": "equals",
             "type": "catharsis:name"
           },
@@ -28,7 +28,7 @@
       "target": {
         "conditions": [
           {
-            "name": "Galatea - Spawn",
+            "name": "Moonglade Marsh - Spawn",
             "mode": "equals",
             "type": "catharsis:name"
           },
@@ -50,7 +50,7 @@
       "target": {
         "conditions": [
           {
-            "name": "Galatea - Murkwater Loch",
+            "name": "Moonglade Marsh - Murkwater Loch",
             "mode": "equals",
             "type": "catharsis:name"
           },
@@ -69,7 +69,7 @@
       "target": {
         "conditions": [
           {
-            "name": "Galatea - Murkwater Loch",
+            "name": "Moonglade Marsh - Murkwater Loch",
             "mode": "equals",
             "type": "catharsis:name"
           },

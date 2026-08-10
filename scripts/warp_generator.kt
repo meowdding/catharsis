@@ -214,8 +214,8 @@ fun warps() {
         "Moonglade Marsh Warps",
         "foraging_2",
         listOf(
-            "Moonglade - Spawn" to "spawn",
-            "Moonglade - Murkwater Loch" to "murkwater",
+            "Moonglade Marsh - Spawn" to "spawn",
+            "Moonglade Marsh - Murkwater Loch" to "murkwater",
         ),
     )
 

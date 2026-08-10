@@ -352,7 +352,7 @@
       "target": {
         "conditions": [
           {
-            "name": "Galatea(?: - Spawn)?",
+            "name": "Moonglade Marsh(?: - Spawn)?",
             "type": "catharsis:name"
           },
           {
@@ -370,7 +370,7 @@
       "target": {
         "conditions": [
           {
-            "name": "Galatea(?: - Spawn)?",
+            "name": "Moonglade Marsh(?: - Spawn)?",
             "type": "catharsis:name"
           },
           {

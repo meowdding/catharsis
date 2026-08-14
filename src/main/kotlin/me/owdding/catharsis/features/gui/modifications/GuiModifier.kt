@@ -29,6 +29,7 @@ data class GuiModifier(
     @OptionalBoolean(false) val overrideLabels: Boolean = false,
     @OptionalBoolean(false) val overrideBackground: Boolean = false,
     @OptionalBoolean(false) val disableItemList: Boolean = false,
+    @OptionalBoolean(false) val hideRecipeBookButton: Boolean = false,
 
     @NamedCodec("size") val bounds: Vector2i?,
 

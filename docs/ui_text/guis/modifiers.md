@@ -25,6 +25,12 @@ You can define a gui modifiers in `assets/<namespace>/catharsis/gui_modifiers/<i
 
 </Version>
 
+<Version type="1.0.0-beta.22">
+
+- <TypeIcon type="boolean"/> **hideRecipeBookButton**: (Optional) Hides the Recipe Book Button, defaults to `false`.
+
+</Version>
+
 - <TypeIcon type="object"/> **bounds**: (Optional) Determines if you clicked outside the container, uses the default container bounds if not specified.
     - <TypeIcon type="int"/> **width**: The width, should be 100 when using the default size.
     - <TypeIcon type="int"/> **height**: The height, should be 100 when using the default size.

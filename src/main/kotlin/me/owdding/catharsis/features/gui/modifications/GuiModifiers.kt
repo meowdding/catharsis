@@ -89,6 +89,7 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
                 overrideLabels = modifiers.any { it.overrideLabels },
                 overrideBackground = modifiers.any { it.overrideBackground },
                 disableItemList = modifiers.any { it.disableItemList },
+                hideRecipeBookButton = modifiers.any { it.hideRecipeBookButton },
                 bounds = modifiers.mapNotNull { it.bounds }.let { sizes ->
                     if (sizes.isEmpty()) null else {
                         Vector2i(sizes.maxOf { it.x }, sizes.maxOf { it.y })

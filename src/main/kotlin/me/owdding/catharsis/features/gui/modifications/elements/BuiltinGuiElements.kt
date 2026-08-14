@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.gui.modifications.elements
 
+//? > 26.1
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.gui.modifications.elements.conditions.GuiElementCondition
 import me.owdding.catharsis.generated.CatharsisCodecs
@@ -14,18 +15,10 @@ import net.minecraft.network.chat.Component
 import net.minecraft.resources.Identifier
 import net.minecraft.util.CommonColors
 import net.minecraft.util.LightCoordsUtil
-import net.minecraft.world.entity.Entity
-import net.minecraft.world.entity.EntitySpawnReason
-//? > 26.1
-import net.minecraft.world.entity.EntitySpawnRequest
-import net.minecraft.world.entity.EntityType
-import net.minecraft.world.entity.LivingEntity
+import net.minecraft.world.entity.*
 import org.joml.Quaternionf
 import org.joml.Vector3f
-import tech.thatgravyboat.skyblockapi.helpers.McClient
-import tech.thatgravyboat.skyblockapi.helpers.McFont
-import tech.thatgravyboat.skyblockapi.helpers.McLevel
-import tech.thatgravyboat.skyblockapi.helpers.McPlayer
+import tech.thatgravyboat.skyblockapi.helpers.*
 
 abstract class AbstractGuiEntityElement() : GuiElement {
     abstract val rotation: Quaternionf?
@@ -135,6 +128,7 @@ data class GuiSpriteElement(
 data class GuiTextElement(
     val text: Component,
     val color: Int = CommonColors.DARK_GRAY,
+    val stealFromScreen: Boolean = false,
     val x: GuiElementPosition,
     val y: GuiElementPosition,
     val alignment: Float = 0f,
@@ -144,6 +138,7 @@ data class GuiTextElement(
     override val codec: MapCodec<GuiSpriteElement> = CatharsisCodecs.getMapCodec<GuiSpriteElement>()
 
     override fun render(graphics: GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTicks: Float, bounds: ScreenRectangle) {
+        val text = McScreen.self?.title?.takeIf { stealFromScreen } ?: text
         val newX = x.calculate(bounds.left(), bounds.width()) - (McFont.width(text) * alignment).toInt()
         val newY = y.calculate(bounds.top(), bounds.height())
         graphics.text(McFont.self, text, newX, newY, this.color)

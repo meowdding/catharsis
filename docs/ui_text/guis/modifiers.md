@@ -213,6 +213,14 @@ Render text on the screen.
 
 - <TypeIcon type="object"/> **text**: [A component in JSON format.](https://minecraft.wiki/w/Text_component_format)
 - <TypeIcon type="int"/> **color**: (Optional) The color to render the base string with, defaults to [`-12566464`](https://www.hexcolortool.com/#6844f8).
+
+<Version type="1.0.0-beta.22">
+
+- <TypeIcon type="boolean"/> **stealFromScreen**: (Optional) Steals the screens title, or fallbacks to the defined title if empty/not found, defaults to `false`.
+
+</Version>
+
+- <TypeIcon type="float"/> **alignment**: (Optional) The text alignment based on the coordinates above, defaults to `0`. 0 is left, 0.5 is center, 1 is right.
 - <TypeIcon type="object"/> **x**: The x coordinate & alignment of the text. **Can only be one of the entries below.**
     - <TypeIcon type="int"/> The x coordinate based from the `START`.
     - <TypeIcon type="object"/> Coordinate & Alignment object.
@@ -223,7 +231,6 @@ Render text on the screen.
     - <TypeIcon type="object"/> Coordinate & Alignment object.
         - <TypeIcon type="int"/> **offset**: The offset from the screen bounds (main container size).
         - <TypeIcon type="string"/> **alignment**: The alignment of the text, can be `START`, `CENTER` or `END`.
-- <TypeIcon type="float"/> **alignment**: (Optional) The text alignment based on the coordinates above, defaults to `0`. 0 is left, 0.5 is center, 1 is right.
 
 </ul>
 </TreeView>

@@ -48,10 +48,35 @@ private val NEUTRAL_POSES = run {
 
 private fun MeshDefinition.bakeRoot() = LayerDefinition.create(this, HUMANOID_TEXTURE_WIDTH, HUMANOID_TEXTURE_HEIGHT).bakeRoot()
 
+class HumanoidPose(
+    val root: PartPose,
+    val head: PartPose,
+    val body: PartPose,
+    val rightArm: PartPose,
+    val leftArm: PartPose,
+    val rightLeg: PartPose,
+    val leftLeg: PartPose,
+) {
+    companion object {
+        @JvmStatic
+        fun of(model: HumanoidModel<*>) = HumanoidPose(
+            model.root().storePose(),
+            model.head.storePose(),
+            model.body.storePose(),
+            model.rightArm.storePose(),
+            model.leftArm.storePose(),
+            model.rightLeg.storePose(),
+            model.leftLeg.storePose(),
+        )
+    }
+}
+
 object BedrockGeometryRenderer {
 
     @JvmStatic
-    fun render(geometry: BakedBedrockGeometry, slot: EquipmentSlot, model: HumanoidModel<*>, pose: PoseStack.Pose, consumer: VertexConsumer, color: Int, light: Int, overlay: Int) {
+    fun render(geometry: BakedBedrockGeometry, slot: EquipmentSlot, model: HumanoidPose, pose: PoseStack.Pose, consumer: VertexConsumer, color: Int, light: Int, overlay: Int) {
+        applyRoot(model.root, pose)
+
         pose.scale(1f, -1f, 1f)
         pose.translate(0f, -24f / 16f, 0f)
 
@@ -86,6 +111,18 @@ object BedrockGeometryRenderer {
             bone.scale.z = playerBone.zScale
 
             renderBone(bone, pose, consumer, color, light, overlay)
+        }
+    }
+
+    // submitModel does the root for you, submitCustomGeometry doesn't
+    private fun applyRoot(root: PartPose, pose: PoseStack.Pose) {
+        pose.translate(root.x / 16f, root.y / 16f, root.z / 16f)
+
+        if (root.xRot != 0f || root.yRot != 0f || root.zRot != 0f) {
+            pose.rotate(Quaternionf().rotationZYX(root.zRot, root.yRot, root.xRot))
+        }
+        if (root.xScale != 1f || root.yScale != 1f || root.zScale != 1f) {
+            pose.scale(root.xScale, root.yScale, root.zScale)
         }
     }
 

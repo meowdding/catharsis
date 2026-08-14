@@ -1,10 +1,44 @@
 version: 2
+registries:
+
+    devauth:
+        type: maven-repository
+        url: https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1
+
+    hypixelapi:
+        type: maven-repository
+        url: https://repo.hypixel.net/repository/Hypixel
+
+    modrinth:
+        type: maven-repository
+        url: https://api.modrinth.com/maven
+
+    teamresourceful:
+        type: maven-repository
+        url: https://maven.teamresourceful.com/repository/maven-public/
+
+    nucleoid:
+        type: maven-repository
+        url: https://maven.nucleoid.xyz/
+
+    fishstiz:
+        type: maven-repository
+        url: https://raw.githubusercontent.com/fishstiz/maven/m2
+
+    operationpotato-snapshots:
+        type: maven-repository
+        url: https://maven.operationpotato.com/snapshots
+
+    operationpotato-releases:
+        type: maven-repository
+        url: https://maven.operationpotato.com/releases
 updates:
-    - package-ecosystem: "gradle"
-      directory: "/"
-      schedule:
-          interval: "daily"
-      groups:
-          gradle-updates:
-              patterns:
-                  - "*"
+    -   package-ecosystem: gradle
+        directory: /
+        registries: "*"
+        schedule:
+            interval: daily
+        groups:
+            gradle-updates:
+                patterns:
+                    - "*"

@@ -1,6 +1,5 @@
 package me.owdding.catharsis.features.gui.modifications.elements
 
-//? > 26.1
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.gui.modifications.elements.conditions.GuiElementCondition
 import me.owdding.catharsis.generated.CatharsisCodecs
@@ -15,10 +14,19 @@ import net.minecraft.network.chat.Component
 import net.minecraft.resources.Identifier
 import net.minecraft.util.CommonColors
 import net.minecraft.util.LightCoordsUtil
-import net.minecraft.world.entity.*
+import net.minecraft.world.entity.Entity
+import net.minecraft.world.entity.EntitySpawnReason
+//? > 26.1
+import net.minecraft.world.entity.EntitySpawnRequest
+import net.minecraft.world.entity.EntityType
+import net.minecraft.world.entity.LivingEntity
 import org.joml.Quaternionf
 import org.joml.Vector3f
-import tech.thatgravyboat.skyblockapi.helpers.*
+import tech.thatgravyboat.skyblockapi.helpers.McClient
+import tech.thatgravyboat.skyblockapi.helpers.McFont
+import tech.thatgravyboat.skyblockapi.helpers.McLevel
+import tech.thatgravyboat.skyblockapi.helpers.McPlayer
+import tech.thatgravyboat.skyblockapi.helpers.McScreen
 
 abstract class AbstractGuiEntityElement() : GuiElement {
     abstract val rotation: Quaternionf?

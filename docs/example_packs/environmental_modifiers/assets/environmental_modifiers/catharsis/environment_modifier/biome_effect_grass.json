@@ -1,0 +1,12 @@
+{
+  "type": "biome_effect",
+  "effect": "grass_color",
+  "condition": {
+    "type": "in_area",
+    "area": "environmental_modifiers:test_area_1"
+  },
+  "provider": {
+    "type": "override",
+    "value": "#000000"
+  }
+}

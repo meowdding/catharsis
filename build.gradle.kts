@@ -15,8 +15,6 @@ plugins {
     id("me.owdding.auto-mixins")
 }
 
-fun isUnobfuscated() = stonecutter.eval(stonecutter.current.version, ">=26.1")
-
 repositories {
     fun scopedMaven(url: String, vararg paths: String) = maven(url) { content { paths.forEach(::includeGroupAndSubgroups) } }
 
@@ -82,11 +80,11 @@ tasks.build {
 
 tasks.withType<JavaCompile>().configureEach {
     options.encoding = "UTF-8"
-    options.release.set(if (isUnobfuscated()) 25 else 21)
+    options.release.set(25)
 }
 
 tasks.withType<KotlinCompile>().configureEach {
-    compilerOptions.jvmTarget.set(if (isUnobfuscated()) JvmTarget.JVM_25 else JvmTarget.JVM_21)
+    compilerOptions.jvmTarget.set(JvmTarget.JVM_25)
     compilerOptions.optIn.add("kotlin.time.ExperimentalTime")
     compilerOptions.freeCompilerArgs.add("-Xnullability-annotations=@org.jspecify.annotations:warn")
     compilerOptions.freeCompilerArgs.add("-Xwhen-guards")

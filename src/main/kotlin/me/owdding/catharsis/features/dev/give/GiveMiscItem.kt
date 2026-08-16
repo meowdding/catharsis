@@ -5,7 +5,6 @@ import com.mojang.brigadier.context.CommandContext
 import me.owdding.catharsis.features.dev.GiveCommands
 import me.owdding.catharsis.features.item.MiscItemModels
 import me.owdding.catharsis.utils.extensions.add
-import me.owdding.catharsis.utils.extensions.offset
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.extensions.toVector3i
 import me.owdding.catharsis.utils.extensions.unsafeCast
@@ -14,48 +13,36 @@ import me.owdding.catharsis.utils.types.colors.CatppuccinColors
 import me.owdding.catharsis.utils.types.commands.CommandFlag
 import me.owdding.catharsis.utils.types.commands.FlagArgument
 import me.owdding.catharsis.utils.types.commands.IdentifierArgument
-import me.owdding.catharsis.utils.types.commands.SkyBlockIdArgument
-import me.owdding.dfu.item.MeowddingItemDfu
 import me.owdding.ktmodules.Module
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource
 import net.minecraft.core.component.DataComponents
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.nbt.NbtOps
 import net.minecraft.resources.Identifier
-import net.minecraft.server.level.ServerLevel
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EntitySpawnReason
 import net.minecraft.world.entity.EntityType
+//? 26.2
 import net.minecraft.world.entity.EntityTypes
 import net.minecraft.world.entity.EquipmentSlot
-import net.minecraft.world.entity.decoration.ArmorStand
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.Items
 import net.minecraft.world.item.component.ResolvableProfile
 import net.minecraft.world.item.component.TypedEntityData
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
-import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI
-import tech.thatgravyboat.skyblockapi.api.datatype.DataTypes
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.CommandBuilder
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
-import tech.thatgravyboat.skyblockapi.api.remote.api.SimpleItemAPI
-import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
-import tech.thatgravyboat.skyblockapi.api.remote.hypixel.museum.MuseumData
-import tech.thatgravyboat.skyblockapi.api.repo.apis.SkyBlockItemsRepo
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import tech.thatgravyboat.skyblockapi.utils.builders.ItemBuilder
 import tech.thatgravyboat.skyblockapi.utils.extentions.createSkull
-import tech.thatgravyboat.skyblockapi.utils.extentions.get
 import tech.thatgravyboat.skyblockapi.utils.extentions.putCompound
 import tech.thatgravyboat.skyblockapi.utils.text.Text
-import tech.thatgravyboat.skyblockapi.utils.text.Text.wrap
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.italic
 import java.util.UUID
-import kotlin.collections.contains
 
 @Module
 object GiveMiscItem {
@@ -136,6 +123,7 @@ object GiveMiscItem {
 
             fun createArmorStand(flags: Set<CommandFlag>, ids: Collection<Base64String>, id: Identifier): Collection<ItemStack> {
                 val items = ids.map {
+                    //~ if >= 26.2 'EntityType' -> 'EntityTypes'
                     TypedEntityData.of(EntityTypes.ARMOR_STAND, it.createData())
                 }
 
@@ -183,6 +171,7 @@ object GiveMiscItem {
                     tag.putBoolean("immovable", MannequinFlag.IMMOVALBE in flags)
                     if (MannequinFlag.LEFT_HANDED in flags) tag.putString("main_hand", "left")
 
+                    //~ if >= 26.2 'EntityType' -> 'EntityTypes'
                     TypedEntityData.of(EntityTypes.MANNEQUIN, tag)
                 }
 

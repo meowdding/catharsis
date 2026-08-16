@@ -24,6 +24,7 @@ import org.joml.Matrix4f
 import org.lwjgl.system.MemoryUtil
 import java.io.Closeable
 import java.io.IOException
+import java.lang.annotation.Native
 import java.util.*
 import kotlin.jvm.optionals.getOrNull
 
@@ -80,11 +81,13 @@ class AnimatableSimpleTexture(location: Identifier) : SimpleTexture(location), T
             GpuTexture.USAGE_COPY_DST or GpuTexture.USAGE_TEXTURE_BINDING or GpuTexture.USAGE_RENDER_ATTACHMENT,
             GpuFormat.RGBA8_UNORM,
             this.contents?.width() ?: image.width, this.contents?.height() ?: image.height,
-            1, 1
+            1, 1,
         )
         this.textureView = device.createTextureView(this.texture!!)
 
-        this.contents?.uploadFirstFrame(this.texture!!, 0)
+        if (contents?.isAnimated != true) {
+            this.contents?.uploadFirstFrame(this.texture!!, 0)
+        }
         this.data = this.contents?.createAndUploadState(id.toString())
 
         if (this.contents == null) {
@@ -143,7 +146,7 @@ class AnimatableSimpleTexture(location: Identifier) : SimpleTexture(location), T
             val size = Mth.roundToward(SpriteContents.UBO_SIZE, RenderSystem.getDevice().deviceInfo.limits.minUniformOffsetAlignment)
             val byteBuffer = MemoryUtil.memAlloc(size)
             Std140Builder.intoBuffer(MemoryUtil.memSlice(byteBuffer, 0, size))
-                .putMat4f(Matrix4f().ortho2D(0.0F, this.width().toFloat(), 0.0F,this.height().toFloat()))
+                .putMat4f(Matrix4f().ortho2D(0.0F, this.width().toFloat(), 0.0F, this.height().toFloat()))
                 .putMat4f(Matrix4f().scale(this.width().toFloat(), this.height().toFloat(), 1.0F))
                 .putFloat(0f)
                 .putFloat(0f)

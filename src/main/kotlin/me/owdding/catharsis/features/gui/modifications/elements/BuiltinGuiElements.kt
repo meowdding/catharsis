@@ -136,6 +136,7 @@ data class GuiSpriteElement(
 data class GuiTextElement(
     val text: Component,
     val color: Int = CommonColors.DARK_GRAY,
+    val shadow: Boolean = true,
     val stealFromScreen: Boolean = false,
     val x: GuiElementPosition,
     val y: GuiElementPosition,
@@ -149,7 +150,7 @@ data class GuiTextElement(
         val text = McScreen.self?.title?.takeIf { stealFromScreen } ?: text
         val newX = x.calculate(bounds.left(), bounds.width()) - (McFont.width(text) * alignment).toInt()
         val newY = y.calculate(bounds.top(), bounds.height())
-        graphics.text(McFont.self, text, newX, newY, this.color)
+        graphics.text(McFont.self, text, newX, newY, this.color, shadow)
     }
 
 }

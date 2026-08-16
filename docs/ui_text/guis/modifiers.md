@@ -223,6 +223,7 @@ Render text on the screen.
 <Version type="1.0.0-beta.22">
 
 - <TypeIcon type="boolean"/> **stealFromScreen**: (Optional) Steals the screens title, or fallbacks to the defined title if empty/not found, defaults to `false`.
+- <TypeIcon type="boolean"/> **shadow**: (Optional) If the text should be rendered with a dropshadow, defaults to `true`.
 
 </Version>
 

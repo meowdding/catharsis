@@ -27,3 +27,4 @@ inject-interface net/minecraft/world/item/component/ItemLore me/owdding/catharsi
 inject-interface net/minecraft/world/entity/Entity me/owdding/catharsis/hooks/entity/EntityHook
 
 accessible field net/minecraft/world/level/block/entity/BaseContainerBlockEntity name Lnet/minecraft/network/chat/Component;
+accessible method net/minecraft/world/entity/decoration/Mannequin setProfile (Lnet/minecraft/world/item/component/ResolvableProfile;)V

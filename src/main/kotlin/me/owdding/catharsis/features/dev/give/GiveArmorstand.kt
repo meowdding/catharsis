@@ -37,7 +37,6 @@ import java.util.*
 @Module
 object GiveArmorstand {
 
-
     enum class MannequinFlag(
         override val shortName: Char,
         longName: String? = null,

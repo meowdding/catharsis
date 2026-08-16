@@ -14,6 +14,15 @@ interface CommandFlag {
     val longName: String
     val flagType: ArgumentType<*>?
     val group: String? get() = null
+
+    companion object {
+        fun of(longName: String, shortName: Char = longName.first(), flagType: ArgumentType<*>? = null, group: String? = null) = object : CommandFlag {
+            override val shortName: Char = shortName
+            override val longName: String = longName
+            override val flagType: ArgumentType<*>? = flagType
+            override val group: String? = group
+        }
+    }
 }
 
 class FlagArgument<T : CommandFlag>(val flags: Iterable<T>) : ArgumentType<Map<T, Any>> {
@@ -34,7 +43,13 @@ class FlagArgument<T : CommandFlag>(val flags: Iterable<T>) : ArgumentType<Map<T
 
             val flag = if (reader.peek() == '-') {
                 reader.skip()
-                val content = reader.readStringUntil(' ')
+                val beforeRead = reader.cursor
+                val content = runCatching {
+                    reader.readStringUntil(' ')
+                }.getOrElse {
+                    reader.cursor = beforeRead
+                    reader.readString()
+                }
                 reader.cursor -= 1
                 filteredFlags.find { it.longName == content }
             } else {

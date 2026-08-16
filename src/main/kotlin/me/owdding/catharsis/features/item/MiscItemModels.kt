@@ -11,6 +11,7 @@ import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
 import me.owdding.catharsis.utils.codecs.IncludedCodecs
 import me.owdding.catharsis.utils.extensions.base64Texture
+import me.owdding.catharsis.utils.extensions.buildMultimap
 import me.owdding.catharsis.utils.extensions.readWithCodec
 import me.owdding.catharsis.utils.types.Base64String
 import me.owdding.ktcodecs.Compact
@@ -43,6 +44,12 @@ object MiscItemModels : SimplePreparableReloadListener<List<MiscItemModels.MiscI
     fun getExtraModel(stack: ItemStack): Identifier? {
         val skin = stack.base64Texture ?: return null
         return extra.firstNotNullOfOrNull { it.reverseMap[skin] }
+    }
+
+    fun collectItems() = buildMultimap {
+        (extra + cache).filterNotNull().flatMap { it.textures.entries }.forEach { (key, values) ->
+            putAll(key, values)
+        }
     }
 
     @Subscription

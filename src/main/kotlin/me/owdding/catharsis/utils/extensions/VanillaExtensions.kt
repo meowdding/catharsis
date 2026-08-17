@@ -20,7 +20,12 @@ import kotlin.math.floor
 
 operator fun <Key : Any, Value : Any> ExtraCodecs.LateBoundIdMapper<Key, Value>.set(key: Key, value: Value): ExtraCodecs.LateBoundIdMapper<Key, Value> = this.put(key, value)
 
-fun BlockPos.offset(direction: Direction): BlockPos = BlockPos(this).plus(BlockPos(direction.unitVec3i))
+fun BlockPos.offset(direction: Direction): BlockPos {
+    val unitVec = direction.unitVec3i
+    val unitVecBlockPos = BlockPos(unitVec.x, unitVec.y, unitVec.z)
+    return BlockPos(this.x, this.y, this.z).plus(unitVecBlockPos)
+}
+
 fun Vec3.toBlockPos() = BlockPos(floor(x).toInt(), floor(y).toInt(), floor(z).toInt())
 
 inline fun <reified T : Any> Resource.readAsJson(): T = this.open().use { it.readJson<T>() }

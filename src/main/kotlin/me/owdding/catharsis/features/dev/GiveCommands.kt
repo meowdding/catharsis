@@ -21,7 +21,10 @@ import net.minecraft.core.BlockPos
 import net.minecraft.core.component.DataComponents
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.nbt.Tag
+import net.minecraft.network.chat.Component
 import net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket
+//? >= 26.3
+import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.component.CustomData
 import net.minecraft.world.item.component.ItemContainerContents
@@ -31,6 +34,8 @@ import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.entity.ShulkerBoxBlockEntity
 import net.minecraft.world.level.block.entity.SignBlockEntity
 import net.minecraft.world.level.block.entity.SignText
+//? >= 26.3
+import net.minecraft.world.level.block.entity.SignTextSlot
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
@@ -244,24 +249,22 @@ object GiveCommands {
                     overworld.setBlock(sign, Blocks.OAK_SIGN.defaultBlockState(), Block.UPDATE_CLIENTS, 0)
                     val signEntity = SignBlockEntity(sign, Blocks.OAK_SIGN.defaultBlockState())
                     overworld.setBlockEntity(signEntity)
-                    SignText().setMessage(
-                        1,
-                        Text.of {
-                            append((itemsUsed + localItemsUsed).toFormattedString())
-                            append(" - ")
-                            append((itemsUsed + localItemsUsed + value.size).toFormattedString())
-                        },
-                    ).setMessage(
-                        2,
-                        Text.of {
-                            append("(")
-                            append(value.size.toFormattedString())
-                            append(")")
-                        },
-                    ).setMessage(0, Text.of(key.toTitleCase())).let {
-                        signEntity.setText(it, true)
-                        signEntity.setText(it, false)
-                    }
+
+                    signEntity.withLines(
+                        listOf(
+                            Text.of(key.toTitleCase()),
+                            Text.of {
+                                append((itemsUsed + localItemsUsed).toFormattedString())
+                                append(" - ")
+                                append((itemsUsed + localItemsUsed + value.size).toFormattedString())
+                            },
+                            Text.of {
+                                append("(")
+                                append(value.size.toFormattedString())
+                                append(")")
+                            },
+                        ),
+                    )
 
                     boxes.forEachIndexed { boxIndex, items ->
                         val shulker = getShulkerColor(index + boxIndex).defaultBlockState()
@@ -274,17 +277,15 @@ object GiveCommands {
                         val signEntity = SignBlockEntity(sign, state)
                         overworld.setBlockEntity(signEntity)
 
-                        SignText().setMessage(
-                            0,
-                            Text.of {
-                                append(items.first().cleanName.filterNot { it.isWhitespace() }.take(3).lowercase().toTitleCase())
-                                append(" - ")
-                                append(items.last().cleanName.filterNot { it.isWhitespace() }.take(3).lowercase().toTitleCase())
-                            },
-                        ).let {
-                            signEntity.setText(it, true)
-                            signEntity.setText(it, false)
-                        }
+                        signEntity.withLines(
+                            listOf(
+                                Text.of {
+                                    append(items.first().cleanName.filterNot { it.isWhitespace() }.take(3).lowercase().toTitleCase())
+                                    append(" - ")
+                                    append(items.last().cleanName.filterNot { it.isWhitespace() }.take(3).lowercase().toTitleCase())
+                                },
+                            ),
+                        )
 
                         overworld.setBlock(position, shulker, Block.UPDATE_CLIENTS, 0)
                         val shulkerBox = ShulkerBoxBlockEntity(position, shulker)
@@ -399,8 +400,7 @@ object GiveCommands {
         ALL('a', group = LIMIT_GROUP),
         GIVE('g', group = "GIVE"),
         CUSTOM_DATA('d', NbtTagArgument.nbtTag(), group = null),
-        PLACE_IN_WORLD('p', group = "GIVE")
-        ;
+        PLACE_IN_WORLD('p', group = "GIVE");
 
         override val longName = (longName ?: name).lowercase()
 
@@ -429,6 +429,28 @@ object GiveCommands {
         McClient.self.player?.inventory?.setItem(freeSlot, item)
         McClient.connection?.send(ServerboundSetCreativeModeSlotPacket(36 + freeSlot, item))
         McClient.self.player?.containerMenu?.broadcastChanges()
+    }
+
+    private fun SignBlockEntity.withLines(lines: List<Component>) {
+        //? >= 26.3 {
+        SignText(
+            lines,
+            lines,
+            DyeColor.WHITE,
+            false,
+        ).let {
+            this.setText(it, SignTextSlot.FRONT)
+            this.setText(it, SignTextSlot.BACK)
+        }
+        //? } else {
+        /*SignText().let {
+            lines.forEachIndexed { index, line ->
+                it.setMessage(index, line)
+            }
+
+            this.setText(it, true)
+            this.setText(it, false)
+        }*///?}
     }
 
 }

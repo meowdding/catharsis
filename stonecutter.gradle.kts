@@ -7,7 +7,7 @@ fun <T> Any?.unsafeCast() : T = this as T
 
 
 ext["latest"] = stonecutter.vcsVersion.version
-stonecutter active "26.2"
+stonecutter active "26.3"
 
 stonecutter parameters {
     swaps["mod_version"] = "\"" + property("version") + "\";"

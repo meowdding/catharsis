@@ -164,11 +164,14 @@ object EnvironmentalModifiers : CatharsisLogger by Catharsis.featureLogger(), Si
 
     @JvmStatic
     fun wrap(level: BlockAndTintGetter, pos: BlockPos, colorResolver: ColorResolver, effect: () -> BiomeEffect<Int>): ColorResolver = modifier@{ biome, x, y ->
-        val baseColor = colorResolver.getColor(biome, x, y)
+        wrap(level, pos, colorResolver.getColor(biome, x, y), effect)
+    }
 
-        val list = this.currentBiomeEffects.find { it.attribute == effect() }?.modifier?.takeIf { it.isNotEmpty() } ?: return@modifier baseColor
+    @JvmStatic
+    fun wrap(level: BlockAndTintGetter, pos: BlockPos, baseColor: Int, effect: () -> BiomeEffect<Int>): Int {
+        val list = this.currentBiomeEffects.find { it.attribute == effect() }?.modifier?.takeIf { it.isNotEmpty() } ?: return baseColor
 
-        getValue(pos, baseColor, list.unsafeCast())
+        return getValue(pos, baseColor, list.unsafeCast())
     }
 
     init {

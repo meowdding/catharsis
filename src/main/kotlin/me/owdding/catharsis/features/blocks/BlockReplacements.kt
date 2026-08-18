@@ -151,6 +151,7 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     ) {
         this.sounds.clear()
         blockToListen.clear()
+        displays.clear()
         val overrides = data.entries.flatMap { (block, replacement) ->
             replacement.listStates().flatMap { state -> state.overrides.keys.map { it to block } }
         }.groupBy({ (block) -> block }, { (_, block) -> block })

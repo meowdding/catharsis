@@ -189,7 +189,6 @@ dependencies {
     include(versionedCatalog["cats"])
     implementation(versionedCatalog["cats"])
     api(versionedCatalog["fabric.loader"])
-    api(versionedCatalog["repo.lib"])
     api(versionedCatalog["fabric.language.kotlin"])
     api(versionedCatalog["fabric.api"])
     api(versionedCatalog["hypixelapi"])

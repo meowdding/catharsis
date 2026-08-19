@@ -4,7 +4,7 @@ fabric-loader = "0.19.3"
 fabric-language-kotlin = "1.13.6+kotlin.2.2.20"
 
 skyblockapi = "4.2.18"
-repo-lib = "3.0.2"
+repo-lib = "4.1.5"
 devauth = "1.2.2"
 hypixelapi = "1.0.1+build.1+mc1.21"
 

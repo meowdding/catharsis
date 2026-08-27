@@ -143,7 +143,7 @@ object EnvironmentalModifiers : CatharsisLogger by Catharsis.featureLogger(), Si
             var currentValue = value
             for (attributeModifier in modifier) {
                 if (attributeModifier.condition.applies(currentValue, pos)) {
-                    currentValue = attributeModifier.provider.getValue(currentValue, pos, interpolator)
+                    currentValue = attributeModifier.provider.getValue(currentValue, pos, interpolator) ?: continue
                 }
             }
             currentValue
@@ -154,7 +154,7 @@ object EnvironmentalModifiers : CatharsisLogger by Catharsis.featureLogger(), Si
         modifiers.forEach {
             val pos = Vec3(pos)
             if (it.condition.applies(baseColor, pos)) {
-                return it.provider.getValue(baseColor, pos, null)
+                return it.provider.getValue(baseColor, pos, null) ?: return@forEach
             }
         }
 

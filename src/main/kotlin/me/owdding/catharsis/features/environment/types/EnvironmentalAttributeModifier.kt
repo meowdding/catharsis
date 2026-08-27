@@ -30,9 +30,8 @@ data class EnvironmentalAttributeModifier<Value : Any>(
     override fun applyPositional(baseValue: Value, pos: Vec3, biomeInterpolator: SpatialAttributeInterpolator?): Value {
         return when {
             condition.applies(baseValue, pos) -> {
-                provider.getValue(baseValue, pos, biomeInterpolator)
+                provider.getValue(baseValue, pos, biomeInterpolator)?: baseValue
             }
-
             else -> baseValue
         }
     }

@@ -87,6 +87,19 @@ Modifies the base value.
 
 </TreeView>
 
+### Config (`config`)
+
+Provides a value based on a Pack Configuration. This provider is only available for integer and color attributes (RGB/ARGB).
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>config</b> provider object</span>
+
+- <TypeIcon type="string"/> **type**: `config`
+- <TypeIcon type="string"/> **pack**: The name of the pack providing the configuration.
+- <TypeIcon type="string"/> **id**: The identifier of the configuration value to read.
+
+</TreeView>
+
 ## Conditions
 
 Conditions check whether the modifier should be applied at a specific location.

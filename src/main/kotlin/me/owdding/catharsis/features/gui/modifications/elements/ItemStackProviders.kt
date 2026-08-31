@@ -10,6 +10,8 @@ import me.owdding.ktmodules.Module
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.world.item.ItemStack
+import tech.thatgravyboat.skyblockapi.api.profile.items.equipment.EquipmentAPI
+import tech.thatgravyboat.skyblockapi.api.profile.items.equipment.EquipmentSlot
 import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
 
 interface ItemStackProvider {
@@ -27,6 +29,7 @@ object ItemStackProviders {
     init {
         ID_MAPPER.put(Catharsis.id("json"), CatharsisCodecs.getMapCodec<JsonItemStackProvider>())
         ID_MAPPER.put(Catharsis.id("sbid"), CatharsisCodecs.getMapCodec<SbidItemStackProvider>())
+        ID_MAPPER.put(Catharsis.id("equipment"), CatharsisCodecs.getMapCodec<EquipmentItemStackProvider>())
     }
 }
 
@@ -42,4 +45,11 @@ data class SbidItemStackProvider(val id: SkyBlockId) : ItemStackProvider {
     override val codec: MapCodec<SbidItemStackProvider> = CatharsisCodecs.getMapCodec<SbidItemStackProvider>()
 
     override fun getItemStack(): ItemStack = id.toItem()
+}
+
+@GenerateCodec
+data class EquipmentItemStackProvider(val slot: EquipmentSlot) : ItemStackProvider {
+    override val codec: MapCodec<EquipmentItemStackProvider> = CatharsisCodecs.getMapCodec<EquipmentItemStackProvider>()
+
+    override fun getItemStack(): ItemStack = EquipmentAPI.getIslandEquipment(slot)
 }

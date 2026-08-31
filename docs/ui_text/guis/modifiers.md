@@ -356,7 +356,7 @@ Loads an item stack from Minecraft Item NBT JSON.
 - <TypeIcon type="object"/> **stack**: Standard Minecraft ItemStack JSON definition.
 </TreeView>
 
-#### **SkyBlock ID** (`catharsis:sbid`)
+#### <Environment type="hypixel"/> **SkyBlock ID** (`catharsis:sbid`)
 Loads an item stack using a SkyBlock ID.
 
 Id Format: `<prefix>:<id>` or `<prefix>:<id>:<suffix>`
@@ -374,6 +374,23 @@ Id Format: `<prefix>:<id>` or `<prefix>:<id>:<suffix>`
 
 - <TypeIcon type="string"/> **type**: `catharsis:sbid`
 - <TypeIcon type="string"/> **id**: The SkyBlock Id as formatted above.
+</TreeView>
+</Version>
+
+<Version type="1.0.0-beta.22">
+
+#### <Environment type="hypixel"/> **Equipment Slot** (`catharsis:equipment`)
+
+Loads an item stack from the equipped Hypixel SkyBlock Equipment Slot.
+
+Allows `NECKLACE`, `CLOAK`, `BELT`, and `GLOVES`.
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>equipment</b> item stack provider object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:equipment`
+- <TypeIcon type="string"/> **slot**: The slot of the equipment ItemStack, can be one of the values above.
+
 </TreeView>
 </Version>
 

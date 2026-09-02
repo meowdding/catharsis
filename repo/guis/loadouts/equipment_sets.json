@@ -1,0 +1,188 @@
+{
+  "target": {
+    "type": "title",
+    "title": ".+Equipment Sets"
+  },
+  "layout": [
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_necklace",
+      "target": {
+        "type": "catharsis:name",
+        "name": "Slot.+Necklace"
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_cloak",
+      "target": {
+        "type": "catharsis:name",
+        "name": "Slot.+Cloak"
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_belt",
+      "target": {
+        "type": "catharsis:name",
+        "name": "Slot.+Belt"
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_gloves_bracelet",
+      "target": {
+        "type": "catharsis:name",
+        "name": "Slot.+Gloves/Bracelet"
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_necklace_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 0,
+              "max": 8
+            }
+          },
+          {
+            "type": "item",
+            "items": "minecraft:black_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_cloak_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 9,
+              "max": 17
+            }
+          },
+          {
+            "type": "item",
+            "items": "minecraft:black_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_belt_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 18,
+              "max": 26
+            }
+          },
+          {
+            "type": "item",
+            "items": "minecraft:black_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_gloves_bracelet_locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 27,
+              "max": 35
+            }
+          },
+          {
+            "type": "item",
+            "items": "minecraft:black_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/equipped",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 36,
+              "max": 44
+            }
+          },
+          {
+            "type": "item",
+            "items": "minecraft:lime_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/ready",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 36,
+              "max": 44
+            }
+          },
+          {
+            "type": "item",
+            "items": "minecraft:pink_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 36,
+              "max": 44
+            }
+          },
+          {
+            "type": "item",
+            "items": "minecraft:gray_dye"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/locked",
+      "target": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "catharsis:slot",
+            "slot": {
+              "min": 36,
+              "max": 44
+            }
+          },
+          {
+            "type": "item",
+            "items": "minecraft:red_dye"
+          }
+        ]
+      }
+    }
+  ]
+}

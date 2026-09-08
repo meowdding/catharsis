@@ -387,7 +387,7 @@
       }
     },
     {
-      "id": "skyblock_gui:fast_travel/mining_1/spawn/undiscovered",
+      "id": "skyblock_gui:fast_travel/foraging_3/spawn/undiscovered",
       "target": {
         "conditions": [
           {
@@ -397,6 +397,62 @@
           },
           {
             "slot": 16,
+            "type": "catharsis:slot"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_3/spawn/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Torrhus Canyon(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "Warp not unlocked!",
+            "mode": "equals",
+            "line": -1,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/foraging_3/spawn/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Torrhus Canyon(?: - Spawn)?",
+            "type": "catharsis:name"
+          },
+          {
+            "condition": {
+              "name": "Warp not unlocked!",
+              "mode": "equals",
+              "line": -1,
+              "type": "catharsis:lore"
+            },
+            "type": "catharsis:not"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:fast_travel/mining_1/spawn/undiscovered",
+      "target": {
+        "conditions": [
+          {
+            "name": "Undiscovered Island",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "slot": 19,
             "type": "catharsis:slot"
           }
         ],
@@ -452,7 +508,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 19,
+            "slot": 20,
             "type": "catharsis:slot"
           }
         ],
@@ -508,7 +564,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 20,
+            "slot": 21,
             "type": "catharsis:slot"
           }
         ],
@@ -564,7 +620,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 21,
+            "slot": 22,
             "type": "catharsis:slot"
           }
         ],
@@ -620,7 +676,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 22,
+            "slot": 23,
             "type": "catharsis:slot"
           }
         ],
@@ -676,7 +732,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 23,
+            "slot": 24,
             "type": "catharsis:slot"
           }
         ],
@@ -732,7 +788,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 24,
+            "slot": 25,
             "type": "catharsis:slot"
           }
         ],
@@ -788,7 +844,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 25,
+            "slot": 29,
             "type": "catharsis:slot"
           }
         ],
@@ -846,7 +902,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 29,
+            "slot": 30,
             "type": "catharsis:slot"
           }
         ],
@@ -902,7 +958,7 @@
             "type": "catharsis:name"
           },
           {
-            "slot": 30,
+            "slot": 31,
             "type": "catharsis:slot"
           }
         ],

@@ -24,16 +24,17 @@ val mainMenuSlotIndexes = mapOf(
     "farming_1/spawn" to SlotIndexCondition(13),
     "foraging_1/spawn" to SlotIndexCondition(14),
     "foraging_2/spawn" to SlotIndexCondition(15),
-    "mining_1/spawn" to SlotIndexCondition(16),
-    "mining_2/spawn" to SlotIndexCondition(19),
-    "mining_3/spawn" to SlotIndexCondition(20),
-    "crystal_hollows/entrance" to SlotIndexCondition(21),
-    "combat_1/spawn" to SlotIndexCondition(22),
-    "combat_3/spawn" to SlotIndexCondition(23),
-    "crimson_isle/spawn" to SlotIndexCondition(24),
-    "garden/spawn" to SlotIndexCondition(25),
-    "rift/wizard_tower" to SlotIndexCondition(29),
-    "fishing_1/spawn" to SlotIndexCondition(30),
+    "foraging_3/spawn" to SlotIndexCondition(16),
+    "mining_1/spawn" to SlotIndexCondition(19),
+    "mining_2/spawn" to SlotIndexCondition(20),
+    "mining_3/spawn" to SlotIndexCondition(21),
+    "crystal_hollows/entrance" to SlotIndexCondition(22),
+    "combat_1/spawn" to SlotIndexCondition(23),
+    "combat_3/spawn" to SlotIndexCondition(24),
+    "crimson_isle/spawn" to SlotIndexCondition(25),
+    "garden/spawn" to SlotIndexCondition(29),
+    "rift/wizard_tower" to SlotIndexCondition(30),
+    "fishing_1/spawn" to SlotIndexCondition(31),
     "lotus_atoll/spawn" to SlotIndexCondition(32),
     "winter/spawn" to SlotIndexCondition(33),
 )
@@ -158,6 +159,7 @@ fun warps() {
         "farming_1/spawn" to RegexTextMatcher("The Barn(?: - Spawn)?"),
         "foraging_1/spawn" to RegexTextMatcher("The Park(?: - Spawn)?"),
         "foraging_2/spawn" to RegexTextMatcher("Moonglade Marsh(?: - Spawn)?"),
+        "foraging_3/spawn" to RegexTextMatcher("Torrhus Canyon(?: - Spawn)?"),
         "mining_1/spawn" to RegexTextMatcher("Gold Mine(?: - Spawn)?"),
         "mining_2/spawn" to RegexTextMatcher("Deep Caverns(?: - Spawn)?"),
         "mining_3/spawn" to RegexTextMatcher("Dwarven Mines(?: - Spawn)?"),
@@ -216,6 +218,17 @@ fun warps() {
         listOf(
             "Moonglade Marsh - Spawn" to "spawn",
             "Moonglade Marsh - Murkwater Loch" to "murkwater",
+        ),
+    )
+
+    warpMenu(
+        "Torrhus Canyon Warps",
+        "foraging_3",
+        listOf(
+            "Torrhus Canyon - Spawn" to "spawn",
+            "Torrhus Canyon - Torrhus Springs" to "torrhus_springs",
+            "Torrhus Canyon - Critter Safari Entrance" to "critter_safari_entrance"
+
         ),
     )
 

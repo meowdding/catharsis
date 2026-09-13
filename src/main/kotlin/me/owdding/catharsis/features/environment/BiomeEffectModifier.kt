@@ -6,10 +6,11 @@ import com.mojang.serialization.codecs.RecordCodecBuilder
 import me.owdding.catharsis.features.environment.conditions.ConstantCondition
 import me.owdding.catharsis.features.environment.conditions.EnvironmentalModifierCondition
 import me.owdding.catharsis.features.environment.provider.EnvironmentalAttributeProvider
-import me.owdding.catharsis.utils.extensions.unsafeCast
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.world.attribute.AttributeTypes
 import net.minecraft.world.attribute.EnvironmentAttribute
+import org.joml.Vector3f
+import org.joml.Vector3fc
 
 data class BiomeEffectModifier<Value : Any>(
     val effect: BiomeEffect<Value>,
@@ -37,12 +38,15 @@ data class BiomeEffectModifier<Value : Any>(
     }
 }
 
-val baseColor: EnvironmentAttribute<Int> = EnvironmentAttribute.builder(AttributeTypes.RGB_COLOR).defaultValue(-1).build()
+//~ if >= 26.3 'Int' -> 'Vector3fc' {
+//~ if >= 26.3 '-1' -> 'Vector3f()'
+val baseColor: EnvironmentAttribute<Vector3fc> = EnvironmentAttribute.builder(AttributeTypes.RGB_COLOR).defaultValue(Vector3f()).build()
 
-data object WaterColor : BiomeEffect<Int>(baseColor)
-data object FoliageColor : BiomeEffect<Int>(baseColor)
-data object DryFoliageColor : BiomeEffect<Int>(baseColor)
-data object GrassColor : BiomeEffect<Int>(baseColor)
+data object WaterColor : BiomeEffect<Vector3fc>(baseColor)
+data object FoliageColor : BiomeEffect<Vector3fc>(baseColor)
+data object DryFoliageColor : BiomeEffect<Vector3fc>(baseColor)
+data object GrassColor : BiomeEffect<Vector3fc>(baseColor)
+//~}
 
 sealed class BiomeEffect<Value : Any>(val attribute: EnvironmentAttribute<Value>) {
     companion object {

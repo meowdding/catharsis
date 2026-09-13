@@ -4,12 +4,25 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.cats.api.CatsEntry
 import me.owdding.cats.api.CatsFile
 import net.minecraft.resources.Identifier
-import net.minecraft.server.packs.*
+//? < 26.3 {
+/*import net.minecraft.server.packs.AbstractPackResources
+import net.minecraft.server.packs.CompositePackResources
+*///?}
+//? >= 26.3 {
+import net.minecraft.server.packs.AbstractPackMetadataResources
+import net.minecraft.server.packs.OverlayedPackResources//?}
+import net.minecraft.server.packs.PackLocationInfo
+//? >= 26.3
+import net.minecraft.server.packs.PackMetadataResources
+import net.minecraft.server.packs.PackResources
+import net.minecraft.server.packs.PackType
 import net.minecraft.server.packs.repository.Pack
 import net.minecraft.server.packs.resources.IoSupplier
 import java.io.InputStream
 import java.nio.file.Path
 import java.util.*
+//? >= 26.3
+import java.util.stream.Stream
 import java.util.zip.ZipFile
 
 class CatsResourceSupplier(path: Path) : Pack.ResourcesSupplier {
@@ -26,22 +39,26 @@ class CatsResourceSupplier(path: Path) : Pack.ResourcesSupplier {
         }
     }
 
-    override fun openPrimary(location: PackLocationInfo): PackResources {
+    //~ if >= 26.3 'openPrimary' -> 'openMetadata', 'PackResources' -> 'PackMetadataResources'
+    override fun openMetadata(location: PackLocationInfo): PackMetadataResources {
         return CatsPackResources(location, "/", file)
     }
 
-    override fun openFull(location: PackLocationInfo, metadata: Pack.Metadata): PackResources {
+    //~ if >= 26.3 'openFull' -> 'openResources', 'PackResources' -> 'Stream<PackResources>'
+    override fun openResources(location: PackLocationInfo, metadata: Pack.Metadata): Stream<PackResources> {
         val root = CatsPackResources(location, "/", file)
         val overlays = metadata.overlays.map { CatsPackResources(location, "/$it/", file) }
-        return if (overlays.isEmpty()) root else CompositePackResources(root, overlays)
+        //~ if >= 26.3 'if (overlays.isEmpty()) root else CompositePackResources(root, overlays)' -> 'Stream.of(if (overlays.isEmpty()) root else OverlayedPackResources(root, overlays))'
+        return Stream.of(if (overlays.isEmpty()) root else OverlayedPackResources(root, overlays))
     }
 }
 
 class CatsPackResources(
     location: PackLocationInfo,
     private val prefix: String = "/",
-    private val file: CatsFile?
-) : AbstractPackResources(location) {
+    private val file: CatsFile?,
+    //~ if >= 26.3 'AbstractPackResources(location)' -> 'AbstractPackMetadataResources(location), PackResources'
+) : AbstractPackMetadataResources(location), PackResources {
 
     private fun getPathWithPrefix(path: String): String {
         return "$prefix$path"

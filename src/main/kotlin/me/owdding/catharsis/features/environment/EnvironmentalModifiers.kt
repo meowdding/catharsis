@@ -5,7 +5,6 @@ import com.google.gson.JsonElement
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.environment.conditions.EnvironmentalAndCondition
-import me.owdding.catharsis.features.environment.conditions.EnvironmentalModifierCondition
 import me.owdding.catharsis.features.environment.conditions.TypelessEnvironmentalModifierCondition
 import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger

@@ -1,11 +1,39 @@
 {
   "target": {
     "type": "title",
-    "title": "Wardrobe.+"
+    "title": ".+Armor Sets"
   },
   "layout": [
     {
       "id": "skyblock_gui:wardrobe/empty_slot_helmet",
+      "target": {
+        "type": "catharsis:name",
+        "name": "Slot.+Helmet"
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_chestplate",
+      "target": {
+        "type": "catharsis:name",
+        "name": "Slot.+Chestplate"
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_leggings",
+      "target": {
+        "type": "catharsis:name",
+        "name": "Slot.+Leggings"
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_boots",
+      "target": {
+        "type": "catharsis:name",
+        "name": "Slot.+Boots"
+      }
+    },
+    {
+      "id": "skyblock_gui:wardrobe/empty_slot_helmet_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -17,14 +45,14 @@
             }
           },
           {
-            "type": "catharsis:name",
-            "name": "Slot.+Helmet"
+            "type": "item",
+            "items": "minecraft:black_stained_glass_pane"
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:wardrobe/empty_slot_chestplate",
+      "id": "skyblock_gui:wardrobe/empty_slot_chestplate_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -36,14 +64,14 @@
             }
           },
           {
-            "type": "catharsis:name",
-            "name": "Slot.+Chestplate"
+            "type": "item",
+            "items": "minecraft:black_stained_glass_pane"
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:wardrobe/empty_slot_leggings",
+      "id": "skyblock_gui:wardrobe/empty_slot_leggings_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -55,14 +83,14 @@
             }
           },
           {
-            "type": "catharsis:name",
-            "name": "Slot.+Leggings"
+            "type": "item",
+            "items": "minecraft:black_stained_glass_pane"
           }
         ]
       }
     },
     {
-      "id": "skyblock_gui:wardrobe/empty_slot_boots",
+      "id": "skyblock_gui:wardrobe/empty_slot_boots_locked",
       "target": {
         "type": "all",
         "conditions": [
@@ -70,25 +98,6 @@
             "type": "catharsis:slot",
             "slot": {
               "min": 27,
-              "max": 35
-            }
-          },
-          {
-            "type": "catharsis:name",
-            "name": "Slot.+Boots"
-          }
-        ]
-      }
-    },
-    {
-      "id": "skyblock_gui:wardrobe/empty_slot_locked",
-      "target": {
-        "type": "all",
-        "conditions": [
-          {
-            "type": "catharsis:slot",
-            "slot": {
-              "min": 0,
               "max": 35
             }
           },

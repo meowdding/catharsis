@@ -1,0 +1,29 @@
+{
+  "type": "composite",
+  "condition": {
+    "type": "in_area",
+    "area": "environmental_modifiers:test_area_2"
+  },
+  "modifiers": [
+    {
+      "type": "biome_effect",
+      "effect": "foliage_color",
+      "provider": {
+        "type": "override",
+        "value": "#ff0000"
+      }
+    },
+    {
+      "type": "biome_effect",
+      "effect": "water_color",
+      "condition": {
+        "type": "in_area",
+        "area": "environmental_modifiers:test_area_3"
+      },
+      "provider": {
+        "modifier": "add",
+        "argument": "#ff0000"
+      }
+    }
+  ]
+}

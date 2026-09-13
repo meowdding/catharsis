@@ -1,0 +1,12 @@
+{
+  "type": "environmental_attribute",
+  "attribute": "visual/sky_color",
+  "condition": {
+    "type": "in_area",
+    "area": "environmental_modifiers:test_area_1"
+  },
+  "provider": {
+    "type": "override",
+    "value": "#ff0000"
+  }
+}

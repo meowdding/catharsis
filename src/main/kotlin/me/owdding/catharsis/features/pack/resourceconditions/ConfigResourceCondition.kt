@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.pack.resourceconditions
 
+import com.google.gson.JsonArray
 import com.google.gson.JsonPrimitive
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.pack.config.PackConfigHandler
@@ -15,10 +16,10 @@ data class ConfigResourceCondition(val pack: String, val id: String, val value: 
     override fun getType(): ResourceConditionType<*> = TYPE
     override fun test(registryInfo: RegistryOps.RegistryInfoLookup?): Boolean {
         val entry = PackConfigHandler.getConfig(pack).get(id) ?: return false
-        return when {
-            (entry as? JsonPrimitive)?.isBoolean == true -> entry.asBoolean
-            (entry as? JsonPrimitive)?.isString == true -> entry.asString == this.value
-            entry.isJsonArray -> entry.asJsonArray.any { it.asString == this.value }
+        return when (entry) {
+            is JsonPrimitive if entry.isBoolean -> entry.asBoolean
+            is JsonPrimitive if entry.isString-> entry.asString == this.value
+            is JsonArray -> entry.asJsonArray.any { it.asString == this.value }
             else -> false
         }
     }

@@ -48,6 +48,7 @@ class CatsResourceSupplier(path: Path) : Pack.ResourcesSupplier {
     override fun openResources(location: PackLocationInfo, metadata: Pack.Metadata): Stream<PackResources> {
         val root = CatsPackResources(location, "/", file)
         val overlays = metadata.overlays.map { CatsPackResources(location, "/$it/", file) }
+        // This is like so fucked up im sure there are better ways
         //~ if >= 26.3 'if (overlays.isEmpty()) root else CompositePackResources(root, overlays)' -> 'Stream.of(if (overlays.isEmpty()) root else OverlayedPackResources(root, overlays))'
         return Stream.of(if (overlays.isEmpty()) root else OverlayedPackResources(root, overlays))
     }

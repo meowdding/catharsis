@@ -48,7 +48,8 @@ object PosCodecs {
 
     @IncludedCodec val vec3Codec: Codec<Vec3> = vector3dCodec.xmap({ Vec3(it.x, it.y, it.z) }, { Vector3d(it.x, it.y, it.z) })
     @IncludedCodec val vec3iCodec: Codec<Vec3i> = vector3iCodec.xmap({ Vec3i(it.x, it.y, it.z) }, { Vector3i(it.x, it.y, it.z) })
-    @IncludedCodec val blockPosCodec: Codec<BlockPos> = vec3iCodec.xmap(::BlockPos, Function.identity())
+    @IncludedCodec
+    val blockPosCodec: Codec<BlockPos> = vec3iCodec.xmap({ BlockPos(it.x, it.y, it.z) }, Function.identity())
 
     val aabbCodec: Codec<AABB> = RecordCodecBuilder.create {
         it.group(

@@ -87,7 +87,8 @@ public abstract class PackMixin implements PackMetadataHook {
 
     @Unique
     private static CatharsisMetadataSection catharsis$parseMetadata(Pack.ResourcesSupplier resources, PackLocationInfo info) {
-        try (var sources = resources.openPrimary(info)) {
+        //~ if >= 26.3 'openPrimary' -> 'openMetadata'
+        try (var sources = resources.openMetadata(info)) {
             return sources.getMetadataSection(CatharsisMetadataSection.TYPE);
         } catch (Exception ignored) {
         }
@@ -96,7 +97,8 @@ public abstract class PackMixin implements PackMetadataHook {
 
     @Unique
     private static @Nullable List<PackConfigOption> catharsis$parseConfig(Pack.ResourcesSupplier resources, PackLocationInfo info) {
-        try (var sources = resources.openPrimary(info)) {
+        //~ if >= 26.3 'openPrimary' -> 'openMetadata'
+        try (var sources = resources.openMetadata(info)) {
             return PackConfigOption.fromResource(sources);
         } catch (Exception ignored) {
         }

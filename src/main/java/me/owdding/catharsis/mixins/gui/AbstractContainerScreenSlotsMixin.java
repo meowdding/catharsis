@@ -13,6 +13,7 @@ import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.screens.inventory.AbstractRecipeBookScreen;
+import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerInput;
@@ -114,7 +115,8 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
     }
 
     @WrapMethod(method = "slotClicked")
-    private void catharsis$onSlotClick(Slot slot, int slotId, int mouseButton, ContainerInput type, Operation<Void> original) {
+    //~ if >= 26.3 ', int mouseButton' -> ', MouseButtonEvent mouseButton'
+    private void catharsis$onSlotClick(Slot slot, int slotId, MouseButtonEvent mouseButton, ContainerInput type, Operation<Void> original) {
         if (slot != null) {
             if (!ImcHandler.isDisabled(slot.getItem())) {
                 var modifier = GuiModifiers.getActiveModifier();

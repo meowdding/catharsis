@@ -28,3 +28,4 @@ inject-interface net/minecraft/world/entity/Entity me/owdding/catharsis/hooks/en
 
 accessible field net/minecraft/world/level/block/entity/BaseContainerBlockEntity name Lnet/minecraft/network/chat/Component;
 accessible method net/minecraft/world/entity/decoration/Mannequin setProfile (Lnet/minecraft/world/item/component/ResolvableProfile;)V
+accessible class net/minecraft/client/renderer/texture/TextureManager$PendingReload

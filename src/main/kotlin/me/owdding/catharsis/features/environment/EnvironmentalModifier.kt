@@ -4,7 +4,6 @@ import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.features.environment.conditions.EnvironmentalModifierCondition
 import me.owdding.catharsis.features.environment.types.CompositeAttributeModifier
-import me.owdding.catharsis.generated.CatharsisCodecs
 import net.minecraft.util.ExtraCodecs
 
 interface EnvironmentalModifier<Value : Any> {

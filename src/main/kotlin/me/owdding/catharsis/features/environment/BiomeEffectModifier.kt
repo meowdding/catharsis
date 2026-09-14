@@ -50,7 +50,7 @@ data class BiomeEffectModifier<Value : Any, DataValue : Any>(
     }
 }
 
-//~ if >= 26.3 'Int' -> 'Vector3fc' {
+//~ if >= 26.3 '<Int' -> '<Vector3fc', '{ vec -> vec }' -> 'ARGB::colorFromVector3f', '{ color -> color }' -> 'ARGB::vector3fFromRGB24' {
 //~ if >= 26.3 '-1' -> 'Vector3f(1f)'
 val baseColor: EnvironmentAttribute<Vector3fc> = EnvironmentAttribute.builder(AttributeTypes.RGB_COLOR).defaultValue(Vector3f(1f)).build()
 

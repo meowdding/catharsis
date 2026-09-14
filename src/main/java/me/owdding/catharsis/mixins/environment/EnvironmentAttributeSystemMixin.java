@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class EnvironmentAttributeSystemMixin {
 
     @Inject(method = "addStaticLayers", at = @At("TAIL"))
-    private static void forLevel(EnvironmentAttributeSystem.Builder builder, LevelAccessor level, CallbackInfo ci) {
+    private static void forLevelAccessor(EnvironmentAttributeSystem.Builder builder, LevelAccessor level, CallbackInfo ci) {
         EnvironmentalModifiers.addLayers(builder);
     }
 

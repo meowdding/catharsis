@@ -9,6 +9,7 @@ import com.mojang.blaze3d.systems.RenderSystem
 import com.mojang.blaze3d.textures.AddressMode
 import com.mojang.blaze3d.textures.FilterMode
 import com.mojang.blaze3d.textures.GpuTexture
+import me.owdding.catharsis.mixins.textures.AnimationStateAccessor
 import me.owdding.catharsis.utils.CatharsisLogger
 import net.minecraft.client.renderer.texture.SimpleTexture
 import net.minecraft.client.renderer.texture.SpriteContents
@@ -108,6 +109,8 @@ class AnimatableSimpleTexture(location: Identifier) : SimpleTexture(location), T
                 .createCommandEncoder()
                 .createRenderPass({ "Animate " + this.resourceId() }, view, Optional.empty())
                 .use(data::drawToPass)
+
+            (data.state as AnimationStateAccessor).`catharsis$setDirty`(false)
         }
     }
 

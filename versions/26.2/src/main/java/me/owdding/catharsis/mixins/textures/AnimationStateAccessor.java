@@ -10,4 +10,6 @@ public interface AnimationStateAccessor {
     @Accessor("isDirty")
     boolean catharsis$isDirty();
 
+    @Accessor("isDirty")
+    void catharsis$setDirty(boolean dirty);
 }

@@ -34,6 +34,7 @@ import net.minecraft.client.renderer.item.properties.select.SelectItemModelPrope
 import net.minecraft.resources.Identifier
 import net.minecraft.server.packs.resources.PreparableReloadListener
 import org.intellij.lang.annotations.Pattern
+import org.spongepowered.asm.mixin.MixinEnvironment
 import tech.thatgravyboat.skyblockapi.api.SkyBlockAPI
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
@@ -84,6 +85,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
 
         loadRepo()
         ImcHandler.setup()
+        if (McClient.isDev) MixinEnvironment.getCurrentEnvironment().audit()
     }
 
     fun loadRepo() {

@@ -5,7 +5,6 @@ import com.google.gson.JsonElement
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.environment.conditions.EnvironmentalAndCondition
-import me.owdding.catharsis.features.environment.conditions.EnvironmentalModifierCondition
 import me.owdding.catharsis.features.environment.conditions.TypelessEnvironmentalModifierCondition
 import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
@@ -28,6 +27,7 @@ import net.minecraft.world.level.ColorResolver
 import net.minecraft.world.phys.Vec3
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import java.io.Reader
+import kotlin.collections.isNotEmpty
 
 @Module
 object EnvironmentalModifiers : CatharsisLogger by Catharsis.featureLogger(), SimplePreparableReloadListener<List<EnvironmentalModifier<out Any>>>() {
@@ -37,13 +37,13 @@ object EnvironmentalModifiers : CatharsisLogger by Catharsis.featureLogger(), Si
         val attribute: EnvironmentAttribute<Value>,
     )
 
-    data class BiomeEffectInstance<Value : Any>(
-        val modifier: List<BiomeEffectModifier<Value>>,
-        val attribute: BiomeEffect<Value>,
+    data class BiomeEffectInstance<Value : Any, DataValue : Any>(
+        val modifier: List<BiomeEffectModifier<Value, DataValue>>,
+        val attribute: BiomeEffect<Value, DataValue>,
     )
 
     val currentAttributeModifier: MutableList<ModifierInstance<*>> = mutableListOf()
-    val currentBiomeEffects: MutableList<BiomeEffectInstance<*>> = mutableListOf()
+    val currentBiomeEffects: MutableList<BiomeEffectInstance<*, *>> = mutableListOf()
 
 
     private val gson = GsonBuilder().create()
@@ -116,7 +116,7 @@ object EnvironmentalModifiers : CatharsisLogger by Catharsis.featureLogger(), Si
         currentAttributeModifier.clear()
         currentBiomeEffects.clear()
         val attributeModifier = mutableListOf<EnvironmentalAttributeModifier<out Any>>()
-        val biomeModifier = mutableListOf<BiomeEffectModifier<out Any>>()
+        val biomeModifier = mutableListOf<BiomeEffectModifier<out Any, out Any>>()
         val collector = BasicEnvironmentalModifierCollector(
             attributeModifier::add,
             biomeModifier::add
@@ -150,11 +150,11 @@ object EnvironmentalModifiers : CatharsisLogger by Catharsis.featureLogger(), Si
         }
     }
 
-    fun <Value : Any> getValue(pos: BlockPos, baseColor: Value, modifiers: List<BiomeEffectModifier<Value>>): Value {
+    fun <DataValue : Any> getValue(pos: BlockPos, baseColor: DataValue, modifiers: List<BiomeEffectModifier<out Any, DataValue>>): DataValue {
         modifiers.forEach {
             val pos = Vec3(pos)
-            if (it.condition.applies(baseColor, pos)) {
-                return it.provider.getValue(baseColor, pos, null) ?: return@forEach
+            if (it.condition.applies(it.effect.from(baseColor), pos)) {
+                return it.getDataValue(baseColor, pos, null) ?: return@forEach
             }
         }
 
@@ -163,12 +163,12 @@ object EnvironmentalModifiers : CatharsisLogger by Catharsis.featureLogger(), Si
 
 
     @JvmStatic
-    fun wrap(level: BlockAndTintGetter, pos: BlockPos, colorResolver: ColorResolver, effect: () -> BiomeEffect<Int>): ColorResolver = modifier@{ biome, x, y ->
+    fun wrap(level: BlockAndTintGetter, pos: BlockPos, colorResolver: ColorResolver, effect: () -> BiomeEffect<*, Int>): ColorResolver = modifier@{ biome, x, y ->
         wrap(level, pos, colorResolver.getColor(biome, x, y), effect)
     }
 
     @JvmStatic
-    fun wrap(level: BlockAndTintGetter, pos: BlockPos, baseColor: Int, effect: () -> BiomeEffect<Int>): Int {
+    fun wrap(level: BlockAndTintGetter, pos: BlockPos, baseColor: Int, effect: () -> BiomeEffect<out Any, Int>): Int {
         val list = this.currentBiomeEffects.find { it.attribute == effect() }?.modifier?.takeIf { it.isNotEmpty() } ?: return baseColor
 
         return getValue(pos, baseColor, list.unsafeCast())
@@ -181,13 +181,13 @@ object EnvironmentalModifiers : CatharsisLogger by Catharsis.featureLogger(), Si
 
 private data class BasicEnvironmentalModifierCollector(
     val attributeConsumer: (EnvironmentalAttributeModifier<out Any>) -> Any,
-    val biomeEffectConsumer: (BiomeEffectModifier<out Any>) -> Any,
+    val biomeEffectConsumer: (BiomeEffectModifier<out Any, out Any>) -> Any,
 ) : EnvironmentalModifierCollector {
     override fun <Type : Any> register(environmentalAttributeModifier: EnvironmentalAttributeModifier<Type>) {
         attributeConsumer(environmentalAttributeModifier)
     }
 
-    override fun <Type : Any> register(biomeEffectModifier: BiomeEffectModifier<Type>) {
+    override fun <Type : Any, DataValue : Any> register(biomeEffectModifier: BiomeEffectModifier<Type, DataValue>) {
         biomeEffectConsumer(biomeEffectModifier)
     }
 }
@@ -199,14 +199,14 @@ private data class LayeredEnvironmentalModifiedCollector(
         parent.register(environmentalAttributeModifier.copy(condition = EnvironmentalAndCondition(condition.asTyped(), environmentalAttributeModifier.condition).asTyped()))
     }
 
-    override fun <Type : Any> register(biomeEffectModifier: BiomeEffectModifier<Type>) {
+    override fun <Type : Any, DataValue : Any> register(biomeEffectModifier: BiomeEffectModifier<Type, DataValue>) {
         parent.register(biomeEffectModifier.copy(condition = EnvironmentalAndCondition(condition.asTyped(), biomeEffectModifier.condition).asTyped()))
     }
 }
 
 interface EnvironmentalModifierCollector {
     fun <Type : Any> register(environmentalAttributeModifier: EnvironmentalAttributeModifier<Type>)
-    fun <Type : Any> register(biomeEffectModifier: BiomeEffectModifier<Type>)
+    fun <Type : Any, DataValue : Any> register(biomeEffectModifier: BiomeEffectModifier<Type, DataValue>)
 
     fun pushCondition(condition: TypelessEnvironmentalModifierCondition): EnvironmentalModifierCollector = LayeredEnvironmentalModifiedCollector(this, condition)
 }

@@ -137,7 +137,7 @@ class PackConfigScreen @JvmOverloads constructor(private val parent: Screen?, pa
     private fun handleComponentClick(handler: Style) {
         handler.clickEvent?.let { event ->
             when (event) {
-                is ClickEvent.OpenUrl -> Util.getPlatform().openUri(event.uri)
+                is ClickEvent.OpenUrl -> McClient.openUri(event.uri)
                 is ClickEvent.CopyToClipboard -> McClient.clipboard = event.value
                 else -> println("Cannot handle click event of type ${event.action()}")
             }

@@ -45,5 +45,8 @@
     "fabric-language-kotlin": ">=${fabric_lang_kotlin}",
     "skyblock-api": ">=${sbapi}"
   },
+  "breaks": {
+    "resource_tree": "*"
+  },
   "accessWidener": "catharsis.accesswidener"
 }

@@ -3,7 +3,7 @@ import me.owdding.catharsis.features.gui.definitions.conditions.GuiDefinitionTit
 import me.owdding.catharsis.features.gui.definitions.slots.GuiSlotDefinition
 import me.owdding.catharsis.features.gui.definitions.slots.SlotAllCondition
 import me.owdding.catharsis.features.gui.definitions.slots.SlotAnyCondition
-import me.owdding.catharsis.features.gui.definitions.slots.SlotItemCondition
+import me.owdding.catharsis.features.gui.definitions.slots.SlotItemModelCondition
 import me.owdding.catharsis.features.gui.definitions.slots.SlotNameCondition
 import me.owdding.catharsis.features.gui.matchers.EqualsTextMatcher
 import net.minecraft.world.item.Items
@@ -11,8 +11,6 @@ import tech.thatgravyboat.skyblockapi.platform.Identifiers.of
 import kotlin.io.path.Path
 import kotlin.io.path.createParentDirectories
 import kotlin.io.path.writeText
-
-
 
 fun hotmTree(
     title: String,
@@ -28,9 +26,9 @@ fun hotmTree(
                         SlotAllCondition(
                             SlotNameCondition(EqualsTextMatcher(name)),
                             SlotAnyCondition(
-                                SlotItemCondition(Items.COAL),
-                                SlotItemCondition(Items.COAL_BLOCK),
-                                )
+                                SlotItemModelCondition(Items.COAL),
+                                SlotItemModelCondition(Items.COAL_BLOCK),
+                            )
                         ),
                     ),
                 )
@@ -40,7 +38,7 @@ fun hotmTree(
                         of("skyblock_gui", "skill_tree/hotm/${id}/unlocked"),
                         SlotAllCondition(
                             SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemCondition(Items.EMERALD),
+                            SlotItemModelCondition(Items.EMERALD),
                         ),
                     ),
                 )
@@ -50,7 +48,7 @@ fun hotmTree(
                         of("skyblock_gui", "skill_tree/hotm/${id}/maxed"),
                         SlotAllCondition(
                             SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemCondition(Items.DIAMOND),
+                            SlotItemModelCondition(Items.DIAMOND),
                         ),
                     ),
                 )
@@ -60,7 +58,7 @@ fun hotmTree(
                         of("skyblock_gui", "skill_tree/hotm/${id}/disabled"),
                         SlotAllCondition(
                             SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemCondition(Items.REDSTONE_BLOCK),
+                            SlotItemModelCondition(Items.REDSTONE_BLOCK),
                         ),
                     ),
                 )
@@ -87,8 +85,8 @@ fun hotfTree(
                         SlotAllCondition(
                             SlotNameCondition(EqualsTextMatcher(name)),
                             SlotAnyCondition(
-                                SlotItemCondition(Items.PALE_OAK_BUTTON),
-                                SlotItemCondition(Items.PALE_OAK_SAPLING),
+                                SlotItemModelCondition(Items.PALE_OAK_BUTTON),
+                                SlotItemModelCondition(Items.PALE_OAK_SAPLING),
                             )
                         ),
                     ),
@@ -100,8 +98,8 @@ fun hotfTree(
                         SlotAllCondition(
                             SlotNameCondition(EqualsTextMatcher(name)),
                             SlotAnyCondition(
-                                SlotItemCondition(Items.OAK_SAPLING),
-                                SlotItemCondition(Items.STRIPPED_OAK_LOG),
+                                SlotItemModelCondition(Items.OAK_SAPLING),
+                                SlotItemModelCondition(Items.STRIPPED_OAK_LOG),
                             )
                         ),
                     ),
@@ -112,7 +110,7 @@ fun hotfTree(
                         of("skyblock_gui", "skill_tree/hotf/${id}/maxed"),
                         SlotAllCondition(
                             SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemCondition(Items.OAK_LOG),
+                            SlotItemModelCondition(Items.OAK_LOG),
                         ),
                     ),
                 )
@@ -122,7 +120,7 @@ fun hotfTree(
                         of("skyblock_gui", "skill_tree/hotf/${id}/disabled"),
                         SlotAllCondition(
                             SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemCondition(Items.STRIPPED_MANGROVE_LOG),
+                            SlotItemModelCondition(Items.STRIPPED_MANGROVE_LOG),
                         ),
                     ),
                 )

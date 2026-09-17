@@ -17,11 +17,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -43,11 +43,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -67,7 +67,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -84,7 +84,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -103,11 +103,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -129,11 +129,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -153,7 +153,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -170,7 +170,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -189,11 +189,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -215,11 +215,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -239,7 +239,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -256,7 +256,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -275,11 +275,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -301,11 +301,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -325,7 +325,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -342,7 +342,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -361,11 +361,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -387,11 +387,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -411,7 +411,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -428,7 +428,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -447,11 +447,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -473,11 +473,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -497,7 +497,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -514,7 +514,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -533,11 +533,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -559,11 +559,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -583,7 +583,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -600,7 +600,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -619,11 +619,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -645,11 +645,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -669,7 +669,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -686,7 +686,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -705,11 +705,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -731,11 +731,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -755,7 +755,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -772,7 +772,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -791,11 +791,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -817,11 +817,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -841,7 +841,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -858,7 +858,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -877,11 +877,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -903,11 +903,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -927,7 +927,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -944,7 +944,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -963,11 +963,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -989,11 +989,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1013,7 +1013,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1030,7 +1030,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1049,11 +1049,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1075,11 +1075,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1099,7 +1099,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1116,7 +1116,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1135,11 +1135,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1161,11 +1161,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1185,7 +1185,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1202,7 +1202,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1221,11 +1221,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1247,11 +1247,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1271,7 +1271,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1288,7 +1288,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1307,11 +1307,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1333,11 +1333,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1357,7 +1357,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1374,7 +1374,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1393,11 +1393,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1419,11 +1419,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1443,7 +1443,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1460,7 +1460,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1479,11 +1479,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1505,11 +1505,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1529,7 +1529,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1546,7 +1546,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1565,11 +1565,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1591,11 +1591,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1615,7 +1615,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1632,7 +1632,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1651,11 +1651,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1677,11 +1677,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1701,7 +1701,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1718,7 +1718,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1737,11 +1737,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1763,11 +1763,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1787,7 +1787,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1804,7 +1804,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1823,11 +1823,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1849,11 +1849,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1873,7 +1873,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1890,7 +1890,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1909,11 +1909,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1935,11 +1935,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1959,7 +1959,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1976,7 +1976,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1995,11 +1995,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2021,11 +2021,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2045,7 +2045,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2062,7 +2062,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2081,11 +2081,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2107,11 +2107,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2131,7 +2131,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2148,7 +2148,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2167,11 +2167,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2193,11 +2193,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2217,7 +2217,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2234,7 +2234,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2253,11 +2253,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2279,11 +2279,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2303,7 +2303,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2320,7 +2320,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2339,11 +2339,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2365,11 +2365,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2389,7 +2389,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2406,7 +2406,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2425,11 +2425,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2451,11 +2451,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2475,7 +2475,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2492,7 +2492,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2511,11 +2511,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2537,11 +2537,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2561,7 +2561,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2578,7 +2578,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2597,11 +2597,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2623,11 +2623,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2647,7 +2647,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2664,7 +2664,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2683,11 +2683,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2709,11 +2709,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2733,7 +2733,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2750,7 +2750,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2769,11 +2769,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2795,11 +2795,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2819,7 +2819,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2836,7 +2836,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2855,11 +2855,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2881,11 +2881,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2905,7 +2905,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2922,7 +2922,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2941,11 +2941,11 @@
             "conditions": [
               {
                 "items": "minecraft:pale_oak_button",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:pale_oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2967,11 +2967,11 @@
             "conditions": [
               {
                 "items": "minecraft:oak_sapling",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:stripped_oak_log",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2991,7 +2991,7 @@
           },
           {
             "items": "minecraft:oak_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3008,7 +3008,7 @@
           },
           {
             "items": "minecraft:stripped_mangrove_log",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"

@@ -17,11 +17,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -41,7 +41,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -58,7 +58,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -75,7 +75,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -94,11 +94,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -118,7 +118,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -135,7 +135,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -152,7 +152,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -171,11 +171,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -195,7 +195,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -212,7 +212,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -229,7 +229,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -248,11 +248,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -272,7 +272,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -289,7 +289,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -306,7 +306,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -325,11 +325,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -349,7 +349,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -366,7 +366,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -383,7 +383,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -402,11 +402,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -426,7 +426,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -443,7 +443,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -460,7 +460,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -479,11 +479,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -503,7 +503,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -520,7 +520,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -537,7 +537,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -556,11 +556,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -580,7 +580,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -597,7 +597,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -614,7 +614,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -633,11 +633,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -657,7 +657,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -674,7 +674,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -691,7 +691,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -710,11 +710,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -734,7 +734,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -751,7 +751,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -768,7 +768,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -787,11 +787,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -811,7 +811,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -828,7 +828,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -845,7 +845,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -864,11 +864,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -888,7 +888,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -905,7 +905,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -922,7 +922,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -941,11 +941,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -965,7 +965,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -982,7 +982,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -999,7 +999,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1018,11 +1018,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1042,7 +1042,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1059,7 +1059,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1076,7 +1076,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1095,11 +1095,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1119,7 +1119,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1136,7 +1136,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1153,7 +1153,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1172,11 +1172,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1196,7 +1196,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1213,7 +1213,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1230,7 +1230,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1249,11 +1249,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1273,7 +1273,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1290,7 +1290,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1307,7 +1307,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1326,11 +1326,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1350,7 +1350,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1367,7 +1367,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1384,7 +1384,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1403,11 +1403,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1427,7 +1427,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1444,7 +1444,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1461,7 +1461,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1480,11 +1480,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1504,7 +1504,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1521,7 +1521,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1538,7 +1538,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1557,11 +1557,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1581,7 +1581,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1598,7 +1598,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1615,7 +1615,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1634,11 +1634,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1658,7 +1658,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1675,7 +1675,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1692,7 +1692,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1711,11 +1711,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1735,7 +1735,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1752,7 +1752,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1769,7 +1769,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1788,11 +1788,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1812,7 +1812,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1829,7 +1829,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1846,7 +1846,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1865,11 +1865,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1889,7 +1889,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1906,7 +1906,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1923,7 +1923,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1942,11 +1942,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -1966,7 +1966,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -1983,7 +1983,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2000,7 +2000,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2019,11 +2019,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2043,7 +2043,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2060,7 +2060,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2077,7 +2077,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2096,11 +2096,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2120,7 +2120,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2137,7 +2137,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2154,7 +2154,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2173,11 +2173,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2197,7 +2197,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2214,7 +2214,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2231,7 +2231,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2250,11 +2250,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2274,7 +2274,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2291,7 +2291,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2308,7 +2308,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2327,11 +2327,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2351,7 +2351,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2368,7 +2368,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2385,7 +2385,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2404,11 +2404,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2428,7 +2428,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2445,7 +2445,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2462,7 +2462,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2481,11 +2481,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2505,7 +2505,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2522,7 +2522,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2539,7 +2539,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2558,11 +2558,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2582,7 +2582,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2599,7 +2599,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2616,7 +2616,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2635,11 +2635,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2659,7 +2659,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2676,7 +2676,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2693,7 +2693,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2712,11 +2712,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2736,7 +2736,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2753,7 +2753,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2770,7 +2770,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2789,11 +2789,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2813,7 +2813,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2830,7 +2830,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2847,7 +2847,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2866,11 +2866,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2890,7 +2890,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2907,7 +2907,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2924,7 +2924,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2943,11 +2943,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -2967,7 +2967,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -2984,7 +2984,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3001,7 +3001,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3020,11 +3020,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -3044,7 +3044,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3061,7 +3061,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3078,7 +3078,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3097,11 +3097,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -3121,7 +3121,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3138,7 +3138,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3155,7 +3155,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3174,11 +3174,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -3198,7 +3198,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3215,7 +3215,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3232,7 +3232,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3251,11 +3251,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -3275,7 +3275,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3292,7 +3292,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3309,7 +3309,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3328,11 +3328,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -3352,7 +3352,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3369,7 +3369,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3386,7 +3386,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3405,11 +3405,11 @@
             "conditions": [
               {
                 "items": "minecraft:coal",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               },
               {
                 "items": "minecraft:coal_block",
-                "type": "catharsis:item"
+                "type": "catharsis:item_model"
               }
             ],
             "type": "catharsis:any"
@@ -3429,7 +3429,7 @@
           },
           {
             "items": "minecraft:emerald",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3446,7 +3446,7 @@
           },
           {
             "items": "minecraft:diamond",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"
@@ -3463,7 +3463,7 @@
           },
           {
             "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
+            "type": "catharsis:item_model"
           }
         ],
         "type": "catharsis:all"

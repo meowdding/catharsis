@@ -1,26 +1,26 @@
 {
   "target": {
-    "title": "Heart of the Mountain",
+    "title": "Heart of the Forest",
     "type": "catharsis:title"
   },
   "layout": [
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed/locked",
+      "id": "skyblock_gui:skill_tree/hotf/sweep/locked",
       "target": {
         "conditions": [
           {
-            "name": "Mining Speed",
+            "name": "Sweep",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -31,73 +31,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/sweep/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Mining Speed",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Mining Speed",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Mining Speed",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Mining Speed Boost",
+            "name": "Sweep",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -108,16 +57,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/sweep/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Mining Speed Boost",
+            "name": "Sweep",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -125,16 +74,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/sweep/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Mining Speed Boost",
+            "name": "Sweep",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -142,39 +91,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_speed_boost/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/damage_boost/locked",
       "target": {
         "conditions": [
           {
-            "name": "Mining Speed Boost",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/precision_mining/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Precision Mining",
+            "name": "Damage Boost",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -185,73 +117,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/precision_mining/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/damage_boost/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Precision Mining",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/precision_mining/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Precision Mining",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/precision_mining/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Precision Mining",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Mining Fortune",
+            "name": "Damage Boost",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -262,16 +143,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/damage_boost/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Mining Fortune",
+            "name": "Damage Boost",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -279,16 +160,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/damage_boost/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Mining Fortune",
+            "name": "Damage Boost",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -296,39 +177,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_fortune/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/luck_of_the_forest/locked",
       "target": {
         "conditions": [
           {
-            "name": "Mining Fortune",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Titanium Insanium",
+            "name": "Luck of the Forest",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -339,73 +203,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/luck_of_the_forest/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Titanium Insanium",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Titanium Insanium",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/titanium_insanium/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Titanium Insanium",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/pickobulus/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Pickobulus",
+            "name": "Luck of the Forest",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -416,16 +229,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/pickobulus/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/luck_of_the_forest/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Pickobulus",
+            "name": "Luck of the Forest",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -433,16 +246,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/pickobulus/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/luck_of_the_forest/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Pickobulus",
+            "name": "Luck of the Forest",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -450,39 +263,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/pickobulus/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/foraging_fortune/locked",
       "target": {
         "conditions": [
           {
-            "name": "Pickobulus",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Luck of the Cave",
+            "name": "Foraging Fortune",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -493,73 +289,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/foraging_fortune/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Luck of the Cave",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Luck of the Cave",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/luck_of_the_cave/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Luck of the Cave",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Efficient Miner",
+            "name": "Foraging Fortune",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -570,16 +315,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/foraging_fortune/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Efficient Miner",
+            "name": "Foraging Fortune",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -587,16 +332,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/foraging_fortune/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Efficient Miner",
+            "name": "Foraging Fortune",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -604,39 +349,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/efficient_miner/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/collector/locked",
       "target": {
         "conditions": [
           {
-            "name": "Efficient Miner",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/quick_forge/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Quick Forge",
+            "name": "Collector",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -647,73 +375,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/quick_forge/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/collector/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Quick Forge",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/quick_forge/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Quick Forge",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/quick_forge/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Quick Forge",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/sky_mall/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Sky Mall",
+            "name": "Collector",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -724,16 +401,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/sky_mall/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/collector/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Sky Mall",
+            "name": "Collector",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -741,16 +418,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/sky_mall/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/collector/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Sky Mall",
+            "name": "Collector",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -758,39 +435,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/sky_mall/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/axe_toss/locked",
       "target": {
         "conditions": [
           {
-            "name": "Sky Mall",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/old_school/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Old-School",
+            "name": "Axe Toss",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -801,73 +461,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/old_school/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/axe_toss/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Old-School",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/old_school/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Old-School",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/old_school/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Old-School",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/professional/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Professional",
+            "name": "Axe Toss",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -878,16 +487,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/professional/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/axe_toss/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Professional",
+            "name": "Axe Toss",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -895,16 +504,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/professional/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/axe_toss/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Professional",
+            "name": "Axe Toss",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -912,39 +521,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/professional/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/deep_waters/locked",
       "target": {
         "conditions": [
           {
-            "name": "Professional",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/mole/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Mole",
+            "name": "Deep Waters",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -955,73 +547,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mole/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/deep_waters/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Mole",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/mole/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Mole",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/mole/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Mole",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/gem_lover/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Gem Lover",
+            "name": "Deep Waters",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -1032,16 +573,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/gem_lover/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/deep_waters/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Gem Lover",
+            "name": "Deep Waters",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -1049,16 +590,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/gem_lover/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/deep_waters/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Gem Lover",
+            "name": "Deep Waters",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -1066,39 +607,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/gem_lover/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/hunters_luck/locked",
       "target": {
         "conditions": [
           {
-            "name": "Gem Lover",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Seasoned Mineman",
+            "name": "Hunter\u0027s Luck",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -1109,73 +633,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/hunters_luck/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Seasoned Mineman",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Seasoned Mineman",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/seasoned_mineman/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Seasoned Mineman",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/front_loaded/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Front Loaded",
+            "name": "Hunter\u0027s Luck",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -1186,16 +659,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/front_loaded/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/hunters_luck/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Front Loaded",
+            "name": "Hunter\u0027s Luck",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -1203,16 +676,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/front_loaded/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/hunters_luck/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Front Loaded",
+            "name": "Hunter\u0027s Luck",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -1220,39 +693,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/front_loaded/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/galateas_might/locked",
       "target": {
         "conditions": [
           {
-            "name": "Front Loaded",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/daily_grind/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Daily Grind",
+            "name": "Galatea\u0027s Might",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -1263,73 +719,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/daily_grind/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/galateas_might/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Daily Grind",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/daily_grind/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Daily Grind",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/daily_grind/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Daily Grind",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/daily_powder/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Daily Powder",
+            "name": "Galatea\u0027s Might",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -1340,16 +745,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/daily_powder/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/galateas_might/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Daily Powder",
+            "name": "Galatea\u0027s Might",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -1357,16 +762,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/daily_powder/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/galateas_might/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Daily Powder",
+            "name": "Galatea\u0027s Might",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -1374,39 +779,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/daily_powder/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/lottery/locked",
       "target": {
         "conditions": [
           {
-            "name": "Daily Powder",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Tunnel Vision",
+            "name": "Lottery",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -1417,73 +805,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/lottery/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Tunnel Vision",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Tunnel Vision",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/tunnel_vision/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Tunnel Vision",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/block_head/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Blockhead",
+            "name": "Lottery",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -1494,16 +831,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/block_head/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/lottery/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Blockhead",
+            "name": "Lottery",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -1511,16 +848,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/block_head/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/lottery/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Blockhead",
+            "name": "Lottery",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -1528,39 +865,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/block_head/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/foraging_madness/locked",
       "target": {
         "conditions": [
           {
-            "name": "Blockhead",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Subterranean Fisher",
+            "name": "Foraging Madness",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -1571,73 +891,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/foraging_madness/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Subterranean Fisher",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Subterranean Fisher",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/subterranean_fisher/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Subterranean Fisher",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Keep It Cool",
+            "name": "Foraging Madness",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -1648,16 +917,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/foraging_madness/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Keep It Cool",
+            "name": "Foraging Madness",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -1665,16 +934,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/foraging_madness/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Keep It Cool",
+            "name": "Foraging Madness",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -1682,39 +951,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/keep_it_cool/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/iron_lungs/locked",
       "target": {
         "conditions": [
           {
-            "name": "Keep It Cool",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Lonesome Miner",
+            "name": "Iron Lungs",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -1725,73 +977,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/iron_lungs/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Lonesome Miner",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Lonesome Miner",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/lonesome_miner/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Lonesome Miner",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/great_explorer/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Great Explorer",
+            "name": "Iron Lungs",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -1802,16 +1003,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/great_explorer/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/iron_lungs/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Great Explorer",
+            "name": "Iron Lungs",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -1819,16 +1020,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/great_explorer/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/iron_lungs/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Great Explorer",
+            "name": "Iron Lungs",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -1836,39 +1037,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/great_explorer/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/250_gifts/locked",
       "target": {
         "conditions": [
           {
-            "name": "Great Explorer",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/maniac_miner/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Maniac Miner",
+            "name": "250 Gifts",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -1879,73 +1063,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/maniac_miner/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/250_gifts/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Maniac Miner",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/maniac_miner/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Maniac Miner",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/maniac_miner/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Maniac Miner",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Speedy Mineman",
+            "name": "250 Gifts",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -1956,16 +1089,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/250_gifts/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Speedy Mineman",
+            "name": "250 Gifts",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -1973,16 +1106,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/250_gifts/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Speedy Mineman",
+            "name": "250 Gifts",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -1990,39 +1123,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/speedy_mineman/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/daily_wishes/locked",
       "target": {
         "conditions": [
           {
-            "name": "Speedy Mineman",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/powder_buff/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Powder Buff",
+            "name": "Daily Wishes",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -2033,73 +1149,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/powder_buff/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/daily_wishes/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Powder Buff",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/powder_buff/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Powder Buff",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/powder_buff/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Powder Buff",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Fortunate Mineman",
+            "name": "Daily Wishes",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -2110,16 +1175,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/daily_wishes/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Fortunate Mineman",
+            "name": "Daily Wishes",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -2127,16 +1192,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/daily_wishes/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Fortunate Mineman",
+            "name": "Daily Wishes",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -2144,39 +1209,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/fortunate_mineman/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/early_bird/locked",
       "target": {
         "conditions": [
           {
-            "name": "Fortunate Mineman",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/miners_blessing/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Miner\u0027s Blessing",
+            "name": "Early Bird",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -2187,73 +1235,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/miners_blessing/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/early_bird/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Miner\u0027s Blessing",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/miners_blessing/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Miner\u0027s Blessing",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/miners_blessing/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Miner\u0027s Blessing",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "No Stone Unturned",
+            "name": "Early Bird",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -2264,16 +1261,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/early_bird/maxed",
       "target": {
         "conditions": [
           {
-            "name": "No Stone Unturned",
+            "name": "Early Bird",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -2281,16 +1278,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/early_bird/disabled",
       "target": {
         "conditions": [
           {
-            "name": "No Stone Unturned",
+            "name": "Early Bird",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -2298,39 +1295,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/no_stone_unturned/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/precise_cutting/locked",
       "target": {
         "conditions": [
           {
-            "name": "No Stone Unturned",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/strong_arm/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Strong Arm",
+            "name": "Precise Cutting",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -2341,73 +1321,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/strong_arm/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/precise_cutting/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Strong Arm",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/strong_arm/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Strong Arm",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/strong_arm/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Strong Arm",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/steady_hand/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Steady Hand",
+            "name": "Precise Cutting",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -2418,16 +1347,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/steady_hand/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/precise_cutting/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Steady Hand",
+            "name": "Precise Cutting",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -2435,16 +1364,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/steady_hand/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/precise_cutting/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Steady Hand",
+            "name": "Precise Cutting",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -2452,39 +1381,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/steady_hand/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/tree_whisperer/locked",
       "target": {
         "conditions": [
           {
-            "name": "Steady Hand",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/warm_heart/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Warm Heart",
+            "name": "Tree Whisperer",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -2495,73 +1407,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/warm_heart/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/tree_whisperer/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Warm Heart",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/warm_heart/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Warm Heart",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/warm_heart/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Warm Heart",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/surveyor/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Surveyor",
+            "name": "Tree Whisperer",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -2572,16 +1433,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/surveyor/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/tree_whisperer/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Surveyor",
+            "name": "Tree Whisperer",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -2589,16 +1450,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/surveyor/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/tree_whisperer/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Surveyor",
+            "name": "Tree Whisperer",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -2606,39 +1467,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/surveyor/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/free_trial/locked",
       "target": {
         "conditions": [
           {
-            "name": "Surveyor",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Mineshaft Mayhem",
+            "name": "Free Trial",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -2649,73 +1493,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/free_trial/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Mineshaft Mayhem",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Mineshaft Mayhem",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/mineshaft_mayhem/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Mineshaft Mayhem",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/metal_head/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Metal Head",
+            "name": "Free Trial",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -2726,16 +1519,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/metal_head/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/free_trial/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Metal Head",
+            "name": "Free Trial",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -2743,16 +1536,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/metal_head/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/free_trial/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Metal Head",
+            "name": "Free Trial",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -2760,39 +1553,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/metal_head/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/homing_axe/locked",
       "target": {
         "conditions": [
           {
-            "name": "Metal Head",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Rags to Riches",
+            "name": "Homing Axe",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -2803,73 +1579,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/homing_axe/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Rags to Riches",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Rags to Riches",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/rags_to_riches/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Rags to Riches",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Eager Adventurer",
+            "name": "Homing Axe",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -2880,16 +1605,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/homing_axe/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Eager Adventurer",
+            "name": "Homing Axe",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -2897,16 +1622,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/homing_axe/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Eager Adventurer",
+            "name": "Homing Axe",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -2914,39 +1639,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/eager_adventurer/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/forest_fisher/locked",
       "target": {
         "conditions": [
           {
-            "name": "Eager Adventurer",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Gemstone Infusion",
+            "name": "Forest Fisher",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -2957,73 +1665,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/forest_fisher/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Gemstone Infusion",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Gemstone Infusion",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/gemstone_infusion/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Gemstone Infusion",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/crystalline/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Crystalline",
+            "name": "Forest Fisher",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -3034,16 +1691,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/crystalline/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/forest_fisher/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Crystalline",
+            "name": "Forest Fisher",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -3051,16 +1708,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/crystalline/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/forest_fisher/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Crystalline",
+            "name": "Forest Fisher",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -3068,39 +1725,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/crystalline/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/strength_boost/locked",
       "target": {
         "conditions": [
           {
-            "name": "Crystalline",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Gifts from the Departed",
+            "name": "Strength Boost",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -3111,73 +1751,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/strength_boost/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Gifts from the Departed",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Gifts from the Departed",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/gifts_from_the_departed/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Gifts from the Departed",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/mining_master/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Mining Master",
+            "name": "Strength Boost",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -3188,16 +1777,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_master/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/strength_boost/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Mining Master",
+            "name": "Strength Boost",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -3205,16 +1794,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_master/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/strength_boost/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Mining Master",
+            "name": "Strength Boost",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -3222,39 +1811,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/mining_master/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/starlyn_supreme/locked",
       "target": {
         "conditions": [
           {
-            "name": "Mining Master",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Dead Man\u0027s Chest",
+            "name": "Starlyn Supreme",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -3265,73 +1837,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/starlyn_supreme/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Dead Man\u0027s Chest",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:emerald",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/maxed",
-      "target": {
-        "conditions": [
-          {
-            "name": "Dead Man\u0027s Chest",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:diamond",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/dead_mans_chest/disabled",
-      "target": {
-        "conditions": [
-          {
-            "name": "Dead Man\u0027s Chest",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Vanguard Seeker",
+            "name": "Starlyn Supreme",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:oak_sapling",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:stripped_oak_log",
                 "type": "catharsis:item"
               }
             ],
@@ -3342,16 +1863,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/starlyn_supreme/maxed",
       "target": {
         "conditions": [
           {
-            "name": "Vanguard Seeker",
+            "name": "Starlyn Supreme",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -3359,16 +1880,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/starlyn_supreme/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Vanguard Seeker",
+            "name": "Starlyn Supreme",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -3376,39 +1897,22 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/vanguard_seeker/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/speed_boost/locked",
       "target": {
         "conditions": [
           {
-            "name": "Vanguard Seeker",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:redstone_block",
-            "type": "catharsis:item"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotm/sheer_forge/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Sheer Force",
+            "name": "Speed Boost",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "conditions": [
               {
-                "items": "minecraft:coal",
+                "items": "minecraft:pale_oak_button",
                 "type": "catharsis:item"
               },
               {
-                "items": "minecraft:coal_block",
+                "items": "minecraft:pale_oak_sapling",
                 "type": "catharsis:item"
               }
             ],
@@ -3419,16 +1923,42 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/sheer_forge/unlocked",
+      "id": "skyblock_gui:skill_tree/hotf/speed_boost/unlocked",
       "target": {
         "conditions": [
           {
-            "name": "Sheer Force",
+            "name": "Speed Boost",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:emerald",
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/speed_boost/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Speed Boost",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
             "type": "catharsis:item"
           }
         ],
@@ -3436,16 +1966,16 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/sheer_forge/maxed",
+      "id": "skyblock_gui:skill_tree/hotf/speed_boost/disabled",
       "target": {
         "conditions": [
           {
-            "name": "Sheer Force",
+            "name": "Speed Boost",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:diamond",
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],
@@ -3453,16 +1983,1031 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotm/sheer_forge/disabled",
+      "id": "skyblock_gui:skill_tree/hotf/efficient_forager/locked",
       "target": {
         "conditions": [
           {
-            "name": "Sheer Force",
+            "name": "Efficient Forager",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
-            "items": "minecraft:redstone_block",
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/efficient_forager/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Efficient Forager",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/efficient_forager/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Efficient Forager",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/efficient_forager/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Efficient Forager",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/maniac_slicer/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Maniac Slicer",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/maniac_slicer/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Maniac Slicer",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/maniac_slicer/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Maniac Slicer",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/maniac_slicer/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Maniac Slicer",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/half_empty/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Half Empty",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/half_empty/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Half Empty",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/half_empty/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Half Empty",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/half_empty/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Half Empty",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/ricochet/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Ricochet",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/ricochet/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Ricochet",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/ricochet/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Ricochet",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/ricochet/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Ricochet",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/half_full/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Half Full",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/half_full/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Half Full",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/half_full/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Half Full",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/half_full/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Half Full",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/monster_hunter/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Monster Hunter",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/monster_hunter/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Monster Hunter",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/monster_hunter/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Monster Hunter",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/monster_hunter/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Monster Hunter",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/forest_speed/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Forest Speed",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/forest_speed/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Forest Speed",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/forest_speed/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Forest Speed",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/forest_speed/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Forest Speed",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/essence_fortune/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Essence Fortune",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/essence_fortune/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Essence Fortune",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/essence_fortune/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Essence Fortune",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/essence_fortune/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Essence Fortune",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/timber/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Timber",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/timber/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Timber",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/timber/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Timber",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/timber/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Timber",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/two_for_one/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Two-for-one",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/two_for_one/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Two-for-one",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/two_for_one/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Two-for-one",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/two_for_one/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Two-for-one",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/forest_strength/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Forest Strength",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/forest_strength/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Forest Strength",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/forest_strength/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Forest Strength",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/forest_strength/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Forest Strength",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/beekeeper/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Beekeeper",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:pale_oak_button",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:pale_oak_sapling",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/beekeeper/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Beekeeper",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "conditions": [
+              {
+                "items": "minecraft:oak_sapling",
+                "type": "catharsis:item"
+              },
+              {
+                "items": "minecraft:stripped_oak_log",
+                "type": "catharsis:item"
+              }
+            ],
+            "type": "catharsis:any"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/beekeeper/maxed",
+      "target": {
+        "conditions": [
+          {
+            "name": "Beekeeper",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:oak_log",
+            "type": "catharsis:item"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/beekeeper/disabled",
+      "target": {
+        "conditions": [
+          {
+            "name": "Beekeeper",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:stripped_mangrove_log",
             "type": "catharsis:item"
           }
         ],

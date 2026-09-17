@@ -104,7 +104,7 @@ data class SlotItemModelCondition(
 ) : SlotCondition {
     constructor(vararg item: Item) : this(setOf(*item))
 
-    override val codec = CatharsisCodecs.getMapCodec<SlotItemCondition>()
+    override val codec = CatharsisCodecs.getMapCodec<SlotItemModelCondition>()
     override fun matches(slots: List<Slot>, slot: Int, stack: ItemStack): Boolean = stack.getItemModel() in this.items
 }
 

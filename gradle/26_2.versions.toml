@@ -4,6 +4,7 @@ minecraft = "26.2"
 minecraft_range = "26.2.x"
 fabric-api = "0.154.0+26.2"
 placeholders = "3.1.0-beta.1+26.2"
+female-gender = "5.0.0-Beta.5+mc26.2-fabric"
 
 packed_packs = "2.2.2+26.2"
 jade = "26.2.1+fabric"
@@ -14,6 +15,7 @@ skyblock-item-list = "0.0.4+26.1.2-SNAPSHOT"
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
 placeholders = { module = "eu.pb4:placeholder-api", version.ref = "placeholders" }
+female-gender = { module = "maven.modrinth:female-gender", version.ref = "female-gender" }
 
 packed_packs = { module = "io.github.fishstiz.packed_packs.api:packed_packs_api-fabric", version.ref = "packed_packs" }
 jade = { module = "maven.modrinth:jade", version.ref = "jade" }

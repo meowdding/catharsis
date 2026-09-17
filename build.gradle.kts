@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
-import net.fabricmc.loom.api.LoomGradleExtensionAPI
+import jdk.jfr.internal.JVM.include
 import net.fabricmc.loom.task.ValidateAccessWidenerTask
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
@@ -197,19 +197,11 @@ dependencies {
     ksp(versionedCatalog["meowdding.ktmodules"])
     ksp(versionedCatalog["meowdding.ktcodecs"])
 
-    // Jade compat
-    compileOnly(versionedCatalog["jade"])
-    localRuntime(versionedCatalog["jade"])
-
-    // Packed Packs compat
-    compileOnly(versionedCatalog["packed_packs"])
-    localRuntime(versionedCatalog["packed_packs"])
-
-    // SkyBlockItemList compat
-    versionedCatalog.getOrNull("skyblock-item-list")?.let {
-        compileOnly(it)
-        localRuntime(it)
-    }
+    // Mod compats
+    compileOnlyLocalRuntime(versionedCatalog["jade"])
+    compileOnlyLocalRuntime(versionedCatalog["packed_packs"])
+    compileOnlyLocalRuntime(versionedCatalog["female-gender"])
+    compileOnlyLocalRuntime(versionedCatalog.getOrNull("skyblock-item-list"))
 
     runtimeOnly(versionedCatalog["devauth"])
 }
@@ -217,6 +209,13 @@ dependencies {
 fun DependencyHandlerScope.includeImplementation(dep: Any) {
     include(dep)
     implementation(dep)
+}
+
+fun DependencyHandlerScope.compileOnlyLocalRuntime(dep: Any?) {
+    dep?.let {
+        compileOnly(dep)
+        localRuntime(dep)
+    }
 }
 
 autoMixins {

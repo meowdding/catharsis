@@ -1,9 +1,11 @@
+import com.mojang.datafixers.util.Either
 import me.owdding.catharsis.features.gui.definitions.GuiDefinition
 import me.owdding.catharsis.features.gui.definitions.conditions.GuiDefinitionTitleCondition
 import me.owdding.catharsis.features.gui.definitions.slots.GuiSlotDefinition
 import me.owdding.catharsis.features.gui.definitions.slots.SlotAllCondition
 import me.owdding.catharsis.features.gui.definitions.slots.SlotAnyCondition
 import me.owdding.catharsis.features.gui.definitions.slots.SlotItemModelCondition
+import me.owdding.catharsis.features.gui.definitions.slots.SlotLoreCondition
 import me.owdding.catharsis.features.gui.definitions.slots.SlotNameCondition
 import me.owdding.catharsis.features.gui.matchers.EqualsTextMatcher
 import net.minecraft.world.item.Items
@@ -15,6 +17,8 @@ import kotlin.io.path.writeText
 fun hotmTree(
     title: String,
     perks: List<Pair<String, String>>,
+    tiers: List<Pair<String, String>>,
+    cotm: List<Pair<String, String>>,
 ) {
     val definition = GuiDefinition(
         target = GuiDefinitionTitleCondition(Regex(title)),
@@ -28,7 +32,7 @@ fun hotmTree(
                             SlotAnyCondition(
                                 SlotItemModelCondition(Items.COAL),
                                 SlotItemModelCondition(Items.COAL_BLOCK),
-                            )
+                            ),
                         ),
                     ),
                 )
@@ -63,6 +67,102 @@ fun hotmTree(
                     ),
                 )
             }
+            for ((name, id) in tiers) {
+                add(
+                    GuiSlotDefinition(
+                        of("skyblock_gui", "skill_tree/hotm/${id}/locked"),
+                        SlotAllCondition(
+                            SlotNameCondition(EqualsTextMatcher(name)),
+                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.red),
+                        ),
+                    ),
+                )
+
+                add(
+                    GuiSlotDefinition(
+                        of("skyblock_gui", "skill_tree/hotm/${id}/unlocking"),
+                        SlotAllCondition(
+                            SlotNameCondition(EqualsTextMatcher(name)),
+                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.yellow),
+                        ),
+                    ),
+                )
+
+                add(
+                    GuiSlotDefinition(
+                        of("skyblock_gui", "skill_tree/hotm/${id}/unlocked"),
+                        SlotAllCondition(
+                            SlotNameCondition(EqualsTextMatcher(name)),
+                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.lime),
+                        ),
+                    ),
+                )
+            }
+            for ((lore, id) in cotm) {
+                add(
+                    GuiSlotDefinition(
+                        of("skyblock_gui", "skill_tree/hotm/core_of_the_mountain/unlocked/${id}"),
+                        SlotAllCondition(
+                            SlotNameCondition(EqualsTextMatcher("Core of the Mountain")),
+                            SlotLoreCondition(EqualsTextMatcher(lore), Either.left(0)),
+                        ),
+                    ),
+                )
+            }
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotm/core_of_the_mountain/locked"),
+                    SlotAllCondition(
+                        SlotNameCondition(EqualsTextMatcher("Core of the Mountain")),
+                        SlotItemModelCondition(Items.BEDROCK),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotm/loadout"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Heart of the Mountain Slot"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotm/icon"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Heart of the Mountain"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotm/crystal_hollows_crystals"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Crystal Hollows Crystals"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotm/rng_meter"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Crystal Nucleus RNG Meter"),
+                    ),
+                ),
+            )
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotm/reset_heart_of_the_mountain"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Reset Heart of the Mountain"),
+                    ),
+                ),
+            )
         },
     )
 
@@ -74,6 +174,8 @@ fun hotmTree(
 fun hotfTree(
     title: String,
     perks: List<Pair<String, String>>,
+    tiers: List<Pair<String, String>>,
+    cotf: List<Pair<String, String>>,
 ) {
     val definition = GuiDefinition(
         target = GuiDefinitionTitleCondition(Regex(title)),
@@ -87,7 +189,7 @@ fun hotfTree(
                             SlotAnyCondition(
                                 SlotItemModelCondition(Items.PALE_OAK_BUTTON),
                                 SlotItemModelCondition(Items.PALE_OAK_SAPLING),
-                            )
+                            ),
                         ),
                     ),
                 )
@@ -100,7 +202,7 @@ fun hotfTree(
                             SlotAnyCondition(
                                 SlotItemModelCondition(Items.OAK_SAPLING),
                                 SlotItemModelCondition(Items.STRIPPED_OAK_LOG),
-                            )
+                            ),
                         ),
                     ),
                 )
@@ -125,6 +227,103 @@ fun hotfTree(
                     ),
                 )
             }
+            for ((name, id) in tiers) {
+                add(
+                    GuiSlotDefinition(
+                        of("skyblock_gui", "skill_tree/hotf/${id}/locked"),
+                        SlotAllCondition(
+                            SlotNameCondition(EqualsTextMatcher(name)),
+                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.red),
+                        ),
+                    ),
+                )
+
+                add(
+                    GuiSlotDefinition(
+                        of("skyblock_gui", "skill_tree/hotf/${id}/unlocking"),
+                        SlotAllCondition(
+                            SlotNameCondition(EqualsTextMatcher(name)),
+                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.yellow),
+                        ),
+                    ),
+                )
+
+                add(
+                    GuiSlotDefinition(
+                        of("skyblock_gui", "skill_tree/hotf/${id}/unlocked"),
+                        SlotAllCondition(
+                            SlotNameCondition(EqualsTextMatcher(name)),
+                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.lime),
+                        ),
+                    ),
+                )
+            }
+            for ((lore, id) in cotf) {
+                add(
+                    GuiSlotDefinition(
+                        of("skyblock_gui", "skill_tree/hotf/center_of_the_forest/unlocked/${id}"),
+                        SlotAllCondition(
+                            SlotNameCondition(EqualsTextMatcher("Center of the Mountain")),
+                            SlotLoreCondition(EqualsTextMatcher(lore), Either.left(0)),
+                        ),
+                    ),
+                )
+            }
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotf/center_of_the_forest/locked"),
+                    SlotAllCondition(
+                        SlotNameCondition(EqualsTextMatcher("Center of the Mountain")),
+                        SlotItemModelCondition(Items.MANGROVE_ROOTS),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotf/loadout"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Heart of the Forest Slot"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotf/icon"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Heart of the Forest"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotf/chapters/moonglade_marsh"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Moonglade Marsh"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotf/chapters/torrhus_canyon"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Torrhus Canyon"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotf/reset_heart_of_the_forest"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Reset Heart of the Forest"),
+                    ),
+                ),
+            )
         },
     )
 
@@ -133,6 +332,7 @@ fun hotfTree(
     }.writeText(definition.toJson(GuiDefinition.CODEC).prettyPrint())
 }
 
+@Suppress("DuplicatedCode")
 fun skillTrees() {
     hotmTree(
         "Heart of the Mountain",
@@ -181,7 +381,31 @@ fun skillTrees() {
             "Mining Master" to "mining_master",
             "Dead Man's Chest" to "dead_mans_chest",
             "Vanguard Seeker" to "vanguard_seeker",
-            "Sheer Force" to "sheer_forge"
+            "Sheer Force" to "sheer_forge",
+        ),
+        listOf(
+            "Tier 1" to "tier_1",
+            "Tier 2" to "tier_2",
+            "Tier 3" to "tier_3",
+            "Tier 4" to "tier_4",
+            "Tier 5" to "tier_5",
+            "Tier 6" to "tier_6",
+            "Tier 7" to "tier_7",
+            "Tier 8" to "tier_8",
+            "Tier 9" to "tier_9",
+            "Tier 10" to "tier_10",
+        ),
+        listOf(
+            "level 1/10" to "tier_1",
+            "level 2/10" to "tier_2",
+            "level 3/10" to "tier_3",
+            "level 4/10" to "tier_4",
+            "level 5/10" to "tier_5",
+            "level 6/10" to "tier_6",
+            "level 7/10" to "tier_7",
+            "level 8/10" to "tier_8",
+            "level 9/10" to "tier_9",
+            "level 10" to "tier_10",
         ),
     )
 
@@ -223,6 +447,25 @@ fun skillTrees() {
             "Two-for-one" to "two_for_one",
             "Forest Strength" to "forest_strength",
             "Beekeeper" to "beekeeper",
+        ),
+        listOf(
+            "Tier 1" to "tier_1",
+            "Tier 2" to "tier_2",
+            "Tier 3" to "tier_3",
+            "Tier 4" to "tier_4",
+            "Tier 5" to "tier_5",
+            "Tier 6" to "tier_6",
+            "Tier 7" to "tier_7",
+            "Tier 8" to "tier_8",
+            "Tier 9" to "tier_9",
+            "Tier 10" to "tier_10",
+        ),
+        listOf(
+            "level 1/10" to "tier_1",
+            "level 2/10" to "tier_2",
+            "level 3/10" to "tier_3",
+            "level 4/10" to "tier_4",
+            "level 5" to "tier_5",
         ),
     )
 }

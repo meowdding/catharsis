@@ -3013,6 +3013,668 @@
         ],
         "type": "catharsis:all"
       }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_1/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 1",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_1/unlocking",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 1",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_1/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 1",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_2/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 2",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_2/unlocking",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 2",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_2/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 2",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_3/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 3",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_3/unlocking",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 3",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_3/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 3",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_4/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 4",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_4/unlocking",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 4",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_4/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 4",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_5/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 5",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_5/unlocking",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 5",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_5/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 5",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_6/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 6",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_6/unlocking",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 6",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_6/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 6",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_7/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 7",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_7/unlocking",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 7",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_7/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 7",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_8/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 8",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_8/unlocking",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 8",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_8/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 8",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_9/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 9",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_9/unlocking",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 9",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_9/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 9",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_10/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 10",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_10/unlocking",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 10",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/tier_10/unlocked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Tier 10",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/center_of_the_forest/unlocked/tier_1",
+      "target": {
+        "conditions": [
+          {
+            "name": "Center of the Mountain",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "level 1/10",
+            "mode": "equals",
+            "line": 0,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/center_of_the_forest/unlocked/tier_2",
+      "target": {
+        "conditions": [
+          {
+            "name": "Center of the Mountain",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "level 2/10",
+            "mode": "equals",
+            "line": 0,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/center_of_the_forest/unlocked/tier_3",
+      "target": {
+        "conditions": [
+          {
+            "name": "Center of the Mountain",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "level 3/10",
+            "mode": "equals",
+            "line": 0,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/center_of_the_forest/unlocked/tier_4",
+      "target": {
+        "conditions": [
+          {
+            "name": "Center of the Mountain",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "level 4/10",
+            "mode": "equals",
+            "line": 0,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/center_of_the_forest/unlocked/tier_5",
+      "target": {
+        "conditions": [
+          {
+            "name": "Center of the Mountain",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "name": "level 5",
+            "mode": "equals",
+            "line": 0,
+            "type": "catharsis:lore"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/center_of_the_forest/locked",
+      "target": {
+        "conditions": [
+          {
+            "name": "Center of the Mountain",
+            "mode": "equals",
+            "type": "catharsis:name"
+          },
+          {
+            "items": "minecraft:mangrove_roots",
+            "type": "catharsis:item_model"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/loadout",
+      "target": {
+        "name": "Heart of the Forest Slot",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/icon",
+      "target": {
+        "name": "Heart of the Forest",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/chapters/moonglade_marsh",
+      "target": {
+        "name": "Moonglade Marsh",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/chapters/torrhus_canyon",
+      "target": {
+        "name": "Torrhus Canyon",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
+    },
+    {
+      "id": "skyblock_gui:skill_tree/hotf/reset_heart_of_the_forest",
+      "target": {
+        "name": "Reset Heart of the Forest",
+        "mode": "equals",
+        "type": "catharsis:name"
+      }
     }
   ]
 }

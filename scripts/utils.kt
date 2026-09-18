@@ -21,4 +21,5 @@ fun main() {
     skills()
     collections()
     warps()
+    skillTrees()
 }

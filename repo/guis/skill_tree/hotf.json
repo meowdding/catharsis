@@ -3534,9 +3534,9 @@
             "type": "catharsis:name"
           },
           {
-            "name": "level 1/10",
+            "name": "Level 1/10",
             "mode": "equals",
-            "line": 1,
+            "line": 0,
             "type": "catharsis:lore"
           }
         ],
@@ -3553,9 +3553,9 @@
             "type": "catharsis:name"
           },
           {
-            "name": "level 2/10",
+            "name": "Level 2/10",
             "mode": "equals",
-            "line": 1,
+            "line": 0,
             "type": "catharsis:lore"
           }
         ],
@@ -3572,9 +3572,9 @@
             "type": "catharsis:name"
           },
           {
-            "name": "level 3/10",
+            "name": "Level 3/10",
             "mode": "equals",
-            "line": 1,
+            "line": 0,
             "type": "catharsis:lore"
           }
         ],
@@ -3591,9 +3591,9 @@
             "type": "catharsis:name"
           },
           {
-            "name": "level 4/10",
+            "name": "Level 4/10",
             "mode": "equals",
-            "line": 1,
+            "line": 0,
             "type": "catharsis:lore"
           }
         ],
@@ -3610,9 +3610,9 @@
             "type": "catharsis:name"
           },
           {
-            "name": "level 5",
+            "name": "Level 5",
             "mode": "equals",
-            "line": 1,
+            "line": 0,
             "type": "catharsis:lore"
           }
         ],

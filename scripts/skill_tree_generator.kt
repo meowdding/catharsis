@@ -263,7 +263,7 @@ fun hotfTree(
                     GuiSlotDefinition(
                         of("skyblock_gui", "skill_tree/hotf/center_of_the_forest/unlocked/${id}"),
                         SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher("Center of the Mountain")),
+                            SlotNameCondition(EqualsTextMatcher("Center of the Forest")),
                             SlotLoreCondition(EqualsTextMatcher(lore), Either.left(0)),
                         ),
                     ),
@@ -396,16 +396,16 @@ fun skillTrees() {
             "Tier 10" to "tier_10",
         ),
         listOf(
-            "level 1/10" to "tier_1",
-            "level 2/10" to "tier_2",
-            "level 3/10" to "tier_3",
-            "level 4/10" to "tier_4",
-            "level 5/10" to "tier_5",
-            "level 6/10" to "tier_6",
-            "level 7/10" to "tier_7",
-            "level 8/10" to "tier_8",
-            "level 9/10" to "tier_9",
-            "level 10" to "tier_10",
+            "Level 1/10" to "tier_1",
+            "Level 2/10" to "tier_2",
+            "Level 3/10" to "tier_3",
+            "Level 4/10" to "tier_4",
+            "Level 5/10" to "tier_5",
+            "Level 6/10" to "tier_6",
+            "Level 7/10" to "tier_7",
+            "Level 8/10" to "tier_8",
+            "Level 9/10" to "tier_9",
+            "Level 10" to "tier_10",
         ),
     )
 
@@ -461,11 +461,11 @@ fun skillTrees() {
             "Tier 10" to "tier_10",
         ),
         listOf(
-            "level 1/10" to "tier_1",
-            "level 2/10" to "tier_2",
-            "level 3/10" to "tier_3",
-            "level 4/10" to "tier_4",
-            "level 5" to "tier_5",
+            "Level 1/10" to "tier_1",
+            "Level 2/10" to "tier_2",
+            "Level 3/10" to "tier_3",
+            "Level 4/10" to "tier_4",
+            "Level 5" to "tier_5",
         ),
     )
 }

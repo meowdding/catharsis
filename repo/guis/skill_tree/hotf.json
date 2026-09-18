@@ -3529,14 +3529,14 @@
       "target": {
         "conditions": [
           {
-            "name": "Center of the Mountain",
+            "name": "Center of the Forest",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "name": "level 1/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -3548,14 +3548,14 @@
       "target": {
         "conditions": [
           {
-            "name": "Center of the Mountain",
+            "name": "Center of the Forest",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "name": "level 2/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -3567,14 +3567,14 @@
       "target": {
         "conditions": [
           {
-            "name": "Center of the Mountain",
+            "name": "Center of the Forest",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "name": "level 3/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -3586,14 +3586,14 @@
       "target": {
         "conditions": [
           {
-            "name": "Center of the Mountain",
+            "name": "Center of the Forest",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "name": "level 4/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -3605,14 +3605,14 @@
       "target": {
         "conditions": [
           {
-            "name": "Center of the Mountain",
+            "name": "Center of the Forest",
             "mode": "equals",
             "type": "catharsis:name"
           },
           {
             "name": "level 5",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],

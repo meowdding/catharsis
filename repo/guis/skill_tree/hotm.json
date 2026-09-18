@@ -3991,7 +3991,7 @@
           {
             "name": "level 1/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -4010,7 +4010,7 @@
           {
             "name": "level 2/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -4029,7 +4029,7 @@
           {
             "name": "level 3/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -4048,7 +4048,7 @@
           {
             "name": "level 4/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -4067,7 +4067,7 @@
           {
             "name": "level 5/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -4086,7 +4086,7 @@
           {
             "name": "level 6/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -4105,7 +4105,7 @@
           {
             "name": "level 7/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -4124,7 +4124,7 @@
           {
             "name": "level 8/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -4143,7 +4143,7 @@
           {
             "name": "level 9/10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],
@@ -4162,7 +4162,7 @@
           {
             "name": "level 10",
             "mode": "equals",
-            "line": 0,
+            "line": 1,
             "type": "catharsis:lore"
           }
         ],

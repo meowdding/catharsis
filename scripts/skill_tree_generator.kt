@@ -8,335 +8,174 @@ import me.owdding.catharsis.features.gui.definitions.slots.SlotItemModelConditio
 import me.owdding.catharsis.features.gui.definitions.slots.SlotLoreCondition
 import me.owdding.catharsis.features.gui.definitions.slots.SlotNameCondition
 import me.owdding.catharsis.features.gui.matchers.EqualsTextMatcher
+import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import tech.thatgravyboat.skyblockapi.platform.Identifiers.of
 import kotlin.io.path.Path
 import kotlin.io.path.createParentDirectories
 import kotlin.io.path.writeText
 
-fun hotmTree(
+data class Icons(
+    val perkLocked: List<Item>,
+    val perkUnlocked: List<Item>,
+    val perkMaxed: Item,
+    val perkDisabled: Item,
+    val coreLocked: Item
+)
+
+fun tree(
     title: String,
-    perks: List<Pair<String, String>>,
-    tiers: List<Pair<String, String>>,
-    cotm: List<Pair<String, String>>,
+    treeId: String,
+    icons: Icons,
+    perks: Map<String, String>,
+    maxLevel: Int,
+    coreId: String,
+    coreName: String,
+    maxCore: Int,
+    additionals: MutableList<GuiSlotDefinition>.() -> Unit,
 ) {
+    fun MutableList<GuiSlotDefinition>.addPerks() {
+        fun createItemCondition(items: List<Item>) = if (items.size == 1) {
+            SlotItemModelCondition(items.first())
+        } else {
+            SlotAnyCondition(*items.map { SlotItemModelCondition(it) }.toTypedArray())
+        }
+
+        for ((name, id) in perks) {
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/$treeId/${id}/locked"),
+                    SlotAllCondition(
+                        SlotNameCondition(EqualsTextMatcher(name)),
+                        createItemCondition(icons.perkLocked),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/$treeId/${id}/unlocked"),
+                    SlotAllCondition(
+                        SlotNameCondition(EqualsTextMatcher(name)),
+                        createItemCondition(icons.perkUnlocked),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/$treeId/${id}/maxed"),
+                    SlotAllCondition(
+                        SlotNameCondition(EqualsTextMatcher(name)),
+                        SlotItemModelCondition(icons.perkMaxed),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/$treeId/${id}/disabled"),
+                    SlotAllCondition(
+                        SlotNameCondition(EqualsTextMatcher(name)),
+                        SlotItemModelCondition(icons.perkDisabled),
+                    ),
+                ),
+            )
+        }
+    }
+
+    fun MutableList<GuiSlotDefinition>.addLevels() {
+        for (level in 1..maxLevel) {
+            val name = "Tier $level"
+            val id = "tier_$level"
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/$treeId/${id}/locked"),
+                    SlotAllCondition(
+                        SlotNameCondition(EqualsTextMatcher(name)),
+                        SlotItemModelCondition(Items.STAINED_GLASS_PANE.red),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/$treeId/${id}/unlocking"),
+                    SlotAllCondition(
+                        SlotNameCondition(EqualsTextMatcher(name)),
+                        SlotItemModelCondition(Items.STAINED_GLASS_PANE.yellow),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/$treeId/${id}/unlocked"),
+                    SlotAllCondition(
+                        SlotNameCondition(EqualsTextMatcher(name)),
+                        SlotItemModelCondition(Items.STAINED_GLASS_PANE.lime),
+                    ),
+                ),
+            )
+        }
+    }
+
+    fun MutableList<GuiSlotDefinition>.addCore() {
+        for (level in 1..maxCore) {
+            val id = "tier_$level"
+            val lore = when {
+                level == maxCore -> "Level $level"
+                else -> "Level $level/$maxCore"
+            }
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/$treeId/$coreId/unlocked/${id}"),
+                    SlotAllCondition(
+                        SlotNameCondition(EqualsTextMatcher(coreName)),
+                        SlotLoreCondition(EqualsTextMatcher(lore), Either.left(0)),
+                    ),
+                ),
+            )
+        }
+        add(
+            GuiSlotDefinition(
+                of("skyblock_gui", "skill_tree/$treeId/$coreId/locked"),
+                SlotAllCondition(
+                    SlotNameCondition(EqualsTextMatcher(coreName)),
+                    SlotItemModelCondition(icons.coreLocked),
+                ),
+            ),
+        )
+    }
+
     val definition = GuiDefinition(
         target = GuiDefinitionTitleCondition(Regex(title)),
         layout = buildList {
-            for ((name, id) in perks) {
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotm/${id}/locked"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotAnyCondition(
-                                SlotItemModelCondition(Items.COAL),
-                                SlotItemModelCondition(Items.COAL_BLOCK),
-                            ),
-                        ),
-                    ),
-                )
-
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotm/${id}/unlocked"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemModelCondition(Items.EMERALD),
-                        ),
-                    ),
-                )
-
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotm/${id}/maxed"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemModelCondition(Items.DIAMOND),
-                        ),
-                    ),
-                )
-
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotm/${id}/disabled"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemModelCondition(Items.REDSTONE_BLOCK),
-                        ),
-                    ),
-                )
-            }
-            for ((name, id) in tiers) {
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotm/${id}/locked"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.red),
-                        ),
-                    ),
-                )
-
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotm/${id}/unlocking"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.yellow),
-                        ),
-                    ),
-                )
-
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotm/${id}/unlocked"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.lime),
-                        ),
-                    ),
-                )
-            }
-            for ((lore, id) in cotm) {
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotm/core_of_the_mountain/unlocked/${id}"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher("Core of the Mountain")),
-                            SlotLoreCondition(EqualsTextMatcher(lore), Either.left(0)),
-                        ),
-                    ),
-                )
-            }
-
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotm/core_of_the_mountain/locked"),
-                    SlotAllCondition(
-                        SlotNameCondition(EqualsTextMatcher("Core of the Mountain")),
-                        SlotItemModelCondition(Items.BEDROCK),
-                    ),
-                ),
-            )
-
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotm/loadout"),
-                    SlotNameCondition(
-                        EqualsTextMatcher("Heart of the Mountain Slot"),
-                    ),
-                ),
-            )
-
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotm/icon"),
-                    SlotNameCondition(
-                        EqualsTextMatcher("Heart of the Mountain"),
-                    ),
-                ),
-            )
-
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotm/crystal_hollows_crystals"),
-                    SlotNameCondition(
-                        EqualsTextMatcher("Crystal Hollows Crystals"),
-                    ),
-                ),
-            )
-
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotm/rng_meter"),
-                    SlotNameCondition(
-                        EqualsTextMatcher("Crystal Nucleus RNG Meter"),
-                    ),
-                ),
-            )
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotm/reset_heart_of_the_mountain"),
-                    SlotNameCondition(
-                        EqualsTextMatcher("Reset Heart of the Mountain"),
-                    ),
-                ),
-            )
+            addPerks()
+            addLevels()
+            addCore()
+            additionals()
         },
     )
 
-    Path("repo/guis/skill_tree/hotm.json").apply {
-        createParentDirectories()
-    }.writeText(definition.toJson(GuiDefinition.CODEC).prettyPrint())
-}
-
-fun hotfTree(
-    title: String,
-    perks: List<Pair<String, String>>,
-    tiers: List<Pair<String, String>>,
-    cotf: List<Pair<String, String>>,
-) {
-    val definition = GuiDefinition(
-        target = GuiDefinitionTitleCondition(Regex(title)),
-        layout = buildList {
-            for ((name, id) in perks) {
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotf/${id}/locked"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotAnyCondition(
-                                SlotItemModelCondition(Items.PALE_OAK_BUTTON),
-                                SlotItemModelCondition(Items.PALE_OAK_SAPLING),
-                            ),
-                        ),
-                    ),
-                )
-
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotf/${id}/unlocked"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotAnyCondition(
-                                SlotItemModelCondition(Items.OAK_SAPLING),
-                                SlotItemModelCondition(Items.STRIPPED_OAK_LOG),
-                            ),
-                        ),
-                    ),
-                )
-
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotf/${id}/maxed"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemModelCondition(Items.OAK_LOG),
-                        ),
-                    ),
-                )
-
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotf/${id}/disabled"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemModelCondition(Items.STRIPPED_MANGROVE_LOG),
-                        ),
-                    ),
-                )
-            }
-            for ((name, id) in tiers) {
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotf/${id}/locked"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.red),
-                        ),
-                    ),
-                )
-
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotf/${id}/unlocking"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.yellow),
-                        ),
-                    ),
-                )
-
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotf/${id}/unlocked"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher(name)),
-                            SlotItemModelCondition(Items.STAINED_GLASS_PANE.lime),
-                        ),
-                    ),
-                )
-            }
-            for ((lore, id) in cotf) {
-                add(
-                    GuiSlotDefinition(
-                        of("skyblock_gui", "skill_tree/hotf/center_of_the_forest/unlocked/${id}"),
-                        SlotAllCondition(
-                            SlotNameCondition(EqualsTextMatcher("Center of the Forest")),
-                            SlotLoreCondition(EqualsTextMatcher(lore), Either.left(0)),
-                        ),
-                    ),
-                )
-            }
-
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotf/center_of_the_forest/locked"),
-                    SlotAllCondition(
-                        SlotNameCondition(EqualsTextMatcher("Center of the Mountain")),
-                        SlotItemModelCondition(Items.MANGROVE_ROOTS),
-                    ),
-                ),
-            )
-
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotf/loadout"),
-                    SlotNameCondition(
-                        EqualsTextMatcher("Heart of the Forest Slot"),
-                    ),
-                ),
-            )
-
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotf/icon"),
-                    SlotNameCondition(
-                        EqualsTextMatcher("Heart of the Forest"),
-                    ),
-                ),
-            )
-
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotf/chapters/moonglade_marsh"),
-                    SlotNameCondition(
-                        EqualsTextMatcher("Moonglade Marsh"),
-                    ),
-                ),
-            )
-
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotf/chapters/torrhus_canyon"),
-                    SlotNameCondition(
-                        EqualsTextMatcher("Torrhus Canyon"),
-                    ),
-                ),
-            )
-
-            add(
-                GuiSlotDefinition(
-                    of("skyblock_gui", "skill_tree/hotf/reset_heart_of_the_forest"),
-                    SlotNameCondition(
-                        EqualsTextMatcher("Reset Heart of the Forest"),
-                    ),
-                ),
-            )
-        },
-    )
-
-    Path("repo/guis/skill_tree/hotf.json").apply {
+    Path("repo/guis/skill_tree/$treeId.json").apply {
         createParentDirectories()
     }.writeText(definition.toJson(GuiDefinition.CODEC).prettyPrint())
 }
 
 @Suppress("DuplicatedCode")
 fun skillTrees() {
-    hotmTree(
-        "Heart of the Mountain",
-        listOf(
+    tree(
+        title = "Heart of the Mountain",
+        treeId = "hotm",
+        icons = Icons(
+            perkLocked = listOf(Items.COAL, Items.COAL_BLOCK),
+            perkUnlocked = listOf(Items.EMERALD),
+            perkMaxed = Items.DIAMOND,
+            perkDisabled = Items.REDSTONE_BLOCK,
+            coreLocked = Items.BEDROCK
+        ),
+        perks = mapOf(
             "Mining Speed" to "mining_speed",
             "Mining Speed Boost" to "mining_speed_boost",
             "Precision Mining" to "precision_mining",
@@ -383,35 +222,68 @@ fun skillTrees() {
             "Vanguard Seeker" to "vanguard_seeker",
             "Sheer Force" to "sheer_forge",
         ),
-        listOf(
-            "Tier 1" to "tier_1",
-            "Tier 2" to "tier_2",
-            "Tier 3" to "tier_3",
-            "Tier 4" to "tier_4",
-            "Tier 5" to "tier_5",
-            "Tier 6" to "tier_6",
-            "Tier 7" to "tier_7",
-            "Tier 8" to "tier_8",
-            "Tier 9" to "tier_9",
-            "Tier 10" to "tier_10",
-        ),
-        listOf(
-            "Level 1/10" to "tier_1",
-            "Level 2/10" to "tier_2",
-            "Level 3/10" to "tier_3",
-            "Level 4/10" to "tier_4",
-            "Level 5/10" to "tier_5",
-            "Level 6/10" to "tier_6",
-            "Level 7/10" to "tier_7",
-            "Level 8/10" to "tier_8",
-            "Level 9/10" to "tier_9",
-            "Level 10" to "tier_10",
-        ),
+        maxLevel = 10,
+        coreId = "core_of_the_mountain",
+        coreName = "Core of the Mountain",
+        maxCore = 10,
+        additionals = {
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotm/loadout"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Heart of the Mountain Slot"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotm/icon"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Heart of the Mountain"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotm/crystal_hollows_crystals"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Crystal Hollows Crystals"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotm/rng_meter"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Crystal Nucleus RNG Meter"),
+                    ),
+                ),
+            )
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotm/reset_heart_of_the_mountain"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Reset Heart of the Mountain"),
+                    ),
+                ),
+            )
+        }
     )
 
-    hotfTree(
-        "Heart of the Forest",
-        listOf(
+    tree(
+        title = "Heart of the Forest",
+        treeId = "hotf",
+        icons = Icons(
+            perkLocked = listOf(Items.PALE_OAK_BUTTON, Items.PALE_OAK_SAPLING),
+            perkUnlocked = listOf(Items.OAK_SAPLING, Items.STRIPPED_OAK_LOG),
+            perkMaxed = Items.OAK_LOG,
+            perkDisabled = Items.STRIPPED_MANGROVE_LOG,
+            coreLocked = Items.MANGROVE_ROOTS
+        ),
+        perks = mapOf(
             "Sweep" to "sweep",
             "Damage Boost" to "damage_boost",
             "Luck of the Forest" to "luck_of_the_forest",
@@ -448,24 +320,55 @@ fun skillTrees() {
             "Forest Strength" to "forest_strength",
             "Beekeeper" to "beekeeper",
         ),
-        listOf(
-            "Tier 1" to "tier_1",
-            "Tier 2" to "tier_2",
-            "Tier 3" to "tier_3",
-            "Tier 4" to "tier_4",
-            "Tier 5" to "tier_5",
-            "Tier 6" to "tier_6",
-            "Tier 7" to "tier_7",
-            "Tier 8" to "tier_8",
-            "Tier 9" to "tier_9",
-            "Tier 10" to "tier_10",
-        ),
-        listOf(
-            "Level 1/10" to "tier_1",
-            "Level 2/10" to "tier_2",
-            "Level 3/10" to "tier_3",
-            "Level 4/10" to "tier_4",
-            "Level 5" to "tier_5",
-        ),
+        maxLevel = 8,
+        coreId = "center_of_the_forest",
+        coreName = "Center of the Forest",
+        maxCore = 5,
+        additionals = {
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotf/loadout"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Heart of the Forest Slot"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotf/icon"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Heart of the Forest"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotf/chapters/moonglade_marsh"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Moonglade Marsh"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotf/chapters/torrhus_canyon"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Torrhus Canyon"),
+                    ),
+                ),
+            )
+
+            add(
+                GuiSlotDefinition(
+                    of("skyblock_gui", "skill_tree/hotf/reset_heart_of_the_forest"),
+                    SlotNameCondition(
+                        EqualsTextMatcher("Reset Heart of the Forest"),
+                    ),
+                ),
+            )
+        }
     )
 }

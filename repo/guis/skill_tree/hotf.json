@@ -3423,108 +3423,6 @@
       }
     },
     {
-      "id": "skyblock_gui:skill_tree/hotf/tier_9/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Tier 9",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item_model"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotf/tier_9/unlocking",
-      "target": {
-        "conditions": [
-          {
-            "name": "Tier 9",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item_model"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotf/tier_9/unlocked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Tier 9",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item_model"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotf/tier_10/locked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Tier 10",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:red_stained_glass_pane",
-            "type": "catharsis:item_model"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotf/tier_10/unlocking",
-      "target": {
-        "conditions": [
-          {
-            "name": "Tier 10",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:yellow_stained_glass_pane",
-            "type": "catharsis:item_model"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
-      "id": "skyblock_gui:skill_tree/hotf/tier_10/unlocked",
-      "target": {
-        "conditions": [
-          {
-            "name": "Tier 10",
-            "mode": "equals",
-            "type": "catharsis:name"
-          },
-          {
-            "items": "minecraft:lime_stained_glass_pane",
-            "type": "catharsis:item_model"
-          }
-        ],
-        "type": "catharsis:all"
-      }
-    },
-    {
       "id": "skyblock_gui:skill_tree/hotf/center_of_the_forest/unlocked/tier_1",
       "target": {
         "conditions": [
@@ -3534,7 +3432,7 @@
             "type": "catharsis:name"
           },
           {
-            "name": "Level 1/10",
+            "name": "Level 1/5",
             "mode": "equals",
             "line": 0,
             "type": "catharsis:lore"
@@ -3553,7 +3451,7 @@
             "type": "catharsis:name"
           },
           {
-            "name": "Level 2/10",
+            "name": "Level 2/5",
             "mode": "equals",
             "line": 0,
             "type": "catharsis:lore"
@@ -3572,7 +3470,7 @@
             "type": "catharsis:name"
           },
           {
-            "name": "Level 3/10",
+            "name": "Level 3/5",
             "mode": "equals",
             "line": 0,
             "type": "catharsis:lore"
@@ -3591,7 +3489,7 @@
             "type": "catharsis:name"
           },
           {
-            "name": "Level 4/10",
+            "name": "Level 4/5",
             "mode": "equals",
             "line": 0,
             "type": "catharsis:lore"
@@ -3624,7 +3522,7 @@
       "target": {
         "conditions": [
           {
-            "name": "Center of the Mountain",
+            "name": "Center of the Forest",
             "mode": "equals",
             "type": "catharsis:name"
           },

@@ -66,16 +66,15 @@ public abstract class AbstractContainerScreenSlotsMixin<T extends AbstractContai
     private void catharsis$onRender(GuiGraphicsExtractor graphics, int mouseX, int mouseY, CallbackInfo ci) {
         var modifier = GuiModifiers.getActiveModifier();
         for (var slot : this.menu.slots) {
-            if (ImcHandler.isDisabled(slot.getItem())) {
-                slot.catharsis$setPosition(null);
-                slot.catharsis$setHighlightable(true);
-                slot.catharsis$setHidden(false);
-                continue;
-            }
             var id = GuiDefinitions.getSlot(slot.index);
             var slotModifier = modifier != null && id != null ? modifier.getSlots().get(id) : null;
 
             slot.catharsis$setPosition(Optionull.map(slotModifier, SlotModifier::getPosition));
+            if (ImcHandler.isDisabled(slot.getItem())) {
+                slot.catharsis$setHighlightable(true);
+                slot.catharsis$setHidden(false);
+                continue;
+            }
             slot.catharsis$setHidden(slotModifier != null && slotModifier.getHidden());
             slot.catharsis$setHighlightable(slotModifier == null || slotModifier.getHighlightable());
         }

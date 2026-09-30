@@ -36,3 +36,15 @@ Their docs are located [here](https://wiki.fabricmc.net/drafts:resourcecondition
     - <TypeIcon type="int"/> **max_inclusive**: The maximum pack format version.
 
 </TreeView>
+
+### `catharsis:skyblock`
+
+Only enabled when on SkyBlock, uses the SkyBlock Pack reload to apply.<br>
+Will not apply if there is no reload from Hypixel on SkyBlock join.
+
+<TreeView>
+  <span><TypeIcon type="object"/> A <b>Fabric Condition Object</b> object</span>
+
+- <TypeIcon type="string"/> **condition**: `catharsis:skyblock`
+
+</TreeView>

@@ -8,5 +8,7 @@ object CatharsisResourceConditions {
     init {
         ResourceConditions.register(ConfigResourceCondition.TYPE)
         ResourceConditions.register(VersionResourceCondition.TYPE)
+        ResourceConditions.register(SkyBlockResourceCondition.TYPE)
+        //ResourceConditions.register(ServerResourceCondition.TYPE)
     }
 }

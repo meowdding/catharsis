@@ -1,6 +1,5 @@
 package me.owdding.catharsis.features.dev
 
-import com.mojang.brigadier.arguments.StringArgumentType
 import me.owdding.catharsis.features.entity.CustomEntityDefinitions
 import me.owdding.catharsis.features.entity.conditions.AllEntityCondition
 import me.owdding.catharsis.features.entity.conditions.AnyEntityCondition
@@ -18,7 +17,7 @@ import me.owdding.catharsis.features.entity.conditions.SelectEquipmentEntityCond
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.types.FloatPredicate
 import me.owdding.catharsis.utils.types.colors.CatppuccinColors
-import me.owdding.catharsis.utils.types.suggestion.IterableSuggestionProvider
+import me.owdding.catharsis.utils.types.commands.IdentifierArgument
 import me.owdding.ktmodules.Module
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.nbt.CompoundTag
@@ -27,8 +26,6 @@ import net.minecraft.resources.Identifier
 import net.minecraft.world.entity.AgeableMob
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EntitySpawnReason
-//? >= 26.2
-import net.minecraft.world.entity.EntitySpawnRequest
 import net.minecraft.world.entity.EntityType
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.entity.ai.attributes.Attributes
@@ -43,24 +40,17 @@ import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.command
 
+//? >= 26.2
+import net.minecraft.world.entity.EntitySpawnRequest
+
 @Module
 object DebugSummonCommand {
 
     @Subscription
     private fun RegisterCommandsEvent.onRegister() {
         register("catharsis dev summon") {
-            thenCallback(
-                "id",
-                StringArgumentType.greedyString(),
-                IterableSuggestionProvider(CustomEntityDefinitions.getAllIds()),
-            ) {
-                val idString = argument<String>("id")
-                val id = Identifier.tryParse(idString)
-
-                if (id == null) {
-                    Text.of("Invalid identifier: $idString", CatppuccinColors.Mocha.red).sendWithPrefix("cath-sumon-invalid-id")
-                    return@thenCallback
-                }
+            thenCallback("id", IdentifierArgument({ CustomEntityDefinitions.getAllIds() })) {
+                val id = argument<Identifier>("id")
 
                 val definition = CustomEntityDefinitions.getDefinition(id)
                 if (definition == null) {

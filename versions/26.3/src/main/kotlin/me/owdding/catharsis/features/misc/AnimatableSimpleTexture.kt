@@ -91,6 +91,14 @@ class AnimatableSimpleTexture(location: Identifier) : SimpleTexture(location), T
         }
         this.data = this.contents?.createAndUploadState(id.toString())
 
+        if (contents?.isAnimated == true && this.data != null && this.textureView != null) {
+            device.createCommandEncoder()
+                .createRenderPass({ "Init Animate $id" }, this.textureView!!, Optional.empty())
+                .use(this.data!!::drawToPass)
+
+            (this.data!!.state as AnimationStateAccessor).`catharsis$setDirty`(false)
+        }
+
         if (this.contents == null) {
             device.createCommandEncoder().writeToTexture(this.texture!!, image)
         }

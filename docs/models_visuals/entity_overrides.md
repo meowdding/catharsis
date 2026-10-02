@@ -266,6 +266,32 @@ Runs matches on a specific passenger, or false if none.
 
 </Version>
 
+<Version type="1.0.0-beta.23">
+
+### Has Vehicle (`has_vehicle`)
+
+Matches if the entity is riding another entity.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `has_vehicle`
+
+</TreeView>
+
+### Vehicle Conditions (`vehicle`)
+
+Runs matches on the vehicle, or false if none.
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `vehicle`
+- <TypeIcon type="string"/> **entityType**: (Optional) The entity type of the vehicle, defaults to `null`. (Null means entity type does not matter)
+- <TypeIcon type="object"/> **condition**: The conditions to run on the vehicle.
+
+</TreeView>
+
+</Version>
+
 <Version type="1.0.0-beta.21">
 
 ### Entity Position (`position`)

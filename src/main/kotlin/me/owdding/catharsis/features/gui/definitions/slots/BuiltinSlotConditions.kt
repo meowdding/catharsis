@@ -195,7 +195,7 @@ data class RelativeSlotCondition(
 ) : SlotCondition {
     override val codec: MapCodec<out SlotCondition> = CatharsisCodecs.getMapCodec<RelativeSlotCondition>()
     override fun matches(slots: List<Slot>, slot: Int, stack: ItemStack): Boolean {
-        val movedSlot = slots.find { it.index == slot + offset }?.takeUnless { it.item.isDisabled() } ?: return false
+        val movedSlot = slots.find { it.index == slot + offset } ?: return false
         return condition.matches(slots, movedSlot.index, movedSlot.item)
     }
 }

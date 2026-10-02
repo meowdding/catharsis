@@ -68,7 +68,6 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
         if (screen == null) return
 
         for (slot in menuSlots) {
-            if (slot.item.isDisabled()) continue
             val definition = this.selected.findSlotDefinition(filteredSlots, slot.index, slot.item)
             if (definition != null) {
                 slots[slot.index] = definition

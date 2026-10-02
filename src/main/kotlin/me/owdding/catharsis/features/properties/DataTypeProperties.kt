@@ -5,6 +5,7 @@ import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.features.armor.models.SelectArmorModel
 import me.owdding.catharsis.features.armor.models.hook
+import me.owdding.catharsis.features.entity.conditions.SelectEquipmentEntityConditionSwitch
 import me.owdding.catharsis.features.tooltip.models.SelectTooltipDefinition
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.generated.CodecUtils
@@ -164,6 +165,13 @@ object DataTypeProperties {
                 )
             }
 
+            private fun <Type, CompareType : Any> createEquipmentCodec(entry: DataTypeEntry<Type, CompareType>): MapCodec<SelectEquipmentEntityConditionSwitch<SelectDataTypeItemProperty<Type, CompareType>, CompareType>> {
+                return SelectEquipmentEntityConditionSwitch.createCasesFieldCodec(entry.codec).xmap(
+                    { cases -> SelectEquipmentEntityConditionSwitch(SelectDataTypeItemProperty(entry), cases) },
+                    { switch -> switch.cases },
+                )
+            }
+
             private fun <Type, CompareType : Any> createType(): SelectItemModelProperty.Type<SelectDataTypeItemProperty<Type, CompareType>, CompareType> {
                 val type = SelectItemModelProperty.Type<SelectDataTypeItemProperty<Type, CompareType>, CompareType>(
                     stringTypes.codec(Codec.STRING).dispatchMap(
@@ -184,6 +192,13 @@ object DataTypeProperties {
                         "data_type",
                         { case -> (case.property as SelectDataTypeItemProperty).entry },
                         { entry -> createTooltipCodec(entry.unsafeCast()) },
+                    ),
+                )
+                type.hook.`catharsis$setEquipmentSwitchCodec`(
+                    stringTypes.codec(Codec.STRING).dispatchMap(
+                        "data_type",
+                        { case -> (case.property as SelectDataTypeItemProperty).entry },
+                        { entry -> createEquipmentCodec(entry.unsafeCast()) },
                     ),
                 )
                 return type

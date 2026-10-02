@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.entity.conditions
 
+import com.google.common.collect.HashMultiset
 import com.mojang.serialization.Codec
 import com.mojang.serialization.DataResult
 import com.mojang.serialization.MapCodec
@@ -14,6 +15,7 @@ import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemMode
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperty
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperties
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperty
+import net.minecraft.util.ExtraCodecs
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.LivingEntity
@@ -63,6 +65,34 @@ class SelectEquipmentEntityConditionSwitch<Property : SelectItemModelProperty<Ty
                     ?: DataResult.error { "No codec for Equipment select property type: ${type::class.java}" }
             },
         )
+
+        @JvmStatic
+        @Suppress("TYPE_MISMATCH_BASED_ON_JAVA_ANNOTATIONS", "UPPER_BOUND_VIOLATED_BASED_ON_JAVA_ANNOTATIONS")
+        fun <Type> createCasesFieldCodec(codec: Codec<Type>): MapCodec<List<SelectEquipmentCase<Type>>> {
+            val casesCodec: Codec<List<SelectEquipmentCase<Type>>> = RecordCodecBuilder.create {
+                it.group(
+                    ExtraCodecs.nonEmptyList(ExtraCodecs.compactListCodec(codec)).fieldOf("when").forGetter(SelectEquipmentCase<Type>::`when`),
+                    Codec.BOOL.fieldOf("result").forGetter(SelectEquipmentCase<Type>::result),
+                ).apply(it, ::SelectEquipmentCase)
+            }.listOf()
+
+            val validatedCodec: Codec<List<SelectEquipmentCase<Type>>> = casesCodec.validate { cases ->
+                if (cases.isEmpty()) {
+                    DataResult.error { "Empty case list" }
+                } else {
+                    val sets = HashMultiset.create(cases.flatMap(SelectEquipmentCase<Type>::`when`))
+
+                    if (sets.size != sets.entrySet().size) {
+                        val duplicateCases = sets.entrySet().filter { it.count > 1 }.map { it.element.toString() }
+                        DataResult.error { "Duplicate case conditions: ${duplicateCases.joinToString(", ")}" }
+                    } else {
+                        DataResult.success(cases)
+                    }
+                }
+            }
+
+            return validatedCodec.fieldOf("cases")
+        }
     }
 }
 

@@ -37,7 +37,9 @@ Their docs are located [here](https://wiki.fabricmc.net/drafts:resourcecondition
 
 </TreeView>
 
-### `catharsis:skyblock`
+<Version type="1.0.0-beta.23">
+
+### <Environment type="skyblock" /> `catharsis:skyblock`
 
 Only enabled when on SkyBlock, uses the SkyBlock Pack reload to apply.<br>
 Will not apply if there is no reload from Hypixel on SkyBlock join.
@@ -48,3 +50,4 @@ Will not apply if there is no reload from Hypixel on SkyBlock join.
 - <TypeIcon type="string"/> **condition**: `catharsis:skyblock`
 
 </TreeView>
+</Version>

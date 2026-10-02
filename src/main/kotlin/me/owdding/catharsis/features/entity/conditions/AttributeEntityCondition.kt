@@ -7,7 +7,6 @@ import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.FieldNames
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.core.Holder
-import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.entity.ai.attributes.Attribute
 import tech.thatgravyboat.skyblockapi.utils.extentions.serverValue
@@ -20,7 +19,8 @@ data class AttributeEntityCondition(
 
     override val codec: MapCodec<out EntityCondition> = CatharsisCodecs.getMapCodec<AttributeEntityCondition>()
 
-    override fun matches(entity: Entity): Boolean {
+    override fun matches(entity: EntityCheck): Boolean {
+        val entity = entity.entity
         if (entity !is LivingEntity) return false
 
         val attributeInstance = entity.getAttribute(attribute) ?: return false

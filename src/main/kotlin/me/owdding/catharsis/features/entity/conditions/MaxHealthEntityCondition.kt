@@ -8,7 +8,6 @@ import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.FieldNames
 import me.owdding.ktcodecs.GenerateCodec
-import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.LivingEntity
 
 @GenerateCodec
@@ -19,7 +18,8 @@ data class MaxHealthEntityCondition(
 
     override val codec: MapCodec<out EntityCondition> = CatharsisCodecs.getMapCodec<MaxHealthEntityCondition>()
 
-    override fun matches(entity: Entity): Boolean {
+    override fun matches(entity: EntityCheck): Boolean {
+        val entity = entity.entity
         if (entity !is LivingEntity) return false
         return EntityHealthOverrides.doesHealthMatch(entity, maxHealth, useModifiers)
     }

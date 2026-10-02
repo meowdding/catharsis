@@ -16,7 +16,6 @@ import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemMode
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperties
 import net.minecraft.client.renderer.item.properties.select.SelectItemModelProperty
 import net.minecraft.util.ExtraCodecs
-import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.item.ItemDisplayContext
@@ -34,7 +33,8 @@ data class ConditionalEquipmentEntityCondition(
     override val codec: MapCodec<out EntityCondition> = CatharsisCodecs.getMapCodec<ConditionalEquipmentEntityCondition>()
     override val cost: Int = 10
 
-    override fun matches(entity: Entity): Boolean {
+    override fun matches(entity: EntityCheck): Boolean {
+        val entity = entity.entity
         if (entity !is LivingEntity) return false
 
         val equipmentInSlot = entity.getItemBySlot(slot)
@@ -105,7 +105,8 @@ class SelectEquipmentEntityCondition<Property : SelectItemModelProperty<Type>, T
     override val codec: MapCodec<out EntityCondition> get() = CODEC
     override val cost: Int = 10
 
-    override fun matches(entity: Entity): Boolean {
+    override fun matches(entity: EntityCheck): Boolean {
+        val entity = entity.entity
         if (entity !is LivingEntity) return false
         val equipmentInSlot = entity.getItemBySlot(slot)
         val value = switch.property.get(equipmentInSlot, entity.level() as? ClientLevel, entity, entity.id, ItemDisplayContext.NONE) ?: return fallback
@@ -160,7 +161,8 @@ class RangeSelectEquipmentEntityCondition(
         }
     }
 
-    override fun matches(entity: Entity): Boolean {
+    override fun matches(entity: EntityCheck): Boolean {
+        val entity = entity.entity
         if (entity !is LivingEntity) return false
         val equipmentInSlot = entity.getItemBySlot(slot)
         val value = property.get(equipmentInSlot, entity.level() as? ClientLevel, entity, entity.id) * scale

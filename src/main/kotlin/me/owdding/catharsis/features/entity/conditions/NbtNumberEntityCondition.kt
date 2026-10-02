@@ -6,8 +6,6 @@ import me.owdding.catharsis.utils.types.FloatPredicate
 import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.FieldNames
 import me.owdding.ktcodecs.GenerateCodec
-import net.minecraft.world.entity.Entity
-import tech.thatgravyboat.skyblockapi.platform.save
 import kotlin.jvm.optionals.getOrDefault
 
 @GenerateCodec
@@ -18,8 +16,8 @@ data class NbtNumberEntityCondition(
 
     override val codec: MapCodec<out EntityCondition> = CatharsisCodecs.getMapCodec<NbtNumberEntityCondition>()
 
-    override fun matches(entity: Entity): Boolean {
-        val entityNbt = entity.save()
+    override fun matches(entity: EntityCheck): Boolean {
+        val entityNbt = entity.data
         if (!entityNbt.contains(key)) return false
         return values.contains(entityNbt.getFloat(key).getOrDefault(0f))
     }

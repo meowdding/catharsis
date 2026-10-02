@@ -7,7 +7,6 @@ import me.owdding.ktcodecs.FieldNames
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.client.entity.ClientAvatarEntity
 import net.minecraft.core.ClientAsset
-import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.player.Player
 import tech.thatgravyboat.skyblockapi.utils.extentions.isRealPlayer
 
@@ -20,7 +19,8 @@ sealed interface PlayerEntityConditions : EntityCondition {
 
         override val codec: MapCodec<out EntityCondition> = CatharsisCodecs.getMapCodec<NpcSkin>()
 
-        override fun matches(entity: Entity): Boolean {
+        override fun matches(entity: EntityCheck): Boolean {
+            val entity = entity.entity
             if (entity !is ClientAvatarEntity) return false
             if (entity is Player && entity.isRealPlayer()) return false
 
@@ -37,7 +37,8 @@ sealed interface PlayerEntityConditions : EntityCondition {
 
         override val codec: MapCodec<out EntityCondition> = CatharsisCodecs.getMapCodec<PlayerSkin>()
 
-        override fun matches(entity: Entity): Boolean {
+        override fun matches(entity: EntityCheck): Boolean {
+            val entity = entity.entity
             if (entity !is ClientAvatarEntity) return false
             if (entity !is Player || !entity.isRealPlayer()) return false
 

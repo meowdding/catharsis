@@ -8,14 +8,19 @@ import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.world.entity.Entity
+import tech.thatgravyboat.skyblockapi.platform.save
 
 interface EntityCondition {
 
     val codec: MapCodec<out EntityCondition>
     val cost: Int get() = 0
 
-    fun matches(entity: Entity): Boolean
+    fun matches(entity: EntityCheck): Boolean
     fun optimize(): EntityCondition = this
+}
+
+data class EntityCheck(val entity: Entity) {
+    val data by lazy { entity.save() }
 }
 
 object EntityConditions {

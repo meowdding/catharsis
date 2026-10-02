@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.entity
 
+import me.owdding.catharsis.features.entity.conditions.EntityCheck
 import me.owdding.catharsis.features.entity.conditions.EntityCondition
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.world.entity.Entity
@@ -14,6 +15,6 @@ data class CustomEntityDefinition(
     fun matches(entity: Entity): Boolean {
         if (entity.type != type) return false
 
-        return target.matches(entity)
+        return target.matches(EntityCheck(entity))
     }
 }

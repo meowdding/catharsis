@@ -3,7 +3,6 @@ package me.owdding.catharsis.features.entity.conditions
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
-import net.minecraft.world.entity.Entity
 import net.minecraft.world.phys.AABB
 
 @GenerateCodec
@@ -18,6 +17,6 @@ data class PositionEntityCondition(
     override val codec: MapCodec<out EntityCondition> get() = CatharsisCodecs.getMapCodec<PositionEntityCondition>()
     private val aabb = AABB(minX, minY, minZ, maxX, maxY, maxZ)
 
-    override fun matches(entity: Entity) = aabb.contains(entity.position())
+    override fun matches(entity: EntityCheck) = aabb.contains(entity.entity.position())
 
 }

@@ -5,7 +5,6 @@ import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.Compact
 import me.owdding.ktcodecs.FieldNames
 import me.owdding.ktcodecs.GenerateCodec
-import net.minecraft.world.entity.Entity
 import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
 
 @GenerateCodec
@@ -15,5 +14,5 @@ data class IslandEntityCondition(
 
     override val codec: MapCodec<out EntityCondition> = CatharsisCodecs.getMapCodec<IslandEntityCondition>()
 
-    override fun matches(entity: Entity) = SkyBlockIsland.inAnyIsland(islands)
+    override fun matches(entity: EntityCheck) = SkyBlockIsland.inAnyIsland(islands)
 }

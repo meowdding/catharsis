@@ -22,8 +22,6 @@ import net.minecraft.core.component.DataComponents
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.nbt.Tag
 import net.minecraft.network.chat.Component
-import net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket
-//? >= 26.3
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.component.CustomData
@@ -34,8 +32,6 @@ import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.entity.ShulkerBoxBlockEntity
 import net.minecraft.world.level.block.entity.SignBlockEntity
 import net.minecraft.world.level.block.entity.SignText
-//? >= 26.3
-import net.minecraft.world.level.block.entity.SignTextSlot
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent.Companion.argument
@@ -45,13 +41,10 @@ import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
 import tech.thatgravyboat.skyblockapi.impl.ColoredBlocks
 import tech.thatgravyboat.skyblockapi.utils.builders.ItemBuilder
-import tech.thatgravyboat.skyblockapi.utils.extentions.cleanName
-import tech.thatgravyboat.skyblockapi.utils.extentions.getLore
-import tech.thatgravyboat.skyblockapi.utils.extentions.getSkyBlockId
-import tech.thatgravyboat.skyblockapi.utils.extentions.toFormattedString
-import tech.thatgravyboat.skyblockapi.utils.extentions.toTitleCase
+import tech.thatgravyboat.skyblockapi.utils.extentions.*
 import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toData
+import tech.thatgravyboat.skyblockapi.utils.text.CommonText
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.Text.send
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
@@ -63,9 +56,14 @@ import java.util.concurrent.CompletableFuture
 import kotlin.math.max
 import kotlin.math.min
 
+//? >= 26.3
+import net.minecraft.world.level.block.entity.SignTextSlot
+
 @Module
 // TODO: move into package
 object GiveCommands {
+
+    val canGiveItems get() = McPlayer.self?.hasInfiniteMaterials() == true
 
     @Subscription
     private fun RegisterCommandsEvent.onRegister() {
@@ -227,6 +225,7 @@ object GiveCommands {
         val itemSize = items.size
         var offset = 0
 
+        if (!canGiveItems) return Text.of("Not in creative mode!", CatppuccinColors.Mocha.red).sendWithPrefix("catharsis-dev-give-no-creative")
         val server = McClient.self.singleplayerServer ?: return Text.of("Not in singleplayer!", CatppuccinColors.Mocha.red).sendWithPrefix("catharsis-dev-give-no-singleplayer")
         server.submit {
 
@@ -408,15 +407,12 @@ object GiveCommands {
     }
 
     fun tryGive(itemStack: ItemStack) {
-        val item = itemStack.copyWithCount(1)
-        //? >= 26.2 {
-        val isSinglePlayer = !McClient.self.isMultiplayerServer
-        //?} else
-        //val isSinglePlayer = McClient.self.isSingleplayer
-        if (McPlayer.self?.gameMode()?.isCreative != true || !isSinglePlayer) {
-            Text.of("Not in singleplayer and creative!", CatppuccinColors.Mocha.red).sendWithPrefix("catharsis-dev-give-singleplayer")
+        if (!canGiveItems) {
+            Text.of("Not in creative mode!", CatppuccinColors.Mocha.red).sendWithPrefix("catharsis-dev-give-no-creative")
             return
         }
+        val player = McPlayer.self ?: return
+        val item = itemStack.copyWithCount(1)
         Text.of("Added ") {
             append(item.hoverName) {
                 color = CatppuccinColors.Mocha.peach
@@ -425,32 +421,33 @@ object GiveCommands {
             color = CatppuccinColors.Frappe.green
         }.sendWithPrefix("catharsis-dev-give-added-${item.getSkyBlockId() ?: item.cleanName}")
 
-        val freeSlot = McClient.self.player?.inventory?.freeSlot ?: -1
-        McClient.self.player?.inventory?.setItem(freeSlot, item)
-        McClient.connection?.send(ServerboundSetCreativeModeSlotPacket(36 + freeSlot, item))
-        McClient.self.player?.containerMenu?.broadcastChanges()
+        val freeSlot = player.inventory.freeSlot
+        player.inventory.setItem(freeSlot, item)
+        McClient.self.gameMode?.handleCreativeModeItemAdd(item, 36 + freeSlot)
+        player.inventoryMenu.broadcastChanges()
     }
 
+
     private fun SignBlockEntity.withLines(lines: List<Component>) {
-        //? >= 26.3 {
+        // minecraft complains if the size isn't of size 4
+        val actualLines = if (lines.size > 4) lines.subList(0, 4)
+        else lines + List(4 - lines.size) { CommonText.EMPTY }
         SignText(
-            lines,
-            lines,
+            //~ if < 26.3 'actualLines' -> 'actualLines.toTypedArray()' {
+            actualLines,
+            actualLines,
+            //~}
             DyeColor.WHITE,
-            false,
+            true,
         ).let {
+            //? >= 26.3 {
             this.setText(it, SignTextSlot.FRONT)
             this.setText(it, SignTextSlot.BACK)
-        }
-        //? } else {
-        /*SignText().let {
-            lines.forEachIndexed { index, line ->
-                it.setMessage(index, line)
-            }
-
-            this.setText(it, true)
+            //? } else {
+            /*this.setText(it, true)
             this.setText(it, false)
-        }*///?}
+            *///?}
+        }
     }
 
 }

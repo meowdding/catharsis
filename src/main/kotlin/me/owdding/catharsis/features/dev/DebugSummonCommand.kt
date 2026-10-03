@@ -11,6 +11,7 @@ import me.owdding.catharsis.features.entity.conditions.IdentityEntityCondition
 import me.owdding.catharsis.features.entity.conditions.IslandEntityCondition
 import me.owdding.catharsis.features.entity.conditions.MaxHealthEntityCondition
 import me.owdding.catharsis.features.entity.conditions.NbtNumberEntityCondition
+import me.owdding.catharsis.features.entity.conditions.NotEntityCondition
 import me.owdding.catharsis.features.entity.conditions.PlayerEntityConditions
 import me.owdding.catharsis.features.entity.conditions.RangeSelectEquipmentEntityCondition
 import me.owdding.catharsis.features.entity.conditions.SelectEquipmentEntityCondition
@@ -160,6 +161,10 @@ object DebugSummonCommand {
                 when (entity) {
                     is AgeableMob, is Zombie -> entity.isBaby = condition.isBaby
                 }
+            }
+
+            is NotEntityCondition -> {
+                Text.of("Not Condition don't really make sense to implement?").sendNextTick("cath-not-condition")
             }
 
             is PlayerEntityConditions.NpcSkin -> {

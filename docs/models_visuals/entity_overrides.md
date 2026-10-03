@@ -106,6 +106,22 @@ Used to evaluate multiple conditions in combination with each other. `all` requi
 
 </TreeView>
 
+<Version type="1.0.0-beta.23">
+
+### Not (`not`)
+
+Negative match against a specific condition
+
+<TreeView>
+
+- <TypeIcon type="string"/> **type**: `not`.
+- <TypeIcon type="object"/> **condition**: Another condition
+
+
+</TreeView>
+
+</Version>
+
 ### Skin (`npc_skin`, `player_skin`)
 
 Allows you to access state about a player entity.

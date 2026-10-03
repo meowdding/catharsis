@@ -95,6 +95,7 @@ sealed interface PackConfigOption {
                 val defaults = it.options.filter(Entry::default)
 
                 when {
+                    it.options.isEmpty() -> DataResult.error { "Dropdown must contain at least one option" }
                     values.size != it.options.size -> DataResult.error { "Dropdown values have duplicate values" }
                     defaults.size > 1 -> DataResult.error { "Dropdown has more than 1 default value" }
                     defaults.isEmpty() -> DataResult.error { "Dropdown must have 1 default value" }
@@ -129,7 +130,7 @@ sealed interface PackConfigOption {
         data class SelectEntry(
             val value: String,
             val text: Either<Component, SelectEntryText>,
-            val selected: Boolean = false
+            val selected: Boolean = false,
         ) {
 
             val selectedText: Component = text.map({ Text.join("> ", it) }, SelectEntryText::selected)
@@ -146,10 +147,13 @@ sealed interface PackConfigOption {
 
             val CODEC: MapCodec<out PackConfigOption> = CatharsisCodecs.getMapCodec<Select>().validate {
                 val values = it.options.map(SelectEntry::value).toSet()
+                val defaultCount = it.options.count(SelectEntry::selected)
 
                 when {
+                    it.options.isEmpty() -> DataResult.error { "Select must contain at least one option" }
                     values.size != it.options.size -> DataResult.error { "Select values have duplicate values" }
-                    it.options.count(SelectEntry::selected) > 1 && it.single -> DataResult.error { "Single select cannot have more than 1 default value" }
+                    defaultCount > 1 && it.single -> DataResult.error { "Single select cannot have more than 1 default value" }
+                    defaultCount == 0 && it.single -> DataResult.error { "Single select must have exactly 1 default value" }
                     else -> DataResult.success(it)
                 }
             }
@@ -205,6 +209,32 @@ sealed interface PackConfigOption {
         @IncludedCodec
         val CODEC: MapCodec<PackConfigOption> = ID_MAPPER.codec(Codec.STRING).dispatchMap(PackConfigOption::type) { it }
 
+        val LIST_CODEC: Codec<List<PackConfigOption>> = CODEC.codec().listOf().validate { options ->
+            val ids = mutableSetOf<String>()
+            val duplicates = mutableSetOf<String>()
+
+            fun extractIds(options: List<PackConfigOption>) {
+                for (option in options) {
+                    option.id?.let { id ->
+                        if (!ids.add(id)) {
+                            duplicates.add(id)
+                        }
+                    }
+                    if (option is Tab) {
+                        extractIds(option.options)
+                    }
+                }
+            }
+
+            extractIds(options)
+
+            if (duplicates.isNotEmpty()) {
+                DataResult.error { "Duplicate pack config option ids found: ${duplicates.joinToString()}" }
+            } else {
+                DataResult.success(options)
+            }
+        }
+
         init {
             ID_MAPPER.put("separator", CatharsisCodecs.getMapCodec<Separator>())
             ID_MAPPER.put("information", CatharsisCodecs.getMapCodec<Information>())
@@ -221,7 +251,7 @@ sealed interface PackConfigOption {
             return Catharsis.runCatching("Loading pack config options from resources") {
                 resources.getRootResource("config.catharsis.json")?.get()?.use { stream ->
                     stream.reader().use { reader ->
-                        CODEC.codec().listOf().parse(JsonOps.INSTANCE, GsonHelper.parseArray(reader))
+                        LIST_CODEC.parse(JsonOps.INSTANCE, GsonHelper.parseArray(reader))
                             .ifError { Catharsis.error("Failed to parse config for pack: $it") }
                             .result()
                             .orElse(null)

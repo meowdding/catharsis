@@ -38,6 +38,8 @@ class CustomEntityModel(val variants: List<Variant>) {
         val model: ModelPart?,
         val isTranslucent: Boolean = false,
         val weight: Int = 1,
+        val hideArmor: Boolean = true,
+        val hideHeldItems: Boolean = true,
     ) {
 
         private var cachedEntityModel: EntityModel<out EntityRenderState>? = null
@@ -81,13 +83,15 @@ class CustomEntityModel(val variants: List<Variant>) {
         val model: Identifier?,
         val translucent: Boolean = false,
         val weight: Int = 1,
+        @FieldName("hide_armor") val hideArmor: Boolean = true,
+        @FieldName("hide_held_items") val hideHeldItems: Boolean = true,
     ) {
         fun bake(resources: TypedResourceManager): CustomEntityModel {
             val bakedVariants = if (!variants.isNullOrEmpty()) {
                 variants.map { it.bake(resources) }
             } else {
                 requireNotNull(texture) { "Entity model must either define 'variants' or a 'texture'" }
-                listOf(UnbakedVariant(texture, emissiveTexture, model, translucent, weight).bake(resources))
+                listOf(UnbakedVariant(texture, emissiveTexture, model, translucent, weight, hideArmor, hideHeldItems).bake(resources))
             }
 
             return CustomEntityModel(bakedVariants)
@@ -102,6 +106,8 @@ class CustomEntityModel(val variants: List<Variant>) {
         val model: Identifier?,
         val translucent: Boolean = false,
         val weight: Int = 1,
+        @FieldName("hide_armor") val hideArmor: Boolean = true,
+        @FieldName("hide_held_items") val hideHeldItems: Boolean = true,
     ) {
         fun bake(resources: TypedResourceManager): Variant {
             val bakedModel = if (model != null) {
@@ -116,6 +122,8 @@ class CustomEntityModel(val variants: List<Variant>) {
                 bakedModel,
                 translucent,
                 weight,
+                hideArmor,
+                hideHeldItems,
             )
         }
     }

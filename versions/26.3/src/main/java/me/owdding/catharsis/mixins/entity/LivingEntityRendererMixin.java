@@ -9,6 +9,8 @@ import me.owdding.catharsis.features.entity.models.CustomEntityModel;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.entity.LivingEntityRenderer;
+import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
+import net.minecraft.client.renderer.entity.layers.ItemInHandLayer;
 import net.minecraft.client.renderer.entity.layers.RenderLayer;
 import net.minecraft.client.renderer.entity.state.ArmorStandRenderState;
 import net.minecraft.client.renderer.entity.state.EntityRenderState;
@@ -78,7 +80,19 @@ public abstract class LivingEntityRendererMixin<S extends LivingEntityRenderStat
         float xRot
     ) {
         var customVariant = entityRenderState.catharsis$getCustomEntityModelVariant();
-        return customVariant == null;
+        if (customVariant == null) {
+            return true;
+        }
+
+        if (instance instanceof HumanoidArmorLayer) {
+            return !customVariant.getHideArmor();
+        }
+
+        if (instance instanceof ItemInHandLayer) {
+            return !customVariant.getHideHeldItems();
+        }
+
+        return false;
     }
 
     @Unique

@@ -7,7 +7,7 @@
   "authors": [],
   "contact": {},
   "license": "MIT",
-  "environment": "*",
+  "environment": "client",
   "icon": "assets/catharsis/icon.png",
   "entrypoints": {
     "client": [

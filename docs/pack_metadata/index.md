@@ -19,9 +19,15 @@ Example of a `pack.mcmeta` with a configuration menu and version dependencies.
 
 - <TypeIcon type="object"/> **catharsis:pack/v1**: The Catharsis pack metadata.
   <ul>
-  
+
   - <TypeIcon type="string"/> **id**: A unique id for the pack, needs to be `[a-z0-9_.-]+`.
   - <TypeIcon type="string"/> **version**: The version of the pack.
+
+  <Version type=1.0.0-beta.23>
+  
+  - <TypeIcon type="string"/> **config_command**: (Optional) A command to directly open the pack config. Cannot have spaces.
+  </Version>
+  
   - <TypeIcon type="object"/> **dependencies**: (Optional) A map of required mods.
     - <TypeIcon type="string"/> **&lt;key&gt;**: The id of the mod.
       - <TypeIcon type="string"/> The version range (e.g., `>=1.0.0`).

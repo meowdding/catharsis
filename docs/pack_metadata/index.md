@@ -23,7 +23,7 @@ Example of a `pack.mcmeta` with a configuration menu and version dependencies.
   - <TypeIcon type="string"/> **version**: The version of the pack.
 
   <Version type=1.0.0-beta.24>
-    - <TypeIcon type="string"/> **config_command**: (Optional) A command to directly open the pack config. Cannot have spaces
+  - <TypeIcon type="string"/> **config_command**: (Optional) A command to directly open the pack config. Cannot have spaces.
   </Version>
   
   - <TypeIcon type="object"/> **dependencies**: (Optional) A map of required mods.

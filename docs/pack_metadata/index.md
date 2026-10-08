@@ -23,7 +23,7 @@ Example of a `pack.mcmeta` with a configuration menu and version dependencies.
   - <TypeIcon type="string"/> **id**: A unique id for the pack, needs to be `[a-z0-9_.-]+`.
   - <TypeIcon type="string"/> **version**: The version of the pack.
 
-  <Version type=1.0.0-beta.24>
+  <Version type=1.0.0-beta.23>
   
   - <TypeIcon type="string"/> **config_command**: (Optional) A command to directly open the pack config. Cannot have spaces.
   </Version>

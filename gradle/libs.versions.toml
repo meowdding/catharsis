@@ -8,7 +8,7 @@ devauth = "1.2.2"
 hypixelapi = "1.0.1+build.1+mc1.21"
 
 gson = "2.14.0"
-guava = "33.7.1-jre"
+guava = "33.7.2-jre"
 cats = "1.0.0-beta.1"
 
 meowdding-resources = "1.0.15"
@@ -16,7 +16,7 @@ meowdding-auto-mixins = "1.0.11"
 
 ksp = "2.3.12"
 meowdding-ktmodules = "1.0.9"
-meowdding-ktcodecs = "1.1.15"
+meowdding-ktcodecs = "1.1.16"
 
 kotlin = "2.4.20"
 kotlin-gradle-plugin = "2.4.20"

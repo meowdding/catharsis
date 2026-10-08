@@ -19,6 +19,7 @@ import kotlin.jvm.optionals.getOrNull
 data class CatharsisMetadataSection(
     val id: String,
     val version: String,
+    @FieldName("config_command") val configCommand: String?,
     @FieldName("update_url") val updateUrl: String?,
     val dependencies: Map<String, String> = emptyMap(),
     val config: List<PackConfigOption> = emptyList(),

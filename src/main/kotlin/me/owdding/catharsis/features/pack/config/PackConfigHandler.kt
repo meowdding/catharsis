@@ -120,7 +120,7 @@ object PackConfigHandler : ResourceManagerReloadListener {
 
     @Subscription(TickEvent::class)
     @TimePassed("10s")
-    fun onTick() {
+    private fun onTick() {
         if (!saveRequestedAt.isDistantPast && saveRequestedAt.since() >= 10.seconds) {
             val output = JsonObject()
             for ((key, value) in configs) {
@@ -153,7 +153,7 @@ object PackConfigHandler : ResourceManagerReloadListener {
     }
 
     @Subscription
-    fun onCommand(event: RegisterCommandsEvent) {
+    private fun onCommand(event: RegisterCommandsEvent) {
         event.register("catharsis config") {
             then("id", StringArgumentType.string(), IterableSuggestionProvider(catharsisPackOptions.keys)) {
                 registerConfigCommand { argument<String>("id") }

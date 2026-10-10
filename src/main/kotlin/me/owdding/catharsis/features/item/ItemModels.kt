@@ -8,7 +8,7 @@ import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 object ItemModels {
 
     @Subscription
-    fun onItemModelBootstrap(event: BootstrapItemModelsEvent) {
+    private fun onItemModelBootstrap(event: BootstrapItemModelsEvent) {
         event.register(RedirectedItemModel.Unbaked.ID, RedirectedItemModel.Unbaked.CODEC)
         event.register(FallThroughItemModel.Unbaked.ID, FallThroughItemModel.Unbaked.CODEC)
         event.register(GlintItemModel.Unbaked.ID, GlintItemModel.Unbaked.CODEC)

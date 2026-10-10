@@ -52,7 +52,7 @@ object UntexturedIds {
     }
 
     @Subscription
-    fun onCommand(event: RegisterCommandsEvent) {
+    private fun onCommand(event: RegisterCommandsEvent) {
         event.register("catharsis dev untextured_ids") {
             thenCallback("type", StringArgumentType.string(), IterableSuggestionProvider(IdTypes.entries, Enum<*>::name)) {
                 checkIds(IdTypes.valueOf(argument<String>("type")))

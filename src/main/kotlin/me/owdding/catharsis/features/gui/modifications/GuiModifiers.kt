@@ -59,7 +59,7 @@ object GuiModifiers : SimplePreparableReloadListener<List<GuiModifier>>() {
     }
 
     @Subscription
-    fun onGuiDefinitionsApplied(event: GuiDefinitionsApplied) {
+    private fun onGuiDefinitionsApplied(event: GuiDefinitionsApplied) {
         val modifiers = event.definitions
             .mapNotNull(definitionModifiers::get)
             .flatten()

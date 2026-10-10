@@ -34,7 +34,7 @@ class ArmorDefinitionRenderState {
 object ArmorDefinitionRenderStateHandler {
 
     @Subscription
-    fun onExtractHumanoidState(event: LivingEntityRenderEvent) {
+    private fun onExtractHumanoidState(event: LivingEntityRenderEvent) {
         val entity = event.entity ?: return
         val hook = event.state as? LivingEntityRenderStateHook ?: return
         val state = hook.`catharsis$getArmorDefinitionRenderState`()

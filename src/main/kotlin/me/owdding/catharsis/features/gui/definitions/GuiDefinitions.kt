@@ -9,7 +9,6 @@ import me.owdding.catharsis.events.GuiDefinitionsApplied
 import me.owdding.catharsis.events.SlotChangedEvent
 import me.owdding.catharsis.events.StartRepoLoadEvent
 import me.owdding.catharsis.features.gui.definitions.slots.GuiSlotDefinition
-import me.owdding.catharsis.features.imc.ImcHandler.isDisabled
 import me.owdding.catharsis.repo.CatharsisRemoteRepo
 import me.owdding.catharsis.utils.CatharsisLogger
 import me.owdding.catharsis.utils.CatharsisLogger.Companion.featureLogger
@@ -137,10 +136,10 @@ object GuiDefinitions : SimplePreparableReloadListener<Map<Identifier, GuiDefini
     //fun onInitialized(event: ContainerInitializedEvent) = enqueueUpdate()
 
     @Subscription
-    fun onSlotChange(event: SlotChangedEvent) = enqueueUpdate()
+    private fun onSlotChange(event: SlotChangedEvent) = enqueueUpdate()
 
     @Subscription
-    fun onClose(event: ContainerCloseEvent) = enqueueUpdate()
+    private fun onClose(event: ContainerCloseEvent) = enqueueUpdate()
 
     @JvmStatic
     fun getGuis(): List<Identifier> = selected.map { it.id }

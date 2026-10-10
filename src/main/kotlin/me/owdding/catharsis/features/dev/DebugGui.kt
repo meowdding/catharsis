@@ -25,7 +25,7 @@ object DebugGui {
     private val debugSlots by debugSelect("slots", "Show missing slot definitions in GUIs", SlotMode.NONE, SlotMode.entries)
 
     @Subscription
-    fun onScreenRender(event: RenderScreenForegroundEvent) {
+    private fun onScreenRender(event: RenderScreenForegroundEvent) {
         val container = event.screen as? AbstractContainerScreen<*> ?: return
 
         val lines = mutableListOf<Component>()

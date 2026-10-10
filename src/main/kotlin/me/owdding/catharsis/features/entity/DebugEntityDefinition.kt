@@ -14,7 +14,7 @@ object DebugEntityDefinition {
     private val debug by debugToggle("entity", "Show debug information for Entity definitions")
 
     @Subscription
-    fun onRender(event: RenderEntityEvent) {
+    private fun onRender(event: RenderEntityEvent) {
         if (!debug) return
         val entity = event.entity ?: return
         val definition = CustomEntityDefinitions.getFor(entity) ?: return

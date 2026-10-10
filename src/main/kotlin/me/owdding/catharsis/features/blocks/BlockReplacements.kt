@@ -66,7 +66,7 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     fun getDisplay(state: BlockState, pos: BlockPos): BlockDisplayDefinition? = displays[state.block]?.select(state, pos)
 
     @Subscription
-    fun onBlockChange(event: BlockChangeEvent) {
+    private fun onBlockChange(event: BlockChangeEvent) {
         if (!McLevel.hasLevel) return
 
         if (event.state.block in blockToListen) {
@@ -205,7 +205,7 @@ object BlockReplacements : PreparingModelLoadingPlugin<Map<Block, LayeredBlockRe
     }
 
     @Subscription
-    fun onFloorUpdate(event: DungeonEnterEvent) {
+    private fun onFloorUpdate(event: DungeonEnterEvent) {
         if (this.usedDungeonFloors.contains(event.floor)) {
             this.markAllDirty()
         }

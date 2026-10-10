@@ -22,8 +22,6 @@ import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.base.predicates.TimePassed
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.api.events.time.TickEvent
-import tech.thatgravyboat.skyblockapi.helpers.McClient
-import tech.thatgravyboat.skyblockapi.helpers.McLevel
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.Text.send
@@ -99,7 +97,7 @@ object Timespans : SimplePreparableReloadListener<List<Pair<Identifier, Timespan
 
     @TimePassed("2t")
     @Subscription(TickEvent::class)
-    fun tick() {
+    private fun tick() {
         val needsRebuild = timespans.values.map {
             it.tick()
             it.consumeRebuild() && it.isInUse

@@ -7,17 +7,14 @@ import net.minecraft.network.chat.MutableComponent
 import tech.thatgravyboat.skyblockapi.api.events.base.Subscription
 import tech.thatgravyboat.skyblockapi.api.events.misc.RegisterCommandsEvent
 import tech.thatgravyboat.skyblockapi.helpers.McClient
-import tech.thatgravyboat.skyblockapi.platform.Identifiers
 import tech.thatgravyboat.skyblockapi.utils.DebugSelect
 import tech.thatgravyboat.skyblockapi.utils.DebugToggle
 import tech.thatgravyboat.skyblockapi.utils.DevUtils
 import tech.thatgravyboat.skyblockapi.utils.extentions.parseFormattedInt
-import java.nio.file.StandardOpenOption
-import java.util.*
+import java.nio.file.Path
 import kotlin.io.path.Path
-import kotlin.io.path.exists
-import kotlin.io.path.outputStream
-import kotlin.io.path.reader
+import kotlin.io.path.createParentDirectories
+import kotlin.io.path.writer
 
 internal fun debugToggle(path: String, description: String = path): DebugToggle {
     return DebugToggle(Catharsis.id(path), description, CatharsisDevUtils)
@@ -36,50 +33,35 @@ internal fun <T : Any> debugSelect(
 @Module
 internal object CatharsisDevUtils : DevUtils() {
 
-    private val path = System.getProperty("catharsis.property_path")?.let { Path(it) } ?: McClient.config.resolve("catharsis.properties")
+    override val path: Path = System.getProperty("catharsis.property_path")?.let { Path(it) } ?: McClient.config.resolve("catharsis.properties")
     override val commandName: String = "catharsis dev toggle"
     override fun send(component: MutableComponent) = component.sendWithPrefix()
-    val properties: MutableMap<String, String> = loadFromProperties().toMutableMap()
 
-    fun getString(key: String, default: String): String = properties[key] ?: default
-    fun getString(key: String): String? = properties[key]
+    init {
+        loadFromProperties(path)
+    }
+
+    override val supportsChangingDefault: Boolean = true
+    override val namespace: String = "catharsis"
+
+    fun getString(key: String, default: String): String = getString(key) ?: default
+    fun getString(key: String): String? = propertiesInstance.getProperty(key)
+    fun setString(key: String, value: String?) {
+        if (value == null) this.propertiesInstance.remove(key)
+        else this.propertiesInstance.setProperty(key, value)
+    }
 
     fun getInt(key: String, default: Int = 0): Int {
-        return properties[key].parseFormattedInt(default)
+        return getString(key).parseFormattedInt(default)
     }
 
-    fun getBoolean(key: String): Boolean {
-        return properties[key] == "true"
-    }
-
-    private fun loadProperties(): Properties {
-        val properties = Properties()
-        if (path.exists()) {
-            path.reader(Charsets.UTF_8).use {
-                properties.load(it)
-            }
-        }
-        return properties
-    }
+    fun getBoolean(key: String): Boolean = getString(key) == "true"
 
     fun saveProperties() {
-        val properties = Properties()
-        properties.putAll(this.properties)
-        properties.store(this.path.outputStream(StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING), null)
-    }
-
-    private fun loadFromProperties(): Map<String, String> {
-        val properties = loadProperties()
-        val map = mutableMapOf<String, String>()
-        properties.forEach { (key, value) ->
-            Identifiers.parseWithSeparator(key.toString(), '@')?.let {
-                if (value.toString() == "true") {
-                    states[it] = true
-                }
-            }
-            map[key.toString()] = value.toString()
+        path.createParentDirectories()
+        path.writer().use {
+            propertiesInstance.store(it, null)
         }
-        return map
     }
 
     @Subscription

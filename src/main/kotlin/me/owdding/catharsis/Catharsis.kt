@@ -83,7 +83,7 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
     }
 
     fun loadRepo() {
-        val branch = CatharsisDevUtils.properties[REPO_BRANCH_PROPERTY] ?: buildInfo.branch.replace("/", "-")
+        val branch = CatharsisDevUtils.getString(REPO_BRANCH_PROPERTY) ?: buildInfo.branch.replace("/", "-")
         info("Loading repo on branch $branch")
         Text.of("Loading repo on branch $branch").sendWithPrefixIf { McLevel.hasLevel }
         CompletableFuture.runAsync {
@@ -169,12 +169,12 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
                 }
                 thenCallback("branch branch", StringArgumentType.greedyString()) {
                     val branch = argument<String>("branch")
-                    CatharsisDevUtils.properties[REPO_BRANCH_PROPERTY] = branch
+                    CatharsisDevUtils.setString(REPO_BRANCH_PROPERTY, branch)
                     CatharsisDevUtils.saveProperties()
                     Text.of("Set repo branch to $branch").sendWithPrefix()
                 }
                 thenCallback("branch reset") {
-                    CatharsisDevUtils.properties.remove(REPO_BRANCH_PROPERTY)
+                    CatharsisDevUtils.setString(REPO_BRANCH_PROPERTY, null)
                     CatharsisDevUtils.saveProperties()
                     Text.of("Reset repo branch!").sendWithPrefix()
                 }
@@ -245,4 +245,4 @@ object Catharsis : ClientModInitializer, CatharsisLogger by CatharsisLogger.auto
 @AutoCollect("PreLoadModules")
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.CLASS)
-annotation class PreLoadModule
+internal annotation class PreLoadModule

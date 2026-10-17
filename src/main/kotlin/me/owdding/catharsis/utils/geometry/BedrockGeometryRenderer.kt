@@ -18,6 +18,7 @@ import org.joml.component3
 private const val DEBUG = false
 private const val HEAD_BONE = "head"
 private const val BODY_BONE = "body"
+private const val WAIST_BONE = "waist"
 private const val RIGHT_ARM_BONE = "right_arm"
 private const val LEFT_ARM_BONE = "left_arm"
 private const val RIGHT_LEG_BONE = "right_leg"
@@ -37,6 +38,7 @@ private val NEUTRAL_POSES = run {
     mapOf(
         HEAD_BONE to headRoot.getChild(HEAD_BONE).initialPose,
         BODY_BONE to chestRoot.getChild(BODY_BONE).initialPose,
+        WAIST_BONE to chestRoot.getChild(BODY_BONE).initialPose,
         RIGHT_ARM_BONE to chestRoot.getChild(RIGHT_ARM_BONE).initialPose,
         LEFT_ARM_BONE to chestRoot.getChild(LEFT_ARM_BONE).initialPose,
         RIGHT_LEG_BONE to legsRoot.getChild(RIGHT_LEG_BONE).initialPose,
@@ -83,7 +85,7 @@ object BedrockGeometryRenderer {
         for (bone in geometry.bones) {
             val playerBone = when (bone.name) {
                 HEAD_BONE -> model.head
-                BODY_BONE -> model.body
+                BODY_BONE, WAIST_BONE -> model.body
                 RIGHT_ARM_BONE -> model.rightArm
                 LEFT_ARM_BONE -> model.leftArm
                 RIGHT_LEG_BONE, RIGHT_FOOT_BONE -> model.rightLeg
@@ -95,7 +97,7 @@ object BedrockGeometryRenderer {
             when (slot) {
                 EquipmentSlot.HEAD if bone.name != HEAD_BONE -> continue
                 EquipmentSlot.CHEST if bone.name != BODY_BONE && bone.name != RIGHT_ARM_BONE && bone.name != LEFT_ARM_BONE -> continue
-                EquipmentSlot.LEGS if bone.name != RIGHT_LEG_BONE && bone.name != LEFT_LEG_BONE -> continue
+                EquipmentSlot.LEGS if bone.name != RIGHT_LEG_BONE && bone.name != LEFT_LEG_BONE && bone.name != WAIST_BONE -> continue
                 EquipmentSlot.FEET if bone.name != RIGHT_FOOT_BONE && bone.name != LEFT_FOOT_BONE -> continue
                 else -> {}
             }

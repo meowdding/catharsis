@@ -24,7 +24,7 @@ The renderer requires specific bone names to attach to the players body parts. I
 Use the following bone names depending on the targeted equipment slot:
 - Head Slot: `head`
 - Chest Slot: `body`, `right_arm`, `left_arm`
-- Legs Slot: `right_leg`, `left_leg`
+- Legs Slot: `waist`, `right_leg`, `left_leg`
 - Feet Slot: `right_foot`, `left_foot`
 
 See the [Armor Models Documentation](./armor_models.md) on how to override armor pieces.

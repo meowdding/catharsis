@@ -68,6 +68,7 @@ enum class BodyPart {
     CAPE,
     HEAD,
     CHEST,
+    WAIST,
     LEFT_LEG,
     RIGHT_LEG,
 }

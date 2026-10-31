@@ -296,7 +296,7 @@ fun skills() {
     createSkill("Farming", 60, Items.HAY_BLOCK, extraSlots = ::farming)
     createSkill("Fishing", 50, Items.PRISMARINE, extraSlots = ::fishing)
     createSkill("Mining", 60, Items.IRON_BLOCK, extraSlots = ::mining)
-    createSkill("Foraging", 54, Items.OAK_LOG, extraSlots = ::foraging)
+    createSkill("Foraging", 57, Items.OAK_LOG, extraSlots = ::foraging)
     createSkill("Enchanting", 60, Items.ENCHANTED_BOOK, extraSlots = ::enchanting)
     createSkill("Alchemy", 50, Items.BLAZE_ROD)
     createSkill("Carpentry", 50, Items.ARMOR_STAND)

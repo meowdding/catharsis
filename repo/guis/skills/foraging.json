@@ -3232,7 +3232,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/foraging/unlocked/down_end",
+      "id": "skyblock_gui:skills/foraging/unlocked/down_up",
       "target": {
         "conditions": [
           {
@@ -3252,7 +3252,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/foraging/unlocking/down_end",
+      "id": "skyblock_gui:skills/foraging/unlocking/down_up",
       "target": {
         "conditions": [
           {
@@ -3272,7 +3272,7 @@
       }
     },
     {
-      "id": "skyblock_gui:skills/foraging/locked/down_end",
+      "id": "skyblock_gui:skills/foraging/locked/down_up",
       "target": {
         "conditions": [
           {
@@ -3283,6 +3283,189 @@
             "name": [
               "Foraging Level 54",
               "Foraging Level LIV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/foraging/unlocked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": [
+              "minecraft:lime_stained_glass_pane",
+              "minecraft:oak_log"
+            ],
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Foraging Level 55",
+              "Foraging Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/foraging/unlocking/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Foraging Level 55",
+              "Foraging Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/foraging/locked/down_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Foraging Level 55",
+              "Foraging Level LV"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/foraging/unlocked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Foraging Level 56",
+              "Foraging Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/foraging/unlocking/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Foraging Level 56",
+              "Foraging Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/foraging/locked/left_right",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Foraging Level 56",
+              "Foraging Level LVI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/foraging/unlocked/left_end",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Foraging Level 57",
+              "Foraging Level LVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/foraging/unlocking/left_end",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Foraging Level 57",
+              "Foraging Level LVII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:skills/foraging/locked/left_end",
+      "target": {
+        "conditions": [
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Foraging Level 57",
+              "Foraging Level LVII"
             ],
             "mode": "equals",
             "type": "catharsis:name"

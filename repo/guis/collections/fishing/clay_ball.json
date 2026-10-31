@@ -9,7 +9,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 19,
+            "slot": 18,
             "type": "catharsis:slot"
           },
           {
@@ -33,7 +33,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 19,
+            "slot": 18,
             "type": "catharsis:slot"
           },
           {
@@ -57,7 +57,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 19,
+            "slot": 18,
             "type": "catharsis:slot"
           },
           {
@@ -81,7 +81,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 20,
+            "slot": 19,
             "type": "catharsis:slot"
           },
           {
@@ -105,7 +105,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 20,
+            "slot": 19,
             "type": "catharsis:slot"
           },
           {
@@ -129,7 +129,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 20,
+            "slot": 19,
             "type": "catharsis:slot"
           },
           {
@@ -153,7 +153,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 21,
+            "slot": 20,
             "type": "catharsis:slot"
           },
           {
@@ -177,7 +177,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 21,
+            "slot": 20,
             "type": "catharsis:slot"
           },
           {
@@ -201,7 +201,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 21,
+            "slot": 20,
             "type": "catharsis:slot"
           },
           {
@@ -225,7 +225,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 22,
+            "slot": 21,
             "type": "catharsis:slot"
           },
           {
@@ -249,7 +249,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 22,
+            "slot": 21,
             "type": "catharsis:slot"
           },
           {
@@ -273,7 +273,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 22,
+            "slot": 21,
             "type": "catharsis:slot"
           },
           {
@@ -297,7 +297,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 23,
+            "slot": 22,
             "type": "catharsis:slot"
           },
           {
@@ -321,7 +321,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 23,
+            "slot": 22,
             "type": "catharsis:slot"
           },
           {
@@ -345,7 +345,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 23,
+            "slot": 22,
             "type": "catharsis:slot"
           },
           {
@@ -369,7 +369,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 24,
+            "slot": 23,
             "type": "catharsis:slot"
           },
           {
@@ -393,7 +393,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 24,
+            "slot": 23,
             "type": "catharsis:slot"
           },
           {
@@ -417,7 +417,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 24,
+            "slot": 23,
             "type": "catharsis:slot"
           },
           {
@@ -428,6 +428,150 @@
             "name": [
               "Clay Ball 6",
               "Clay Ball VI"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Clay Ball 7",
+              "Clay Ball VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Clay Ball 7",
+              "Clay Ball VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 24,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Clay Ball 7",
+              "Clay Ball VII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 25,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:lime_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Clay Ball 8",
+              "Clay Ball VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/unlocking/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 25,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:yellow_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Clay Ball 8",
+              "Clay Ball VIII"
+            ],
+            "mode": "equals",
+            "type": "catharsis:name"
+          }
+        ],
+        "type": "catharsis:all"
+      }
+    },
+    {
+      "id": "skyblock_gui:collections/fishing/locked/connector",
+      "target": {
+        "conditions": [
+          {
+            "slot": 25,
+            "type": "catharsis:slot"
+          },
+          {
+            "items": "minecraft:red_stained_glass_pane",
+            "type": "catharsis:item"
+          },
+          {
+            "name": [
+              "Clay Ball 8",
+              "Clay Ball VIII"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -441,7 +585,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 25,
+            "slot": 26,
             "type": "catharsis:slot"
           },
           {
@@ -450,8 +594,8 @@
           },
           {
             "name": [
-              "Clay Ball 7",
-              "Clay Ball VII"
+              "Clay Ball 9",
+              "Clay Ball IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -465,7 +609,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 25,
+            "slot": 26,
             "type": "catharsis:slot"
           },
           {
@@ -474,8 +618,8 @@
           },
           {
             "name": [
-              "Clay Ball 7",
-              "Clay Ball VII"
+              "Clay Ball 9",
+              "Clay Ball IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"
@@ -489,7 +633,7 @@
       "target": {
         "conditions": [
           {
-            "slot": 25,
+            "slot": 26,
             "type": "catharsis:slot"
           },
           {
@@ -498,8 +642,8 @@
           },
           {
             "name": [
-              "Clay Ball 7",
-              "Clay Ball VII"
+              "Clay Ball 9",
+              "Clay Ball IX"
             ],
             "mode": "equals",
             "type": "catharsis:name"

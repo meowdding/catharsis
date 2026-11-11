@@ -39,7 +39,6 @@ import tech.thatgravyboat.skyblockapi.api.remote.api.SimpleItemAPI
 import tech.thatgravyboat.skyblockapi.api.remote.api.SkyBlockId
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McPlayer
-import tech.thatgravyboat.skyblockapi.impl.ColoredBlocks
 import tech.thatgravyboat.skyblockapi.utils.builders.ItemBuilder
 import tech.thatgravyboat.skyblockapi.utils.extentions.*
 import tech.thatgravyboat.skyblockapi.utils.json.Json.readJson
@@ -324,44 +323,44 @@ object GiveCommands {
 
     fun getFloorColor(index: Int): Block {
         return when ((index + 10) % 16) {
-            0 -> ColoredBlocks.WHITE_WOOL
-            1 -> ColoredBlocks.ORANGE_WOOL
-            2 -> ColoredBlocks.MAGENTA_WOOL
-            3 -> ColoredBlocks.LIGHT_BLUE_WOOL
-            4 -> ColoredBlocks.YELLOW_WOOL
-            5 -> ColoredBlocks.LIME_WOOL
-            6 -> ColoredBlocks.PINK_WOOL
-            7 -> ColoredBlocks.GRAY_WOOL
-            8 -> ColoredBlocks.LIGHT_GRAY_WOOL
-            9 -> ColoredBlocks.CYAN_WOOL
-            10 -> ColoredBlocks.PURPLE_WOOL
-            11 -> ColoredBlocks.BLUE_WOOL
-            12 -> ColoredBlocks.BROWN_WOOL
-            13 -> ColoredBlocks.GREEN_WOOL
-            14 -> ColoredBlocks.RED_WOOL
-            15 -> ColoredBlocks.BLACK_WOOL
+            0 -> Blocks.WOOL.white
+            1 -> Blocks.WOOL.orange
+            2 -> Blocks.WOOL.magenta
+            3 -> Blocks.WOOL.lightBlue
+            4 -> Blocks.WOOL.yellow
+            5 -> Blocks.WOOL.lime
+            6 -> Blocks.WOOL.pink
+            7 -> Blocks.WOOL.gray
+            8 -> Blocks.WOOL.lightGray
+            9 -> Blocks.WOOL.cyan
+            10 -> Blocks.WOOL.purple
+            11 -> Blocks.WOOL.blue
+            12 -> Blocks.WOOL.brown
+            13 -> Blocks.WOOL.green
+            14 -> Blocks.WOOL.red
+            15 -> Blocks.WOOL.black
             else -> TODO("no.")
         }
     }
 
     fun getShulkerColor(index: Int): Block {
         return when ((index + 10) % 16) {
-            0 -> ColoredBlocks.WHITE_SHULKER_BOX
-            1 -> ColoredBlocks.ORANGE_SHULKER_BOX
-            2 -> ColoredBlocks.MAGENTA_SHULKER_BOX
-            3 -> ColoredBlocks.LIGHT_BLUE_SHULKER_BOX
-            4 -> ColoredBlocks.YELLOW_SHULKER_BOX
-            5 -> ColoredBlocks.LIME_SHULKER_BOX
-            6 -> ColoredBlocks.PINK_SHULKER_BOX
-            7 -> ColoredBlocks.GRAY_SHULKER_BOX
-            8 -> ColoredBlocks.LIGHT_GRAY_SHULKER_BOX
-            9 -> ColoredBlocks.CYAN_SHULKER_BOX
-            10 -> ColoredBlocks.PURPLE_SHULKER_BOX
-            11 -> ColoredBlocks.BLUE_SHULKER_BOX
-            12 -> ColoredBlocks.BROWN_SHULKER_BOX
-            13 -> ColoredBlocks.GREEN_SHULKER_BOX
-            14 -> ColoredBlocks.RED_SHULKER_BOX
-            15 -> ColoredBlocks.BLACK_SHULKER_BOX
+            0 -> Blocks.DYED_SHULKER_BOX.white
+            1 -> Blocks.DYED_SHULKER_BOX.orange
+            2 -> Blocks.DYED_SHULKER_BOX.magenta
+            3 -> Blocks.DYED_SHULKER_BOX.lightBlue
+            4 -> Blocks.DYED_SHULKER_BOX.yellow
+            5 -> Blocks.DYED_SHULKER_BOX.lime
+            6 -> Blocks.DYED_SHULKER_BOX.pink
+            7 -> Blocks.DYED_SHULKER_BOX.gray
+            8 -> Blocks.DYED_SHULKER_BOX.lightGray
+            9 -> Blocks.DYED_SHULKER_BOX.cyan
+            10 -> Blocks.DYED_SHULKER_BOX.purple
+            11 -> Blocks.DYED_SHULKER_BOX.blue
+            12 -> Blocks.DYED_SHULKER_BOX.brown
+            13 -> Blocks.DYED_SHULKER_BOX.green
+            14 -> Blocks.DYED_SHULKER_BOX.red
+            15 -> Blocks.DYED_SHULKER_BOX.black
             else -> TODO("no.")
         }
     }

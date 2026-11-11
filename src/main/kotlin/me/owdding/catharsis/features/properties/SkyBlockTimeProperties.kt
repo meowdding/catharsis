@@ -10,7 +10,7 @@ import net.minecraft.world.entity.ItemOwner
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.item.ItemDisplayContext
 import net.minecraft.world.item.ItemStack
-import tech.thatgravyboat.skyblockapi.api.datetime.DateTimeAPI
+import tech.thatgravyboat.skyblockapi.api.environmental.DateTimeAPI
 
 object SkyBlockSeasonProperty : SelectItemModelProperty<String> {
 

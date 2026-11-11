@@ -9,7 +9,13 @@ import net.minecraft.world.item.ItemStack
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.entity.BlockEntity
 import net.minecraft.world.phys.HitResult
-import snownee.jade.api.*
+import snownee.jade.api.Accessor
+import snownee.jade.api.BlockAccessor
+import snownee.jade.api.IBlockComponentProvider
+import snownee.jade.api.ITooltip
+import snownee.jade.api.IWailaClientRegistration
+import snownee.jade.api.IWailaPlugin
+import snownee.jade.api.JadeIds
 import snownee.jade.api.callback.JadeItemModNameCallback
 import snownee.jade.api.callback.JadeRayTraceCallback
 import snownee.jade.api.config.IPluginConfig

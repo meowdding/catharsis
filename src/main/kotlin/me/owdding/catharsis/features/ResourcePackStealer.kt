@@ -2,7 +2,6 @@ package me.owdding.catharsis.features
 
 import me.owdding.catharsis.utils.extensions.sendWithPrefix
 import me.owdding.catharsis.utils.types.colors.CatppuccinColors
-import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktmodules.Module
 import net.minecraft.network.protocol.common.ClientboundResourcePackPushPacket

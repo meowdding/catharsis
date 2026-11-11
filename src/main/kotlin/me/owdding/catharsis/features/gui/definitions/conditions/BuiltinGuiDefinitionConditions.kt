@@ -6,7 +6,6 @@ import com.mojang.serialization.Codec
 import com.mojang.serialization.DataResult
 import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
-import me.owdding.catharsis.features.gui.definitions.conditions.GuiDefinitionAllCondition
 import me.owdding.catharsis.features.gui.definitions.slots.SlotCondition
 import me.owdding.catharsis.features.gui.matchers.RegexTextMatcher
 import me.owdding.catharsis.features.gui.matchers.TextMatcher

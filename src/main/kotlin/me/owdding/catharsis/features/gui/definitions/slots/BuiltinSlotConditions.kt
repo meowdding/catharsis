@@ -5,7 +5,6 @@ import com.mojang.serialization.MapCodec
 import com.mojang.serialization.codecs.RecordCodecBuilder
 import it.unimi.dsi.fastutil.ints.IntArraySet
 import me.owdding.catharsis.features.gui.matchers.TextMatcher
-import me.owdding.catharsis.features.imc.ImcHandler.isDisabled
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.generated.CodecUtils
 import me.owdding.catharsis.utils.codecs.IncludedCodecs
@@ -13,7 +12,12 @@ import me.owdding.catharsis.utils.extensions.base64Texture
 import me.owdding.catharsis.utils.extensions.extremesOf
 import me.owdding.catharsis.utils.types.Base64String
 import me.owdding.catharsis.utils.types.IntPredicate
-import me.owdding.ktcodecs.*
+import me.owdding.ktcodecs.Compact
+import me.owdding.ktcodecs.FieldNames
+import me.owdding.ktcodecs.GenerateCodec
+import me.owdding.ktcodecs.Inline
+import me.owdding.ktcodecs.NamedCodec
+import me.owdding.ktcodecs.OptionalBoolean
 import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.component.DataComponents
 import net.minecraft.world.inventory.Slot

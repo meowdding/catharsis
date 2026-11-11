@@ -3,7 +3,30 @@ package me.owdding.catharsis.utils.extensions
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Vec3i
 import net.minecraft.world.phys.Vec3
-import org.joml.*
+import org.joml.Vector2L
+import org.joml.Vector2Lc
+import org.joml.Vector2d
+import org.joml.Vector2dc
+import org.joml.Vector2f
+import org.joml.Vector2fc
+import org.joml.Vector2i
+import org.joml.Vector2ic
+import org.joml.Vector3L
+import org.joml.Vector3Lc
+import org.joml.Vector3d
+import org.joml.Vector3dc
+import org.joml.Vector3f
+import org.joml.Vector3fc
+import org.joml.Vector3i
+import org.joml.Vector3ic
+import org.joml.Vector4L
+import org.joml.Vector4Lc
+import org.joml.Vector4d
+import org.joml.Vector4dc
+import org.joml.Vector4f
+import org.joml.Vector4fc
+import org.joml.Vector4i
+import org.joml.Vector4ic
 
 fun Vector2fc.copy(): Vector2fc = mutableCopy()
 fun Vector2fc.mutableCopy(): Vector2f = Vector2f(this)

@@ -16,8 +16,7 @@ import net.minecraft.client.gui.components.WidgetSprites
 import net.minecraft.client.renderer.RenderPipelines
 import net.minecraft.network.chat.Component
 import tech.thatgravyboat.skyblockapi.helpers.McClient
-
-import java.util.Optional
+import java.util.*
 
 object PackedPacksCompat : PackedPacksInitializer {
     private const val BUTTON_SIZE = 14

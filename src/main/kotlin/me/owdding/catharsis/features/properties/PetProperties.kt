@@ -4,7 +4,6 @@ import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
-import me.owdding.catharsis.hooks.items.AbstractContainerScreenHook
 import net.minecraft.client.multiplayer.ClientLevel
 import net.minecraft.client.renderer.item.properties.conditional.ConditionalItemModelProperty
 import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperty

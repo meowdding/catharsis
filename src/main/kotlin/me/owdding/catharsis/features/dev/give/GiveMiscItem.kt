@@ -22,7 +22,6 @@ import net.minecraft.resources.Identifier
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EntitySpawnReason
 import net.minecraft.world.entity.EntityType
-//? >= 26.2
 import net.minecraft.world.entity.EntityTypes
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.ItemStack
@@ -42,7 +41,7 @@ import tech.thatgravyboat.skyblockapi.utils.extentions.createSkull
 import tech.thatgravyboat.skyblockapi.utils.extentions.putCompound
 import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.italic
-import java.util.UUID
+import java.util.*
 
 @Module
 object GiveMiscItem {
@@ -123,7 +122,6 @@ object GiveMiscItem {
 
             fun createArmorStand(flags: Set<CommandFlag>, ids: Collection<Base64String>, id: Identifier): Collection<ItemStack> {
                 val items = ids.map {
-                    //~ if >= 26.2 'EntityType' -> 'EntityTypes'
                     TypedEntityData.of(EntityTypes.ARMOR_STAND, it.createData())
                 }
 
@@ -171,7 +169,6 @@ object GiveMiscItem {
                     tag.putBoolean("immovable", MannequinFlag.IMMOVALBE in flags)
                     if (MannequinFlag.LEFT_HANDED in flags) tag.putString("main_hand", "left")
 
-                    //~ if >= 26.2 'EntityType' -> 'EntityTypes'
                     TypedEntityData.of(EntityTypes.MANNEQUIN, tag)
                 }
 

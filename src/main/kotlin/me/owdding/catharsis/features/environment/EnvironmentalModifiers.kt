@@ -27,7 +27,6 @@ import net.minecraft.world.level.ColorResolver
 import net.minecraft.world.phys.Vec3
 import tech.thatgravyboat.skyblockapi.utils.json.Json.toDataOrThrow
 import java.io.Reader
-import kotlin.collections.isNotEmpty
 
 @Module
 object EnvironmentalModifiers : CatharsisLogger by Catharsis.featureLogger(), SimplePreparableReloadListener<List<EnvironmentalModifier<out Any>>>() {

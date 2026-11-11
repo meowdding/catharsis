@@ -6,8 +6,8 @@ import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.Inline
-import net.minecraft.client.renderer.block.dispatch.BlockStateModelDispatcher
 import net.minecraft.client.renderer.block.dispatch.BlockStateModel
+import net.minecraft.client.renderer.block.dispatch.BlockStateModelDispatcher
 import net.minecraft.client.renderer.chunk.ChunkSectionLayer
 import net.minecraft.client.resources.model.ModelBaker
 import net.minecraft.resources.Identifier

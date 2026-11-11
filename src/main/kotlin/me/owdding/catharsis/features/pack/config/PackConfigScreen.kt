@@ -6,11 +6,21 @@ import me.owdding.catharsis.utils.extensions.CycleButtonBuilder
 import me.owdding.catharsis.utils.extensions.withClickHandler
 import me.owdding.catharsis.utils.ui.ResizingEqualSpacingLayout
 import net.minecraft.client.Minecraft
-import net.minecraft.client.gui.components.*
+import net.minecraft.client.gui.components.AbstractWidget
+import net.minecraft.client.gui.components.Button
+import net.minecraft.client.gui.components.CycleButton
+import net.minecraft.client.gui.components.EditBox
+import net.minecraft.client.gui.components.MultiLineTextWidget
+import net.minecraft.client.gui.components.ScrollableLayout
+import net.minecraft.client.gui.components.StringWidget
 import net.minecraft.client.gui.components.tabs.Tab
 import net.minecraft.client.gui.components.tabs.TabManager
 import net.minecraft.client.gui.components.tabs.TabNavigationBar
-import net.minecraft.client.gui.layouts.*
+import net.minecraft.client.gui.layouts.FrameLayout
+import net.minecraft.client.gui.layouts.HeaderAndFooterLayout
+import net.minecraft.client.gui.layouts.Layout
+import net.minecraft.client.gui.layouts.LayoutElement
+import net.minecraft.client.gui.layouts.LinearLayout
 import net.minecraft.client.gui.navigation.ScreenRectangle
 import net.minecraft.client.gui.screens.Screen
 import net.minecraft.network.chat.ClickEvent
@@ -18,7 +28,6 @@ import net.minecraft.network.chat.CommonComponents
 import net.minecraft.network.chat.Component
 import net.minecraft.network.chat.Style
 import net.minecraft.util.CommonColors
-import net.minecraft.util.Util
 import tech.thatgravyboat.skyblockapi.helpers.McClient
 import tech.thatgravyboat.skyblockapi.helpers.McFont
 import tech.thatgravyboat.skyblockapi.utils.extentions.asBoolean
@@ -112,12 +121,7 @@ class PackConfigScreen @JvmOverloads constructor(private val parent: Screen?, pa
 
     override fun repositionElements() {
         val nav = this.navigation ?: return
-        //? >= 26.2 {
         nav.arrangeElements(this.width)
-        //?} else {
-        /*nav.updateWidth(this.width)
-        nav.arrangeElements()
-         *///?}
 
         val navBottom = nav.rectangle.bottom()
 
@@ -296,7 +300,6 @@ class PackConfigScreenTab(val title: Component, val contents: Layout) : Tab {
         it.setMaxHeight(130)
     }
 
-    //? >= 26.2
     override fun getLayout(): Layout = layout
 
     override fun getTabTitle(): Component = title

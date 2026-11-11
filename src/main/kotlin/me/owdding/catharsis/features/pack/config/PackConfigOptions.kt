@@ -14,11 +14,12 @@ import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.IncludedCodec
 import net.minecraft.network.chat.Component
-//~ if >= 26.3 'PackResources' -> 'PackMetadataResources'
-import net.minecraft.server.packs.PackMetadataResources
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.util.GsonHelper
 import tech.thatgravyboat.skyblockapi.utils.text.Text
+
+//~ if >= 26.3 'PackResources' -> 'PackMetadataResources'
+import net.minecraft.server.packs.PackMetadataResources
 
 sealed interface PackConfigOption {
 

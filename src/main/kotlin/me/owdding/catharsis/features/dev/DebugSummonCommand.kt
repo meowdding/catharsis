@@ -27,6 +27,7 @@ import net.minecraft.resources.Identifier
 import net.minecraft.world.entity.AgeableMob
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EntitySpawnReason
+import net.minecraft.world.entity.EntitySpawnRequest
 import net.minecraft.world.entity.EntityType
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.entity.ai.attributes.Attributes
@@ -40,9 +41,6 @@ import tech.thatgravyboat.skyblockapi.utils.text.Text
 import tech.thatgravyboat.skyblockapi.utils.text.TextBuilder.append
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.color
 import tech.thatgravyboat.skyblockapi.utils.text.TextStyle.command
-
-//? >= 26.2
-import net.minecraft.world.entity.EntitySpawnRequest
 
 @Module
 object DebugSummonCommand {
@@ -78,11 +76,7 @@ object DebugSummonCommand {
                     entityTag.putBoolean("Silent", true)
                     applyNbtConditions(definition.target, entityTag)
 
-                    //? >= 26.2 {
-                    val thing = EntitySpawnRequest(EntitySpawnReason.COMMAND, true)
-                    //?} else
-                    //val thing = EntitySpawnReason.COMMAND
-                    val entity = EntityType.loadEntityRecursive(entityTag, serverLevel, thing) { entity ->
+                    val entity = EntityType.loadEntityRecursive(entityTag, serverLevel, EntitySpawnRequest(EntitySpawnReason.COMMAND, true)) { entity ->
                         entity.absSnapTo(player.x, player.y, player.z, player.yRot, player.xRot)
                         entity.yHeadRot = player.yHeadRot
                         if (entity is LivingEntity) {

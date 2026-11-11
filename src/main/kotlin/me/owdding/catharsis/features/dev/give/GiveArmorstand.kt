@@ -11,7 +11,6 @@ import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource
 import net.minecraft.core.component.DataComponents
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.nbt.NbtOps
-//~ if >= 26.2 'EntityType' -> 'EntityTypes'
 import net.minecraft.world.entity.EntityTypes
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.ItemStack
@@ -69,7 +68,6 @@ object GiveArmorstand {
 
     private val regex = "(?i)([\\s\\S]+?_)(?:${armorTypes.joinToString("|")})(_[\\s\\S]*)?$".toRegex()
 
-    //~ if >= 26.2 'EntityType.' -> 'EntityTypes.' {
     @Subscription
     private fun RegisterCommandsEvent.onRegister() {
         register("catharsis dev give") {
@@ -115,7 +113,6 @@ object GiveArmorstand {
             }
         }
     }
-    //~}
 
     private val ignoredCategories = mutableSetOf(
         "necklace",

@@ -1,7 +1,14 @@
 package me.owdding.catharsis.features.blocks.replacements
 
 import com.mojang.serialization.MapCodec
-import me.owdding.catharsis.features.blocks.*
+import me.owdding.catharsis.features.blocks.BlendMode
+import me.owdding.catharsis.features.blocks.BlockDisplayDefinition
+import me.owdding.catharsis.features.blocks.BlockReplacement
+import me.owdding.catharsis.features.blocks.BlockReplacementBakery
+import me.owdding.catharsis.features.blocks.BlockReplacementEntry
+import me.owdding.catharsis.features.blocks.BlockReplacementSelector
+import me.owdding.catharsis.features.blocks.BlockSoundDefinition
+import me.owdding.catharsis.features.blocks.VirtualBlockStateDefinition
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.ktcodecs.FieldName
 import me.owdding.ktcodecs.GenerateCodec

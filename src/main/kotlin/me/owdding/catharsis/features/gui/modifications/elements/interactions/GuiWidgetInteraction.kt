@@ -8,9 +8,7 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.generated.CatharsisCodecs.getCodec
 import me.owdding.catharsis.generated.CodecUtils
-import me.owdding.ktcodecs.GenerateCodec
 import me.owdding.ktcodecs.IncludedCodec
-import me.owdding.ktcodecs.OptionalNullable
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import java.util.*

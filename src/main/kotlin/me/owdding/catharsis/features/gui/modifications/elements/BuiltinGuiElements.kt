@@ -16,7 +16,6 @@ import net.minecraft.util.CommonColors
 import net.minecraft.util.LightCoordsUtil
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EntitySpawnReason
-//? > 26.1
 import net.minecraft.world.entity.EntitySpawnRequest
 import net.minecraft.world.entity.EntityType
 import net.minecraft.world.entity.LivingEntity
@@ -94,12 +93,8 @@ data class GuiEntityElement(
     override val codec: MapCodec<GuiEntityElement> = CatharsisCodecs.getMapCodec<GuiEntityElement>()
 
     private val parsedEntity: Entity? by lazy {
-        //? >= 26.2 {
-        val thing = EntitySpawnRequest(EntitySpawnReason.COMMAND, true)
-        //?} else
-        //val thing = EntitySpawnReason.COMMAND
         tag.putString("id", BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
-        EntityType.loadEntityRecursive(tag, McLevel.self!!, thing) {
+        EntityType.loadEntityRecursive(tag, McLevel.self!!, EntitySpawnRequest(EntitySpawnReason.COMMAND, true)) {
             it.id = -1
             it
         }

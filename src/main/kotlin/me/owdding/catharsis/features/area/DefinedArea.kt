@@ -9,7 +9,11 @@ import me.owdding.catharsis.utils.codecs.SavableData
 import me.owdding.catharsis.utils.types.boundingboxes.BoundingBox
 import me.owdding.catharsis.utils.types.boundingboxes.DebugRenderable
 import me.owdding.catharsis.utils.types.boundingboxes.Octree
-import me.owdding.ktcodecs.*
+import me.owdding.ktcodecs.Compact
+import me.owdding.ktcodecs.FieldNames
+import me.owdding.ktcodecs.GenerateCodec
+import me.owdding.ktcodecs.IncludedCodec
+import me.owdding.ktcodecs.Inline
 import me.owdding.ktcodecs.IntRange
 import net.minecraft.core.BlockPos
 import net.minecraft.resources.Identifier

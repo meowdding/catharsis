@@ -12,7 +12,7 @@ plugins {
 }
 rootProject.name = "catharsis"
 
-val versions = listOf("26.3", "26.2", "26.1") // Also manually update the versionCatalogs at the bottom for depentabot
+val versions = listOf("26.3", "26.2") // Also manually update the versionCatalogs at the bottom for depentabot
 
 stonecutter {
     create(rootProject) {
@@ -30,9 +30,6 @@ dependencyResolutionManagement {
         }
         create("libs262") {
             from(files("gradle/26_2.versions.toml"))
-        }
-        create("libs261") {
-            from(files("gradle/26_1.versions.toml"))
         }
     }
 }

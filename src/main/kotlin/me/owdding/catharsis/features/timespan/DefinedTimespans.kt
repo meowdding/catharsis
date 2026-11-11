@@ -9,8 +9,8 @@ import me.owdding.ktcodecs.FieldNames
 import me.owdding.ktcodecs.GenerateCodec
 import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
-import tech.thatgravyboat.skyblockapi.api.datetime.DateTimeAPI
-import tech.thatgravyboat.skyblockapi.api.datetime.SkyBlockSeason
+import tech.thatgravyboat.skyblockapi.api.environmental.DateTimeAPI
+import tech.thatgravyboat.skyblockapi.api.environmental.SkyBlockSeason
 import tech.thatgravyboat.skyblockapi.helpers.McLevel
 
 interface TimespanDefinition {

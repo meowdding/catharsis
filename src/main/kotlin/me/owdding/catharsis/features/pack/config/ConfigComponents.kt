@@ -1,5 +1,6 @@
 package me.owdding.catharsis.features.pack.config
 
+import com.google.common.collect.ImmutableList
 import com.mojang.blaze3d.platform.InputConstants
 import com.mojang.blaze3d.platform.cursor.CursorTypes
 import me.owdding.catharsis.Catharsis
@@ -8,14 +9,9 @@ import me.owdding.catharsis.utils.ui.BaseButtonWidget
 import me.owdding.catharsis.utils.ui.Overlay
 import net.minecraft.client.gui.GuiGraphicsExtractor
 import net.minecraft.client.gui.components.TabButton
+import net.minecraft.client.gui.components.tabs.MenuTabBar
 import net.minecraft.client.gui.components.tabs.Tab
 import net.minecraft.client.gui.components.tabs.TabManager
-//? >= 26.2 {
-import com.google.common.collect.ImmutableList
-import net.minecraft.client.gui.components.tabs.MenuTabBar
-//?} else {
-//import net.minecraft.client.gui.components.tabs.TabNavigationBar
-//?}
 import net.minecraft.client.gui.layouts.GridLayout
 import net.minecraft.client.gui.narration.NarrationElementOutput
 import net.minecraft.client.gui.navigation.ScreenRectangle
@@ -40,7 +36,6 @@ import kotlin.math.min
 
 private const val TAB_PADDING = 5
 
-//? >= 26.2 {
 class MinSizedTabNavigation(
     private var _width: Int,
     manager: TabManager,
@@ -72,29 +67,6 @@ class MinSizedTabNavigation(
         this.layout.y = 0
     }
 }
-//?} else {
-/*class MinSizedTabNavigation(private var _width: Int, manager: TabManager, tabs: List<Tab>) : TabNavigationBar(_width, manager, tabs) {
-
-    override fun updateWidth(width: Int) {
-        this._width = width
-        super.updateWidth(width)
-    }
-
-    override fun arrangeElements() {
-        val minTabWidth = this.tabButtons.maxOf { it.message.width + TAB_PADDING * 2 }
-        val tabsWidth = min(max(minTabWidth * this.tabButtons.size, 400), this._width) - 28
-        val tabWidth = Mth.roundToward(tabsWidth / this.tabs.size, 2)
-
-        for (button in this.tabButtons) {
-            button.setWidth(tabWidth)
-        }
-
-        this.layout.arrangeElements()
-        this.layout.x = Mth.roundToward((this._width - tabsWidth) / 2, 2)
-        this.layout.y = 0
-    }
-}
-*///?}
 
 private const val COLOR_PADDING = 7
 private const val COLOR_SPACING = 3

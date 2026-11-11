@@ -1,7 +1,5 @@
 package me.owdding.catharsis.features.environment.provider
 
-import com.mojang.serialization.MapCodec
-import com.mojang.serialization.codecs.RecordCodecBuilder
 import net.minecraft.world.attribute.AttributeType
 import net.minecraft.world.attribute.SpatialAttributeInterpolator
 import net.minecraft.world.phys.Vec3

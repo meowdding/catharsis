@@ -3,7 +3,12 @@ package me.owdding.catharsis.features.blocks
 import com.mojang.serialization.Codec
 import com.mojang.serialization.MapCodec
 import me.owdding.catharsis.Catharsis
-import me.owdding.catharsis.features.blocks.replacements.*
+import me.owdding.catharsis.features.blocks.replacements.ConditionalBlockReplacement
+import me.owdding.catharsis.features.blocks.replacements.LayeredBlockReplacements
+import me.owdding.catharsis.features.blocks.replacements.PerAreaBlockReplacement
+import me.owdding.catharsis.features.blocks.replacements.RandomBlockReplacement
+import me.owdding.catharsis.features.blocks.replacements.RedirectBlockReplacement
+import me.owdding.catharsis.features.blocks.replacements.SelectBlockReplacement
 import me.owdding.catharsis.generated.CatharsisCodecs
 import me.owdding.catharsis.utils.codecs.IncludedCodecs
 import me.owdding.catharsis.utils.codecs.SavableData

@@ -4,16 +4,7 @@ import me.owdding.catharsis.Catharsis
 import me.owdding.cats.api.CatsEntry
 import me.owdding.cats.api.CatsFile
 import net.minecraft.resources.Identifier
-//? < 26.3 {
-/*import net.minecraft.server.packs.AbstractPackResources
-import net.minecraft.server.packs.CompositePackResources
-*///?}
-//? >= 26.3 {
-import net.minecraft.server.packs.AbstractPackMetadataResources
-import net.minecraft.server.packs.OverlayedPackResources//?}
 import net.minecraft.server.packs.PackLocationInfo
-//? >= 26.3
-import net.minecraft.server.packs.PackMetadataResources
 import net.minecraft.server.packs.PackResources
 import net.minecraft.server.packs.PackType
 import net.minecraft.server.packs.repository.Pack
@@ -21,9 +12,16 @@ import net.minecraft.server.packs.resources.IoSupplier
 import java.io.InputStream
 import java.nio.file.Path
 import java.util.*
-//? >= 26.3
-import java.util.stream.Stream
 import java.util.zip.ZipFile
+
+//? < 26.3 {
+/*import net.minecraft.server.packs.AbstractPackResources
+import net.minecraft.server.packs.CompositePackResources
+*///?} else {
+import net.minecraft.server.packs.AbstractPackMetadataResources
+import net.minecraft.server.packs.OverlayedPackResources
+import net.minecraft.server.packs.PackMetadataResources
+import java.util.stream.Stream//?}
 
 class CatsResourceSupplier(path: Path) : Pack.ResourcesSupplier {
     private val file = Catharsis.runCatching("Failed to open cats pack at $path") {

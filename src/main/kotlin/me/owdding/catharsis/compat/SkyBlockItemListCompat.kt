@@ -1,5 +1,4 @@
 package me.owdding.catharsis.compat
-//? >= 26.1 {
 
 import com.operationpotato.itemlist.api.ExcludedScreensManager
 import com.operationpotato.itemlist.api.ExclusionZoneManager
@@ -34,4 +33,3 @@ object SkyBlockItemListCompat : Plugin {
         }
     }
 }
-//?}

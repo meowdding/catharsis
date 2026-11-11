@@ -38,6 +38,7 @@ updates:
         registries: "*"
         schedule:
             interval: daily
+        rebase-strategy: "auto"
         groups:
             gradle-updates:
                 patterns:

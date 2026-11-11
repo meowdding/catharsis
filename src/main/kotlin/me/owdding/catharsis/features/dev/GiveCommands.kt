@@ -55,7 +55,7 @@ import java.util.concurrent.CompletableFuture
 import kotlin.math.max
 import kotlin.math.min
 
-//? >= 26.3
+//? if >= 26.3
 import net.minecraft.world.level.block.entity.SignTextSlot
 
 @Module
@@ -439,7 +439,7 @@ object GiveCommands {
             DyeColor.WHITE,
             true,
         ).let {
-            //? >= 26.3 {
+            //? if >= 26.3 {
             this.setText(it, SignTextSlot.FRONT)
             this.setText(it, SignTextSlot.BACK)
             //? } else {

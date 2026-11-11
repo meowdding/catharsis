@@ -14,7 +14,7 @@ import java.nio.file.Path
 import java.util.*
 import java.util.zip.ZipFile
 
-//? < 26.3 {
+//? if < 26.3 {
 /*import net.minecraft.server.packs.AbstractPackResources
 import net.minecraft.server.packs.CompositePackResources
 *///?} else {

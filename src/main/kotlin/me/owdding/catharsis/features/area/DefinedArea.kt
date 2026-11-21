@@ -20,6 +20,7 @@ import net.minecraft.resources.Identifier
 import net.minecraft.util.ExtraCodecs
 import tech.thatgravyboat.skyblockapi.api.location.LocationAPI
 import tech.thatgravyboat.skyblockapi.api.location.SkyBlockIsland
+import tech.thatgravyboat.skyblockapi.api.profile.garden.PlotAPI
 
 interface AreaDefinition : SavableData<AreaDefinition> {
     override val codec: Codec<AreaDefinition> get() = Areas.codec
@@ -30,6 +31,14 @@ interface AreaDefinition : SavableData<AreaDefinition> {
     val renderable: DebugRenderable?
 
     fun <T : Any> T.checkIslands(islands: List<SkyBlockIsland>?) = this.takeIf { islands?.contains(LocationAPI.island) != false }
+}
+
+object GreenhouseAreaDefinition : AreaDefinition {
+    override fun codec(): MapCodec<out AreaDefinition> = MapCodec.unit(GreenhouseAreaDefinition)
+
+    override fun contains(blockPos: BlockPos): Boolean = SkyBlockIsland.GARDEN.inIsland() && !LocationAPI.isGuest && PlotAPI.getPlot(blockPos)?.data?.isGreenhouse == true
+
+    override val renderable: DebugRenderable? get() = null
 }
 
 @GenerateCodec
@@ -75,7 +84,7 @@ data class MultipleAreaDefinition(
 data class PerIslandAreaDefinition(
     val entries: List<IslandEntry>,
 ) : AreaDefinition {
-    val islands = buildMap<SkyBlockIsland, AreaDefinition> {
+    val islands = buildMap {
         this@PerIslandAreaDefinition.entries.forEach { (islands, definition) ->
             islands.forEach { island ->
                 if (this.containsKey(island)) throw UnsupportedOperationException("Duplicate island $island!")
@@ -106,6 +115,7 @@ object AreaDefinitions {
         ID_MAPPER.put(Catharsis.id("simple"), CatharsisCodecs.getMapCodec<SimpleAreaDefinition>())
         ID_MAPPER.put(Catharsis.id("on_island"), CatharsisCodecs.getMapCodec<OnIslandDefinition>())
         ID_MAPPER.put(Catharsis.id("always"), AlwaysTrueDefinition.codec())
+        ID_MAPPER.put(Catharsis.id("greenhouse"), GreenhouseAreaDefinition.codec())
     }
 
 }

@@ -125,3 +125,16 @@ Changes the definition based on the island, `always` and `on_island` have the ex
     - <TypeIcon/> Additional fields depending on the value of type, see the respective area type documentation for more details.
 
 </TreeView>
+
+<Version type="1.0.0-beta.23">
+
+### <Environment type="hypixel"/> In Greenhouse (`catharsis:greenhouse`)
+Matches for blocks that are inside a Greenhouse Plot while in a Garden and not visiting. 
+
+<TreeView>
+<span><TypeIcon type="object"/> Root <b>Greenhouse</b> object</span>
+
+- <TypeIcon type="string"/> **type**: `catharsis:greenhouse`
+
+</TreeView>
+</Version>
